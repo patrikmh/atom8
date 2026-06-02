@@ -12,8 +12,8 @@ class Settings(BaseSettings):
     """Application settings loaded from environment."""
 
     # Pi / LLM
-    pi_provider: str = os.getenv("PI_PROVIDER", "fireworks")
-    pi_model: str = os.getenv("PI_MODEL", "accounts/fireworks/routers/kimi-k2p6-turbo")
+    pi_provider: str = os.getenv("PI_PROVIDER", "z-ai")
+    pi_model: str = os.getenv("PI_MODEL", "GLM-4.7")
     pi_tools: str = "read,grep,find,bash"
 
     # Google OAuth
