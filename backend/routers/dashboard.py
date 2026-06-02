@@ -1,98 +1,65 @@
-from fastapi import APIRouter, HTTPException, Depends
-from sqlalchemy.orm import Session
-from datetime import datetime
+"""Dashboard layout persistence using a simple JSON file."""
 import json
+from pathlib import Path
 
-from database import SessionLocal, Layout, WidgetCache, get_db
-from models import LayoutSave, WidgetCacheRequest
+from fastapi import APIRouter
+
+from config import settings
+from models import DashboardLayout
 
 router = APIRouter(prefix="/api/dashboard", tags=["dashboard"])
 
+_DEFAULT_LAYOUT = {
+    "version": "1.0",
+    "widgets": [
+        {"id": "email", "type": "gmail", "position": {"x": 0, "y": 0, "w": 6, "h": 4}},
+        {"id": "calendar", "type": "calendar", "position": {"x": 6, "y": 0, "w": 6, "h": 4}},
+        {"id": "tasks", "type": "tasks", "position": {"x": 0, "y": 4, "w": 4, "h": 3}},
+        {"id": "drive", "type": "drive", "position": {"x": 4, "y": 4, "w": 4, "h": 3}},
+        {"id": "chat", "type": "chat", "position": {"x": 8, "y": 4, "w": 4, "h": 3}},
+    ],
+}
+
+
+def _load_layout() -> dict:
+    """Load dashboard layout from JSON file."""
+    path = settings.dashboard_json_path
+    if path.exists():
+        with open(path, "r") as f:
+            return json.load(f)
+    return _DEFAULT_LAYOUT.copy()
+
+
+def _save_layout(data: dict) -> None:
+    """Save dashboard layout to JSON file."""
+    path = settings.dashboard_json_path
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w") as f:
+        json.dump(data, f, indent=2)
+
 
 @router.get("/layout")
-async def get_layout(db: Session = Depends(get_db)):
-    """Get saved layout for the default user."""
-    layout = db.query(Layout).filter(Layout.user_id == "default").first()
-    
-    if not layout:
-        return {
-            "widgets": None,
-            "background": None,
-            "sidebar_open": True,
-            "status": "not_found"
-        }
-    
-    return {
-        "widgets": json.loads(layout.widgets_json) if layout.widgets_json else None,
-        "background": json.loads(layout.background_json) if layout.background_json else None,
-        "sidebar_open": layout.sidebar_open,
-        "status": "ok"
-    }
+async def get_layout():
+    """Get the current dashboard layout."""
+    return _load_layout()
 
 
 @router.post("/layout")
-async def save_layout(data: LayoutSave, db: Session = Depends(get_db)):
-    """Save layout for the default user."""
-    layout = db.query(Layout).filter(Layout.user_id == "default").first()
-    
-    if not layout:
-        layout = Layout(
-            id="default",
-            user_id="default",
-            widgets_json=data.widgets_json,
-            background_json=data.background_json,
-            sidebar_open=data.sidebar_open,
-            updated_at=datetime.utcnow(),
-        )
-        db.add(layout)
-    else:
-        layout.widgets_json = data.widgets_json
-        layout.background_json = data.background_json
-        layout.sidebar_open = data.sidebar_open
-        layout.updated_at = datetime.utcnow()
-    
-    db.commit()
-    return {"status": "ok", "message": "Layout saved"}
-
-
-@router.get("/cache/{widget_id}")
-async def get_widget_cache(widget_id: str, db: Session = Depends(get_db)):
-    """Get cached data for a widget."""
-    cache = db.query(WidgetCache).filter(
-        WidgetCache.widget_id == widget_id,
-        WidgetCache.user_id == "default"
-    ).first()
-    
-    if not cache:
-        return {"data": None, "status": "not_found"}
-    
-    return {
-        "data": json.loads(cache.data_json) if cache.data_json else None,
-        "fetched_at": cache.fetched_at.isoformat() if cache.fetched_at else None,
-        "status": "ok"
-    }
-
-
-@router.post("/cache/{widget_id}")
-async def set_widget_cache(widget_id: str, request: WidgetCacheRequest, db: Session = Depends(get_db)):
-    """Save cached data for a widget."""
-    cache = db.query(WidgetCache).filter(
-        WidgetCache.widget_id == widget_id,
-        WidgetCache.user_id == "default"
-    ).first()
-    
-    if not cache:
-        cache = WidgetCache(
-            id=f"{widget_id}_default",
-            widget_id=widget_id,
-            user_id="default",
-            data_json=json.dumps(request.data),
-            fetched_at=datetime.utcnow(),
-        )
-        db.add(cache)
-    else:
-        cache.data_json = json.dumps(request.data)
-        cache.fetched_at = datetime.utcnow()
-    
-    db.commit()
+async def save_layout(request: DashboardLayout):
+    """Save the dashboard layout."""
+    _save_layout(request.layout)
     return {"status": "ok"}
+
+
+@router.get("/widgets")
+async def get_widgets():
+    """Get available widget types."""
+    return {
+        "widgets": [
+            {"type": "gmail", "name": "Email", "icon": "mail"},
+            {"type": "calendar", "name": "Calendar", "icon": "calendar"},
+            {"type": "tasks", "name": "Tasks", "icon": "checklist"},
+            {"type": "drive", "name": "Drive", "icon": "drive"},
+            {"type": "chat", "name": "AI Chat", "icon": "chat"},
+        ]
+    }

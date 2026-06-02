@@ -6,12 +6,13 @@ import type {
   ResearchResponse,
 } from '@/types'
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000'
+const API_BASE = import.meta.env.VITE_API_BASE ?? 'http://localhost:8000'
 
 async function api<T>(path: string, options?: RequestInit): Promise<T> {
   // Only cache-bust data/AI endpoints, not health or auth
   const isDataEndpoint = path.startsWith('/api/data') || path.startsWith('/api/ai')
   const url = isDataEndpoint ? `${API_BASE}${path}?_cb=${Date.now()}` : `${API_BASE}${path}`
+  console.log('[api] fetching:', url, 'options:', options)
   const res = await fetch(url, {
     credentials: 'omit',
     headers: {
@@ -19,11 +20,15 @@ async function api<T>(path: string, options?: RequestInit): Promise<T> {
     },
     ...options,
   })
+  console.log('[api] response status:', res.status, 'for', url)
   if (!res.ok) {
     const err = await res.json().catch(() => ({}))
+    console.error('[api] error:', err)
     throw new Error(err.detail || `HTTP ${res.status}`)
   }
-  return res.json() as Promise<T>
+  const data = await res.json()
+  console.log('[api] response data:', data)
+  return data as Promise<T>
 }
 
 export const apiClient = {

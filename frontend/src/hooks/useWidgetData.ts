@@ -28,12 +28,15 @@ export function useWidgetData<T>(
   fetcherRef.current = fetcher
 
   const fetchData = useCallback(async () => {
+    console.log('[useWidgetData] fetchData starting for', widget.id)
     setIsLoading(true)
     setError(null)
     setWidgetLoading(widget.id, true)
     setWidgetError(widget.id, null)
     try {
+      console.log('[useWidgetData] calling fetcher for', widget.id, 'prompt:', widget.prompt)
       const result = await fetcherRef.current(widget.prompt) as any
+      console.log('[useWidgetData] fetcher result for', widget.id, ':', result)
       if (result?.error || result?.status === 'error') {
         const msg = result?.error || errorMessage
         setError(msg)
@@ -46,10 +49,12 @@ export function useWidgetData<T>(
         setFetchedAt(Date.now())
       }
     } catch (err: any) {
+      console.error('[useWidgetData] fetch error for', widget.id, ':', err)
       const msg = err?.message || errorMessage
       setError(msg)
       setWidgetError(widget.id, msg)
     } finally {
+      console.log('[useWidgetData] fetchData finished for', widget.id)
       setIsLoading(false)
       setWidgetLoading(widget.id, false)
     }
@@ -58,7 +63,9 @@ export function useWidgetData<T>(
   // Fetch on mount / refresh trigger (skip if data already provided)
   const hasInitialData = !!widget.data
   useEffect(() => {
+    console.log('[useWidgetData] effect triggered', widget.id, 'hasInitialData:', hasInitialData, 'widget.data:', widget.data)
     if (hasInitialData) return
+    console.log('[useWidgetData] calling fetchData for', widget.id)
     fetchData()
   }, [widget.id, refreshTrigger, fetchData, hasInitialData])
 

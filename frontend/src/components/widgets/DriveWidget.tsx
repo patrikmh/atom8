@@ -3,7 +3,7 @@ import { WidgetConfig } from '@/types'
 import { FileText, FileSpreadsheet, Image, File, Folder, HardDrive } from 'lucide-react'
 import { apiClient } from '@/services/api'
 import { useWidgetData } from '@/hooks/useWidgetData'
-import { WidgetLoading, WidgetEmpty, WidgetError, WidgetRefreshBar } from './WidgetUI'
+import { WidgetLoading, WidgetEmpty, WidgetError, WidgetRawText } from './WidgetUI'
 
 interface DriveData {
   files?: any[]
@@ -41,6 +41,9 @@ const DriveWidget = ({ widget }: { widget: WidgetConfig }) => {
 
   const rawFiles = data?.files || []
   const files = error ? [] : rawFiles
+  // Fallback: if backend returns raw text in `data` array, render it
+  const textData = data?.data || []
+  const hasText = !error && files.length === 0 && textData.length > 0
 
   const getFileType = (file: any) => {
     if (file.icon) return file.icon
@@ -78,6 +81,10 @@ const DriveWidget = ({ widget }: { widget: WidgetConfig }) => {
 
   if (error) {
     return <WidgetError message={error} onRetry={fetchData} />
+  }
+
+  if (hasText) {
+    return <WidgetRawText text={textData.join('\n')} onRefresh={fetchData} fetchedAt={fetchedAt} />
   }
 
   if (files.length === 0) {

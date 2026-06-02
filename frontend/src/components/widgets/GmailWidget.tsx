@@ -2,7 +2,7 @@ import { useCallback } from 'react'
 import { WidgetConfig } from '@/types'
 import { apiClient } from '@/services/api'
 import { useWidgetData } from '@/hooks/useWidgetData'
-import { WidgetLoading, WidgetEmpty, WidgetError, WidgetRefreshBar } from './WidgetUI'
+import { WidgetLoading, WidgetEmpty, WidgetError, WidgetRawText } from './WidgetUI'
 
 interface GmailData {
   emails?: any[]
@@ -43,11 +43,18 @@ const GmailWidget = ({ widget }: { widget: WidgetConfig }) => {
 
   const rawEmails = data?.emails || []
   const emails = error ? [] : rawEmails
+  // Fallback: if backend returns raw text in `data` array, render it
+  const textData = data?.data || []
+  const hasText = !error && emails.length === 0 && textData.length > 0
 
   if (isLoading) return <WidgetLoading />
 
   if (error) {
     return <WidgetError message={error} onRetry={fetchData} />
+  }
+
+  if (hasText) {
+    return <WidgetRawText text={textData.join('\n')} onRefresh={fetchData} fetchedAt={fetchedAt} />
   }
 
   if (emails.length === 0) {

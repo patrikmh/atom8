@@ -1,120 +1,83 @@
+"""Pydantic request/response models."""
+from typing import Any, Optional
+
 from pydantic import BaseModel
-from typing import Optional, List, Any
-from datetime import datetime
 
 
-class HealthResponse(BaseModel):
-    status: str
+# ─── Auth ─────────────────────────────────────────────────────────────────────
+
+class AuthRequest(BaseModel):
+    code: str
+    redirect_uri: str = "http://localhost:5173/oauth/callback"
 
 
-class GmailRequest(BaseModel):
+class AuthStatus(BaseModel):
+    authenticated: bool
+    email: str | None = None
+    name: str | None = None
+    is_expired: bool = False
+
+
+# ─── Data ─────────────────────────────────────────────────────────────────────
+
+class DataRequest(BaseModel):
+    prompt: str
     count: int = 10
-    prompt: Optional[str] = None
-
-
-class CalendarRequest(BaseModel):
     date: Optional[str] = None
-    prompt: Optional[str] = None
+    list_id: Optional[str] = None
+    folder_id: Optional[str] = None
 
 
-class TasksRequest(BaseModel):
-    list_id: Optional[str] = "default"
-    prompt: Optional[str] = None
+class DataResponse(BaseModel):
+    data: list[Any]
+    count: int
+    status: str = "ok"
+    error: Optional[str] = None
 
 
-class DriveRequest(BaseModel):
-    count: int = 10
-    prompt: Optional[str] = None
+# ─── Research ─────────────────────────────────────────────────────────────────
+
+class ResearchRequest(BaseModel):
+    topic: str
+    depth: str = "medium"  # shallow, medium, deep
+    max_results: int = 10
 
 
-class EmailItem(BaseModel):
-    id: str
-    from_name: str
-    from_email: str
-    subject: str
-    preview: str
-    date: str
-    is_read: bool = True
+class ResearchResponse(BaseModel):
+    findings: str
+    sources: list[str | dict]
+    status: str = "ok"
+    error: Optional[str] = None
 
 
-class GmailResponse(BaseModel):
-    emails: List[EmailItem]
+# ─── Chat ─────────────────────────────────────────────────────────────────────
 
+class ChatMessage(BaseModel):
+    role: str  # "user" | "assistant"
+    content: str
 
-class CalendarEvent(BaseModel):
-    id: str
-    title: str
-    start: str
-    end: str
-    location: Optional[str] = None
-    color: str = "#4285f4"
-
-
-class CalendarResponse(BaseModel):
-    events: List[CalendarEvent]
-    date: str
-
-
-class TaskItem(BaseModel):
-    id: str
-    title: str
-    completed: bool
-    priority: str = "medium"
-    due_date: Optional[str] = None
-
-
-class TasksResponse(BaseModel):
-    tasks: List[TaskItem]
-
-
-class DriveFile(BaseModel):
-    id: str
-    name: str
-    mime_type: str
-    size: Optional[str] = None
-    modified: str
-
-
-class DriveResponse(BaseModel):
-    files: List[DriveFile]
-
-
-class LayoutSave(BaseModel):
-    widgets_json: str
-    background_json: str
-    sidebar_open: bool = True
-
-
-class UserToken(BaseModel):
-    access_token: str
-    refresh_token: Optional[str] = None
-    expires_at: Optional[datetime] = None
-
-
-# ─── AI Endpoint Request Models ─────────────────────────────────────────────
 
 class ChatRequest(BaseModel):
     message: str
     session_id: Optional[str] = None
+    history: list[ChatMessage] = []
 
 
-class ChatClearRequest(BaseModel):
+class ChatResponse(BaseModel):
+    response: str
     session_id: str
+    status: str = "ok"
+    error: Optional[str] = None
 
 
-class ChatNewRequest(BaseModel):
-    session_id: Optional[str] = None
+# ─── Dashboard ────────────────────────────────────────────────────────────────
+
+class DashboardLayout(BaseModel):
+    layout: dict[str, Any]
 
 
-class ResearchRequest(BaseModel):
-    topic: str
+# ─── Health ───────────────────────────────────────────────────────────────────
 
-
-class DesignRequest(BaseModel):
-    layout: dict
-
-
-# ─── Dashboard Cache Request Model ──────────────────────────────────────────
-
-class WidgetCacheRequest(BaseModel):
-    data: dict
+class HealthResponse(BaseModel):
+    status: str
+    version: str = "3.0.0"

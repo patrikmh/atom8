@@ -1,177 +1,207 @@
-from fastapi import APIRouter, HTTPException, Depends
-from sqlalchemy.orm import Session
-from datetime import datetime
-import os
+"""Google OAuth authentication router."""
+import json
+import urllib.parse
+import urllib.request
 
-from database import Base, SessionLocal, User, get_db
-from models import UserToken
-from services.google_api import get_google_token, get_access_token
+from fastapi import APIRouter, HTTPException
+from fastapi.responses import HTMLResponse, JSONResponse
+
+from auth_manager import get_google_credentials, is_authenticated, save_auth, load_auth, get_auth_email, is_token_expired
+from config import settings
+from models import AuthRequest, AuthStatus
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 
 
-@router.post("/google/token")
-async def store_google_token(token: UserToken, db: Session = Depends(get_db)):
-    """Store Google OAuth tokens after user completes OAuth flow."""
-    user_id = "default"  # v1: single user
-    
-    user = db.query(User).filter(User.id == user_id).first()
-    if not user:
-        user = User(
-            id=user_id,
-            email="user@example.com",
-            google_access_token=token.access_token,
-            google_refresh_token=token.refresh_token,
-            google_token_expiry=token.expires_at,
-            created_at=datetime.utcnow(),
-        )
-        db.add(user)
-    else:
-        user.google_access_token = token.access_token
-        if token.refresh_token:
-            user.google_refresh_token = token.refresh_token
-        user.google_token_expiry = token.expires_at
-    
-    db.commit()
-    return {"status": "ok", "message": "Token stored"}
-
-
-@router.get("/google/url")
-async def get_google_auth_url():
-    """Generate Google OAuth URL for the user to authenticate."""
-    client_id = os.getenv("GOOGLE_CLIENT_ID")
-    if not client_id:
-        raise HTTPException(status_code=500, detail="Google OAuth not configured")
-    
-    # Use the current backend host for redirect
-    redirect_uri = "http://localhost:8000/api/auth/google/callback"
-    
-    scopes = [
-        "https://www.googleapis.com/auth/gmail.readonly",
-        "https://www.googleapis.com/auth/calendar.readonly",
-        "https://www.googleapis.com/auth/tasks.readonly",
-        "https://www.googleapis.com/auth/drive.readonly",
-    ]
-    
-    url = (
-        "https://accounts.google.com/o/oauth2/v2/auth"
-        f"?client_id={client_id}"
-        f"&redirect_uri={redirect_uri}"
-        "&response_type=code"
-        "&access_type=offline"
-        "&prompt=consent"
-        f"&scope={'+'.join(scopes)}"
-    )
-    
-    return {"url": url}
-
-
-@router.get("/google/callback")
-async def google_auth_callback(code: str):
-    """Handle Google OAuth callback."""
-    import httpx
-    
-    client_id = os.getenv("GOOGLE_CLIENT_ID")
-    client_secret = os.getenv("GOOGLE_CLIENT_SECRET")
+@router.post("/google")
+async def google_auth(request: AuthRequest):
+    """Exchange Google OAuth code for tokens and store in auth.json."""
+    client_id, client_secret = get_google_credentials()
     if not client_id or not client_secret:
-        raise HTTPException(status_code=500, detail="Google OAuth not configured")
-    
-    redirect_uri = "http://localhost:8000/api/auth/google/callback"
-    
-    async with httpx.AsyncClient() as client:
-        resp = await client.post(
-            "https://oauth2.googleapis.com/token",
-            data={
-                "code": code,
-                "client_id": client_id,
-                "client_secret": client_secret,
-                "redirect_uri": redirect_uri,
-                "grant_type": "authorization_code",
-            },
-            headers={"Content-Type": "application/x-www-form-urlencoded"},
-        )
-    
-    if resp.status_code != 200:
-        raise HTTPException(status_code=400, detail=f"Google OAuth failed: {resp.text}")
-    
-    data = resp.json()
-    
-    # Store token in auth.json for compatibility with google_api.py
+        raise HTTPException(500, "Google OAuth credentials not configured")
+
+    data = urllib.parse.urlencode({
+        "code": request.code,
+        "client_id": client_id,
+        "client_secret": client_secret,
+        "redirect_uri": request.redirect_uri,
+        "grant_type": "authorization_code",
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        "https://oauth2.googleapis.com/token",
+        data=data,
+        headers={"Content-Type": "application/x-www-form-urlencoded"},
+        method="POST",
+    )
+
     try:
-        import json
-        auth_path = os.path.expanduser("~/.pi/agent/auth.json")
-        with open(auth_path, "r") as f:
-            auth = json.load(f)
-        
-        auth["google-antigravity"] = {
-            "type": "oauth",
-            "access": data.get("access_token"),
-            "refresh": data.get("refresh_token"),
-            "expires": int((datetime.utcnow().timestamp() + data.get("expires_in", 3600)) * 1000),
-        }
-        
-        with open(auth_path, "w") as f:
-            json.dump(auth, f, indent=2)
+        with urllib.request.urlopen(req) as resp:
+            result = json.loads(resp.read())
     except Exception as e:
-        print(f"Failed to store token: {e}")
-    
-    return {
-        "status": "ok",
-        "message": "Authentication successful. You can close this window.",
-    }
+        raise HTTPException(400, f"Token exchange failed: {e}")
+
+    access_token = result.get("access_token")
+    if not access_token:
+        raise HTTPException(400, "No access token received")
+
+    _store_google_tokens(result)
+
+    return {"status": "ok", "authenticated": True}
+
+
+# Frontend-compatible aliases
+@router.post("/google/token")
+async def google_auth_alias(request: AuthRequest):
+    """Alias for /google for frontend compatibility."""
+    return await google_auth(request)
+
+
+@router.get("/status")
+async def auth_status():
+    """Check if Google OAuth is authenticated."""
+    return AuthStatus(
+        authenticated=is_authenticated(),
+        email=get_auth_email(),
+        is_expired=is_token_expired(),
+    )
 
 
 @router.get("/google/status")
-async def get_google_auth_status(db: Session = Depends(get_db)):
-    """Check if Google OAuth is configured."""
-    # Check auth.json first (primary source)
-    token = get_google_token()
-    if token and token.get("access"):
-        # Check if token is valid by trying to refresh or get access token
-        access = await get_access_token()
-        if access:
-            return {"authenticated": True, "has_token": True, "is_expired": False}
-        return {"authenticated": False, "has_token": True, "is_expired": True}
-    
-    # Fallback to DB
-    user = db.query(User).filter(User.id == "default").first()
-    
-    if not user:
-        return {"authenticated": False, "has_token": False, "is_expired": False}
-    
-    has_token = bool(user.google_access_token)
-    is_expired = False
-    if user.google_token_expiry and user.google_token_expiry < datetime.utcnow():
-        is_expired = True
-    
-    return {
-        "authenticated": has_token and not is_expired,
-        "has_token": has_token,
-        "is_expired": is_expired,
-    }
+async def auth_status_alias():
+    """Alias for /status for frontend compatibility."""
+    return await auth_status()
+
+
+@router.get("/url")
+async def auth_url():
+    """Get the Google OAuth authorization URL."""
+    client_id = settings.google_client_id
+    redirect_uri = settings.google_redirect_uri
+    scope = "https://www.googleapis.com/auth/gmail.readonly https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/tasks.readonly https://www.googleapis.com/auth/drive.readonly"
+
+    url = (
+        "https://accounts.google.com/o/oauth2/v2/auth?"
+        f"client_id={urllib.parse.quote(client_id)}"
+        f"&redirect_uri={urllib.parse.quote(redirect_uri)}"
+        f"&scope={urllib.parse.quote(scope)}"
+        "&response_type=code"
+        "&access_type=offline"
+        "&prompt=consent"
+    )
+    return {"url": url}
+
+
+@router.get("/google/url")
+async def auth_url_alias():
+    """Alias for /url for frontend compatibility."""
+    return await auth_url()
+
+
+@router.post("/logout")
+async def logout():
+    """Clear auth tokens."""
+    auth_data = load_auth()
+    for key in ["google-antigravity", "google", "gmail", "google-gemini-cli"]:
+        auth_data.pop(key, None)
+    save_auth(auth_data)
+    return {"status": "ok", "authenticated": False}
 
 
 @router.delete("/google")
-async def clear_google_auth(db: Session = Depends(get_db)):
-    """Clear Google auth tokens."""
-    user = db.query(User).filter(User.id == "default").first()
-    if user:
-        user.google_access_token = None
-        user.google_refresh_token = None
-        user.google_token_expiry = None
-        db.commit()
-    
-    # Also clear auth.json
+async def logout_alias():
+    """Alias for /logout for frontend compatibility."""
+    return await logout()
+
+
+def _fetch_google_email(access_token: str) -> str | None:
+    """Fetch the user's email from Google UserInfo API."""
     try:
-        import json
-        auth_path = os.path.expanduser("~/.pi/agent/auth.json")
-        with open(auth_path, "r") as f:
-            auth = json.load(f)
-        if "google-antigravity" in auth:
-            del auth["google-antigravity"]
-        with open(auth_path, "w") as f:
-            json.dump(auth, f, indent=2)
+        req = urllib.request.Request(
+            "https://www.googleapis.com/oauth2/v2/userinfo",
+            headers={"Authorization": f"Bearer {access_token}"},
+        )
+        with urllib.request.urlopen(req) as resp:
+            user_info = json.loads(resp.read())
+            return user_info.get("email")
     except Exception:
-        pass
-    
-    return {"status": "ok", "message": "Auth cleared"}
+        return None
+
+
+def _store_google_tokens(result: dict) -> None:
+    """Store Google OAuth tokens in auth.json with proper timestamp."""
+    import time
+    access_token = result.get("access_token")
+    refresh_token = result.get("refresh_token")
+    expires_in = result.get("expires_in", 3600)
+    email = _fetch_google_email(access_token) if access_token else None
+
+    auth_data = load_auth()
+    auth_data["google-antigravity"] = {
+        "access_token": access_token,
+        "refresh_token": refresh_token,
+        "token_type": result.get("token_type", "Bearer"),
+        "expires": int(time.time() * 1000) + (expires_in * 1000),
+        "expires_in": expires_in,
+        "scope": result.get("scope", ""),
+        "email": email,
+    }
+    save_auth(auth_data)
+
+
+async def process_google_callback(code: str):
+    """Exchange Google OAuth code and store tokens."""
+    if not code:
+        return JSONResponse({"status": "error", "message": "No code provided"}, status_code=400)
+
+    client_id, client_secret = get_google_credentials()
+    if not client_id or not client_secret:
+        return JSONResponse({"status": "error", "message": "Missing credentials"}, status_code=500)
+
+    data = urllib.parse.urlencode({
+        "code": code,
+        "client_id": client_id,
+        "client_secret": client_secret,
+        "redirect_uri": settings.google_redirect_uri,
+        "grant_type": "authorization_code",
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        "https://oauth2.googleapis.com/token",
+        data=data,
+        headers={"Content-Type": "application/x-www-form-urlencoded"},
+        method="POST",
+    )
+
+    try:
+        with urllib.request.urlopen(req) as resp:
+            result = json.loads(resp.read())
+    except Exception as e:
+        return JSONResponse({"status": "error", "message": f"Token exchange failed: {e}"}, status_code=400)
+
+    access_token = result.get("access_token")
+    if not access_token:
+        return JSONResponse({"status": "error", "message": "No access token received"}, status_code=400)
+
+    _store_google_tokens(result)
+
+    # Return HTML that closes the popup and signals success
+    html = """<!DOCTYPE html>
+<html>
+<head><title>Auth Complete</title></head>
+<body style="font-family:system-ui;text-align:center;padding:40px;">
+  <h2 style="color:green;">Google Connected</h2>
+  <p>You can close this window and return to the app.</p>
+  <script>
+    window.opener.postMessage({type: 'google-auth-success'}, '*');
+    setTimeout(() => window.close(), 1500);
+  </script>
+</body>
+</html>"""
+    return HTMLResponse(html)
+
+
+@router.get("/google/callback")
+async def google_callback(code: str = ""):
+    """Handle OAuth redirect from Google popup."""
+    return await process_google_callback(code)

@@ -1,6 +1,7 @@
 import { useCallback } from 'react'
 import { WidgetConfig } from '@/types'
 import { Puzzle, Loader2, Mail, Calendar, CheckSquare, HardDrive, Globe, Sparkles, ChevronRight } from 'lucide-react'
+import { WidgetRawText } from './WidgetUI'
 import { apiClient } from '@/services/api'
 import { useWidgetData } from '@/hooks/useWidgetData'
 import { useLayoutStore } from '@/stores/layoutStore'
@@ -50,41 +51,33 @@ const CustomWidget = ({ widget }: { widget: WidgetConfig }) => {
 
     if (intent === 'gmail') {
       const data = await apiClient.getGmail(10, prompt) as any
-      if (data?.emails?.length) {
-        const lines = data.emails.map((e: any, i: number) =>
-          `${i + 1}. ${e.subject || '(no subject)'} from ${e.from_name || e.from_email || 'Unknown'}`
-        )
-        result = { result: `Found ${data.emails.length} email(s):\n${lines.join('\n')}`, sources: [] }
+      const text = data?.data?.join('\n') || ''
+      if (text.trim()) {
+        result = { result: text, sources: [] }
       } else {
         result = { result: 'No emails found.', sources: [] }
       }
     } else if (intent === 'calendar') {
       const data = await apiClient.getCalendar(undefined, prompt) as any
-      if (data?.events?.length) {
-        const lines = data.events.map((e: any, i: number) =>
-          `${i + 1}. ${e.title || e.summary || '(no title)'} at ${e.start || 'N/A'}`
-        )
-        result = { result: `Found ${data.events.length} event(s):\n${lines.join('\n')}`, sources: [] }
+      const text = data?.data?.join('\n') || ''
+      if (text.trim()) {
+        result = { result: text, sources: [] }
       } else {
         result = { result: 'No events found.', sources: [] }
       }
     } else if (intent === 'tasks') {
       const data = await apiClient.getTasks('default', prompt) as any
-      if (data?.tasks?.length) {
-        const lines = data.tasks.map((t: any, i: number) =>
-          `${i + 1}. ${t.completed ? '✓' : '○'} ${t.title || '(no title)'}`
-        )
-        result = { result: `Found ${data.tasks.length} task(s):\n${lines.join('\n')}`, sources: [] }
+      const text = data?.data?.join('\n') || ''
+      if (text.trim()) {
+        result = { result: text, sources: [] }
       } else {
         result = { result: 'No tasks found.', sources: [] }
       }
     } else if (intent === 'drive') {
       const data = await apiClient.getDrive(10, prompt) as any
-      if (data?.files?.length) {
-        const lines = data.files.map((f: any, i: number) =>
-          `${i + 1}. ${f.name || '(no name)'} (${f.mime_type || 'unknown'})`
-        )
-        result = { result: `Found ${data.files.length} file(s):\n${lines.join('\n')}`, sources: [] }
+      const text = data?.data?.join('\n') || ''
+      if (text.trim()) {
+        result = { result: text, sources: [] }
       } else {
         result = { result: 'No files found.', sources: [] }
       }
@@ -96,7 +89,7 @@ const CustomWidget = ({ widget }: { widget: WidgetConfig }) => {
     return result as CustomData
   }, [])
 
-  const { data, isLoading, error, fetchData } = useWidgetData<CustomData>(
+  const { data, isLoading, error, fetchedAt, fetchData } = useWidgetData<CustomData>(
     widget,
     fetcher,
     'Failed to fetch data',
@@ -172,10 +165,10 @@ const CustomWidget = ({ widget }: { widget: WidgetConfig }) => {
   return (
     <div className="flex flex-col h-full">
       {data?.result ? (
-        <div className="space-y-3">
-          <div className="text-sm leading-relaxed whitespace-pre-wrap">{data.result}</div>
+        <div className="space-y-3 flex-1 overflow-hidden flex flex-col">
+          <WidgetRawText text={data.result} onRefresh={fetchData} fetchedAt={fetchedAt} />
           {data.sources && data.sources.length > 0 && (
-            <div className="space-y-1">
+            <div className="space-y-1 px-2 pb-2">
               <div className="text-xs font-semibold text-gray-500 uppercase">Sources</div>
               {data.sources.map((source, idx) => (
                 <a

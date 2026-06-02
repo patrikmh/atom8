@@ -1,46 +1,65 @@
+"""FastAPI entry point for the headless pi backend."""
+import asyncio
+import signal
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from dotenv import load_dotenv
-import os
 
-# Load .env from project root (one directory above backend/)
-load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env'))
+from config import settings
+from pi_rpc import pi_manager
+from models import HealthResponse
+from routers import auth, data, ai, dashboard
+from routers.auth import process_google_callback
 
-from database import init_db
-from routers import data, auth, dashboard, ai
 
-app = FastAPI(title="Living Canvas Dashboard API", version="0.2.0")
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Startup: init all pi RPC pools. Shutdown: close them."""
+    # Startup
+    await pi_manager.init()
+    yield
+    # Shutdown
+    await pi_manager.close()
 
-# CORS — configurable via environment for production safety
-CORS_ORIGINS = os.getenv("CORS_ALLOW_ORIGINS", "*").split(",")
-CORS_CREDENTIALS = os.getenv("CORS_ALLOW_CREDENTIALS", "false").lower() == "true"
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=CORS_ORIGINS,
-    allow_credentials=CORS_CREDENTIALS,
-    allow_methods=["*"],
-    allow_headers=["*"],
-    expose_headers=["*"],
+app = FastAPI(
+    title="Living Canvas API",
+    description="Headless pi backend with skill-driven endpoints",
+    version="3.0.0",
+    lifespan=lifespan,
 )
 
-# Init DB
-init_db()
+# CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=settings.cors_origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Routers
-app.include_router(data.router)
 app.include_router(auth.router)
-app.include_router(dashboard.router)
+app.include_router(data.router)
 app.include_router(ai.router)
+app.include_router(dashboard.router)
 
-@app.get("/health")
+
+@app.get("/health", response_model=HealthResponse)
 async def health():
-    return {"status": "ok"}
+    """Health check endpoint."""
+    return HealthResponse(status="ok")
+
 
 @app.get("/")
-async def root():
-    return {"message": "Living Canvas Dashboard API", "version": "0.2.0"}
+async def root(code: str = ""):
+    """API root. Also handles OAuth callback at redirect_uri root."""
+    if code:
+        return await process_google_callback(code)
+    return {"message": "Living Canvas API v3.0", "docs": "/docs"}
+
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

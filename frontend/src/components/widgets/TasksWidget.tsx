@@ -3,7 +3,7 @@ import { WidgetConfig } from '@/types'
 import { CheckCircle2, Circle, ListTodo } from 'lucide-react'
 import { apiClient } from '@/services/api'
 import { useWidgetData } from '@/hooks/useWidgetData'
-import { WidgetLoading, WidgetEmpty, WidgetError, WidgetRefreshBar } from './WidgetUI'
+import { WidgetLoading, WidgetEmpty, WidgetError, WidgetRawText } from './WidgetUI'
 
 interface TasksData {
   tasks?: any[]
@@ -44,6 +44,9 @@ const TasksWidget = ({ widget }: { widget: WidgetConfig }) => {
 
   const rawTasks = data?.tasks || []
   const tasks = error ? [] : rawTasks
+  // Fallback: if backend returns raw text in `data` array, render it
+  const textData = data?.data || []
+  const hasText = !error && tasks.length === 0 && textData.length > 0
 
   if (isLoading) return <WidgetLoading />
 
@@ -51,9 +54,17 @@ const TasksWidget = ({ widget }: { widget: WidgetConfig }) => {
     return <WidgetError message={error} onRetry={fetchData} />
   }
 
+  if (hasText) {
+    return <WidgetRawText text={textData.join('\n')} onRefresh={fetchData} fetchedAt={fetchedAt} />
+  }
+
   if (tasks.length === 0) {
     return <WidgetEmpty message="No tasks" subtext="All caught up! Add tasks in Google Tasks to see them here." onRefresh={fetchData} />
   }
+
+  // Hide priority badge when all tasks share the same priority (redundant visual noise)
+  const priorities = new Set(tasks.map((t: any) => t.priority || 'medium'))
+  const showPriority = priorities.size > 1
 
   return (
     <div className="space-y-1">
@@ -82,9 +93,11 @@ const TasksWidget = ({ widget }: { widget: WidgetConfig }) => {
                 <div className="text-xs text-gray-400 mt-0.5">{dueDate}</div>
               )}
             </div>
-            <span className={`text-[10px] px-2 py-0.5 rounded-full font-medium shrink-0 ${colorClass}`}>
-              {priority}
-            </span>
+            {showPriority && (
+              <span className={`text-[10px] px-2 py-0.5 rounded-full font-medium shrink-0 ${colorClass}`}>
+                {priority}
+              </span>
+            )}
           </div>
         )
       })}

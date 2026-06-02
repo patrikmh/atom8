@@ -187,7 +187,7 @@ const Canvas = () => {
         />
       )}
 
-      <div className="absolute top-4 right-4 z-10 flex gap-2">
+      <div className="absolute top-4 right-4 z-50 flex gap-2">
         <SettingsPanel />
       </div>
       <div aria-live="polite" aria-atomic="true" className="sr-only">

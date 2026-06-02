@@ -2,6 +2,7 @@ node_modules/
 __pycache__/
 *.pyc
 .env
+**/.env
 *.db
 *.log
 dist/
@@ -15,4 +16,5 @@ dist/
 *.yml
 !frontend/*.yaml
 !frontend/*.yml
+dashboard_layout.json
 
