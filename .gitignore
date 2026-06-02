@@ -9,4 +9,10 @@ dist/
 .DS_Store
 .playwright-cli/
 .pi/tasks/
+*.png
+*.xml
+*.yaml
+*.yml
+!frontend/*.yaml
+!frontend/*.yml
 
