@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
 from models import GmailRequest, CalendarRequest, TasksRequest, DriveRequest
 from services.pi_data_fetch import fetch_gmail_pi, fetch_calendar_pi, fetch_tasks_pi, fetch_drive_pi
 
