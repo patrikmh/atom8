@@ -4,14 +4,12 @@ import { CheckCircle2, Circle, Loader2, ListTodo } from 'lucide-react'
 import { apiClient } from '@/services/api'
 import { useLayoutStore } from '@/stores/layoutStore'
 
-const MOCK_TASKS = [
-  { id: '1', title: 'Review PR #234', completed: false, priority: 'high' },
-  { id: '2', title: 'Update documentation', completed: false, priority: 'medium' },
-  { id: '3', title: 'Fix login bug', completed: true, priority: 'high' },
-  { id: '4', title: 'Prepare demo', completed: false, priority: 'high' },
-  { id: '5', title: 'Email stakeholders', completed: true, priority: 'low' },
-  { id: '6', title: 'Deploy to staging', completed: false, priority: 'medium' },
-]
+interface TasksData {
+  tasks?: any[]
+  error?: string
+  status?: string
+  needs_auth?: boolean
+}
 
 const priorityColors: Record<string, string> = {
   high: 'bg-red-100 text-red-700',
@@ -28,7 +26,8 @@ const TasksWidget = ({ widget }: { widget: WidgetConfig }) => {
   const [error, setError] = useState<string | null>(null)
 
   const rawTasks = (widget.data as any)?.tasks || localData?.tasks || []
-  const [tasks, setTasks] = useState(rawTasks.length > 0 ? rawTasks : MOCK_TASKS)
+  const hasError = !!(widget.error || error || (localData as TasksData)?.error || (widget.data as TasksData)?.error)
+  const [tasks, setTasks] = useState(rawTasks.length > 0 && !hasError ? rawTasks : [])
   const refreshTrigger = useLayoutStore((s) => s.refreshTriggers[widget.id])
 
   const fetchData = async () => {
@@ -37,11 +36,20 @@ const TasksWidget = ({ widget }: { widget: WidgetConfig }) => {
     setWidgetLoading(widget.id, true)
     setWidgetError(widget.id, null)
     try {
-      const data = await apiClient.getTasks('default', widget.prompt) as any
-      setLocalData(data)
-      setWidgetData(widget.id, data)
-      if (data?.tasks) {
-        setTasks(data.tasks)
+      const data = await apiClient.getTasks('default', widget.prompt) as TasksData
+      if (data.error || data.status === 'error') {
+        const msg = data.error || 'Failed to load tasks'
+        console.error(`[TasksWidget] API error:`, msg)
+        setError(msg)
+        setWidgetError(widget.id, msg)
+        setLocalData(data)
+        setWidgetData(widget.id, data)
+      } else {
+        setLocalData(data)
+        setWidgetData(widget.id, data)
+        if (data?.tasks) {
+          setTasks(data.tasks)
+        }
       }
     } catch (err: any) {
       const msg = err.message || 'Failed to load tasks'
@@ -70,8 +78,9 @@ const TasksWidget = ({ widget }: { widget: WidgetConfig }) => {
 
   useEffect(() => {
     const newTasks = (widget.data as any)?.tasks || localData?.tasks || []
-    setTasks(newTasks.length > 0 ? newTasks : MOCK_TASKS)
-  }, [widget.data, localData])
+    const hasErr = !!(widget.error || error || (localData as TasksData)?.error || (widget.data as TasksData)?.error)
+    setTasks(newTasks.length > 0 && !hasErr ? newTasks : hasErr ? [] : [])
+  }, [widget.data, localData, widget.error, error])
 
   const toggleTask = (taskId: string) => {
     setTasks((prev: any[]) =>
@@ -81,7 +90,7 @@ const TasksWidget = ({ widget }: { widget: WidgetConfig }) => {
 
   const completed = tasks.filter((t: any) => t.completed).length
   const total = tasks.length
-  const displayError = widget.error || error
+  const displayError = widget.error || error || (localData as TasksData)?.error || (widget.data as TasksData)?.error
   const displayLoading = widget.isLoading || isLoading
 
   if (displayLoading) {

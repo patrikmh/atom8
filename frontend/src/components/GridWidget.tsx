@@ -120,9 +120,31 @@ const GridWidget = ({ widget }: { widget: WidgetConfig }) => {
     { value: 3600, label: '1 hour' },
   ]
 
+  const updateLayout = useLayoutStore((state) => state.updateLayout)
+  const widgets = useLayoutStore((state) => state.widgets)
+  const moveWidget = (dx: number, dy: number) => {
+    const target = widgets.find((w) => w.id === widget.id)
+    if (!target) return
+    const newLayout = widgets.map((w) =>
+      w.id === widget.id
+        ? { ...w.layout, x: Math.max(0, w.layout.x + dx), y: Math.max(0, w.layout.y + dy) }
+        : w.layout
+    )
+    updateLayout(newLayout)
+  }
+
   return (
     <div
       className="h-full w-full flex flex-col rounded-lg overflow-hidden shadow-sm"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.shiftKey) {
+          if (e.key === 'ArrowUp') { e.preventDefault(); moveWidget(0, -1) }
+          if (e.key === 'ArrowDown') { e.preventDefault(); moveWidget(0, 1) }
+          if (e.key === 'ArrowLeft') { e.preventDefault(); moveWidget(-1, 0) }
+          if (e.key === 'ArrowRight') { e.preventDefault(); moveWidget(1, 0) }
+        }
+      }}
       style={{
         backgroundColor: widget.style.backgroundColor || theme.widgetBg,
         borderColor: widget.style.borderColor || theme.widgetBorder,
@@ -140,7 +162,7 @@ const GridWidget = ({ widget }: { widget: WidgetConfig }) => {
         style={{ borderColor: theme.widgetBorder + '44', backgroundColor: theme.headerBg + '88' }}
       >
         <div className="flex items-center gap-2 flex-1 min-w-0">
-          <div className="drag-handle cursor-grab active:cursor-grabbing p-1 rounded hover:bg-black/10 transition-colors">
+          <div className="drag-handle cursor-grab active:cursor-grabbing p-2 rounded hover:bg-black/10 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center" title="Drag to move widget (Shift+Arrows to nudge)">
             <GripVertical className="w-4 h-4" style={{ color: theme.sidebarText + 'aa' }} />
           </div>
           {isEditingTitle ? (

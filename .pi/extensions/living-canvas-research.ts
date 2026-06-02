@@ -16,7 +16,6 @@ import { defineTool, type ExtensionAPI } from "@earendil-works/pi-coding-agent";
 import { Type } from "@earendil-works/pi-ai";
 import { readFile } from "node:fs/promises";
 import { request } from "node:https";
-import { exec } from "node:child_process";
 
 const AUTH_JSON_PATH = `${process.env.HOME || process.env.USERPROFILE}/.pi/agent/auth.json`;
 const GOOGLE_OAUTH_TOKEN_URL = "https://oauth2.googleapis.com/token";
@@ -246,175 +245,293 @@ async function fetchDrive(count: number = 10): Promise<any> {
   return { status: "ok", files };
 }
 
-async function doWebResearch(topic: string): Promise<any> {
-  // Use exec to run playwright-cli for browser-based research
-  const openCmd = `playwright-cli open "https://duckduckgo.com/?q=${encodeURIComponent(topic)}" 2>&1`;
-  const snapshotCmd = `playwright-cli snapshot 2>&1`;
-  const closeCmd = `playwright-cli close 2>&1`;
-  
-  return new Promise((resolve) => {
-    // Step 1: Open browser
-    exec(openCmd, { timeout: 15000 }, (openError, openStdout, openStderr) => {
-      if (openError) {
-        resolve({ status: "error", error: `Failed to open browser: ${openError.message}` });
-        return;
-      }
-      
-      // Step 2: Get snapshot
-      exec(snapshotCmd, { timeout: 15000 }, (snapError, snapStdout, snapStderr) => {
-        // Step 3: Close browser (always try to close)
-        exec(closeCmd, { timeout: 5000 }, () => {
-          if (snapError) {
-            resolve({ status: "error", error: `Failed to get snapshot: ${snapError.message}` });
-            return;
-          }
-          
-          const snapshot = snapStdout;
-          // Extract search results from snapshot
-          const results: any[] = [];
-          const resultRegex = /href="([^"]+)"[^>]*>\s*([^<]+)/g;
-          let match;
-          while ((match = resultRegex.exec(snapshot)) !== null && results.length < 5) {
-            const url = match[1];
-            const title = match[2].trim();
-            if (url.startsWith("http") && title.length > 3) {
-              results.push({ title, url, snippet: "" });
-            }
-          }
-          
-          // Also try to extract from result titles
-          const titleRegex = /data-testid="result-title-a"[^>]*>([^<]+)</g;
-          let titleMatch;
-          let i = 0;
-          while ((titleMatch = titleRegex.exec(snapshot)) !== null && i < results.length) {
-            results[i].title = titleMatch[1].trim();
-            i++;
-          }
-          
-          // Extract snippets
-          const snippetRegex = /data-testid="result-snippet"[^>]*>([^<]+)</g;
-          let snippetMatch;
-          let j = 0;
-          while ((snippetMatch = snippetRegex.exec(snapshot)) !== null && j < results.length) {
-            results[j].snippet = snippetMatch[1].trim();
-            j++;
-          }
+// Map common topic keywords to direct URLs to avoid search-engine CAPTCHAs
+const DIRECT_URL_MAP: Record<string, string> = {
+  sportbladet: "https://www.sportbladet.se",
+  aftonbladet: "https://www.aftonbladet.se",
+  svt: "https://www.svt.se",
+  expressen: "https://www.expressen.se",
+  dn: "https://www.dn.se",
+  svd: "https://www.svd.se",
+  di: "https://www.di.se",
+  gp: "https://www.gp.se",
+  sydsvenskan: "https://www.sydsvenskan.se",
+  hd: "https://www.hd.se",
+  hn: "https://www.hn.se",
+  nt: "https://www.nt.se",
+  vk: "https://www.vk.se",
+  op: "https://www.op.se",
+  gd: "https://www.gd.se",
+  arbetarbladet: "https://www.arbetarbladet.se",
+  norrländska: "https://www.norrländska.se",
+  norran: "https://www.norran.se",
+  norrteljetidning: "https://www.norrteljetidning.se",
+  upsala: "https://www.unt.se",
+  unt: "https://www.unt.se",
+  mitti: "https://www.mitti.se",
+  metro: "https://www.metro.se",
+  nyheter: "https://www.svt.se/nyheter",
+  bbc: "https://www.bbc.com/news",
+  cnn: "https://www.cnn.com",
+  reuters: "https://www.reuters.com",
+  ap: "https://apnews.com",
+  guardian: "https://www.theguardian.com",
+  nyt: "https://www.nytimes.com",
+  washingtonpost: "https://www.washingtonpost.com",
+  forbes: "https://www.forbes.com",
+  techcrunch: "https://techcrunch.com",
+  verge: "https://www.theverge.com",
+  arstechnica: "https://arstechnica.com",
+  hackernews: "https://news.ycombinator.com",
+  reddit: "https://www.reddit.com",
+  twitter: "https://twitter.com",
+  x: "https://x.com",
+  linkedin: "https://www.linkedin.com",
+  github: "https://github.com",
+  youtube: "https://www.youtube.com",
+  wikipedia: "https://en.wikipedia.org/wiki/Special:Search",
+};
 
-          resolve({
-            status: "ok",
-            topic,
-            summary: `Found ${results.length} results for "${topic}".`,
-            results,
-            sources: results.map((r: any) => r.url),
-          });
-        });
-      });
-    });
-  });
+function inferUrl(topic: string): string {
+  const lower = topic.toLowerCase();
+  if (topic.startsWith("http")) return topic;
+  for (const [key, url] of Object.entries(DIRECT_URL_MAP)) {
+    if (lower.includes(key)) return url;
+  }
+  return `https://duckduckgo.com/?q=${encodeURIComponent(topic)}`;
 }
 
-// ─── Tool Definitions ───
+function parseEvalOutput(stdout: string): any {
+  const marker = "### Result";
+  const idx = stdout.indexOf(marker);
+  if (idx !== -1) {
+    const after = stdout.slice(idx + marker.length).trim();
+    try {
+      return JSON.parse(after);
+    } catch {
+      return after;
+    }
+  }
+  // Try to find any JSON array in the output
+  const arrMatch = stdout.match(/\[[\s\S]*\]/);
+  if (arrMatch) {
+    try {
+      return JSON.parse(arrMatch[0]);
+    } catch {
+      return stdout;
+    }
+  }
+  return stdout;
+}
 
-const researchTopicTool = defineTool({
-  name: "research_topic",
-  label: "Research Topic",
-  description: "Perform web research on a topic and return a summary with sources.",
-  promptSnippet: "Research a topic on the web",
-  promptGuidelines: ["Use research_topic when the user asks for research, news, or information about a topic."],
-  parameters: Type.Object({
-    topic: Type.String({ description: "Topic to research" }),
-  }),
+async function doWebResearch(
+  topic: string,
+  pi: ExtensionAPI,
+  signal?: AbortSignal
+): Promise<any> {
+  const url = inferUrl(topic);
 
-  async execute(_toolCallId, params, _signal, _onUpdate, _ctx) {
-    const result = await doWebResearch(params.topic);
+  // Step 1: Open browser
+  const openResult = await pi.exec("playwright-cli", ["open", url], {
+    signal,
+    timeout: 20000,
+  });
+  if (openResult.code !== 0) {
     return {
-      content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
-      details: result,
+      status: "error",
+      error: `Browser open failed: ${openResult.stderr || openResult.stdout}`,
     };
-  },
-});
+  }
 
-const researchGmailTool = defineTool({
-  name: "research_gmail",
-  label: "Research Gmail",
-  description: "Search emails for a topic and return matching emails.",
-  promptSnippet: "Search emails for a topic",
-  promptGuidelines: ["Use research_gmail when the user asks about emails related to a topic."],
-  parameters: Type.Object({
-    topic: Type.String({ description: "Topic to search for" }),
-    count: Type.Optional(Type.Number({ description: "Number of emails to fetch (default 10)" })),
-  }),
-
-  async execute(_toolCallId, params, _signal, _onUpdate, _ctx) {
-    const result = await fetchGmail(params.count || 10, params.topic);
+  // Step 2: Check for CAPTCHA / block pages
+  const snapResult = await pi.exec("playwright-cli", ["snapshot"], {
+    signal,
+    timeout: 15000,
+  });
+  const snapLower = snapResult.stdout.toLowerCase();
+  if (
+    snapLower.includes("captcha") ||
+    snapLower.includes("ett sista steg") ||
+    snapLower.includes("lös utmaningen") ||
+    snapLower.includes("sorry, bots") ||
+    snapLower.includes("verify you are human") ||
+    snapLower.includes("i'm not a robot")
+  ) {
+    await pi.exec("playwright-cli", ["close"], { signal, timeout: 5000 });
     return {
-      content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
-      details: result,
+      status: "error",
+      error:
+        "The site blocked the automated request (CAPTCHA). Try a different topic or visit the site directly.",
     };
-  },
-});
+  }
 
-const researchCalendarTool = defineTool({
-  name: "research_calendar",
-  label: "Research Calendar",
-  description: "Find calendar events related to a topic.",
-  promptSnippet: "Find calendar events for a topic",
-  promptGuidelines: ["Use research_calendar when the user asks about events related to a topic."],
-  parameters: Type.Object({
-    date: Type.Optional(Type.String({ description: "Date to search (default: today)" })),
-  }),
+  // Step 3: Extract structured data via eval
+  const extractScript = `() => {
+    const results = [];
+    const seen = new Set();
+    const articles = document.querySelectorAll('article, [data-testid="article"], .article, .news-item, .story, .teaser, .post, .card');
+    articles.forEach(article => {
+      const link = article.querySelector('a');
+      const heading = article.querySelector('h1, h2, h3, h4, .title, .headline, [data-testid="result-title"], [data-testid="article-title"]');
+      const snippet = article.querySelector('p, .summary, .description, .excerpt, [data-testid="result-snippet"]');
+      const timeEl = article.querySelector('time, .time, .date, [data-testid="article-date"]');
+      if (link && heading) {
+        const href = link.href || link.getAttribute('href');
+        if (!href || seen.has(href)) return;
+        seen.add(href);
+        results.push({
+          title: heading.textContent.trim().replace(/\\s+/g, ' '),
+          url: href,
+          snippet: snippet ? snippet.textContent.trim().replace(/\\s+/g, ' ').substring(0, 300) : '',
+          date: timeEl ? timeEl.textContent.trim() : ''
+        });
+      }
+    });
+    // Fallback: grab any link with meaningful text inside article-like containers
+    if (results.length === 0) {
+      const allLinks = document.querySelectorAll('a');
+      allLinks.forEach(link => {
+        const href = link.href || link.getAttribute('href');
+        if (!href || seen.has(href)) return;
+        const text = link.textContent.trim();
+        if (text.length > 20 && href.startsWith('http') && !href.includes('/sok') && !href.includes('/search')) {
+          seen.add(href);
+          results.push({ title: text.replace(/\\s+/g, ' ').substring(0, 200), url: href, snippet: '', date: '' });
+        }
+      });
+    }
+    return results.slice(0, 12);
+  }`;
 
-  async execute(_toolCallId, params, _signal, _onUpdate, _ctx) {
-    const result = await fetchCalendar(params.date);
-    return {
-      content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
-      details: result,
-    };
-  },
-});
+  const extractResult = await pi.exec(
+    "playwright-cli",
+    ["eval", extractScript],
+    { signal, timeout: 15000 }
+  );
 
-const researchTasksTool = defineTool({
-  name: "research_tasks",
-  label: "Research Tasks",
-  description: "Find tasks related to a topic.",
-  promptSnippet: "Find tasks related to a topic",
-  promptGuidelines: ["Use research_tasks when the user asks about tasks related to a topic."],
-  parameters: Type.Object({
-    listId: Type.Optional(Type.String({ description: "Task list ID (default: first available)" })),
-  }),
+  // Step 4: Close browser
+  await pi.exec("playwright-cli", ["close"], { signal, timeout: 5000 });
 
-  async execute(_toolCallId, params, _signal, _onUpdate, _ctx) {
-    const result = await fetchTasks(params.listId || "default");
-    return {
-      content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
-      details: result,
-    };
-  },
-});
+  // Step 5: Parse results
+  let results: any[] = [];
+  try {
+    const parsed = parseEvalOutput(extractResult.stdout);
+    if (Array.isArray(parsed)) {
+      results = parsed;
+    }
+  } catch {
+    // ignore parse error
+  }
 
-const researchDriveTool = defineTool({
-  name: "research_drive",
-  label: "Research Drive",
-  description: "Find files related to a topic.",
-  promptSnippet: "Find recent files",
-  promptGuidelines: ["Use research_drive when the user asks about files related to a topic."],
-  parameters: Type.Object({
-    count: Type.Optional(Type.Number({ description: "Number of files to fetch (default 10)" })),
-  }),
+  return {
+    status: "ok",
+    topic,
+    summary: `Found ${results.length} results for "${topic}".`,
+    results,
+    sources: results.map((r: any) => r.url),
+  };
+}
 
-  async execute(_toolCallId, params, _signal, _onUpdate, _ctx) {
-    const result = await fetchDrive(params.count || 10);
-    return {
-      content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
-      details: result,
-    };
-  },
-});
+// ─── Tool Registration ───
+
+function registerTools(pi: ExtensionAPI) {
+  pi.registerTool(defineTool({
+    name: "research_topic",
+    label: "Research Topic",
+    description: "Perform web research on a topic and return a summary with sources.",
+    promptSnippet: "Research a topic on the web",
+    promptGuidelines: ["Use research_topic when the user asks for research, news, or information about a topic."],
+    parameters: Type.Object({
+      topic: Type.String({ description: "Topic to research" }),
+    }),
+
+    async execute(_toolCallId, params, signal, _onUpdate, _ctx) {
+      const result = await doWebResearch(params.topic, pi, signal);
+      return {
+        content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
+        details: result,
+      };
+    },
+  }));
+
+  pi.registerTool(defineTool({
+    name: "research_gmail",
+    label: "Research Gmail",
+    description: "Search emails for a topic and return matching emails.",
+    promptSnippet: "Search emails for a topic",
+    promptGuidelines: ["Use research_gmail when the user asks about emails related to a topic."],
+    parameters: Type.Object({
+      topic: Type.String({ description: "Topic to search for" }),
+      count: Type.Optional(Type.Number({ description: "Number of emails to fetch (default 10)" })),
+    }),
+
+    async execute(_toolCallId, params, _signal, _onUpdate, _ctx) {
+      const result = await fetchGmail(params.count || 10, params.topic);
+      return {
+        content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
+        details: result,
+      };
+    },
+  }));
+
+  pi.registerTool(defineTool({
+    name: "research_calendar",
+    label: "Research Calendar",
+    description: "Find calendar events related to a topic.",
+    promptSnippet: "Find calendar events for a topic",
+    promptGuidelines: ["Use research_calendar when the user asks about events related to a topic."],
+    parameters: Type.Object({
+      date: Type.Optional(Type.String({ description: "Date to search (default: today)" })),
+    }),
+
+    async execute(_toolCallId, params, _signal, _onUpdate, _ctx) {
+      const result = await fetchCalendar(params.date);
+      return {
+        content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
+        details: result,
+      };
+    },
+  }));
+
+  pi.registerTool(defineTool({
+    name: "research_tasks",
+    label: "Research Tasks",
+    description: "Find tasks related to a topic.",
+    promptSnippet: "Find tasks related to a topic",
+    promptGuidelines: ["Use research_tasks when the user asks about tasks related to a topic."],
+    parameters: Type.Object({
+      listId: Type.Optional(Type.String({ description: "Task list ID (default: first available)" })),
+    }),
+
+    async execute(_toolCallId, params, _signal, _onUpdate, _ctx) {
+      const result = await fetchTasks(params.listId || "default");
+      return {
+        content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
+        details: result,
+      };
+    },
+  }));
+
+  pi.registerTool(defineTool({
+    name: "research_drive",
+    label: "Research Drive",
+    description: "Find files related to a topic.",
+    promptSnippet: "Find recent files",
+    promptGuidelines: ["Use research_drive when the user asks about files related to a topic."],
+    parameters: Type.Object({
+      count: Type.Optional(Type.Number({ description: "Number of files to fetch (default 10)" })),
+    }),
+
+    async execute(_toolCallId, params, _signal, _onUpdate, _ctx) {
+      const result = await fetchDrive(params.count || 10);
+      return {
+        content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
+        details: result,
+      };
+    },
+  }));
+}
 
 export default function (pi: ExtensionAPI) {
-  pi.registerTool(researchTopicTool);
-  pi.registerTool(researchGmailTool);
-  pi.registerTool(researchCalendarTool);
-  pi.registerTool(researchTasksTool);
-  pi.registerTool(researchDriveTool);
+  registerTools(pi);
 }

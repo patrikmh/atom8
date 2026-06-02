@@ -1,4 +1,4 @@
-import { useCallback, useRef } from 'react'
+import { useCallback, useRef, useEffect } from 'react'
 import { WidthProvider } from 'react-grid-layout'
 import GridLayoutBase from 'react-grid-layout'
 import 'react-grid-layout/css/styles.css'
@@ -17,6 +17,8 @@ const Canvas = () => {
   const theme = useLayoutStore((state) => state.theme)
   const updateLayout = useLayoutStore((state) => state.updateLayout)
   const addWidget = useLayoutStore((state) => state.addWidget)
+  const newWidgetIds = useLayoutStore((state) => state.newWidgetIds)
+  const clearNewWidget = useLayoutStore((state) => state.clearNewWidget)
   const canvasRef = useRef<HTMLDivElement>(null)
 
   const handleLayoutChange = useCallback(
@@ -26,7 +28,7 @@ const Canvas = () => {
     [updateLayout]
   )
 
-  const [{ isOver, canDrop }, dropRef] = useDrop(() => ({
+  const [{ isOver, canDrop, itemType }, dropRef] = useDrop(() => ({
     accept: 'WIDGET',
     canDrop: (_item, monitor) => {
       const offset = monitor.getClientOffset()
@@ -66,8 +68,18 @@ const Canvas = () => {
     collect: (monitor) => ({
       isOver: !!monitor.isOver(),
       canDrop: !!monitor.canDrop(),
+      itemType: (monitor.getItem() as any)?.type || null,
     }),
   }))
+
+  // Clear new widget animation flags after animation completes
+  useEffect(() => {
+    if (newWidgetIds.size === 0) return
+    const timers = Array.from(newWidgetIds).map((id) =>
+      setTimeout(() => clearNewWidget(id), 350)
+    )
+    return () => timers.forEach(clearTimeout)
+  }, [newWidgetIds, clearNewWidget])
 
   const getBackgroundStyle = (bg: CanvasBackground): React.CSSProperties => {
     const base: React.CSSProperties = {
@@ -125,12 +137,15 @@ const Canvas = () => {
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m0 0l-4-4m4 4l4-4" />
             </svg>
-            Drop widget here
+            {itemType === 'WIDGET' ? 'Drop widget here' : 'Move widget here'}
           </div>
         </div>
       )}
       <div className="absolute top-4 right-4 z-10 flex gap-2">
         <SettingsPanel />
+      </div>
+      <div aria-live="polite" aria-atomic="true" className="sr-only">
+        {isOver && canDrop ? 'Drop zone active' : ''}
       </div>
       <GridLayout
         className="layout"
@@ -148,7 +163,10 @@ const Canvas = () => {
         preventCollision={false}
       >
         {widgets.map((widget) => (
-          <div key={widget.id}>
+          <div
+            key={widget.id}
+            className={newWidgetIds.has(widget.id) ? 'widget-appear' : ''}
+          >
             <GridWidget widget={widget} />
           </div>
         ))}

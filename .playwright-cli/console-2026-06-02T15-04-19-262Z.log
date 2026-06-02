@@ -1,6 +1,0 @@
-[     118ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://www.ecosia.org/search?q=a2ui+UI+framework:0
-[    1196ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a0575992eb034eff/1780412659865/e90474092bbd8077d276bee8fd4645ee25eeefc5934500b39c8c42514b4d5eac/B_R0oWv46O_A0bt:0
-[    1362ms] [ERROR] %c%d font-size:0;color:transparent NaN @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/lolzn/0x4AAAAAAADnPIDROrmt1Wwj/light/fbE/new/normal?lang=auto:0
-[    1362ms] [ERROR] %c%d font-size:0;color:transparent NaN @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/lolzn/0x4AAAAAAADnPIDROrmt1Wwj/light/fbE/new/normal?lang=auto:0
-[    1363ms] [WARNING] %c%d font-size:0;color:transparent NaN @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/lolzn/0x4AAAAAAADnPIDROrmt1Wwj/light/fbE/new/normal?lang=auto:0
-[    1363ms] [WARNING] %c%d font-size:0;color:transparent NaN @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/lolzn/0x4AAAAAAADnPIDROrmt1Wwj/light/fbE/new/normal?lang=auto:0

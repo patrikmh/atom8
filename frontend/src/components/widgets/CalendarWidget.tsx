@@ -4,13 +4,13 @@ import { WidgetConfig } from '@/types'
 import { apiClient } from '@/services/api'
 import { useLayoutStore } from '@/stores/layoutStore'
 
-const MOCK_EVENTS = [
-  { id: '1', title: 'Team Standup', start: '09:00', end: '09:30', color: '#3b82f6' },
-  { id: '2', title: 'Design Review', start: '10:30', end: '11:30', color: '#8b5cf6' },
-  { id: '3', title: 'Lunch with Client', start: '12:00', end: '13:00', color: '#f59e0b' },
-  { id: '4', title: 'Sprint Planning', start: '14:00', end: '15:30', color: '#10b981' },
-  { id: '5', title: '1:1 with Manager', start: '16:00', end: '16:30', color: '#ef4444' },
-]
+interface CalendarData {
+  events?: any[]
+  error?: string
+  status?: string
+  needs_auth?: boolean
+  date?: string
+}
 
 const CalendarWidget = ({ widget }: { widget: WidgetConfig }) => {
   const setWidgetData = useLayoutStore((s) => s.setWidgetData)
@@ -27,9 +27,18 @@ const CalendarWidget = ({ widget }: { widget: WidgetConfig }) => {
     setWidgetLoading(widget.id, true)
     setWidgetError(widget.id, null)
     try {
-      const data = await apiClient.getCalendar(undefined, widget.prompt)
-      setLocalData(data)
-      setWidgetData(widget.id, data)
+      const data = await apiClient.getCalendar(undefined, widget.prompt) as CalendarData
+      if (data.error || data.status === 'error') {
+        const msg = data.error || 'Failed to load calendar'
+        console.error(`[CalendarWidget] API error:`, msg)
+        setError(msg)
+        setWidgetError(widget.id, msg)
+        setLocalData(data)
+        setWidgetData(widget.id, data)
+      } else {
+        setLocalData(data)
+        setWidgetData(widget.id, data)
+      }
     } catch (err: any) {
       const msg = err.message || 'Failed to load calendar'
       console.error(`[CalendarWidget] fetch failed:`, msg)
@@ -56,17 +65,18 @@ const CalendarWidget = ({ widget }: { widget: WidgetConfig }) => {
   }, [widget.id, widget.refreshInterval])
 
   const rawEvents = (widget.data as any)?.events || localData?.events || []
+  const hasError = !!(widget.error || error || (localData as CalendarData)?.error || (widget.data as CalendarData)?.error)
   // Normalize API field names (Google returns 'summary' but we render 'title',
   // and ISO timestamps need formatting while mock data has pre-formatted times)
-  const events = rawEvents.length > 0
+  const events = rawEvents.length > 0 && !hasError
     ? rawEvents.map((e: any) => ({
         ...e,
         title: e.title || e.summary || 'Untitled',
         start: e.start?.includes('T') ? new Date(e.start).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false }) : e.start,
         end: e.end?.includes('T') ? new Date(e.end).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false }) : e.end,
       }))
-    : MOCK_EVENTS
-  const displayError = widget.error || error
+    : []
+  const displayError = widget.error || error || (localData as CalendarData)?.error || (widget.data as CalendarData)?.error
   const displayLoading = widget.isLoading || isLoading
   const today = new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })
 

@@ -1,6 +1,0 @@
-[      40ms] [WARNING]  is not a valid value for uspDnsText @ https://cmp.inmobi.com/tcfv2/cmp2.js?referer=nyteknik.se:1
-[     138ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://player.vimeo.com/video/1154653193?title=0&byline=0&portrait=0&dnt=1:0
-[     289ms] [WARNING] [Cloudflare Turnstile] Turnstile has already been rendered in this container. The render attempt was rejected. @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:0
-[     398ms] [WARNING] Unrecognized DevSite custom element - DevsiteCaptcha NotSupportedError: Failed to execute 'define' on 'CustomElementRegistry': the name "devsite-captcha" has already been used with this registry
-    at https://www.gstatic.com/devrel-devsite/prod/v5b93ab110c02dc91cc5b79fb160a3c37758bb2dfb04b22b9173ffe5646621934/developers/js/devsite_app_custom_elements_module__sv.js:2216:241
-    at https://www.gstatic.com/devrel-devsite/prod/v5b93ab110c02dc91cc5b79fb160a3c37758bb2dfb04b22b9173ffe5646621934/developers/js/devsite_app_custom_elements_module__sv.js:3724:391 @ https://www.gstatic.com/devrel-devsite/prod/v5b93ab110c02dc91cc5b79fb160a3c37758bb2dfb04b22b9173ffe5646621934/developers/js/devsite_app_custom_elements_module__sv.js:2215

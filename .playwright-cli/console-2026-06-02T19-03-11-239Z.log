@@ -1,8 +1,0 @@
-[     468ms] [WARNING] Failed to execute 'write' on 'Document': It isn't possible to write into a document from an asynchronously-loaded external script unless it is explicitly opened. @ https://securepubads.g.doubleclick.net/tag/js/gpt.js:10
-[     701ms] [WARNING] [GPT] PubAdsService.setTargeting is deprecated, use googletag.setConfig({targeting: ...}) instead.
-https://goo.gle/gpt-message#170 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202605260101/pubads_impl.js:18
-[     703ms] [WARNING] [GPT] Slot.setTargeting is deprecated, use Slot.setConfig({targeting: ...}) instead.
-https://goo.gle/gpt-message#171 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202605260101/pubads_impl.js:18
-[     705ms] [WARNING] Invalid GPT fixed size specification: [] @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202605260101/pubads_impl.js:18
-[     706ms] [WARNING] [GPT] Error in googletag.display: could not find div with id "ad_contentslot_3" in DOM for slot: /23202586/cdo_mpuslot3.
-https://goo.gle/gpt-message#23 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202605260101/pubads_impl.js:18

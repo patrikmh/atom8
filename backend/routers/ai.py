@@ -195,11 +195,8 @@ async def research(request: Dict[str, Any]):
             content += f"\n{i}. {f.get('name', '')} ({f.get('icon', 'file')})"
         return {"content": content, "sources": [], "status": "ok"}
 
-    # Fallback: perform real web research via the living-canvas-research extension
-    from services.pi_agent import run_pi_agent, parse_pi_output
-    task = f"Use the research_topic tool to research '{topic}'. Return the results as JSON with summary, sources, and results."
-    output = await run_pi_agent(task, system_prompt="You are a web research agent. Use the research_topic tool to perform research. Return ONLY JSON.", timeout=60)
-    result = parse_pi_output(output)
+    # Fallback: perform real web research using Playwright directly
+    result = await do_web_research(topic)
     return result
 
 

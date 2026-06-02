@@ -1,8 +1,0 @@
-- main [ref=e2]:
-  - heading "Confirm you’re not a robot" [level=1] [ref=e3]
-  - paragraph [ref=e4]: Our system has detected unusual traffic from your network. Please solve the challenge below to show you’re not a robot.
-  - generic:
-    - main:
-      - generic:
-        - heading [level=2]
-        - paragraph

@@ -4,14 +4,12 @@ import { FileText, FileSpreadsheet, Image, File, Folder, Loader2, HardDrive } fr
 import { apiClient } from '@/services/api'
 import { useLayoutStore } from '@/stores/layoutStore'
 
-const MOCK_FILES = [
-  { id: '1', name: 'Q2 Report.pdf', type: 'pdf', size: '2.4 MB', date: '2 hours ago' },
-  { id: '2', name: 'Budget 2026.xlsx', type: 'spreadsheet', size: '156 KB', date: '5 hours ago' },
-  { id: '3', name: 'Design Mockup.png', type: 'image', size: '4.1 MB', date: 'Yesterday' },
-  { id: '4', name: 'Meeting Notes.docx', type: 'document', size: '24 KB', date: 'Yesterday' },
-  { id: '5', name: 'Project Alpha', type: 'folder', size: '—', date: '2 days ago' },
-  { id: '6', name: 'Presentation.pptx', type: 'document', size: '8.2 MB', date: '3 days ago' },
-]
+interface DriveData {
+  files?: any[]
+  error?: string
+  status?: string
+  needs_auth?: boolean
+}
 
 const fileIcons: Record<string, React.ReactNode> = {
   pdf: <FileText className="w-8 h-8 text-red-500" />,
@@ -47,9 +45,18 @@ const DriveWidget = ({ widget }: { widget: WidgetConfig }) => {
     setWidgetLoading(widget.id, true)
     setWidgetError(widget.id, null)
     try {
-      const data = await apiClient.getDrive(10, widget.prompt)
-      setLocalData(data)
-      setWidgetData(widget.id, data)
+      const data = await apiClient.getDrive(10, widget.prompt) as DriveData
+      if (data.error || data.status === 'error') {
+        const msg = data.error || 'Failed to load files'
+        console.error(`[DriveWidget] API error:`, msg)
+        setError(msg)
+        setWidgetError(widget.id, msg)
+        setLocalData(data)
+        setWidgetData(widget.id, data)
+      } else {
+        setLocalData(data)
+        setWidgetData(widget.id, data)
+      }
     } catch (err: any) {
       const msg = err.message || 'Failed to load files'
       console.error(`[DriveWidget] fetch failed:`, msg)
@@ -76,8 +83,9 @@ const DriveWidget = ({ widget }: { widget: WidgetConfig }) => {
   }, [widget.id, widget.refreshInterval])
 
   const rawFiles = (widget.data as any)?.files || localData?.files || []
-  const files = rawFiles.length > 0 ? rawFiles : MOCK_FILES
-  const displayError = widget.error || error
+  const hasError = !!(widget.error || error || (localData as DriveData)?.error || (widget.data as DriveData)?.error)
+  const files = hasError ? [] : rawFiles
+  const displayError = widget.error || error || (localData as DriveData)?.error || (widget.data as DriveData)?.error
   const displayLoading = widget.isLoading || isLoading
 
   const getFileType = (file: any) => {

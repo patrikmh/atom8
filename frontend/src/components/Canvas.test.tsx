@@ -49,6 +49,8 @@ describe('Canvas', () => {
       setWidgetData: vi.fn(),
       refreshTriggers: {},
       triggerRefresh: vi.fn(),
+      newWidgetIds: new Set(),
+      clearNewWidget: vi.fn(),
     }
     ;(useLayoutStore as unknown as ReturnType<typeof vi.fn>).mockImplementation((selector) =>
       selector(mockStore)
@@ -69,6 +71,8 @@ describe('Canvas', () => {
       setWidgetData: vi.fn(),
       refreshTriggers: {},
       triggerRefresh: vi.fn(),
+      newWidgetIds: new Set(),
+      clearNewWidget: vi.fn(),
     }
     ;(useLayoutStore as unknown as ReturnType<typeof vi.fn>).mockImplementation((selector) =>
       selector(mockStore)
@@ -89,6 +93,8 @@ describe('Canvas', () => {
       setWidgetData: vi.fn(),
       refreshTriggers: {},
       triggerRefresh: vi.fn(),
+      newWidgetIds: new Set(),
+      clearNewWidget: vi.fn(),
     }
     ;(useLayoutStore as unknown as ReturnType<typeof vi.fn>).mockImplementation((selector) =>
       selector(mockStore)

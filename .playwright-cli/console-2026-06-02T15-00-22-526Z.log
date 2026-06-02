@@ -1,2 +1,0 @@
-[    1029ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://api.qwant.com/v3/search/web?q=agui+UI+framework&count=10&locale=sv_SE&offset=0&device=desktop&tgp=1&safesearch=1&displayed=true&llm=true:0
-[    1032ms] [ERROR] [api] api.qwant.com /v3/search/web [403] Captcha needed @ https://www.qwant.com/48f5c35f225025e5ce1e_app.chunks.js:0

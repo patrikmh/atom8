@@ -21,6 +21,10 @@ interface LayoutState {
   selectedCategory: Category | 'All';
   activeDrags: Set<string>;
 
+  // New widget animation tracking
+  newWidgetIds: Set<string>;
+  clearNewWidget: (id: string) => void;
+
   // Theme
   theme: ThemeConfig;
   setTheme: (theme: ThemeConfig) => void;
@@ -105,6 +109,14 @@ export const useLayoutStore = create<LayoutState>()(
       searchQuery: '',
       selectedCategory: 'All',
       activeDrags: new Set(),
+      newWidgetIds: new Set(),
+      clearNewWidget: (id) => {
+        set((s) => {
+          const next = new Set(s.newWidgetIds);
+          next.delete(id);
+          return { newWidgetIds: next };
+        });
+      },
 
       // Theme
       theme: DEFAULT_THEME,
@@ -225,6 +237,7 @@ export const useLayoutStore = create<LayoutState>()(
         };
         set((s) => ({
           widgets: [...s.widgets, newWidget],
+          newWidgetIds: new Set(s.newWidgetIds).add(id),
         }));
         return id;
       },

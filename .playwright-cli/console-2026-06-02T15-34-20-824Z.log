@@ -1,8 +1,0 @@
-[     144ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://collector.github.com/github/collect:0
-[     690ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://github.com/google/A2UI/tree/main/samples/agent/adk/rizzcharts/typescript/client/src/app:0
-[     961ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://github.com/google/A2UI/latest-commit/main/samples/agent/adk/rizzcharts/typescript/client/src/app:0
-[     986ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://github.com/google/A2UI/tree-commit-info/main/samples/agent/adk/rizzcharts/typescript/client/src/app:0
-[    3253ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://collector.github.com/github/collect:0
-[    3679ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://collector.github.com/github/collect:0
-[    5374ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://collector.github.com/github/collect:0
-[    7317ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://collector.github.com/github/collect:0

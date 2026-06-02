@@ -1,6 +1,0 @@
-[POST] http://localhost:8000/api/data/calendar => [200] OK
-[POST] http://localhost:8000/api/data/gmail => [200] OK
-[POST] http://localhost:8000/api/data/tasks => [200] OK
-[POST] http://localhost:8000/api/data/calendar => [200] OK
-[POST] http://localhost:8000/api/data/gmail => [200] OK
-[POST] http://localhost:8000/api/data/tasks => [200] OK
