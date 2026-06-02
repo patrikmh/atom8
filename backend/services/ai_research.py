@@ -4,24 +4,6 @@ from typing import Dict, List, Any
 from playwright.async_api import async_playwright, BrowserContext, Page
 from playwright_stealth import Stealth
 
-# Use these keywords to route away from general web search
-DATA_SOURCE_KEYWORDS = {
-    "email": ["email", "emails", "mail", "gmail", "message", "messages"],
-    "calendar": ["calendar", "event", "events", "schedule", "meeting", "meetings", "appointment"],
-    "task": ["task", "tasks", "todo", "to-do", "todoist", "reminder"],
-    "drive": ["file", "files", "drive", "document", "documents", "folder", "folders"],
-}
-
-
-def analyze_intent(topic: str) -> str:
-    """Determine if the topic is a data query or a general research question."""
-    t = topic.lower()
-    for intent, keywords in DATA_SOURCE_KEYWORDS.items():
-        if any(kw in t for kw in keywords):
-            return intent
-    return "research"
-
-
 async def _search_duckduckgo(page: Page, query: str) -> List[Dict[str, str]]:
     """Search DuckDuckGo and return top result URLs + titles."""
     results: List[Dict[str, str]] = []

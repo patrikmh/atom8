@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Headless pi session that polls the backend queue and runs deep-research."""
+"""Headless pi session that polls the backend queue and runs web research."""
 import sys
 import os
 import time
@@ -34,12 +34,12 @@ def mark_error(job_id: str, error: str):
 
 
 def run_pi_research(topic: str) -> dict:
-    """Run a headless pi session with the deep-research skill."""
-    # Build the prompt that triggers the deep-research skill
+    """Run a headless pi session with the web-research skill."""
+    # Build the prompt that triggers the web-research skill
     prompt = (
-        f"Run the deep-research skill on this topic: {topic}\n\n"
-        "Follow the deep-research workflow exactly: plan, search, browse, extract, verify, synthesize. "
-        "Create tasks in the Task system, dispatch subagents, and return the final research report. "
+        f"Follow the web-research skill workflow. Research the topic: '{topic}'.\n\n"
+        "Search the web using playwright-cli via the bash tool. "
+        "Browse pages, extract relevant content, and synthesize a structured report. "
         "Return the final result as a JSON object with 'content' and 'sources' fields."
     )
 
@@ -47,8 +47,8 @@ def run_pi_research(topic: str) -> dict:
         "pi",
         "--print",
         "--no-session",
-        "--skill", "deep-research",
-        "--tools", "Agent,TaskCreate,TaskUpdate,TaskList,TaskGet,TaskExecute",
+        "--tools", "bash",
+        "--skill", os.path.expanduser("~/.pi/agent/skills/web-research/SKILL.md"),
         "--thinking", "medium",
         prompt,
     ]

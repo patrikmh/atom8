@@ -18,40 +18,51 @@ def _run_pi_sync(
     task: str,
     system_prompt: Optional[str] = None,
     timeout: int = 120,
+    skills: Optional[list[str]] = None,
 ) -> str:
     """Synchronous pi runner — runs in a thread pool."""
     if not system_prompt:
         system_prompt = (
             "You are a data fetch agent for a dashboard application. "
-            "You have access to the project-specific extension tools: fetch_gmail, fetch_calendar, fetch_tasks, fetch_drive, research_topic, research_gmail, research_calendar, research_tasks, research_drive. "
-            "You also have access to read, grep, and find tools. "
-            "Use the project-specific tools to fetch data directly. "
+            "You have access to read, grep, find, and bash tools. "
+            "For fetching Google data (Gmail, Calendar, Tasks, Drive), follow the relevant skill workflow and use bash with curl. "
+            "For web research, follow the web-research skill and use bash with playwright-cli. "
             "Return ONLY the JSON result, no extra text, no markdown, no explanations."
         )
 
     prompt = f"{system_prompt}\n\nTask: {task}\n\nExecute the task using the available tools. Return ONLY the JSON result."
 
+    cmd = [
+        "pi",
+        "--print",
+        "--no-session",
+        "--provider",
+        PI_PROVIDER,
+        "--model",
+        PI_MODEL,
+        "--thinking",
+        "low",
+        "--tools",
+        "read,grep,find,bash",
+        prompt,
+    ]
+    
+    # Load all skills by default
+    default_skills = [
+        os.path.expanduser("~/.pi/agent/skills/web-research/SKILL.md"),
+        os.path.expanduser("~/.pi/agent/skills/gmail-fetch/SKILL.md"),
+        os.path.expanduser("~/.pi/agent/skills/calendar-fetch/SKILL.md"),
+        os.path.expanduser("~/.pi/agent/skills/tasks-fetch/SKILL.md"),
+        os.path.expanduser("~/.pi/agent/skills/drive-fetch/SKILL.md"),
+    ]
+    
+    for skill in (skills or default_skills):
+        cmd.extend(["--skill", skill])
+
     try:
         env = os.environ.copy()
         result = subprocess.run(
-            [
-                "pi",
-                "--print",
-                "--no-session",
-                "--provider",
-                PI_PROVIDER,
-                "--model",
-                PI_MODEL,
-                "--thinking",
-                "low",
-                "--extension",
-                ".pi/extensions/living-canvas.ts",
-                "--extension",
-                ".pi/extensions/living-canvas-research.ts",
-                "--tools",
-                "read,grep,find,fetch_gmail,fetch_calendar,fetch_tasks,fetch_drive,research_topic,research_gmail,research_calendar,research_tasks,research_drive",
-                prompt,
-            ],
+            cmd,
             capture_output=True,
             text=True,
             timeout=timeout,
@@ -76,11 +87,12 @@ async def run_pi_agent(
     task: str,
     system_prompt: Optional[str] = None,
     timeout: int = 120,
+    skills: Optional[list[str]] = None,
 ) -> str:
     """Async wrapper that runs the synchronous pi subprocess in a thread pool."""
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(
-        None, _run_pi_sync, task, system_prompt, timeout
+        None, _run_pi_sync, task, system_prompt, timeout, skills
     )
 
 

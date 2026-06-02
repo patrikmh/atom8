@@ -3,16 +3,14 @@ from typing import Dict, Any, List, Optional
 import random
 import json
 
-from services.google_api import fetch_gmail, fetch_calendar, fetch_tasks, fetch_drive
-from services.ai_research import do_web_research, analyze_intent as analyze_research_intent
 from services.research_queue import enqueue, get_job, pick_next_pending, mark_running, mark_done, mark_error
+from services.pi_agent import run_pi_agent, parse_pi_output
 from services.pi_chat import chat as pi_chat, get_or_create_session, clear_session, delete_session, list_sessions
 from services.pi_data_fetch import (
     fetch_gmail_pi,
     fetch_calendar_pi,
     fetch_tasks_pi,
     fetch_drive_pi,
-    do_web_research_pi,
 )
 
 router = APIRouter(prefix="/api/ai", tags=["ai"])
@@ -132,72 +130,113 @@ async def research(request: Dict[str, Any]):
     if not topic:
         raise HTTPException(status_code=400, detail="Topic is required")
 
-    intent = analyze_research_intent(topic)
+    # Detect intent: is this a Google data query or a web research topic?
+    msg = topic.lower()
+    is_google_data = any(w in msg for w in [
+        "email", "mail", "inbox", "message",
+        "calendar", "event", "meeting", "schedule", "today",
+        "task", "todo", "checklist",
+        "file", "drive", "document", "folder"
+    ])
 
-    # Route to real data source via a headless pi session
-    if intent == "email":
-        result = await fetch_gmail_pi(prompt=topic)
-        if "error" in result:
-            return {"content": f"Unable to fetch emails: {result['error']}", "sources": [], "status": "error"}
+    if is_google_data:
+        # Google data fetch via skill + bash + curl
+        system = (
+            "You are a data fetch agent. Use the relevant skill (gmail-fetch, calendar-fetch, "
+            "tasks-fetch, or drive-fetch) to fetch data via the Google API. "
+            "Follow the skill workflow: read auth.json, refresh token if needed, call API with curl. "
+            "Return ONLY the JSON result, no extra text, no markdown, no explanations."
+        )
+        task = (
+            f"The user asks: '{topic}'. "
+            "Follow the relevant skill workflow to fetch data from Gmail, Calendar, Tasks, or Drive. "
+            "Return the results as JSON with the appropriate data array."
+        )
+        output = await run_pi_agent(task, system_prompt=system, timeout=120)
+    else:
+        # Web research via skill + bash + playwright-cli
+        system = (
+            "You are a web research agent. Use the web-research skill workflow. "
+            "Search the web using playwright-cli via the bash tool. "
+            "Browse pages, extract relevant content, and synthesize a structured report. "
+            "Return ONLY the JSON result, no extra text, no markdown, no explanations."
+        )
+        task = f"Research the topic: '{topic}'. Use the web-research skill workflow. Return a structured report with summary, key findings, and sources as JSON."
+        output = await run_pi_agent(task, system_prompt=system, timeout=120)
+
+    result = parse_pi_output(output)
+
+    if "error" in result:
+        return {"content": f"Unable to fetch data: {result['error']}", "sources": [], "status": "error"}
+
+    # Determine which data type was returned and format accordingly
+    if "emails" in result:
         emails = result.get("emails", [])
         if not emails:
             return {"content": "No emails found matching your query.", "sources": [], "status": "ok"}
-        
-        # If the prompt asks to summarize, also return the raw emails for A2UI rendering
-        is_summary = any(w in topic.lower() for w in ['summar', 'overview', 'digest', 'brief', 'recap', 'highlight'])
-        
         sender_list = []
         for i, e in enumerate(emails[:10]):
             sender = e.get('from_name', '') or e.get('from_email', '') or e.get('from', '') or 'Unknown'
             sender_list.append(f"{i+1}. {e.get('subject', '(no subject)')} from {sender}")
         content = f"Found {len(emails)} email(s):\n" + "\n".join(sender_list)
-        
         response = {"content": content, "sources": [], "status": "ok"}
-        # Always include raw emails so the frontend can render them as A2UI components
         response["emails"] = emails
         return response
 
-    if intent == "calendar":
-        result = await fetch_calendar_pi(prompt=topic)
-        if "error" in result:
-            return {"content": f"Unable to fetch calendar events: {result['error']}", "sources": [], "status": "error"}
+    elif "events" in result:
         events = result.get("events", [])
         if not events:
-            return {"content": "No calendar events found.", "sources": [], "status": "ok"}
-        content = f"Found {len(events)} event(s):\n"
-        for i, e in enumerate(events[:5], 1):
-            title = e.get('title', '') or e.get('summary', '') or '(no title)'
-            content += f"\n{i}. {title} at {e.get('start', '')}"
-        return {"content": content, "sources": [], "status": "ok"}
+            return {"content": "No events found for your query.", "sources": [], "status": "ok"}
+        event_list = []
+        for i, e in enumerate(events[:10]):
+            event_list.append(f"{i+1}. {e.get('summary', '(no title)')} at {e.get('start', 'N/A')}")
+        content = f"Found {len(events)} event(s):\n" + "\n".join(event_list)
+        response = {"content": content, "sources": [], "status": "ok"}
+        response["events"] = events
+        return response
 
-    if intent == "task":
-        result = await fetch_tasks_pi(prompt=topic)
-        if "error" in result:
-            return {"content": f"Unable to fetch tasks: {result['error']}", "sources": [], "status": "error"}
+    elif "tasks" in result:
         tasks = result.get("tasks", [])
         if not tasks:
-            return {"content": "No tasks found.", "sources": [], "status": "ok"}
-        content = f"Found {len(tasks)} task(s):\n"
-        for i, t in enumerate(tasks[:5], 1):
-            status = "✓" if t.get("completed") else "○"
-            content += f"\n{i}. {status} {t.get('title', '')}"
-        return {"content": content, "sources": [], "status": "ok"}
+            return {"content": "No tasks found for your query.", "sources": [], "status": "ok"}
+        task_list = []
+        for i, t in enumerate(tasks[:10]):
+            status = "✓" if t.get('completed') else "○"
+            task_list.append(f"{i+1}. {status} {t.get('title', '(no title)')}")
+        content = f"Found {len(tasks)} task(s):\n" + "\n".join(task_list)
+        response = {"content": content, "sources": [], "status": "ok"}
+        response["tasks"] = tasks
+        return response
 
-    if intent == "drive":
-        result = await fetch_drive_pi(prompt=topic)
-        if "error" in result:
-            return {"content": f"Unable to fetch drive files: {result['error']}", "sources": [], "status": "error"}
+    elif "files" in result:
         files = result.get("files", [])
         if not files:
-            return {"content": "No files found.", "sources": [], "status": "ok"}
-        content = f"Found {len(files)} file(s):\n"
-        for i, f in enumerate(files[:5], 1):
-            content += f"\n{i}. {f.get('name', '')} ({f.get('icon', 'file')})"
-        return {"content": content, "sources": [], "status": "ok"}
+            return {"content": "No files found for your query.", "sources": [], "status": "ok"}
+        file_list = []
+        for i, f in enumerate(files[:10]):
+            file_list.append(f"{i+1}. {f.get('name', '(no name)')} ({f.get('mimeType', 'unknown')})")
+        content = f"Found {len(files)} file(s):\n" + "\n".join(file_list)
+        response = {"content": content, "sources": [], "status": "ok"}
+        response["files"] = files
+        return response
 
-    # Fallback: perform real web research using Playwright directly
-    result = await do_web_research(topic)
-    return result
+    else:
+        # If the agent returned a research-style response, format it
+        summary = result.get("summary", "")
+        findings = result.get("key_findings", [])
+        sources = result.get("sources", [])
+        if summary or findings:
+            content = summary
+            if findings:
+                content += "\n\nKey findings:\n"
+                for i, f in enumerate(findings[:10]):
+                    content += f"\n{i+1}. {f.get('claim', '')}"
+                    if f.get('evidence'):
+                        content += f"\n   Evidence: {f.get('evidence', '')[:200]}"
+            return {"content": content, "sources": sources, "status": "ok"}
+
+        # Fallback: just return whatever we got
+        return {"content": result.get("content", str(result)), "sources": [], "status": "ok"}
 
 
 @router.post("/design")
@@ -239,11 +278,11 @@ async def design_suggestion(request: Dict[str, Any]):
     }
 
 
-# ─── Headless pi deep-research queue ───────────────────────────────────────
+# ─── Headless pi research queue ───────────────────────────────────────
 
 @router.post("/research/queue")
 async def research_queue(request: Dict[str, Any]):
-    """Enqueue a deep-research job. Returns job ID to poll."""
+    """Enqueue a research job. Returns job ID to poll."""
     topic = request.get("topic", "")
     if not topic:
         raise HTTPException(status_code=400, detail="Topic is required")

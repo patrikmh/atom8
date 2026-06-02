@@ -1,4 +1,4 @@
-"""SQLite-backed queue for deep-research jobs."""
+"""SQLite-backed queue for research jobs."""
 import sqlite3
 import uuid
 import json

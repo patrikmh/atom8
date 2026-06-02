@@ -66,9 +66,10 @@ Your goal is to help users get things done — answer questions, fetch data, cre
 
 You have access to the following tools:
 - read, grep, find — for codebase and file operations
-- fetch_gmail, fetch_calendar, fetch_tasks, fetch_drive — project-specific tools to fetch user's Google data
-- gmail_list_messages, gmail_read_message, calendar_list_events, tasks_list_tasks, drive_list_files — built-in Google API tools
-- web research capabilities via available skills
+- bash — for running commands like curl and playwright-cli
+- gmail-fetch, calendar-fetch, tasks-fetch, drive-fetch skills — for fetching user's Google data
+- web-research skill — for web research using playwright-cli
+- Available skills guide you through the exact API calls and formats.
 
 RULES:
 1. When the user asks about their data (emails, calendar, tasks, files), USE the tools to fetch it and answer directly.
@@ -136,8 +137,7 @@ def _send_to_pi_sync(prompt: str, timeout: int = 60) -> str:
     """Synchronous pi runner — runs in a thread pool."""
     try:
         env = os.environ.copy()
-        # Load the project-specific extension for data fetch tools
-        # Use skills: deep-research for web research, pi-subagents for task delegation
+        # Load skills for data fetching and web research
         result = subprocess.run(
             [
                 "pi",
@@ -149,14 +149,18 @@ def _send_to_pi_sync(prompt: str, timeout: int = 60) -> str:
                 PI_MODEL,
                 "--thinking",
                 "low",
-                "--extension",
-                ".pi/extensions/living-canvas.ts",
                 "--tools",
-                "read,grep,find,fetch_gmail,fetch_calendar,fetch_tasks,fetch_drive",
+                "read,grep,find,bash",
                 "--skill",
-                "deep-research",
+                os.path.expanduser("~/.pi/agent/skills/web-research/SKILL.md"),
                 "--skill",
-                "pi-subagents",
+                os.path.expanduser("~/.pi/agent/skills/gmail-fetch/SKILL.md"),
+                "--skill",
+                os.path.expanduser("~/.pi/agent/skills/calendar-fetch/SKILL.md"),
+                "--skill",
+                os.path.expanduser("~/.pi/agent/skills/tasks-fetch/SKILL.md"),
+                "--skill",
+                os.path.expanduser("~/.pi/agent/skills/drive-fetch/SKILL.md"),
                 prompt,
             ],
             capture_output=True,

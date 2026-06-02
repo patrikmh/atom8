@@ -288,39 +288,45 @@ const GridWidget = ({ widget }: { widget: WidgetConfig }) => {
         className="px-3 py-1.5 border-t text-xs"
         style={{ borderColor: theme.widgetBorder + '44', color: theme.sidebarText + 'aa' }}
       >
-        {isEditingPrompt ? (
-          <div className="flex items-center gap-2">
-            <input
-              ref={promptInputRef}
-              type="text"
-              value={promptDraft}
-              onChange={(e) => setPromptDraft(e.target.value)}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter') savePrompt()
-                if (e.key === 'Escape') cancelPromptEdit()
-              }}
-              className="flex-1 px-2 py-1 text-xs border rounded focus:outline-none"
-              style={{ borderColor: theme.widgetBorder, backgroundColor: theme.widgetBg, color: theme.widgetText }}
-              autoFocus
-            />
-            <button onClick={savePrompt} className="p-0.5 rounded hover:opacity-70" style={{ color: '#22c55e' }}>
-              <Check className="w-3.5 h-3.5" />
-            </button>
-            <button onClick={cancelPromptEdit} className="p-0.5 rounded hover:opacity-70" style={{ color: '#ef4444' }}>
-              <X className="w-3.5 h-3.5" />
-            </button>
-          </div>
+        {widget.type === 'custom' ? (
+          isEditingPrompt ? (
+            <div className="flex items-center gap-2">
+              <input
+                ref={promptInputRef}
+                type="text"
+                value={promptDraft}
+                onChange={(e) => setPromptDraft(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') savePrompt()
+                  if (e.key === 'Escape') cancelPromptEdit()
+                }}
+                className="flex-1 px-2 py-1 text-xs border rounded focus:outline-none"
+                style={{ borderColor: theme.widgetBorder, backgroundColor: theme.widgetBg, color: theme.widgetText }}
+                autoFocus
+              />
+              <button onClick={savePrompt} className="p-0.5 rounded hover:opacity-70" style={{ color: '#22c55e' }}>
+                <Check className="w-3.5 h-3.5" />
+              </button>
+              <button onClick={cancelPromptEdit} className="p-0.5 rounded hover:opacity-70" style={{ color: '#ef4444' }}>
+                <X className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          ) : (
+            <div className="flex items-center gap-2">
+              <span className="truncate flex-1">{widget.prompt}</span>
+              <button
+                onClick={() => setIsEditingPrompt(true)}
+                className="p-0.5 rounded hover:opacity-70 shrink-0"
+                style={{ color: theme.sidebarText + '88' }}
+                title="Edit prompt"
+              >
+                <Edit3 className="w-3 h-3" />
+              </button>
+            </div>
+          )
         ) : (
           <div className="flex items-center gap-2">
             <span className="truncate flex-1">{widget.prompt}</span>
-            <button
-              onClick={() => setIsEditingPrompt(true)}
-              className="p-0.5 rounded hover:opacity-70 shrink-0"
-              style={{ color: theme.sidebarText + '88' }}
-              title="Edit prompt"
-            >
-              <Edit3 className="w-3 h-3" />
-            </button>
           </div>
         )}
       </div>
