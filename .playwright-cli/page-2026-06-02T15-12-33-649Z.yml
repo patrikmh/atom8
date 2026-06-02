@@ -1,0 +1,626 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - link "Homepage" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - navigation "Global" [ref=e16]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - button "Platform" [ref=e20] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e21]
+              - listitem [ref=e23]:
+                - button "Solutions" [ref=e25] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - button "Resources" [ref=e30] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e31]
+              - listitem [ref=e33]:
+                - button "Open Source" [ref=e35] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e36]
+              - listitem [ref=e38]:
+                - button "Enterprise" [ref=e40] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e41]
+              - listitem [ref=e43]:
+                - link "Pricing" [ref=e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+                  - generic [ref=e45]: Pricing
+          - generic [ref=e46]:
+            - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+            - link "Sign in" [ref=e54] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2FStumblinbear%2Fagui
+            - link "Sign up" [ref=e55] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=Stumblinbear%2Fagui
+            - button "Appearance settings" [ref=e58] [cursor=pointer]:
+              - img
+  - main [ref=e62]:
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e66]:
+          - img [ref=e67]
+          - link "Stumblinbear" [ref=e70] [cursor=pointer]:
+            - /url: /Stumblinbear
+          - generic [ref=e71]: /
+          - strong [ref=e72]:
+            - link "agui" [ref=e73] [cursor=pointer]:
+              - /url: /Stumblinbear/agui
+          - generic [ref=e74]: Public
+        - generic [ref=e75]:
+          - list:
+            - listitem [ref=e76]:
+              - link "You must be signed in to change notification settings" [ref=e77] [cursor=pointer]:
+                - /url: /login?return_to=%2FStumblinbear%2Fagui
+                - img [ref=e78]
+                - text: Notifications
+            - listitem [ref=e80]:
+              - link "Fork 3" [ref=e81] [cursor=pointer]:
+                - /url: /login?return_to=%2FStumblinbear%2Fagui
+                - img [ref=e82]
+                - text: Fork
+                - generic "3" [ref=e84]
+            - listitem [ref=e85]:
+              - link "You must be signed in to star a repository" [ref=e87] [cursor=pointer]:
+                - /url: /login?return_to=%2FStumblinbear%2Fagui
+                - img [ref=e88]
+                - text: Star
+                - generic "37 users starred this repository" [ref=e90]: "37"
+      - navigation "Repository" [ref=e91]:
+        - list [ref=e92]:
+          - listitem [ref=e93]:
+            - link "Code" [ref=e94] [cursor=pointer]:
+              - /url: /Stumblinbear/agui
+              - img [ref=e95]
+              - generic [ref=e97]: Code
+          - listitem [ref=e98]:
+            - link "Issues 4" [ref=e99] [cursor=pointer]:
+              - /url: /Stumblinbear/agui/issues
+              - img [ref=e100]
+              - generic [ref=e103]: Issues
+              - generic "4" [ref=e104]
+          - listitem [ref=e105]:
+            - link "Pull requests 3" [ref=e106] [cursor=pointer]:
+              - /url: /Stumblinbear/agui/pulls
+              - img [ref=e107]
+              - generic [ref=e109]: Pull requests
+              - generic "3" [ref=e110]
+          - listitem [ref=e111]:
+            - link "Discussions" [ref=e112] [cursor=pointer]:
+              - /url: /Stumblinbear/agui/discussions
+              - img [ref=e113]
+              - generic [ref=e115]: Discussions
+          - listitem [ref=e116]:
+            - link "Actions" [ref=e117] [cursor=pointer]:
+              - /url: /Stumblinbear/agui/actions
+              - img [ref=e118]
+              - generic [ref=e120]: Actions
+          - listitem [ref=e121]:
+            - link "Projects" [ref=e122] [cursor=pointer]:
+              - /url: /Stumblinbear/agui/projects
+              - img [ref=e123]
+              - generic [ref=e125]: Projects
+          - listitem [ref=e126]:
+            - link "Security and quality" [ref=e127] [cursor=pointer]:
+              - /url: /Stumblinbear/agui/security
+              - img [ref=e128]
+              - generic [ref=e130]: Security and quality
+          - listitem [ref=e131]:
+            - link "Insights" [ref=e132] [cursor=pointer]:
+              - /url: /Stumblinbear/agui/pulse
+              - img [ref=e133]
+              - generic [ref=e135]: Insights
+    - generic [ref=e148]:
+      - heading "Stumblinbear/agui" [level=1] [ref=e150]
+      - generic [ref=e151]:
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - button "master branch" [ref=e158] [cursor=pointer]:
+                - generic [ref=e159]:
+                  - generic [ref=e161]:
+                    - img [ref=e163]
+                    - generic [ref=e166]: master
+                  - generic:
+                    - img
+              - generic [ref=e167]:
+                - link "6 Branches" [ref=e168] [cursor=pointer]:
+                  - /url: /Stumblinbear/agui/branches
+                  - generic [ref=e169]:
+                    - generic:
+                      - img
+                    - generic [ref=e171]:
+                      - strong [ref=e172]: "6"
+                      - text: Branches
+                - link "3 Tags" [ref=e173] [cursor=pointer]:
+                  - /url: /Stumblinbear/agui/tags
+                  - generic [ref=e174]:
+                    - generic:
+                      - img
+                    - generic [ref=e176]:
+                      - strong [ref=e177]: "3"
+                      - text: Tags
+            - generic [ref=e178]:
+              - generic [ref=e182]:
+                - img [ref=e184]
+                - combobox "Go to file" [ref=e186]
+              - button "Code" [ref=e187] [cursor=pointer]:
+                - generic [ref=e188]:
+                  - generic:
+                    - img
+                  - generic [ref=e189]: Code
+                  - generic:
+                    - img
+          - generic [ref=e190]:
+            - generic [ref=e191]:
+              - heading "Folders and files" [level=2] [ref=e192]
+              - table "Folders and files" [ref=e193]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e194]:
+                  - 'row "Latest commit Stumblinbear commits by Stumblinbear refactor: remove old text layout delegate Commit 6282d5c · Feb 25, 20242 years ago History 511 Commits" [ref=e195]':
+                    - 'cell "Latest commit Stumblinbear commits by Stumblinbear refactor: remove old text layout delegate Commit 6282d5c · Feb 25, 20242 years ago History 511 Commits" [ref=e196]':
+                      - generic [ref=e197]:
+                        - heading "Latest commit" [level=2] [ref=e198]
+                        - generic [ref=e199]:
+                          - generic [ref=e201]:
+                            - link "Stumblinbear" [ref=e202] [cursor=pointer]:
+                              - /url: /Stumblinbear
+                              - img "Stumblinbear" [ref=e203]
+                            - link "commits by Stumblinbear" [ref=e204] [cursor=pointer]:
+                              - /url: /Stumblinbear/agui/commits?author=Stumblinbear
+                              - text: Stumblinbear
+                          - 'link "refactor: remove old text layout delegate" [ref=e208] [cursor=pointer]':
+                            - /url: /Stumblinbear/agui/commit/6282d5c432c1564bfd49af0f38ceda8597860878
+                        - generic [ref=e209]:
+                          - generic [ref=e211]:
+                            - link "Commit 6282d5c" [ref=e212] [cursor=pointer]:
+                              - /url: /Stumblinbear/agui/commit/6282d5c432c1564bfd49af0f38ceda8597860878
+                              - text: 6282d5c
+                            - text: ·
+                            - generic "Feb 25, 2024, 6:59 PM GMT+1" [ref=e213]: Feb 25, 20242 years ago
+                          - generic [ref=e214]:
+                            - heading "History" [level=2] [ref=e215]
+                            - link "511 Commits" [ref=e216] [cursor=pointer]:
+                              - /url: /Stumblinbear/agui/commits/master/
+                              - generic [ref=e217]:
+                                - generic:
+                                  - img
+                                - generic [ref=e218]: 511 Commits
+                  - row ".cargo, (Directory) Create audit.toml Jan 15, 20225 years ago" [ref=e219]:
+                    - cell ".cargo, (Directory)" [ref=e220]:
+                      - generic [ref=e221]:
+                        - img [ref=e222]
+                        - link ".cargo, (Directory)" [ref=e227] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/tree/master/.cargo
+                          - text: .cargo
+                    - cell "Create audit.toml" [ref=e228]:
+                      - link "Create audit.toml" [ref=e231] [cursor=pointer]:
+                        - /url: /Stumblinbear/agui/commit/71200cf7c69f5a5bc349511d77ea1341db634783
+                    - cell "Jan 15, 20225 years ago" [ref=e232]:
+                      - generic [ref=e233]: Jan 15, 20225 years ago
+                  - row ".github, (Directory) Update audit.yml Jan 14, 20225 years ago" [ref=e234]:
+                    - cell ".github, (Directory)" [ref=e235]:
+                      - generic [ref=e236]:
+                        - img [ref=e237]
+                        - link ".github, (Directory)" [ref=e242] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/tree/master/.github
+                          - text: .github
+                    - cell "Update audit.yml" [ref=e243]:
+                      - link "Update audit.yml" [ref=e246] [cursor=pointer]:
+                        - /url: /Stumblinbear/agui/commit/c0af451eae6edccbe7ad06d2ce56484429c3b1cf
+                    - cell "Jan 14, 20225 years ago" [ref=e247]:
+                      - generic [ref=e248]: Jan 14, 20225 years ago
+                  - 'row ".vscode, (Directory) refactor: update examples Feb 11, 20242 years ago" [ref=e249]':
+                    - cell ".vscode, (Directory)" [ref=e250]:
+                      - generic [ref=e251]:
+                        - img [ref=e252]
+                        - link ".vscode, (Directory)" [ref=e257] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/tree/master/.vscode
+                          - text: .vscode
+                    - 'cell "refactor: update examples" [ref=e258]':
+                      - 'link "refactor: update examples" [ref=e261] [cursor=pointer]':
+                        - /url: /Stumblinbear/agui/commit/213362805532814554eae067132f249bc9e5038a
+                    - cell "Feb 11, 20242 years ago" [ref=e262]:
+                      - generic [ref=e263]: Feb 11, 20242 years ago
+                  - 'row "crates, (Directory) refactor: remove old text layout delegate Feb 25, 20242 years ago" [ref=e264]':
+                    - cell "crates, (Directory)" [ref=e265]:
+                      - generic [ref=e266]:
+                        - img [ref=e267]
+                        - link "crates, (Directory)" [ref=e272] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/tree/master/crates
+                          - text: crates
+                    - 'cell "refactor: remove old text layout delegate" [ref=e273]':
+                      - 'link "refactor: remove old text layout delegate" [ref=e276] [cursor=pointer]':
+                        - /url: /Stumblinbear/agui/commit/6282d5c432c1564bfd49af0f38ceda8597860878
+                    - cell "Feb 25, 20242 years ago" [ref=e277]:
+                      - generic [ref=e278]: Feb 25, 20242 years ago
+                  - 'row "docs, (Directory) refactor: elements into separate crate Oct 8, 20233 years ago" [ref=e279]':
+                    - cell "docs, (Directory)" [ref=e280]:
+                      - generic [ref=e281]:
+                        - img [ref=e282]
+                        - link "docs, (Directory)" [ref=e287] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/tree/master/docs
+                          - text: docs
+                    - 'cell "refactor: elements into separate crate" [ref=e288]':
+                      - 'link "refactor: elements into separate crate" [ref=e291] [cursor=pointer]':
+                        - /url: /Stumblinbear/agui/commit/d42b421abdde101d609a676354addf6789e5111f
+                    - cell "Oct 8, 20233 years ago" [ref=e292]:
+                      - generic [ref=e293]: Oct 8, 20233 years ago
+                  - 'row "examples, (Directory) fix: example window titles Feb 16, 20242 years ago" [ref=e294]':
+                    - cell "examples, (Directory)" [ref=e295]:
+                      - generic [ref=e296]:
+                        - img [ref=e297]
+                        - link "examples, (Directory)" [ref=e302] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/tree/master/examples
+                          - text: examples
+                    - 'cell "fix: example window titles" [ref=e303]':
+                      - 'link "fix: example window titles" [ref=e306] [cursor=pointer]':
+                        - /url: /Stumblinbear/agui/commit/a4dfead2156659e3f5a748099066b04e2671b3d3
+                    - cell "Feb 16, 20242 years ago" [ref=e307]:
+                      - generic [ref=e308]: Feb 16, 20242 years ago
+                  - 'row "src, (Directory) feat: add LayoutBuilder to the prelude Feb 11, 20242 years ago" [ref=e309]':
+                    - cell "src, (Directory)" [ref=e310]:
+                      - generic [ref=e311]:
+                        - img [ref=e312]
+                        - link "src, (Directory)" [ref=e317] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/tree/master/src
+                          - text: src
+                    - 'cell "feat: add LayoutBuilder to the prelude" [ref=e318]':
+                      - 'link "feat: add LayoutBuilder to the prelude" [ref=e321] [cursor=pointer]':
+                        - /url: /Stumblinbear/agui/commit/0c14d8ad7f092f97d62b876ffe1f6c86b1c50718
+                    - cell "Feb 11, 20242 years ago" [ref=e322]:
+                      - generic [ref=e323]: Feb 11, 20242 years ago
+                  - 'row "tests, (Directory) feat: const widgets Oct 7, 20233 years ago" [ref=e324]':
+                    - cell "tests, (Directory)" [ref=e325]:
+                      - generic [ref=e326]:
+                        - img [ref=e327]
+                        - link "tests, (Directory)" [ref=e332] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/tree/master/tests
+                          - text: tests
+                    - 'cell "feat: const widgets" [ref=e333]':
+                      - 'link "feat: const widgets" [ref=e336] [cursor=pointer]':
+                        - /url: /Stumblinbear/agui/commit/87d4a3a86a0819000a39508fa6e9dde80af7ca1e
+                    - cell "Oct 7, 20233 years ago" [ref=e337]:
+                      - generic [ref=e338]: Oct 7, 20233 years ago
+                  - row "tools, (Directory) reorganize repo Jan 8, 20225 years ago" [ref=e339]:
+                    - cell "tools, (Directory)" [ref=e340]:
+                      - generic [ref=e341]:
+                        - img [ref=e342]
+                        - link "tools, (Directory)" [ref=e347] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/tree/master/tools
+                          - text: tools
+                    - cell "reorganize repo" [ref=e348]:
+                      - link "reorganize repo" [ref=e351] [cursor=pointer]:
+                        - /url: /Stumblinbear/agui/commit/3c79ce797cbe940b5e80b9a4ef1c50cc547e5326
+                    - cell "Jan 8, 20225 years ago" [ref=e352]:
+                      - generic [ref=e353]: Jan 8, 20225 years ago
+                  - 'row ".gitignore, (File) chore: set require features, add launch config Feb 11, 20242 years ago" [ref=e354]':
+                    - cell ".gitignore, (File)" [ref=e355]:
+                      - generic [ref=e356]:
+                        - img [ref=e357]
+                        - link ".gitignore, (File)" [ref=e362] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/blob/master/.gitignore
+                          - text: .gitignore
+                    - 'cell "chore: set require features, add launch config" [ref=e363]':
+                      - 'link "chore: set require features, add launch config" [ref=e366] [cursor=pointer]':
+                        - /url: /Stumblinbear/agui/commit/fba4fbaa95d30f349c72cc3b8efd7bf53bc86217
+                    - cell "Feb 11, 20242 years ago" [ref=e367]:
+                      - generic [ref=e368]: Feb 11, 20242 years ago
+                  - row ".rust-toolchain.toml, (File) refactor various things, add vello integration Feb 26, 20233 years ago" [ref=e369]:
+                    - cell ".rust-toolchain.toml, (File)" [ref=e370]:
+                      - generic [ref=e371]:
+                        - img [ref=e372]
+                        - link ".rust-toolchain.toml, (File)" [ref=e377] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/blob/master/.rust-toolchain.toml
+                          - text: .rust-toolchain.toml
+                    - cell "refactor various things, add vello integration" [ref=e378]:
+                      - link "refactor various things, add vello integration" [ref=e381] [cursor=pointer]:
+                        - /url: /Stumblinbear/agui/commit/e590f9e9f2e75fd50b0769807fe82e51b1ca42cb
+                    - cell "Feb 26, 20233 years ago" [ref=e382]:
+                      - generic [ref=e383]: Feb 26, 20233 years ago
+                  - 'row "Cargo.toml, (File) chore: remove unnecessary required feature Feb 25, 20242 years ago" [ref=e384]':
+                    - cell "Cargo.toml, (File)" [ref=e385]:
+                      - generic [ref=e386]:
+                        - img [ref=e387]
+                        - link "Cargo.toml, (File)" [ref=e392] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/blob/master/Cargo.toml
+                          - text: Cargo.toml
+                    - 'cell "chore: remove unnecessary required feature" [ref=e393]':
+                      - 'link "chore: remove unnecessary required feature" [ref=e396] [cursor=pointer]':
+                        - /url: /Stumblinbear/agui/commit/55685419240243e8bc778be9661311f7b8a166e7
+                    - cell "Feb 25, 20242 years ago" [ref=e397]:
+                      - generic [ref=e398]: Feb 25, 20242 years ago
+                  - 'row "README.md, (File) docs: update README.md Oct 8, 20233 years ago" [ref=e399]':
+                    - cell "README.md, (File)" [ref=e400]:
+                      - generic [ref=e401]:
+                        - img [ref=e402]
+                        - link "README.md, (File)" [ref=e407] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/blob/master/README.md
+                          - text: README.md
+                    - 'cell "docs: update README.md" [ref=e408]':
+                      - 'link "docs: update README.md" [ref=e411] [cursor=pointer]':
+                        - /url: /Stumblinbear/agui/commit/eec264df02cd7f3f6275e587ca7c4ca4aa388dfd
+                    - cell "Oct 8, 20233 years ago" [ref=e412]:
+                      - generic [ref=e413]: Oct 8, 20233 years ago
+                  - 'row "clippy.toml, (File) refactor: separate executors from core Jan 24, 20242 years ago" [ref=e414]':
+                    - cell "clippy.toml, (File)" [ref=e415]:
+                      - generic [ref=e416]:
+                        - img [ref=e417]
+                        - link "clippy.toml, (File)" [ref=e422] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/blob/master/clippy.toml
+                          - text: clippy.toml
+                    - 'cell "refactor: separate executors from core" [ref=e423]':
+                      - 'link "refactor: separate executors from core" [ref=e426] [cursor=pointer]':
+                        - /url: /Stumblinbear/agui/commit/231fbbb1d7ffb6ffdfd172f9aec9a8cfdf307086
+                    - cell "Jan 24, 20242 years ago" [ref=e427]:
+                      - generic [ref=e428]: Jan 24, 20242 years ago
+            - generic [ref=e430]:
+              - generic [ref=e431]:
+                - heading "Repository files navigation" [level=2] [ref=e432]
+                - navigation "Repository files" [ref=e433]:
+                  - list [ref=e434]:
+                    - listitem [ref=e435]:
+                      - link "README" [ref=e436] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e438]
+                        - generic [ref=e440]: README
+                - button "Outline" [ref=e441] [cursor=pointer]:
+                  - img [ref=e442]
+              - article [ref=e445]:
+                - generic [ref=e446]:
+                  - link "Logo" [ref=e447] [cursor=pointer]:
+                    - /url: https://github.com/stumblinbear/agui
+                    - img "Logo" [ref=e448]
+                  - text: An advanced, reactive UI library for Rust
+                  - link "Report a Bug" [ref=e449] [cursor=pointer]:
+                    - /url: https://github.com/stumblinbear/agui/issues/new?assignees=&labels=bug&template=BUG_REPORT.md&title=bug%3A+
+                  - text: ·
+                  - link "Request a Feature" [ref=e450] [cursor=pointer]:
+                    - /url: https://github.com/stumblinbear/agui/discussions
+                  - text: .
+                  - link "Ask a Question" [ref=e451] [cursor=pointer]:
+                    - /url: https://github.com/stumblinbear/agui/discussions
+                  - link [ref=e452] [cursor=pointer]:
+                    - /url: https://github.com/stumblinbear/agui/actions/workflows/rust.yml
+                    - img [ref=e453]
+                  - link [ref=e454] [cursor=pointer]:
+                    - /url: https://crates.io/crates/agui
+                    - img [ref=e455]
+                  - link [ref=e456] [cursor=pointer]:
+                    - /url: https://docs.rs/agui
+                    - img [ref=e457]
+                - separator [ref=e458]
+                - generic [ref=e459]:
+                  - heading "What is agui?" [level=2] [ref=e460]
+                  - 'link "Permalink: What is agui?" [ref=e461] [cursor=pointer]':
+                    - /url: "#what-is-agui"
+                    - img [ref=e462]
+                - paragraph [ref=e464]: Agui is an advanced reactive GUI project for Rust, inspired by Flutter and taking some concepts from other related UI systems.
+                - generic [ref=e465]:
+                  - paragraph [ref=e466]:
+                    - img [ref=e467]
+                    - text: Important
+                  - paragraph [ref=e469]: This library is in the middle of a sizable rework and therefore is not currently in a state where usage is technically feasible. The docs are also very out of date and will be updated once this work is nearing completion.
+                - generic [ref=e470]:
+                  - heading "🛠️ Installation" [level=1] [ref=e471]
+                  - 'link "Permalink: 🛠️ Installation" [ref=e472] [cursor=pointer]':
+                    - /url: "#️-installation"
+                    - img [ref=e473]
+                - paragraph [ref=e475]:
+                  - text: Agui is available on
+                  - link "crates.io" [ref=e476] [cursor=pointer]:
+                    - /url: https://crates.io/crates/agui
+                  - text: ", Rust's official package repository. Just add this to your"
+                  - code [ref=e477]: Cargo.toml
+                  - text: "file:"
+                - generic [ref=e478]:
+                  - generic [ref=e479]:
+                    - text: "[dependencies] agui ="
+                    - generic [ref=e480]: "\"0.3\""
+                    - generic [ref=e481]: "# ensure this is the latest version"
+                  - button "Copy code to clipboard" [ref=e483] [cursor=pointer]:
+                    - img [ref=e484]
+                - generic [ref=e487]:
+                  - heading "🚀 Usage" [level=1] [ref=e488]
+                  - 'link "Permalink: 🚀 Usage" [ref=e489] [cursor=pointer]':
+                    - /url: "#-usage"
+                    - img [ref=e490]
+                - paragraph [ref=e492]:
+                  - text: Docs for
+                  - code [ref=e493]: agui
+                  - text: are under development, however you can check the
+                  - code [ref=e494]: examples
+                  - text: directory for basic setup, and
+                  - code [ref=e495]: agui_primitives
+                  - text: /
+                  - code [ref=e496]: agui_widgets
+                  - text: for many examples on widget creation.
+                - generic [ref=e497]:
+                  - heading "Creating new widgets" [level=2] [ref=e498]
+                  - 'link "Permalink: Creating new widgets" [ref=e499] [cursor=pointer]':
+                    - /url: "#creating-new-widgets"
+                    - img [ref=e500]
+                - paragraph [ref=e502]:
+                  - text: Currently, widgets are created using
+                  - code [ref=e503]: StatelessWidget
+                  - text: ","
+                  - code [ref=e504]: StatefulWidget
+                  - text: ","
+                  - code [ref=e505]: LayoutWidget
+                  - text: ","
+                  - code [ref=e506]: PaintWidget
+                  - text: ", and"
+                  - code [ref=e507]: InheritedWidget
+                  - text: derive macros, and by implementing their respective trait.
+                - generic [ref=e508]:
+                  - generic [ref=e509]:
+                    - generic [ref=e510]: "#[derive(Default, StatelessWidget)]"
+                    - text: "pub struct MyWidget { // Widget is the convention for passing children. Vec<Widget> should be used for passing variable amounts. pub child: Widget, } impl StatelessWidget for MyWidget { fn build(&self, ctx: &mut StatelessBuildContext<Self>) -> Widget { build! { <Button> { // Widgets are stored as Rcs, so cloning has little overhead child: self.child.clone(), } } } }"
+                  - button "Copy code to clipboard" [ref=e512] [cursor=pointer]:
+                    - img [ref=e513]
+                - generic [ref=e516]:
+                  - heading "What's build!?" [level=2] [ref=e517]:
+                    - text: What's
+                    - code [ref=e518]: build!
+                    - text: "?"
+                  - 'link "Permalink: What''s build!?" [ref=e519] [cursor=pointer]':
+                    - /url: "#whats-build"
+                    - img [ref=e520]
+                - paragraph [ref=e522]:
+                  - text: The
+                  - code [ref=e523]: build!
+                  - text: macro makes it significantly cleaner and easier to init new widgets. It gives a struct-like syntax for widget creation, and is the recommended way to build interfaces.
+                - generic [ref=e524]:
+                  - generic [ref=e525]: "use agui::macros::build; fn build(&self, ctx: &mut StatelessBuildContext) -> Widget { build! { <Button> { color: Color::from_rgba((1.0, 0.0, 1.0)), child: <Text> { text: \"A Button\" } } } } // is equivalent to: fn build(&self, ctx: &mut StatelessBuildContext) -> Widget { Button::builder() .color(Color::from_rgba((1.0, 0.0, 1.0))) .child( Text::builder() .text(String::from(\"A Button\")) .build() .into_widget() ) .build() .into_widget() }"
+                  - button "Copy code to clipboard" [ref=e527] [cursor=pointer]:
+                    - img [ref=e528]
+                - generic [ref=e531]:
+                  - heading "🤝 Contributing" [level=1] [ref=e532]
+                  - 'link "Permalink: 🤝 Contributing" [ref=e533] [cursor=pointer]':
+                    - /url: "#-contributing"
+                    - img [ref=e534]
+                - paragraph [ref=e536]:
+                  - text: Contributions are encouraged, and very welcome. Feel free to check the
+                  - link "issues page" [ref=e537] [cursor=pointer]:
+                    - /url: https://github.com/stumblinbear/agui/issues
+                  - text: if you wish to do so!
+                - paragraph [ref=e538]:
+                  - text: Please go through existing issues and pull requests to check if somebody else is already working on it. Also, make sure to run
+                  - code [ref=e539]: cargo test
+                  - text: before you commit your changes!
+        - generic [ref=e543]:
+          - generic [ref=e546]:
+            - heading "About" [level=2] [ref=e547]
+            - paragraph [ref=e548]: An advanced, reactive UI library for Rust
+            - generic [ref=e549]:
+              - img [ref=e550]
+              - link "stumblinbear.github.io/agui/" [ref=e553] [cursor=pointer]:
+                - /url: https://stumblinbear.github.io/agui/
+            - heading "Resources" [level=3] [ref=e554]
+            - link "Readme" [ref=e556] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+              - img [ref=e557]
+              - text: Readme
+            - link "Activity" [ref=e560] [cursor=pointer]:
+              - /url: /Stumblinbear/agui/activity
+              - img [ref=e561]
+              - text: Activity
+            - heading "Stars" [level=3] [ref=e563]
+            - link "37 stars" [ref=e565] [cursor=pointer]:
+              - /url: /Stumblinbear/agui/stargazers
+              - img [ref=e566]
+              - strong [ref=e568]: "37"
+              - text: stars
+            - heading "Watchers" [level=3] [ref=e569]
+            - link "3 watching" [ref=e571] [cursor=pointer]:
+              - /url: /Stumblinbear/agui/watchers
+              - img [ref=e572]
+              - strong [ref=e574]: "3"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e575]
+            - link "3 forks" [ref=e577] [cursor=pointer]:
+              - /url: /Stumblinbear/agui/forks
+              - img [ref=e578]
+              - strong [ref=e580]: "3"
+              - text: forks
+            - link "Report repository" [ref=e582] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FStumblinbear%2Fagui&report=Stumblinbear+%28user%29
+          - generic [ref=e584]:
+            - heading "Releases 3" [level=2] [ref=e585]:
+              - link "Releases 3" [ref=e586] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/releases
+                - text: Releases
+                - generic "3" [ref=e587]
+            - link "v0.3.0 Latest Jan 4, 2022on Jan 4, 2022" [ref=e588] [cursor=pointer]:
+              - /url: /Stumblinbear/agui/releases/tag/v0.3.0
+              - img [ref=e589]
+              - generic [ref=e591]:
+                - generic [ref=e592]:
+                  - generic [ref=e593]: v0.3.0
+                  - 'generic "Label: Latest" [ref=e594]': Latest
+                - generic [ref=e595]: Jan 4, 2022on Jan 4, 2022
+            - link "+ 2 releases" [ref=e597] [cursor=pointer]:
+              - /url: /Stumblinbear/agui/releases
+          - generic [ref=e599]:
+            - heading "Contributors 2" [level=2] [ref=e600]:
+              - link "Contributors 2" [ref=e601] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/graphs/contributors
+                - text: Contributors
+                - generic "2" [ref=e602]
+            - list [ref=e603]:
+              - listitem [ref=e604]:
+                - link "@Stumblinbear" [ref=e605] [cursor=pointer]:
+                  - /url: https://github.com/Stumblinbear
+                  - img "@Stumblinbear" [ref=e606]
+                - link "Stumblinbear Trevin Miller" [ref=e608] [cursor=pointer]:
+                  - /url: https://github.com/Stumblinbear
+                  - strong [ref=e609]: Stumblinbear
+                  - text: Trevin Miller
+              - listitem [ref=e610]:
+                - link "@lyricwulf" [ref=e611] [cursor=pointer]:
+                  - /url: https://github.com/lyricwulf
+                  - img "@lyricwulf" [ref=e612]
+                - link "lyricwulf LyricWulf" [ref=e614] [cursor=pointer]:
+                  - /url: https://github.com/lyricwulf
+                  - strong [ref=e615]: lyricwulf
+                  - text: LyricWulf
+          - generic [ref=e617]:
+            - heading "Languages" [level=2] [ref=e618]
+            - list [ref=e622]:
+              - listitem [ref=e623]:
+                - link "Rust 100.0%" [ref=e624] [cursor=pointer]:
+                  - /url: /Stumblinbear/agui/search?l=rust
+                  - img [ref=e625]
+                  - generic [ref=e627]: Rust
+                  - generic [ref=e628]: 100.0%
+  - contentinfo [ref=e630]:
+    - heading "Footer" [level=2] [ref=e631]
+    - generic [ref=e632]:
+      - generic [ref=e633]:
+        - link "GitHub Homepage" [ref=e634] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e635]
+        - generic [ref=e637]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e638]:
+        - heading "Footer navigation" [level=3] [ref=e639]
+        - list "Footer navigation" [ref=e640]:
+          - listitem [ref=e641]:
+            - link "Terms" [ref=e642] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e643]:
+            - link "Privacy" [ref=e644] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e645]:
+            - link "Security" [ref=e646] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e647]:
+            - link "Status" [ref=e648] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e649]:
+            - link "Community" [ref=e650] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e651]:
+            - link "Docs" [ref=e652] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e653]:
+            - link "Contact" [ref=e654] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e655]:
+            - button "Manage cookies" [ref=e657] [cursor=pointer]
+          - listitem [ref=e658]:
+            - button "Do not share my personal information" [ref=e660] [cursor=pointer]

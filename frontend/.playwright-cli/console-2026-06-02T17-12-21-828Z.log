@@ -1,0 +1,24 @@
+[  220309ms] [ERROR] SyntaxError: The requested module '/src/stores/layoutStore.ts?t=1780420562129' does not provide an export named 'useLayoutStore' @ http://192.168.0.108:3000/@vite/client:173
+[  220310ms] [ERROR] [hmr] Failed to reload /src/components/ThemePicker.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://192.168.0.108:3000/@vite/client:175
+[  220310ms] [ERROR] SyntaxError: The requested module '/src/stores/layoutStore.ts?t=1780420562129' does not provide an export named 'useLayoutStore' @ http://192.168.0.108:3000/@vite/client:173
+[  220310ms] [ERROR] [hmr] Failed to reload /src/components/widgets/AIWidget.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://192.168.0.108:3000/@vite/client:175
+[  220310ms] [ERROR] SyntaxError: The requested module '/src/stores/layoutStore.ts?t=1780420562129' does not provide an export named 'useLayoutStore' @ http://192.168.0.108:3000/@vite/client:173
+[  220310ms] [ERROR] [hmr] Failed to reload /src/components/widgets/DriveWidget.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://192.168.0.108:3000/@vite/client:175
+[  220310ms] [ERROR] SyntaxError: The requested module '/src/stores/layoutStore.ts?t=1780420562129' does not provide an export named 'useLayoutStore' @ http://192.168.0.108:3000/@vite/client:173
+[  220310ms] [ERROR] [hmr] Failed to reload /src/components/widgets/CalendarWidget.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://192.168.0.108:3000/@vite/client:175
+[  220310ms] [ERROR] SyntaxError: The requested module '/src/stores/layoutStore.ts?t=1780420562129' does not provide an export named 'useLayoutStore' @ http://192.168.0.108:3000/@vite/client:173
+[  220310ms] [ERROR] [hmr] Failed to reload /src/components/widgets/GmailWidget.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://192.168.0.108:3000/@vite/client:175
+[  220310ms] [ERROR] SyntaxError: The requested module '/src/stores/layoutStore.ts?t=1780420562129' does not provide an export named 'useLayoutStore' @ http://192.168.0.108:3000/@vite/client:173
+[  220310ms] [ERROR] [hmr] Failed to reload /src/components/AIDesignerPanel.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://192.168.0.108:3000/@vite/client:175
+[  220310ms] [ERROR] SyntaxError: The requested module '/src/stores/layoutStore.ts?t=1780420562129' does not provide an export named 'useLayoutStore' @ http://192.168.0.108:3000/@vite/client:173
+[  220310ms] [ERROR] [hmr] Failed to reload /src/components/ComponentLibrary.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://192.168.0.108:3000/@vite/client:175
+[  220310ms] [ERROR] SyntaxError: The requested module '/src/stores/layoutStore.ts?t=1780420562129' does not provide an export named 'useLayoutStore' @ http://192.168.0.108:3000/@vite/client:173
+[  220310ms] [ERROR] [hmr] Failed to reload /src/components/AIChatWidget.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://192.168.0.108:3000/@vite/client:175
+[  220310ms] [ERROR] SyntaxError: The requested module '/src/stores/layoutStore.ts?t=1780420562129' does not provide an export named 'useLayoutStore' @ http://192.168.0.108:3000/@vite/client:173
+[  220310ms] [ERROR] [hmr] Failed to reload /src/components/GridWidget.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://192.168.0.108:3000/@vite/client:175
+[  220310ms] [ERROR] SyntaxError: The requested module '/src/stores/layoutStore.ts?t=1780420562129' does not provide an export named 'useLayoutStore' @ http://192.168.0.108:3000/@vite/client:173
+[  220310ms] [ERROR] [hmr] Failed to reload /src/components/Canvas.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://192.168.0.108:3000/@vite/client:175
+[  220310ms] [ERROR] SyntaxError: The requested module '/src/stores/layoutStore.ts?t=1780420562129' does not provide an export named 'useLayoutStore' @ http://192.168.0.108:3000/@vite/client:173
+[  220310ms] [ERROR] [hmr] Failed to reload /src/App.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://192.168.0.108:3000/@vite/client:175
+[  220310ms] [ERROR] SyntaxError: The requested module '/src/stores/layoutStore.ts?t=1780420562129' does not provide an export named 'useLayoutStore' @ http://192.168.0.108:3000/@vite/client:173
+[  220310ms] [ERROR] [hmr] Failed to reload /src/components/widgets/TasksWidget.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://192.168.0.108:3000/@vite/client:175

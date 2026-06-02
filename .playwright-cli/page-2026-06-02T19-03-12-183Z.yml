@@ -1,0 +1,1566 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - button "Close autocomplete" [ref=e3]:
+      - generic [ref=e4]:
+        - button "Open site navigation panel" [ref=e7] [cursor=pointer]
+        - navigation [ref=e10]:
+          - list [ref=e11]:
+            - listitem [ref=e12]:
+              - link "AI icon AI Assistant" [ref=e13] [cursor=pointer]:
+                - /url: /assistant
+                - button "AI icon AI Assistant" [ref=e14]:
+                  - img "AI icon" [ref=e15]
+                  - text: AI Assistant
+            - listitem [ref=e16]:
+              - link "Dictionary" [ref=e17] [cursor=pointer]:
+                - /url: /dictionary/
+                - generic [ref=e18]: Dictionary
+            - listitem [ref=e19]:
+              - link "Translate" [ref=e20] [cursor=pointer]:
+                - /url: /translate/
+                - generic [ref=e21]: Translate
+            - listitem [ref=e22]:
+              - link "Grammar" [ref=e23] [cursor=pointer]:
+                - /url: /grammar/british-grammar/
+                - generic [ref=e24]: Grammar
+            - listitem [ref=e25]:
+              - link "Thesaurus" [ref=e26] [cursor=pointer]:
+                - /url: /thesaurus/
+                - generic [ref=e27]: Thesaurus
+            - listitem [ref=e28]:
+              - link "+Plus" [ref=e29] [cursor=pointer]:
+                - /url: /plus/
+                - generic [ref=e30]: +Plus
+            - listitem [ref=e31]:
+              - link "Games" [ref=e32] [cursor=pointer]:
+                - /url: /games/?utm_source=CDO&utm_medium=nav-bar&utm_campaign=gameshub-CDO-1&utm_id=games-nav&utm_content=games-nav
+                - generic [ref=e33]: Games
+      - generic [ref=e34]:
+        - text:    
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - link "" [ref=e37] [cursor=pointer]:
+              - /url: https://www.facebook.com/CUPCambridgeDictionary/
+          - listitem [ref=e38]:
+            - link "" [ref=e39] [cursor=pointer]:
+              - /url: https://www.instagram.com/cambridgewords
+          - listitem [ref=e40]:
+            - link "" [ref=e41] [cursor=pointer]:
+              - /url: https://twitter.com/CambridgeWords
+        - generic [ref=e42]:
+          - text:  
+          - generic [ref=e43]:
+            - generic [ref=e44] [cursor=pointer]:
+              - generic [ref=e45]: 
+              - text: Log in
+            - text: /
+            - generic [ref=e46] [cursor=pointer]: Sign up
+          - button "Open language selection panel" [ref=e48] [cursor=pointer]:
+            - generic [ref=e49]: 
+            - text: English (UK) 
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - link "Cambridge Dictionary Online" [ref=e55] [cursor=pointer]:
+          - /url: /
+          - img "Cambridge Dictionary Online" [ref=e56]
+        - generic [ref=e57]:
+          - textbox "Search" [active] [ref=e59]:
+            - /placeholder: Search English
+            - text: general
+          - generic [ref=e60]:
+            - button "" [ref=e61] [cursor=pointer]
+            - text: 
+            - button "Choose a dictionary" [ref=e62] [cursor=pointer]:
+              - generic [ref=e63]: English
+              - generic [ref=e64]: 
+            - button "Search" [ref=e65] [cursor=pointer]:
+              - generic [ref=e66]: 
+      - generic [ref=e70]:
+        - button "Set dictionary search to Grammar" [ref=e71] [cursor=pointer]: Grammar
+        - button "Set dictionary search to English–Spanish" [ref=e72] [cursor=pointer]: English–Spanish
+        - button "Set dictionary search to Spanish–English" [ref=e73] [cursor=pointer]: Spanish–English
+  - main "Close header popups" [ref=e74]:
+    - generic [ref=e75]:
+      - generic [ref=e81]:
+        - main [ref=e84]:
+          - heading "Meaning of general in English" [level=1] [ref=e85]
+          - generic [ref=e86]:
+            - tabpanel [ref=e87]:
+              - generic [ref=e90]:
+                - generic [ref=e93]:
+                  - generic [ref=e94]:
+                    - text: 
+                    - link "Share on Facebook" [ref=e95] [cursor=pointer]:
+                      - /url: https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdictionary.cambridge.org%2Fdictionary%2Fenglish%2Fgeneral&t=
+                  - generic [ref=e96]:
+                    - text: 
+                    - link "Share on X" [ref=e97] [cursor=pointer]:
+                      - /url: https://twitter.com/intent/tweet?url=https%3A%2F%2Fdictionary.cambridge.org%2Fdictionary%2Fenglish%2Fgeneral&text=
+                - generic [ref=e100]:
+                  - generic [ref=e101]:
+                    - generic [ref=e103]:
+                      - generic [ref=e105]: general
+                      - generic [ref=e106]: adjective
+                      - generic [ref=e107]:
+                        - text: uk
+                        - button "" [ref=e109] [cursor=pointer]
+                        - generic [ref=e110]:
+                          - text: /
+                          - generic [ref=e111]: ˈdʒen.ər.əl
+                          - text: /
+                      - generic [ref=e112]:
+                        - text: us
+                        - button "" [ref=e114] [cursor=pointer]
+                        - generic [ref=e115]:
+                          - text: /
+                          - generic [ref=e116]: ˈdʒen.ər.əl
+                          - text: /
+                    - generic [ref=e117]:
+                      - generic [ref=e118]:
+                        - heading "general adjective (COMMON)" [level=3] [ref=e120]:
+                          - text: general adjective
+                          - 'generic "Guide word: helps you find the right meaning when a word has more than one meaning" [ref=e121]': (COMMON)
+                        - generic [ref=e122]:
+                          - generic [ref=e123]:
+                            - generic [ref=e124]:
+                              - text: 
+                              - generic "Add this meaning to a word list" [ref=e125] [cursor=pointer]:
+                                - text: Add to word list
+                                - generic [ref=e126]: 
+                            - generic [ref=e127]:
+                              - generic [ref=e128]: B2
+                              - generic [ref=e129]:
+                                - link "involving" [ref=e130] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/involve
+                                - text: or
+                                - link "relating" [ref=e131] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/relate
+                                - text: to most or all
+                                - link "people" [ref=e132] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/people
+                                - text: ", things, or"
+                                - link "places" [ref=e133] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/place
+                                - text: ","
+                                - link "especially" [ref=e134] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/especially
+                                - text: when these are
+                                - link "considered" [ref=e135] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/considered
+                                - text: as a
+                                - link "unit" [ref=e136] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/unit
+                                - text: ":"
+                            - generic [ref=e137]:
+                              - generic [ref=e138]:
+                                - text: • general feeling
+                                - generic [ref=e139]:
+                                  - text: The general
+                                  - link "feeling" [ref=e140] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/feeling
+                                  - text: is that
+                                  - link "justice" [ref=e141] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/justice
+                                  - text: was not
+                                  - link "served" [ref=e142] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/serve
+                                  - text: .
+                              - generic [ref=e143]:
+                                - text: •
+                                - generic [ref=e144]:
+                                  - text: There is general
+                                  - link "concern" [ref=e145] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/concern
+                                  - text: about
+                                  - link "rising" [ref=e146] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/rising
+                                  - link "crime" [ref=e147] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/crime
+                                  - link "rates" [ref=e148] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/rate
+                                  - text: .
+                              - generic [ref=e149]:
+                                - text: •
+                                - generic [ref=e150]:
+                                  - text: My general
+                                  - link "impression" [ref=e151] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/impression
+                                  - text: of the
+                                  - link "place" [ref=e152] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/place
+                                  - text: was good.
+                              - generic [ref=e153]:
+                                - text: • general interest
+                                - generic [ref=e154]:
+                                  - text: The
+                                  - link "talk" [ref=e155] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/talk
+                                  - text: is
+                                  - link "intended" [ref=e156] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/intended
+                                  - text: to be of general
+                                  - link "interest" [ref=e157] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/interest
+                                  - generic [ref=e158]:
+                                    - text: (= of
+                                    - link "interest" [ref=e159] [cursor=pointer]:
+                                      - /url: https://dictionary.cambridge.org/dictionary/english/interest
+                                    - text: to most
+                                    - link "people" [ref=e160] [cursor=pointer]:
+                                      - /url: https://dictionary.cambridge.org/dictionary/english/people
+                                    - text: )
+                                  - text: .
+                              - generic [ref=e161]:
+                                - text: •
+                                - generic [ref=e162]: UK formal
+                                - generic [ref=e163]:
+                                  - text: Rain will
+                                  - link "become" [ref=e164] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/become
+                                  - text: more general in the
+                                  - link "southeast" [ref=e165] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/southeast
+                                  - text: during the
+                                  - link "afternoon" [ref=e166] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/afternoon
+                                  - text: .
+                          - generic [ref=e167]:
+                            - generic [ref=e169]:
+                              - generic [ref=e170]: 
+                              - generic [ref=e171]: in general
+                            - generic [ref=e172]:
+                              - generic [ref=e173]:
+                                - generic [ref=e174]:
+                                  - text:  
+                                  - generic "Add this meaning to a word list" [ref=e175] [cursor=pointer]:
+                                    - generic [ref=e176]: 
+                                    - generic [ref=e177]: 
+                                - generic [ref=e178]:
+                                  - generic [ref=e179]:
+                                    - text: B1
+                                    - generic [ref=e180]: (also as a general rule)
+                                  - generic [ref=e181]:
+                                    - text: usually, or in most
+                                    - link "situations" [ref=e182] [cursor=pointer]:
+                                      - /url: https://dictionary.cambridge.org/dictionary/english/situation
+                                    - text: ":"
+                                - generic [ref=e184]:
+                                  - text: •
+                                  - generic [ref=e185]:
+                                    - text: In general, men are
+                                    - link "taller" [ref=e186] [cursor=pointer]:
+                                      - /url: https://dictionary.cambridge.org/dictionary/english/tall
+                                    - text: than women.
+                              - generic [ref=e187]:
+                                - generic [ref=e188]:
+                                  - text:  
+                                  - generic "Add this meaning to a word list" [ref=e189] [cursor=pointer]:
+                                    - generic [ref=e190]: 
+                                    - generic [ref=e191]: 
+                                - generic [ref=e192]:
+                                  - generic [ref=e193]: B2
+                                  - generic [ref=e194]:
+                                    - link "considering" [ref=e195] [cursor=pointer]:
+                                      - /url: https://dictionary.cambridge.org/dictionary/english/considering
+                                    - text: the
+                                    - link "whole" [ref=e196] [cursor=pointer]:
+                                      - /url: https://dictionary.cambridge.org/dictionary/english/whole
+                                    - text: of someone or something, and not just a
+                                    - link "particular" [ref=e197] [cursor=pointer]:
+                                      - /url: https://dictionary.cambridge.org/dictionary/english/particular
+                                    - link "part" [ref=e198] [cursor=pointer]:
+                                      - /url: https://dictionary.cambridge.org/dictionary/english/part
+                                    - text: "of him, her, or it:"
+                                - generic [ref=e200]:
+                                  - text: •
+                                  - generic [ref=e201]:
+                                    - text: So,
+                                    - link "apart" [ref=e202] [cursor=pointer]:
+                                      - /url: https://dictionary.cambridge.org/dictionary/english/apart
+                                    - text: from the
+                                    - link "bad" [ref=e203] [cursor=pointer]:
+                                      - /url: https://dictionary.cambridge.org/dictionary/english/bad
+                                    - link "ankle" [ref=e204] [cursor=pointer]:
+                                      - /url: https://dictionary.cambridge.org/dictionary/english/ankle
+                                    - text: ", how are you in general?"
+                            - link "See more" [ref=e206] [cursor=pointer]:
+                              - /url: /dictionary/english/in-general
+                          - generic [ref=e207]:
+                            - generic [ref=e209]:
+                              - generic [ref=e210]: 
+                              - generic [ref=e211]: be in the general interest
+                              - generic [ref=e213]: formal
+                            - generic [ref=e215]:
+                              - generic [ref=e216]:
+                                - text:  
+                                - generic "Add this meaning to a word list" [ref=e217] [cursor=pointer]:
+                                  - generic [ref=e218]: 
+                                  - generic [ref=e219]: 
+                              - generic [ref=e221]:
+                                - text: to be a good thing for the
+                                - link "public" [ref=e222] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/public
+                                - text: ":"
+                              - generic [ref=e224]:
+                                - text: •
+                                - generic [ref=e225]:
+                                  - text: The
+                                  - link "government" [ref=e226] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/government
+                                  - text: will only say it is not in the general
+                                  - link "interest" [ref=e227] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/interest
+                                  - text: to
+                                  - link "reveal" [ref=e228] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/reveal
+                                  - text: any more
+                                  - link "information" [ref=e229] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/information
+                                  - text: .
+                            - link "See more" [ref=e231] [cursor=pointer]:
+                              - /url: /dictionary/english/be-in-the-general-interest
+                          - generic [ref=e234]:
+                            - button "Fewer examples" [expanded] [ref=e235] [cursor=pointer]:
+                              - generic [ref=e236]: 
+                              - text: Fewer examples
+                            - region "Fewer examples" [ref=e237]:
+                              - list [ref=e238]:
+                                - listitem [ref=e239]:
+                                  - text: • The general
+                                  - link "consensus" [ref=e240] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/consensus
+                                  - text: in the
+                                  - link "office" [ref=e241] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/office
+                                  - text: is that he's
+                                  - link "useless" [ref=e242] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/useless
+                                  - text: at his
+                                  - link "job" [ref=e243] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/job
+                                  - text: .
+                                - listitem [ref=e244]:
+                                  - text: • There was a general
+                                  - link "air" [ref=e245] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/air
+                                  - text: of
+                                  - link "expectancy" [ref=e246] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/expect
+                                  - text: in the
+                                  - link "crowd" [ref=e247] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/crowd
+                                  - text: .
+                                - listitem [ref=e248]:
+                                  - text: • These are general
+                                  - link "criticisms" [ref=e249] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/criticism
+                                  - text: which should not be taken
+                                  - link "personally" [ref=e250] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/personally
+                                  - text: .
+                                - listitem [ref=e251]:
+                                  - text: • The
+                                  - link "performance" [ref=e252] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/performance
+                                  - text: of the
+                                  - link "car" [ref=e253] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/car
+                                  - link "industry" [ref=e254] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/industry
+                                  - text: is a good
+                                  - link "pointer" [ref=e255] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/pointer
+                                  - text: to the general
+                                  - link "economic" [ref=e256] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/economic
+                                  - link "health" [ref=e257] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/health
+                                  - text: of the
+                                  - link "country" [ref=e258] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/country
+                                  - text: .
+                                - listitem [ref=e259]:
+                                  - text: • It would
+                                  - link "seem" [ref=e260] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/seem
+                                  - text: to be a general
+                                  - link "truth" [ref=e261] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/truth
+                                  - text: that nothing is as
+                                  - link "straightforward" [ref=e262] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/straightforward
+                                  - text: as it at first
+                                  - link "seems" [ref=e263] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/seem
+                                  - text: .
+                        - 'button "SMART Vocabulary: related words and phrases" [ref=e267] [cursor=pointer]':
+                          - generic [ref=e268]: 
+                          - text: "SMART Vocabulary: related words and phrases"
+                      - generic [ref=e269]:
+                        - heading "general adjective (NOT DETAILED)" [level=3] [ref=e271]:
+                          - text: general adjective
+                          - 'generic "Guide word: helps you find the right meaning when a word has more than one meaning" [ref=e272]': (NOT DETAILED)
+                        - generic [ref=e273]:
+                          - generic [ref=e274]:
+                            - generic [ref=e275]:
+                              - text:  
+                              - generic "Add this meaning to a word list" [ref=e276] [cursor=pointer]:
+                                - generic [ref=e277]: 
+                                - generic [ref=e278]: 
+                            - generic [ref=e279]:
+                              - generic [ref=e280]: B1
+                              - generic [ref=e281]:
+                                - text: not
+                                - link "detailed" [ref=e282] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/detail
+                                - text: ", but"
+                                - link "including" [ref=e283] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/include
+                                - text: the most
+                                - link "basic" [ref=e284] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/basic
+                                - text: or
+                                - link "necessary" [ref=e285] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/necessary
+                                - link "information" [ref=e286] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/information
+                                - text: ":"
+                            - generic [ref=e287]:
+                              - generic [ref=e288]: • What he said was very general.
+                              - generic [ref=e289]:
+                                - text: •
+                                - generic [ref=e290]:
+                                  - text: The
+                                  - link "school" [ref=e291] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/school
+                                  - link "aims" [ref=e292] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/aim
+                                  - text: to give
+                                  - link "children" [ref=e293] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/children
+                                  - text: a general
+                                  - link "background" [ref=e294] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/background
+                                  - text: in a
+                                  - link "variety" [ref=e295] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/variety
+                                  - text: of
+                                  - link "subjects" [ref=e296] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/subject
+                                  - text: .
+                              - generic [ref=e297]:
+                                - text: • in general terms
+                                - generic [ref=e298]:
+                                  - text: I'm not an
+                                  - link "expert" [ref=e299] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/expert
+                                  - text: ", so I can only"
+                                  - link "speak" [ref=e300] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/speak
+                                  - text: in general
+                                  - link "terms" [ref=e301] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/terms
+                                  - text: on this
+                                  - link "matter" [ref=e302] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/matter
+                                  - text: .
+                          - generic [ref=e303]:
+                            - generic [ref=e305]:
+                              - generic [ref=e306]: 
+                              - generic [ref=e307]: the general
+                            - generic [ref=e309]:
+                              - generic [ref=e310]:
+                                - text:  
+                                - generic "Add this meaning to a word list" [ref=e311] [cursor=pointer]:
+                                  - generic [ref=e312]: 
+                                  - generic [ref=e313]: 
+                              - generic [ref=e315]:
+                                - text: things
+                                - link "considered" [ref=e316] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/considered
+                                - text: as a
+                                - link "unit" [ref=e317] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/unit
+                                - text: and without giving
+                                - link "attention" [ref=e318] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/attention
+                                - text: to
+                                - link "details" [ref=e319] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/detail
+                                - text: ":"
+                              - generic [ref=e321]:
+                                - text: •
+                                - generic [ref=e322]:
+                                  - text: His
+                                  - link "book" [ref=e323] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/book
+                                  - link "moves" [ref=e324] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/move
+                                  - text: from the general to the
+                                  - link "particular" [ref=e325] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/particular
+                                  - text: .
+                        - 'button "SMART Vocabulary: related words and phrases" [ref=e329] [cursor=pointer]':
+                          - generic [ref=e330]: 
+                          - text: "SMART Vocabulary: related words and phrases"
+                      - generic [ref=e331]:
+                        - heading "general adjective (NOT LIMITED)" [level=3] [ref=e333]:
+                          - text: general adjective
+                          - 'generic "Guide word: helps you find the right meaning when a word has more than one meaning" [ref=e334]': (NOT LIMITED)
+                        - generic [ref=e335]:
+                          - generic [ref=e336]:
+                            - generic [ref=e337]:
+                              - text:  
+                              - generic "Add this meaning to a word list" [ref=e338] [cursor=pointer]:
+                                - generic [ref=e339]: 
+                                - generic [ref=e340]: 
+                            - generic [ref=e341]:
+                              - generic [ref=e342]: B2
+                              - generic [ref=e343]:
+                                - link "including" [ref=e344] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/include
+                                - text: a lot of things or
+                                - link "subjects" [ref=e345] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/subject
+                                - text: and not
+                                - link "limited" [ref=e346] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/limited
+                                - text: "to only one or a few:"
+                            - generic [ref=e348]:
+                              - text: •
+                              - generic [ref=e349]:
+                                - text: general
+                                - link "knowledge" [ref=e350] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/knowledge
+                          - generic [ref=e351]:
+                            - generic [ref=e352]:
+                              - text:  
+                              - generic "Add this meaning to a word list" [ref=e353] [cursor=pointer]:
+                                - generic [ref=e354]: 
+                                - generic [ref=e355]: 
+                            - generic [ref=e357]:
+                              - text: used as
+                              - link "part" [ref=e358] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/part
+                              - text: of the
+                              - link "title" [ref=e359] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/title
+                              - text: of a
+                              - link "job" [ref=e360] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/job
+                              - text: of someone who is in
+                              - link "charge" [ref=e361] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/charge
+                              - text: of a
+                              - link "whole" [ref=e362] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/whole
+                              - link "organization" [ref=e363] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/organization
+                              - text: or
+                              - link "company" [ref=e364] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/company
+                              - text: ":"
+                            - generic [ref=e365]:
+                              - generic [ref=e366]:
+                                - text: •
+                                - link "general manager" [ref=e367] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/general-manager
+                                - generic [ref=e368]:
+                                  - text: He
+                                  - link "hoped" [ref=e369] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/hope
+                                  - text: to
+                                  - link "become" [ref=e370] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/become
+                                  - text: a general
+                                  - link "manager" [ref=e371] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/manager
+                                  - text: in a
+                                  - link "hotel" [ref=e372] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/hotel
+                                  - text: .
+                              - generic [ref=e373]:
+                                - text: •
+                                - generic [ref=e374]:
+                                  - text: the General
+                                  - link "Secretary" [ref=e375] [cursor=pointer]:
+                                    - /url: https://dictionary.cambridge.org/dictionary/english/secretary
+                                  - text: of the UN
+                        - 'button "SMART Vocabulary: related words and phrases" [ref=e379] [cursor=pointer]':
+                          - generic [ref=e380]: 
+                          - text: "SMART Vocabulary: related words and phrases"
+                  - generic [ref=e383]:
+                    - generic [ref=e384]:
+                      - text: 
+                      - link "Share on Facebook" [ref=e385] [cursor=pointer]:
+                        - /url: https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdictionary.cambridge.org%2Fdictionary%2Fenglish%2Fgeneral&t=
+                    - generic [ref=e386]:
+                      - text: 
+                      - link "Share on X" [ref=e387] [cursor=pointer]:
+                        - /url: https://twitter.com/intent/tweet?url=https%3A%2F%2Fdictionary.cambridge.org%2Fdictionary%2Fenglish%2Fgeneral&text=
+                  - generic [ref=e388]:
+                    - generic [ref=e390]:
+                      - generic [ref=e392]: general
+                      - generic [ref=e393]:
+                        - text: noun
+                        - link "[ C ]" [ref=e395] [cursor=pointer]:
+                          - /url: /help/codes.html
+                      - generic [ref=e396]:
+                        - text: uk
+                        - button "" [ref=e398] [cursor=pointer]
+                        - generic [ref=e399]:
+                          - text: /
+                          - generic [ref=e400]: ˈdʒen.ər.əl
+                          - text: /
+                      - generic [ref=e401]:
+                        - text: us
+                        - button "" [ref=e403] [cursor=pointer]
+                        - generic [ref=e404]:
+                          - text: /
+                          - generic [ref=e405]: ˈdʒen.ər.əl
+                          - text: /
+                    - generic [ref=e407]:
+                      - generic [ref=e409]:
+                        - generic [ref=e410]:
+                          - generic [ref=e411]:
+                            - text:  
+                            - generic "Add this meaning to a word list" [ref=e412] [cursor=pointer]:
+                              - generic [ref=e413]: 
+                              - generic [ref=e414]: 
+                          - generic [ref=e415]:
+                            - generic [ref=e417]: (also General)
+                            - generic [ref=e418]:
+                              - text: an
+                              - link "officer" [ref=e419] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/officer
+                              - text: of very high
+                              - link "rank" [ref=e420] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/rank
+                              - text: ","
+                              - link "especially" [ref=e421] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/especially
+                              - text: in the
+                              - link "army" [ref=e422] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/army
+                              - text: ":"
+                          - generic [ref=e423]:
+                            - generic [ref=e424]:
+                              - text: •
+                              - generic [ref=e425]:
+                                - text: He was
+                                - link "promoted" [ref=e426] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/promote
+                                - text: to the
+                                - link "rank" [ref=e427] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/rank
+                                - text: of general.
+                            - generic [ref=e428]:
+                              - text: •
+                              - generic [ref=e429]:
+                                - text: General
+                                - link "Brown" [ref=e430] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/brown
+                                - text: /Roger
+                                - link "Brown" [ref=e431] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/brown
+                            - generic [ref=e432]:
+                              - text: •
+                              - link "[ as form of address ]" [ref=e434] [cursor=pointer]:
+                                - /url: /help/codes.html
+                              - text: Thank you, General.
+                        - generic [ref=e437]:
+                          - button "More examples" [ref=e438] [cursor=pointer]:
+                            - generic [ref=e439]: 
+                            - text: More examples
+                          - text: • • • • •
+                      - 'button "SMART Vocabulary: related words and phrases" [ref=e443] [cursor=pointer]':
+                        - generic [ref=e444]: 
+                        - text: "SMART Vocabulary: related words and phrases"
+              - generic [ref=e445]:
+                - text: (Definition of general from the
+                - link "Cambridge Advanced Learner's Dictionary & Thesaurus" [ref=e446] [cursor=pointer]:
+                  - /url: https://dictionary.cambridge.org/dictionary/english/
+                - text: © Cambridge University Press)
+            - tabpanel [ref=e447]:
+              - generic [ref=e450]:
+                - heading "general | American Dictionary" [level=2] [ref=e454]
+                - generic [ref=e457]:
+                  - generic [ref=e458]:
+                    - generic [ref=e460]:
+                      - generic [ref=e462]: general
+                      - generic [ref=e463]: adjective
+                      - generic [ref=e464]:
+                        - text: us
+                        - button "" [ref=e466] [cursor=pointer]
+                        - generic [ref=e467]: /ˈdʒen·rəl, -ə·rəl/
+                    - generic [ref=e469]:
+                      - heading "general adjective (COMMON)" [level=3] [ref=e471]:
+                        - text: general adjective
+                        - 'generic "Guide word: helps you find the right meaning when a word has more than one meaning" [ref=e472]': (COMMON)
+                      - generic [ref=e474]:
+                        - generic [ref=e475]:
+                          - text: 
+                          - generic "Add this meaning to a word list" [ref=e476] [cursor=pointer]:
+                            - text: Add to word list
+                            - generic [ref=e477]: 
+                        - generic [ref=e479]:
+                          - link "involving" [ref=e480] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/involve
+                          - text: or
+                          - link "relating" [ref=e481] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/relate
+                          - text: to most
+                          - link "people" [ref=e482] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/people
+                          - text: ", things, or"
+                          - link "conditions" [ref=e483] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/conditions
+                          - text: ","
+                          - link "esp" [ref=e484] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/esp
+                          - text: . when these are
+                          - link "considered" [ref=e485] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/considered
+                          - text: as a
+                          - link "unit" [ref=e486] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/unit
+                          - text: ; not
+                          - link "particular" [ref=e487] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/particular
+                          - text: or
+                          - link "specific" [ref=e488] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/specific
+                          - text: ":"
+                        - generic [ref=e489]:
+                          - generic [ref=e490]:
+                            - text: •
+                            - generic [ref=e491]:
+                              - text: the general
+                              - link "standard" [ref=e492] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/standard
+                              - text: of
+                              - link "living" [ref=e493] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/living
+                          - generic [ref=e494]:
+                            - text: •
+                            - generic [ref=e495]:
+                              - text: This
+                              - link "book" [ref=e496] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/book
+                              - text: is
+                              - link "intended" [ref=e497] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/intended
+                              - text: for the general
+                              - link "reader" [ref=e498] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/reader
+                              - generic [ref=e499]:
+                                - text: (= one who does not have
+                                - link "special" [ref=e500] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/special
+                                - link "knowledge" [ref=e501] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/knowledge
+                                - text: )
+                              - text: .
+                          - generic [ref=e502]:
+                            - text: •
+                            - generic [ref=e503]:
+                              - text: He has only a general
+                              - link "knowledge" [ref=e504] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/knowledge
+                              - text: of
+                              - link "anatomy" [ref=e505] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/anatomy
+                              - generic [ref=e506]:
+                                - text: (= does not have
+                                - link "detailed" [ref=e507] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/detail
+                                - link "information" [ref=e508] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/information
+                                - text: about it)
+                              - text: .
+                          - generic [ref=e509]:
+                            - text: •
+                            - generic [ref=e510]:
+                              - text: In general
+                              - generic [ref=e511]:
+                                - text: (= In most
+                                - link "cases" [ref=e512] [cursor=pointer]:
+                                  - /url: https://dictionary.cambridge.org/dictionary/english/case
+                                - text: )
+                              - text: ", women"
+                              - link "live" [ref=e513] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/live
+                              - link "longer" [ref=e514] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/long
+                              - text: than men.
+                  - generic [ref=e516]:
+                    - generic [ref=e517]:
+                      - text: 
+                      - link "Share on Facebook" [ref=e518] [cursor=pointer]:
+                        - /url: https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdictionary.cambridge.org%2Fdictionary%2Fenglish%2Fgeneral&t=
+                    - generic [ref=e519]:
+                      - text: 
+                      - link "Share on X" [ref=e520] [cursor=pointer]:
+                        - /url: https://twitter.com/intent/tweet?url=https%3A%2F%2Fdictionary.cambridge.org%2Fdictionary%2Fenglish%2Fgeneral&text=
+                  - generic [ref=e521]:
+                    - generic [ref=e523]:
+                      - generic [ref=e525]: general
+                      - generic [ref=e526]:
+                        - text: noun
+                        - link "[ C ]" [ref=e528] [cursor=pointer]:
+                          - /url: /help/codes.html
+                      - generic [ref=e529]:
+                        - text: us
+                        - button "" [ref=e531] [cursor=pointer]
+                        - generic [ref=e532]: /ˈdʒen·rəl, -ə·rəl/
+                    - generic [ref=e534]:
+                      - heading "general noun [C] (OFFICER)" [level=3] [ref=e536]:
+                        - text: general noun [C]
+                        - 'generic "Guide word: helps you find the right meaning when a word has more than one meaning" [ref=e537]': (OFFICER)
+                      - generic [ref=e539]:
+                        - generic [ref=e540]:
+                          - text:  
+                          - generic "Add this meaning to a word list" [ref=e541] [cursor=pointer]:
+                            - generic [ref=e542]: 
+                            - generic [ref=e543]: 
+                        - generic [ref=e545]:
+                          - text: a
+                          - link "military" [ref=e546] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/military
+                          - link "officer" [ref=e547] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/officer
+                          - text: of the
+                          - link "highest" [ref=e548] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/high
+                          - link "rank" [ref=e549] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/rank
+              - generic [ref=e550]:
+                - text: (Definition of general from the
+                - link "Cambridge Academic Content Dictionary" [ref=e551] [cursor=pointer]:
+                  - /url: https://dictionary.cambridge.org/dictionary/english/
+                - text: © Cambridge University Press)
+            - tabpanel [ref=e552]:
+              - generic [ref=e555]:
+                - heading "general | Business English" [level=2] [ref=e559]
+                - generic [ref=e563]:
+                  - generic [ref=e565]:
+                    - generic [ref=e567]: general
+                    - generic [ref=e568]: adjective
+                    - generic [ref=e569]:
+                      - text: uk
+                      - button "" [ref=e571] [cursor=pointer]
+                      - generic [ref=e572]:
+                        - text: /
+                        - generic [ref=e573]: ˈdʒenərəl
+                        - text: /
+                    - generic [ref=e574]:
+                      - text: us
+                      - button "" [ref=e576] [cursor=pointer]
+                  - generic [ref=e577]:
+                    - generic [ref=e581]:
+                      - generic [ref=e582]:
+                        - text: 
+                        - generic "Add this meaning to a word list" [ref=e583] [cursor=pointer]:
+                          - text: Add to word list
+                          - generic [ref=e584]: 
+                      - generic [ref=e586]:
+                        - link "including" [ref=e587] [cursor=pointer]:
+                          - /url: https://dictionary.cambridge.org/dictionary/english/include
+                        - text: a lot of things or
+                        - link "subjects" [ref=e588] [cursor=pointer]:
+                          - /url: https://dictionary.cambridge.org/dictionary/english/subject
+                        - link "rather" [ref=e589] [cursor=pointer]:
+                          - /url: https://dictionary.cambridge.org/dictionary/english/rather
+                        - text: than being
+                        - link "limited" [ref=e590] [cursor=pointer]:
+                          - /url: https://dictionary.cambridge.org/dictionary/english/limited
+                        - text: "to only one or a few:"
+                      - generic [ref=e591]:
+                        - generic [ref=e592]:
+                          - text: •
+                          - generic [ref=e593]:
+                            - text: Only a third of
+                            - strong [ref=e594]:
+                              - text: the general
+                              - link "population" [ref=e595] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/population
+                            - text: are
+                            - link "willing" [ref=e596] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/willing
+                            - text: to
+                            - link "haggle" [ref=e597] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/haggle
+                            - text: over the
+                            - link "price" [ref=e598] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/price
+                            - text: of something they
+                            - link "want" [ref=e599] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/want
+                            - text: to
+                            - link "buy" [ref=e600] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/buy
+                            - text: .
+                        - generic [ref=e601]:
+                          - text: •
+                          - generic [ref=e602]:
+                            - text: Market
+                            - link "demand" [ref=e603] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/demand
+                            - text: for all
+                            - link "our" [ref=e604] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/our
+                            - link "products" [ref=e605] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/product
+                            - link "remains" [ref=e606] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/remains
+                            - link "strong" [ref=e607] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/strong
+                            - text: ","
+                            - link "reflecting" [ref=e608] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/reflect
+                            - link "continued" [ref=e609] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/continued
+                            - link "growth" [ref=e610] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/growth
+                            - text: in
+                            - strong [ref=e611]:
+                              - text: the general
+                              - link "economy" [ref=e612] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/economy
+                            - text: .
+                        - generic [ref=e613]:
+                          - text: •
+                          - generic [ref=e614]:
+                            - text: Let me
+                            - link "describe" [ref=e615] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/describe
+                            - text: the
+                            - link "finances" [ref=e616] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/finance
+                            - strong [ref=e617]:
+                              - text: in general
+                              - link "terms" [ref=e618] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/terms
+                            - text: without being
+                            - link "specific" [ref=e619] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/specific
+                            - text: .
+                    - generic [ref=e623]:
+                      - generic [ref=e624]:
+                        - text:  
+                        - generic "Add this meaning to a word list" [ref=e625] [cursor=pointer]:
+                          - generic [ref=e626]: 
+                          - generic [ref=e627]: 
+                      - generic [ref=e628]:
+                        - generic [ref=e629]: HR, WORKPLACE
+                        - generic [ref=e630]:
+                          - text: used as
+                          - link "part" [ref=e631] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/part
+                          - text: of the
+                          - link "title" [ref=e632] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/title
+                          - text: of a
+                          - link "job" [ref=e633] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/job
+                          - text: of someone who is in
+                          - link "charge" [ref=e634] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/charge
+                          - text: of all or
+                          - link "part" [ref=e635] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/part
+                          - text: of an
+                          - link "organization" [ref=e636] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/organization
+                          - text: or
+                          - link "company" [ref=e637] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/company
+                          - text: ":"
+                      - generic [ref=e638]:
+                        - generic [ref=e639]:
+                          - text: •
+                          - generic [ref=e640]:
+                            - text: Mike
+                            - link "Black" [ref=e641] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/black-death
+                            - text: ","
+                            - strong [ref=e642]:
+                              - text: general
+                              - link "manager" [ref=e643] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/manager
+                            - text: at the
+                            - link "plant" [ref=e644] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/plant
+                            - text: ", said only a"
+                            - link "small" [ref=e645] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/small
+                            - link "percentage" [ref=e646] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/percentage
+                            - text: of the
+                            - link "workforce" [ref=e647] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/workforce
+                            - text: were
+                            - link "members" [ref=e648] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/member
+                            - text: of the
+                            - link "union" [ref=e649] [cursor=pointer]:
+                              - /url: https://dictionary.cambridge.org/dictionary/english/union
+                            - text: .
+                        - generic [ref=e650]:
+                          - text: •
+                          - generic [ref=e651]:
+                            - text: the
+                            - strong [ref=e652]:
+                              - text: General
+                              - link "Secretary" [ref=e653] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/secretary
+                            - text: of the UN
+                        - generic [ref=e654]:
+                          - text: •
+                          - strong [ref=e656]: General Director
+                    - generic [ref=e660]:
+                      - generic [ref=e662]:
+                        - generic [ref=e663]: 
+                        - generic [ref=e664]: in general
+                        - generic [ref=e666]: (also as a general rule)
+                      - generic [ref=e668]:
+                        - generic [ref=e669]:
+                          - text:  
+                          - generic "Add this meaning to a word list" [ref=e670] [cursor=pointer]:
+                            - generic [ref=e671]: 
+                            - generic [ref=e672]: 
+                        - generic [ref=e674]:
+                          - text: usually, or in most
+                          - link "situations" [ref=e675] [cursor=pointer]:
+                            - /url: https://dictionary.cambridge.org/dictionary/english/situation
+                          - text: ":"
+                        - generic [ref=e676]:
+                          - generic [ref=e677]:
+                            - text: •
+                            - generic [ref=e678]:
+                              - text: In general, British
+                              - link "management" [ref=e679] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/management
+                              - link "style" [ref=e680] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/style
+                              - text: is
+                              - link "known" [ref=e681] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/known
+                              - text: for
+                              - link "its" [ref=e682] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/its
+                              - link "individuality" [ref=e683] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/individuality
+                              - text: .
+                          - generic [ref=e684]:
+                            - text: •
+                            - generic [ref=e685]:
+                              - text: "\"Housing as a general"
+                              - link "rule" [ref=e686] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/rule
+                              - link "follows" [ref=e687] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/follow
+                              - link "jobs" [ref=e688] [cursor=pointer]:
+                                - /url: https://dictionary.cambridge.org/dictionary/english/job
+                              - text: ",\" Terry said."
+                          - generic [ref=e689]:
+                            - strong [ref=e690]: See also
+                            - generic [ref=e691]:
+                              - link "attorney general" [ref=e693] [cursor=pointer]:
+                                - /url: /dictionary/english/attorney-general
+                              - link "director general" [ref=e695] [cursor=pointer]:
+                                - /url: /dictionary/english/director-general
+              - generic [ref=e697]:
+                - text: (Definition of general from the
+                - link "Cambridge Business English Dictionary" [ref=e698] [cursor=pointer]:
+                  - /url: https://dictionary.cambridge.org/dictionary/english/
+                - text: © Cambridge University Press)
+            - tabpanel [ref=e699]:
+              - tabpanel [ref=e701]:
+                - heading "Examples of general" [level=2] [ref=e703]
+                - generic [ref=e704]:
+                  - generic [ref=e705]: general
+                  - generic [ref=e706]:
+                    - generic [ref=e707]:
+                      - generic [ref=e708]:
+                        - text: The above concept is very
+                        - emphasis [ref=e709]: general
+                        - text: and idealistic.
+                      - generic [ref=e710]:
+                        - text: From the
+                        - link "Cambridge English Corpus" [ref=e711] [cursor=pointer]:
+                          - /url: https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus
+                        - button "Tell us what you think" [ref=e712] [cursor=pointer]:
+                          - generic [ref=e713]: 
+                    - generic [ref=e714]:
+                      - generic [ref=e715]:
+                        - text: The solutions of the equations (3.10)-(3.14) are very difficult to obtain in the
+                        - emphasis [ref=e716]: general
+                        - text: case.
+                      - generic [ref=e717]:
+                        - text: From the
+                        - link "Cambridge English Corpus" [ref=e718] [cursor=pointer]:
+                          - /url: https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus
+                        - button "Tell us what you think" [ref=e719] [cursor=pointer]:
+                          - generic [ref=e720]: 
+                    - generic [ref=e721]:
+                      - generic [ref=e722]:
+                        - text: But there is no
+                        - emphasis [ref=e723]: general
+                        - text: history of the magazine.
+                      - generic [ref=e724]:
+                        - text: From the
+                        - link "Cambridge English Corpus" [ref=e725] [cursor=pointer]:
+                          - /url: https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus
+                        - button "Tell us what you think" [ref=e726] [cursor=pointer]:
+                          - generic [ref=e727]: 
+                    - generic [ref=e728]:
+                      - generic [ref=e729]:
+                        - text: However, this is not simply a matter of the "identification and denigration of differences" in
+                        - emphasis [ref=e730]: general
+                        - text: .
+                      - generic [ref=e731]:
+                        - text: From the
+                        - link "Cambridge English Corpus" [ref=e732] [cursor=pointer]:
+                          - /url: https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus
+                        - button "Tell us what you think" [ref=e733] [cursor=pointer]:
+                          - generic [ref=e734]: 
+                    - generic [ref=e735]:
+                      - generic [ref=e736]:
+                        - text: Alternatively, one can propose a
+                        - emphasis [ref=e737]: general
+                        - text: licensing principle that permits such violations at that level.
+                      - generic [ref=e738]:
+                        - text: From the
+                        - link "Cambridge English Corpus" [ref=e739] [cursor=pointer]:
+                          - /url: https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus
+                        - button "Tell us what you think" [ref=e740] [cursor=pointer]:
+                          - generic [ref=e741]: 
+                    - generic [ref=e742]:
+                      - generic [ref=e743]:
+                        - text: In
+                        - emphasis [ref=e744]: general
+                        - text: ", the laser-heated plasma volume is smaller than the cluster plume."
+                      - generic [ref=e745]:
+                        - text: From the
+                        - link "Cambridge English Corpus" [ref=e746] [cursor=pointer]:
+                          - /url: https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus
+                        - button "Tell us what you think" [ref=e747] [cursor=pointer]:
+                          - generic [ref=e748]: 
+                    - generic [ref=e749]:
+                      - generic [ref=e750]:
+                        - text: In observational research in the
+                        - emphasis [ref=e751]: general
+                        - text: population, however, a continuum approach may be more useful than use of a qualitative cut-off point.
+                      - generic [ref=e752]:
+                        - text: From the
+                        - link "Cambridge English Corpus" [ref=e753] [cursor=pointer]:
+                          - /url: https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus
+                        - button "Tell us what you think" [ref=e754] [cursor=pointer]:
+                          - generic [ref=e755]: 
+                    - generic [ref=e756]:
+                      - generic [ref=e757]:
+                        - text: A qualitative argument is derived to discriminate between oscillatory and stationary onset of instability in the
+                        - emphasis [ref=e758]: general
+                        - text: case.
+                      - generic [ref=e759]:
+                        - text: From the
+                        - link "Cambridge English Corpus" [ref=e760] [cursor=pointer]:
+                          - /url: https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus
+                        - button "Tell us what you think" [ref=e761] [cursor=pointer]:
+                          - generic [ref=e762]: 
+                    - generic [ref=e763]:
+                      - generic [ref=e764]:
+                        - text: He surveys the sacred meals against a carefully assembled background of ordinary meal-taking and the
+                        - emphasis [ref=e765]: general
+                        - text: philosophy of food in each region.
+                      - generic [ref=e766]:
+                        - text: From the
+                        - link "Cambridge English Corpus" [ref=e767] [cursor=pointer]:
+                          - /url: https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus
+                        - button "Tell us what you think" [ref=e768] [cursor=pointer]:
+                          - generic [ref=e769]: 
+                    - generic [ref=e770]:
+                      - generic [ref=e771]:
+                        - text: The citizens of the country constitute an organic whole, which is integrated by the
+                        - emphasis [ref=e772]: general
+                        - text: will of the masses.
+                      - generic [ref=e773]:
+                        - text: From the
+                        - link "Cambridge English Corpus" [ref=e774] [cursor=pointer]:
+                          - /url: https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus
+                        - button "Tell us what you think" [ref=e775] [cursor=pointer]:
+                          - generic [ref=e776]: 
+                    - generic [ref=e777]:
+                      - generic [ref=e778]:
+                        - text: In
+                        - emphasis [ref=e779]: general
+                        - text: ", little is known about those living on the margins of society during this period, especially in the rural regions."
+                      - generic [ref=e780]:
+                        - text: From the
+                        - link "Cambridge English Corpus" [ref=e781] [cursor=pointer]:
+                          - /url: https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus
+                        - button "Tell us what you think" [ref=e782] [cursor=pointer]:
+                          - generic [ref=e783]: 
+                    - generic [ref=e784]:
+                      - generic [ref=e785]:
+                        - text: In
+                        - emphasis [ref=e786]: general
+                        - text: ", reflexive pronouns do not form a large percentage of postverbal pronouns."
+                      - generic [ref=e787]:
+                        - text: From the
+                        - link "Cambridge English Corpus" [ref=e788] [cursor=pointer]:
+                          - /url: https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus
+                        - button "Tell us what you think" [ref=e789] [cursor=pointer]:
+                          - generic [ref=e790]: 
+                    - generic [ref=e791]:
+                      - generic [ref=e792]:
+                        - text: The findings underline the importance of using specific rather than
+                        - emphasis [ref=e793]: general
+                        - text: tasks to assess phonology, phonological sensitivity, and phonological representations.
+                      - generic [ref=e794]:
+                        - text: From the
+                        - link "Cambridge English Corpus" [ref=e795] [cursor=pointer]:
+                          - /url: https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus
+                        - button "Tell us what you think" [ref=e796] [cursor=pointer]:
+                          - generic [ref=e797]: 
+                    - generic [ref=e798]:
+                      - generic [ref=e799]:
+                        - text: Such reports highlight consequences that affect development prospects in
+                        - emphasis [ref=e800]: general
+                        - text: .
+                      - generic [ref=e801]:
+                        - text: From the
+                        - link "Cambridge English Corpus" [ref=e802] [cursor=pointer]:
+                          - /url: https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus
+                        - button "Tell us what you think" [ref=e803] [cursor=pointer]:
+                          - generic [ref=e804]: 
+                    - generic [ref=e805]:
+                      - generic [ref=e806]:
+                        - text: The country's
+                        - emphasis [ref=e807]: general
+                        - text: policy direction over the past ten years is not in question.
+                      - generic [ref=e808]:
+                        - text: From the
+                        - link "Cambridge English Corpus" [ref=e809] [cursor=pointer]:
+                          - /url: https://www.cambridge.org/gb/cambridgeenglish/better-learning-insights/corpus
+                        - button "Tell us what you think" [ref=e810] [cursor=pointer]:
+                          - generic [ref=e811]: 
+                    - link "See all examples of general" [ref=e813] [cursor=pointer]:
+                      - /url: https://dictionary.cambridge.org/example/english/general
+                    - generic [ref=e814]: These examples are from corpora and from sources on the web. Any opinions in the examples do not represent the opinion of the Cambridge Dictionary editors or of Cambridge University Press or its licensors.
+            - tabpanel [ref=e815]:
+              - generic [ref=e817]:
+                - heading "Collocations with general" [level=2] [ref=e819]
+                - generic [ref=e820]:
+                  - heading "general" [level=2] [ref=e821]
+                  - paragraph [ref=e822]: These are words often used in combination with general.
+                  - paragraph [ref=e823]: Click on a collocation to see more examples of it.
+                  - generic [ref=e825]:
+                    - generic [ref=e826]:
+                      - link "adjutant general" [ref=e827] [cursor=pointer]:
+                        - /url: https://dictionary.cambridge.org/example/english/adjutant-general
+                      - generic [ref=e828]:
+                        - text: •
+                        - generic [ref=e829]: Their work in the supporting investigation by the deputy adjutant general has produced real changes in the way we work.
+                      - generic [ref=e830]:
+                        - text: From the
+                        - button "Hansard archive" [ref=e831] [cursor=pointer]
+                        - text: ▲ 
+                        - button "Tell us what you think" [ref=e832] [cursor=pointer]:
+                          - generic [ref=e833]: 
+                    - generic [ref=e834]:
+                      - link "auditor general" [ref=e835] [cursor=pointer]:
+                        - /url: https://dictionary.cambridge.org/example/english/auditor-general
+                      - generic [ref=e836]:
+                        - text: •
+                        - generic [ref=e837]: I may have said "auditor comptroller general"instead of"comptroller auditor general".
+                      - generic [ref=e838]:
+                        - text: From the
+                        - button "Hansard archive" [ref=e839] [cursor=pointer]
+                        - text: ▲ 
+                        - button "Tell us what you think" [ref=e840] [cursor=pointer]:
+                          - generic [ref=e841]: 
+                    - generic [ref=e842]:
+                      - link "commanding general" [ref=e843] [cursor=pointer]:
+                        - /url: https://dictionary.cambridge.org/example/english/commanding-general
+                      - generic [ref=e844]:
+                        - text: •
+                        - generic [ref=e845]: No proposals commanding general acceptance have so far been received.
+                      - generic [ref=e846]:
+                        - text: From the
+                        - button "Hansard archive" [ref=e847] [cursor=pointer]
+                        - text: ▲ 
+                        - button "Tell us what you think" [ref=e848] [cursor=pointer]:
+                          - generic [ref=e849]: 
+                    - generic [ref=e850]: These examples are from corpora and from sources on the web. Any opinions in the examples do not represent the opinion of the Cambridge Dictionary editors or of Cambridge University Press or its licensors.
+                    - link "See all collocations with general" [ref=e852] [cursor=pointer]:
+                      - /url: https://dictionary.cambridge.org/collocation/english/general
+            - link "What is the pronunciation of general?" [ref=e854] [cursor=pointer]:
+              - /url: /pronunciation/english/general
+              - generic [ref=e855]:
+                - text: What is the pronunciation of
+                - emphasis [ref=e856]: general
+                - text: "?"
+              - generic [ref=e857]: 
+          - generic [ref=e858]:
+            - generic [ref=e860]:
+              - heading "Translations of general" [level=2] [ref=e861]
+              - generic [ref=e862]:
+                - generic [ref=e863]:
+                  - generic [ref=e864]: in Chinese (Traditional)
+                  - generic [ref=e865]: 普遍的, 全體的，總的，普遍的, 籠統的…
+                  - link "See more" [ref=e867] [cursor=pointer]:
+                    - /url: /dictionary/english-chinese-traditional/general
+                - generic [ref=e868]:
+                  - generic [ref=e869]: in Chinese (Simplified)
+                  - generic [ref=e870]: 普遍的, 全体的，总的，普遍的, 笼统的…
+                  - link "See more" [ref=e872] [cursor=pointer]:
+                    - /url: /dictionary/english-chinese-simplified/general
+                - generic [ref=e873]:
+                  - generic [ref=e874]: in Spanish
+                  - generic [ref=e875]: general, general [masculine-feminine]…
+                  - link "See more" [ref=e877] [cursor=pointer]:
+                    - /url: /dictionary/english-spanish/general
+                - generic [ref=e878]:
+                  - generic [ref=e879]: in Portuguese
+                  - generic [ref=e880]: geral, general, comum…
+                  - link "See more" [ref=e882] [cursor=pointer]:
+                    - /url: /dictionary/english-portuguese/general
+              - button "in more languages" [ref=e888] [cursor=pointer]:
+                - generic [ref=e889]:
+                  - text: in more languages
+                  - generic [ref=e890]: 
+            - generic [ref=e892]:
+              - generic [ref=e893]: Need a translator?
+              - paragraph [ref=e894]: Get a quick, free translation!
+              - link "Translator tool" [ref=e896] [cursor=pointer]:
+                - /url: https://dictionary.cambridge.org/translate/
+                - generic [ref=e897]:
+                  - generic [ref=e898]: 
+                  - text: Translator tool
+          - generic [ref=e899]:
+            - heading "Browse" [level=2] [ref=e900]:
+              - strong [ref=e901]: Browse
+            - generic [ref=e902]:
+              - link "genealogically" [ref=e904] [cursor=pointer]:
+                - /url: /dictionary/english/genealogically
+                - generic [ref=e907]: genealogically
+              - link "genealogist" [ref=e909] [cursor=pointer]:
+                - /url: /dictionary/english/genealogist
+                - generic [ref=e912]: genealogist
+              - link "genealogy" [ref=e914] [cursor=pointer]:
+                - /url: /dictionary/english/genealogy
+                - generic [ref=e917]: genealogy
+              - link "genera" [ref=e919] [cursor=pointer]:
+                - /url: /dictionary/english/genera
+                - generic [ref=e922]: genera
+              - generic [ref=e926]: general
+              - link "general admission" [ref=e928] [cursor=pointer]:
+                - /url: /dictionary/english/general-admission
+                - generic [ref=e931]: general admission
+              - link "General Agreement on Tariffs and Trade" [ref=e933] [cursor=pointer]:
+                - /url: /dictionary/english/general-agreement-on-tariffs-and-trade
+                - generic [ref=e936]: General Agreement on Tariffs and Trade
+              - link "General American" [ref=e938] [cursor=pointer]:
+                - /url: /dictionary/english/general-american
+                - generic [ref=e941]: General American
+              - link "general anaesthetic" [ref=e943] [cursor=pointer]:
+                - /url: /dictionary/english/general-anaesthetic
+                - generic [ref=e946]: general anaesthetic
+        - generic [ref=e948]:
+          - generic [ref=e950]:
+            - generic [ref=e951]: Test your vocabulary with our fun image quizzes
+            - link "animals-not-mammals2_1" [ref=e954] [cursor=pointer]:
+              - /url: https://dictionary.cambridge.org/plus/quiz/image/animals-not-mammals2_1
+              - img "animals-not-mammals2_1" [ref=e957]
+            - link "Try a quiz now" [ref=e958] [cursor=pointer]:
+              - /url: https://dictionary.cambridge.org/plus/quiz/image/animals-not-mammals2_1
+          - complementary [ref=e960]:
+            - heading "More meanings of general" [level=2] [ref=e961]:
+              - text: More meanings of
+              - emphasis [ref=e962]: general
+            - generic [ref=e964]:
+              - generic [ref=e965]:
+                - button "All" [expanded] [ref=e966] [cursor=pointer]:
+                  - generic [ref=e967]: 
+                  - text: All
+                - region "All" [ref=e968]:
+                  - list [ref=e969]:
+                    - listitem [ref=e970]:
+                      - link "Attorney General" [ref=e971] [cursor=pointer]:
+                        - /url: /dictionary/english/attorney-general
+                        - generic [ref=e973]: Attorney General
+                    - listitem [ref=e974]:
+                      - link "general anesthetic" [ref=e975] [cursor=pointer]:
+                        - /url: /dictionary/english/general-anesthetic
+                        - generic [ref=e977]: general anesthetic
+                    - listitem [ref=e978]:
+                      - link "general delivery" [ref=e979] [cursor=pointer]:
+                        - /url: /dictionary/english/general-delivery
+                        - generic [ref=e981]: general delivery
+                    - listitem [ref=e982]:
+                      - link "general election" [ref=e983] [cursor=pointer]:
+                        - /url: /dictionary/english/general-election
+                        - generic [ref=e985]: general election
+                    - listitem [ref=e986]:
+                      - link "general store" [ref=e987] [cursor=pointer]:
+                        - /url: /dictionary/english/general-store
+                        - generic [ref=e989]: general store
+                    - listitem [ref=e990]:
+                      - link "Consul General" [ref=e991] [cursor=pointer]:
+                        - /url: /dictionary/english/consul-general
+                        - generic [ref=e993]: Consul General
+                    - listitem [ref=e994]:
+                      - link "general cargo" [ref=e995] [cursor=pointer]:
+                        - /url: /dictionary/english/general-cargo
+                        - generic [ref=e997]: general cargo
+                  - link "See all meanings" [ref=e998] [cursor=pointer]:
+                    - /url: https://dictionary.cambridge.org/search/english/?q=general
+              - button "Idioms and phrases" [ref=e1000] [cursor=pointer]:
+                - generic [ref=e1001]: 
+                - text: Idioms and phrases
+          - generic [ref=e1003]:
+            - generic [ref=e1004]:
+              - generic [ref=e1005]:
+                - text: 
+                - link "Share on Facebook" [ref=e1006] [cursor=pointer]:
+                  - /url: https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdictionary.cambridge.org%2Fdictionary%2Fenglish%2Fagainst-the-clock%23cald4-1&t=
+              - generic [ref=e1007]:
+                - text: 
+                - link "Share on X" [ref=e1008] [cursor=pointer]:
+                  - /url: https://twitter.com/intent/tweet?url=https%3A%2F%2Fdictionary.cambridge.org%2Fdictionary%2Fenglish%2Fagainst-the-clock%23cald4-1&text=
+              - generic [ref=e1009]:
+                - paragraph [ref=e1010]: Word of the Day
+                - paragraph [ref=e1011]:
+                  - link "against the clock" [ref=e1012] [cursor=pointer]:
+                    - /url: /dictionary/english/against-the-clock#cald4-1
+            - generic [ref=e1013]:
+              - paragraph [ref=e1014]: If you do something against the clock, you do it as fast as possible and try to finish it before a certain time.
+              - link "About this" [ref=e1015] [cursor=pointer]:
+                - /url: /dictionary/english/against-the-clock#cald4-1
+          - generic [ref=e1016]:
+            - 'link "Reuniting and reminiscing: talking about meeting old friends" [ref=e1017] [cursor=pointer]':
+              - /url: https://dictionaryblog.cambridge.org/2026/05/27/reuniting-and-reminiscing-talking-about-meeting-old-friends/
+              - 'img "Reuniting and reminiscing: talking about meeting old friends" [ref=e1020]'
+            - generic [ref=e1021]:
+              - paragraph [ref=e1022]: Blog
+              - paragraph [ref=e1023]:
+                - 'link "Reuniting and reminiscing: talking about meeting old friends" [ref=e1024] [cursor=pointer]':
+                  - /url: https://dictionaryblog.cambridge.org/2026/05/27/reuniting-and-reminiscing-talking-about-meeting-old-friends/
+              - time [ref=e1026]: May 27, 2026
+              - link "Read More" [ref=e1028] [cursor=pointer]:
+                - /url: https://dictionaryblog.cambridge.org/2026/05/27/reuniting-and-reminiscing-talking-about-meeting-old-friends/
+          - generic [ref=e1029]:
+            - link "<p>dusking" [ref=e1030] [cursor=pointer]:
+              - /url: https://dictionaryblog.cambridge.org/2026/06/01/new-words-1-june-2026/
+              - img "<p>dusking" [ref=e1033]
+            - generic [ref=e1034]:
+              - paragraph [ref=e1035]: New Words
+              - generic [ref=e1036]:
+                - link:
+                  - /url: https://dictionaryblog.cambridge.org/2026/06/01/new-words-1-june-2026/
+                - paragraph [ref=e1037]:
+                  - link "dusking" [ref=e1038] [cursor=pointer]:
+                    - /url: https://dictionaryblog.cambridge.org/2026/06/01/new-words-1-june-2026/
+              - time [ref=e1040]: June 01, 2026
+              - link "More new words" [ref=e1041] [cursor=pointer]:
+                - /url: https://dictionaryblog.cambridge.org/2026/06/01/new-words-1-june-2026/
+      - generic [ref=e1044]:
+        - text: 
+        - generic [ref=e1046]:
+          - generic [ref=e1048] [cursor=pointer]:
+            - text: To top
+            - generic [ref=e1050]: 
+          - link:
+            - /url: /assistant
+          - generic [ref=e1051]:
+            - generic [ref=e1053] [cursor=pointer]: Contents
+            - generic [ref=e1056]:
+              - link "English" [ref=e1057] [cursor=pointer]:
+                - /url: "#dataset_cald4"
+              - link "American" [ref=e1058] [cursor=pointer]:
+                - /url: "#dataset_cacd"
+              - link "Business" [ref=e1059] [cursor=pointer]:
+                - /url: "#dataset_cbed"
+              - link "Examples" [ref=e1060] [cursor=pointer]:
+                - /url: "#dataset_examples"
+              - link "Collocations" [ref=e1061] [cursor=pointer]:
+                - /url: "#dataset_combinations"
+              - link "Translations" [ref=e1062] [cursor=pointer]:
+                - /url: "#dataset_translations"
+  - contentinfo [ref=e1063]:
+    - generic [ref=e1064]:
+      - generic [ref=e1065]:
+        - generic [ref=e1066]:
+          - text: 
+          - generic [ref=e1067]:
+            - link "Learn" [ref=e1068] [cursor=pointer]:
+              - /url: /learn.html
+            - link "New Words" [ref=e1069] [cursor=pointer]:
+              - /url: https://dictionaryblog.cambridge.org/category/new-words/
+            - link "Help" [ref=e1070] [cursor=pointer]:
+              - /url: /help/
+            - link "In Print" [ref=e1071] [cursor=pointer]:
+              - /url: https://www.cambridge.org/gb/cambridgeenglish/catalog/dictionaries
+            - link "Word of the Year 2021" [ref=e1072] [cursor=pointer]:
+              - /url: /editorial/word-of-the-year/2021
+            - link "Word of the Year 2022" [ref=e1073] [cursor=pointer]:
+              - /url: /editorial/word-of-the-year/2022
+            - link "Word of the Year 2023" [ref=e1074] [cursor=pointer]:
+              - /url: /editorial/word-of-the-year/2023
+            - link "Word of the Year 2024" [ref=e1075] [cursor=pointer]:
+              - /url: /editorial/word-of-the-year/2024
+            - link "Word of the Year 2025" [ref=e1076] [cursor=pointer]:
+              - /url: /editorial/word-of-the-year
+        - generic [ref=e1077]:
+          - text: 
+          - generic [ref=e1078]:
+            - link "Develop" [ref=e1079] [cursor=pointer]:
+              - /url: /develop.html
+            - link "Dictionary API" [ref=e1080] [cursor=pointer]:
+              - /url: http://dictionary-api.cambridge.org
+            - link "Double-Click Lookup" [ref=e1081] [cursor=pointer]:
+              - /url: /doubleclick.html
+            - link "Search Widgets" [ref=e1082] [cursor=pointer]:
+              - /url: /freesearch.html
+            - link "License Data" [ref=e1083] [cursor=pointer]:
+              - /url: /license.html
+        - generic [ref=e1084]:
+          - text: 
+          - generic [ref=e1085]:
+            - link "About" [ref=e1086] [cursor=pointer]:
+              - /url: /about.html
+            - link "Accessibility" [ref=e1087] [cursor=pointer]:
+              - /url: https://www.cambridge.org/accessibility/
+            - link "Cambridge English" [ref=e1088] [cursor=pointer]:
+              - /url: https://www.cambridge.org/us/cambridgeenglish
+            - link "Cambridge University Press & Assessment" [ref=e1089] [cursor=pointer]:
+              - /url: https://www.cambridge.org/
+            - generic [ref=e1090]: Consent Management
+            - link "Cookies and Privacy" [ref=e1091] [cursor=pointer]:
+              - /url: https://www.cambridge.org/about-us/legal-notices/privacy-notice
+            - link "Corpus" [ref=e1092] [cursor=pointer]:
+              - /url: https://www.cambridge.org/elt/corpus/
+            - link "Terms of Use" [ref=e1093] [cursor=pointer]:
+              - /url: https://www.cambridge.org/about-us/terms-use/
+            - link "AI Terms of Use" [ref=e1094] [cursor=pointer]:
+              - /url: https://www.cambridge.org/legal/ai-tool-terms-of-use
+      - generic [ref=e1097]:
+        - generic [ref=e1098]:
+          - link "Facebook" [ref=e1099] [cursor=pointer]:
+            - /url: https://www.facebook.com/CUPCambridgeDictionary/
+            - img "Facebook" [ref=e1100]
+          - link "Instagram" [ref=e1102] [cursor=pointer]:
+            - /url: https://www.instagram.com/cambridgewords
+            - img "Instagram" [ref=e1103]
+          - link "X" [ref=e1105] [cursor=pointer]:
+            - /url: https://twitter.com/CambridgeWords
+            - img "X" [ref=e1106]
+        - link "cdo logo" [ref=e1109] [cursor=pointer]:
+          - /url: https://www.cambridge.org/
+          - img "cdo logo" [ref=e1110]
+        - img "cdo logo" [ref=e1112]
+        - generic [ref=e1113]: © Cambridge University Press & Assessment 2026
+  - generic [ref=e1115] [cursor=pointer]: 
+  - text:                                                                  

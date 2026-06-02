@@ -1,0 +1,522 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: https://a2ui.org/guides/authoring-components/#authoring-custom-components
+  - banner [ref=e3]:
+    - navigation "Header" [ref=e4]:
+      - link "A2UI" [ref=e5] [cursor=pointer]:
+        - /url: https://a2ui.org/
+        - img "logo" [ref=e6]
+      - generic [ref=e8]:
+        - generic [ref=e10]: A2UI
+        - generic:
+          - generic: Authoring Custom Components
+      - generic [ref=e11]:
+        - radio "Switch to dark mode"
+        - generic "Switch to dark mode" [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+        - radio "Switch to light mode"
+      - dialog [ref=e15]:
+        - search [ref=e16]:
+          - generic [ref=e17]:
+            - textbox "Search" [ref=e18]
+            - generic:
+              - img
+            - navigation "Search":
+              - button "Clear":
+                - img
+          - generic [ref=e20]: Initializing search
+      - link "google/A2UI" [ref=e22] [cursor=pointer]:
+        - /url: https://github.com/google/A2UI
+        - img [ref=e24]
+        - generic [ref=e26]: google/A2UI
+  - generic [ref=e27]:
+    - main [ref=e28]:
+      - generic [ref=e29]:
+        - navigation "Navigation" [ref=e33]:
+          - generic [ref=e34]: A2UI
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "Home" [ref=e37] [cursor=pointer]:
+                - /url: https://a2ui.org/
+                - generic [ref=e38]: Home
+            - listitem [ref=e39]:
+              - generic [ref=e41]: Introduction & FAQ
+            - listitem [ref=e43]:
+              - link "Quickstart" [ref=e44] [cursor=pointer]:
+                - /url: https://a2ui.org/quickstart/
+                - generic [ref=e45]: Quickstart
+            - listitem [ref=e46]:
+              - link "A2UI Composer ⭐" [ref=e47] [cursor=pointer]:
+                - /url: https://a2ui.org/composer/
+                - generic [ref=e48]: A2UI Composer ⭐
+            - listitem [ref=e49]:
+              - generic [ref=e51]: Concepts
+            - listitem [ref=e53]:
+              - generic [ref=e55]: Guides
+              - navigation "Guides" [ref=e57]:
+                - list [ref=e58]:
+                  - listitem [ref=e59]:
+                    - link "Client Setup" [ref=e60] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/client-setup/
+                      - generic [ref=e61]: Client Setup
+                  - listitem [ref=e62]:
+                    - link "Agent Development" [ref=e63] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/agent-development/
+                      - generic [ref=e64]: Agent Development
+                  - listitem [ref=e65]:
+                    - link "Use A2UI with Any Agent Framework (AG-UI)" [ref=e66] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/a2ui-with-any-agent-framework/
+                      - generic [ref=e67]: Use A2UI with Any Agent Framework (AG-UI)
+                  - listitem [ref=e68]:
+                    - link "Renderer Development" [ref=e69] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/renderer-development/
+                      - generic [ref=e70]: Renderer Development
+                  - listitem [ref=e71]:
+                    - link "Defining Your Own Catalog" [ref=e72] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/defining-your-own-catalog/
+                      - generic [ref=e73]: Defining Your Own Catalog
+                  - listitem [ref=e74]:
+                    - link "Authoring Custom Components" [ref=e75] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/authoring-components/
+                      - generic [ref=e76]: Authoring Custom Components
+                  - listitem [ref=e77]:
+                    - link "Theming & Styling" [ref=e78] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/theming/
+                      - generic [ref=e79]: Theming & Styling
+                  - listitem [ref=e80]:
+                    - link "A2UI over MCP" [ref=e81] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/a2ui_over_mcp/
+                      - generic [ref=e82]: A2UI over MCP
+                  - listitem [ref=e83]:
+                    - link "MCP Apps in A2UI" [ref=e84] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/mcp-apps-in-a2ui/
+                      - generic [ref=e85]: MCP Apps in A2UI
+                  - listitem [ref=e86]:
+                    - link "A2UI in MCP Apps" [ref=e87] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/a2ui-in-mcp-apps/
+                      - generic [ref=e88]: A2UI in MCP Apps
+            - listitem [ref=e89]:
+              - generic [ref=e91]: Reference
+            - listitem [ref=e93]:
+              - generic [ref=e95]: Specifications
+            - listitem [ref=e97]:
+              - generic [ref=e99]: Ecosystem
+            - listitem [ref=e101]:
+              - link "Roadmap" [ref=e102] [cursor=pointer]:
+                - /url: https://a2ui.org/roadmap/
+                - generic [ref=e103]: Roadmap
+        - navigation "Table of contents" [ref=e107]:
+          - generic [ref=e108]: Table of contents
+          - list [ref=e109]:
+            - listitem [ref=e110]:
+              - link "Overview" [ref=e111] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/authoring-components/#overview
+                - generic [ref=e112]: Overview
+            - listitem [ref=e113]:
+              - link "1. Defining the Catalog Schema" [ref=e114] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/authoring-components/#1-defining-the-catalog-schema
+                - generic [ref=e115]: 1. Defining the Catalog Schema
+            - listitem [ref=e116]:
+              - link "2. Implementing the Component (Client)" [ref=e117] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/authoring-components/#2-implementing-the-component-client
+                - generic [ref=e118]: 2. Implementing the Component (Client)
+            - listitem [ref=e119]:
+              - link "3. Registering with the Renderer (Client)" [ref=e120] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/authoring-components/#3-registering-with-the-renderer-client
+                - generic [ref=e121]: 3. Registering with the Renderer (Client)
+            - listitem [ref=e122]:
+              - link "4. Invoking from the Agent" [ref=e123] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/authoring-components/#4-invoking-from-the-agent
+                - generic [ref=e124]: 4. Invoking from the Agent
+              - navigation "4. Invoking from the Agent" [ref=e125]:
+                - list [ref=e126]:
+                  - listitem [ref=e127]:
+                    - link "4.1 Session Preparation (Executor)" [ref=e128] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/authoring-components/#41-session-preparation-executor
+                      - generic [ref=e129]: 4.1 Session Preparation (Executor)
+                  - listitem [ref=e130]:
+                    - link "4.2 Agent Tool Setup" [ref=e131] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/authoring-components/#42-agent-tool-setup
+                      - generic [ref=e132]: 4.2 Agent Tool Setup
+                  - listitem [ref=e133]:
+                    - link "4.3 Tool Execution" [ref=e134] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/authoring-components/#43-tool-execution
+                      - generic [ref=e135]: 4.3 Tool Execution
+        - generic [ref=e136]:
+          - navigation "Navigation" [ref=e137]:
+            - list [ref=e138]:
+              - listitem [ref=e139]:
+                - link "Home" [ref=e140] [cursor=pointer]:
+                  - /url: https://a2ui.org/
+                  - generic [ref=e141]: Home
+              - listitem [ref=e142]:
+                - link "Guides" [ref=e143] [cursor=pointer]:
+                  - /url: https://a2ui.org/guides/client-setup/
+                  - generic [ref=e144]: Guides
+          - article [ref=e145]:
+            - link "View source of this page" [ref=e146] [cursor=pointer]:
+              - /url: https://github.com/google/A2UI/raw/main/docs/guides/authoring-components.md
+              - img [ref=e147]
+            - heading "Authoring Custom Components ¶" [level=1] [ref=e149]:
+              - text: Authoring Custom Components
+              - link "¶" [ref=e150] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/authoring-components/#authoring-custom-components
+            - paragraph [ref=e151]:
+              - text: Learn how to define, implement, and register custom components in A2UI using the
+              - code [ref=e152]: rizzcharts
+              - text: sample as an example. This guide focuses on authoring a component around your Angular code.
+            - heading "Overview ¶" [level=2] [ref=e153]:
+              - text: Overview
+              - link "¶" [ref=e154] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/authoring-components/#overview
+            - paragraph [ref=e155]: "Authoring a new component involves four main steps:"
+            - list [ref=e156]:
+              - listitem [ref=e157]:
+                - strong [ref=e158]: Define the Catalog Schema
+                - text: ": Specify the component's properties and types in a JSON Schema."
+              - listitem [ref=e159]:
+                - strong [ref=e160]: Define the Component (Client)
+                - text: ": Implement the UI using your framework (e.g., Angular)."
+              - listitem [ref=e161]:
+                - strong [ref=e162]: Register with the Renderer (Client)
+                - text: ": Add the component to your client-side catalog."
+              - listitem [ref=e163]:
+                - strong [ref=e164]: Invoke from the Agent
+                - text: ": Instruct the agent to use the component via"
+                - code [ref=e165]: send_a2ui_json_to_client
+                - text: .
+            - separator [ref=e166]
+            - heading "1. Defining the Catalog Schema ¶" [level=2] [ref=e167]:
+              - text: 1. Defining the Catalog Schema
+              - link "¶" [ref=e168] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/authoring-components/#1-defining-the-catalog-schema
+            - paragraph [ref=e169]: The catalog schema defines the API of your catalog. It lists available components and their properties, which the agent uses to construct UI payloads.
+            - paragraph [ref=e170]:
+              - strong [ref=e171]: This schema acts as a contract between the client and the server (agent).
+              - text: Both must agree on this schema for rendering to work. The client advertises what catalogs it supports, and the server selects a compatible one. For details on how this handshake works, see
+              - link "A2UI Catalog Negotiation" [ref=e172] [cursor=pointer]:
+                - /url: https://a2ui.org/concepts/catalogs/#a2ui-catalog-negotiation
+              - text: .
+            - paragraph [ref=e173]:
+              - text: In the
+              - link "rizzcharts" [ref=e174] [cursor=pointer]:
+                - /url: https://github.com/google/A2UI/blob/main/samples/agent/adk/rizzcharts/python/README.md
+                - code [ref=e175]: rizzcharts
+              - text: example, the catalog schema is defined in
+              - link "rizzcharts_catalog_definition.json" [ref=e176] [cursor=pointer]:
+                - /url: https://github.com/google/A2UI/blob/main/samples/agent/adk/rizzcharts/catalog_schemas/0.9/rizzcharts_catalog_definition.json
+                - code [ref=e177]: rizzcharts_catalog_definition.json
+              - text: .
+            - paragraph [ref=e178]:
+              - text: Here is the schema for the
+              - code [ref=e179]: Chart
+              - text: "component:"
+            - generic [ref=e181]:
+              - navigation [ref=e182]:
+                - button "Toggle line selection" [ref=e183] [cursor=pointer]
+                - button "Copy to clipboard" [ref=e184] [cursor=pointer]
+              - code [ref=e185]:
+                - generic [ref=e186]: "\"Chart\": {"
+                - generic [ref=e187]: "\"type\": \"object\","
+                - generic [ref=e188]: "\"description\": \"An interactive chart that uses a hierarchical list of objects for its data.\","
+                - generic [ref=e189]: "\"properties\": {"
+                - generic [ref=e190]: "\"type\": {"
+                - generic [ref=e191]: "\"type\": \"string\","
+                - generic [ref=e192]: "\"description\": \"The type of chart to render.\","
+                - generic [ref=e193]: "\"enum\": ["
+                - generic [ref=e194]: "\"doughnut\","
+                - generic [ref=e195]: "\"pie\""
+                - generic [ref=e196]: "]"
+                - generic [ref=e197]: "},"
+                - generic [ref=e198]: "\"title\": {"
+                - generic [ref=e199]: "\"type\": \"object\","
+                - generic [ref=e200]: "\"description\": \"The title of the chart. Can be a literal string or a data model path.\","
+                - generic [ref=e201]: "\"properties\": {"
+                - generic [ref=e202]: "\"literalString\": {"
+                - generic [ref=e203]: "\"type\": \"string\""
+                - generic [ref=e204]: "},"
+                - generic [ref=e205]: "\"path\": {"
+                - generic [ref=e206]: "\"type\": \"string\""
+                - generic [ref=e207]: "}"
+                - generic [ref=e208]: "}"
+                - generic [ref=e209]: "},"
+                - generic [ref=e210]: "\"chartData\": {"
+                - generic [ref=e211]: "\"type\": \"object\","
+                - generic [ref=e212]: "\"description\": \"The data for the chart, provided as a list of items. Can be a literal array or a data model path.\","
+                - generic [ref=e213]: "\"properties\": {"
+                - generic [ref=e214]: "\"literalArray\": {"
+                - generic [ref=e215]: "\"type\": \"array\","
+                - generic [ref=e216]: "\"items\": {"
+                - generic [ref=e217]: "\"type\": \"object\","
+                - generic [ref=e218]: "\"properties\": {"
+                - generic [ref=e219]: "\"label\": {"
+                - generic [ref=e220]: "\"type\": \"string\""
+                - generic [ref=e221]: "},"
+                - generic [ref=e222]: "\"value\": {"
+                - generic [ref=e223]: "\"type\": \"number\""
+                - generic [ref=e224]: "},"
+                - generic [ref=e225]: "\"drillDown\": {"
+                - generic [ref=e226]: "\"type\": \"array\","
+                - generic [ref=e227]: "\"description\": \"An optional list of items for the next level of data.\","
+                - generic [ref=e228]: "\"items\": {"
+                - generic [ref=e229]: "\"type\": \"object\","
+                - generic [ref=e230]: "\"properties\": {"
+                - generic [ref=e231]: "\"label\": {"
+                - generic [ref=e232]: "\"type\": \"string\""
+                - generic [ref=e233]: "},"
+                - generic [ref=e234]: "\"value\": {"
+                - generic [ref=e235]: "\"type\": \"number\""
+                - generic [ref=e236]: "}"
+                - generic [ref=e237]: "},"
+                - generic [ref=e238]: "\"required\": ["
+                - generic [ref=e239]: "\"label\","
+                - generic [ref=e240]: "\"value\""
+                - generic [ref=e241]: "]"
+                - generic [ref=e242]: "}"
+                - generic [ref=e243]: "}"
+                - generic [ref=e244]: "},"
+                - generic [ref=e245]: "\"required\": ["
+                - generic [ref=e246]: "\"label\","
+                - generic [ref=e247]: "\"value\""
+                - generic [ref=e248]: "]"
+                - generic [ref=e249]: "}"
+                - generic [ref=e250]: "},"
+                - generic [ref=e251]: "\"path\": {"
+                - generic [ref=e252]: "\"type\": \"string\""
+                - generic [ref=e253]: "}"
+                - generic [ref=e254]: "}"
+                - generic [ref=e255]: "}"
+                - generic [ref=e256]: "},"
+                - generic [ref=e257]: "\"required\": ["
+                - generic [ref=e258]: "\"type\","
+                - generic [ref=e259]: "\"chartData\""
+                - generic [ref=e260]: "]"
+                - generic [ref=e261]: "}"
+            - separator [ref=e262]
+            - heading "2. Implementing the Component (Client) ¶" [level=2] [ref=e263]:
+              - text: 2. Implementing the Component (Client)
+              - link "¶" [ref=e264] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/authoring-components/#2-implementing-the-component-client
+            - paragraph [ref=e265]:
+              - text: Implement your component using your client-side framework. For Angular, your component should extend
+              - code [ref=e266]: DynamicComponent
+              - text: provided by
+              - code [ref=e267]: "@a2ui/angular"
+              - text: .
+            - paragraph [ref=e268]:
+              - text: In the
+              - link "rizzcharts" [ref=e269] [cursor=pointer]:
+                - /url: https://github.com/google/A2UI/blob/main/samples/client/angular/projects/rizzcharts/README.md
+                - code [ref=e270]: rizzcharts
+              - text: example, the
+              - code [ref=e271]: Chart
+              - text: component is defined in
+              - link "chart.ts" [ref=e272] [cursor=pointer]:
+                - /url: https://github.com/google/A2UI/blob/main/samples/client/angular/projects/rizzcharts/src/a2ui-catalog/chart.ts
+                - code [ref=e273]: chart.ts
+              - text: .
+            - generic [ref=e275]:
+              - navigation [ref=e276]:
+                - button "Toggle line selection" [ref=e277] [cursor=pointer]
+                - button "Copy to clipboard" [ref=e278] [cursor=pointer]
+              - code [ref=e279]:
+                - generic [ref=e280]: "import {DynamicComponent} from '@a2ui/angular';"
+                - generic [ref=e281]: import * as Primitives from '@a2ui/web_core/types/primitives';
+                - generic [ref=e282]: import * as Types from '@a2ui/web_core/types/types';
+                - generic [ref=e283]: "import {Component, computed, input, Signal, signal} from '@angular/core';"
+                - generic [ref=e285]: "@Component({"
+                - generic [ref=e286]: "selector: 'a2ui-chart',"
+                - generic [ref=e287]: "template: `"
+                - generic [ref=e288]: <div>
+                - generic [ref=e289]: "<h2>{{ resolvedTitle() }}</h2>"
+                - generic [ref=e290]: <canvas baseChart [data]="currentData()" [type]="chartType()"></canvas>
+                - generic [ref=e291]: </div>
+                - generic [ref=e292]: "`,"
+                - generic [ref=e293]: "})"
+                - generic [ref=e294]: "export class Chart extends DynamicComponent<Types.CustomNode> {"
+                - generic [ref=e295]: readonly type = input.required<string>();
+                - generic [ref=e296]: protected readonly chartType = computed(() => this.type() as ChartType);
+                - generic [ref=e298]: readonly title = input<Primitives.StringValue | null>();
+                - generic [ref=e299]: protected readonly resolvedTitle = computed(() => super.resolvePrimitive(this.title() ?? null));
+                - generic [ref=e301]: readonly chartData = input.required<Primitives.StringValue | null>();
+                - generic [ref=e302]: // ... data resolution logic using super.resolvePrimitive for data paths
+                - generic [ref=e303]: "}"
+            - paragraph [ref=e304]: "Keep these key points in mind when implementing components:"
+            - list [ref=e305]:
+              - listitem [ref=e306]:
+                - strong [ref=e307]:
+                  - text: Extend
+                  - code [ref=e308]: DynamicComponent
+                - text: ": This gives you access to"
+                - code [ref=e309]: resolvePrimitive
+                - text: for data binding resolution.
+              - listitem [ref=e310]:
+                - strong [ref=e311]: Use Angular Inputs
+                - text: ": Map properties from the schema to Angular inputs."
+            - separator [ref=e312]
+            - heading "3. Registering with the Renderer (Client) ¶" [level=2] [ref=e313]:
+              - text: 3. Registering with the Renderer (Client)
+              - link "¶" [ref=e314] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/authoring-components/#3-registering-with-the-renderer-client
+            - paragraph [ref=e315]: Once the component is implemented, register it in your client catalog. This maps the component name (used by agents) to the implementation class.
+            - paragraph [ref=e316]:
+              - text: In the
+              - link "rizzcharts" [ref=e317] [cursor=pointer]:
+                - /url: https://github.com/google/A2UI/blob/main/samples/agent/adk/rizzcharts/python/README.md
+                - code [ref=e318]: rizzcharts
+              - text: example, this is done in
+              - link "catalog.ts" [ref=e319] [cursor=pointer]:
+                - /url: https://github.com/google/A2UI/blob/main/samples/client/angular/projects/rizzcharts/src/a2ui-catalog/catalog.ts
+                - code [ref=e320]: catalog.ts
+              - text: .
+            - generic [ref=e322]:
+              - navigation [ref=e323]:
+                - button "Toggle line selection" [ref=e324] [cursor=pointer]
+                - button "Copy to clipboard" [ref=e325] [cursor=pointer]
+              - code [ref=e326]:
+                - generic [ref=e327]: "import {Catalog, DEFAULT_CATALOG} from '@a2ui/angular';"
+                - generic [ref=e328]: "import {inputBinding} from '@angular/core';"
+                - generic [ref=e330]: "export const RIZZ_CHARTS_CATALOG = {"
+                - generic [ref=e331]: ...DEFAULT_CATALOG,
+                - generic [ref=e332]: "Chart: {"
+                - generic [ref=e333]: "type: () => import('./chart').then(r => r.Chart),"
+                - generic [ref=e334]: "bindings: ({properties}) => ["
+                - generic [ref=e335]: inputBinding('type', () => ('type' in properties && properties['type']) || undefined),
+                - generic [ref=e336]: inputBinding('title', () => ('title' in properties && properties['title']) || undefined),
+                - generic [ref=e337]: inputBinding(
+                - generic [ref=e338]: "'chartData',"
+                - generic [ref=e339]: () => ('chartData' in properties && properties['chartData']) || undefined,
+                - generic [ref=e340]: ),
+                - generic [ref=e341]: "],"
+                - generic [ref=e342]: "},"
+                - generic [ref=e343]: "} as Catalog;"
+            - paragraph [ref=e344]: "Key points for registration:"
+            - list [ref=e345]:
+              - listitem [ref=e346]:
+                - strong [ref=e347]: Lazy Loading
+                - text: ": Use"
+                - code [ref=e348]: import()
+                - text: to lazy-load the component code.
+              - listitem [ref=e349]:
+                - strong [ref=e350]: Input Bindings
+                - text: ": Use"
+                - code [ref=e351]: inputBinding
+                - text: to map properties from the schema to Angular inputs.
+            - separator [ref=e352]
+            - heading "4. Invoking from the Agent ¶" [level=2] [ref=e353]:
+              - text: 4. Invoking from the Agent
+              - link "¶" [ref=e354] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/authoring-components/#4-invoking-from-the-agent
+            - paragraph [ref=e355]: To use the custom component, you initialize the agent with tools from the A2UI SDK that understand your catalog. The SDK handles resolving the catalog and providing examples to the model.
+            - paragraph [ref=e356]: "Here is how the flow wires up:"
+            - heading "4.1 Session Preparation (Executor) ¶" [level=3] [ref=e357]:
+              - text: 4.1 Session Preparation (Executor)
+              - link "¶" [ref=e358] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/authoring-components/#41-session-preparation-executor
+            - paragraph [ref=e359]:
+              - text: The execution layer (e.g.,
+              - code [ref=e360]: RizzchartsAgentExecutor
+              - text: ) intercepts the incoming message to detect if A2UI is enabled and what catalogs the client supports. It resolves the catalog and saves it to the session state.
+            - generic [ref=e362]:
+              - navigation [ref=e363]:
+                - button "Toggle line selection" [ref=e364] [cursor=pointer]
+                - button "Copy to clipboard" [ref=e365] [cursor=pointer]
+              - code [ref=e366]:
+                - generic [ref=e367]: "# In agent_executor.py"
+                - generic [ref=e369]: use_ui = try_activate_a2ui_extension(context)
+                - generic [ref=e370]: "if use_ui:"
+                - generic [ref=e371]: "# Resolve catalog based on client capabilities"
+                - generic [ref=e372]: a2ui_catalog = self.schema_manager.get_selected_catalog(
+                - generic [ref=e373]: client_ui_capabilities=capabilities
+                - generic [ref=e374]: )
+                - generic [ref=e375]: examples = self.schema_manager.load_examples(a2ui_catalog, validate=True)
+                - generic [ref=e377]: "# Save to session (Event contains state_delta)"
+                - generic [ref=e378]: await runner.session_service.append_event(
+                - generic [ref=e379]: session,
+                - generic [ref=e380]: Event(
+                - generic [ref=e381]: actions=EventActions(
+                - generic [ref=e382]: "state_delta={"
+                - generic [ref=e383]: "_A2UI_ENABLED_KEY: True,"
+                - generic [ref=e384]: "_A2UI_CATALOG_KEY: a2ui_catalog,"
+                - generic [ref=e385]: "_A2UI_EXAMPLES_KEY: examples,"
+                - generic [ref=e386]: "}"
+                - generic [ref=e387]: ),
+                - generic [ref=e388]: ),
+                - generic [ref=e389]: )
+            - heading "4.2 Agent Tool Setup ¶" [level=3] [ref=e390]:
+              - text: 4.2 Agent Tool Setup
+              - link "¶" [ref=e391] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/authoring-components/#42-agent-tool-setup
+            - paragraph [ref=e392]:
+              - text: The Agent uses
+              - link "SendA2uiToClientToolset" [ref=e393] [cursor=pointer]:
+                - /url: https://github.com/google/A2UI/blob/main/agent_sdks/python/src/a2ui/adk/send_a2ui_to_client_toolset.py
+              - text: to give the agent a tool that it can use to send A2UI to the client.
+            - generic [ref=e395]:
+              - navigation [ref=e396]:
+                - button "Toggle line selection" [ref=e397] [cursor=pointer]
+                - button "Copy to clipboard" [ref=e398] [cursor=pointer]
+              - code [ref=e399]:
+                - generic [ref=e400]: from a2ui.adk.send_a2ui_to_client_toolset import SendA2uiToClientToolset
+                - generic [ref=e402]: a2ui_catalog = self.schema_manager.get_selected_catalog(
+                - generic [ref=e403]: client_ui_capabilities=capabilities
+                - generic [ref=e404]: )
+                - generic [ref=e405]: agent.tools = [
+                - generic [ref=e406]: SendA2uiToClientToolset(
+                - generic [ref=e407]: a2ui_catalog=a2ui_catalog,
+                - generic [ref=e408]: a2ui_enabled=True,
+                - generic [ref=e409]: )
+                - generic [ref=e410]: "]"
+            - heading "4.3 Tool Execution ¶" [level=3] [ref=e411]:
+              - text: 4.3 Tool Execution
+              - link "¶" [ref=e412] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/authoring-components/#43-tool-execution
+            - paragraph [ref=e413]:
+              - text: Invocations of the tool in
+              - link "SendA2uiToClientToolset" [ref=e414] [cursor=pointer]:
+                - /url: https://github.com/google/A2UI/blob/main/agent_sdks/python/src/a2ui/adk/send_a2ui_to_client_toolset.py
+              - text: by the LLM are intercepted in the A2A Agent Executor using the
+              - link "A2uiEventConverter" [ref=e415] [cursor=pointer]:
+                - /url: https://github.com/google/A2UI/blob/main/agent_sdks/python/src/a2ui/adk/a2a/event_converter.py
+              - text: . This automatically translates tool calls into A2A Dataparts with the A2UI payload.
+            - generic [ref=e417]:
+              - navigation [ref=e418]:
+                - button "Toggle line selection" [ref=e419] [cursor=pointer]
+                - button "Copy to clipboard" [ref=e420] [cursor=pointer]
+              - code [ref=e421]:
+                - generic [ref=e422]: from a2ui.adk.a2a.event_converter import (
+                - generic [ref=e423]: A2uiEventConverter,
+                - generic [ref=e424]: )
+                - generic [ref=e426]: config = A2aAgentExecutorConfig(event_converter=A2uiEventConverter())
+      - button "Back to top":
+        - img
+        - text: Back to top
+    - contentinfo [ref=e427]:
+      - navigation "Footer" [ref=e428]:
+        - 'link "Previous: Defining Your Own Catalog" [ref=e429] [cursor=pointer]':
+          - /url: https://a2ui.org/guides/defining-your-own-catalog/
+          - img [ref=e431]
+          - generic [ref=e433]:
+            - text: Previous
+            - generic [ref=e434]: Defining Your Own Catalog
+        - 'link "Next: Theming & Styling" [ref=e435] [cursor=pointer]':
+          - /url: https://a2ui.org/guides/theming/
+          - generic [ref=e436]:
+            - text: Next
+            - generic [ref=e437]: Theming & Styling
+          - img [ref=e439]
+      - generic [ref=e443]:
+        - generic [ref=e444]:
+          - text: Copyright Google 2025 |
+          - link "Terms" [ref=e445] [cursor=pointer]:
+            - /url: //policies.google.com/terms
+          - text: "|"
+          - link "Privacy" [ref=e446] [cursor=pointer]:
+            - /url: //policies.google.com/privacy
+          - text: "|"
+          - link "Manage cookies" [ref=e447] [cursor=pointer]:
+            - /url: https://a2ui.org/guides/authoring-components/#__consent
+        - text: Made with
+        - link "Material for MkDocs" [ref=e448] [cursor=pointer]:
+          - /url: https://squidfunk.github.io/mkdocs-material/
+  - progressbar

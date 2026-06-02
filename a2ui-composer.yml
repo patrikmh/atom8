@@ -1,0 +1,53 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e7]
+        - generic [ref=e10]: A2UI Composer
+      - separator [ref=e11]
+      - navigation [ref=e12]:
+        - link "Create" [ref=e14] [cursor=pointer]:
+          - /url: /
+          - img [ref=e15]
+          - generic [ref=e18]: Create
+        - link "Gallery" [ref=e20] [cursor=pointer]:
+          - /url: /gallery
+          - img [ref=e21]
+          - generic [ref=e27]: Gallery
+        - link "Basic Catalog" [ref=e29] [cursor=pointer]:
+          - /url: /basic-catalog
+          - img [ref=e30]
+          - generic [ref=e34]: Basic Catalog
+        - link "Custom Catalog" [ref=e36] [cursor=pointer]:
+          - /url: /custom-catalog
+          - img [ref=e37]
+          - generic [ref=e41]: Custom Catalog
+        - link "Icons" [ref=e43] [cursor=pointer]:
+          - /url: /icons
+          - img [ref=e44]
+          - generic [ref=e49]: Icons
+        - link "Theater JSONL Playback" [ref=e51] [cursor=pointer]:
+          - /url: /theater
+          - img [ref=e52]
+          - generic [ref=e54]:
+            - generic [ref=e55]: Theater
+            - generic [ref=e56]: JSONL Playback
+        - link "Tutorial CopilotKit + A2UI" [ref=e58] [cursor=pointer]:
+          - /url: https://docs.copilotkit.ai/a2a/generative-ui/declarative-a2ui
+          - img [ref=e59]
+          - generic [ref=e61]:
+            - generic [ref=e62]: Tutorial
+            - generic [ref=e63]: CopilotKit + A2UI
+      - separator [ref=e64]
+      - generic [ref=e65]:
+        - generic [ref=e67]: Widgets
+        - generic [ref=e69]: No widgets yet
+    - main [ref=e70]:
+      - generic [ref=e72]:
+        - heading "What would you like to build?" [level=1] [ref=e73]
+        - generic [ref=e74]:
+          - textbox "Describe your A2UI widget..." [active] [ref=e75]
+          - button "Create" [disabled] [ref=e76]
+        - generic [ref=e77]: Powered by 🪁 CopilotKit
+        - button "or Start Blank" [ref=e78] [cursor=pointer]
+  - alert [ref=e79]

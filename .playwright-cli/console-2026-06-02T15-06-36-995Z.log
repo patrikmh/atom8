@@ -1,0 +1,2 @@
+[      10ms] [ERROR] {time: 1780412797004, level: 50, name: QuiltWrapperHelper, msg: One of the component specified in removeComponents…move component: ["community.widget.bannerWidget"]} @ https://techcommunity.microsoft.com/_next/static/chunks/pages/_app-b35df62944d3a52b.js:18
+[    1305ms] [ERROR] Provider's accounts list is empty. @ https://www.codecademy.com/article/ag-ui-agent-user-interaction-protocol:0

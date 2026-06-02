@@ -1,0 +1,639 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "Skip to content" [ref=e4] [cursor=pointer]:
+        - /url: "#start-of-content"
+      - banner [ref=e6]:
+        - heading "Navigation Menu" [level=2] [ref=e7]
+        - generic [ref=e8]:
+          - link "Homepage" [ref=e10] [cursor=pointer]:
+            - /url: /
+            - img [ref=e11]
+          - generic [ref=e13]:
+            - navigation "Global" [ref=e16]:
+              - list [ref=e17]:
+                - listitem [ref=e18]:
+                  - button "Platform" [ref=e20] [cursor=pointer]:
+                    - text: Platform
+                    - img [ref=e21]
+                - listitem [ref=e23]:
+                  - button "Solutions" [ref=e25] [cursor=pointer]:
+                    - text: Solutions
+                    - img [ref=e26]
+                - listitem [ref=e28]:
+                  - button "Resources" [ref=e30] [cursor=pointer]:
+                    - text: Resources
+                    - img [ref=e31]
+                - listitem [ref=e33]:
+                  - button "Open Source" [ref=e35] [cursor=pointer]:
+                    - text: Open Source
+                    - img [ref=e36]
+                - listitem [ref=e38]:
+                  - button "Enterprise" [ref=e40] [cursor=pointer]:
+                    - text: Enterprise
+                    - img [ref=e41]
+                - listitem [ref=e43]:
+                  - link "Pricing" [ref=e44] [cursor=pointer]:
+                    - /url: https://github.com/pricing
+                    - generic [ref=e45]: Pricing
+            - generic [ref=e46]:
+              - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+                - img [ref=e51]
+              - link "Sign in" [ref=e54] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2FStumblinbear%2Fagui%2Fblob%2Fmaster%2Fcrates%2Fagui_vello%2FCargo.toml
+              - link "Sign up" [ref=e55] [cursor=pointer]:
+                - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fblob%2Fshow&source=header-repo&source_repo=Stumblinbear%2Fagui
+              - button "Appearance settings" [ref=e58] [cursor=pointer]:
+                - img
+    - main [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e66]:
+            - img [ref=e67]
+            - link "Stumblinbear" [ref=e70] [cursor=pointer]:
+              - /url: /Stumblinbear
+            - generic [ref=e71]: /
+            - strong [ref=e72]:
+              - link "agui" [ref=e73] [cursor=pointer]:
+                - /url: /Stumblinbear/agui
+            - generic [ref=e74]: Public
+          - generic [ref=e75]:
+            - list:
+              - listitem [ref=e76]:
+                - link "You must be signed in to change notification settings" [ref=e77] [cursor=pointer]:
+                  - /url: /login?return_to=%2FStumblinbear%2Fagui
+                  - img [ref=e78]
+                  - text: Notifications
+              - listitem [ref=e80]:
+                - link "Fork 3" [ref=e81] [cursor=pointer]:
+                  - /url: /login?return_to=%2FStumblinbear%2Fagui
+                  - img [ref=e82]
+                  - text: Fork
+                  - generic "3" [ref=e84]
+              - listitem [ref=e85]:
+                - link "You must be signed in to star a repository" [ref=e87] [cursor=pointer]:
+                  - /url: /login?return_to=%2FStumblinbear%2Fagui
+                  - img [ref=e88]
+                  - text: Star
+                  - generic "37 users starred this repository" [ref=e90]: "37"
+        - navigation "Repository" [ref=e91]:
+          - list [ref=e92]:
+            - listitem [ref=e93]:
+              - link "Code" [ref=e94] [cursor=pointer]:
+                - /url: /Stumblinbear/agui
+                - img [ref=e95]
+                - generic [ref=e97]: Code
+            - listitem [ref=e98]:
+              - link "Issues 4" [ref=e99] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/issues
+                - img [ref=e100]
+                - generic [ref=e103]: Issues
+                - generic "4" [ref=e104]
+            - listitem [ref=e105]:
+              - link "Pull requests 3" [ref=e106] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/pulls
+                - img [ref=e107]
+                - generic [ref=e109]: Pull requests
+                - generic "3" [ref=e110]
+            - listitem [ref=e111]:
+              - link "Discussions" [ref=e112] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/discussions
+                - img [ref=e113]
+                - generic [ref=e115]: Discussions
+            - listitem [ref=e116]:
+              - link "Actions" [ref=e117] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/actions
+                - img [ref=e118]
+                - generic [ref=e120]: Actions
+            - listitem [ref=e121]:
+              - link "Projects" [ref=e122] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/projects
+                - img [ref=e123]
+                - generic [ref=e125]: Projects
+            - listitem [ref=e126]:
+              - link "Security and quality" [ref=e127] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/security
+                - img [ref=e128]
+                - generic [ref=e130]: Security and quality
+            - listitem [ref=e131]:
+              - link "Insights" [ref=e132] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/pulse
+                - img [ref=e133]
+                - generic [ref=e135]: Insights
+      - generic [ref=e143]:
+        - generic [ref=e145]:
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - generic [ref=e150]:
+                - heading "Collapse file tree" [level=2] [ref=e151]:
+                  - button "Collapse file tree" [expanded] [ref=e152] [cursor=pointer]:
+                    - img [ref=e153]
+                - heading "Files" [level=2] [ref=e156]
+              - generic [ref=e157]:
+                - button "master branch" [ref=e159] [cursor=pointer]:
+                  - generic [ref=e160]:
+                    - generic [ref=e162]:
+                      - img [ref=e164]
+                      - generic [ref=e167]: master
+                    - generic:
+                      - img
+                - button "Search this repository (forward slash)" [ref=e169] [cursor=pointer]:
+                  - img [ref=e170]
+            - generic [ref=e173]:
+              - img [ref=e175]
+              - combobox "Go to file" [ref=e177]
+            - navigation "File Tree Navigation" [ref=e183]:
+              - tree "Files" [ref=e185]:
+                - treeitem ".cargo" [level=1] [ref=e186]:
+                  - generic [ref=e187] [cursor=pointer]:
+                    - img [ref=e189]
+                    - generic [ref=e191]:
+                      - img [ref=e195]
+                      - generic [ref=e197]: .cargo
+                - treeitem ".github" [level=1] [ref=e198]:
+                  - generic [ref=e199] [cursor=pointer]:
+                    - img [ref=e201]
+                    - generic [ref=e203]:
+                      - img [ref=e207]
+                      - generic [ref=e209]: .github
+                - treeitem ".vscode" [level=1] [ref=e210]:
+                  - generic [ref=e211] [cursor=pointer]:
+                    - img [ref=e213]
+                    - generic [ref=e215]:
+                      - img [ref=e219]
+                      - generic [ref=e221]: .vscode
+                - treeitem "crates" [expanded] [level=1] [ref=e222]:
+                  - generic [ref=e223] [cursor=pointer]:
+                    - img [ref=e225]
+                    - generic [ref=e227]:
+                      - img [ref=e231]
+                      - generic [ref=e233]: crates
+                  - group "crates" [ref=e234]:
+                    - treeitem "agui_core" [level=2] [ref=e235]:
+                      - generic [ref=e236] [cursor=pointer]:
+                        - img [ref=e241]
+                        - generic [ref=e243]:
+                          - img [ref=e247]
+                          - generic [ref=e249]: agui_core
+                    - treeitem "agui_elements" [level=2] [ref=e250]:
+                      - generic [ref=e251] [cursor=pointer]:
+                        - img [ref=e256]
+                        - generic [ref=e258]:
+                          - img [ref=e262]
+                          - generic [ref=e264]: agui_elements
+                    - treeitem "agui_executor" [level=2] [ref=e265]:
+                      - generic [ref=e266] [cursor=pointer]:
+                        - img [ref=e271]
+                        - generic [ref=e273]:
+                          - img [ref=e277]
+                          - generic [ref=e279]: agui_executor
+                    - treeitem "agui_gestures" [level=2] [ref=e280]:
+                      - generic [ref=e281] [cursor=pointer]:
+                        - img [ref=e286]
+                        - generic [ref=e288]:
+                          - img [ref=e292]
+                          - generic [ref=e294]: agui_gestures
+                    - treeitem "agui_macros" [level=2] [ref=e295]:
+                      - generic [ref=e296] [cursor=pointer]:
+                        - img [ref=e301]
+                        - generic [ref=e303]:
+                          - img [ref=e307]
+                          - generic [ref=e309]: agui_macros
+                    - treeitem "agui_primitives" [level=2] [ref=e310]:
+                      - generic [ref=e311] [cursor=pointer]:
+                        - img [ref=e316]
+                        - generic [ref=e318]:
+                          - img [ref=e322]
+                          - generic [ref=e324]: agui_primitives
+                    - treeitem "agui_renderer" [level=2] [ref=e325]:
+                      - generic [ref=e326] [cursor=pointer]:
+                        - img [ref=e331]
+                        - generic [ref=e333]:
+                          - img [ref=e337]
+                          - generic [ref=e339]: agui_renderer
+                    - treeitem "agui_sync" [level=2] [ref=e340]:
+                      - generic [ref=e341] [cursor=pointer]:
+                        - img [ref=e346]
+                        - generic [ref=e348]:
+                          - img [ref=e352]
+                          - generic [ref=e354]: agui_sync
+                    - treeitem "agui_vello" [expanded] [level=2] [ref=e355]:
+                      - generic [ref=e356] [cursor=pointer]:
+                        - img [ref=e361]
+                        - generic [ref=e363]:
+                          - img [ref=e367]
+                          - generic [ref=e369]: agui_vello
+                      - group "agui_vello" [ref=e370]:
+                        - treeitem "src" [level=3] [ref=e371]:
+                          - generic [ref=e372] [cursor=pointer]:
+                            - img [ref=e378]
+                            - generic [ref=e380]:
+                              - img [ref=e384]
+                              - generic [ref=e386]: src
+                        - treeitem "Cargo.toml" [level=3] [ref=e387]:
+                          - generic [ref=e393] [cursor=pointer]:
+                            - img [ref=e396]
+                            - generic [ref=e398]: Cargo.toml
+                        - treeitem "README.md" [level=3] [ref=e399]:
+                          - generic [ref=e405] [cursor=pointer]:
+                            - img [ref=e408]
+                            - generic [ref=e410]: README.md
+                    - treeitem "agui_widgets" [level=2] [ref=e411]:
+                      - generic [ref=e412] [cursor=pointer]:
+                        - img [ref=e417]
+                        - generic [ref=e419]:
+                          - img [ref=e423]
+                          - generic [ref=e425]: agui_widgets
+                    - treeitem "agui_winit" [level=2] [ref=e426]:
+                      - generic [ref=e427] [cursor=pointer]:
+                        - img [ref=e432]
+                        - generic [ref=e434]:
+                          - img [ref=e438]
+                          - generic [ref=e440]: agui_winit
+                - treeitem "docs" [level=1] [ref=e441]:
+                  - generic [ref=e442] [cursor=pointer]:
+                    - img [ref=e444]
+                    - generic [ref=e446]:
+                      - img [ref=e450]
+                      - generic [ref=e452]: docs
+                - treeitem "examples" [level=1] [ref=e453]:
+                  - generic [ref=e454] [cursor=pointer]:
+                    - img [ref=e456]
+                    - generic [ref=e458]:
+                      - img [ref=e462]
+                      - generic [ref=e464]: examples
+                - treeitem "src" [level=1] [ref=e465]:
+                  - generic [ref=e466] [cursor=pointer]:
+                    - img [ref=e468]
+                    - generic [ref=e470]:
+                      - img [ref=e474]
+                      - generic [ref=e476]: src
+                - treeitem "tests" [level=1] [ref=e477]:
+                  - generic [ref=e478] [cursor=pointer]:
+                    - img [ref=e480]
+                    - generic [ref=e482]:
+                      - img [ref=e486]
+                      - generic [ref=e488]: tests
+                - treeitem "tools" [level=1] [ref=e489]:
+                  - generic [ref=e490] [cursor=pointer]:
+                    - img [ref=e492]
+                    - generic [ref=e494]:
+                      - img [ref=e498]
+                      - generic [ref=e500]: tools
+                - treeitem ".gitignore" [level=1] [ref=e501]:
+                  - generic [ref=e503] [cursor=pointer]:
+                    - img [ref=e506]
+                    - generic [ref=e508]: .gitignore
+                - treeitem ".rust-toolchain.toml" [level=1] [ref=e509]:
+                  - generic [ref=e511] [cursor=pointer]:
+                    - img [ref=e514]
+                    - generic [ref=e516]: .rust-toolchain.toml
+                - treeitem "Cargo.toml" [level=1] [ref=e517]:
+                  - generic [ref=e519] [cursor=pointer]:
+                    - img [ref=e522]
+                    - generic [ref=e524]: Cargo.toml
+                - treeitem "README.md" [level=1] [ref=e525]:
+                  - generic [ref=e527] [cursor=pointer]:
+                    - img [ref=e530]
+                    - generic [ref=e532]: README.md
+                - treeitem "clippy.toml" [level=1] [ref=e533]:
+                  - generic [ref=e535] [cursor=pointer]:
+                    - img [ref=e538]
+                    - generic [ref=e540]: clippy.toml
+          - slider "Draggable pane splitter" [ref=e542]
+        - generic [ref=e545]:
+          - generic [ref=e549]:
+            - generic [ref=e551]:
+              - navigation "Breadcrumbs" [ref=e552]:
+                - heading "Breadcrumbs" [level=2] [ref=e553]
+                - list [ref=e554]:
+                  - listitem [ref=e555]:
+                    - link "agui" [ref=e556] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master
+                  - listitem [ref=e557]:
+                    - text: /
+                    - link "crates" [ref=e558] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master/crates
+                  - listitem [ref=e559]:
+                    - text: /
+                    - link "agui_vello" [ref=e560] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master/crates/agui_vello
+              - generic [ref=e561]:
+                - text: /
+                - heading "Cargo.toml" [level=1] [ref=e562]
+              - button "Copy path" [ref=e563] [cursor=pointer]:
+                - img [ref=e564]
+            - button "More file actions" [ref=e570] [cursor=pointer]:
+              - img [ref=e571]
+          - generic [ref=e573]:
+            - generic [ref=e575]:
+              - heading "Latest commit" [level=2] [ref=e576]
+              - generic [ref=e579]:
+                - heading "History" [level=2] [ref=e580]
+                - link "History" [ref=e581] [cursor=pointer]:
+                  - /url: /Stumblinbear/agui/commits/master/crates/agui_vello/Cargo.toml
+                  - generic [ref=e582]:
+                    - generic:
+                      - img
+                    - generic [ref=e583]: History
+            - generic [ref=e585]:
+              - generic [ref=e587]:
+                - heading "File metadata and controls" [level=2] [ref=e588]
+                - list "File view" [ref=e590]:
+                  - listitem [ref=e591]:
+                    - button "Code" [ref=e592] [cursor=pointer]:
+                      - generic [ref=e594]: Code
+                  - listitem [ref=e595]:
+                    - button "Blame" [ref=e596] [cursor=pointer]:
+                      - generic [ref=e598]: Blame
+                - generic [ref=e599]:
+                  - generic [ref=e600]:
+                    - generic [ref=e601]:
+                      - link "Raw" [ref=e603] [cursor=pointer]:
+                        - /url: https://github.com/Stumblinbear/agui/raw/refs/heads/master/crates/agui_vello/Cargo.toml
+                        - generic [ref=e605]: Raw
+                      - button "Copy raw file" [ref=e607] [cursor=pointer]:
+                        - img [ref=e608]
+                      - button "Download raw file" [ref=e612] [cursor=pointer]:
+                        - img [ref=e613]
+                    - generic [ref=e616]:
+                      - button "You must be signed in to make or propose changes" [disabled] [ref=e618]:
+                        - img [ref=e619]
+                      - button "More edit options" [ref=e622] [cursor=pointer]:
+                        - img [ref=e623]
+                  - button "Open symbols panel" [ref=e625] [cursor=pointer]:
+                    - img [ref=e626]
+              - region "Cargo.toml" [ref=e629]:
+                - generic [ref=e633]:
+                  - textbox "file content" [ref=e638]: "[package] name = \"agui_vello\" version = \"0.1.0\" edition = \"2021\" resolver = \"2\" description = \"Provides vello integration for agui\" homepage = \"https://github.com/Stumblinbear/agui\" repository = \"https://github.com/Stumblinbear/agui\" keywords = [\"gui\", \"graphics\"] categories = [\"gui\", \"graphics\", \"rendering\"] license = \"MIT OR Apache-2.0\" readme = \"README.md\" [features] window = [\"dep:raw-window-handle\", \"agui_renderer/window\"] [dependencies] agui_core.workspace = true agui_macros.workspace = true agui_primitives.workspace = true agui_renderer.workspace = true tracing.workspace = true thiserror.workspace = true rustc-hash.workspace = true slotmap.workspace = true parking_lot.workspace = true futures.workspace = true raw-window-handle = { workspace = true, optional = true } vello.workspace = true"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic [ref=e639]:
+                          - generic [ref=e640] [cursor=pointer]: "1"
+                          - generic [ref=e641] [cursor=pointer]: "2"
+                          - generic [ref=e642] [cursor=pointer]: "3"
+                          - generic [ref=e643] [cursor=pointer]: "4"
+                          - generic [ref=e644] [cursor=pointer]: "5"
+                          - generic [ref=e645] [cursor=pointer]: "6"
+                          - generic [ref=e646] [cursor=pointer]: "7"
+                          - generic [ref=e647] [cursor=pointer]: "8"
+                          - generic [ref=e648] [cursor=pointer]: "9"
+                          - generic [ref=e649] [cursor=pointer]: "10"
+                          - generic [ref=e650] [cursor=pointer]: "11"
+                          - generic [ref=e651] [cursor=pointer]: "12"
+                          - generic [ref=e652] [cursor=pointer]: "13"
+                          - generic [ref=e653] [cursor=pointer]: "14"
+                          - generic [ref=e654] [cursor=pointer]: "15"
+                          - generic [ref=e655] [cursor=pointer]: "16"
+                          - generic [ref=e656] [cursor=pointer]: "17"
+                          - generic [ref=e657] [cursor=pointer]: "18"
+                          - generic [ref=e658] [cursor=pointer]: "19"
+                          - generic [ref=e659] [cursor=pointer]: "20"
+                          - generic [ref=e660] [cursor=pointer]: "21"
+                          - generic [ref=e661] [cursor=pointer]: "22"
+                          - generic [ref=e662] [cursor=pointer]: "23"
+                          - generic [ref=e663] [cursor=pointer]: "24"
+                          - generic [ref=e664] [cursor=pointer]: "25"
+                          - generic [ref=e665] [cursor=pointer]: "26"
+                          - generic [ref=e666] [cursor=pointer]: "27"
+                          - generic [ref=e667] [cursor=pointer]: "28"
+                          - generic [ref=e668] [cursor=pointer]: "29"
+                          - generic [ref=e669] [cursor=pointer]: "30"
+                          - generic [ref=e670] [cursor=pointer]: "31"
+                          - generic [ref=e671] [cursor=pointer]: "32"
+                          - generic [ref=e672] [cursor=pointer]: "33"
+                          - generic [ref=e673] [cursor=pointer]: "34"
+                          - generic [ref=e674] [cursor=pointer]: "35"
+                          - generic [ref=e675] [cursor=pointer]: "36"
+                          - generic [ref=e676] [cursor=pointer]: "37"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: "["
+                                - generic: package
+                                - text: "]"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: name
+                                - text: =
+                                - generic:
+                                  - generic: "\""
+                                  - text: agui_vello
+                                  - generic: "\""
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: version
+                                - text: =
+                                - generic:
+                                  - generic: "\""
+                                  - text: 0.1.0
+                                  - generic: "\""
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: edition
+                                - text: =
+                                - generic:
+                                  - generic: "\""
+                                  - text: "2021"
+                                  - generic: "\""
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: resolver
+                                - text: =
+                                - generic:
+                                  - generic: "\""
+                                  - text: "2"
+                                  - generic: "\""
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: description
+                                - text: =
+                                - generic:
+                                  - generic: "\""
+                                  - text: Provides vello integration for agui
+                                  - generic: "\""
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: homepage
+                                - text: =
+                                - generic:
+                                  - generic: "\""
+                                  - text: https://github.com/Stumblinbear/agui
+                                  - generic: "\""
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: repository
+                                - text: =
+                                - generic:
+                                  - generic: "\""
+                                  - text: https://github.com/Stumblinbear/agui
+                                  - generic: "\""
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: keywords
+                                - text: = [
+                                - generic:
+                                  - generic: "\""
+                                  - text: gui
+                                  - generic: "\""
+                                - text: ","
+                                - generic:
+                                  - generic: "\""
+                                  - text: graphics
+                                  - generic: "\""
+                                - text: "]"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: categories
+                                - text: = [
+                                - generic:
+                                  - generic: "\""
+                                  - text: gui
+                                  - generic: "\""
+                                - text: ","
+                                - generic:
+                                  - generic: "\""
+                                  - text: graphics
+                                  - generic: "\""
+                                - text: ","
+                                - generic:
+                                  - generic: "\""
+                                  - text: rendering
+                                  - generic: "\""
+                                - text: "]"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: license
+                                - text: =
+                                - generic:
+                                  - generic: "\""
+                                  - text: MIT OR Apache-2.0
+                                  - generic: "\""
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: readme
+                                - text: =
+                                - generic:
+                                  - generic: "\""
+                                  - text: README.md
+                                  - generic: "\""
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: "["
+                                - generic: features
+                                - text: "]"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: window
+                                - text: = [
+                                - generic:
+                                  - generic: "\""
+                                  - text: dep:raw-window-handle
+                                  - generic: "\""
+                                - text: ","
+                                - generic:
+                                  - generic: "\""
+                                  - text: agui_renderer/window
+                                  - generic: "\""
+                                - text: "]"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: "["
+                                - generic: dependencies
+                                - text: "]"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: agui_core.workspace
+                                - text: =
+                                - generic: "true"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: agui_macros.workspace
+                                - text: =
+                                - generic: "true"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: agui_primitives.workspace
+                                - text: =
+                                - generic: "true"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: agui_renderer.workspace
+                                - text: =
+                                - generic: "true"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: tracing.workspace
+                                - text: =
+                                - generic: "true"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: thiserror.workspace
+                                - text: =
+                                - generic: "true"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: rustc-hash.workspace
+                                - text: =
+                                - generic: "true"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: slotmap.workspace
+                                - text: =
+                                - generic: "true"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: parking_lot.workspace
+                                - text: =
+                                - generic: "true"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: futures.workspace
+                                - text: =
+                                - generic: "true"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: raw-window-handle
+                                - text: "= {"
+                                - generic: workspace
+                                - text: =
+                                - generic: "true"
+                                - text: ","
+                                - generic: optional
+                                - text: =
+                                - generic: "true"
+                                - text: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: vello.workspace
+                                - text: =
+                                - generic: "true"
+  - alert [ref=e680]

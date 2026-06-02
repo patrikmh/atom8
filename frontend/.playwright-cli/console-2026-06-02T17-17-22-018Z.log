@@ -1,0 +1,13 @@
+[  127559ms] [ERROR] WebSocket connection to 'ws://192.168.0.108:3000/?token=PCvVQgL1f8B7' failed:  @ http://192.168.0.108:3000/@vite/client:535
+[  128626ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:8000/api/data/calendar?_cb=1780420770636:0
+[  128626ms] [ERROR] [CalendarWidget] fetch failed: Failed to fetch @ http://192.168.0.108:3000/src/components/widgets/CalendarWidget.tsx?t=1780420755463:48
+[  128629ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:8000/api/data/gmail?_cb=1780420770637:0
+[  128629ms] [ERROR] [GmailWidget] fetch failed: Failed to fetch @ http://192.168.0.108:3000/src/components/widgets/GmailWidget.tsx?t=1780420752941:53
+[  128631ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:8000/api/data/tasks?_cb=1780420770637:0
+[  128631ms] [ERROR] [TasksWidget] fetch failed: Failed to fetch @ http://192.168.0.108:3000/src/components/widgets/TasksWidget.tsx?t=1780420757496:59
+[  128632ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:8000/api/data/calendar?_cb=1780420770638:0
+[  128632ms] [ERROR] [CalendarWidget] fetch failed: Failed to fetch @ http://192.168.0.108:3000/src/components/widgets/CalendarWidget.tsx?t=1780420755463:48
+[  128633ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:8000/api/data/gmail?_cb=1780420770638:0
+[  128633ms] [ERROR] [GmailWidget] fetch failed: Failed to fetch @ http://192.168.0.108:3000/src/components/widgets/GmailWidget.tsx?t=1780420752941:53
+[  128633ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:8000/api/data/tasks?_cb=1780420770638:0
+[  128633ms] [ERROR] [TasksWidget] fetch failed: Failed to fetch @ http://192.168.0.108:3000/src/components/widgets/TasksWidget.tsx?t=1780420757496:59

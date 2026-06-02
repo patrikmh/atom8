@@ -1,0 +1,704 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - link "Homepage" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - navigation "Global" [ref=e16]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - button "Platform" [ref=e20] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e21]
+              - listitem [ref=e23]:
+                - button "Solutions" [ref=e25] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - button "Resources" [ref=e30] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e31]
+              - listitem [ref=e33]:
+                - button "Open Source" [ref=e35] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e36]
+              - listitem [ref=e38]:
+                - button "Enterprise" [ref=e40] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e41]
+              - listitem [ref=e43]:
+                - link "Pricing" [ref=e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+                  - generic [ref=e45]: Pricing
+          - generic [ref=e46]:
+            - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+            - link "Sign in" [ref=e54] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fnaveenraj-g%2Fa2ui-react-runtime
+            - link "Sign up" [ref=e55] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=naveenraj-g%2Fa2ui-react-runtime
+            - button "Appearance settings" [ref=e58] [cursor=pointer]:
+              - img
+  - main [ref=e62]:
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e66]:
+          - img [ref=e67]
+          - link "naveenraj-g" [ref=e70] [cursor=pointer]:
+            - /url: /naveenraj-g
+          - generic [ref=e71]: /
+          - strong [ref=e72]:
+            - link "a2ui-react-runtime" [ref=e73] [cursor=pointer]:
+              - /url: /naveenraj-g/a2ui-react-runtime
+          - generic [ref=e74]: Public
+        - generic [ref=e75]:
+          - list:
+            - listitem [ref=e76]:
+              - link "You must be signed in to change notification settings" [ref=e77] [cursor=pointer]:
+                - /url: /login?return_to=%2Fnaveenraj-g%2Fa2ui-react-runtime
+                - img [ref=e78]
+                - text: Notifications
+            - listitem [ref=e80]:
+              - link "Fork 0" [ref=e81] [cursor=pointer]:
+                - /url: /login?return_to=%2Fnaveenraj-g%2Fa2ui-react-runtime
+                - img [ref=e82]
+                - text: Fork
+                - generic "0" [ref=e84]
+            - listitem [ref=e85]:
+              - link "You must be signed in to star a repository" [ref=e87] [cursor=pointer]:
+                - /url: /login?return_to=%2Fnaveenraj-g%2Fa2ui-react-runtime
+                - img [ref=e88]
+                - text: Star
+                - generic "2 users starred this repository" [ref=e90]: "2"
+      - navigation "Repository" [ref=e91]:
+        - list [ref=e92]:
+          - listitem [ref=e93]:
+            - link "Code" [ref=e94] [cursor=pointer]:
+              - /url: /naveenraj-g/a2ui-react-runtime
+              - img [ref=e95]
+              - generic [ref=e97]: Code
+          - listitem [ref=e98]:
+            - link "Issues" [ref=e99] [cursor=pointer]:
+              - /url: /naveenraj-g/a2ui-react-runtime/issues
+              - img [ref=e100]
+              - generic [ref=e103]: Issues
+          - listitem [ref=e104]:
+            - link "Pull requests" [ref=e105] [cursor=pointer]:
+              - /url: /naveenraj-g/a2ui-react-runtime/pulls
+              - img [ref=e106]
+              - generic [ref=e108]: Pull requests
+          - listitem [ref=e109]:
+            - link "Actions" [ref=e110] [cursor=pointer]:
+              - /url: /naveenraj-g/a2ui-react-runtime/actions
+              - img [ref=e111]
+              - generic [ref=e113]: Actions
+          - listitem [ref=e114]:
+            - link "Projects" [ref=e115] [cursor=pointer]:
+              - /url: /naveenraj-g/a2ui-react-runtime/projects
+              - img [ref=e116]
+              - generic [ref=e118]: Projects
+          - listitem [ref=e119]:
+            - link "Security and quality" [ref=e120] [cursor=pointer]:
+              - /url: /naveenraj-g/a2ui-react-runtime/security
+              - img [ref=e121]
+              - generic [ref=e123]: Security and quality
+          - listitem [ref=e124]:
+            - link "Insights" [ref=e125] [cursor=pointer]:
+              - /url: /naveenraj-g/a2ui-react-runtime/pulse
+              - img [ref=e126]
+              - generic [ref=e128]: Insights
+    - generic [ref=e141]:
+      - heading "naveenraj-g/a2ui-react-runtime" [level=1] [ref=e143]
+      - generic [ref=e144]:
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - button "main branch" [ref=e151] [cursor=pointer]:
+                - generic [ref=e152]:
+                  - generic [ref=e154]:
+                    - img [ref=e156]
+                    - generic [ref=e159]: main
+                  - generic:
+                    - img
+              - generic [ref=e160]:
+                - link "Branches" [ref=e161] [cursor=pointer]:
+                  - /url: /naveenraj-g/a2ui-react-runtime/branches
+                  - generic [ref=e162]:
+                    - generic:
+                      - img
+                    - generic [ref=e163]: Branches
+                - link "Tags" [ref=e164] [cursor=pointer]:
+                  - /url: /naveenraj-g/a2ui-react-runtime/tags
+                  - generic [ref=e165]:
+                    - generic:
+                      - img
+                    - generic [ref=e166]: Tags
+            - generic [ref=e167]:
+              - generic [ref=e171]:
+                - img [ref=e173]
+                - combobox "Go to file" [ref=e175]
+              - button "Code" [ref=e176] [cursor=pointer]:
+                - generic [ref=e177]:
+                  - generic:
+                    - img
+                  - generic [ref=e178]: Code
+                  - generic:
+                    - img
+          - generic [ref=e179]:
+            - generic [ref=e180]:
+              - heading "Folders and files" [level=2] [ref=e181]
+              - table "Folders and files" [ref=e182]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e183]:
+                  - row "Latest commit History 9 Commits" [ref=e184]:
+                    - cell "Latest commit History 9 Commits" [ref=e185]:
+                      - generic [ref=e186]:
+                        - heading "Latest commit" [level=2] [ref=e187]
+                        - generic [ref=e190]:
+                          - heading "History" [level=2] [ref=e191]
+                          - link "9 Commits" [ref=e192] [cursor=pointer]:
+                            - /url: /naveenraj-g/a2ui-react-runtime/commits/main/
+                            - generic [ref=e193]:
+                              - generic:
+                                - img
+                              - generic [ref=e194]: 9 Commits
+                  - row ".vscode, (Directory)" [ref=e195]:
+                    - cell ".vscode, (Directory)" [ref=e196]:
+                      - generic [ref=e197]:
+                        - img [ref=e198]
+                        - link ".vscode, (Directory)" [ref=e203] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/tree/main/.vscode
+                          - text: .vscode
+                    - cell [ref=e204]
+                    - cell [ref=e206]
+                  - row "a2ui, (Directory)" [ref=e209]:
+                    - cell "a2ui, (Directory)" [ref=e210]:
+                      - generic [ref=e211]:
+                        - img [ref=e212]
+                        - link "a2ui, (Directory)" [ref=e217] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/tree/main/a2ui
+                          - text: a2ui
+                    - cell [ref=e218]
+                    - cell [ref=e220]
+                  - row "app, (Directory)" [ref=e223]:
+                    - cell "app, (Directory)" [ref=e224]:
+                      - generic [ref=e225]:
+                        - img [ref=e226]
+                        - link "app, (Directory)" [ref=e231] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/tree/main/app
+                          - text: app
+                    - cell [ref=e232]
+                    - cell [ref=e234]
+                  - row "components, (Directory)" [ref=e237]:
+                    - cell "components, (Directory)" [ref=e238]:
+                      - generic [ref=e239]:
+                        - img [ref=e240]
+                        - link "components, (Directory)" [ref=e245] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/tree/main/components
+                          - text: components
+                    - cell [ref=e246]
+                    - cell [ref=e248]
+                  - row "docs, (Directory)" [ref=e251]:
+                    - cell "docs, (Directory)" [ref=e252]:
+                      - generic [ref=e253]:
+                        - img [ref=e254]
+                        - link "docs, (Directory)" [ref=e259] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/tree/main/docs
+                          - text: docs
+                    - cell [ref=e260]
+                    - cell [ref=e262]
+                  - row "hooks, (Directory)" [ref=e265]:
+                    - cell "hooks, (Directory)" [ref=e266]:
+                      - generic [ref=e267]:
+                        - img [ref=e268]
+                        - link "hooks, (Directory)" [ref=e273] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/tree/main/hooks
+                          - text: hooks
+                    - cell [ref=e274]
+                    - cell [ref=e276]
+                  - row "lib, (Directory)" [ref=e279]:
+                    - cell "lib, (Directory)" [ref=e280]:
+                      - generic [ref=e281]:
+                        - img [ref=e282]
+                        - link "lib, (Directory)" [ref=e287] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/tree/main/lib
+                          - text: lib
+                    - cell [ref=e288]
+                    - cell [ref=e290]
+                  - row "public, (Directory)" [ref=e293]:
+                    - cell "public, (Directory)" [ref=e294]:
+                      - generic [ref=e295]:
+                        - img [ref=e296]
+                        - link "public, (Directory)" [ref=e301] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/tree/main/public
+                          - text: public
+                    - cell [ref=e302]
+                    - cell [ref=e304]
+                  - row "utils, (Directory)" [ref=e307]:
+                    - cell "utils, (Directory)" [ref=e308]:
+                      - generic [ref=e309]:
+                        - img [ref=e310]
+                        - link "utils, (Directory)" [ref=e315] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/tree/main/utils
+                          - text: utils
+                    - cell [ref=e316]
+                    - cell [ref=e318]
+                  - row ".env copy, (File)" [ref=e321]:
+                    - cell ".env copy, (File)" [ref=e322]:
+                      - generic [ref=e323]:
+                        - img [ref=e324]
+                        - link ".env copy, (File)" [ref=e329] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/.env%20copy
+                          - text: .env copy
+                    - cell [ref=e330]
+                    - cell [ref=e332]
+                  - row ".gitignore, (File)" [ref=e335]:
+                    - cell ".gitignore, (File)" [ref=e336]:
+                      - generic [ref=e337]:
+                        - img [ref=e338]
+                        - link ".gitignore, (File)" [ref=e343] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/.gitignore
+                          - text: .gitignore
+                    - cell [ref=e344]
+                    - cell [ref=e346]
+                  - row "README.md, (File)" [ref=e349]:
+                    - cell "README.md, (File)" [ref=e350]:
+                      - generic [ref=e351]:
+                        - img [ref=e352]
+                        - link "README.md, (File)" [ref=e357] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/README.md
+                          - text: README.md
+                    - cell [ref=e358]
+                    - cell [ref=e360]
+                  - row "components.json, (File)" [ref=e363]:
+                    - cell "components.json, (File)" [ref=e364]:
+                      - generic [ref=e365]:
+                        - img [ref=e366]
+                        - link "components.json, (File)" [ref=e371] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/components.json
+                          - text: components.json
+                    - cell [ref=e372]
+                    - cell [ref=e374]
+                  - row "eslint.config.mjs, (File)" [ref=e377]:
+                    - cell "eslint.config.mjs, (File)" [ref=e378]:
+                      - generic [ref=e379]:
+                        - img [ref=e380]
+                        - link "eslint.config.mjs, (File)" [ref=e385] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/eslint.config.mjs
+                          - text: eslint.config.mjs
+                    - cell [ref=e386]
+                    - cell [ref=e388]
+                  - row "global.d.ts, (File)" [ref=e391]:
+                    - cell "global.d.ts, (File)" [ref=e392]:
+                      - generic [ref=e393]:
+                        - img [ref=e394]
+                        - link "global.d.ts, (File)" [ref=e399] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/global.d.ts
+                          - text: global.d.ts
+                    - cell [ref=e400]
+                    - cell [ref=e402]
+                  - row "implementation.md, (File)" [ref=e405]:
+                    - cell "implementation.md, (File)" [ref=e406]:
+                      - generic [ref=e407]:
+                        - img [ref=e408]
+                        - link "implementation.md, (File)" [ref=e413] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/implementation.md
+                          - text: implementation.md
+                    - cell [ref=e414]
+                    - cell [ref=e416]
+                  - row "next.config.ts, (File)" [ref=e419]:
+                    - cell "next.config.ts, (File)" [ref=e420]:
+                      - generic [ref=e421]:
+                        - img [ref=e422]
+                        - link "next.config.ts, (File)" [ref=e427] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/next.config.ts
+                          - text: next.config.ts
+                    - cell [ref=e428]
+                    - cell [ref=e430]
+                  - row "package-lock.json, (File)" [ref=e433]:
+                    - cell "package-lock.json, (File)" [ref=e434]:
+                      - generic [ref=e435]:
+                        - img [ref=e436]
+                        - link "package-lock.json, (File)" [ref=e441] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/package-lock.json
+                          - text: package-lock.json
+                    - cell [ref=e442]
+                    - cell [ref=e444]
+                  - row "package.json, (File)" [ref=e447]:
+                    - cell "package.json, (File)" [ref=e448]:
+                      - generic [ref=e449]:
+                        - img [ref=e450]
+                        - link "package.json, (File)" [ref=e455] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/package.json
+                          - text: package.json
+                    - cell [ref=e456]
+                    - cell [ref=e458]
+                  - row "postcss.config.mjs, (File)" [ref=e461]:
+                    - cell "postcss.config.mjs, (File)" [ref=e462]:
+                      - generic [ref=e463]:
+                        - img [ref=e464]
+                        - link "postcss.config.mjs, (File)" [ref=e469] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/postcss.config.mjs
+                          - text: postcss.config.mjs
+                    - cell [ref=e470]
+                    - cell [ref=e472]
+                  - row "search-pattern.js, (File)" [ref=e475]:
+                    - cell "search-pattern.js, (File)" [ref=e476]:
+                      - generic [ref=e477]:
+                        - img [ref=e478]
+                        - link "search-pattern.js, (File)" [ref=e483] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/search-pattern.js
+                          - text: search-pattern.js
+                    - cell [ref=e484]
+                    - cell [ref=e486]
+                  - row "search-sets.js, (File)" [ref=e489]:
+                    - cell "search-sets.js, (File)" [ref=e490]:
+                      - generic [ref=e491]:
+                        - img [ref=e492]
+                        - link "search-sets.js, (File)" [ref=e497] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/search-sets.js
+                          - text: search-sets.js
+                    - cell [ref=e498]
+                    - cell [ref=e500]
+                  - row "system-prompt.md, (File)" [ref=e503]:
+                    - cell "system-prompt.md, (File)" [ref=e504]:
+                      - generic [ref=e505]:
+                        - img [ref=e506]
+                        - link "system-prompt.md, (File)" [ref=e511] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/system-prompt.md
+                          - text: system-prompt.md
+                    - cell [ref=e512]
+                    - cell [ref=e514]
+                  - row "test-tabs-schema.json, (File)" [ref=e517]:
+                    - cell "test-tabs-schema.json, (File)" [ref=e518]:
+                      - generic [ref=e519]:
+                        - img [ref=e520]
+                        - link "test-tabs-schema.json, (File)" [ref=e525] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/test-tabs-schema.json
+                          - text: test-tabs-schema.json
+                    - cell [ref=e526]
+                    - cell [ref=e528]
+                  - row "tsconfig.json, (File)" [ref=e531]:
+                    - cell "tsconfig.json, (File)" [ref=e532]:
+                      - generic [ref=e533]:
+                        - img [ref=e534]
+                        - link "tsconfig.json, (File)" [ref=e539] [cursor=pointer]:
+                          - /url: /naveenraj-g/a2ui-react-runtime/blob/main/tsconfig.json
+                          - text: tsconfig.json
+                    - cell [ref=e540]
+                    - cell [ref=e542]
+            - generic [ref=e546]:
+              - generic [ref=e547]:
+                - heading "Repository files navigation" [level=2] [ref=e548]
+                - navigation "Repository files" [ref=e549]:
+                  - list [ref=e550]:
+                    - listitem [ref=e551]:
+                      - link "README" [ref=e552] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e554]
+                        - generic [ref=e556]: README
+                - button "Outline" [ref=e557] [cursor=pointer]:
+                  - img [ref=e558]
+              - article [ref=e561]:
+                - generic [ref=e562]:
+                  - heading "A2UI Next.js Implementation" [level=1] [ref=e563]
+                  - 'link "Permalink: A2UI Next.js Implementation" [ref=e564] [cursor=pointer]':
+                    - /url: "#a2ui-nextjs-implementation"
+                    - img [ref=e565]
+                - paragraph [ref=e567]: This is a Next.js implementation of the A2UI library, using ShadCN components. A2UI is a declarative UI library that allows you to define your UI using a JSON schema, which can be dynamically generated and updated.
+                - generic [ref=e568]:
+                  - heading "Installation" [level=2] [ref=e569]
+                  - 'link "Permalink: Installation" [ref=e570] [cursor=pointer]':
+                    - /url: "#installation"
+                    - img [ref=e571]
+                - list [ref=e573]:
+                  - listitem [ref=e574]: "Install the required dependencies:"
+                - generic [ref=e575]:
+                  - generic [ref=e576]: npm install
+                  - button "Copy code to clipboard" [ref=e578] [cursor=pointer]:
+                    - img [ref=e579]
+                - list [ref=e582]:
+                  - listitem [ref=e583]: "Run the development server:"
+                - generic [ref=e584]:
+                  - generic [ref=e585]: npm run dev
+                  - button "Copy code to clipboard" [ref=e587] [cursor=pointer]:
+                    - img [ref=e588]
+                - list [ref=e591]:
+                  - listitem [ref=e592]:
+                    - text: Open
+                    - link "http://localhost:3000" [ref=e593] [cursor=pointer]:
+                      - /url: http://localhost:3000
+                    - text: to see the demo.
+                - generic [ref=e594]:
+                  - heading "Components" [level=2] [ref=e595]
+                  - 'link "Permalink: Components" [ref=e596] [cursor=pointer]':
+                    - /url: "#components"
+                    - img [ref=e597]
+                - paragraph [ref=e599]: "The A2UI library includes the following components:"
+                - generic [ref=e600]:
+                  - heading "Layout Components" [level=3] [ref=e601]
+                  - 'link "Permalink: Layout Components" [ref=e602] [cursor=pointer]':
+                    - /url: "#layout-components"
+                    - img [ref=e603]
+                - list [ref=e605]:
+                  - listitem [ref=e606]:
+                    - strong [ref=e607]: Row
+                    - text: ": Horizontal layout container"
+                  - listitem [ref=e608]:
+                    - strong [ref=e609]: Column
+                    - text: ": Vertical layout container"
+                  - listitem [ref=e610]:
+                    - strong [ref=e611]: List
+                    - text: ": Scrollable list of items"
+                  - listitem [ref=e612]:
+                    - strong [ref=e613]: Card
+                    - text: ": Container with elevation and padding"
+                - generic [ref=e614]:
+                  - heading "Display Components" [level=3] [ref=e615]
+                  - 'link "Permalink: Display Components" [ref=e616] [cursor=pointer]':
+                    - /url: "#display-components"
+                    - img [ref=e617]
+                - list [ref=e619]:
+                  - listitem [ref=e620]:
+                    - strong [ref=e621]: Text
+                    - text: ": Display text content with optional styling"
+                  - listitem [ref=e622]:
+                    - strong [ref=e623]: Image
+                    - text: ": Display images from URLs"
+                  - listitem [ref=e624]:
+                    - strong [ref=e625]: Icon
+                    - text: ": Display icons (using emoji as fallback)"
+                  - listitem [ref=e626]:
+                    - strong [ref=e627]: Divider
+                    - text: ": Visual separator line"
+                  - listitem [ref=e628]:
+                    - strong [ref=e629]: Table
+                    - text: ": Data table with headers and rows (additional component)"
+                - generic [ref=e630]:
+                  - heading "Interactive Components" [level=3] [ref=e631]
+                  - 'link "Permalink: Interactive Components" [ref=e632] [cursor=pointer]':
+                    - /url: "#interactive-components"
+                    - img [ref=e633]
+                - list [ref=e635]:
+                  - listitem [ref=e636]:
+                    - strong [ref=e637]: Button
+                    - text: ": Clickable button with action support"
+                  - listitem [ref=e638]:
+                    - strong [ref=e639]: TextField
+                    - text: ": Text input field"
+                  - listitem [ref=e640]:
+                    - strong [ref=e641]: Checkbox
+                    - text: ": Boolean toggle"
+                  - listitem [ref=e642]:
+                    - strong [ref=e643]: Slider
+                    - text: ": Range slider input"
+                  - listitem [ref=e644]:
+                    - strong [ref=e645]: MultipleChoice
+                    - text: ": Dropdown or radio button selection"
+                  - listitem [ref=e646]:
+                    - strong [ref=e647]: DateTimeInput
+                    - text: ": Date and time picker"
+                - generic [ref=e648]:
+                  - heading "Container Components" [level=3] [ref=e649]
+                  - 'link "Permalink: Container Components" [ref=e650] [cursor=pointer]':
+                    - /url: "#container-components"
+                    - img [ref=e651]
+                - list [ref=e653]:
+                  - listitem [ref=e654]:
+                    - strong [ref=e655]: Modal
+                    - text: ": Overlay dialog"
+                  - listitem [ref=e656]:
+                    - strong [ref=e657]: Tabs
+                    - text: ": Tabbed interface"
+                - generic [ref=e658]:
+                  - heading "Media Components" [level=3] [ref=e659]
+                  - 'link "Permalink: Media Components" [ref=e660] [cursor=pointer]':
+                    - /url: "#media-components"
+                    - img [ref=e661]
+                - list [ref=e663]:
+                  - listitem [ref=e664]:
+                    - strong [ref=e665]: Video
+                    - text: ": Video player"
+                  - listitem [ref=e666]:
+                    - strong [ref=e667]: AudioPlayer
+                    - text: ": Audio player"
+                - generic [ref=e668]:
+                  - heading "Usage" [level=2] [ref=e669]
+                  - 'link "Permalink: Usage" [ref=e670] [cursor=pointer]':
+                    - /url: "#usage"
+                    - img [ref=e671]
+                - paragraph [ref=e673]: To use the A2UI library, you first need to define your UI using a JSON schema. This schema is typically generated by an AI system or created manually.
+                - paragraph [ref=e674]: "Here's an example of how to use the A2UI library:"
+                - generic [ref=e675]:
+                  - generic [ref=e676]: "import { Renderer } from '@/components/a2ui/renderer'; import { MessageProcessor } from '@/components/a2ui/processor'; import type { AnyComponentNode } from '@/components/a2ui/types'; const processor = new MessageProcessor(); const myComponents: AnyComponentNode[] = [ { id: 'root', type: 'Card', properties: { child: { id: 'content', type: 'Column', properties: { children: [ { id: 'title', type: 'Text', properties: { text: { literalString: 'Hello, World!' }, usageHint: 'h1', }, }, { id: 'subtitle', type: 'Text', properties: { text: { literalString: 'This is a demo of the A2UI library.' }, }, }, ], }, }, }, }, ]; function MyComponent() { return ( <Renderer processor={processor} surfaceId=\"my-surface\" component={myComponents.find(c => c.id === 'root')!} /> ); }"
+                  - button "Copy code to clipboard" [ref=e678] [cursor=pointer]:
+                    - img [ref=e679]
+                - generic [ref=e682]:
+                  - heading "Demo" [level=2] [ref=e683]
+                  - 'link "Permalink: Demo" [ref=e684] [cursor=pointer]':
+                    - /url: "#demo"
+                    - img [ref=e685]
+                - paragraph [ref=e687]: "The demo page includes two examples:"
+                - list [ref=e688]:
+                  - listitem [ref=e689]:
+                    - strong [ref=e690]: Chat Interface
+                    - text: ": A simple chat interface with messages and input field"
+                  - listitem [ref=e691]:
+                    - strong [ref=e692]: Streams UI
+                    - text: ": A real-time streams UI with temperature, humidity, and fan speed controls"
+                - generic [ref=e693]:
+                  - heading "Architecture" [level=2] [ref=e694]
+                  - 'link "Permalink: Architecture" [ref=e695] [cursor=pointer]':
+                    - /url: "#architecture"
+                    - img [ref=e696]
+                - paragraph [ref=e698]: "The A2UI library is built around the following core concepts:"
+                - list [ref=e699]:
+                  - listitem [ref=e700]:
+                    - strong [ref=e701]: Message Processor
+                    - text: ": Handles data binding and message dispatch"
+                  - listitem [ref=e702]:
+                    - strong [ref=e703]: Components
+                    - text: ": React components that render A2UI nodes"
+                  - listitem [ref=e704]:
+                    - strong [ref=e705]: Renderer
+                    - text: ": Dynamically renders components from the A2UI schema"
+                  - listitem [ref=e706]:
+                    - strong [ref=e707]: Theme
+                    - text: ": Defines the styling for all components"
+                - generic [ref=e708]:
+                  - heading "Customization" [level=2] [ref=e709]
+                  - 'link "Permalink: Customization" [ref=e710] [cursor=pointer]':
+                    - /url: "#customization"
+                    - img [ref=e711]
+                - paragraph [ref=e713]:
+                  - text: You can customize the appearance of A2UI components by modifying the theme in
+                  - code [ref=e714]: theme.ts
+                  - text: . This allows you to override the default styles with your own brand colors and fonts.
+                - generic [ref=e715]:
+                  - heading "License" [level=2] [ref=e716]
+                  - 'link "Permalink: License" [ref=e717] [cursor=pointer]':
+                    - /url: "#license"
+                    - img [ref=e718]
+                - paragraph [ref=e720]: This implementation is based on the A2UI library from Google, which is licensed under the Apache 2.0 License.
+        - generic [ref=e724]:
+          - generic [ref=e727]:
+            - heading "About" [level=2] [ref=e728]
+            - paragraph [ref=e729]: A React/Next.js runtime for rendering declarative AI-generated UIs using the A2UI schema with TypeScript and ShadCN UI components.
+            - heading "Topics" [level=3] [ref=e730]
+            - link "a2ui" [ref=e733] [cursor=pointer]:
+              - /url: /topics/a2ui
+            - heading "Resources" [level=3] [ref=e734]
+            - link "Readme" [ref=e736] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+              - img [ref=e737]
+              - text: Readme
+            - link "Activity" [ref=e740] [cursor=pointer]:
+              - /url: /naveenraj-g/a2ui-react-runtime/activity
+              - img [ref=e741]
+              - text: Activity
+            - heading "Stars" [level=3] [ref=e743]
+            - link "2 stars" [ref=e745] [cursor=pointer]:
+              - /url: /naveenraj-g/a2ui-react-runtime/stargazers
+              - img [ref=e746]
+              - strong [ref=e748]: "2"
+              - text: stars
+            - heading "Watchers" [level=3] [ref=e749]
+            - link "0 watching" [ref=e751] [cursor=pointer]:
+              - /url: /naveenraj-g/a2ui-react-runtime/watchers
+              - img [ref=e752]
+              - strong [ref=e754]: "0"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e755]
+            - link "0 forks" [ref=e757] [cursor=pointer]:
+              - /url: /naveenraj-g/a2ui-react-runtime/forks
+              - img [ref=e758]
+              - strong [ref=e760]: "0"
+              - text: forks
+            - link "Report repository" [ref=e762] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fnaveenraj-g%2Fa2ui-react-runtime&report=naveenraj-g+%28user%29
+          - generic [ref=e764]:
+            - heading "Releases" [level=2] [ref=e765]:
+              - link "Releases" [ref=e766] [cursor=pointer]:
+                - /url: /naveenraj-g/a2ui-react-runtime/releases
+            - generic [ref=e767]: No releases published
+          - generic "Loading latest packages" [ref=e770]:
+            - heading "Packages" [level=2] [ref=e771]:
+              - link "Packages" [ref=e772] [cursor=pointer]:
+                - /url: /users/naveenraj-g/packages?repo_name=a2ui-react-runtime
+          - generic "Loading contributors" [ref=e784]:
+            - generic:
+              - heading "Contributors" [level=2] [ref=e785]:
+                - link "Contributors" [ref=e786] [cursor=pointer]:
+                  - /url: /naveenraj-g/a2ui-react-runtime/graphs/contributors
+              - list [ref=e787]:
+                - listitem [ref=e788]
+                - listitem [ref=e790]
+                - listitem [ref=e792]
+          - generic [ref=e795]:
+            - heading "Languages" [level=2] [ref=e796]
+            - list [ref=e802]:
+              - listitem [ref=e803]:
+                - link "TypeScript 98.1%" [ref=e804] [cursor=pointer]:
+                  - /url: /naveenraj-g/a2ui-react-runtime/search?l=typescript
+                  - img [ref=e805]
+                  - generic [ref=e807]: TypeScript
+                  - generic [ref=e808]: 98.1%
+              - listitem [ref=e809]:
+                - link "CSS 1.3%" [ref=e810] [cursor=pointer]:
+                  - /url: /naveenraj-g/a2ui-react-runtime/search?l=css
+                  - img [ref=e811]
+                  - generic [ref=e813]: CSS
+                  - generic [ref=e814]: 1.3%
+              - listitem [ref=e815]:
+                - link "JavaScript 0.6%" [ref=e816] [cursor=pointer]:
+                  - /url: /naveenraj-g/a2ui-react-runtime/search?l=javascript
+                  - img [ref=e817]
+                  - generic [ref=e819]: JavaScript
+                  - generic [ref=e820]: 0.6%
+  - contentinfo [ref=e822]:
+    - heading "Footer" [level=2] [ref=e823]
+    - generic [ref=e824]:
+      - generic [ref=e825]:
+        - link "GitHub Homepage" [ref=e826] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e827]
+        - generic [ref=e829]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e830]:
+        - heading "Footer navigation" [level=3] [ref=e831]
+        - list "Footer navigation" [ref=e832]:
+          - listitem [ref=e833]:
+            - link "Terms" [ref=e834] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e835]:
+            - link "Privacy" [ref=e836] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e837]:
+            - link "Security" [ref=e838] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e839]:
+            - link "Status" [ref=e840] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e841]:
+            - link "Community" [ref=e842] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e843]:
+            - link "Docs" [ref=e844] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e845]:
+            - link "Contact" [ref=e846] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e847]:
+            - button "Manage cookies" [ref=e849] [cursor=pointer]
+          - listitem [ref=e850]:
+            - button "Do not share my personal information" [ref=e852] [cursor=pointer]

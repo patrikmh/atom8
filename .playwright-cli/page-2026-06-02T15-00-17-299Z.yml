@@ -1,0 +1,59 @@
+- generic [ref=e2]:
+  - generic [ref=e5]:
+    - link "Yahoo" [ref=e6] [cursor=pointer]:
+      - /url: https://www.yahoo.com
+    - button "Settings" [ref=e8] [cursor=pointer]
+    - link "Sign In" [ref=e10] [cursor=pointer]:
+      - /url: https://login.yahoo.com/?.intl=us&.lang=en-US&pspid=2766679&.src=search&.done=https%3A%2F%2Fsearch.yahoo.com%2Fsearch%3Fp%3Dagui%2BUI%2Bframework&activity=header-signin
+      - generic [ref=e11]: Sign In
+    - search [ref=e13]:
+      - generic [ref=e15]:
+        - combobox "Search the web" [ref=e16]: agui UI framework
+        - generic [ref=e17]:
+          - button "Clear" [ref=e19] [cursor=pointer]:
+            - img [ref=e20]
+          - button "Search by voice" [ref=e23] [cursor=pointer]
+          - button "Search" [ref=e25] [cursor=pointer]:
+            - img [ref=e26]
+  - document [ref=e29]:
+    - generic [ref=e36]:
+      - heading "Search Results" [level=2] [ref=e37]
+      - list [ref=e38]:
+        - listitem [ref=e39]:
+          - heading "We had temporary problems searching for web pages. Search again for agui UI framework or type a new query above." [level=2] [ref=e42]:
+            - text: We had temporary problems searching for web pages.
+            - link "Search again for agui UI framework" [ref=e43] [cursor=pointer]:
+              - /url: https://search.yahoo.com/search?p=agui+UI+framework
+              - text: Search again for
+              - strong [ref=e44]: agui UI framework
+            - text: or type a new query above.
+  - contentinfo [ref=e47]:
+    - list [ref=e48]:
+      - listitem [ref=e49]:
+        - link "Report a concern" [ref=e50] [cursor=pointer]:
+          - /url: https://uk.help.yahoo.com/kb/search-for-desktop?sclb=1
+      - listitem [ref=e51]:
+        - link "Help" [ref=e52] [cursor=pointer]:
+          - /url: https://help.yahoo.com/kb/search-for-desktop
+      - listitem [ref=e53]:
+        - link "Suggestions" [ref=e54] [cursor=pointer]:
+          - /url: https://yahoo.uservoice.com/forums/193847-search
+      - listitem [ref=e55]:
+        - link "Terms" [ref=e56] [cursor=pointer]:
+          - /url: https://guce.yahoo.com/terms?locale=en-US
+      - listitem [ref=e57]:
+        - link "Privacy" [ref=e58] [cursor=pointer]:
+          - /url: https://guce.yahoo.com/privacy-policy?locale=en-US
+      - listitem [ref=e59]:
+        - link "Privacy & Cookie Settings" [ref=e60] [cursor=pointer]:
+          - /url: https://guce.yahoo.com/e/consent/edit
+      - listitem [ref=e61]:
+        - link "Advertise" [ref=e62] [cursor=pointer]:
+          - /url: https://advertising.yahoo.com/article/search-advertising.html
+      - listitem [ref=e63]:
+        - link "About ads" [ref=e64] [cursor=pointer]:
+          - /url: https://help.yahoo.com/kb/search/sln2244.html
+      - listitem [ref=e65]:
+        - link "About this page" [ref=e66] [cursor=pointer]:
+          - /url: https://help.yahoo.com/kb/search-for-desktop/SLN2206.html?impressions=true
+      - listitem [ref=e67]: Powered by Bing™

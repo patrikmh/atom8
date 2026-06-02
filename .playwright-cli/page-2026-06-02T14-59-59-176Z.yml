@@ -1,0 +1,251 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link "DuckDuckGo home" [ref=e7] [cursor=pointer]:
+            - /url: /?t=h_
+            - generic [ref=e9]: DuckDuckGo
+          - generic [ref=e15]:
+            - combobox "Sök privat" [ref=e17]: agui UI framework
+            - button "search" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e25]:
+              - banner [ref=e26]:
+                - img [ref=e27]
+                - paragraph [ref=e28]: Uppgradera till vår webbläsare.
+              - generic [ref=e29]:
+                - generic [ref=e30]:
+                  - img [ref=e31]
+                  - generic [ref=e32]:
+                    - img [ref=e33]
+                    - img [ref=e34]
+                - paragraph [ref=e35]:
+                  - generic [ref=e36]:
+                    - text: Prova
+                    - strong [ref=e37]: DuckDuckGo-webbläsaren.
+                    - text: Snabb. Gratis. Privat.
+                - link "Ladda ner webbläsare" [ref=e38] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/mac?origin=funnel_browser_searchresults__popover
+                  - img [ref=e39]
+                  - generic [ref=e41]: Ladda ner webbläsare
+              - paragraph [ref=e44]:
+                - generic [ref=e45]: Gratis
+            - button [ref=e47] [cursor=pointer]:
+              - img [ref=e48]
+          - button "Öppna menyn" [ref=e50] [cursor=pointer]:
+            - generic [ref=e51]: Öppna menyn
+            - img [ref=e52]
+      - navigation [ref=e58]:
+        - list [ref=e59]:
+          - listitem [ref=e60]:
+            - link "Alla" [ref=e61] [cursor=pointer]:
+              - /url: /?ia=web&origin=funnel_home_website&t=h_&q=agui+UI+framework&chip-select=search
+              - img [ref=e62]
+              - text: Alla
+          - listitem [ref=e64]:
+            - link "Bilder" [ref=e65] [cursor=pointer]:
+              - /url: /?ia=images&origin=funnel_home_website&t=h_&q=agui+UI+framework&chip-select=search&iax=images
+          - listitem [ref=e66]:
+            - link "Videor" [ref=e67] [cursor=pointer]:
+              - /url: /?ia=videos&origin=funnel_home_website&t=h_&q=agui+UI+framework&chip-select=search&iax=videos
+          - listitem [ref=e68]:
+            - link "Nyheter" [ref=e69] [cursor=pointer]:
+              - /url: /?ia=news&origin=funnel_home_website&t=h_&q=agui+UI+framework&chip-select=search&iar=news
+          - listitem [ref=e70]:
+            - link "Kartor" [ref=e71] [cursor=pointer]:
+              - /url: /?origin=funnel_home_website&t=h_&q=agui+UI+framework&chip-select=search&iaxm=maps
+          - listitem [ref=e72]:
+            - link "Shoppa" [ref=e73] [cursor=pointer]:
+              - /url: /?ia=shopping&origin=funnel_home_website&t=h_&q=agui+UI+framework&chip-select=search&iax=shopping
+        - list [ref=e74]:
+          - listitem [ref=e75]:
+            - link "Duck.ai" [ref=e77] [cursor=pointer]:
+              - /url: /?ia=chat&origin=funnel_home_website&t=h_&q=agui+UI+framework&chip-select=search
+              - img [ref=e78]
+              - text: Duck.ai
+          - listitem [ref=e81]:
+            - button "Sökinställningar ✀" [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+              - generic [ref=e86]: Sökinställningar
+              - generic [ref=e89]: ✀
+    - navigation [ref=e96]:
+      - generic [ref=e99] [cursor=pointer]:
+        - generic [ref=e107]: Skyddad
+        - img [ref=e108]: ▼
+      - generic [ref=e112] [cursor=pointer]:
+        - generic [ref=e115]:
+          - switch "✓" [ref=e116]: ✓
+          - generic [ref=e118]: Sverige
+        - img [ref=e119]: ▼
+      - generic [ref=e123] [cursor=pointer]:
+        - generic [ref=e124]: "Säker sökning: måttlig"
+        - img [ref=e125]: ▼
+      - generic [ref=e129] [cursor=pointer]:
+        - generic [ref=e130]: Alla tider
+        - img [ref=e131]: ▼
+    - list [ref=e134]:
+      - button "Stäng menyn" [ref=e135] [cursor=pointer]:
+        - generic [ref=e136]: Stäng menyn
+        - img [ref=e137]
+      - list [ref=e139]:
+        - listitem [ref=e140]: Sök
+        - listitem [ref=e141]:
+          - link "Startsida" [ref=e142] [cursor=pointer]:
+            - /url: https://start.duckduckgo.com/
+        - listitem [ref=e143]:
+          - link "Teman" [ref=e144] [cursor=pointer]:
+            - /url: /settings#appearance
+        - listitem [ref=e145]:
+          - link "Inställningar" [ref=e146] [cursor=pointer]:
+            - /url: /settings
+      - list [ref=e147]:
+        - listitem [ref=e148]: Berätta vad du tycker
+        - listitem [ref=e149]:
+          - generic [ref=e152]:
+            - button "Positive feedback" [ref=e153] [cursor=pointer]:
+              - img [ref=e154]
+            - button "Negative feedback" [ref=e157] [cursor=pointer]:
+              - img [ref=e158]
+      - list [ref=e161]:
+        - listitem [ref=e162]: Nerladdningar
+        - listitem [ref=e163]:
+          - link "iOS-webbläsare" [ref=e164] [cursor=pointer]:
+            - /url: https://apps.apple.com/app/duckduckgo-private-browser/id663592361?platform=iphone&pt=866401&mt=8&ct=serp-atb-serp
+        - listitem [ref=e165]:
+          - link "Android-webbläsare" [ref=e166] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=utm_campaign%3Dserp-atb-serp%26origin%3Dfunnel_playstore_searchresults
+        - listitem [ref=e167]:
+          - link "Mac-webbläsare" [ref=e168] [cursor=pointer]:
+            - /url: /mac?origin=funnel_browser_searchresults
+        - listitem [ref=e169]:
+          - link "Windows-webbläsare" [ref=e170] [cursor=pointer]:
+            - /url: /windows?origin=funnel_browser_searchresults
+        - listitem [ref=e171]: Webbläsartillägg
+      - list [ref=e172]:
+        - listitem [ref=e173]: Mer från DuckDuckGo
+        - listitem [ref=e174]:
+          - generic [ref=e177]:
+            - button "Stäng kampanj" [ref=e178] [cursor=pointer]:
+              - img [ref=e179]
+            - generic [ref=e181]:
+              - paragraph [ref=e183]:
+                - img [ref=e184]
+                - text: Uppgradera till vår privata webbläsare
+              - paragraph [ref=e195]: Snabb. Säker. Fri.
+            - link "Installera webbläsaren för Mac" [ref=e196] [cursor=pointer]:
+              - /url: /mac
+              - img [ref=e197]
+              - text: Installera webbläsaren för Mac
+        - listitem [ref=e199]:
+          - link "DuckDuckGo Abonnemang" [ref=e200] [cursor=pointer]:
+            - /url: /pro?origin=funnel_pro_searchresults
+        - listitem [ref=e201]:
+          - link "Duck.ai" [ref=e202] [cursor=pointer]:
+            - /url: https://duck.ai
+        - listitem [ref=e203]:
+          - link "E-postskydd" [ref=e204] [cursor=pointer]:
+            - /url: /email
+        - listitem [ref=e205]:
+          - link "Nyhetsbrev" [ref=e206] [cursor=pointer]:
+            - /url: /newsletter
+        - listitem [ref=e207]:
+          - link "Blogg" [ref=e208] [cursor=pointer]:
+            - /url: /blog
+        - listitem [ref=e209]:
+          - link "Podcast" [ref=e210] [cursor=pointer]:
+            - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+        - listitem [ref=e211]:
+          - link "Samarbeten" [ref=e212] [cursor=pointer]:
+            - /url: /collaborations
+      - list [ref=e213]:
+        - listitem [ref=e214]: Läs mer
+        - listitem [ref=e215]:
+          - link "Vad är nytt?" [ref=e216] [cursor=pointer]:
+            - /url: /updates
+        - listitem [ref=e217]:
+          - link "Jämför integritet" [ref=e218] [cursor=pointer]:
+            - /url: /compare-privacy
+        - listitem [ref=e219]:
+          - link "Om vår webbläsare" [ref=e220] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=e221]:
+          - link "Om DuckDuckGo" [ref=e222] [cursor=pointer]:
+            - /url: /about
+      - list [ref=e223]:
+        - listitem [ref=e224]: Övriga resurser
+        - listitem [ref=e225]:
+          - link "Hjälp" [ref=e226] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages
+        - listitem [ref=e227]:
+          - link "Organisation" [ref=e228] [cursor=pointer]:
+            - /url: https://www.reddit.com/r/duckduckgo/
+        - listitem [ref=e229]:
+          - link "Jobb" [ref=e230] [cursor=pointer]:
+            - /url: /careers
+        - listitem [ref=e231]:
+          - link "Integritetspolicy" [ref=e232] [cursor=pointer]:
+            - /url: /privacy
+        - listitem [ref=e233]:
+          - link "Användarvillkor" [ref=e234] [cursor=pointer]:
+            - /url: /terms
+        - listitem [ref=e235]:
+          - link "Mediekit" [ref=e236] [cursor=pointer]:
+            - /url: /press
+        - listitem [ref=e237]:
+          - link "Annonsera på söksidan" [ref=e238] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages/company/advertise-on-duckduckgo-search
+  - generic [ref=e242]:
+    - generic [ref=e244]:
+      - img [ref=e245]
+      - generic [ref=e261]:
+        - heading "Hämta vår webbläsare för Mac" [level=3] [ref=e262]
+        - paragraph [ref=e263]: Skydda dina data när du söker, surfar och använder AI.
+      - link "Nedladdning" [ref=e264] [cursor=pointer]:
+        - /url: https://duckduckgo.com/mac?origin=funnel_browser_searchresults__footercard
+        - img [ref=e265]
+        - text: Nedladdning
+    - generic [ref=e268]:
+      - generic [ref=e269]:
+        - heading "Läs mer" [level=3] [ref=e270]
+        - list [ref=e271]:
+          - listitem [ref=e272]:
+            - link "Vad är nytt?" [ref=e273] [cursor=pointer]:
+              - /url: https://duckduckgo.com/updates
+          - listitem [ref=e274]:
+            - link "Om webbläsaren" [ref=e275] [cursor=pointer]:
+              - /url: https://duckduckgo.com/app
+          - listitem [ref=e276]:
+            - link "Jämför integritet" [ref=e277] [cursor=pointer]:
+              - /url: https://duckduckgo.com/compare-privacy
+          - listitem [ref=e278]:
+            - link "Hjälpsidor" [ref=e279] [cursor=pointer]:
+              - /url: https://duckduckgo.com/duckduckgo-help-pages/
+      - generic [ref=e280]:
+        - heading "Få mer" [level=3] [ref=e281]
+        - list [ref=e282]:
+          - listitem [ref=e283]:
+            - link "Abonnemang" [ref=e284] [cursor=pointer]:
+              - /url: https://duckduckgo.com/pro
+          - listitem [ref=e285]:
+            - link "E-postskydd" [ref=e286] [cursor=pointer]:
+              - /url: https://duckduckgo.com/email
+          - listitem [ref=e287]:
+            - generic [ref=e288]:
+              - link "Podcast" [ref=e290] [cursor=pointer]:
+                - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+              - generic [ref=e291]:
+                - text: "&"
+                - link "Nyhetsbrev" [ref=e292] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/newsletter
+          - listitem [ref=e293]:
+            - link "Samarbeten" [ref=e294] [cursor=pointer]:
+              - /url: https://duckduckgo.com/collaborations
+  - generic [ref=e297]:
+    - generic [ref=e298]: Tyvärr använder bottar också DuckDuckGo.
+    - generic [ref=e299]: Lös följande utmaning för att bekräfta att sökningen görs av en människa.
+    - generic [ref=e300]: "Välj alla rutor som innehåller en anka:"
+    - button "Skicka" [ref=e322] [cursor=pointer]
+  - button "Berätta vad du tycker" [ref=e326] [cursor=pointer]

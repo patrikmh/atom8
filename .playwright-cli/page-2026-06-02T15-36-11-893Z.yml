@@ -1,0 +1,272 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#content-area"
+    - generic [ref=e5]:
+      - banner [ref=e6]:
+        - generic [ref=e9]:
+          - generic [ref=e12]:
+            - link "Agent User Interaction Protocol home page AG-UI" [ref=e14] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e15]: Agent User Interaction Protocol home page
+              - img "AG-UI" [ref=e16]
+            - button "Open search" [ref=e18] [cursor=pointer]:
+              - generic [ref=e19]:
+                - img [ref=e20]
+                - generic [ref=e23]: Search...
+              - generic [ref=e24]: ⌘K
+            - generic [ref=e25]:
+              - navigation "Main" [ref=e27]:
+                - list [ref=e28]:
+                  - listitem [ref=e29]:
+                    - link "Discord" [ref=e30] [cursor=pointer]:
+                      - /url: https://discord.gg/Jd3FzfdJa8
+                      - img [ref=e31]
+                      - text: Discord
+                  - listitem [ref=e32] [cursor=pointer]:
+                    - link "ag-ui-protocol/ag-ui" [ref=e33]:
+                      - /url: https://github.com/ag-ui-protocol/ag-ui
+                      - generic [ref=e35]:
+                        - img [ref=e36]
+                        - generic [ref=e38]: ag-ui-protocol/ag-ui
+              - button "Toggle dark mode" [ref=e39] [cursor=pointer]:
+                - img [ref=e40]
+          - generic [ref=e48]:
+            - link "Documentation" [ref=e49] [cursor=pointer]:
+              - /url: /introduction
+              - text: Documentation
+            - link "SDKs" [ref=e51] [cursor=pointer]:
+              - /url: /sdk/js/core/overview
+              - img [ref=e52]
+              - text: SDKs
+      - generic [ref=e54]:
+        - navigation "Pages" [ref=e55]:
+          - generic [ref=e57]:
+            - list [ref=e58]:
+              - listitem [ref=e59]:
+                - link "TypeScript SDK" [ref=e60] [cursor=pointer]:
+                  - /url: https://docs.ag-ui.com/sdk/js/core/overview
+                  - img [ref=e61]
+                  - generic [ref=e62]: TypeScript SDK
+              - listitem [ref=e63]:
+                - link "Python SDK" [ref=e64] [cursor=pointer]:
+                  - /url: https://docs.ag-ui.com/sdk/python/core/overview
+                  - img [ref=e65]
+                  - generic [ref=e66]: Python SDK
+            - generic [ref=e67]:
+              - heading "Get Started" [level=3] [ref=e69]
+              - list [ref=e70]:
+                - listitem [ref=e71]:
+                  - link "AG-UI Overview" [ref=e72] [cursor=pointer]:
+                    - /url: /introduction
+                    - generic [ref=e75]: AG-UI Overview
+                - listitem [ref=e76]:
+                  - link "MCP, A2A, and AG-UI" [ref=e77] [cursor=pointer]:
+                    - /url: /agentic-protocols
+                    - generic [ref=e80]: MCP, A2A, and AG-UI
+                - listitem [ref=e81]:
+                  - button "Quickstart" [ref=e82] [cursor=pointer]:
+                    - generic [ref=e84]: Quickstart
+                    - img [ref=e86]
+            - generic [ref=e90]:
+              - heading "Concepts" [level=3] [ref=e92]
+              - list [ref=e93]:
+                - listitem [ref=e94]:
+                  - link "Core architecture" [ref=e95] [cursor=pointer]:
+                    - /url: /concepts/architecture
+                    - generic [ref=e98]: Core architecture
+                - listitem [ref=e99]:
+                  - link "Events" [ref=e100] [cursor=pointer]:
+                    - /url: /concepts/events
+                    - generic [ref=e103]: Events
+                - listitem [ref=e104]:
+                  - link "Agents" [ref=e105] [cursor=pointer]:
+                    - /url: /concepts/agents
+                    - generic [ref=e108]: Agents
+                - listitem [ref=e109]:
+                  - link "Middleware" [ref=e110] [cursor=pointer]:
+                    - /url: /concepts/middleware
+                    - generic [ref=e113]: Middleware
+                - listitem [ref=e114]:
+                  - link "Messages" [ref=e115] [cursor=pointer]:
+                    - /url: /concepts/messages
+                    - generic [ref=e118]: Messages
+                - listitem [ref=e119]:
+                  - link "Reasoning" [ref=e120] [cursor=pointer]:
+                    - /url: /concepts/reasoning
+                    - generic [ref=e123]: Reasoning
+                - listitem [ref=e124]:
+                  - link "State Management" [ref=e125] [cursor=pointer]:
+                    - /url: /concepts/state
+                    - generic [ref=e128]: State Management
+                - listitem [ref=e129]:
+                  - link "Interrupts" [ref=e130] [cursor=pointer]:
+                    - /url: /concepts/interrupts
+                    - generic [ref=e133]: Interrupts
+                - listitem [ref=e134]:
+                  - link "Serialization" [ref=e135] [cursor=pointer]:
+                    - /url: /concepts/serialization
+                    - generic [ref=e138]: Serialization
+                - listitem [ref=e139]:
+                  - link "Tools" [ref=e140] [cursor=pointer]:
+                    - /url: /concepts/tools
+                    - generic [ref=e143]: Tools
+                - listitem [ref=e144]:
+                  - link "Capabilities" [ref=e145] [cursor=pointer]:
+                    - /url: /concepts/capabilities
+                    - generic [ref=e148]: Capabilities
+                - listitem [ref=e149]:
+                  - link "Generative UI" [ref=e150] [cursor=pointer]:
+                    - /url: /concepts/generative-ui-specs
+                    - generic [ref=e153]: Generative UI
+            - generic [ref=e156]:
+              - heading "Draft Proposals" [level=3] [ref=e158]
+              - list [ref=e159]:
+                - listitem [ref=e160]:
+                  - link "Overview" [ref=e161] [cursor=pointer]:
+                    - /url: /drafts/overview
+                    - generic [ref=e164]: Overview
+                - listitem [ref=e165]:
+                  - link "Generative User Interfaces" [ref=e166] [cursor=pointer]:
+                    - /url: /drafts/generative-ui
+                    - generic [ref=e169]: Generative User Interfaces
+                - listitem [ref=e170]:
+                  - link "Meta Events" [ref=e171] [cursor=pointer]:
+                    - /url: /drafts/meta-events
+                    - generic [ref=e174]: Meta Events
+            - generic [ref=e177]:
+              - heading "Tutorials" [level=3] [ref=e179]
+              - list [ref=e180]:
+                - listitem [ref=e181]:
+                  - link "Developing with Cursor" [ref=e182] [cursor=pointer]:
+                    - /url: /tutorials/cursor
+                    - generic [ref=e185]: Developing with Cursor
+                - listitem [ref=e186]:
+                  - link "Debugging" [ref=e187] [cursor=pointer]:
+                    - /url: /tutorials/debugging
+                    - generic [ref=e190]: Debugging
+            - generic [ref=e193]:
+              - heading "Development" [level=3] [ref=e195]
+              - list [ref=e196]:
+                - listitem [ref=e197]:
+                  - link "What's New" [ref=e198] [cursor=pointer]:
+                    - /url: /development/updates
+                    - generic [ref=e201]: What's New
+                - listitem [ref=e202]:
+                  - link "Roadmap" [ref=e203] [cursor=pointer]:
+                    - /url: /development/roadmap
+                    - generic [ref=e206]: Roadmap
+                - listitem [ref=e207]:
+                  - link "Contributing" [ref=e208] [cursor=pointer]:
+                    - /url: /development/contributing
+                    - generic [ref=e211]: Contributing
+                - listitem [ref=e212]:
+                  - link "Enterprise" [ref=e213] [cursor=pointer]:
+                    - /url: /talk-to-us
+                    - generic [ref=e216]: Enterprise
+        - main [ref=e218]:
+          - navigation "On this page" [ref=e222]:
+            - heading "On this page" [level=2] [ref=e223]:
+              - button "On this page" [ref=e224] [cursor=pointer]:
+                - img [ref=e225]
+                - generic [ref=e226]: On this page
+            - list [ref=e228]:
+              - listitem [ref=e229]:
+                - link "AG-UI and Generative UI Specs" [ref=e230] [cursor=pointer]:
+                  - /url: "#ag-ui-and-generative-ui-specs"
+          - generic [ref=e231]:
+            - generic [ref=e232]:
+              - generic [ref=e233]:
+                - generic [ref=e234]: Concepts
+                - heading "Generative UI" [level=1] [ref=e236]
+              - paragraph [ref=e238]: Understanding AG-UI’s relationship with generative UI specifications
+            - generic [ref=e239]:
+              - blockquote [ref=e240]:
+                - heading "Documentation Index" [level=2] [ref=e241]
+                - paragraph [ref=e242]:
+                  - text: "Fetch the complete documentation index at:"
+                  - link "https://docs.ag-ui.com/llms.txt" [ref=e243] [cursor=pointer]:
+                    - /url: https://docs.ag-ui.com/llms.txt
+                - paragraph [ref=e244]: Use this file to discover all available pages before exploring further.
+              - heading "Navigate to header AG-UI and Generative UI Specs" [level=2] [ref=e245]:
+                - link "Navigate to header" [ref=e246] [cursor=pointer]:
+                  - /url: "#ag-ui-and-generative-ui-specs"
+                  - img [ref=e248]
+                - strong [ref=e251] [cursor=pointer]: AG-UI and Generative UI Specs
+              - generic [ref=e252]: Several recently released specs have enabled agents to return generative UI, increasing the power and flexibility of the Agent<->User conversation.
+              - generic [ref=e253]:
+                - text: A2UI, MCP-UI, and Open-JSON-UI are all
+                - strong [ref=e254]: generative UI specifications.
+                - text: Generative UIs allow agents to respond to users not only with text but also with dynamic UI components.
+              - table [ref=e257]:
+                - rowgroup [ref=e258]:
+                  - row "Specification Origin / Maintainer Purpose" [ref=e259]:
+                    - columnheader "Specification" [ref=e260]:
+                      - strong [ref=e261]: Specification
+                    - columnheader "Origin / Maintainer" [ref=e262]:
+                      - strong [ref=e263]: Origin / Maintainer
+                    - columnheader "Purpose" [ref=e264]:
+                      - strong [ref=e265]: Purpose
+                - rowgroup [ref=e266]:
+                  - row "A2UI Google A declarative, LLM-friendly Generative UI spec. JSONL-based and streaming, designed for platform-agnostic rendering." [ref=e267]:
+                    - cell "A2UI" [ref=e268]:
+                      - strong [ref=e269]: A2UI
+                    - cell "Google" [ref=e270]
+                    - cell "A declarative, LLM-friendly Generative UI spec. JSONL-based and streaming, designed for platform-agnostic rendering." [ref=e271]
+                  - row "Open-JSON-UI OpenAI An open standardization of OpenAI’s internal declarative Generative UI schema." [ref=e272]:
+                    - cell "Open-JSON-UI" [ref=e273]:
+                      - strong [ref=e274]: Open-JSON-UI
+                    - cell "OpenAI" [ref=e275]
+                    - cell "An open standardization of OpenAI’s internal declarative Generative UI schema." [ref=e276]
+                  - row "MCP-UI Microsoft + Shopify A fully open, iframe-based Generative UI standard extending MCP for user-facing experiences." [ref=e277]:
+                    - cell "MCP-UI" [ref=e278]:
+                      - strong [ref=e279]: MCP-UI
+                    - cell "Microsoft + Shopify" [ref=e280]
+                    - cell "A fully open, iframe-based Generative UI standard extending MCP for user-facing experiences." [ref=e281]
+              - generic [ref=e282]:
+                - text: Despite the naming similarities,
+                - strong [ref=e283]: AG-UI is not a generative UI specification
+                - text: — it’s a
+                - strong [ref=e284]: User Interaction protocol
+                - text: that provides the
+                - strong [ref=e285]: bi-directional runtime connection
+                - text: between the agent and the application.
+              - generic [ref=e286]:
+                - text: AG-UI natively supports all of the above generative UI specs and allows developers to define
+                - strong [ref=e287]: their own custom generative UI standards
+                - text: as well.
+            - generic [ref=e289]:
+              - paragraph [ref=e290]: Was this page helpful?
+              - generic [ref=e292]:
+                - button "Yes" [ref=e293] [cursor=pointer]:
+                  - img [ref=e294]
+                  - generic [ref=e296]: "Yes"
+                - button "No" [ref=e297] [cursor=pointer]:
+                  - img [ref=e298]
+                  - generic [ref=e300]: "No"
+            - generic [ref=e301]:
+              - link "Capabilities Previous" [ref=e302] [cursor=pointer]:
+                - /url: /concepts/capabilities
+                - generic [ref=e303]:
+                  - generic [ref=e304]: Capabilities
+                  - generic [ref=e305]:
+                    - img [ref=e306]
+                    - generic [ref=e308]: Previous
+              - link "Overview Next" [ref=e309] [cursor=pointer]:
+                - /url: /drafts/overview
+                - generic [ref=e310]:
+                  - generic [ref=e311]: Overview
+                  - generic [ref=e312]:
+                    - img [ref=e313]
+                    - generic [ref=e315]: Next
+            - generic [ref=e316]:
+              - link "github" [ref=e318] [cursor=pointer]:
+                - /url: https://github.com/ag-ui-protocol/ag-ui
+                - generic [ref=e319]: github
+                - img [ref=e320]
+              - link "Powered by This documentation is built and hosted on Mintlify, a developer documentation platform" [ref=e323] [cursor=pointer]:
+                - /url: https://www.mintlify.com?utm_campaign=poweredBy&utm_medium=referral&utm_source=tawkitai
+                - generic [ref=e324]: Powered by
+                - img [ref=e325]
+                - generic [ref=e334]: This documentation is built and hosted on Mintlify, a developer documentation platform
+  - alert [ref=e335]

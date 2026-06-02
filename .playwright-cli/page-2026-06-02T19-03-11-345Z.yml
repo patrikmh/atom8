@@ -1,0 +1,18 @@
+- generic [ref=e2]:
+  - separator [ref=e3]
+  - iframe [ref=e8]:
+    - generic [ref=f2e2]:
+      - generic [ref=f2e3]:
+        - checkbox "Jag är inte en robot" [ref=f2e7]
+        - generic [ref=f2e11]: Jag är inte en robot
+      - generic [ref=f2e15]: reCAPTCHA
+  - separator [ref=e9]
+  - generic [ref=e10]:
+    - text: Om den här sidan
+    - text: Våra system har upptäckt ovanlig trafik från ditt nätverk. Den här sidan kontrollerar att det inte är en robot, utan du, som skickar begäranden.
+    - link "Varför hände detta?" [ref=e11] [cursor=pointer]:
+      - /url: "#"
+    - generic [ref=e12]:
+      - text: "IP-adress: 31.208.29.154"
+      - text: "Tid: 2026-06-02T19:03:10Z"
+      - text: "Webbadress: https://www.google.com/search?q=test&sei=7igfau6TG8HPxc8PvZCH-Qo"

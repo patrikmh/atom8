@@ -1,0 +1,88 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "crates.io" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: crates.io
+      - search [ref=e8]:
+        - textbox "Search" [ref=e9]:
+          - /placeholder: Type 'S' or '/' to search
+        - button "Search" [ref=e10] [cursor=pointer]:
+          - generic [ref=e11]: Search
+      - navigation [ref=e13]:
+        - 'button "Change color scheme. Current: system" [ref=e16] [cursor=pointer]':
+          - generic [ref=e18]: "Change color scheme. Current: system"
+        - button "Log in with GitHub" [ref=e19] [cursor=pointer]: Log in with GitHub
+      - text: ▼
+  - main [ref=e21]:
+    - generic [ref=e24]:
+      - heading "Crate \"agui_vello\" not found" [level=1] [ref=e25]
+      - button "Go Back" [ref=e26] [cursor=pointer]
+  - contentinfo [ref=e27]:
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - heading "Rust" [level=2] [ref=e30]
+        - list [ref=e31]:
+          - listitem [ref=e32]:
+            - link "rust-lang.org" [ref=e33] [cursor=pointer]:
+              - /url: https://www.rust-lang.org/
+          - listitem [ref=e34]:
+            - link "Rust Foundation" [ref=e35] [cursor=pointer]:
+              - /url: https://foundation.rust-lang.org/
+          - listitem [ref=e36]:
+            - link "The crates.io team" [ref=e37] [cursor=pointer]:
+              - /url: https://www.rust-lang.org/governance/teams/dev-tools#team-crates-io
+      - generic [ref=e38]:
+        - heading "Get Help" [level=2] [ref=e39]
+        - list [ref=e40]:
+          - listitem [ref=e41]:
+            - link "The Cargo Book" [ref=e42] [cursor=pointer]:
+              - /url: https://doc.rust-lang.org/cargo/
+          - listitem [ref=e43]:
+            - link "Support" [ref=e44] [cursor=pointer]:
+              - /url: /support
+          - listitem [ref=e45]:
+            - link "System Status" [ref=e46] [cursor=pointer]:
+              - /url: https://status.crates.io/
+          - listitem [ref=e47]:
+            - link "Report a bug" [ref=e48] [cursor=pointer]:
+              - /url: https://github.com/rust-lang/crates.io/issues/new/choose
+      - generic [ref=e49]:
+        - heading "Policies" [level=2] [ref=e50]
+        - list [ref=e51]:
+          - listitem [ref=e52]:
+            - link "Usage Policy" [ref=e53] [cursor=pointer]:
+              - /url: /policies
+          - listitem [ref=e54]:
+            - link "Security" [ref=e55] [cursor=pointer]:
+              - /url: /policies/security
+          - listitem [ref=e56]:
+            - link "Privacy Policy" [ref=e57] [cursor=pointer]:
+              - /url: https://foundation.rust-lang.org/policies/privacy-policy/
+          - listitem [ref=e58]:
+            - link "Code of Conduct" [ref=e59] [cursor=pointer]:
+              - /url: https://www.rust-lang.org/policies/code-of-conduct
+          - listitem [ref=e60]:
+            - link "Data Access" [ref=e61] [cursor=pointer]:
+              - /url: /data-access
+          - listitem [ref=e62]:
+            - link "Rate Limits" [ref=e63] [cursor=pointer]:
+              - /url: /docs/rate-limits
+      - generic [ref=e64]:
+        - heading "Social" [level=2] [ref=e65]
+        - list [ref=e66]:
+          - listitem [ref=e67]:
+            - 'link "GitHub: rust-lang/crates.io" [ref=e68] [cursor=pointer]':
+              - /url: https://github.com/rust-lang/crates.io/
+              - generic [ref=e70]: "GitHub:"
+              - text: rust-lang/crates.io
+          - listitem [ref=e71]:
+            - 'link "Zulip: #t-crates-io" [ref=e72] [cursor=pointer]':
+              - /url: https://rust-lang.zulipchat.com/#streams/318791/t-crates-io
+              - generic [ref=e74]: "Zulip:"
+              - text: "#t-crates-io"
+          - listitem [ref=e75]:
+            - 'link "X: @cratesiostatus" [ref=e76] [cursor=pointer]':
+              - /url: https://twitter.com/cratesiostatus
+              - generic [ref=e78]: "X:"
+              - text: "@cratesiostatus"

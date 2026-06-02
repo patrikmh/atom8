@@ -1,0 +1,6 @@
+[     327ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://crates.io/api/v1/crates/agui_winit/owners:0
+[     327ms] e
+[     327ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://crates.io/api/v1/crates/agui_winit?include=keywords%2Ccategories%2Cdownloads%2Cdefault_version:0
+[     331ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://crates.io/api/v1/crates/agui_winit/downloads?include=versions:0
+[     331ms] Error: Failed to load download data
+    at d (https://crates.io/_app/immutable/nodes/14.DecYZwmi.js:1:624)

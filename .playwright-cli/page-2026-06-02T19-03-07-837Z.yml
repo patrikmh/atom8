@@ -1,0 +1,222 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - button "Hoppa till innehåll" [ref=e3] [cursor=pointer]:
+      - generic [ref=e5]: Hoppa till innehåll
+    - button "Feedback om hjälpmedel" [ref=e6] [cursor=pointer]:
+      - generic [ref=e8]: Feedback om hjälpmedel
+    - generic [ref=e9]:
+      - link "Tillbaka till Bing-sökning" [ref=e10] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Tillbaka till Bing-sökning" [level=1] [ref=e11]
+      - search [ref=e12]:
+        - button "Sök" [ref=e15] [cursor=pointer]
+        - searchbox "Skriv din sökning här – sökförslagen visas medan du söker" [ref=e16]: general definition meaning etymology
+        - button "Sök med en bild" [ref=e19] [cursor=pointer]
+        - status [ref=e21]
+    - complementary "Poäng och inställningar för kontot" [ref=e22]:
+      - button "Microsoft Rewards" [ref=e23] [cursor=pointer]:
+        - generic [ref=e25]:
+          - generic [ref=e26]: Rewards
+          - img [ref=e28]
+      - link "Logga in" [ref=e40] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic "Logga in" [ref=e41]
+    - navigation "Sökfilter" [ref=e42]:
+      - list [ref=e43]:
+        - listitem [ref=e44]:
+          - link "Alla" [ref=e45] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=e46]:
+          - link "Sök" [ref=e47] [cursor=pointer]:
+            - /url: /copilotsearch?q=general+definition+meaning+etymology&FORM=CSSCOP
+            - img [ref=e48]
+            - text: Sök
+        - listitem [ref=e50]:
+          - link "Bilder" [ref=e51] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=cf7ea0b0b9537ad4cbcaeae66a09b25d9478f9ff272cb99d3b5308e21def62f3JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1L2ltYWdlcy9zZWFyY2g_cT1nZW5lcmFsK2RlZmluaXRpb24rbWVhbmluZytldHltb2xvZ3kmRk9STT1IRFJTQzI&ntb=1
+        - listitem [ref=e52]:
+          - link "Videoklipp" [ref=e53] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=182566d1e95a9610d713fb10796793ef9d7900bc083e0048f920f829df474177JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1L3ZpZGVvcy9zZWFyY2g_cT1nZW5lcmFsK2RlZmluaXRpb24rbWVhbmluZytldHltb2xvZ3kmRk9STT1IRFJTQzM&ntb=1
+        - listitem [ref=e54]:
+          - link "Kartor" [ref=e55] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=3098c399225ce6ce87953eb5e82365d5a21beff341877d3a07f14415f07c300fJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1L21hcHM_cT1nZW5lcmFsK2RlZmluaXRpb24rbWVhbmluZytldHltb2xvZ3kmRk9STT1IRFJTQzQ&ntb=1
+        - listitem [ref=e56]:
+          - link "Nyheter" [ref=e57] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=85860e68f43d01fab62ad7c06cfdd23cbe93ea1e7898906df57ee1af99fe3d31JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1L25ld3Mvc2VhcmNoP3E9Z2VuZXJhbCtkZWZpbml0aW9uK21lYW5pbmcrZXR5bW9sb2d5JkZPUk09SERSU0M2&ntb=1
+        - listitem [ref=e58]:
+          - button "Mer" [ref=e59] [cursor=pointer]:
+            - img [ref=e61]
+            - text: Mer
+  - generic [ref=e63]:
+    - main "Sökresultat" [ref=e64]:
+      - generic [ref=e66]: Ungefär 326 000 resultat
+      - list [ref=e67]:
+        - listitem [ref=e68]:
+          - link "wikipedia.org" [ref=e70] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=4805526d4d0743ad19a10a17deedfb107ee0e0492e5c5b2440940cc243853b8aJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly9zdi53aWtpcGVkaWEub3JnL3dpa2kvR2VuZXJhbA&ntb=1
+            - img "Ikon för global webb" [ref=e74]
+            - generic [ref=e75]:
+              - generic [ref=e76]: wikipedia.org
+              - generic [ref=e79]: https://sv.wikipedia.org › wiki › General
+          - heading "General – Wikipedia" [level=2] [ref=e80]:
+            - link "General – Wikipedia" [ref=e81] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=4805526d4d0743ad19a10a17deedfb107ee0e0492e5c5b2440940cc243853b8aJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly9zdi53aWtpcGVkaWEub3JnL3dpa2kvR2VuZXJhbA&ntb=1
+              - strong [ref=e82]: General
+              - text: – Wikipedia
+          - paragraph [ref=e84]: General är en förkortning av franskans capitaine général, från titeln generalkapten. Benämningen har från medeltidens slut använts för högste befälhavaren över en här eller häravdelning och under viss tid.
+        - listitem [ref=e85]:
+          - link "synonymer.se" [ref=e87] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=606bf4396cb75c5c80c8598b67555d6318a3e322e4bbb7caba707a53e748325aJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly93d3cuc3lub255bWVyLnNlL3N2LXN5bi9nZW5lcmFs&ntb=1
+            - img "Ikon för global webb" [ref=e91]
+            - generic [ref=e92]:
+              - generic [ref=e93]: synonymer.se
+              - generic [ref=e96]: https://www.synonymer.se › sv-syn › general
+          - heading "Synonymer till general - Synonymer.se" [level=2] [ref=e97]:
+            - link "Synonymer till general - Synonymer.se" [ref=e98] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=606bf4396cb75c5c80c8598b67555d6318a3e322e4bbb7caba707a53e748325aJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly93d3cuc3lub255bWVyLnNlL3N2LXN5bi9nZW5lcmFs&ntb=1
+              - strong [ref=e99]: Synonymer till general
+              - text: "- Synonymer.se"
+          - paragraph [ref=e101]: Hur används ordet general? Under intervjun får general Hayden också frågan om Edward Snowdens avslöjanden. För att uppgörelsen ska gå igenom krävs att domaren som har hand om fallet och den …
+        - listitem [ref=e102]:
+          - link "swedishmatch.se" [ref=e104] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=e03479fe6e5abc1e0ba2b702372658782b49cc4e18c1f256ee77b21280a18e92JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly93d3cuc3dlZGlzaG1hdGNoLnNlL2tvcC1zbnVzL2dlbmVyYWwv&ntb=1
+            - img "Ikon för global webb" [ref=e108]
+            - generic [ref=e109]:
+              - generic [ref=e110]: swedishmatch.se
+              - generic [ref=e113]: https://www.swedishmatch.se › kop-snus › general
+          - heading "Köp General Snus Online – Fri Frakt | ️ Från Swedish Match" [level=2] [ref=e114]:
+            - link "Köp General Snus Online – Fri Frakt | ️ Från Swedish Match" [ref=e115] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=e03479fe6e5abc1e0ba2b702372658782b49cc4e18c1f256ee77b21280a18e92JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly93d3cuc3dlZGlzaG1hdGNoLnNlL2tvcC1zbnVzL2dlbmVyYWwv&ntb=1
+              - text: Köp
+              - strong [ref=e116]: General
+              - text: Snus Online – Fri Frakt | ️ Från Swedish Match
+          - paragraph [ref=e118]: Köp allt snus från General här – Snus från Senaste Produktionen tillverkades för högst 10 dagar sedan. ️Produceras av Swedish Match ️ Fri frakt
+        - listitem [ref=e119]:
+          - link "snusbolaget.se" [ref=e121] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=43a5cde30ae109f552bf7c05395c050f07f22ca92de8a8b62ffb1f6aec44a8eaJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly93d3cuc251c2JvbGFnZXQuc2UvZ2VuZXJhbA&ntb=1
+            - img "Ikon för global webb" [ref=e125]
+            - generic [ref=e126]:
+              - generic [ref=e127]: snusbolaget.se
+              - generic [ref=e130]: https://www.snusbolaget.se › general
+          - heading "Köp General snus online - Från 29,50 kr/dosan - Snusbolaget" [level=2] [ref=e131]:
+            - link "Köp General snus online - Från 29,50 kr/dosan - Snusbolaget" [ref=e132] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=43a5cde30ae109f552bf7c05395c050f07f22ca92de8a8b62ffb1f6aec44a8eaJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly93d3cuc251c2JvbGFnZXQuc2UvZ2VuZXJhbA&ntb=1
+              - text: Köp
+              - strong [ref=e133]: General
+              - text: snus online - Från 29,50 kr/dosan - Snusbolaget
+          - paragraph [ref=e135]: Köp General snus i olika styrkor online på Snusbolaget Över 1000 sorters snus Fria fraktalternativ Snabb leverans ☛ Snusbolaget
+        - listitem [ref=e136]:
+          - link "hjulonline.se" [ref=e138] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=e7fa54147eb5adbdd27b14fbd1a59bd27cfc73883ee63b2444e336135b07a1aaJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly93d3cuaGp1bG9ubGluZS5zZS9kYWNrL2dlbmVyYWw&ntb=1
+            - img "Ikon för global webb" [ref=e142]
+            - generic [ref=e143]:
+              - generic [ref=e144]: hjulonline.se
+              - generic [ref=e147]: https://www.hjulonline.se › dack › general
+          - heading "GENERAL däck på svenska hjulonline" [level=2] [ref=e148]:
+            - link "GENERAL däck på svenska hjulonline" [ref=e149] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=e7fa54147eb5adbdd27b14fbd1a59bd27cfc73883ee63b2444e336135b07a1aaJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly93d3cuaGp1bG9ubGluZS5zZS9kYWNrL2dlbmVyYWw&ntb=1
+              - strong [ref=e150]: GENERAL
+              - text: däck på svenska hjulonline
+          - paragraph [ref=e152]: Köp dina GENERAL däck här på svenska hjulonline.se. Låga priser, stort sortiment , korta leveranstider. Dags för nya sommardäck?
+        - listitem [ref=e153]:
+          - link "wikipedia.org" [ref=e155] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=896f7ea9b97f008a11aa43d45ae2080f27526d41d33dfecb36bbadbbab0b9ec2JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2FwdGFpbl9nZW5lcmFs&ntb=1
+            - img "Ikon för global webb" [ref=e159]
+            - generic [ref=e160]:
+              - generic [ref=e161]: wikipedia.org
+              - generic [ref=e164]: https://en.wikipedia.org › wiki › Captain_general
+          - heading "Captain general - Wikipedia" [level=2] [ref=e165]:
+            - link "Captain general - Wikipedia" [ref=e166] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=896f7ea9b97f008a11aa43d45ae2080f27526d41d33dfecb36bbadbbab0b9ec2JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2FwdGFpbl9nZW5lcmFs&ntb=1
+              - strong [ref=e167]: Captain general
+              - text: "- Wikipedia"
+          - paragraph [ref=e169]: In Spain, the title Captain General (capitán general) is the highest military rank, and has since 1999 been exclusively borne by the Spanish monarch (currently Felipe VI).
+        - listitem [ref=e170]:
+          - link "cambridge.org" [ref=e172] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=d42945b42469a73345af88e4772cbd23d9202d173facc59072f590f984e6a846JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2dlbmVyYWw&ntb=1
+            - img "Ikon för global webb" [ref=e176]
+            - generic [ref=e177]:
+              - generic [ref=e178]: cambridge.org
+              - generic [ref=e181]: https://dictionary.cambridge.org › dictionary › english › general
+          - heading "GENERAL | English meaning - Cambridge Dictionary" [level=2] [ref=e182]:
+            - link "GENERAL | English meaning - Cambridge Dictionary" [ref=e183] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=d42945b42469a73345af88e4772cbd23d9202d173facc59072f590f984e6a846JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly9kaWN0aW9uYXJ5LmNhbWJyaWRnZS5vcmcvZGljdGlvbmFyeS9lbmdsaXNoL2dlbmVyYWw&ntb=1
+              - strong [ref=e184]: GENERAL
+              - text: "| English meaning - Cambridge Dictionary"
+          - paragraph [ref=e186]: "GENERAL definition: 1. involving or relating to most or all people, things, or places, especially when these are…. Learn more."
+        - listitem [ref=e187]:
+          - link "generalprepper.se" [ref=e189] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=8f306719535cbf9225ace06f95306cfedb7c1faea69dda5598805b4e7139f584JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly9nZW5lcmFscHJlcHBlci5zZS8&ntb=1
+            - img "Ikon för global webb" [ref=e193]
+            - generic [ref=e194]:
+              - generic [ref=e195]: generalprepper.se
+              - generic [ref=e198]: https://generalprepper.se
+          - heading "The General Prepper - Butiken för friluftsliv och beredskap" [level=2] [ref=e199]:
+            - link "The General Prepper - Butiken för friluftsliv och beredskap" [ref=e200] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=8f306719535cbf9225ace06f95306cfedb7c1faea69dda5598805b4e7139f584JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly9nZW5lcmFscHJlcHBlci5zZS8&ntb=1
+              - text: The
+              - strong [ref=e201]: General
+              - text: Prepper - Butiken för friluftsliv och beredskap
+          - paragraph [ref=e203]: Välkommen till Sveriges största varuhus med utrustning för bushcraft & prepping. Vi har produkterna som håller måttet när det behövs som mest
+        - listitem [ref=e204]:
+          - link "wiktionary.org" [ref=e206] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=23cd042daa07a9989effd3759660acf351fb13555ec0dd39c350fc9c74c78da0JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly9lbi53aWt0aW9uYXJ5Lm9yZy93aWtpL0dlbmVyYWw&ntb=1
+            - img "Ikon för global webb" [ref=e210]
+            - generic [ref=e211]:
+              - generic [ref=e212]: wiktionary.org
+              - generic [ref=e215]: https://en.wiktionary.org › wiki › General
+          - heading "General - Wiktionary, the free dictionary" [level=2] [ref=e216]:
+            - link "General - Wiktionary, the free dictionary" [ref=e217] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=23cd042daa07a9989effd3759660acf351fb13555ec0dd39c350fc9c74c78da0JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly9lbi53aWt0aW9uYXJ5Lm9yZy93aWtpL0dlbmVyYWw&ntb=1
+              - strong [ref=e218]: General
+              - text: "- Wiktionary, the free dictionary"
+          - paragraph [ref=e220]: för 6 dagar sedan · Noun General (plural Generals) Alternative letter-case form of general in its various senses.
+        - listitem [ref=e221]:
+          - link "leilasgeneralstore.com" [ref=e223] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=a0ee0c674b14307993cbefa559598e3a7f33ad985f7db86e7234ab3f8e279fecJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly9sZWlsYXNnZW5lcmFsc3RvcmUuY29tLw&ntb=1
+            - img "Ikon för global webb" [ref=e227]
+            - generic [ref=e228]:
+              - generic [ref=e229]: leilasgeneralstore.com
+              - generic [ref=e232]: https://leilasgeneralstore.com
+          - heading "Leila's General Store Köksbutik | Allt till hemmakocken och till ..." [level=2] [ref=e233]:
+            - link "Leila's General Store Köksbutik | Allt till hemmakocken och till ..." [ref=e234] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=a0ee0c674b14307993cbefa559598e3a7f33ad985f7db86e7234ab3f8e279fecJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cHM6Ly9sZWlsYXNnZW5lcmFsc3RvcmUuY29tLw&ntb=1
+              - text: Leila's
+              - strong [ref=e235]: General
+              - text: Store Köksbutik | Allt till hemmakocken och till ...
+          - paragraph [ref=e237]: Leila Lindholms (känd som Leila Bakar) fantastiska baktillbehör till bakningen och smarta köksredskap, vackra kalasdekorationer och partytillbehör.
+        - listitem [ref=e238]:
+          - navigation "Fler resultat för general definition meaning etymology":
+            - list:
+              - listitem [ref=e239]:
+                - generic "Sida 1" [ref=e240]: "1"
+              - listitem [ref=e241]:
+                - link "Sida 2" [ref=e242] [cursor=pointer]:
+                  - /url: /search?q=general+definition+meaning+etymology&rdr=1&rdrig=03E684C1E14C456098877F898C9A5809&FPIG=59A548E3BE494D3FB23C2878BE0A5D97&first=11&FORM=PERE
+                  - text: "2"
+              - listitem [ref=e243]:
+                - link "Sida 3" [ref=e244] [cursor=pointer]:
+                  - /url: /search?q=general+definition+meaning+etymology&rdr=1&rdrig=03E684C1E14C456098877F898C9A5809&FPIG=59A548E3BE494D3FB23C2878BE0A5D97&first=21&FORM=PERE1
+                  - text: "3"
+              - listitem [ref=e245]:
+                - link "Nästa sida" [ref=e246] [cursor=pointer]:
+                  - /url: /search?q=general+definition+meaning+etymology&rdr=1&rdrig=03E684C1E14C456098877F898C9A5809&FPIG=59A548E3BE494D3FB23C2878BE0A5D97&first=11&FORM=PORE
+    - complementary "Fler resultat" [ref=e247]:
+      - list
+    - complementary "Utforska mer"
+  - contentinfo [ref=e248]:
+    - generic [ref=e249]:
+      - list:
+        - listitem [ref=e250]:
+          - link "Sekretess" [ref=e251] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=828daf331b4f1defe23b5cd5be849127c1ecce50e8787aa0274a8190b26fa496JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=e252]:
+          - link "Villkor" [ref=e253] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=2f6b861ec19b7f9b1ddbce394dce2465ed4a28bee54475b85b196d9e42c78c68JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=1350101e-c00a-63a2-2751-0772c10962bf&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1
+  - generic [ref=e257]:
+    - search [ref=e258]:
+      - textbox "Be om en uppföljning" [ref=e259]:
+        - /placeholder: "Be om en uppföljning "
+    - button "Skicka" [ref=e261] [cursor=pointer]:
+      - img [ref=e263]
+  - dialog "Quick Search"

@@ -1,0 +1,9 @@
+[      62ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ https://www.nyteknik.se/33-listan:2125
+[     248ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://player.vimeo.com/video/1154653193?title=0&byline=0&portrait=0&dnt=1:0
+[     331ms] [WARNING]  is not a valid value for uspDnsText @ https://cmp.inmobi.com/tcfv2/cmp2.js?referer=nyteknik.se:1
+[     348ms] [WARNING] [Cloudflare Turnstile] Turnstile has already been rendered in this container. The render attempt was rejected. @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:0
+[     938ms] [ERROR] %c%d font-size:0;color:transparent NaN @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/qm888/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto:0
+[     938ms] [ERROR] %c%d font-size:0;color:transparent NaN @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/qm888/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto:0
+[     938ms] [WARNING] %c%d font-size:0;color:transparent NaN @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/qm888/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto:0
+[     938ms] [WARNING] %c%d font-size:0;color:transparent NaN @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/qm888/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto:0
+[    2287ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a0569a05eceb1ecb/1780404813981/bb4a77acd97775625c21e404d7338bfd8aea55dfe14b76b414c105a64d9bac80/FRnVwqKHRPp7PYf:0

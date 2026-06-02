@@ -1,0 +1,529 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "Skip to content" [ref=e4] [cursor=pointer]:
+        - /url: "#start-of-content"
+      - banner [ref=e6]:
+        - heading "Navigation Menu" [level=2] [ref=e7]
+        - generic [ref=e8]:
+          - link "Homepage" [ref=e10] [cursor=pointer]:
+            - /url: /
+            - img [ref=e11]
+          - generic [ref=e13]:
+            - navigation "Global" [ref=e16]:
+              - list [ref=e17]:
+                - listitem [ref=e18]:
+                  - button "Platform" [ref=e20] [cursor=pointer]:
+                    - text: Platform
+                    - img [ref=e21]
+                - listitem [ref=e23]:
+                  - button "Solutions" [ref=e25] [cursor=pointer]:
+                    - text: Solutions
+                    - img [ref=e26]
+                - listitem [ref=e28]:
+                  - button "Resources" [ref=e30] [cursor=pointer]:
+                    - text: Resources
+                    - img [ref=e31]
+                - listitem [ref=e33]:
+                  - button "Open Source" [ref=e35] [cursor=pointer]:
+                    - text: Open Source
+                    - img [ref=e36]
+                - listitem [ref=e38]:
+                  - button "Enterprise" [ref=e40] [cursor=pointer]:
+                    - text: Enterprise
+                    - img [ref=e41]
+                - listitem [ref=e43]:
+                  - link "Pricing" [ref=e44] [cursor=pointer]:
+                    - /url: https://github.com/pricing
+                    - generic [ref=e45]: Pricing
+            - generic [ref=e46]:
+              - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+                - img [ref=e51]
+              - link "Sign in" [ref=e54] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2FStumblinbear%2Fagui%2Ftree%2Fmaster%2Fcrates%2Fagui_primitives%2Fsrc
+              - link "Sign up" [ref=e55] [cursor=pointer]:
+                - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Ffiles%2Fdisambiguate&source=header-repo&source_repo=Stumblinbear%2Fagui
+              - button "Appearance settings" [ref=e58] [cursor=pointer]:
+                - img
+    - main [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e66]:
+            - img [ref=e67]
+            - link "Stumblinbear" [ref=e70] [cursor=pointer]:
+              - /url: /Stumblinbear
+            - generic [ref=e71]: /
+            - strong [ref=e72]:
+              - link "agui" [ref=e73] [cursor=pointer]:
+                - /url: /Stumblinbear/agui
+            - generic [ref=e74]: Public
+          - generic [ref=e75]:
+            - list:
+              - listitem [ref=e76]:
+                - link "You must be signed in to change notification settings" [ref=e77] [cursor=pointer]:
+                  - /url: /login?return_to=%2FStumblinbear%2Fagui
+                  - img [ref=e78]
+                  - text: Notifications
+              - listitem [ref=e80]:
+                - link "Fork 3" [ref=e81] [cursor=pointer]:
+                  - /url: /login?return_to=%2FStumblinbear%2Fagui
+                  - img [ref=e82]
+                  - text: Fork
+                  - generic "3" [ref=e84]
+              - listitem [ref=e85]:
+                - link "You must be signed in to star a repository" [ref=e87] [cursor=pointer]:
+                  - /url: /login?return_to=%2FStumblinbear%2Fagui
+                  - img [ref=e88]
+                  - text: Star
+                  - generic "37 users starred this repository" [ref=e90]: "37"
+        - navigation "Repository" [ref=e91]:
+          - list [ref=e92]:
+            - listitem [ref=e93]:
+              - link "Code" [ref=e94] [cursor=pointer]:
+                - /url: /Stumblinbear/agui
+                - img [ref=e95]
+                - generic [ref=e97]: Code
+            - listitem [ref=e98]:
+              - link "Issues 4" [ref=e99] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/issues
+                - img [ref=e100]
+                - generic [ref=e103]: Issues
+                - generic "4" [ref=e104]
+            - listitem [ref=e105]:
+              - link "Pull requests 3" [ref=e106] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/pulls
+                - img [ref=e107]
+                - generic [ref=e109]: Pull requests
+                - generic "3" [ref=e110]
+            - listitem [ref=e111]:
+              - link "Discussions" [ref=e112] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/discussions
+                - img [ref=e113]
+                - generic [ref=e115]: Discussions
+            - listitem [ref=e116]:
+              - link "Actions" [ref=e117] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/actions
+                - img [ref=e118]
+                - generic [ref=e120]: Actions
+            - listitem [ref=e121]:
+              - link "Projects" [ref=e122] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/projects
+                - img [ref=e123]
+                - generic [ref=e125]: Projects
+            - listitem [ref=e126]:
+              - link "Security and quality" [ref=e127] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/security
+                - img [ref=e128]
+                - generic [ref=e130]: Security and quality
+            - listitem [ref=e131]:
+              - link "Insights" [ref=e132] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/pulse
+                - img [ref=e133]
+                - generic [ref=e135]: Insights
+      - generic [ref=e143]:
+        - generic [ref=e145]:
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - generic [ref=e150]:
+                - heading "Collapse file tree" [level=2] [ref=e151]:
+                  - button "Collapse file tree" [expanded] [ref=e152] [cursor=pointer]:
+                    - img [ref=e153]
+                - heading "Files" [level=2] [ref=e156]
+              - generic [ref=e157]:
+                - button "master branch" [ref=e159] [cursor=pointer]:
+                  - generic [ref=e160]:
+                    - generic [ref=e162]:
+                      - img [ref=e164]
+                      - generic [ref=e167]: master
+                    - generic:
+                      - img
+                - button "Search this repository (forward slash)" [ref=e169] [cursor=pointer]:
+                  - img [ref=e170]
+            - generic [ref=e173]:
+              - img [ref=e175]
+              - combobox "Go to file" [ref=e177]
+            - navigation "File Tree Navigation" [ref=e183]:
+              - tree "Files" [ref=e185]:
+                - treeitem ".cargo" [level=1] [ref=e186]:
+                  - generic [ref=e187] [cursor=pointer]:
+                    - img [ref=e189]
+                    - generic [ref=e191]:
+                      - img [ref=e195]
+                      - generic [ref=e197]: .cargo
+                - treeitem ".github" [level=1] [ref=e198]:
+                  - generic [ref=e199] [cursor=pointer]:
+                    - img [ref=e201]
+                    - generic [ref=e203]:
+                      - img [ref=e207]
+                      - generic [ref=e209]: .github
+                - treeitem ".vscode" [level=1] [ref=e210]:
+                  - generic [ref=e211] [cursor=pointer]:
+                    - img [ref=e213]
+                    - generic [ref=e215]:
+                      - img [ref=e219]
+                      - generic [ref=e221]: .vscode
+                - treeitem "crates" [expanded] [level=1] [ref=e222]:
+                  - generic [ref=e223] [cursor=pointer]:
+                    - img [ref=e225]
+                    - generic [ref=e227]:
+                      - img [ref=e231]
+                      - generic [ref=e233]: crates
+                  - group "crates" [ref=e234]:
+                    - treeitem "agui_core" [level=2] [ref=e235]:
+                      - generic [ref=e236] [cursor=pointer]:
+                        - img [ref=e241]
+                        - generic [ref=e243]:
+                          - img [ref=e247]
+                          - generic [ref=e249]: agui_core
+                    - treeitem "agui_elements" [level=2] [ref=e250]:
+                      - generic [ref=e251] [cursor=pointer]:
+                        - img [ref=e256]
+                        - generic [ref=e258]:
+                          - img [ref=e262]
+                          - generic [ref=e264]: agui_elements
+                    - treeitem "agui_executor" [level=2] [ref=e265]:
+                      - generic [ref=e266] [cursor=pointer]:
+                        - img [ref=e271]
+                        - generic [ref=e273]:
+                          - img [ref=e277]
+                          - generic [ref=e279]: agui_executor
+                    - treeitem "agui_gestures" [level=2] [ref=e280]:
+                      - generic [ref=e281] [cursor=pointer]:
+                        - img [ref=e286]
+                        - generic [ref=e288]:
+                          - img [ref=e292]
+                          - generic [ref=e294]: agui_gestures
+                    - treeitem "agui_macros" [level=2] [ref=e295]:
+                      - generic [ref=e296] [cursor=pointer]:
+                        - img [ref=e301]
+                        - generic [ref=e303]:
+                          - img [ref=e307]
+                          - generic [ref=e309]: agui_macros
+                    - treeitem "agui_primitives" [expanded] [level=2] [ref=e310]:
+                      - generic [ref=e311] [cursor=pointer]:
+                        - img [ref=e316]
+                        - generic [ref=e318]:
+                          - img [ref=e322]
+                          - generic [ref=e324]: agui_primitives
+                      - group "agui_primitives" [ref=e325]:
+                        - treeitem "src" [expanded] [level=3] [ref=e326]:
+                          - generic [ref=e327] [cursor=pointer]:
+                            - img [ref=e333]
+                            - generic [ref=e335]:
+                              - img [ref=e339]
+                              - generic [ref=e341]: src
+                          - group "src" [ref=e342]:
+                            - treeitem "align" [level=4] [ref=e343]:
+                              - generic [ref=e344] [cursor=pointer]:
+                                - img [ref=e351]
+                                - generic [ref=e353]:
+                                  - img [ref=e357]
+                                  - generic [ref=e359]: align
+                            - treeitem "flex" [level=4] [ref=e360]:
+                              - generic [ref=e361] [cursor=pointer]:
+                                - img [ref=e368]
+                                - generic [ref=e370]:
+                                  - img [ref=e374]
+                                  - generic [ref=e376]: flex
+                            - treeitem "intrinsic" [level=4] [ref=e377]:
+                              - generic [ref=e378] [cursor=pointer]:
+                                - img [ref=e385]
+                                - generic [ref=e387]:
+                                  - img [ref=e391]
+                                  - generic [ref=e393]: intrinsic
+                            - treeitem "layout_builder" [level=4] [ref=e394]:
+                              - generic [ref=e395] [cursor=pointer]:
+                                - img [ref=e402]
+                                - generic [ref=e404]:
+                                  - img [ref=e408]
+                                  - generic [ref=e410]: layout_builder
+                            - treeitem "text" [level=4] [ref=e411]:
+                              - generic [ref=e412] [cursor=pointer]:
+                                - img [ref=e419]
+                                - generic [ref=e421]:
+                                  - img [ref=e425]
+                                  - generic [ref=e427]: text
+                            - treeitem "builder.rs" [level=4] [ref=e428]:
+                              - generic [ref=e435] [cursor=pointer]:
+                                - img [ref=e438]
+                                - generic [ref=e440]: builder.rs
+                            - treeitem "clip.rs" [level=4] [ref=e441]:
+                              - generic [ref=e448] [cursor=pointer]:
+                                - img [ref=e451]
+                                - generic [ref=e453]: clip.rs
+                            - treeitem "colored_box.rs" [level=4] [ref=e454]:
+                              - generic [ref=e461] [cursor=pointer]:
+                                - img [ref=e464]
+                                - generic [ref=e466]: colored_box.rs
+                            - treeitem "lib.rs" [level=4] [ref=e467]:
+                              - generic [ref=e474] [cursor=pointer]:
+                                - img [ref=e477]
+                                - generic [ref=e479]: lib.rs
+                            - treeitem "padding.rs" [level=4] [ref=e480]:
+                              - generic [ref=e487] [cursor=pointer]:
+                                - img [ref=e490]
+                                - generic [ref=e492]: padding.rs
+                            - treeitem "sized_box.rs" [level=4] [ref=e493]:
+                              - generic [ref=e500] [cursor=pointer]:
+                                - img [ref=e503]
+                                - generic [ref=e505]: sized_box.rs
+                            - treeitem "stack.rs" [level=4] [ref=e506]:
+                              - generic [ref=e513] [cursor=pointer]:
+                                - img [ref=e516]
+                                - generic [ref=e518]: stack.rs
+                        - treeitem "Cargo.toml" [level=3] [ref=e519]:
+                          - generic [ref=e525] [cursor=pointer]:
+                            - img [ref=e528]
+                            - generic [ref=e530]: Cargo.toml
+                        - treeitem "README.md" [level=3] [ref=e531]:
+                          - generic [ref=e537] [cursor=pointer]:
+                            - img [ref=e540]
+                            - generic [ref=e542]: README.md
+                    - treeitem "agui_renderer" [level=2] [ref=e543]:
+                      - generic [ref=e544] [cursor=pointer]:
+                        - img [ref=e549]
+                        - generic [ref=e551]:
+                          - img [ref=e555]
+                          - generic [ref=e557]: agui_renderer
+                    - treeitem "agui_sync" [level=2] [ref=e558]:
+                      - generic [ref=e559] [cursor=pointer]:
+                        - img [ref=e564]
+                        - generic [ref=e566]:
+                          - img [ref=e570]
+                          - generic [ref=e572]: agui_sync
+                    - treeitem "agui_vello" [level=2] [ref=e573]:
+                      - generic [ref=e574] [cursor=pointer]:
+                        - img [ref=e579]
+                        - generic [ref=e581]:
+                          - img [ref=e585]
+                          - generic [ref=e587]: agui_vello
+                    - treeitem "agui_widgets" [level=2] [ref=e588]:
+                      - generic [ref=e589] [cursor=pointer]:
+                        - img [ref=e594]
+                        - generic [ref=e596]:
+                          - img [ref=e600]
+                          - generic [ref=e602]: agui_widgets
+                    - treeitem "agui_winit" [level=2] [ref=e603]:
+                      - generic [ref=e604] [cursor=pointer]:
+                        - img [ref=e609]
+                        - generic [ref=e611]:
+                          - img [ref=e615]
+                          - generic [ref=e617]: agui_winit
+                - treeitem "docs" [level=1] [ref=e618]:
+                  - generic [ref=e619] [cursor=pointer]:
+                    - img [ref=e621]
+                    - generic [ref=e623]:
+                      - img [ref=e627]
+                      - generic [ref=e629]: docs
+                - treeitem "examples" [level=1] [ref=e630]:
+                  - generic [ref=e631] [cursor=pointer]:
+                    - img [ref=e633]
+                    - generic [ref=e635]:
+                      - img [ref=e639]
+                      - generic [ref=e641]: examples
+                - treeitem "src" [level=1] [ref=e642]:
+                  - generic [ref=e643] [cursor=pointer]:
+                    - img [ref=e645]
+                    - generic [ref=e647]:
+                      - img [ref=e651]
+                      - generic [ref=e653]: src
+                - treeitem "tests" [level=1] [ref=e654]:
+                  - generic [ref=e655] [cursor=pointer]:
+                    - img [ref=e657]
+                    - generic [ref=e659]:
+                      - img [ref=e663]
+                      - generic [ref=e665]: tests
+                - treeitem "tools" [level=1] [ref=e666]:
+                  - generic [ref=e667] [cursor=pointer]:
+                    - img [ref=e669]
+                    - generic [ref=e671]:
+                      - img [ref=e675]
+                      - generic [ref=e677]: tools
+                - treeitem ".gitignore" [level=1] [ref=e678]:
+                  - generic [ref=e680] [cursor=pointer]:
+                    - img [ref=e683]
+                    - generic [ref=e685]: .gitignore
+                - treeitem ".rust-toolchain.toml" [level=1] [ref=e686]:
+                  - generic [ref=e688] [cursor=pointer]:
+                    - img [ref=e691]
+                    - generic [ref=e693]: .rust-toolchain.toml
+                - treeitem "Cargo.toml" [level=1] [ref=e694]:
+                  - generic [ref=e696] [cursor=pointer]:
+                    - img [ref=e699]
+                    - generic [ref=e701]: Cargo.toml
+                - treeitem "README.md" [level=1] [ref=e702]:
+                  - generic [ref=e704] [cursor=pointer]:
+                    - img [ref=e707]
+                    - generic [ref=e709]: README.md
+                - treeitem "clippy.toml" [level=1] [ref=e710]:
+                  - generic [ref=e712] [cursor=pointer]:
+                    - img [ref=e715]
+                    - generic [ref=e717]: clippy.toml
+          - slider "Draggable pane splitter" [ref=e719]
+        - generic [ref=e722]:
+          - generic [ref=e726]:
+            - generic [ref=e728]:
+              - navigation "Breadcrumbs" [ref=e729]:
+                - heading "Breadcrumbs" [level=2] [ref=e730]
+                - list [ref=e731]:
+                  - listitem [ref=e732]:
+                    - link "agui" [ref=e733] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master
+                  - listitem [ref=e734]:
+                    - text: /
+                    - link "crates" [ref=e735] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master/crates
+                  - listitem [ref=e736]:
+                    - text: /
+                    - link "agui_primitives" [ref=e737] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master/crates/agui_primitives
+              - generic [ref=e738]:
+                - text: /
+                - heading "src" [level=1] [ref=e739]
+                - text: /
+              - button "Copy path" [ref=e740] [cursor=pointer]:
+                - img [ref=e741]
+            - generic [ref=e746]:
+              - heading "Directory actions" [level=2] [ref=e747]
+              - heading "More options" [level=2] [ref=e748]
+              - button "More options" [ref=e749] [cursor=pointer]:
+                - img [ref=e750]
+          - generic [ref=e752]:
+            - generic [ref=e754]:
+              - heading "Latest commit" [level=2] [ref=e755]
+              - generic [ref=e758]:
+                - heading "History" [level=2] [ref=e759]
+                - link "History" [ref=e760] [cursor=pointer]:
+                  - /url: /Stumblinbear/agui/commits/master/crates/agui_primitives/src
+                  - generic [ref=e761]:
+                    - generic:
+                      - img
+                    - generic [ref=e762]: History
+            - generic [ref=e764]:
+              - heading "Folders and files" [level=2] [ref=e765]
+              - table "Folders and files" [ref=e766]:
+                - rowgroup [ref=e767]:
+                  - row "Name Last commit message Last commit date" [ref=e768]:
+                    - columnheader "Name" [ref=e769]
+                    - columnheader "Last commit message" [ref=e770]:
+                      - generic "Last commit message" [ref=e771]
+                    - columnheader "Last commit date" [ref=e772]:
+                      - generic "Last commit date" [ref=e773]
+                - rowgroup [ref=e774]:
+                  - row "parent directory Parent directory" [ref=e775]:
+                    - cell "parent directory Parent directory" [ref=e776]:
+                      - heading "parent directory" [level=3] [ref=e777]
+                      - link "Parent directory" [ref=e778] [cursor=pointer]:
+                        - /url: /Stumblinbear/agui/tree/master/crates/agui_primitives
+                        - generic [ref=e779]:
+                          - img [ref=e780]
+                          - text: ..
+                  - row "align, (Directory)" [ref=e782]:
+                    - cell "align, (Directory)" [ref=e783]:
+                      - generic [ref=e784]:
+                        - img [ref=e785]
+                        - link "align, (Directory)" [ref=e790] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/tree/master/crates/agui_primitives/src/align
+                          - text: align
+                    - cell [ref=e791]
+                    - cell [ref=e793]
+                  - row "flex, (Directory)" [ref=e796]:
+                    - cell "flex, (Directory)" [ref=e797]:
+                      - generic [ref=e798]:
+                        - img [ref=e799]
+                        - link "flex, (Directory)" [ref=e804] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/tree/master/crates/agui_primitives/src/flex
+                          - text: flex
+                    - cell [ref=e805]
+                    - cell [ref=e807]
+                  - row "intrinsic, (Directory)" [ref=e810]:
+                    - cell "intrinsic, (Directory)" [ref=e811]:
+                      - generic [ref=e812]:
+                        - img [ref=e813]
+                        - link "intrinsic, (Directory)" [ref=e818] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/tree/master/crates/agui_primitives/src/intrinsic
+                          - text: intrinsic
+                    - cell [ref=e819]
+                    - cell [ref=e821]
+                  - row "layout_builder, (Directory)" [ref=e824]:
+                    - cell "layout_builder, (Directory)" [ref=e825]:
+                      - generic [ref=e826]:
+                        - img [ref=e827]
+                        - link "layout_builder, (Directory)" [ref=e832] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/tree/master/crates/agui_primitives/src/layout_builder
+                          - text: layout_builder
+                    - cell [ref=e833]
+                    - cell [ref=e835]
+                  - row "text, (Directory)" [ref=e838]:
+                    - cell "text, (Directory)" [ref=e839]:
+                      - generic [ref=e840]:
+                        - img [ref=e841]
+                        - link "text, (Directory)" [ref=e846] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/tree/master/crates/agui_primitives/src/text
+                          - text: text
+                    - cell [ref=e847]
+                    - cell [ref=e849]
+                  - row "builder.rs, (File)" [ref=e852]:
+                    - cell "builder.rs, (File)" [ref=e853]:
+                      - generic [ref=e854]:
+                        - img [ref=e855]
+                        - link "builder.rs, (File)" [ref=e860] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/blob/master/crates/agui_primitives/src/builder.rs
+                          - text: builder.rs
+                    - cell [ref=e861]
+                    - cell [ref=e863]
+                  - row "clip.rs, (File)" [ref=e866]:
+                    - cell "clip.rs, (File)" [ref=e867]:
+                      - generic [ref=e868]:
+                        - img [ref=e869]
+                        - link "clip.rs, (File)" [ref=e874] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/blob/master/crates/agui_primitives/src/clip.rs
+                          - text: clip.rs
+                    - cell [ref=e875]
+                    - cell [ref=e877]
+                  - row "colored_box.rs, (File)" [ref=e880]:
+                    - cell "colored_box.rs, (File)" [ref=e881]:
+                      - generic [ref=e882]:
+                        - img [ref=e883]
+                        - link "colored_box.rs, (File)" [ref=e888] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/blob/master/crates/agui_primitives/src/colored_box.rs
+                          - text: colored_box.rs
+                    - cell [ref=e889]
+                    - cell [ref=e891]
+                  - row "lib.rs, (File)" [ref=e894]:
+                    - cell "lib.rs, (File)" [ref=e895]:
+                      - generic [ref=e896]:
+                        - img [ref=e897]
+                        - link "lib.rs, (File)" [ref=e902] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/blob/master/crates/agui_primitives/src/lib.rs
+                          - text: lib.rs
+                    - cell [ref=e903]
+                    - cell [ref=e905]
+                  - row "padding.rs, (File)" [ref=e908]:
+                    - cell "padding.rs, (File)" [ref=e909]:
+                      - generic [ref=e910]:
+                        - img [ref=e911]
+                        - link "padding.rs, (File)" [ref=e916] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/blob/master/crates/agui_primitives/src/padding.rs
+                          - text: padding.rs
+                    - cell [ref=e917]
+                    - cell [ref=e919]
+                  - row "sized_box.rs, (File)" [ref=e922]:
+                    - cell "sized_box.rs, (File)" [ref=e923]:
+                      - generic [ref=e924]:
+                        - img [ref=e925]
+                        - link "sized_box.rs, (File)" [ref=e930] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/blob/master/crates/agui_primitives/src/sized_box.rs
+                          - text: sized_box.rs
+                    - cell [ref=e931]
+                    - cell [ref=e933]
+                  - row "stack.rs, (File)" [ref=e936]:
+                    - cell "stack.rs, (File)" [ref=e937]:
+                      - generic [ref=e938]:
+                        - img [ref=e939]
+                        - link "stack.rs, (File)" [ref=e944] [cursor=pointer]:
+                          - /url: /Stumblinbear/agui/blob/master/crates/agui_primitives/src/stack.rs
+                          - text: stack.rs
+                    - cell [ref=e945]
+                    - cell [ref=e947]
+  - alert [ref=e953]

@@ -1,0 +1,277 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e7]
+        - generic [ref=e10]: A2UI Composer
+      - separator [ref=e11]
+      - navigation [ref=e12]:
+        - link "Create" [ref=e14] [cursor=pointer]:
+          - /url: /
+          - img [ref=e15]
+          - generic [ref=e18]: Create
+        - link "Gallery" [ref=e20] [cursor=pointer]:
+          - /url: /gallery
+          - img [ref=e21]
+          - generic [ref=e27]: Gallery
+        - link "Basic Catalog" [ref=e29] [cursor=pointer]:
+          - /url: /basic-catalog
+          - img [ref=e30]
+          - generic [ref=e34]: Basic Catalog
+        - generic [ref=e35]:
+          - link "Custom Catalog" [ref=e36] [cursor=pointer]:
+            - /url: /custom-catalog
+            - img [ref=e37]
+            - generic [ref=e41]: Custom Catalog
+          - generic [ref=e42]:
+            - link "Assembled Components" [ref=e43] [cursor=pointer]:
+              - /url: /custom-catalog
+            - link "Catalog Components" [ref=e44] [cursor=pointer]:
+              - /url: /custom-catalog/catalog-components
+        - link "Icons" [ref=e46] [cursor=pointer]:
+          - /url: /icons
+          - img [ref=e47]
+          - generic [ref=e52]: Icons
+        - link "Theater JSONL Playback" [ref=e54] [cursor=pointer]:
+          - /url: /theater
+          - img [ref=e55]
+          - generic [ref=e57]:
+            - generic [ref=e58]: Theater
+            - generic [ref=e59]: JSONL Playback
+        - link "Tutorial CopilotKit + A2UI" [ref=e61] [cursor=pointer]:
+          - /url: https://docs.copilotkit.ai/a2a/generative-ui/declarative-a2ui
+          - img [ref=e62]
+          - generic [ref=e64]:
+            - generic [ref=e65]: Tutorial
+            - generic [ref=e66]: CopilotKit + A2UI
+      - separator [ref=e67]
+      - generic [ref=e68]:
+        - generic [ref=e70]: Widgets
+        - generic [ref=e72]: No widgets yet
+    - main [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - heading "Custom Catalog" [level=1] [ref=e77]
+            - generic [ref=e78]:
+              - 'link "Concept: Catalogs" [ref=e79] [cursor=pointer]':
+                - /url: https://a2ui.org/concepts/catalogs/
+                - text: "Concept: Catalogs"
+                - img [ref=e80]
+              - 'link "Guide: Define your own" [ref=e84] [cursor=pointer]':
+                - /url: https://a2ui.org/guides/defining-your-own-catalog/
+                - text: "Guide: Define your own"
+                - img [ref=e85]
+          - paragraph [ref=e89]: Two example trees assembled from the same custom A2UI v0.9 catalog (11 components, runs alongside the basic catalog) — toggle between them under Assembled Components.
+        - generic [ref=e93]:
+          - generic [ref=e95]:
+            - generic [ref=e97]: Assembled Components
+            - generic [ref=e98]:
+              - generic [ref=e99] [cursor=pointer]: Flight Card
+              - generic [ref=e100] [cursor=pointer]: Sales Dashboard
+            - generic [ref=e398]:
+              - generic [ref=e399]:
+                - heading "Q1 2025 Sales Dashboard" [level=1] [ref=e400]
+                - heading "Jan 1 – Mar 31, 2025" [level=3] [ref=e401]
+              - generic [ref=e402]:
+                - generic [ref=e403]:
+                  - generic [ref=e404]:
+                    - generic [ref=e405]: Revenue
+                    - generic [ref=e406]: Quarter-to-date
+                  - generic [ref=e407]:
+                    - generic [ref=e408]: Total
+                    - generic [ref=e409]:
+                      - generic [ref=e410]: $980K
+                      - generic [ref=e411]: ↑ +8.5%
+                - generic [ref=e412]:
+                  - generic [ref=e413]:
+                    - generic [ref=e414]: New customers
+                    - generic [ref=e415]: vs. last year
+                  - generic [ref=e416]:
+                    - generic [ref=e417]: Count
+                    - generic [ref=e418]:
+                      - generic [ref=e419]: 2,940
+                      - generic [ref=e420]: ↑ +5.2%
+                - generic [ref=e421]:
+                  - generic [ref=e422]:
+                    - generic [ref=e423]: Avg order value
+                    - generic [ref=e424]: vs. last year
+                  - generic [ref=e425]:
+                    - generic [ref=e426]: AOV
+                    - generic [ref=e427]:
+                      - generic [ref=e428]: $333
+                      - generic [ref=e429]: ↓ -2.1%
+                - generic [ref=e430]:
+                  - generic [ref=e431]:
+                    - generic [ref=e432]: Churn
+                    - generic [ref=e433]: Monthly average
+                  - generic [ref=e434]:
+                    - generic [ref=e435]: Rate
+                    - generic [ref=e436]:
+                      - generic [ref=e437]: 4.4%
+                      - generic [ref=e438]: → +0.3%
+              - generic [ref=e439]:
+                - generic [ref=e440]:
+                  - generic [ref=e441]:
+                    - generic [ref=e442]: Revenue by region
+                    - generic [ref=e443]: Share of total
+                  - application [ref=e447]
+                - generic [ref=e463]:
+                  - generic [ref=e464]:
+                    - generic [ref=e465]: Monthly revenue
+                    - generic [ref=e466]: Months in this quarter
+                  - application [ref=e470]:
+                    - generic [ref=e495]:
+                      - generic [ref=e496]:
+                        - generic [ref=e498]: Jan
+                        - generic [ref=e500]: Feb
+                        - generic [ref=e502]: Mar
+                      - generic [ref=e503]:
+                        - generic [ref=e505]: $0K
+                        - generic [ref=e507]: $90K
+                        - generic [ref=e509]: $180K
+                        - generic [ref=e511]: $270K
+                        - generic [ref=e513]: $360K
+              - generic [ref=e514]:
+                - generic [ref=e515]:
+                  - generic [ref=e516]: Recent orders
+                  - generic [ref=e517]: Top 5 by value this week
+                - table [ref=e519]:
+                  - rowgroup [ref=e520]:
+                    - row "Order Customer Region Total Status" [ref=e521]:
+                      - columnheader "Order" [ref=e522]
+                      - columnheader "Customer" [ref=e523]
+                      - columnheader "Region" [ref=e524]
+                      - columnheader "Total" [ref=e525]
+                      - columnheader "Status" [ref=e526]
+                  - rowgroup [ref=e527]:
+                    - row "#10482 Acme Corp NA $12,480 Paid" [ref=e528]:
+                      - cell "#10482" [ref=e529]
+                      - cell "Acme Corp" [ref=e530]
+                      - cell "NA" [ref=e531]
+                      - cell "$12,480" [ref=e532]
+                      - cell "Paid" [ref=e533]
+                    - row "#10483 Globex EU $8,320 Paid" [ref=e534]:
+                      - cell "#10483" [ref=e535]
+                      - cell "Globex" [ref=e536]
+                      - cell "EU" [ref=e537]
+                      - cell "$8,320" [ref=e538]
+                      - cell "Paid" [ref=e539]
+                    - row "#10484 Initech NA $6,150 Pending" [ref=e540]:
+                      - cell "#10484" [ref=e541]
+                      - cell "Initech" [ref=e542]
+                      - cell "NA" [ref=e543]
+                      - cell "$6,150" [ref=e544]
+                      - cell "Pending" [ref=e545]
+                    - row "#10485 Hooli NA $5,940 Paid" [ref=e546]:
+                      - cell "#10485" [ref=e547]
+                      - cell "Hooli" [ref=e548]
+                      - cell "NA" [ref=e549]
+                      - cell "$5,940" [ref=e550]
+                      - cell "Paid" [ref=e551]
+                    - row "#10486 Umbrella Corp APAC $4,220 Failed" [ref=e552]:
+                      - cell "#10486" [ref=e553]
+                      - cell "Umbrella Corp" [ref=e554]
+                      - cell "APAC" [ref=e555]
+                      - cell "$4,220" [ref=e556]
+                      - cell "Failed" [ref=e557]
+          - separator:
+            - img [ref=e105]
+          - generic [ref=e113]:
+            - generic [ref=e114]:
+              - generic [ref=e116]: Component Data
+              - generic [ref=e117]: sales-data.json (one tab per quarter — switch tabs to swap KPIs + hero titles)
+            - generic [ref=e558]:
+              - generic [ref=e559]:
+                - generic [ref=e561] [cursor=pointer]: Q1
+                - generic [ref=e562] [cursor=pointer]:
+                  - generic [ref=e563]: Q2
+                  - button [ref=e564]:
+                    - img [ref=e565]
+                - generic [ref=e568] [cursor=pointer]:
+                  - generic [ref=e569]: Q3
+                  - button [ref=e570]:
+                    - img [ref=e571]
+                - generic [ref=e574] [cursor=pointer]:
+                  - generic [ref=e575]: Q4
+                  - button [ref=e576]:
+                    - img [ref=e577]
+                - button [ref=e580] [cursor=pointer]:
+                  - img
+              - code [ref=e584]:
+                - generic [ref=e585]:
+                  - textbox "Editor content" [ref=e586]
+                  - textbox [ref=e587]
+                  - generic [ref=e589]:
+                    - generic [ref=e590]:
+                      - generic [ref=e592] [cursor=pointer]: 
+                      - generic [ref=e593]: "1"
+                    - generic [ref=e594]:
+                      - generic [ref=e595] [cursor=pointer]: 
+                      - generic [ref=e596]: "2"
+                    - generic [ref=e598]: "3"
+                    - generic [ref=e600]: "4"
+                    - generic [ref=e602]: "5"
+                    - generic [ref=e603]:
+                      - generic [ref=e604] [cursor=pointer]: 
+                      - generic [ref=e605]: "6"
+                    - generic [ref=e606]:
+                      - generic [ref=e607] [cursor=pointer]: 
+                      - generic [ref=e608]: "7"
+                    - generic [ref=e610]: "8"
+                    - generic [ref=e612]: "9"
+                    - generic [ref=e614]: "10"
+                    - generic [ref=e616]: "11"
+                    - generic [ref=e618]: "12"
+                    - generic [ref=e619]:
+                      - generic [ref=e620] [cursor=pointer]: 
+                      - generic [ref=e621]: "13"
+                    - generic [ref=e623]: "14"
+                    - generic [ref=e625]: "15"
+                    - generic [ref=e627]: "16"
+                    - generic [ref=e629]: "17"
+                    - generic [ref=e631]: "18"
+                    - generic [ref=e632]:
+                      - generic [ref=e633] [cursor=pointer]: 
+                      - generic [ref=e634]: "19"
+                    - generic [ref=e636]: "20"
+                    - generic [ref=e638]: "21"
+                    - generic [ref=e640]: "22"
+                    - generic [ref=e642]: "23"
+                    - generic [ref=e644]: "24"
+                    - generic [ref=e645]:
+                      - generic [ref=e646] [cursor=pointer]: 
+                      - generic [ref=e647]: "25"
+                    - generic [ref=e649]: "26"
+                  - generic [ref=e739]:
+                    - generic [ref=e741]: "{"
+                    - generic [ref=e743]: "\"period\": {"
+                    - generic [ref=e745]: "\"title\": \"Q1 2025 Sales Dashboard\","
+                    - generic [ref=e747]: "\"date_range\": \"Jan 1 – Mar 31, 2025\""
+                    - generic [ref=e749]: "},"
+                    - generic [ref=e751]: "\"kpis\": {"
+                    - generic [ref=e753]: "\"revenue\": {"
+                    - generic [ref=e755]: "\"label\": \"Total\","
+                    - generic [ref=e757]: "\"value\": \"$980K\","
+                    - generic [ref=e759]: "\"trend\": \"up\","
+                    - generic [ref=e761]: "\"trendValue\": \"+8.5%\""
+                    - generic [ref=e763]: "},"
+                    - generic [ref=e765]: "\"customers\": {"
+                    - generic [ref=e767]: "\"label\": \"Count\","
+                    - generic [ref=e769]: "\"value\": \"2,940\","
+                    - generic [ref=e771]: "\"trend\": \"up\","
+                    - generic [ref=e773]: "\"trendValue\": \"+5.2%\""
+                    - generic [ref=e775]: "},"
+                    - generic [ref=e777]: "\"aov\": {"
+                    - generic [ref=e779]: "\"label\": \"AOV\","
+                    - generic [ref=e781]: "\"value\": \"$333\","
+                    - generic [ref=e783]: "\"trend\": \"down\","
+                    - generic [ref=e785]: "\"trendValue\": \"-2.1%\""
+                    - generic [ref=e787]: "},"
+                    - generic [ref=e789]: "\"churn\": {"
+                    - generic [ref=e791]: "\"label\": \"Rate\","
+  - alert [ref=e133]
+  - generic [ref=e397]:
+    - alert
+    - alert
+  - generic [ref=e792]: $0K

@@ -1,0 +1,584 @@
+- generic [active] [ref=e1]:
+  - link "CopilotKit raises Series A, read the announcement" [ref=e3] [cursor=pointer]:
+    - /url: /blog/series-a
+    - img [ref=e4]
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - img [ref=e7]
+        - paragraph [ref=e10]:
+          - generic [ref=e11]: CopilotKit raises Series A
+          - generic [ref=e12]: ", read the announcement"
+      - generic [ref=e14]: Read More
+  - banner [ref=e15]:
+    - generic [ref=e18]:
+      - link "Copilot Kit Logo" [ref=e19] [cursor=pointer]:
+        - /url: /
+        - img "Copilot Kit Logo" [ref=e20]
+      - list [ref=e21]:
+        - listitem [ref=e22]:
+          - link "Docs" [ref=e23] [cursor=pointer]:
+            - /url: https://docs.copilotkit.ai/
+        - listitem [ref=e24]:
+          - link "Blog" [ref=e25] [cursor=pointer]:
+            - /url: /blog
+        - listitem [ref=e26]:
+          - link "Products" [ref=e28] [cursor=pointer]:
+            - /url: /product
+            - text: Products
+            - img [ref=e29]
+        - listitem [ref=e31]:
+          - link "Examples" [ref=e32] [cursor=pointer]:
+            - /url: /examples
+        - listitem [ref=e33]:
+          - link "Dojo" [ref=e34] [cursor=pointer]:
+            - /url: https://dojo.ag-ui.com/langgraph/feature/agentic_chat
+        - listitem [ref=e35]:
+          - link "Generative UI" [ref=e37] [cursor=pointer]:
+            - /url: /generative-ui
+            - text: Generative UI
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link "AG-UI" [ref=e41] [cursor=pointer]:
+            - /url: /ag-ui
+          - generic:
+            - generic:
+              - paragraph: AG-UI (Agent–User Interaction) is the general-purpose, bi-directional connection between a user-facing application and any agentic backend.
+        - listitem [ref=e42]:
+          - link "Pricing" [ref=e43] [cursor=pointer]:
+            - /url: /pricing
+  - generic [ref=e46]:
+    - generic [ref=e47]:
+      - link "Back" [ref=e48] [cursor=pointer]:
+        - /url: /blog
+        - img [ref=e49]
+        - generic [ref=e51]: Back
+      - navigation [ref=e52]:
+        - link "Prev" [ref=e53] [cursor=pointer]:
+          - /url: /blog/ag-ui-protocol-bridging-agents-to-any-front-end
+          - img [ref=e54]
+          - text: Prev
+        - link "Next" [ref=e56] [cursor=pointer]:
+          - /url: /blog/ag2-now-integrated-with-copilotkit
+          - text: Next
+          - img [ref=e57]
+    - generic [ref=e59]:
+      - img "How to add a Frontend to any AG2 Agent using AG-UI Protocol" [ref=e61]
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - text: By
+          - generic [ref=e64]: Bonnie
+          - text: and Nathan Tarbert
+        - generic [ref=e66]: May 29, 2025
+      - generic [ref=e67]:
+        - heading "TL;DR" [level=2] [ref=e68]:
+          - strong [ref=e69]: TL;DR
+        - paragraph [ref=e70]: In this article, you will learn how to add a frontend to any AG2 agent using the Agent User Interaction Protocol (AG-UI) developed by CopilotKit.
+        - paragraph [ref=e71]: "Before we jump in, here is what we will cover:"
+        - list [ref=e72]:
+          - listitem [ref=e73]: Understanding AG-UI Protocol?
+          - listitem [ref=e74]: Integrating AG2 AI agents with AG-UI protocol
+        - figure [ref=e75]:
+          - iframe [ref=e77]:
+            - generic [active] [ref=f44e1]:
+              - generic "YouTubes videospelare" [ref=f44e3]
+              - generic [ref=f44e5]:
+                - generic:
+                  - generic:
+                    - button "Spela upp video" [ref=f44e10] [cursor=pointer]
+                    - button "Dölj uppspelningsknappar" [ref=f44e12] [cursor=pointer]
+                    - generic [ref=f44e14]:
+                      - generic [ref=f44e19]:
+                        - generic [ref=f44e20]:
+                          - link "Integrating AG2 With AG-UI Protocol" [ref=f44e21] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=Y-MEZ6iP6Ac
+                          - link "The Great Bonnie" [ref=f44e22] [cursor=pointer]:
+                            - /url: /channel/UCB1hX7KyG-xDtzt19F-Wixw
+                            - generic [ref=f44e23]: The Great Bonnie
+                        - generic [ref=f44e24]:
+                          - button [ref=f44e25] [cursor=pointer]
+                          - generic [ref=f44e27]:
+                            - generic: The Great Bonnie
+                            - generic: 170 prenumeranter
+                      - generic [ref=f44e28]:
+                        - button "Dela" [ref=f44e31] [cursor=pointer]:
+                          - generic [ref=f44e35]:
+                            - img
+                        - link "Visa på YouTube" [ref=f44e42] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=Y-MEZ6iP6Ac
+                          - generic [ref=f44e45]:
+                            - text: Titta på
+                            - img [ref=f44e47]:
+                              - generic [ref=f44e49]:
+                                - img
+        - heading "What is the AG-UI Protocol?" [level=2] [ref=e78]
+        - paragraph [ref=e79]: The Agent User Interaction Protocol (AG-UI), developed by CopilotKit, is an open-source, lightweight, event-based protocol that facilitates rich, real-time interactions between the frontend and AI agents.
+        - paragraph [ref=e80]: The AG-UI protocol enables event-driven communication, state management, tool usage, and streaming AI agent responses.
+        - paragraph [ref=e81]: "To send information between the frontend and your AI agent, AG-UI uses events such as:"
+        - list [ref=e82]:
+          - listitem [ref=e83]:
+            - strong [ref=e84]: Lifecycle events
+            - text: ": These events mark the start or end of an agent’s work, like “The agent started processing your request” ("
+            - code [ref=e85]: RUN_STARTED
+            - text: ) or “The agent is done” (
+            - code [ref=e86]: RUN_FINISHED
+            - text: ).
+          - listitem [ref=e87]:
+            - strong [ref=e88]: Text message events
+            - text: ": These events carry the actual conversation, like “The agent is starting a new message” ("
+            - code [ref=e89]: TEXT_MESSAGE_START
+            - text: ), “Here’s a piece of the response” (
+            - code [ref=e90]: TEXT_MESSAGE_CONTENT
+            - text: ), or “The message is complete” (
+            - code [ref=e91]: TEXT_MESSAGE_END
+            - text: ).
+          - listitem [ref=e92]:
+            - strong [ref=e93]: Tool call events
+            - text: ": These events let the agent use tools, like “The agent wants to check the weather” ("
+            - code [ref=e94]: TOOL_CALL_START
+            - text: ) or “Here’s the weather data” (
+            - code [ref=e95]: TOOL_CALL_END
+            - text: ).
+          - listitem [ref=e96]:
+            - strong [ref=e97]: State management events
+            - text: ": These events keep the frontend and the AI agent state in sync, like “Here’s the current state of the conversation” ("
+            - code [ref=e98]: STATE_SNAPSHOT
+            - text: ) or “Here’s a small update to the state” (
+            - code [ref=e99]: STATE_DELTA
+            - text: ).
+        - paragraph [ref=e100]:
+          - text: You can learn more about the AG-UI protocol and its architecture
+          - link "here on AG-UI docs" [ref=e101] [cursor=pointer]:
+            - /url: https://docs.ag-ui.com/introduction
+          - text: .
+        - figure:
+          - generic:
+            - img "Image"
+        - paragraph [ref=e102]: Now that we have learned what the AG-UI protocol is, let us see how to integrate it with different AI agent frameworks
+        - heading "Integrating AG2 AI agents with AG-UI protocol" [level=2] [ref=e103]
+        - paragraph [ref=e104]: In this section, you will learn how to build a full-stack application demonstrating the integration of AutoGen agents with the AG-UI protocol to create an interactive AI travel assistant with human-in-the-loop capabilities.
+        - paragraph [ref=e105]: The system allows users to interact with an AI travel assistant that can create custom travel plans, recommend destinations, and adjust itineraries based on user feedback - all with real-time streaming responses and interactive tool execution.
+        - paragraph [ref=e106]: "Here’s a preview of what we will be building:"
+        - paragraph [ref=e107]: Let’s jump in.
+        - heading "Building AG-UI AG2 agents backend" [level=3] [ref=e108]
+        - paragraph [ref=e109]:
+          - text: To get started, make sure you have Python and Poetry installed on your machine. Then clone the
+          - link "AG-UI-AG2 repository" [ref=e110] [cursor=pointer]:
+            - /url: https://github.com/TheGreatBonnie/AG-UI-AG2
+          - text: that consists of a Python-based backend (ag-ui-travel-agent) and a Next.js/React frontend (ag-ui-travel-frontend).
+        - paragraph [ref=e111]: "Next, navigate to the backend directory:"
+        - generic [ref=e113]:
+          - code [ref=e115]: cd ag-ui-travel-agent
+          - button [ref=e116] [cursor=pointer]:
+            - img [ref=e117]
+        - paragraph [ref=e119]: "Then install the dependencies using Poetry:"
+        - generic [ref=e121]:
+          - code [ref=e123]: poetry install
+          - button [ref=e124] [cursor=pointer]:
+            - img [ref=e125]
+        - paragraph [ref=e127]:
+          - text: After that, create a
+          - code [ref=e128]: .env
+          - text: file with your
+          - link "OpenAI" [ref=e129] [cursor=pointer]:
+            - /url: https://platform.openai.com/api-keys
+          - text: "API key:"
+        - generic [ref=e131]:
+          - code [ref=e133]: OPENAI_API_KEY=your-openai-key
+          - button [ref=e134] [cursor=pointer]:
+            - img [ref=e135]
+        - paragraph [ref=e137]: "Then run the agent using the command below:"
+        - generic [ref=e139]:
+          - code [ref=e141]: poetry run uvicorn src.ag_ui_ag2.hitl_workflow:app
+          - button [ref=e142] [cursor=pointer]:
+            - img [ref=e143]
+        - paragraph [ref=e145]:
+          - text: To test the AG-UI AG2 integration, run the curl command below on
+          - link "https://reqbin.com/curl" [ref=e146] [cursor=pointer]:
+            - /url: https://reqbin.com/curl
+          - text: .
+        - generic [ref=e148]:
+          - code [ref=e150]:
+            - text: "curl -X POST http://localhost:8000/langgraph-research/fastagency/agui \\ -H \"Content-Type: application/json\" \\ -d '{"
+            - text: "\"thread_id\": \"test_thread_123\","
+            - text: "\"run_id\": \"test_run_456\","
+            - text: "\"messages\": [ { \"id\": \"msg_1\", \"role\": \"user\", \"content\": \"Hello there\" } ],"
+            - text: "\"tools\": [],"
+            - text: "\"context\": [],"
+            - text: "\"forwarded_props\": {},"
+            - text: "\"state\": {} }'"
+          - button [ref=e151] [cursor=pointer]:
+            - img [ref=e152]
+        - paragraph [ref=e154]: Let us now see how the AG-UI AG2 integration works.
+        - paragraph [ref=e155]:
+          - text: First, an AGUIAdapter class that bridges and connects the AG2 agents’ workflow with the AG-UI protocol is defined as shown in the
+          - code [ref=e156]: src/ag_ui_ag2/ag_ui_adapter.py
+          - text: file.
+          - code [ref=e157]: ‍
+        - generic [ref=e159]:
+          - code [ref=e161]: "class AGUIAdapter(MessageProcessorMixin, CreateWorkflowUIMixin): def __init__( self, provider: ProviderProtocol, *, discovery_path: str = \"/fastagency/discovery\", agui_path: str = \"/fastagency/agui\", wf_name: Optional[str] = None, get_user_id: Optional[Callable[..., Optional[str]]] = None, filter: Optional[Callable[[BaseMessage], bool]] = None, ) -> None: \"\"\"Provider for AG-UI. This adapter connects FastAgency workflows with AG-UI interfaces, handling message routing, thread management, and real-time communication between agents and the frontend UI. Args: provider (ProviderProtocol): The workflow provider that executes agent workflows discovery_path (str, optional): API path for workflow discovery endpoint. Defaults to \"/fastagency/discovery\". agui_path (str, optional): API path for AG-UI communication endpoint. Defaults to \"/fastagency/agui\". wf_name (str, optional): Name of the default workflow to run. If None, uses the first available workflow. get_user_id (Optional[Callable[..., Optional[str]]], optional): Function to extract user ID from requests. Defaults to None. filter (Optional[Callable[[BaseMessage], bool]], optional): Optional filter function for messages. Defaults to None. \"\"\""
+          - button [ref=e162] [cursor=pointer]:
+            - img [ref=e163]
+        - paragraph [ref=e165]: The adapter handles message routing, state management, Server-Sent events streaming and tool execution.
+        - paragraph [ref=e166]:
+          - text: After that, a hitl_workflow function that manages the travel planning workflow is defined as shown in the
+          - code [ref=e167]: src/ag_ui_ag2/hitl_workflow.py
+          - text: file.
+          - code [ref=e168]: ‍
+        - generic [ref=e170]:
+          - code [ref=e172]:
+            - text: "# Initialize the workflow manager wf = Workflow()"
+            - text: "@wf.register(name=\"hitl_workflow\", description=\"A simple travel itenarary generator workflow\")"
+            - text: "def hitl_workflow(ui: UI, params: dict[str, Any]) -> str: \"\"\"Main workflow function that orchestrates the travel planning conversation This function: 1. Initializes the conversation with a welcome message 2. Creates the AI travel agent with system instructions 3. Creates a customer agent that proxies for human input 4. Registers tool functions that the travel agent can call 5. Starts the conversation between agents 6. Processes and returns the conversation results Args: ui: User interface object for handling user interactions params: Additional parameters passed to the workflow Returns: Processed conversation results as string \"\"\""
+          - button [ref=e173] [cursor=pointer]:
+            - img [ref=e174]
+        - paragraph [ref=e176]:
+          - text: Then the AGUIAdapter defined earlier is used to connect the hitl_workflow to the AG_UI protocol, as shown below.
+          - code [ref=e177]: ‍
+        - generic [ref=e179]:
+          - code [ref=e181]: "# Create an adapter that connects our workflow to the AG-UI protocol adapter = AGUIAdapter( provider=wf, # The workflow provider wf_name=\"hitl_workflow\", # The name of the workflow to expose filter=without_customer_messages # Filter to apply to messages )"
+          - button [ref=e182] [cursor=pointer]:
+            - img [ref=e183]
+        - paragraph [ref=e185]:
+          - text: Finally, a FastAPI application that receives requests and sends responses to the frontend is created , as shown below.
+          - code [ref=e186]: ‍
+        - generic [ref=e188]:
+          - code [ref=e190]: "# Create FastAPI application and include the adapter's router app = FastAPI() app.include_router(adapter.router) # This adds all required endpoints"
+          - button [ref=e191] [cursor=pointer]:
+            - img [ref=e192]
+        - heading "Building AG-UI/AG2 agent frontend using CopilotKit" [level=3] [ref=e194]
+        - paragraph [ref=e195]: In this section, you will learn how to create a connection between your AG-UI AG2 backend and your app frontend using CopilotKit.
+        - paragraph [ref=e196]: Let’s get started.
+        - 'heading "Step 1: Getting started" [level=3] [ref=e197]':
+          - strong [ref=e198]: "Step 1: Getting started"
+        - paragraph [ref=e199]: "First, navigate to the frontend directory:"
+        - generic [ref=e201]:
+          - code [ref=e203]: cd ag-ui-travel-frontend
+          - button [ref=e204] [cursor=pointer]:
+            - img [ref=e205]
+        - paragraph [ref=e207]: "Then install the dependencies:"
+        - generic [ref=e209]:
+          - code [ref=e211]: npm install
+          - button [ref=e212] [cursor=pointer]:
+            - img [ref=e213]
+        - paragraph [ref=e215]: "After that, start the development server:"
+        - generic [ref=e217]:
+          - code [ref=e219]: npm run dev
+          - button [ref=e220] [cursor=pointer]:
+            - img [ref=e221]
+        - paragraph [ref=e223]:
+          - text: Navigate to
+          - link "http://localhost:3000/copilotkit" [ref=e224] [cursor=pointer]:
+            - /url: http://localhost:3000/copilotkit
+          - text: ", and you should see the AG-UI LangGraph agent frontend up and running."
+        - figure:
+          - generic:
+            - img "Image"
+        - paragraph [ref=e225]: Let’s now see how to build the frontend UI for the AG-UI AG2 agent using CopilotKit.
+        - 'heading "Step 2: Connecting frontend to AG-UI/AG2 backend" [level=3] [ref=e226]'
+        - paragraph [ref=e227]:
+          - text: First, create a bridge that connects your frontend and the AG-UI LangGraph backend, as shown in the
+          - code [ref=e228]: src/app/api/copilotkit/route.ts
+          - text: file.
+          - code [ref=e229]: ‍
+        - generic [ref=e231]:
+          - code [ref=e233]:
+            - text: "// Import the HttpAgent for making HTTP requests to the backend import { HttpAgent } from \"@ag-ui/client\";"
+            - text: "// Import CopilotKit runtime components for setting up the API endpoint import { CopilotRuntime, ExperimentalEmptyAdapter, copilotRuntimeNextJSAppRouterEndpoint, } from \"@copilotkit/runtime\";"
+            - text: "// Import NextRequest type for handling Next.js API requests import { NextRequest } from \"next/server\";"
+            - text: "// Create a new HttpAgent instance that connects to the LangGraph research backend running locally const travelAgent = new HttpAgent({ url: \"http://127.0.0.1:8000/fastagency/agui\"});"
+            - text: "// Initialize the CopilotKit runtime with our research agent const runtime = new CopilotRuntime({ agents: { travelAgent, // Register the research agent with the runtime }, });"
+            - text: "/** * Define the POST handler for the API endpoint * This function handles incoming POST requests to the /api/copilotkit endpoint */ export const POST = async (req: NextRequest) => { // Configure the CopilotKit endpoint for the Next.js app router const { handleRequest } = copilotRuntimeNextJSAppRouterEndpoint({ runtime, // Use the runtime with our research agent serviceAdapter: new ExperimentalEmptyAdapter(), // Use the experimental adapter endpoint: \"/api/copilotkit\", // Define the API endpoint path }); // Process the incoming request with the CopilotKit handler return handleRequest(req); };"
+          - button [ref=e234] [cursor=pointer]:
+            - img [ref=e235]
+        - 'heading "Step 3: Set up the CopilotKit Provider" [level=3] [ref=e237]':
+          - strong [ref=e238]: "Step 3: Set up the CopilotKit Provider"
+        - paragraph [ref=e239]:
+          - text: To set up the CopilotKit Provider, the
+          - code [ref=e240]: <CopilotKit>
+          - text: component must wrap the Copilot-aware parts of your application. For most use cases, it's appropriate to wrap the CopilotKit provider around the entire app, e.g., in your
+          - code [ref=e241]: layout.tsx
+          - text: ", as shown below in the"
+          - code [ref=e242]: src/app/copilotkit/layout.tsx
+          - text: file.
+        - generic [ref=e244]:
+          - code [ref=e246]:
+            - text: // Import the CSS styles for CopilotKit UI components
+            - text: import "@copilotkit/react-ui/styles.css";
+            - text: // Import React and ReactNode type for typing children prop
+            - text: "import React, { ReactNode } from \"react\";"
+            - text: // Import the CopilotKit provider component from the core package
+            - text: "import { CopilotKit } from \"@copilotkit/react-core\";"
+            - text: // Get the runtime URL from environment variables
+            - text: // This URL points to the CopilotKit runtime API endpoint
+            - text: const runtimeUrl = process.env.NEXT_PUBLIC_COPILOTKIT_RUNTIME_URL;
+            - text: "export default function Layout({ children }: { children: ReactNode }) { return ( <CopilotKit runtimeUrl={runtimeUrl} // URL for the CopilotKit runtime API agent=\"researchAgent\" // Specify which agent to use (matches the one defined in route.ts) showDevConsole={false} // Hide the development console in production > {children}{' '} {/* Render the child components inside the CopilotKit provider */} </CopilotKit> ); }"
+          - button [ref=e247] [cursor=pointer]:
+            - img [ref=e248]
+        - 'heading "Step 4: Choose a Copilot UI" [level=3] [ref=e250]':
+          - strong [ref=e251]: "Step 4: Choose a Copilot UI"
+        - paragraph [ref=e252]:
+          - text: To set up your Copilot UI, first import the default styles in your root component (typically
+          - code [ref=e253]: layout.tsx
+          - text: ).
+        - generic [ref=e255]:
+          - code [ref=e257]: import "@copilotkit/react-ui/styles.css";
+          - button [ref=e258] [cursor=pointer]:
+            - img [ref=e259]
+        - paragraph [ref=e261]:
+          - text: Copilot UI ships with a number of built-in UI patterns; choose whichever one you like from
+          - link "CopilotPopup" [ref=e262] [cursor=pointer]:
+            - /url: https://docs.copilotkit.ai/quickstart?component=CopilotPopup
+          - text: ","
+          - link "CopilotSidebar" [ref=e263] [cursor=pointer]:
+            - /url: https://docs.copilotkit.ai/quickstart?component=CopilotSidebar
+          - text: ","
+          - link "CopilotChat," [ref=e264] [cursor=pointer]:
+            - /url: https://docs.copilotkit.ai/quickstart?component=CopilotChat
+          - text: or
+          - link "Headless UI" [ref=e265] [cursor=pointer]:
+            - /url: https://docs.copilotkit.ai/quickstart?component=Headless%20UI
+          - text: .
+        - figure:
+          - generic:
+            - img "Image"
+        - paragraph [ref=e266]:
+          - text: In this case, we will use CopilotChat defined in the
+          - code [ref=e267]: src/app/components/Chat.tsx
+          - text: file.
+        - generic [ref=e269]:
+          - code [ref=e271]:
+            - text: import React from "react";
+            - text: "import { CopilotChat } from \"@copilotkit/react-ui\";"
+            - text: "function Chat() { return ( <div className=\"flex-1 flex justify-center items-center bg-white overflow-y-auto\"> <CopilotChat className=\"w-full max-w-3xl flex flex-col h-full py-6\" /> </div> ); }"
+            - text: export default Chat;
+          - button [ref=e272] [cursor=pointer]:
+            - img [ref=e273]
+        - 'heading "Step 5: Creating a shared state between the frontend and AG-UI/AG2 backend" [level=3] [ref=e275]':
+          - strong [ref=e276]: "Step 5: Creating a shared state between the frontend and AG-UI/AG2 backend"
+        - paragraph [ref=e277]:
+          - text: First, you need to define the agent state and emit it to the front end using the
+          - code [ref=e278]: "**STATE_SNAPSHOT**"
+          - text: state management event to create a shared state between the frontend and AG-UI AG2 agent backend.
+          - code [ref=e279]: ‍
+        - generic [ref=e281]:
+          - code [ref=e283]: "# Then send initial state snapshot initial_state = { \"status\": { \"phase\": \"initialized\", \"error\": None, \"timestamp\": datetime.now().isoformat() }, \"conversation\": { \"stage\": \"starting\", \"messages\": [ { \"id\": \"placeholder\", \"role\": \"assistant\", \"content\": \"\", \"timestamp\": datetime.now().isoformat() } ], \"tools\": [], \"completed\": False }, \"agent\": { \"name\": \"Travel Assistant\", \"capabilities\": [\"search\", \"recommend\", \"book\"], \"current_task\": None }, \"ui\": { \"showProgress\": True, \"activeTab\": \"chat\", \"loading\": False, \"showInput\": False } } state_snapshot = StateSnapshotEvent( type=EventType.STATE_SNAPSHOT, snapshot=initial_state ) yield self._sse_send(state_snapshot, thread_info)"
+          - button [ref=e284] [cursor=pointer]:
+            - img [ref=e285]
+        - paragraph [ref=e287]:
+          - text: Then use
+          - link "the CopilotKit useCoAgent hook" [ref=e288] [cursor=pointer]:
+            - /url: https://docs.copilotkit.ai/reference/hooks/useCoAgent
+          - text: to share the AG-UI AG2 agent backend state with your frontend, as shown in the
+          - code [ref=e289]: src/app/components/Travel.tsx
+          - text: file.
+        - generic [ref=e291]:
+          - code [ref=e293]:
+            - text: "import { useCoAgent } from \"@copilotkit/react-core\";"
+            - text: "//... function Travel() { // Connect to the travel agent's state using CopilotKit's useCoAgent hook const { state, stop: stopTravelAgent } = useCoAgent<TravelAgentState>({ name: \"travelAgent\", initialState: { status: { phase: \"initialized\", error: null, timestamp: new Date().toISOString(), }, conversation: { stage: \"starting\", messages: [ { id: \"placeholder\", role: \"assistant\", content: \"\", timestamp: new Date().toISOString(), }, ], tools: [], completed: false, }, agent: { name: \"Travel Assistant\", capabilities: [\"search\", \"recommend\", \"book\"], current_task: null, }, ui: { showProgress: false, showInput: false, activeTab: \"chat\", loading: false, }, }, }); }"
+          - button [ref=e294] [cursor=pointer]:
+            - img [ref=e295]
+        - paragraph [ref=e297]:
+          - text: Next, render the AG-UI AG2 agent's state in the chat UI. This is useful for informing the user about the agent's state in a more in-context way. To do this, you can use the
+          - link "useCoAgentStateRender" [ref=e298] [cursor=pointer]:
+            - /url: https://docs.copilotkit.ai/reference/hooks/useCoAgentStateRender
+          - text: hook.
+        - generic [ref=e300]:
+          - code [ref=e302]: "import { useCoAgentStateRender } from \"@copilotkit/react-core\"; //... function Travel() { // Implement useCoAgentStateRender hook useCoAgentStateRender({ name: \"travelAgent\", handler: ({ nodeName }) => { // Stop the travel agent when the \"__end__\" node is reached if (nodeName === \"__end__\") { setTimeout(() => { isTravelInProgress.current = false; stopTravelAgent(); }, 1000); } }, render: ({ status }) => { if (status === \"inProgress\") { isTravelInProgress.current = true; return ( <div className=\"travel-in-progress bg-white p-4 rounded-lg shadow-sm border border-gray-200\"> <div className=\"flex items-center gap-2 mb-3\"> <div className=\"animate-spin h-4 w-4 border-2 border-blue-500 rounded-full border-t-transparent\"></div> <p className=\"font-medium text-gray-800\">{getStatusText()}</p> </div> {state?.ui?.showProgress && ( <div className=\"status-container mb-3\"> <div className=\"flex items-center justify-between mb-1.5\"> <div className=\"text-sm font-medium text-gray-700\"> {state.agent.current_task || \"Processing your request...\"} </div> </div> </div> )} {state?.conversation?.tools?.length > 0 && ( <div className=\"text-xs text-gray-500 flex items-center gap-1.5\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth=\"2\" strokeLinecap=\"round\" strokeLinejoin=\"round\"> <path d=\"M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M13 12H3\"></path> </svg> {state?.conversation?.tools?.length ?? 0} tool {(state?.conversation?.tools?.length ?? 0) !== 1 ? \"s\" : \"\"} used </div> )} </div> ); } if (status === \"complete\") { isTravelInProgress.current = false; return null; } return null; }, }); }"
+          - button [ref=e303] [cursor=pointer]:
+            - img [ref=e304]
+        - 'heading "Step 6: Adding a Human-in-the-loop breakpoint in your AG-UI/AG2 agent and frontend UI" [level=3] [ref=e306]':
+          - strong [ref=e307]: "Step 6: Adding a Human-in-the-loop breakpoint in your AG-UI/AG2 agent and frontend UI"
+        - paragraph [ref=e308]: To add the human-in-the-loop breakpoint in AG-UI protocol, you need to use tool call events that an agent can use to trigger frontend actions that request user input.
+        - paragraph [ref=e309]: When the AG-UI AG2 travel agent needs to ask for user input on travel itineraries, it makes a standardized sequence of tool events, as shown below.
+        - generic [ref=e311]:
+          - code [ref=e313]: "# Step 4: Send a sequence of events for the tool call # Step 4.1: Signal the beginning of a tool call tool_call_id = f\"call_{str(uuid4())[:8]}\" tool_call_start = ToolCallStartEvent( message_id=uuid, toolCallId=tool_call_id, toolCallName=tool_name, tool=tool_name, delta=\"\" ) out_queue.put_nowait(tool_call_start) # Step 4.2: Send the tool call arguments # Parse the JSON string into a Python dictionary import json args_dict = json.loads(content.tool_calls[0].function.arguments) tool_call_args = ToolCallArgsEvent( message_id=uuid, toolCallId=tool_call_id, toolCallName=tool_name, args=args_dict, # Now it's a dictionary instead of a string delta=\"\" ) out_queue.put_nowait(tool_call_args) # Step 4.3: Mark the completion of the tool call tool_call_end = ToolCallEndEvent( message_id=uuid, toolCallId=tool_call_id, toolCallName=tool_name, delta=\"\" ) out_queue.put_nowait(tool_call_end)"
+          - button [ref=e314] [cursor=pointer]:
+            - img [ref=e315]
+        - paragraph [ref=e317]:
+          - text: To allow the AG-UI AG2 agent to request human input or feedback during execution in the frontend, you need to use the CopilotKit’s
+          - link "useCopilotKitAction" [ref=e318] [cursor=pointer]:
+            - /url: https://docs.copilotkit.ai/reference/hooks/useCopilotAction
+          - text: hook, as shown below.
+        - generic [ref=e320]:
+          - code [ref=e322]: "import { useCopilotAction } from \"@copilotkit/react-core\"; // Add useCopilotAction for creating a travel itinerary useCopilotAction({ name: \"create_itinerary\", description: \"Create a new travel itinerary with details like destination, dates, and activities\", parameters: [ { name: \"message\", type: \"string\", description: \"A message to display when asking for confirmation\", required: true, }, ], renderAndWaitForResponse: ({ args, respond }) => { console.log(\"create_itinerary action called with args:\", args); const message = args?.message || \"I am about to create your travel itinerary. Reply with 'continue' to proceed or 'exit' to end the conversation.\"; if (!respond) { return ( <div className=\"itinerary-creation mt-6 pt-4 border-t border-b border-gray-200\"> <div className=\"mb-4\"> {\" \"} <div className=\"flex items-center gap-2 mb-2\"> <span className=\"text-blue-500 text-xl\">👤</span> <span className=\"font-medium text-blue-600\"> Travel Assistant </span> </div> <h3 className=\"text-lg font-medium mb-3\">{message}</h3> </div>{\" \"} </div> ); } return ( <div className=\"itinerary-creation mt-6 pt-4 border-t border-gray-200\"> <div className=\"mb-4\"> {\" \"} <div className=\"flex items-center gap-2 mb-2\"> <span className=\"text-blue-500 text-xl\">📋</span> <span className=\"font-medium text-blue-600\"> Travel Assistant </span> </div> <h3 className=\"text-lg font-medium mb-3\">{message}</h3> </div>{\" \"} <div className=\"flex gap-3\"> <button className=\"px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-md transition-colors\" onClick={() => { respond(\"continue\"); }}> Continue </button> <button className=\"px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-md transition-colors\" onClick={() => { respond(\"exit\"); }}> Exit </button> </div> </div> ); }, });"
+          - button [ref=e323] [cursor=pointer]:
+            - img [ref=e324]
+        - paragraph [ref=e326]:
+          - text: Then navigate to
+          - link "http://localhost:3000/copilotkit" [ref=e327] [cursor=pointer]:
+            - /url: http://localhost:3000/copilotkit
+          - text: ", and start a conversation with the AG2 agents, as shown below."
+        - figure [ref=e328]:
+          - iframe [ref=e330]:
+            - generic [active] [ref=f45e1]:
+              - generic "YouTubes videospelare" [ref=f45e3]
+              - generic [ref=f45e5]:
+                - generic:
+                  - generic:
+                    - button "Spela upp video" [ref=f45e10] [cursor=pointer]
+                    - button "Dölj uppspelningsknappar" [ref=f45e12] [cursor=pointer]
+                    - generic [ref=f45e14]:
+                      - generic [ref=f45e19]:
+                        - generic [ref=f45e20]:
+                          - link "Integrating AG2 With AG-UI Protocol" [ref=f45e21] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=Y-MEZ6iP6Ac
+                          - link "The Great Bonnie" [ref=f45e22] [cursor=pointer]:
+                            - /url: /channel/UCB1hX7KyG-xDtzt19F-Wixw
+                            - generic [ref=f45e23]: The Great Bonnie
+                        - generic [ref=f45e24]:
+                          - button [ref=f45e25] [cursor=pointer]
+                          - generic [ref=f45e27]:
+                            - generic: The Great Bonnie
+                            - generic: 170 prenumeranter
+                      - generic [ref=f45e28]:
+                        - button "Dela" [ref=f45e31] [cursor=pointer]:
+                          - generic [ref=f45e35]:
+                            - img
+                        - link "Visa på YouTube" [ref=f45e42] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=Y-MEZ6iP6Ac
+                          - generic [ref=f45e45]:
+                            - text: Titta på
+                            - img [ref=f45e47]:
+                              - generic [ref=f45e49]:
+                                - img
+        - heading "Conclusion" [level=2] [ref=e331]
+        - paragraph [ref=e332]: In this guide, we have walked through the steps of adding a frontend to any AI agents framework using AG-UI protocol and CopilotKit.
+        - paragraph [ref=e333]: While we’ve explored a couple of features, we have barely scratched the surface of the countless use cases for CopilotKit, ranging from building interactive AI chatbots to building agentic solutions—in essence, CopilotKit lets you add a ton of useful AI capabilities to your products in minutes.
+        - paragraph [ref=e334]: Hopefully, this guide makes it easier for you to integrate AI-powered Copilots into your existing application.
+        - paragraph [ref=e335]:
+          - text: Follow CopilotKit on
+          - link "Twitter" [ref=e336] [cursor=pointer]:
+            - /url: https://go.copilotkit.ai/socials-twitter
+          - text: and say hi, and if you'd like to build something cool, join the
+          - link "Discord" [ref=e337] [cursor=pointer]:
+            - /url: https://go.copilotkit.ai/discord-community
+          - text: community.
+        - paragraph [ref=e338]: ‍
+  - generic [ref=e342]:
+    - generic [ref=e343]:
+      - heading "Top posts" [level=2] [ref=e344]
+      - link "See All" [ref=e345] [cursor=pointer]:
+        - /url: /blog
+    - generic [ref=e346]:
+      - link "CopilotKit - The Complete Frontend Stack for AI Agents Anmol Baranwal and Nathan Tarbert May 20, 2026 CopilotKit - The Complete Frontend Stack for AI Agents Copilotkit is the open source frontend stack for AI agents. Learn about architecture, chat components, hooks, generative UI, persistent memory, debugging tools, and 13+ agent framework integrations for building Agentic UIs." [ref=e347] [cursor=pointer]:
+        - /url: /blog/frontend-stack-for-ai-agents
+        - img "CopilotKit - The Complete Frontend Stack for AI Agents" [ref=e349]
+        - generic [ref=e350]:
+          - generic [ref=e351]:
+            - generic [ref=e352]: Anmol Baranwal and Nathan Tarbert
+            - generic [ref=e353]: May 20, 2026
+          - generic [ref=e354]: CopilotKit - The Complete Frontend Stack for AI Agents
+          - generic [ref=e355]: Copilotkit is the open source frontend stack for AI agents. Learn about architecture, chat components, hooks, generative UI, persistent memory, debugging tools, and 13+ agent framework integrations for building Agentic UIs.
+      - link "TanStack Supply Chain Attack and How to Lock Down GitHub Actions Jordan Ritter May 18, 2026 TanStack Supply Chain Attack and How to Lock Down GitHub Actions How TanStack got hit through GitHub Actions, the 8 vulnerabilities we found auditing 20 repos the next day, and the playbook we used to fix them all in 4 days." [ref=e356] [cursor=pointer]:
+        - /url: /blog/tanstack-supply-chain-attack-and-how-to-lock-down-github-actions
+        - img "TanStack Supply Chain Attack and How to Lock Down GitHub Actions" [ref=e358]
+        - generic [ref=e359]:
+          - generic [ref=e360]:
+            - generic [ref=e361]: Jordan Ritter
+            - generic [ref=e362]: May 18, 2026
+          - generic [ref=e363]: TanStack Supply Chain Attack and How to Lock Down GitHub Actions
+          - generic [ref=e364]: How TanStack got hit through GitHub Actions, the 8 vulnerabilities we found auditing 20 repos the next day, and the playbook we used to fix them all in 4 days.
+      - 'link "CopilotKit Enterprise Intelligence Platform: The Persistence Layer for Agentic Applications Anmol Baranwal and Nathan Tarbert May 14, 2026 CopilotKit Enterprise Intelligence Platform: The Persistence Layer for Agentic Applications The CopilotKit Enterprise Intelligence Platform brings persistent memory to agent apps across sessions and devices, with continuous learning from real usage." [ref=e365] [cursor=pointer]':
+        - /url: /blog/copilotkit-enterprise-intelligence-platform
+        - 'img "CopilotKit Enterprise Intelligence Platform: The Persistence Layer for Agentic Applications" [ref=e367]'
+        - generic [ref=e368]:
+          - generic [ref=e369]:
+            - generic [ref=e370]: Anmol Baranwal and Nathan Tarbert
+            - generic [ref=e371]: May 14, 2026
+          - generic [ref=e372]: "CopilotKit Enterprise Intelligence Platform: The Persistence Layer for Agentic Applications"
+          - generic [ref=e373]: The CopilotKit Enterprise Intelligence Platform brings persistent memory to agent apps across sessions and devices, with continuous learning from real usage.
+  - generic [ref=e377]:
+    - generic [ref=e378]: Are you ready?
+    - heading "Stay in the know" [level=2] [ref=e379]
+    - paragraph [ref=e380]: Subscribe to our blog and get updates on CopilotKit in your inbox.
+    - generic [ref=e382]:
+      - textbox "Please add your email" [ref=e383]
+      - button "Subscribe" [ref=e384] [cursor=pointer]
+  - contentinfo [ref=e386]:
+    - generic [ref=e387]:
+      - generic [ref=e388]:
+        - generic [ref=e389]:
+          - img "Copilot Kit Logo" [ref=e390]
+          - list [ref=e391]:
+            - listitem [ref=e392]:
+              - link "Follow us on social media" [ref=e393] [cursor=pointer]:
+                - /url: https://go.copilotkit.ai/discord-community
+                - img [ref=e394]
+            - listitem [ref=e396]:
+              - link "Follow us on social media" [ref=e397] [cursor=pointer]:
+                - /url: https://go.copilotkit.ai/copilotkit-github
+                - img [ref=e398]
+            - listitem [ref=e407]:
+              - link "Follow us on social media" [ref=e408] [cursor=pointer]:
+                - /url: https://go.copilotkit.ai/socials-twitter
+                - img [ref=e409]
+            - listitem [ref=e411]:
+              - link "Follow us on social media" [ref=e412] [cursor=pointer]:
+                - /url: https://go.copilotkit.ai/socials-linkedin
+                - img [ref=e413]
+        - generic [ref=e416]:
+          - list [ref=e417]:
+            - listitem [ref=e418]: Product
+            - listitem [ref=e419]:
+              - link "Overview" [ref=e420] [cursor=pointer]:
+                - /url: /product
+            - listitem [ref=e421]:
+              - link "Frontend SDKs" [ref=e422] [cursor=pointer]:
+                - /url: /product/framework
+            - listitem [ref=e423]:
+              - link "Backend Connections" [ref=e424] [cursor=pointer]:
+                - /url: /product/backends
+            - listitem [ref=e425]:
+              - link "Intelligence Platform" [ref=e426] [cursor=pointer]:
+                - /url: /copilotkit-intelligence
+            - listitem [ref=e427]:
+              - link "Pricing" [ref=e428] [cursor=pointer]:
+                - /url: /pricing
+          - list [ref=e429]:
+            - listitem [ref=e430]: Generative UI
+            - listitem [ref=e431]:
+              - link "Gen UI" [ref=e432] [cursor=pointer]:
+                - /url: /generative-ui
+            - listitem [ref=e433]:
+              - link "A2UI" [ref=e434] [cursor=pointer]:
+                - /url: /ag-ui-and-a2ui
+            - listitem [ref=e435]:
+              - link "MCP Apps" [ref=e436] [cursor=pointer]:
+                - /url: /mcp-apps
+            - listitem [ref=e437]:
+              - link "AG-UI Protocol" [ref=e438] [cursor=pointer]:
+                - /url: /ag-ui
+          - list [ref=e439]:
+            - listitem [ref=e440]: Developers
+            - listitem [ref=e441]:
+              - link "Docs" [ref=e442] [cursor=pointer]:
+                - /url: https://docs.copilotkit.ai/
+            - listitem [ref=e443]:
+              - link "Examples" [ref=e444] [cursor=pointer]:
+                - /url: /examples
+            - listitem [ref=e445]:
+              - link "Dojo" [ref=e446] [cursor=pointer]:
+                - /url: https://dojo.ag-ui.com/langgraph/feature/agentic_chat
+            - listitem [ref=e447]:
+              - link "Blog" [ref=e448] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e449]:
+              - link "Use Cases" [ref=e450] [cursor=pointer]:
+                - /url: /#use-cases
+          - list [ref=e451]:
+            - listitem [ref=e452]: Company
+            - listitem [ref=e453]:
+              - link "Contact Us" [ref=e454] [cursor=pointer]:
+                - /url: /contact-us
+            - listitem [ref=e455]:
+              - link "Careers" [ref=e456] [cursor=pointer]:
+                - /url: /careers
+      - generic [ref=e457]:
+        - paragraph [ref=e458]: © Tawkit, Inc. All rights reserved.
+        - generic [ref=e459]:
+          - link "Terms of service" [ref=e460] [cursor=pointer]:
+            - /url: /terms-of-service
+          - link "Privacy Policy" [ref=e461] [cursor=pointer]:
+            - /url: /privacy-policy
+  - img [ref=e462]
+  - alert [ref=e463]

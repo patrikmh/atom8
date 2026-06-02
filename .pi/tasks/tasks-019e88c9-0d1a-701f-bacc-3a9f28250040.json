@@ -1,0 +1,75 @@
+{
+  "nextId": 13,
+  "tasks": [
+    {
+      "id": "8",
+      "subject": "Build Sprint 2: Google Data Integration",
+      "description": "Build the Python FastAPI backend, headless pi bridge, and connect frontend widgets to real Google data. Includes: FastAPI backend with CORS, SQLite persistence, headless pi subprocess bridge, Google OAuth, real data endpoints for Gmail/Calendar/Tasks/Drive, frontend data fetching with loading/error states, manual refresh per component, and simultaneous startup fetch.",
+      "status": "in_progress",
+      "activeForm": "Building Sprint 2: Google Data Integration",
+      "metadata": {
+        "agentType": "general-purpose"
+      },
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780415611857,
+      "updatedAt": 1780415613970
+    },
+    {
+      "id": "9",
+      "subject": "Build Sprint 3: AI Assistant",
+      "description": "Build the floating AI chat widget with AG-UI streaming, A2UI component generation, data-aware answers, and web research. Includes: floating chat widget in bottom-right, AG-UI streaming over SSE, A2UI component generation on demand, AI answers about user data, web research via Playwright CLI, prompt field per component, and chat history.",
+      "status": "in_progress",
+      "activeForm": "Building Sprint 3: AI Assistant",
+      "metadata": {
+        "agentType": "general-purpose"
+      },
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780415860183,
+      "updatedAt": 1780415862358
+    },
+    {
+      "id": "10",
+      "subject": "Build Sprint 4: AI Designer Mode",
+      "description": "Build AI Designer Mode with three permission levels (Suggest & Approve, Auto-Apply with Undo, Full Control), AI layout suggestion engine, blueprint/diff format for changes, undo stack, and toggle switch.",
+      "status": "in_progress",
+      "activeForm": "Building Sprint 4: AI Designer Mode",
+      "metadata": {
+        "agentType": "general-purpose"
+      },
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780415963658,
+      "updatedAt": 1780415966378
+    },
+    {
+      "id": "11",
+      "subject": "Build Sprint 5: Polish & Themes",
+      "description": "Build 5 pre-built themes, per-component custom styling, global theme system, SQLite persistence for all data, responsive layout, and keyboard shortcuts.",
+      "status": "completed",
+      "activeForm": "Building Sprint 5: Polish & Themes",
+      "metadata": {
+        "agentType": "general-purpose"
+      },
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780416049831,
+      "updatedAt": 1780416191068
+    },
+    {
+      "id": "12",
+      "subject": "Fix Google data loading in backend",
+      "description": "The backend pi_bridge.py is trying to spawn pi CLI in a non-existent 'non-interactive' mode. The correct approach is to use the stored Google OAuth tokens and call Google APIs directly via HTTP. Need to:\n1. Rewrite pi_bridge.py to use stored tokens and call Google REST APIs\n2. Update data.py endpoints to use the new bridge\n3. Test that real data flows through to the frontend",
+      "status": "completed",
+      "activeForm": "Fixing Google data loading",
+      "metadata": {
+        "agentType": "general-purpose"
+      },
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780417346545,
+      "updatedAt": 1780417499905
+    }
+  ]
+}

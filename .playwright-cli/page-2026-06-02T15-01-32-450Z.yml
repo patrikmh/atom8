@@ -1,0 +1,234 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - link "Mojeek" [ref=e6] [cursor=pointer]:
+        - /url: https://www.mojeek.com
+        - img "Mojeek" [ref=e7]
+      - generic [ref=e10]:
+        - textbox "Search The Web using Mojeek..." [ref=e11]: agui dashboard
+        - button "✕" [ref=e12] [cursor=pointer]
+        - button [ref=e13] [cursor=pointer]
+        - link "Mojeek User Survey" [ref=e15] [cursor=pointer]:
+          - /url: https://blocksurvey.io/mojeek-stub-survey-short-2024-28uiW3RZSli2OP1LpLPu6Q
+      - button "Menu":
+        - generic "Menu" [ref=e16] [cursor=pointer]
+    - generic [ref=e19]:
+      - list [ref=e21]:
+        - listitem [ref=e22]:
+          - link "Web" [ref=e23] [cursor=pointer]:
+            - /url: /search?q=agui+dashboard
+        - listitem [ref=e24]:
+          - link "Summary" [ref=e25] [cursor=pointer]:
+            - /url: https://www.mojeek.com/search?q=agui+dashboard&fmt=summary
+        - listitem [ref=e26]:
+          - link "Images" [ref=e27] [cursor=pointer]:
+            - /url: https://www.mojeek.com/search?q=agui+dashboard&fmt=images
+        - listitem [ref=e28]:
+          - link "News" [ref=e29] [cursor=pointer]:
+            - /url: https://www.mojeek.com/search?q=agui+dashboard&fmt=news
+      - list [ref=e31]:
+        - listitem [ref=e32]:
+          - generic "Region" [ref=e33] [cursor=pointer]
+        - listitem [ref=e34]:
+          - generic "Settings" [ref=e35] [cursor=pointer]
+    - generic [ref=e36]:
+      - paragraph [ref=e40]: Results 1 to 10 from 115 in 0.09s
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - list [ref=e43]:
+            - listitem [ref=e44]:
+              - link "https://www.healthbuilders.org › team › catalina-agui-acker" [ref=e45] [cursor=pointer]:
+                - /url: https://www.healthbuilders.org/team/catalina-agui-acker
+                - paragraph [ref=e46]:
+                  - generic [ref=e47]: https://www.healthbuilders.org › team › catalina-agui-acker
+              - heading "Catalina Agui Acker — Health Builders" [level=2] [ref=e48]:
+                - link "Catalina Agui Acker — Health Builders" [ref=e49] [cursor=pointer]:
+                  - /url: https://www.healthbuilders.org/team/catalina-agui-acker
+              - paragraph [ref=e50]:
+                - text: Catalina
+                - strong [ref=e51]: Agui
+                - text: Acker was a Sales Executive for English and Spanish language networks CBS and Telemundo in the United States.
+          - separator [ref=e52]
+          - generic [ref=e53]:
+            - paragraph [ref=e54]: The following results matched your query but are likely to have limited relevance.
+            - paragraph [ref=e55]: Using words that might appear on the page you're looking for could help. For example, 'cake recipe' instead of 'how to make a cake'.
+          - list [ref=e56]:
+            - listitem [ref=e57]:
+              - link "https://baeke.info › category › dev" [ref=e58] [cursor=pointer]:
+                - /url: https://baeke.info/category/dev/
+                - paragraph [ref=e59]:
+                  - generic [ref=e60]: https://baeke.info › category › dev
+              - heading "dev – baeke.info" [level=2] [ref=e61]:
+                - link "dev – baeke.info" [ref=e62] [cursor=pointer]:
+                  - /url: https://baeke.info/category/dev/
+              - paragraph [ref=e63]:
+                - text: Author Geert Baeke Posted on December 7, 2025 December 7, 2025 Categories ai , api , azure , dev , docker Tags agent ,
+                - strong [ref=e64]: agui
+                - text: ", ai , artificial ..."
+            - listitem [ref=e65]:
+              - link "https://baeke.info › category › ai" [ref=e66] [cursor=pointer]:
+                - /url: https://baeke.info/category/ai/
+                - paragraph [ref=e67]:
+                  - generic [ref=e68]: https://baeke.info › category › ai
+              - heading "ai – baeke.info" [level=2] [ref=e69]:
+                - link "ai – baeke.info" [ref=e70] [cursor=pointer]:
+                  - /url: https://baeke.info/category/ai/
+              - paragraph [ref=e71]:
+                - text: Author Geert Baeke Posted on December 7, 2025 December 7, 2025 Categories ai , api , azure , dev , docker Tags agent ,
+                - strong [ref=e72]: agui
+                - text: ", ai , artificial ..."
+              - paragraph [ref=e73]:
+                - link "See more results from baeke.info »" [ref=e74] [cursor=pointer]:
+                  - /url: /search?q=site%3Abaeke.info+agui+dashboard
+            - listitem [ref=e75]:
+              - link "https://www.jemepropose.com › annonces › depannage-informatique › votre-s..." [ref=e76] [cursor=pointer]:
+                - /url: https://www.jemepropose.com/annonces/depannage-informatique/votre-service-informatique+603628/
+                - paragraph [ref=e77]:
+                  - generic [ref=e78]: https://www.jemepropose.com › annonces › depannage-informatique › votre-s...
+              - heading "Votre service informatique - Saint-Denis - Dépannage" [level=2] [ref=e79]:
+                - link "Votre service informatique - Saint-Denis - Dépannage" [ref=e80] [cursor=pointer]:
+                  - /url: https://www.jemepropose.com/annonces/depannage-informatique/votre-service-informatique+603628/
+              - paragraph [ref=e81]: Spécialiste au service des particuliers et des professionnels depuis 2009, je vous propose mes services d'assistance, de conseil, de formation ...
+            - listitem [ref=e82]:
+              - link "https://www.jemepropose.com › annonces › depannage-informatique › st-deni..." [ref=e83] [cursor=pointer]:
+                - /url: https://www.jemepropose.com/annonces/depannage-informatique/st-denis-93/
+                - paragraph [ref=e84]:
+                  - generic [ref=e85]: https://www.jemepropose.com › annonces › depannage-informatique › st-deni...
+              - 'heading "Dépannage informatique à Saint-Denis (93200) : Annonces et" [level=2] [ref=e86]':
+                - 'link "Dépannage informatique à Saint-Denis (93200) : Annonces et" [ref=e87] [cursor=pointer]':
+                  - /url: https://www.jemepropose.com/annonces/depannage-informatique/st-denis-93/
+              - paragraph [ref=e88]:
+                - text: ...
+                - strong [ref=e89]: dashboard
+                - text: Accueil ...
+                - strong [ref=e90]: Agui
+                - text: "-Info"
+            - listitem [ref=e91]:
+              - link "https://reachat.dev › docs › examples › ag-ui" [ref=e92] [cursor=pointer]:
+                - /url: https://reachat.dev/docs/examples/ag-ui
+                - paragraph [ref=e93]:
+                  - generic [ref=e94]: https://reachat.dev › docs › examples › ag-ui
+              - heading "AG-UI Protocol – reachat" [level=2] [ref=e95]:
+                - link "AG-UI Protocol – reachat" [ref=e96] [cursor=pointer]:
+                  - /url: https://reachat.dev/docs/examples/ag-ui
+              - paragraph [ref=e97]:
+                - text: ...
+                - strong [ref=e98]: agui
+                - text: "= useAgUi ({ agent : https://my-agent.example.com/run , context : [ { description : Current user profile , value : JSON .stringify ({ name : Jane ..."
+            - listitem [ref=e99]:
+              - link "https://www.wahooas.org › web-ooas › pt › projets › pmtn-paludisme-et-malad..." [ref=e100] [cursor=pointer]:
+                - /url: https://www.wahooas.org/web-ooas/pt/projets/pmtn-paludisme-et-maladies-tropicales-negligeesmtn-au-sahel
+                - paragraph [ref=e101]:
+                  - generic [ref=e102]: https://www.wahooas.org › web-ooas › pt › projets › pmtn-paludisme-et-malad...
+              - heading "P/MTN - Paludisme et Maladies Tropicales Négligées(MTN) au" [level=2] [ref=e103]:
+                - link "P/MTN - Paludisme et Maladies Tropicales Négligées(MTN) au" [ref=e104] [cursor=pointer]:
+                  - /url: https://www.wahooas.org/web-ooas/pt/projets/pmtn-paludisme-et-maladies-tropicales-negligeesmtn-au-sahel
+              - paragraph [ref=e105]:
+                - text: "le Niger ( 17 districts : Say, Ilela, Filingué, Kollo, Tera, Zinder, Matameye, Mayahi,"
+                - strong [ref=e106]: Aguie
+                - text: ", Mirriah, Madarounfa, Guidan-Roumdji, Magaria, Boboye ..."
+            - listitem [ref=e107]:
+              - link "https://www.wahooas.org › web-ooas › index.php › pt › projets › pmtn-paludism..." [ref=e108] [cursor=pointer]:
+                - /url: https://www.wahooas.org/web-ooas/index.php/pt/projets/pmtn-paludisme-et-maladies-tropicales-negligeesmtn-au-sahel
+                - paragraph [ref=e109]:
+                  - generic [ref=e110]: https://www.wahooas.org › web-ooas › index.php › pt › projets › pmtn-paludism...
+              - heading "P/MTN - Paludisme et Maladies Tropicales Négligées(MTN) au" [level=2] [ref=e111]:
+                - link "P/MTN - Paludisme et Maladies Tropicales Négligées(MTN) au" [ref=e112] [cursor=pointer]:
+                  - /url: https://www.wahooas.org/web-ooas/index.php/pt/projets/pmtn-paludisme-et-maladies-tropicales-negligeesmtn-au-sahel
+              - paragraph [ref=e113]:
+                - text: "le Niger ( 17 districts : Say, Ilela, Filingué, Kollo, Tera, Zinder, Matameye, Mayahi,"
+                - strong [ref=e114]: Aguie
+                - text: ", Mirriah, Madarounfa, Guidan-Roumdji, Magaria, Boboye ..."
+              - paragraph [ref=e115]:
+                - link "See more results from www.wahooas.org »" [ref=e116] [cursor=pointer]:
+                  - /url: /search?q=site%3Awww.wahooas.org+agui+dashboard
+            - listitem [ref=e117]:
+              - link "https://revistafibra.info › halketon-el-hackathon-argentino-de-ia-que..." [ref=e118] [cursor=pointer]:
+                - /url: https://revistafibra.info/halketon-el-hackathon-argentino-de-ia-que-busca-resolver-el-problema-de-financiamiento-de-las-ongs/
+                - paragraph [ref=e119]:
+                  - generic [ref=e120]: https://revistafibra.info › halketon-el-hackathon-argentino-de-ia-que...
+              - 'heading "Halketon: el hackathon argentino de IA que busca resolver el" [level=2] [ref=e121]':
+                - 'link "Halketon: el hackathon argentino de IA que busca resolver el" [ref=e122] [cursor=pointer]':
+                  - /url: https://revistafibra.info/halketon-el-hackathon-argentino-de-ia-que-busca-resolver-el-problema-de-financiamiento-de-las-ongs/
+              - paragraph [ref=e123]:
+                - text: Los resultados posibles abarcan desde aplicaciones y sistemas de gestión hasta automatizaciones y
+                - strong [ref=e124]: dashboards
+                - text: de visualización de datos.
+            - listitem [ref=e125]:
+              - link "https://encolombia.com › medicina › revistas-medicas › cirugia › vc352 › covi..." [ref=e126] [cursor=pointer]:
+                - /url: https://encolombia.com/medicina/revistas-medicas/cirugia/vc352/covid-19-cirujano/
+                - paragraph [ref=e127]:
+                  - generic [ref=e128]: https://encolombia.com › medicina › revistas-medicas › cirugia › vc352 › covi...
+              - 'heading "Covid-19: Temas de Interés para el Cirujano" [level=2] [ref=e129]':
+                - 'link "Covid-19: Temas de Interés para el Cirujano" [ref=e130] [cursor=pointer]':
+                  - /url: https://encolombia.com/medicina/revistas-medicas/cirugia/vc352/covid-19-cirujano/
+              - paragraph [ref=e131]: Aranda-Narváez JM, Tallón-Aguilar L, Yáñez-Benítez C, Martín-Martín G, Jover-Navalón JM, Montón-Condón S, et al.
+        - list [ref=e133]:
+          - listitem [ref=e134]: Prev
+          - listitem [ref=e135]: "1"
+          - listitem [ref=e136]:
+            - link "2" [ref=e137] [cursor=pointer]:
+              - /url: /search?q=agui+dashboard&s=11
+          - listitem [ref=e138]:
+            - link "3" [ref=e139] [cursor=pointer]:
+              - /url: /search?q=agui+dashboard&s=21
+          - listitem [ref=e140]:
+            - link "4" [ref=e141] [cursor=pointer]:
+              - /url: /search?q=agui+dashboard&s=31
+          - listitem [ref=e142]:
+            - link "5" [ref=e143] [cursor=pointer]:
+              - /url: /search?q=agui+dashboard&s=41
+          - listitem [ref=e144]:
+            - link "Next" [ref=e145] [cursor=pointer]:
+              - /url: /search?q=agui+dashboard&s=11
+        - generic [ref=e146]:
+          - paragraph [ref=e147]: "Try elsewhere:"
+          - link "Brave" [ref=e148] [cursor=pointer]:
+            - /url: /search?q=agui+dashboard&sc=Brave
+          - link "Ecosia" [ref=e149] [cursor=pointer]:
+            - /url: /search?q=agui+dashboard&sc=Ecosia
+          - link "Startpage" [ref=e150] [cursor=pointer]:
+            - /url: /search?q=agui+dashboard&sc=Startpage
+          - link [ref=e151] [cursor=pointer]:
+            - /url: /preferences#choices
+            - img [ref=e152]
+      - link "Summarise these results »" [ref=e158] [cursor=pointer]:
+        - /url: https://www.mojeek.com/search?q=agui+dashboard&mal=1
+    - link "Submit feedback" [ref=e160] [cursor=pointer]:
+      - /url: /about/contact?q=agui+dashboard
+  - generic [ref=e163]:
+    - textbox "Search The Web using Mojeek..." [ref=e164]: agui dashboard
+    - link "✕" [ref=e165] [cursor=pointer]:
+      - /url: "#"
+    - button [ref=e166] [cursor=pointer]
+  - generic [ref=e169]:
+    - text: Malmoe, SE - detected automatically|
+    - link "Change" [ref=e170] [cursor=pointer]:
+      - /url: /preferences?tab=location-language
+  - generic [ref=e171]:
+    - list [ref=e172]:
+      - listitem [ref=e173]:
+        - link "About" [ref=e174] [cursor=pointer]:
+          - /url: /about/
+      - listitem [ref=e175]:
+        - link "API" [ref=e176] [cursor=pointer]:
+          - /url: /services/search/web-search-api/
+      - listitem [ref=e177]:
+        - link "Support" [ref=e178] [cursor=pointer]:
+          - /url: /support/
+      - listitem [ref=e179]:
+        - link "Blog" [ref=e180] [cursor=pointer]:
+          - /url: https://blog.mojeek.com/
+    - list [ref=e181]:
+      - listitem [ref=e182]:
+        - link "Feedback" [ref=e183] [cursor=pointer]:
+          - /url: /about/contact?q=agui+dashboard
+      - listitem [ref=e184]:
+        - link "Privacy" [ref=e185] [cursor=pointer]:
+          - /url: /about/privacy/
+      - listitem [ref=e186]:
+        - link "Terms" [ref=e187] [cursor=pointer]:
+          - /url: /about/terms.html
+      - listitem [ref=e188]:
+        - link "Settings" [ref=e189] [cursor=pointer]:
+          - /url: /preferences

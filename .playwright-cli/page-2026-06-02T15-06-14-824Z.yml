@@ -1,0 +1,680 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Skip to main content" [ref=e4] [cursor=pointer]:
+        - /url: "#main"
+      - link "Skip to Ask Learn chat experience" [ref=e5] [cursor=pointer]:
+        - /url: "#"
+      - alert [ref=e7]:
+        - generic [ref=e8]:
+          - img [ref=e10]
+          - paragraph [ref=e12]:
+            - text: We use optional cookies to improve your experience on our websites, such as through social media connections, and to display personalized advertising based on your online activity. If you reject optional cookies, only cookies necessary to provide you the services will be used. You may change your selection by clicking “Manage Cookies” at the bottom of the page.
+            - link "Privacy Statement" [ref=e13] [cursor=pointer]:
+              - /url: https://go.microsoft.com/fwlink/?LinkId=521839
+            - link "Third-Party Cookies" [ref=e14] [cursor=pointer]:
+              - /url: https://aka.ms/3rdpartycookies
+        - generic [ref=e15]:
+          - button "Accept" [ref=e16] [cursor=pointer]
+          - button "Reject" [ref=e17] [cursor=pointer]
+          - button "Manage cookies" [ref=e18] [cursor=pointer]
+      - generic [ref=e19]:
+        - text: Ｏ Ｐ 
+        - generic [ref=e20]:
+          - link "Microsoft" [ref=e21] [cursor=pointer]:
+            - /url: https://www.microsoft.com
+            - img [ref=e22]
+          - link "Learn" [ref=e28] [cursor=pointer]:
+            - /url: /en-us/
+            - generic [ref=e29]: Learn
+          - generic [ref=e30]:
+            - navigation "Global" [ref=e32]:
+              - text: Ｒ
+              - list [ref=e33]:
+                - listitem [ref=e34]:
+                  - button "Documentation" [ref=e36] [cursor=pointer]:
+                    - generic [ref=e37]: Documentation
+                    - generic [ref=e39]: Ｓ
+                - listitem [ref=e40]:
+                  - button "Training & Labs" [ref=e42] [cursor=pointer]:
+                    - generic [ref=e43]: Training & Labs
+                    - generic [ref=e45]: Ｓ
+                - listitem [ref=e46]:
+                  - button "Q&A" [ref=e48] [cursor=pointer]:
+                    - generic [ref=e49]: Q&A
+                    - generic [ref=e51]: Ｓ
+                - listitem [ref=e52]:
+                  - button "Topics" [ref=e54] [cursor=pointer]:
+                    - generic [ref=e55]: Topics
+                    - generic [ref=e57]: Ｓ
+              - text: Ｔ
+            - generic [ref=e58]:
+              - text: Ｐ
+              - button "Open search" [ref=e59] [cursor=pointer]:
+                - generic [ref=e61]: 
+          - link "Sign in" [ref=e62] [cursor=pointer]:
+            - /url: "#"
+  - navigation "Primary" [ref=e67]:
+    - button "Collapse" [expanded] [ref=e69] [cursor=pointer]:
+      - generic [ref=e71]: ﾝ
+  - main [ref=e72]:
+    - generic: Ｏ ，
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e76]:
+          - text: 
+          - group "Breadcrumbs"
+          - generic [ref=e77]:
+            - text: 󿄐 󿄐
+            - button "Ask Learn" [ref=e78] [cursor=pointer]:
+              - generic [ref=e80]: 󿄐
+              - generic [ref=e81]: Ask Learn
+            - group [ref=e82]:
+              - generic "More actions" [ref=e83] [cursor=pointer]:
+                - generic [ref=e85]: 
+        - text: ﾁ
+        - heading "AG-UI Integration with Agent Framework" [level=1] [ref=e87]
+        - generic: 
+        - generic [ref=e89]:
+          - generic [ref=e91]: ﾃ
+          - button "Summarize this article for me" [ref=e92] [cursor=pointer]:
+            - generic [ref=e93]: Summarize this article for me
+        - generic [ref=e94]:
+          - paragraph [ref=e95]:
+            - link "AG-UI" [ref=e96] [cursor=pointer]:
+              - /url: https://docs.ag-ui.com/introduction
+            - text: is a protocol that enables you to build web-based AI agent applications with advanced features like real-time streaming, state management, and interactive UI components. The Agent Framework AG-UI integration provides seamless connectivity between your agents and web clients.
+          - generic [ref=e97]:
+            - 'link "Section titled: What is AG-UI?" [ref=e98] [cursor=pointer]':
+              - /url: "#what-is-ag-ui"
+              - text: 
+            - heading "What is AG-UI?" [level=2] [ref=e99]
+          - paragraph [ref=e100]: "AG-UI is a standardized protocol for building AI agent interfaces that provides:"
+          - list [ref=e101]:
+            - listitem [ref=e102]:
+              - strong [ref=e103]: Remote Agent Hosting
+              - text: ": Deploy AI agents as web services accessible by multiple clients"
+            - listitem [ref=e104]:
+              - strong [ref=e105]: Real-time Streaming
+              - text: ": Stream agent responses using Server-Sent Events (SSE) for immediate feedback"
+            - listitem [ref=e106]:
+              - strong [ref=e107]: Standardized Communication
+              - text: ": Consistent message format for reliable agent interactions"
+            - listitem [ref=e108]:
+              - strong [ref=e109]: Session Management
+              - text: ": Maintain conversation context across multiple requests"
+            - listitem [ref=e110]:
+              - strong [ref=e111]: Advanced Features
+              - text: ": Human-in-the-loop approvals, state synchronization, and custom UI rendering"
+          - generic [ref=e112]:
+            - 'link "Section titled: When to Use AG-UI" [ref=e113] [cursor=pointer]':
+              - /url: "#when-to-use-ag-ui"
+              - text: 
+            - heading "When to Use AG-UI" [level=2] [ref=e114]
+          - paragraph [ref=e115]: "Consider using AG-UI when you need to:"
+          - list [ref=e116]:
+            - listitem [ref=e117]: Build web or mobile applications that interact with AI agents
+            - listitem [ref=e118]: Deploy agents as services accessible by multiple concurrent users
+            - listitem [ref=e119]: Stream agent responses in real-time to provide immediate user feedback
+            - listitem [ref=e120]: Implement approval workflows where users confirm actions before execution
+            - listitem [ref=e121]: Synchronize state between client and server for interactive experiences
+            - listitem [ref=e122]: Render custom UI components based on agent tool calls
+          - generic [ref=e123]:
+            - 'link "Section titled: Supported Features" [ref=e124] [cursor=pointer]':
+              - /url: "#supported-features"
+              - text: 
+            - heading "Supported Features" [level=2] [ref=e125]
+          - paragraph [ref=e126]: "The Agent Framework AG-UI integration supports all 7 AG-UI protocol features:"
+          - list [ref=e127]:
+            - listitem [ref=e128]:
+              - strong [ref=e129]: Agentic Chat
+              - text: ": Basic streaming chat with automatic tool calling"
+            - listitem [ref=e130]:
+              - strong [ref=e131]: Backend Tool Rendering
+              - text: ": Tools executed on backend with results streamed to client"
+            - listitem [ref=e132]:
+              - strong [ref=e133]: Human in the Loop
+              - text: ": Function approval requests for user confirmation"
+            - listitem [ref=e134]:
+              - strong [ref=e135]: Agentic Generative UI
+              - text: ": Async tools for long-running operations with progress updates"
+            - listitem [ref=e136]:
+              - strong [ref=e137]: Tool-based Generative UI
+              - text: ": Custom UI components rendered based on tool calls"
+            - listitem [ref=e138]:
+              - strong [ref=e139]: Shared State
+              - text: ": Bidirectional state synchronization between client and server"
+            - listitem [ref=e140]:
+              - strong [ref=e141]: Predictive State Updates
+              - text: ": Stream tool arguments as optimistic state updates"
+          - generic [ref=e142]:
+            - 'link "Section titled: Build agent UIs with CopilotKit" [ref=e143] [cursor=pointer]':
+              - /url: "#build-agent-uis-with-copilotkit"
+              - text: 
+            - heading "Build agent UIs with CopilotKit" [level=2] [ref=e144]
+          - paragraph [ref=e145]:
+            - link "CopilotKit" [ref=e146] [cursor=pointer]:
+              - /url: https://copilotkit.ai/
+            - text: provides rich UI components for building agent user interfaces based on the standard AG-UI protocol. CopilotKit supports streaming chat interfaces, frontend & backend tool calling, human-in-the-loop interactions, generative UI, shared state, and much more. You can see examples of the various agent UI scenarios that CopilotKit supports in the
+            - link "AG-UI Dojo" [ref=e147] [cursor=pointer]:
+              - /url: https://dojo.ag-ui.com/microsoft-agent-framework-dotnet
+            - text: sample application.
+          - paragraph [ref=e148]:
+            - text: To connect a CopilotKit React frontend to an Agent Framework AG-UI backend, register your endpoint as an
+            - code [ref=e149]: HttpAgent
+            - text: in the CopilotKit runtime. This allows CopilotKit's frontend tools to flow through as AG-UI client tools, and all AG-UI features (streaming, approvals, state sync) work automatically.
+          - paragraph [ref=e150]:
+            - text: CopilotKit helps you focus on your agent’s capabilities while delivering a polished user experience without reinventing the wheel. To learn more about getting started with Microsoft Agent Framework and CopilotKit, see the
+            - link "Microsoft Agent Framework integration for CopilotKit" [ref=e151] [cursor=pointer]:
+              - /url: https://docs.copilotkit.ai/microsoft-agent-framework
+            - text: documentation.
+          - generic [ref=e152]:
+            - generic [ref=e153]:
+              - 'link "Section titled: AG-UI vs. Direct Agent Usage" [ref=e154] [cursor=pointer]':
+                - /url: "#ag-ui-vs-direct-agent-usage"
+                - text: 
+              - heading "AG-UI vs. Direct Agent Usage" [level=2] [ref=e155]
+            - paragraph [ref=e156]:
+              - text: While you can run agents directly in your application using Agent Framework's
+              - code [ref=e157]: Run
+              - text: and
+              - code [ref=e158]: RunStreamingAsync
+              - text: "methods, AG-UI provides additional capabilities:"
+            - button "Expand table" [ref=e160] [cursor=pointer]:
+              - generic [ref=e162]: ﾉ
+              - generic [ref=e163]: Expand table
+            - table "AG-UI vs. Direct Agent Usage" [ref=e165]:
+              - rowgroup [ref=e166]:
+                - row "Feature Direct Agent Usage AG-UI Integration" [ref=e167]:
+                  - columnheader "Feature" [ref=e168]
+                  - columnheader "Direct Agent Usage" [ref=e169]
+                  - columnheader "AG-UI Integration" [ref=e170]
+              - rowgroup [ref=e171]:
+                - row "Deployment Embedded in application Remote service via HTTP" [ref=e172]:
+                  - cell "Deployment" [ref=e173]
+                  - cell "Embedded in application" [ref=e174]
+                  - cell "Remote service via HTTP" [ref=e175]
+                - row "Client Access Single application Multiple clients (web, mobile)" [ref=e176]:
+                  - cell "Client Access" [ref=e177]
+                  - cell "Single application" [ref=e178]
+                  - cell "Multiple clients (web, mobile)" [ref=e179]
+                - row "Streaming In-process async iteration Server-Sent Events (SSE)" [ref=e180]:
+                  - cell "Streaming" [ref=e181]
+                  - cell "In-process async iteration" [ref=e182]
+                  - cell "Server-Sent Events (SSE)" [ref=e183]
+                - row "State Management Application-managed Protocol-level state snapshots" [ref=e184]:
+                  - cell "State Management" [ref=e185]
+                  - cell "Application-managed" [ref=e186]
+                  - cell "Protocol-level state snapshots" [ref=e187]
+                - row "Session Context Application-managed Protocol-managed session IDs" [ref=e188]:
+                  - cell "Session Context" [ref=e189]
+                  - cell "Application-managed" [ref=e190]
+                  - cell "Protocol-managed session IDs" [ref=e191]
+                - row "Approval Workflows Custom implementation Built-in middleware pattern" [ref=e192]:
+                  - cell "Approval Workflows" [ref=e193]
+                  - cell "Custom implementation" [ref=e194]
+                  - cell "Built-in middleware pattern" [ref=e195]
+            - generic [ref=e196]:
+              - 'link "Section titled: Architecture Overview" [ref=e197] [cursor=pointer]':
+                - /url: "#architecture-overview"
+                - text: 
+              - heading "Architecture Overview" [level=2] [ref=e198]
+            - paragraph [ref=e199]: "The AG-UI integration uses ASP.NET Core and follows a clean middleware-based architecture:"
+            - button "Copy" [ref=e202] [cursor=pointer]:
+              - generic [ref=e203]:
+                - generic [ref=e204]: ＝
+                - generic [ref=e205]: 
+              - generic [ref=e206]: Copy
+            - code [ref=e208]: ┌─────────────────┐ │ Web Client │ │ (Browser/App) │ └────────┬────────┘ │ HTTP POST + SSE ▼ ┌─────────────────────────┐ │ ASP.NET Core │ │ MapAGUI("/", agent) │ └────────┬────────────────┘ │ ▼ ┌─────────────────────────┐ │ AIAgent │ │ (with Middleware) │ └────────┬────────────────┘ │ ▼ ┌─────────────────────────┐ │ IChatClient │ │ (Azure OpenAI, etc.) │ └─────────────────────────┘
+            - generic [ref=e209]:
+              - 'link "Section titled: Key Components" [ref=e210] [cursor=pointer]':
+                - /url: "#key-components"
+                - text: 
+              - heading "Key Components" [level=3] [ref=e211]
+            - list [ref=e212]:
+              - listitem [ref=e213]:
+                - strong [ref=e214]: ASP.NET Core Endpoint
+                - text: ":"
+                - code [ref=e215]: MapAGUI
+                - text: extension method handles HTTP requests and SSE streaming
+              - listitem [ref=e216]:
+                - strong [ref=e217]: AIAgent
+                - text: ": Agent Framework agent created from"
+                - code [ref=e218]: IChatClient
+                - text: or custom implementation
+              - listitem [ref=e219]:
+                - strong [ref=e220]: Middleware Pipeline
+                - text: ": Optional middleware for approvals, state management, and custom logic"
+              - listitem [ref=e221]:
+                - strong [ref=e222]: Protocol Adapter
+                - text: ": Converts between Agent Framework types and AG-UI protocol events"
+              - listitem [ref=e223]:
+                - strong [ref=e224]: Chat Client
+                - text: ": Microsoft.Extensions.AI chat client (Azure OpenAI, OpenAI, Ollama, etc.)"
+            - generic [ref=e225]:
+              - 'link "Section titled: How Agent Framework Translates to AG-UI" [ref=e226] [cursor=pointer]':
+                - /url: "#how-agent-framework-translates-to-ag-ui"
+                - text: 
+              - heading "How Agent Framework Translates to AG-UI" [level=2] [ref=e227]
+            - paragraph [ref=e228]: "Understanding how Agent Framework concepts map to AG-UI helps you build effective integrations:"
+            - button "Expand table" [ref=e230] [cursor=pointer]:
+              - generic [ref=e232]: ﾉ
+              - generic [ref=e233]: Expand table
+            - table "How Agent Framework Translates to AG-UI" [ref=e235]:
+              - rowgroup [ref=e236]:
+                - row "Agent Framework Concept AG-UI Equivalent Description" [ref=e237]:
+                  - columnheader "Agent Framework Concept" [ref=e238]
+                  - columnheader "AG-UI Equivalent" [ref=e239]
+                  - columnheader "Description" [ref=e240]
+              - rowgroup [ref=e241]:
+                - row "AIAgent Agent Endpoint Each agent becomes an HTTP endpoint" [ref=e242]:
+                  - cell "AIAgent" [ref=e243]:
+                    - code [ref=e244]: AIAgent
+                  - cell "Agent Endpoint" [ref=e245]
+                  - cell "Each agent becomes an HTTP endpoint" [ref=e246]
+                - row "agent.Run() HTTP POST Request Client sends messages via HTTP" [ref=e247]:
+                  - cell "agent.Run()" [ref=e248]:
+                    - code [ref=e249]: agent.Run()
+                  - cell "HTTP POST Request" [ref=e250]
+                  - cell "Client sends messages via HTTP" [ref=e251]
+                - row "agent.RunStreamingAsync() Server-Sent Events Streaming responses via SSE" [ref=e252]:
+                  - cell "agent.RunStreamingAsync()" [ref=e253]:
+                    - code [ref=e254]: agent.RunStreamingAsync()
+                  - cell "Server-Sent Events" [ref=e255]
+                  - cell "Streaming responses via SSE" [ref=e256]
+                - row "AgentResponseUpdate AG-UI Events Converted to protocol events automatically" [ref=e257]:
+                  - cell "AgentResponseUpdate" [ref=e258]:
+                    - code [ref=e259]: AgentResponseUpdate
+                  - cell "AG-UI Events" [ref=e260]
+                  - cell "Converted to protocol events automatically" [ref=e261]
+                - row "AIFunctionFactory.Create() Backend Tools Executed on server, results streamed" [ref=e262]:
+                  - cell "AIFunctionFactory.Create()" [ref=e263]:
+                    - code [ref=e264]: AIFunctionFactory.Create()
+                  - cell "Backend Tools" [ref=e265]
+                  - cell "Executed on server, results streamed" [ref=e266]
+                - row "ApprovalRequiredAIFunction Human-in-the-Loop Middleware converts to approval protocol" [ref=e267]:
+                  - cell "ApprovalRequiredAIFunction" [ref=e268]:
+                    - code [ref=e269]: ApprovalRequiredAIFunction
+                  - cell "Human-in-the-Loop" [ref=e270]
+                  - cell "Middleware converts to approval protocol" [ref=e271]
+                - row "AgentSession Session Management ConversationId maintains context" [ref=e272]:
+                  - cell "AgentSession" [ref=e273]:
+                    - code [ref=e274]: AgentSession
+                  - cell "Session Management" [ref=e275]
+                  - cell "ConversationId maintains context" [ref=e276]:
+                    - code [ref=e277]: ConversationId
+                    - text: maintains context
+                - row "ChatResponseFormat.ForJsonSchema<T>() State Snapshots Structured output becomes state events" [ref=e278]:
+                  - cell "ChatResponseFormat.ForJsonSchema<T>()" [ref=e279]:
+                    - code [ref=e280]: ChatResponseFormat.ForJsonSchema<T>()
+                  - cell "State Snapshots" [ref=e281]
+                  - cell "Structured output becomes state events" [ref=e282]
+            - generic [ref=e283]:
+              - 'link "Section titled: Installation" [ref=e284] [cursor=pointer]':
+                - /url: "#installation"
+                - text: 
+              - heading "Installation" [level=2] [ref=e285]
+            - paragraph [ref=e286]: "The AG-UI integration is included in the ASP.NET Core hosting package:"
+            - generic [ref=e287]:
+              - generic [ref=e288]: Bash
+              - button "Copy" [ref=e290] [cursor=pointer]:
+                - generic [ref=e291]:
+                  - generic [ref=e292]: ＝
+                  - generic [ref=e293]: 
+                - generic [ref=e294]: Copy
+            - code [ref=e296]: dotnet add package Microsoft.Agents.AI.Hosting.AGUI.AspNetCore
+            - paragraph [ref=e297]:
+              - text: This package includes all dependencies needed for AG-UI integration including
+              - code [ref=e298]: Microsoft.Extensions.AI
+              - text: .
+            - generic [ref=e299]:
+              - 'link "Section titled: Next Steps" [ref=e300] [cursor=pointer]':
+                - /url: "#next-steps"
+                - text: 
+              - heading "Next Steps" [level=2] [ref=e301]
+            - paragraph [ref=e302]: "To get started with AG-UI integration:"
+            - list [ref=e303]:
+              - listitem [ref=e304]:
+                - strong [ref=e305]:
+                  - link "Getting Started" [ref=e306] [cursor=pointer]:
+                    - /url: getting-started
+                - text: ": Build your first AG-UI server and client"
+              - listitem [ref=e307]:
+                - strong [ref=e308]:
+                  - link "Backend Tool Rendering" [ref=e309] [cursor=pointer]:
+                    - /url: backend-tool-rendering
+                - text: ": Add function tools to your agents"
+              - listitem [ref=e310]:
+                - strong [ref=e311]:
+                  - link "Human-in-the-Loop" [ref=e312] [cursor=pointer]:
+                    - /url: human-in-the-loop
+                - text: ": Implement approval workflows"
+              - listitem [ref=e313]:
+                - strong [ref=e314]:
+                  - link "State Management" [ref=e315] [cursor=pointer]:
+                    - /url: state-management
+                - text: ": Synchronize state between client and server"
+            - generic [ref=e316]:
+              - 'link "Section titled: Additional Resources" [ref=e317] [cursor=pointer]':
+                - /url: "#additional-resources"
+                - text: 
+              - heading "Additional Resources" [level=2] [ref=e318]
+            - list [ref=e319]:
+              - listitem [ref=e320]:
+                - link "Agent Framework Documentation" [ref=e321] [cursor=pointer]:
+                  - /url: ../../overview/
+              - listitem [ref=e322]:
+                - link "AG-UI Protocol Documentation" [ref=e323] [cursor=pointer]:
+                  - /url: https://docs.ag-ui.com/introduction
+              - listitem [ref=e324]:
+                - link "Microsoft.Extensions.AI Documentation" [ref=e325] [cursor=pointer]:
+                  - /url: /en-us/dotnet/api/microsoft.extensions.ai
+              - listitem [ref=e326]:
+                - link "Agent Framework GitHub Repository" [ref=e327] [cursor=pointer]:
+                  - /url: https://github.com/microsoft/agent-framework
+          - generic [ref=e328]:
+            - generic [ref=e329]:
+              - 'link "Section titled: AG-UI vs. Direct Agent Usage" [ref=e330] [cursor=pointer]':
+                - /url: "#ag-ui-vs-direct-agent-usage-1"
+                - text: 
+              - heading "AG-UI vs. Direct Agent Usage" [level=2] [ref=e331]
+            - paragraph [ref=e332]:
+              - text: While you can run agents directly in your application using Agent Framework's
+              - code [ref=e333]: run
+              - text: and
+              - code [ref=e334]: run(..., stream=True)
+              - text: "methods, AG-UI provides additional capabilities:"
+            - button "Expand table" [ref=e336] [cursor=pointer]:
+              - generic [ref=e338]: ﾉ
+              - generic [ref=e339]: Expand table
+            - table "AG-UI vs. Direct Agent Usage" [ref=e341]:
+              - rowgroup [ref=e342]:
+                - row "Feature Direct Agent Usage AG-UI Integration" [ref=e343]:
+                  - columnheader "Feature" [ref=e344]
+                  - columnheader "Direct Agent Usage" [ref=e345]
+                  - columnheader "AG-UI Integration" [ref=e346]
+              - rowgroup [ref=e347]:
+                - row "Deployment Embedded in application Remote service via HTTP" [ref=e348]:
+                  - cell "Deployment" [ref=e349]
+                  - cell "Embedded in application" [ref=e350]
+                  - cell "Remote service via HTTP" [ref=e351]
+                - row "Client Access Single application Multiple clients (web, mobile)" [ref=e352]:
+                  - cell "Client Access" [ref=e353]
+                  - cell "Single application" [ref=e354]
+                  - cell "Multiple clients (web, mobile)" [ref=e355]
+                - row "Streaming In-process async iteration Server-Sent Events (SSE)" [ref=e356]:
+                  - cell "Streaming" [ref=e357]
+                  - cell "In-process async iteration" [ref=e358]
+                  - cell "Server-Sent Events (SSE)" [ref=e359]
+                - row "State Management Application-managed Bidirectional protocol-level sync" [ref=e360]:
+                  - cell "State Management" [ref=e361]
+                  - cell "Application-managed" [ref=e362]
+                  - cell "Bidirectional protocol-level sync" [ref=e363]
+                - row "Thread Context Application-managed Protocol-managed thread IDs" [ref=e364]:
+                  - cell "Thread Context" [ref=e365]
+                  - cell "Application-managed" [ref=e366]
+                  - cell "Protocol-managed thread IDs" [ref=e367]
+                - row "Approval Workflows Custom implementation Built-in protocol support" [ref=e368]:
+                  - cell "Approval Workflows" [ref=e369]
+                  - cell "Custom implementation" [ref=e370]
+                  - cell "Built-in protocol support" [ref=e371]
+            - generic [ref=e372]:
+              - 'link "Section titled: Architecture Overview" [ref=e373] [cursor=pointer]':
+                - /url: "#architecture-overview-1"
+                - text: 
+              - heading "Architecture Overview" [level=2] [ref=e374]
+            - paragraph [ref=e375]: "The AG-UI integration uses a clean, modular architecture:"
+            - button "Copy" [ref=e378] [cursor=pointer]:
+              - generic [ref=e379]:
+                - generic [ref=e380]: ＝
+                - generic [ref=e381]: 
+              - generic [ref=e382]: Copy
+            - code [ref=e384]: ┌─────────────────┐ │ Web Client │ │ (Browser/App) │ └────────┬────────┘ │ HTTP POST + SSE ▼ ┌─────────────────────────┐ │ FastAPI Endpoint │ │ (add_agent_framework_ │ │ fastapi_endpoint) │ └────────┬────────────────┘ │ ▼ ┌─────────────────────────┐ │ AgentFrameworkAgent │ │ (Protocol Wrapper) │ └────────┬────────────────┘ │ ▼ ┌─────────────────────────┐ │ Orchestrators │ │ (Execution Flow Logic) │ └────────┬────────────────┘ │ ▼ ┌─────────────────────────┐ │ Agent │ │ (Agent Framework) │ └────────┬────────────────┘ │ ▼ ┌─────────────────────────┐ │ Chat Client │ │ (Azure OpenAI, etc.) │ └─────────────────────────┘
+            - generic [ref=e385]:
+              - 'link "Section titled: Key Components" [ref=e386] [cursor=pointer]':
+                - /url: "#key-components-1"
+                - text: 
+              - heading "Key Components" [level=3] [ref=e387]
+            - list [ref=e388]:
+              - listitem [ref=e389]:
+                - strong [ref=e390]: FastAPI Endpoint
+                - text: ": HTTP endpoint that handles SSE streaming and request routing"
+              - listitem [ref=e391]:
+                - strong [ref=e392]: AgentFrameworkAgent
+                - text: ": Lightweight wrapper that adapts Agent Framework agents to AG-UI protocol"
+              - listitem [ref=e393]:
+                - strong [ref=e394]: Orchestrators
+                - text: ": Handle different execution flows (default, human-in-the-loop, state management)"
+              - listitem [ref=e395]:
+                - strong [ref=e396]: Event Bridge
+                - text: ": Converts Agent Framework events to AG-UI protocol events"
+              - listitem [ref=e397]:
+                - strong [ref=e398]: Message Adapters
+                - text: ": Bidirectional conversion between AG-UI and Agent Framework message formats"
+              - listitem [ref=e399]:
+                - strong [ref=e400]: Confirmation Strategies
+                - text: ": Extensible strategies for domain-specific confirmation messages"
+            - generic [ref=e401]:
+              - 'link "Section titled: How Agent Framework Translates to AG-UI" [ref=e402] [cursor=pointer]':
+                - /url: "#how-agent-framework-translates-to-ag-ui-1"
+                - text: 
+              - heading "How Agent Framework Translates to AG-UI" [level=2] [ref=e403]
+            - paragraph [ref=e404]: "Understanding how Agent Framework concepts map to AG-UI helps you build effective integrations:"
+            - button "Expand table" [ref=e406] [cursor=pointer]:
+              - generic [ref=e408]: ﾉ
+              - generic [ref=e409]: Expand table
+            - table "How Agent Framework Translates to AG-UI" [ref=e411]:
+              - rowgroup [ref=e412]:
+                - row "Agent Framework Concept AG-UI Equivalent Description" [ref=e413]:
+                  - columnheader "Agent Framework Concept" [ref=e414]
+                  - columnheader "AG-UI Equivalent" [ref=e415]
+                  - columnheader "Description" [ref=e416]
+              - rowgroup [ref=e417]:
+                - row "Agent Agent Endpoint Each agent becomes an HTTP endpoint" [ref=e418]:
+                  - cell "Agent" [ref=e419]:
+                    - code [ref=e420]: Agent
+                  - cell "Agent Endpoint" [ref=e421]
+                  - cell "Each agent becomes an HTTP endpoint" [ref=e422]
+                - row "agent.run() HTTP POST Request Client sends messages via HTTP" [ref=e423]:
+                  - cell "agent.run()" [ref=e424]:
+                    - code [ref=e425]: agent.run()
+                  - cell "HTTP POST Request" [ref=e426]
+                  - cell "Client sends messages via HTTP" [ref=e427]
+                - row "agent.run(..., stream=True) Server-Sent Events Streaming responses via SSE" [ref=e428]:
+                  - cell "agent.run(..., stream=True)" [ref=e429]:
+                    - code [ref=e430]: agent.run(..., stream=True)
+                  - cell "Server-Sent Events" [ref=e431]
+                  - cell "Streaming responses via SSE" [ref=e432]
+                - row "Agent response updates AG-UI Events TEXT_MESSAGE_CONTENT, TOOL_CALL_START, etc." [ref=e433]:
+                  - cell "Agent response updates" [ref=e434]
+                  - cell "AG-UI Events" [ref=e435]
+                  - cell "TEXT_MESSAGE_CONTENT, TOOL_CALL_START, etc." [ref=e436]:
+                    - code [ref=e437]: TEXT_MESSAGE_CONTENT
+                    - text: ","
+                    - code [ref=e438]: TOOL_CALL_START
+                    - text: ", etc."
+                - row "Function tools (@tool) Backend Tools Executed on server, results streamed to client" [ref=e439]:
+                  - cell "Function tools (@tool)" [ref=e440]:
+                    - text: Function tools (
+                    - code [ref=e441]: "@tool"
+                    - text: )
+                  - cell "Backend Tools" [ref=e442]
+                  - cell "Executed on server, results streamed to client" [ref=e443]
+                - row "Tool approval mode Human-in-the-Loop Approval requests/responses via protocol" [ref=e444]:
+                  - cell "Tool approval mode" [ref=e445]
+                  - cell "Human-in-the-Loop" [ref=e446]
+                  - cell "Approval requests/responses via protocol" [ref=e447]
+                - row "Conversation history Thread Management threadId maintains context across requests" [ref=e448]:
+                  - cell "Conversation history" [ref=e449]
+                  - cell "Thread Management" [ref=e450]
+                  - cell "threadId maintains context across requests" [ref=e451]:
+                    - code [ref=e452]: threadId
+                    - text: maintains context across requests
+            - generic [ref=e453]:
+              - 'link "Section titled: Installation" [ref=e454] [cursor=pointer]':
+                - /url: "#installation-1"
+                - text: 
+              - heading "Installation" [level=2] [ref=e455]
+            - paragraph [ref=e456]: "Install the AG-UI integration package:"
+            - generic [ref=e457]:
+              - generic [ref=e458]: Bash
+              - button "Copy" [ref=e460] [cursor=pointer]:
+                - generic [ref=e461]:
+                  - generic [ref=e462]: ＝
+                  - generic [ref=e463]: 
+                - generic [ref=e464]: Copy
+            - code [ref=e466]: pip install agent-framework-ag-ui --pre
+            - paragraph [ref=e467]: This installs both the core agent framework and AG-UI integration components.
+            - generic [ref=e468]:
+              - 'link "Section titled: Next Steps" [ref=e469] [cursor=pointer]':
+                - /url: "#next-steps-1"
+                - text: 
+              - heading "Next Steps" [level=2] [ref=e470]
+            - paragraph [ref=e471]: "To get started with AG-UI integration:"
+            - list [ref=e472]:
+              - listitem [ref=e473]:
+                - strong [ref=e474]:
+                  - link "Getting Started" [ref=e475] [cursor=pointer]:
+                    - /url: getting-started
+                - text: ": Build your first AG-UI server and client"
+              - listitem [ref=e476]:
+                - strong [ref=e477]:
+                  - link "Backend Tool Rendering" [ref=e478] [cursor=pointer]:
+                    - /url: backend-tool-rendering
+                - text: ": Add function tools to your agents"
+              - listitem [ref=e479]:
+                - strong [ref=e480]:
+                  - link "Workflows" [ref=e481] [cursor=pointer]:
+                    - /url: workflows
+                - text: ": Expose multi-agent workflows through AG-UI"
+              - listitem [ref=e482]:
+                - strong [ref=e483]:
+                  - link "Human-in-the-Loop" [ref=e484] [cursor=pointer]:
+                    - /url: human-in-the-loop
+                - text: ": Implement approval workflows"
+              - listitem [ref=e485]:
+                - strong [ref=e486]:
+                  - link "MCP Apps Compatibility" [ref=e487] [cursor=pointer]:
+                    - /url: mcp-apps
+                - text: ": Use MCP Apps with your AG-UI endpoint"
+              - listitem [ref=e488]:
+                - strong [ref=e489]:
+                  - link "State Management" [ref=e490] [cursor=pointer]:
+                    - /url: state-management
+                - text: ": Synchronize state between client and server"
+            - generic [ref=e491]:
+              - 'link "Section titled: Additional Resources" [ref=e492] [cursor=pointer]':
+                - /url: "#additional-resources-1"
+                - text: 
+              - heading "Additional Resources" [level=2] [ref=e493]
+            - list [ref=e494]:
+              - listitem [ref=e495]:
+                - link "Agent Framework Documentation" [ref=e496] [cursor=pointer]:
+                  - /url: ../../overview/
+              - listitem [ref=e497]:
+                - link "AG-UI Protocol Documentation" [ref=e498] [cursor=pointer]:
+                  - /url: https://docs.ag-ui.com/introduction
+              - listitem [ref=e499]:
+                - link "AG-UI Dojo App" [ref=e500] [cursor=pointer]:
+                  - /url: https://dojo.ag-ui.com/
+                - text: "- Example application demonstrating Agent Framework integration"
+              - listitem [ref=e501]:
+                - link "CopilotKit MAF Integration" [ref=e502] [cursor=pointer]:
+                  - /url: https://docs.copilotkit.ai/microsoft-agent-framework
+                - text: "- Connect CopilotKit React frontends to AG-UI backends"
+              - listitem [ref=e503]:
+                - link "Agent Framework GitHub Repository" [ref=e504] [cursor=pointer]:
+                  - /url: https://github.com/microsoft/agent-framework
+        - alert [ref=e505]
+        - status [ref=e506]
+        - text:   
+      - generic [ref=e507]:
+        - separator [ref=e508]
+        - list [ref=e509]:
+          - listitem [ref=e510]:
+            - generic [ref=e512]: Last updated on 04/09/2026
+  - complementary "Additional resources" [ref=e513]:
+    - generic [ref=e515]:
+      - navigation "In this article" [ref=e516]:
+        - heading "In this article" [level=2] [ref=e517]
+        - list [ref=e518]:
+          - listitem [ref=e519]:
+            - link "What is AG-UI?" [ref=e520] [cursor=pointer]:
+              - /url: "#what-is-ag-ui"
+          - listitem [ref=e521]:
+            - link "When to Use AG-UI" [ref=e522] [cursor=pointer]:
+              - /url: "#when-to-use-ag-ui"
+          - listitem [ref=e523]:
+            - link "Supported Features" [ref=e524] [cursor=pointer]:
+              - /url: "#supported-features"
+          - listitem [ref=e525]:
+            - link "Build agent UIs with CopilotKit" [ref=e526] [cursor=pointer]:
+              - /url: "#build-agent-uis-with-copilotkit"
+          - listitem [ref=e527]:
+            - link "AG-UI vs. Direct Agent Usage" [ref=e528] [cursor=pointer]:
+              - /url: "#ag-ui-vs-direct-agent-usage"
+          - listitem [ref=e529]:
+            - link "Architecture Overview" [ref=e530] [cursor=pointer]:
+              - /url: "#architecture-overview"
+          - listitem [ref=e531]:
+            - link "How Agent Framework Translates to AG-UI" [ref=e532] [cursor=pointer]:
+              - /url: "#how-agent-framework-translates-to-ag-ui"
+          - listitem [ref=e533]:
+            - link "Installation" [ref=e534] [cursor=pointer]:
+              - /url: "#installation"
+          - listitem [ref=e535]:
+            - link "Next Steps" [ref=e536] [cursor=pointer]:
+              - /url: "#next-steps"
+        - button "Show 7 more" [ref=e537] [cursor=pointer]:
+          - generic [ref=e538]: Show 7 more
+      - generic [ref=e540]:
+        - paragraph [ref=e541]: Was this page helpful?
+        - generic [ref=e542]:
+          - button "This article is helpful" [ref=e543] [cursor=pointer]:
+            - generic [ref=e545]: 
+          - button "This article is not helpful" [ref=e546] [cursor=pointer]:
+            - generic [ref=e548]: 
+          - text: 
+  - text: 󿄐 Ｐ
+  - contentinfo [ref=e550]:
+    - generic [ref=e551]:
+      - link "Content language selector. Currently set to English (United States)." [ref=e552] [cursor=pointer]:
+        - /url: /en-us/locale?target=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fagent-framework%2Fintegrations%2Fag-ui%2F
+        - generic [ref=e554]: 
+        - generic [ref=e555]: English (United States)
+      - link "Your Privacy Choices" [ref=e557] [cursor=pointer]:
+        - /url: https://aka.ms/yourcaliforniaprivacychoices
+        - img [ref=e558]
+        - generic [ref=e563]: Your Privacy Choices
+      - button "Theme" [ref=e566] [cursor=pointer]:
+        - generic [ref=e568]: ０
+        - generic [ref=e569]: Theme
+        - generic [ref=e571]: Ｓ
+    - list [ref=e572]:
+      - listitem [ref=e573]:
+        - button "Manage cookies" [ref=e574] [cursor=pointer]
+      - listitem [ref=e575]:
+        - link "AI Disclaimer" [ref=e576] [cursor=pointer]:
+          - /url: https://learn.microsoft.com/en-us/principles-for-ai-generated-content
+      - listitem [ref=e577]:
+        - link "Previous Versions" [ref=e578] [cursor=pointer]:
+          - /url: https://learn.microsoft.com/en-us/previous-versions/
+      - listitem [ref=e579]:
+        - link "Blog" [ref=e580] [cursor=pointer]:
+          - /url: https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog
+      - listitem [ref=e581]:
+        - link "Contribute" [ref=e582] [cursor=pointer]:
+          - /url: https://learn.microsoft.com/en-us/contribute
+      - listitem [ref=e583]:
+        - link "Privacy" [ref=e584] [cursor=pointer]:
+          - /url: https://go.microsoft.com/fwlink/?LinkId=521839
+      - listitem [ref=e585]:
+        - link "Consumer Health Privacy" [ref=e586] [cursor=pointer]:
+          - /url: https://go.microsoft.com/fwlink/?linkid=2259814
+      - listitem [ref=e587]:
+        - link "Terms of Use" [ref=e588] [cursor=pointer]:
+          - /url: https://learn.microsoft.com/en-us/legal/termsofuse
+      - listitem [ref=e589]:
+        - link "Trademarks" [ref=e590] [cursor=pointer]:
+          - /url: https://www.microsoft.com/legal/intellectualproperty/Trademarks/
+      - listitem [ref=e591]: © Microsoft 2026

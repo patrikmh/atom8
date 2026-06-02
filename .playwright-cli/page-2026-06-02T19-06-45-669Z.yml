@@ -1,0 +1,400 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link "DuckDuckGo home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e9]: DuckDuckGo
+          - generic [ref=e15]:
+            - combobox "Sök privat" [ref=e17]: weather today
+            - button "search" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e25]:
+              - banner [ref=e26]:
+                - img [ref=e27]
+                - paragraph [ref=e28]: Uppgradera till vår webbläsare.
+              - generic [ref=e29]:
+                - generic [ref=e30]:
+                  - img [ref=e31]
+                  - generic [ref=e32]:
+                    - img [ref=e33]
+                    - img [ref=e34]
+                - paragraph [ref=e35]:
+                  - generic [ref=e36]:
+                    - text: Prova
+                    - strong [ref=e37]: DuckDuckGo-webbläsaren.
+                    - text: Snabb. Gratis. Privat.
+                - link "Ladda ner webbläsare" [ref=e38] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/mac?origin=funnel_browser_searchresults__popover
+                  - img [ref=e39]
+                  - generic [ref=e41]: Ladda ner webbläsare
+              - paragraph [ref=e44]:
+                - generic [ref=e45]: Gratis
+            - button [ref=e47] [cursor=pointer]:
+              - img [ref=e48]
+          - button "Öppna menyn" [ref=e50] [cursor=pointer]:
+            - generic [ref=e51]: Öppna menyn
+            - img [ref=e52]
+      - navigation [ref=e58]:
+        - list [ref=e59]:
+          - listitem [ref=e60]:
+            - link "Alla" [ref=e61] [cursor=pointer]:
+              - /url: /?q=weather+today&ia=web
+              - img [ref=e62]
+              - text: Alla
+          - listitem [ref=e64]:
+            - link "Bilder" [ref=e65] [cursor=pointer]:
+              - /url: /?q=weather+today&ia=images&iax=images
+          - listitem [ref=e66]:
+            - link "Videor" [ref=e67] [cursor=pointer]:
+              - /url: /?q=weather+today&ia=videos&iax=videos
+          - listitem [ref=e68]:
+            - link "Nyheter" [ref=e69] [cursor=pointer]:
+              - /url: /?q=weather+today&ia=news&iar=news
+          - listitem [ref=e70]:
+            - link "Kartor" [ref=e71] [cursor=pointer]:
+              - /url: /?q=weather+today&iaxm=maps
+          - listitem [ref=e72]:
+            - link "Shoppa" [ref=e73] [cursor=pointer]:
+              - /url: /?q=weather+today&ia=shopping&iax=shopping
+        - list [ref=e74]:
+          - listitem [ref=e75]:
+            - link "Duck.ai" [ref=e77] [cursor=pointer]:
+              - /url: /?q=weather+today&ia=chat
+              - img [ref=e78]
+              - text: Duck.ai
+          - listitem [ref=e81]:
+            - button "Sökinställningar ✀" [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+              - generic [ref=e86]: Sökinställningar
+              - generic [ref=e89]: ✀
+    - generic [ref=e94]:
+      - navigation [ref=e96]:
+        - generic [ref=e99] [cursor=pointer]:
+          - generic [ref=e107]: Skyddad
+          - img [ref=e108]: ▼
+        - generic [ref=e112] [cursor=pointer]:
+          - generic [ref=e115]:
+            - switch "✓" [ref=e116]: ✓
+            - generic [ref=e118]: Sverige
+          - img [ref=e119]: ▼
+        - generic [ref=e123] [cursor=pointer]:
+          - generic [ref=e124]: "Säker sökning: måttlig"
+          - img [ref=e125]: ▼
+        - generic [ref=e129] [cursor=pointer]:
+          - generic [ref=e130]: Alla tider
+          - img [ref=e131]: ▼
+      - list [ref=e135]:
+        - listitem [ref=e136]:
+          - article [ref=e138]:
+            - generic [ref=e139]:
+              - generic [ref=e140]:
+                - generic [ref=e143]: Väder för Göteborg, Sverige
+                - generic [ref=e145] [cursor=pointer]:
+                  - img [ref=e146]
+                  - text: Ändra plats
+              - button "more info" [ref=e152] [cursor=pointer]:
+                - img [ref=e153]
+            - generic [ref=e157]:
+              - generic [ref=e159]:
+                - generic [ref=e160]:
+                  - generic [ref=e161]:
+                    - generic [ref=e162] [cursor=pointer]: °C
+                    - generic [ref=e163] [cursor=pointer]: °F
+                  - paragraph [ref=e164]: Molnigt
+                  - paragraph [ref=e165]: Göteborg, Sverige
+                - generic [ref=e166]:
+                  - list [ref=e167]:
+                    - listitem [ref=e168]:
+                      - paragraph [ref=e169]: "21"
+                      - img "Cloudy" [ref=e170]
+                      - paragraph [ref=e171]: 19°
+                    - listitem [ref=e172]:
+                      - paragraph [ref=e173]: "00"
+                      - img "Cloudy" [ref=e174]
+                      - paragraph [ref=e175]: 17°
+                    - listitem [ref=e176]:
+                      - paragraph [ref=e177]: "03"
+                      - img "Cloudy" [ref=e178]
+                      - paragraph [ref=e179]: 15°
+                    - listitem [ref=e180]:
+                      - paragraph [ref=e181]: "06"
+                      - img "Cloudy" [ref=e182]
+                      - paragraph [ref=e183]: 14°
+                    - listitem [ref=e184]:
+                      - paragraph [ref=e185]: "09"
+                      - img "MostlyCloudy" [ref=e186]
+                      - paragraph [ref=e187]: 18°
+                    - listitem [ref=e188]:
+                      - paragraph [ref=e189]: "12"
+                      - img "Cloudy" [ref=e190]
+                      - paragraph [ref=e191]: 22°
+                    - listitem [ref=e192]:
+                      - paragraph [ref=e193]: "15"
+                      - img "Cloudy" [ref=e194]
+                      - generic [ref=e195]:
+                        - img "Cloudy"
+                        - generic [ref=e196]: 20%
+                      - paragraph [ref=e197]: 21°
+                    - listitem [ref=e198]:
+                      - paragraph [ref=e199]: "18"
+                      - img "Drizzle" [ref=e200]
+                      - generic [ref=e201]:
+                        - img "Drizzle"
+                        - generic [ref=e202]: 50%
+                      - paragraph [ref=e203]: 18°
+                  - generic [ref=e204]:
+                    - paragraph [ref=e205]:
+                      - text: "Fuktighet:"
+                      - strong [ref=e206]: 70%
+                    - paragraph [ref=e207]:
+                      - text: "Vind:"
+                      - strong [ref=e209]: 7 KM/TIM SO
+                - list [ref=e210]:
+                  - generic [ref=e211] [cursor=pointer]:
+                    - paragraph [ref=e212]: tis
+                    - img "Cloudy" [ref=e213]
+                    - paragraph [ref=e214]:
+                      - generic [ref=e215]: 19°
+                      - generic [ref=e216]: 12°
+                  - generic [ref=e217] [cursor=pointer]:
+                    - paragraph [ref=e218]: ons
+                    - img "Rain" [ref=e219]
+                    - generic [ref=e220]:
+                      - img "Rain"
+                      - generic [ref=e221]: 60%
+                    - paragraph [ref=e222]:
+                      - generic [ref=e223]: 23°
+                      - generic [ref=e224]: 14°
+                  - generic [ref=e225] [cursor=pointer]:
+                    - paragraph [ref=e226]: tors
+                    - img "Rain" [ref=e227]
+                    - generic [ref=e228]:
+                      - img "Rain"
+                      - generic [ref=e229]: 70%
+                    - paragraph [ref=e230]:
+                      - generic [ref=e231]: 18°
+                      - generic [ref=e232]: 14°
+                  - generic [ref=e233] [cursor=pointer]:
+                    - paragraph [ref=e234]: fre
+                    - img "Drizzle" [ref=e235]
+                    - generic [ref=e236]:
+                      - img "Drizzle"
+                      - generic [ref=e237]: 60%
+                    - paragraph [ref=e238]:
+                      - generic [ref=e239]: 18°
+                      - generic [ref=e240]: 13°
+                  - generic [ref=e241] [cursor=pointer]:
+                    - paragraph [ref=e242]: lör
+                    - img "PartlyCloudy" [ref=e243]
+                    - paragraph [ref=e244]:
+                      - generic [ref=e245]: 18°
+                      - generic [ref=e246]: 12°
+                  - generic [ref=e247] [cursor=pointer]:
+                    - paragraph [ref=e248]: sön
+                    - img "Drizzle" [ref=e249]
+                    - generic [ref=e250]:
+                      - img "Drizzle"
+                      - generic [ref=e251]: 30%
+                    - paragraph [ref=e252]:
+                      - generic [ref=e253]: 20°
+                      - generic [ref=e254]: 12°
+                  - generic [ref=e255] [cursor=pointer]:
+                    - paragraph [ref=e256]: mån
+                    - img "Cloudy" [ref=e257]
+                    - paragraph [ref=e258]:
+                      - generic [ref=e259]: 20°
+                      - generic [ref=e260]: 14°
+                  - generic [ref=e261] [cursor=pointer]:
+                    - paragraph [ref=e262]: tis
+                    - img "Rain" [ref=e263]
+                    - generic [ref=e264]:
+                      - img "Rain"
+                      - generic [ref=e265]: 50%
+                    - paragraph [ref=e266]:
+                      - generic [ref=e267]: 20°
+                      - generic [ref=e268]: 16°
+              - generic [ref=e269]:
+                - link "Din aktuella plats förblir privat" [ref=e271] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/duckduckgo-help-pages/privacy/anonymous-localized-results
+                - generic [ref=e272]:
+                  - text: •
+                  - generic [ref=e273]:
+                    - text: "Källa:"
+                    - link [ref=e274] [cursor=pointer]:
+                      - /url: https://developer.apple.com/weatherkit/data-source-attribution/
+                      - img [ref=e275]
+                - generic [ref=e278]:
+                  - text: •
+                  - generic [ref=e280]:
+                    - text: Var det här till hjälp?
+                    - button "Positive feedback" [ref=e281] [cursor=pointer]:
+                      - img [ref=e282]
+                    - button "Negative feedback" [ref=e285] [cursor=pointer]:
+                      - img [ref=e286]
+    - list [ref=e291]:
+      - button "Stäng menyn" [ref=e292] [cursor=pointer]:
+        - generic [ref=e293]: Stäng menyn
+        - img [ref=e294]
+      - list [ref=e296]:
+        - listitem [ref=e297]: Sök
+        - listitem [ref=e298]:
+          - link "Startsida" [ref=e299] [cursor=pointer]:
+            - /url: https://start.duckduckgo.com/
+        - listitem [ref=e300]:
+          - link "Teman" [ref=e301] [cursor=pointer]:
+            - /url: /settings#appearance
+        - listitem [ref=e302]:
+          - link "Inställningar" [ref=e303] [cursor=pointer]:
+            - /url: /settings
+      - list [ref=e304]:
+        - listitem [ref=e305]: Berätta vad du tycker
+        - listitem [ref=e306]:
+          - generic [ref=e309]:
+            - button "Positive feedback" [ref=e310] [cursor=pointer]:
+              - img [ref=e311]
+            - button "Negative feedback" [ref=e314] [cursor=pointer]:
+              - img [ref=e315]
+      - list [ref=e318]:
+        - listitem [ref=e319]: Nerladdningar
+        - listitem [ref=e320]:
+          - link "iOS-webbläsare" [ref=e321] [cursor=pointer]:
+            - /url: https://apps.apple.com/app/duckduckgo-private-browser/id663592361?platform=iphone&pt=866401&mt=8&ct=serp-atb-serp
+        - listitem [ref=e322]:
+          - link "Android-webbläsare" [ref=e323] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=utm_campaign%3Dserp-atb-serp%26origin%3Dfunnel_playstore_searchresults
+        - listitem [ref=e324]:
+          - link "Mac-webbläsare" [ref=e325] [cursor=pointer]:
+            - /url: /mac?origin=funnel_browser_searchresults
+        - listitem [ref=e326]:
+          - link "Windows-webbläsare" [ref=e327] [cursor=pointer]:
+            - /url: /windows?origin=funnel_browser_searchresults
+        - listitem [ref=e328]: Webbläsartillägg
+      - list [ref=e329]:
+        - listitem [ref=e330]: Mer från DuckDuckGo
+        - listitem [ref=e331]:
+          - generic [ref=e334]:
+            - button "Stäng kampanj" [ref=e335] [cursor=pointer]:
+              - img [ref=e336]
+            - generic [ref=e338]:
+              - paragraph [ref=e340]:
+                - img [ref=e341]
+                - text: Uppgradera till vår privata webbläsare
+              - paragraph [ref=e352]: Snabb. Säker. Fri.
+            - link "Installera webbläsaren för Mac" [ref=e353] [cursor=pointer]:
+              - /url: /mac
+              - img [ref=e354]
+              - text: Installera webbläsaren för Mac
+        - listitem [ref=e356]:
+          - link "DuckDuckGo Abonnemang" [ref=e357] [cursor=pointer]:
+            - /url: /pro?origin=funnel_pro_searchresults
+        - listitem [ref=e358]:
+          - link "Duck.ai" [ref=e359] [cursor=pointer]:
+            - /url: https://duck.ai
+        - listitem [ref=e360]:
+          - link "E-postskydd" [ref=e361] [cursor=pointer]:
+            - /url: /email
+        - listitem [ref=e362]:
+          - link "Nyhetsbrev" [ref=e363] [cursor=pointer]:
+            - /url: /newsletter
+        - listitem [ref=e364]:
+          - link "Blogg" [ref=e365] [cursor=pointer]:
+            - /url: /blog
+        - listitem [ref=e366]:
+          - link "Podcast" [ref=e367] [cursor=pointer]:
+            - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+        - listitem [ref=e368]:
+          - link "Samarbeten" [ref=e369] [cursor=pointer]:
+            - /url: /collaborations
+      - list [ref=e370]:
+        - listitem [ref=e371]: Läs mer
+        - listitem [ref=e372]:
+          - link "Vad är nytt?" [ref=e373] [cursor=pointer]:
+            - /url: /updates
+        - listitem [ref=e374]:
+          - link "Jämför integritet" [ref=e375] [cursor=pointer]:
+            - /url: /compare-privacy
+        - listitem [ref=e376]:
+          - link "Om vår webbläsare" [ref=e377] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=e378]:
+          - link "Om DuckDuckGo" [ref=e379] [cursor=pointer]:
+            - /url: /about
+      - list [ref=e380]:
+        - listitem [ref=e381]: Övriga resurser
+        - listitem [ref=e382]:
+          - link "Hjälp" [ref=e383] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages
+        - listitem [ref=e384]:
+          - link "Organisation" [ref=e385] [cursor=pointer]:
+            - /url: https://www.reddit.com/r/duckduckgo/
+        - listitem [ref=e386]:
+          - link "Jobb" [ref=e387] [cursor=pointer]:
+            - /url: /careers
+        - listitem [ref=e388]:
+          - link "Integritetspolicy" [ref=e389] [cursor=pointer]:
+            - /url: /privacy
+        - listitem [ref=e390]:
+          - link "Användarvillkor" [ref=e391] [cursor=pointer]:
+            - /url: /terms
+        - listitem [ref=e392]:
+          - link "Mediekit" [ref=e393] [cursor=pointer]:
+            - /url: /press
+        - listitem [ref=e394]:
+          - link "Annonsera på söksidan" [ref=e395] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages/company/advertise-on-duckduckgo-search
+  - generic [ref=e399]:
+    - generic [ref=e401]:
+      - img [ref=e402]
+      - generic [ref=e418]:
+        - heading "Hämta vår webbläsare för Mac" [level=3] [ref=e419]
+        - paragraph [ref=e420]: Skydda dina data när du söker, surfar och använder AI.
+      - link "Nedladdning" [ref=e421] [cursor=pointer]:
+        - /url: https://duckduckgo.com/mac?origin=funnel_browser_searchresults__footercard
+        - img [ref=e422]
+        - text: Nedladdning
+    - generic [ref=e425]:
+      - generic [ref=e426]:
+        - heading "Läs mer" [level=3] [ref=e427]
+        - list [ref=e428]:
+          - listitem [ref=e429]:
+            - link "Vad är nytt?" [ref=e430] [cursor=pointer]:
+              - /url: https://duckduckgo.com/updates
+          - listitem [ref=e431]:
+            - link "Om webbläsaren" [ref=e432] [cursor=pointer]:
+              - /url: https://duckduckgo.com/app
+          - listitem [ref=e433]:
+            - link "Jämför integritet" [ref=e434] [cursor=pointer]:
+              - /url: https://duckduckgo.com/compare-privacy
+          - listitem [ref=e435]:
+            - link "Hjälpsidor" [ref=e436] [cursor=pointer]:
+              - /url: https://duckduckgo.com/duckduckgo-help-pages/
+      - generic [ref=e437]:
+        - heading "Få mer" [level=3] [ref=e438]
+        - list [ref=e439]:
+          - listitem [ref=e440]:
+            - link "Abonnemang" [ref=e441] [cursor=pointer]:
+              - /url: https://duckduckgo.com/pro
+          - listitem [ref=e442]:
+            - link "E-postskydd" [ref=e443] [cursor=pointer]:
+              - /url: https://duckduckgo.com/email
+          - listitem [ref=e444]:
+            - generic [ref=e445]:
+              - link "Podcast" [ref=e447] [cursor=pointer]:
+                - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+              - generic [ref=e448]:
+                - text: "&"
+                - link "Nyhetsbrev" [ref=e449] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/newsletter
+          - listitem [ref=e450]:
+            - link "Samarbeten" [ref=e451] [cursor=pointer]:
+              - /url: https://duckduckgo.com/collaborations
+  - generic [ref=e454]:
+    - generic [ref=e455]: Tyvärr använder bottar också DuckDuckGo.
+    - generic [ref=e456]: Lös följande utmaning för att bekräfta att sökningen görs av en människa.
+    - generic [ref=e457]: "Välj alla rutor som innehåller en anka:"
+    - button "Skicka" [ref=e479] [cursor=pointer]
+  - button "Berätta vad du tycker" [ref=e483] [cursor=pointer]

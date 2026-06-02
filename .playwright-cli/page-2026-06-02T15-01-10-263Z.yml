@@ -1,0 +1,64 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - link "Mojeek" [ref=e6] [cursor=pointer]:
+        - /url: https://www.mojeek.com
+        - img "Mojeek" [ref=e7]
+      - generic [ref=e10]:
+        - textbox "Search The Web using Mojeek..." [ref=e11]: agui javascript framework
+        - button [ref=e12] [cursor=pointer]
+        - link "Mojeek User Survey" [ref=e14] [cursor=pointer]:
+          - /url: https://blocksurvey.io/mojeek-stub-survey-short-2024-28uiW3RZSli2OP1LpLPu6Q
+      - button "Menu":
+        - generic "Menu" [ref=e15] [cursor=pointer]
+    - generic [ref=e18]:
+      - list [ref=e20]:
+        - listitem [ref=e21]:
+          - link "Web" [ref=e22] [cursor=pointer]:
+            - /url: /search?q=agui+javascript+framework
+        - listitem [ref=e23]:
+          - link "Summary" [ref=e24] [cursor=pointer]:
+            - /url: https://www.mojeek.com/search?q=agui+javascript+framework&fmt=summary
+        - listitem [ref=e25]:
+          - link "Images" [ref=e26] [cursor=pointer]:
+            - /url: https://www.mojeek.com/search?q=agui+javascript+framework&fmt=images
+        - listitem [ref=e27]:
+          - link "News" [ref=e28] [cursor=pointer]:
+            - /url: https://www.mojeek.com/search?q=agui+javascript+framework&fmt=news
+      - list [ref=e30]:
+        - listitem [ref=e31]:
+          - generic "Region" [ref=e32] [cursor=pointer]
+        - listitem [ref=e33]:
+          - generic "Settings" [ref=e34] [cursor=pointer]
+    - generic [ref=e35]:
+      - paragraph [ref=e37]:
+        - strong [ref=e38]: Warning
+        - text: ": Mojeek is currently experiencing technical difficulties, please try again later."
+      - generic [ref=e39]:
+        - paragraph [ref=e40]: "Try:"
+        - list [ref=e41]:
+          - listitem [ref=e42]:
+            - link "your search again" [ref=e43] [cursor=pointer]:
+              - /url: https://www.mojeek.com/search?q=agui+javascript+framework
+          - listitem [ref=e44]:
+            - link "a different search" [ref=e45] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e46]:
+            - link "or contact us if you have any questions" [ref=e47] [cursor=pointer]:
+              - /url: /about/contact
+        - generic [ref=e48]:
+          - paragraph [ref=e49]: "Try elsewhere:"
+          - link "Brave" [ref=e50] [cursor=pointer]:
+            - /url: /search?q=agui+javascript+framework&sc=Brave
+          - link "Ecosia" [ref=e51] [cursor=pointer]:
+            - /url: /search?q=agui+javascript+framework&sc=Ecosia
+          - link "Startpage" [ref=e52] [cursor=pointer]:
+            - /url: /search?q=agui+javascript+framework&sc=Startpage
+          - link [ref=e53] [cursor=pointer]:
+            - /url: /preferences#choices
+            - img [ref=e54]
+    - link "Submit feedback" [ref=e58] [cursor=pointer]:
+      - /url: /about/contact?q=agui+javascript+framework
+  - generic [ref=e61]:
+    - textbox [ref=e62]: agui javascript framework
+    - button [ref=e63] [cursor=pointer]

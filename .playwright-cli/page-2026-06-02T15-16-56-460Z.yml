@@ -1,0 +1,475 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: https://a2ui.org/ecosystem/renderers/#ecosystem-renderers
+  - banner [ref=e3]:
+    - navigation "Header" [ref=e4]:
+      - link "A2UI" [ref=e5] [cursor=pointer]:
+        - /url: https://a2ui.org/
+        - img "logo" [ref=e6]
+      - generic [ref=e8]:
+        - generic [ref=e10]: A2UI
+        - generic:
+          - generic: Community Renderers
+      - generic [ref=e11]:
+        - radio "Switch to dark mode"
+        - generic "Switch to dark mode" [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+        - radio "Switch to light mode"
+      - dialog [ref=e15]:
+        - search [ref=e16]:
+          - generic [ref=e17]:
+            - textbox "Search" [ref=e18]
+            - generic:
+              - img
+            - navigation "Search":
+              - button "Clear":
+                - img
+          - generic [ref=e20]: Type to start searching
+      - link "google/A2UI" [ref=e22] [cursor=pointer]:
+        - /url: https://github.com/google/A2UI
+        - img [ref=e24]
+        - generic [ref=e26]: google/A2UI
+  - generic [ref=e27]:
+    - main [ref=e28]:
+      - generic [ref=e29]:
+        - navigation "Navigation" [ref=e33]:
+          - generic [ref=e34]: A2UI
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "Home" [ref=e37] [cursor=pointer]:
+                - /url: https://a2ui.org/
+                - generic [ref=e38]: Home
+            - listitem [ref=e39]:
+              - generic [ref=e41]: Introduction & FAQ
+            - listitem [ref=e43]:
+              - link "Quickstart" [ref=e44] [cursor=pointer]:
+                - /url: https://a2ui.org/quickstart/
+                - generic [ref=e45]: Quickstart
+            - listitem [ref=e46]:
+              - link "A2UI Composer ⭐" [ref=e47] [cursor=pointer]:
+                - /url: https://a2ui.org/composer/
+                - generic [ref=e48]: A2UI Composer ⭐
+            - listitem [ref=e49]:
+              - generic [ref=e51]: Concepts
+            - listitem [ref=e53]:
+              - generic [ref=e55]: Guides
+            - listitem [ref=e57]:
+              - generic [ref=e59]: Reference
+            - listitem [ref=e61]:
+              - generic [ref=e63]: Specifications
+            - listitem [ref=e65]:
+              - generic [ref=e67]: Ecosystem
+              - navigation "Ecosystem" [ref=e69]:
+                - list [ref=e70]:
+                  - listitem [ref=e71]:
+                    - link "A2UI in the World" [ref=e72] [cursor=pointer]:
+                      - /url: https://a2ui.org/ecosystem/a2ui-in-the-world/
+                      - generic [ref=e73]: A2UI in the World
+                  - listitem [ref=e74]:
+                    - link "Community Renderers" [ref=e75] [cursor=pointer]:
+                      - /url: https://a2ui.org/ecosystem/renderers/
+                      - generic [ref=e76]: Community Renderers
+                  - listitem [ref=e77]:
+                    - link "Community" [ref=e78] [cursor=pointer]:
+                      - /url: https://a2ui.org/ecosystem/community/
+                      - generic [ref=e79]: Community
+            - listitem [ref=e80]:
+              - link "Roadmap" [ref=e81] [cursor=pointer]:
+                - /url: https://a2ui.org/roadmap/
+                - generic [ref=e82]: Roadmap
+        - navigation "Table of contents" [ref=e86]:
+          - generic [ref=e87]: Table of contents
+          - list [ref=e88]:
+            - listitem [ref=e89]:
+              - link "Community Renderers" [ref=e90] [cursor=pointer]:
+                - /url: https://a2ui.org/ecosystem/renderers/#community-renderers
+                - generic [ref=e91]: Community Renderers
+              - navigation "Community Renderers" [ref=e92]:
+                - list [ref=e93]:
+                  - listitem [ref=e94]:
+                    - link "Notable Mentions" [ref=e95] [cursor=pointer]:
+                      - /url: https://a2ui.org/ecosystem/renderers/#notable-mentions
+                      - generic [ref=e96]: Notable Mentions
+                  - listitem [ref=e97]:
+                    - link "Related Projects" [ref=e98] [cursor=pointer]:
+                      - /url: https://a2ui.org/ecosystem/renderers/#related-projects
+                      - generic [ref=e99]: Related Projects
+                  - listitem [ref=e100]:
+                    - link "Ecosystem Utilities" [ref=e101] [cursor=pointer]:
+                      - /url: https://a2ui.org/ecosystem/renderers/#ecosystem-utilities
+                      - generic [ref=e102]: Ecosystem Utilities
+                  - listitem [ref=e103]:
+                    - link "Highlights" [ref=e104] [cursor=pointer]:
+                      - /url: https://a2ui.org/ecosystem/renderers/#highlights
+                      - generic [ref=e105]: Highlights
+            - listitem [ref=e106]:
+              - link "Submitting a Renderer" [ref=e107] [cursor=pointer]:
+                - /url: https://a2ui.org/ecosystem/renderers/#submitting-a-renderer
+                - generic [ref=e108]: Submitting a Renderer
+              - navigation "Submitting a Renderer" [ref=e109]:
+                - list [ref=e110]:
+                  - listitem [ref=e111]:
+                    - link "How to submit" [ref=e112] [cursor=pointer]:
+                      - /url: https://a2ui.org/ecosystem/renderers/#how-to-submit
+                      - generic [ref=e113]: How to submit
+                  - listitem [ref=e114]:
+                    - link "What makes a good community renderer?" [ref=e115] [cursor=pointer]:
+                      - /url: https://a2ui.org/ecosystem/renderers/#what-makes-a-good-community-renderer
+                      - generic [ref=e116]: What makes a good community renderer?
+        - generic [ref=e117]:
+          - navigation "Navigation" [ref=e118]:
+            - list [ref=e119]:
+              - listitem [ref=e120]:
+                - link "Home" [ref=e121] [cursor=pointer]:
+                  - /url: https://a2ui.org/
+                  - generic [ref=e122]: Home
+              - listitem [ref=e123]:
+                - link "Ecosystem" [ref=e124] [cursor=pointer]:
+                  - /url: https://a2ui.org/ecosystem/a2ui-in-the-world/
+                  - generic [ref=e125]: Ecosystem
+          - article [ref=e126]:
+            - link "View source of this page" [ref=e127] [cursor=pointer]:
+              - /url: https://github.com/google/A2UI/raw/main/docs/ecosystem/renderers.md
+              - img [ref=e128]
+            - heading "Ecosystem Renderers ¶" [level=1] [ref=e130]:
+              - text: Ecosystem Renderers
+              - link "¶" [ref=e131] [cursor=pointer]:
+                - /url: https://a2ui.org/ecosystem/renderers/#ecosystem-renderers
+            - paragraph [ref=e132]: Community and third-party A2UI renderer implementations.
+            - blockquote [ref=e133]:
+              - paragraph [ref=e134]: NOTE These renderers are maintained by their respective authors, not the A2UI team. Check each project for compatibility, version support, and maintenance status.
+              - paragraph [ref=e135]:
+                - text: TIP Looking for the
+                - strong [ref=e136]: official
+                - text: A2UI React renderer? See
+                - link "@a2ui/react" [ref=e137] [cursor=pointer]:
+                  - /url: https://www.npmjs.com/package/@a2ui/react
+                  - code [ref=e138]: "@a2ui/react"
+                - text: — the core A2UI React renderer maintained by the A2UI team.
+            - heading "Community Renderers ¶" [level=2] [ref=e139]:
+              - text: Community Renderers
+              - link "¶" [ref=e140] [cursor=pointer]:
+                - /url: https://a2ui.org/ecosystem/renderers/#community-renderers
+            - table [ref=e143]:
+              - rowgroup [ref=e144]:
+                - row "Renderer Platform v0.8 v0.9 Activity Links" [ref=e145]:
+                  - columnheader "Renderer" [ref=e146]
+                  - columnheader "Platform" [ref=e147]
+                  - columnheader "v0.8" [ref=e148]
+                  - columnheader "v0.9" [ref=e149]
+                  - columnheader "Activity" [ref=e150]
+                  - columnheader "Links" [ref=e151]
+              - rowgroup [ref=e152]:
+                - row "easyops-cn/a2ui-sdk (@a2ui-sdk/react) React (Web) ✅ ❌ Stars Last commit GitHub · npm · Docs" [ref=e153]:
+                  - cell "easyops-cn/a2ui-sdk (@a2ui-sdk/react)" [ref=e154]:
+                    - strong [ref=e155]: easyops-cn/a2ui-sdk
+                    - text: (
+                    - code [ref=e156]: "@a2ui-sdk/react"
+                    - text: )
+                  - cell "React (Web)" [ref=e157]
+                  - cell "✅" [ref=e158]
+                  - cell "❌" [ref=e159]
+                  - cell "Stars Last commit" [ref=e160]:
+                    - img "Stars" [ref=e161]
+                    - img "Last commit" [ref=e162]
+                  - cell "GitHub · npm · Docs" [ref=e163]:
+                    - link "GitHub" [ref=e164] [cursor=pointer]:
+                      - /url: https://github.com/easyops-cn/a2ui-sdk
+                    - text: ·
+                    - link "npm" [ref=e165] [cursor=pointer]:
+                      - /url: https://www.npmjs.com/package/@a2ui-sdk/react
+                    - text: ·
+                    - link "Docs" [ref=e166] [cursor=pointer]:
+                      - /url: https://a2ui-sdk.js.org/
+                - row "lmee/A2UI-Android Android (Compose) ✅ ❌ Stars Last commit GitHub" [ref=e167]:
+                  - cell "lmee/A2UI-Android" [ref=e168]:
+                    - strong [ref=e169]: lmee/A2UI-Android
+                  - cell "Android (Compose)" [ref=e170]
+                  - cell "✅" [ref=e171]
+                  - cell "❌" [ref=e172]
+                  - cell "Stars Last commit" [ref=e173]:
+                    - img "Stars" [ref=e174]
+                    - img "Last commit" [ref=e175]
+                  - cell "GitHub" [ref=e176]:
+                    - link "GitHub" [ref=e177] [cursor=pointer]:
+                      - /url: https://github.com/lmee/A2UI-Android
+                - row "sivamrudram-eng/a2ui-react-native React Native ✅ ❌ Stars Last commit GitHub" [ref=e178]:
+                  - cell "sivamrudram-eng/a2ui-react-native" [ref=e179]:
+                    - strong [ref=e180]: sivamrudram-eng/a2ui-react-native
+                  - cell "React Native" [ref=e181]
+                  - cell "✅" [ref=e182]
+                  - cell "❌" [ref=e183]
+                  - cell "Stars Last commit" [ref=e184]:
+                    - img "Stars" [ref=e185]
+                    - img "Last commit" [ref=e186]
+                  - cell "GitHub" [ref=e187]:
+                    - link "GitHub" [ref=e188] [cursor=pointer]:
+                      - /url: https://github.com/sivamrudram-eng/a2ui-react-native
+                - row "zhama/a2ui React (Web) ✅ ❌ — npm" [ref=e189]:
+                  - cell "zhama/a2ui" [ref=e190]:
+                    - strong [ref=e191]: zhama/a2ui
+                  - cell "React (Web)" [ref=e192]
+                  - cell "✅" [ref=e193]
+                  - cell "❌" [ref=e194]
+                  - cell "—" [ref=e195]
+                  - cell "npm" [ref=e196]:
+                    - link "npm" [ref=e197] [cursor=pointer]:
+                      - /url: https://www.npmjs.com/package/@zhama/a2ui
+                - row "jem-computer/A2UI-react React (Web) ✅ ❌ Stars Last commit GitHub" [ref=e198]:
+                  - cell "jem-computer/A2UI-react" [ref=e199]:
+                    - strong [ref=e200]: jem-computer/A2UI-react
+                  - cell "React (Web)" [ref=e201]
+                  - cell "✅" [ref=e202]
+                  - cell "❌" [ref=e203]
+                  - cell "Stars Last commit" [ref=e204]:
+                    - img "Stars" [ref=e205]
+                    - img "Last commit" [ref=e206]
+                  - cell "GitHub" [ref=e207]:
+                    - link "GitHub" [ref=e208] [cursor=pointer]:
+                      - /url: https://github.com/jem-computer/A2UI-react
+                - row "BBC6BAE9/a2ui-swift Apple (iOS, iPadOS, macOS, tvOS, watchOS, visionOS) ✅ ✅ Stars Last commit GitHub" [ref=e209]:
+                  - cell "BBC6BAE9/a2ui-swift" [ref=e210]:
+                    - strong [ref=e211]: BBC6BAE9/a2ui-swift
+                  - cell "Apple (iOS, iPadOS, macOS, tvOS, watchOS, visionOS)" [ref=e212]
+                  - cell "✅" [ref=e213]
+                  - cell "✅" [ref=e214]
+                  - cell "Stars Last commit" [ref=e215]:
+                    - img "Stars" [ref=e216]
+                    - img "Last commit" [ref=e217]
+                  - cell "GitHub" [ref=e218]:
+                    - link "GitHub" [ref=e219] [cursor=pointer]:
+                      - /url: https://github.com/BBC6BAE9/a2ui-swift
+                - row "TanXudong-Vivo/A2UI-Android-Renderer Android (Jetpack Compose) ❌ ✅ Stars Last commit GitHub" [ref=e220]:
+                  - cell "TanXudong-Vivo/A2UI-Android-Renderer" [ref=e221]:
+                    - strong [ref=e222]: TanXudong-Vivo/A2UI-Android-Renderer
+                  - cell "Android (Jetpack Compose)" [ref=e223]
+                  - cell "❌" [ref=e224]
+                  - cell "✅" [ref=e225]
+                  - cell "Stars Last commit" [ref=e226]:
+                    - img "Stars" [ref=e227]
+                    - img "Last commit" [ref=e228]
+                  - cell "GitHub" [ref=e229]:
+                    - link "GitHub" [ref=e230] [cursor=pointer]:
+                      - /url: https://github.com/TanXudong-Vivo/A2UI-Android-Renderer
+                - row "a2ui-vue Vue (Web) ✅ ✅ Stars Last commit GitHub · npm · Docs" [ref=e231]:
+                  - cell "a2ui-vue" [ref=e232]:
+                    - strong [ref=e233]: a2ui-vue
+                  - cell "Vue (Web)" [ref=e234]
+                  - cell "✅" [ref=e235]
+                  - cell "✅" [ref=e236]
+                  - cell "Stars Last commit" [ref=e237]:
+                    - img "Stars" [ref=e238]
+                    - img "Last commit" [ref=e239]
+                  - cell "GitHub · npm · Docs" [ref=e240]:
+                    - link "GitHub" [ref=e241] [cursor=pointer]:
+                      - /url: https://github.com/shawnwang15/a2ui-vue
+                    - text: ·
+                    - link "npm" [ref=e242] [cursor=pointer]:
+                      - /url: https://www.npmjs.com/package/a2ui-vue
+                    - text: ·
+                    - link "Docs" [ref=e243] [cursor=pointer]:
+                      - /url: https://shawnwang15.github.io/a2ui-vue/en/
+            - heading "Notable Mentions ¶" [level=3] [ref=e244]:
+              - text: Notable Mentions
+              - link "¶" [ref=e245] [cursor=pointer]:
+                - /url: https://a2ui.org/ecosystem/renderers/#notable-mentions
+            - paragraph [ref=e246]: "These projects are early-stage or experimental:"
+            - list [ref=e247]:
+              - listitem [ref=e248]:
+                - strong [ref=e249]:
+                  - link "xpert-ai/a2ui-react" [ref=e250] [cursor=pointer]:
+                    - /url: https://www.npmjs.com/package/@xpert-ai/a2ui-react
+                - text: (
+                - code [ref=e251]: "@xpert-ai/a2ui-react"
+                - text: ) — React renderer with ShadCN UI components (v0.0.1, published Jan 2026).
+              - listitem [ref=e252]:
+                - strong [ref=e253]:
+                  - link "josh-english-2k18/a2ui-3d-renderer" [ref=e254] [cursor=pointer]:
+                    - /url: https://github.com/josh-english-2k18/a2ui-3d-renderer
+                - text: — Experimental Three.js/WebGL 3D renderer for A2UI (~2 stars).
+              - listitem [ref=e255]:
+                - strong [ref=e256]:
+                  - link "AINative-Studio/ai-kit-a2ui" [ref=e257] [cursor=pointer]:
+                    - /url: https://github.com/AINative-Studio/ai-kit-a2ui
+                - text: — React + ShadCN renderer for the AIKit framework (~2 stars).
+            - heading "Related Projects ¶" [level=3] [ref=e258]:
+              - text: Related Projects
+              - link "¶" [ref=e259] [cursor=pointer]:
+                - /url: https://a2ui.org/ecosystem/renderers/#related-projects
+            - paragraph [ref=e260]: "These projects are not directly A2UI renderers but are closely related and do support A2UI:"
+            - table [ref=e263]:
+              - rowgroup [ref=e264]:
+                - row "Project Platform Description Links" [ref=e265]:
+                  - columnheader "Project" [ref=e266]
+                  - columnheader "Platform" [ref=e267]
+                  - columnheader "Description" [ref=e268]
+                  - columnheader "Links" [ref=e269]
+              - rowgroup [ref=e270]:
+                - row "vercel-labs/json-render (@json-render/*) React, Vue, Svelte, Solid, React Native Generative UI framework by Vercel — uses its own JSON schema (not A2UI protocol) with Zod-based component catalogs. Supports streaming, 36 pre-built shadcn/ui components, and cross-platform rendering. GitHub · npm · Docs" [ref=e271]:
+                  - cell "vercel-labs/json-render (@json-render/*)" [ref=e272]:
+                    - strong [ref=e273]: vercel-labs/json-render
+                    - text: (
+                    - code [ref=e274]: "@json-render/*"
+                    - text: )
+                  - cell "React, Vue, Svelte, Solid, React Native" [ref=e275]
+                  - cell "Generative UI framework by Vercel — uses its own JSON schema (not A2UI protocol) with Zod-based component catalogs. Supports streaming, 36 pre-built shadcn/ui components, and cross-platform rendering." [ref=e276]
+                  - cell "GitHub · npm · Docs" [ref=e277]:
+                    - link "GitHub" [ref=e278] [cursor=pointer]:
+                      - /url: https://github.com/vercel-labs/json-render
+                    - text: ·
+                    - link "npm" [ref=e279] [cursor=pointer]:
+                      - /url: https://www.npmjs.com/package/@json-render/core
+                    - text: ·
+                    - link "Docs" [ref=e280] [cursor=pointer]:
+                      - /url: https://json-render.dev/
+            - heading "Ecosystem Utilities ¶" [level=3] [ref=e281]:
+              - text: Ecosystem Utilities
+              - link "¶" [ref=e282] [cursor=pointer]:
+                - /url: https://a2ui.org/ecosystem/renderers/#ecosystem-utilities
+            - list [ref=e283]:
+              - listitem [ref=e284]:
+                - strong [ref=e285]:
+                  - link "@a2ui/markdown-it" [ref=e286] [cursor=pointer]:
+                    - /url: https://www.npmjs.com/package/@a2ui/markdown-it
+                - text: — Enables markdown rendering in the Text widgets of all renderers.
+            - heading "Highlights ¶" [level=3] [ref=e287]:
+              - text: Highlights
+              - link "¶" [ref=e288] [cursor=pointer]:
+                - /url: https://a2ui.org/ecosystem/renderers/#highlights
+            - paragraph [ref=e289]:
+              - strong [ref=e290]: easyops-cn/a2ui-sdk
+              - text: (
+              - code [ref=e291]: "@a2ui-sdk/react"
+              - text: ) is the most fully-featured community React renderer, with 11 published versions, Radix UI primitives, Tailwind CSS styling, and a dedicated docs site. It was
+              - link "announced on the A2UI discussions" [ref=e292] [cursor=pointer]:
+                - /url: https://github.com/google/A2UI/discussions/489
+              - text: . For the official A2UI React renderer, see
+              - link "@a2ui/react" [ref=e293] [cursor=pointer]:
+                - /url: https://www.npmjs.com/package/@a2ui/react
+                - code [ref=e294]: "@a2ui/react"
+              - text: .
+            - paragraph [ref=e295]:
+              - strong [ref=e296]: lmee/A2UI-Android
+              - text: fills an important gap — it's currently the only Jetpack Compose renderer, covering Android 5.0+ with 20+ components, data binding, and accessibility support.
+            - paragraph [ref=e297]:
+              - strong [ref=e298]: sivamrudram-eng/a2ui-react-native
+              - text: is the only React Native renderer, enabling A2UI on iOS and Android via a single codebase.
+            - paragraph [ref=e299]:
+              - strong [ref=e300]: BBC6BAE9/a2ui-swift
+              - text: (formerly
+              - strong [ref=e301]: a2ui-swiftui
+              - text: ) is a native SwiftUI renderer supporting iOS, macOS, visionOS, watchOS, and tvOS. It covers all 18 basic A2UI components with dual v0.8 + v0.9 protocol support, includes JSONL streaming, and uses the Observation framework for reactivity.
+            - paragraph [ref=e302]:
+              - strong [ref=e303]: TanXudong-Vivo/A2UI-Android-Renderer
+              - text: is a modular Android renderer built with Jetpack Compose and Material 3, and is the first Android implementation to support the A2UI v0.9 protocol. It covers 13 fully implemented components (including Image loading via Coil), streaming rendering from LLM token streams, data binding with
+              - code [ref=e304]: path
+              - text: expressions and
+              - code [ref=e305]: formatDate
+              - text: ", and a pluggable Custom Catalog for registering additional component types. The demo app includes a live connection to the official"
+              - code [ref=e306]: restaurant_finder
+              - text: ADK agent.
+            - heading "Submitting a Renderer ¶" [level=2] [ref=e307]:
+              - text: Submitting a Renderer
+              - link "¶" [ref=e308] [cursor=pointer]:
+                - /url: https://a2ui.org/ecosystem/renderers/#submitting-a-renderer
+            - paragraph [ref=e309]: If you have built an A2UI renderer, submit it to be listed here.
+            - heading "How to submit ¶" [level=3] [ref=e310]:
+              - text: How to submit
+              - link "¶" [ref=e311] [cursor=pointer]:
+                - /url: https://a2ui.org/ecosystem/renderers/#how-to-submit
+            - paragraph [ref=e312]: "To submit a renderer, follow these steps:"
+            - list [ref=e313]:
+              - listitem [ref=e314]:
+                - strong [ref=e315]: Fork
+                - text: the
+                - link "google/A2UI" [ref=e316] [cursor=pointer]:
+                  - /url: https://github.com/google/A2UI
+                - text: repository
+              - listitem [ref=e317]:
+                - strong [ref=e318]: Edit
+                - text: this file (
+                - code [ref=e319]: docs/ecosystem/renderers.md
+                - text: ) — add a row to the Community Renderers table with your renderer's name, platform, npm package (if any), version support, and a link to the source
+              - listitem [ref=e320]:
+                - strong [ref=e321]: Open a PR
+                - text: against
+                - code [ref=e322]: google/A2UI
+                - text: with a short description of your renderer
+              - listitem [ref=e323]:
+                - strong [ref=e324]:
+                  - text: Post in
+                  - link "GitHub Discussions" [ref=e325] [cursor=pointer]:
+                    - /url: https://github.com/google/A2UI/discussions
+                - text: — let the community know what you built! A short demo video goes a long way.
+            - paragraph [ref=e326]:
+              - text: Need inspiration? Browse the
+              - strong [ref=e327]:
+                - link "community samples" [ref=e328] [cursor=pointer]:
+                  - /url: https://github.com/google/A2UI/tree/main/samples
+              - text: in the repo — these cover Angular, Lit, and ADK-based agents and are a good starting point.
+            - heading "What makes a good community renderer? ¶" [level=3] [ref=e329]:
+              - text: What makes a good community renderer?
+              - link "¶" [ref=e330] [cursor=pointer]:
+                - /url: https://a2ui.org/ecosystem/renderers/#what-makes-a-good-community-renderer
+            - paragraph [ref=e331]: "A listing is more likely to be accepted and used if it meets the following criteria:"
+            - list [ref=e332]:
+              - listitem [ref=e333]:
+                - text: Has
+                - strong [ref=e334]: published source code
+                - text: (open-source preferred, MIT or Apache 2.0).
+              - listitem [ref=e335]:
+                - text: Clearly states
+                - strong [ref=e336]: which A2UI spec version
+                - text: it supports (v0.8, v0.9, or both).
+              - listitem [ref=e337]:
+                - text: Covers the
+                - strong [ref=e338]: basic components
+                - text: "from the other A2UI renderers: text, buttons, inputs, basic layout components, etc."
+              - listitem [ref=e339]:
+                - text: Includes a
+                - strong [ref=e340]: README
+                - text: with install instructions and a minimal usage example.
+              - listitem [ref=e341]:
+                - text: Is
+                - strong [ref=e342]: actively maintained
+                - text: — flag it as archived if you're no longer supporting it.
+            - paragraph [ref=e343]: Community renderers don't need to be production-ready to be listed — experimental and early-stage projects are welcome in the Notable Mentions section.
+      - button "Back to top":
+        - img
+        - text: Back to top
+    - contentinfo [ref=e344]:
+      - navigation "Footer" [ref=e345]:
+        - 'link "Previous: A2UI in the World" [ref=e346] [cursor=pointer]':
+          - /url: https://a2ui.org/ecosystem/a2ui-in-the-world/
+          - img [ref=e348]
+          - generic [ref=e350]:
+            - text: Previous
+            - generic [ref=e351]: A2UI in the World
+        - 'link "Next: Community" [ref=e352] [cursor=pointer]':
+          - /url: https://a2ui.org/ecosystem/community/
+          - generic [ref=e353]:
+            - text: Next
+            - generic [ref=e354]: Community
+          - img [ref=e356]
+      - generic [ref=e360]:
+        - generic [ref=e361]:
+          - text: Copyright Google 2025 |
+          - link "Terms" [ref=e362] [cursor=pointer]:
+            - /url: //policies.google.com/terms
+          - text: "|"
+          - link "Privacy" [ref=e363] [cursor=pointer]:
+            - /url: //policies.google.com/privacy
+          - text: "|"
+          - link "Manage cookies" [ref=e364] [cursor=pointer]:
+            - /url: https://a2ui.org/ecosystem/renderers/#__consent
+        - text: Made with
+        - link "Material for MkDocs" [ref=e365] [cursor=pointer]:
+          - /url: https://squidfunk.github.io/mkdocs-material/
+  - progressbar
+  - complementary [ref=e367]:
+    - generic [ref=e368]:
+      - heading "Cookie consent" [level=4] [ref=e369]
+      - paragraph [ref=e370]: We use cookies to recognize repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find the information they need. With your consent, you're helping us to make our documentation better.
+      - generic [ref=e371]:
+        - button "Accept" [ref=e372] [cursor=pointer]
+        - text: Manage settings

@@ -1,0 +1,6 @@
+[      88ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ about:blank:0
+[      90ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ about:blank:0
+[     101ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ about:blank:0
+[     350ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://id.aftonbladet.se/v2/session?client_sdrn=sdrn%3Aschibsted.com%3Aclient%3A5e4e6b8dba2d9d68e7f1ccdc&redirect_uri=https%3A%2F%2Fwww.aftonbladet.se%2Fcallback&sdk_version=5.2.7&tabId=79548:0
+[     378ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://session-service.login.schibsted.com/user-context?client_sdrn=sdrn%3Aschibsted.com%3Aclient%3A5e4e6b8dba2d9d68e7f1ccdc&sdk_version=5.2.7:0
+[     424ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://session-service.login.schibsted.com/user-context?client_sdrn=sdrn%3Aschibsted.com%3Aclient%3A5e4e6b8dba2d9d68e7f1ccdc&sdk_version=5.2.7:0

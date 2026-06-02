@@ -1,0 +1,1059 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: https://a2ui.org/reference/components/#component-gallery
+  - banner [ref=e3]:
+    - navigation "Header" [ref=e4]:
+      - link "A2UI" [ref=e5] [cursor=pointer]:
+        - /url: https://a2ui.org/
+        - img "logo" [ref=e6]
+      - generic [ref=e8]:
+        - generic [ref=e10]: A2UI
+        - generic:
+          - generic: Component Gallery
+      - generic [ref=e11]:
+        - radio "Switch to dark mode"
+        - generic "Switch to dark mode" [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+        - radio "Switch to light mode"
+      - dialog [ref=e15]:
+        - search [ref=e16]:
+          - generic [ref=e17]:
+            - textbox "Search" [ref=e18]
+            - generic:
+              - img
+            - navigation "Search":
+              - button "Clear":
+                - img
+          - generic [ref=e20]: Type to start searching
+      - link "google/A2UI" [ref=e22] [cursor=pointer]:
+        - /url: https://github.com/google/A2UI
+        - img [ref=e24]
+        - generic [ref=e26]: google/A2UI
+  - generic [ref=e27]:
+    - main [ref=e28]:
+      - generic [ref=e29]:
+        - navigation "Navigation" [ref=e33]:
+          - generic [ref=e34]: A2UI
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "Home" [ref=e37] [cursor=pointer]:
+                - /url: https://a2ui.org/
+                - generic [ref=e38]: Home
+            - listitem [ref=e39]:
+              - generic [ref=e41]: Introduction & FAQ
+            - listitem [ref=e43]:
+              - link "Quickstart" [ref=e44] [cursor=pointer]:
+                - /url: https://a2ui.org/quickstart/
+                - generic [ref=e45]: Quickstart
+            - listitem [ref=e46]:
+              - link "A2UI Composer ⭐" [ref=e47] [cursor=pointer]:
+                - /url: https://a2ui.org/composer/
+                - generic [ref=e48]: A2UI Composer ⭐
+            - listitem [ref=e49]:
+              - generic [ref=e51]: Concepts
+            - listitem [ref=e53]:
+              - generic [ref=e55]: Guides
+            - listitem [ref=e57]:
+              - generic [ref=e59]: Reference
+              - navigation "Reference" [ref=e61]:
+                - list [ref=e62]:
+                  - listitem [ref=e63]:
+                    - link "Component Gallery" [ref=e64] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/
+                      - generic [ref=e65]: Component Gallery
+                  - listitem [ref=e66]:
+                    - link "Message Reference" [ref=e67] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/messages/
+                      - generic [ref=e68]: Message Reference
+                  - listitem [ref=e69]:
+                    - link "Renderers (Clients)" [ref=e70] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/renderers/
+                      - generic [ref=e71]: Renderers (Clients)
+                  - listitem [ref=e72]:
+                    - link "Agents (Server-side)" [ref=e73] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/agents/
+                      - generic [ref=e74]: Agents (Server-side)
+            - listitem [ref=e75]:
+              - generic [ref=e77]: Specifications
+            - listitem [ref=e79]:
+              - generic [ref=e81]: Ecosystem
+            - listitem [ref=e83]:
+              - link "Roadmap" [ref=e84] [cursor=pointer]:
+                - /url: https://a2ui.org/roadmap/
+                - generic [ref=e85]: Roadmap
+        - navigation "Table of contents" [ref=e89]:
+          - generic [ref=e90]: Table of contents
+          - list [ref=e91]:
+            - listitem [ref=e92]:
+              - link "Layout Components" [ref=e93] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#layout-components
+                - generic [ref=e94]: Layout Components
+              - navigation "Layout Components" [ref=e95]:
+                - list [ref=e96]:
+                  - listitem [ref=e97]:
+                    - link "Row" [ref=e98] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#row
+                      - generic [ref=e99]: Row
+                  - listitem [ref=e100]:
+                    - link "Column" [ref=e101] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#column
+                      - generic [ref=e102]: Column
+                  - listitem [ref=e103]:
+                    - link "List" [ref=e104] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#list
+                      - generic [ref=e105]: List
+            - listitem [ref=e106]:
+              - link "Display Components" [ref=e107] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#display-components
+                - generic [ref=e108]: Display Components
+              - navigation "Display Components" [ref=e109]:
+                - list [ref=e110]:
+                  - listitem [ref=e111]:
+                    - link "Text" [ref=e112] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#text
+                      - generic [ref=e113]: Text
+                  - listitem [ref=e114]:
+                    - link "Image" [ref=e115] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#image
+                      - generic [ref=e116]: Image
+                  - listitem [ref=e117]:
+                    - link "Icon" [ref=e118] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#icon
+                      - generic [ref=e119]: Icon
+                  - listitem [ref=e120]:
+                    - link "Divider" [ref=e121] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#divider
+                      - generic [ref=e122]: Divider
+            - listitem [ref=e123]:
+              - link "Interactive Components" [ref=e124] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#interactive-components
+                - generic [ref=e125]: Interactive Components
+              - navigation "Interactive Components" [ref=e126]:
+                - list [ref=e127]:
+                  - listitem [ref=e128]:
+                    - link "Button" [ref=e129] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#button
+                      - generic [ref=e130]: Button
+                  - listitem [ref=e131]:
+                    - link "TextField" [ref=e132] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#textfield
+                      - generic [ref=e133]: TextField
+                  - listitem [ref=e134]:
+                    - link "CheckBox" [ref=e135] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#checkbox
+                      - generic [ref=e136]: CheckBox
+                  - listitem [ref=e137]:
+                    - link "Slider" [ref=e138] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#slider
+                      - generic [ref=e139]: Slider
+                  - listitem [ref=e140]:
+                    - link "DateTimeInput" [ref=e141] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#datetimeinput
+                      - generic [ref=e142]: DateTimeInput
+                  - listitem [ref=e143]:
+                    - link "MultipleChoice (v0.8) / ChoicePicker (v0.9)" [ref=e144] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#multiplechoice-v08-choicepicker-v09
+                      - generic [ref=e145]: MultipleChoice (v0.8) / ChoicePicker (v0.9)
+            - listitem [ref=e146]:
+              - link "Container Components" [ref=e147] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#container-components
+                - generic [ref=e148]: Container Components
+              - navigation "Container Components" [ref=e149]:
+                - list [ref=e150]:
+                  - listitem [ref=e151]:
+                    - link "Card" [ref=e152] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#card
+                      - generic [ref=e153]: Card
+                  - listitem [ref=e154]:
+                    - link "Modal" [ref=e155] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#modal
+                      - generic [ref=e156]: Modal
+                  - listitem [ref=e157]:
+                    - link "Tabs" [ref=e158] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/#tabs
+                      - generic [ref=e159]: Tabs
+            - listitem [ref=e160]:
+              - link "Common Properties" [ref=e161] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#common-properties
+                - generic [ref=e162]: Common Properties
+            - listitem [ref=e163]:
+              - link "Version Differences Summary" [ref=e164] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#version-differences-summary
+                - generic [ref=e165]: Version Differences Summary
+            - listitem [ref=e166]:
+              - link "Live Examples" [ref=e167] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#live-examples
+                - generic [ref=e168]: Live Examples
+            - listitem [ref=e169]:
+              - link "Further Reading" [ref=e170] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#further-reading
+                - generic [ref=e171]: Further Reading
+        - generic [ref=e172]:
+          - navigation "Navigation" [ref=e173]:
+            - list [ref=e174]:
+              - listitem [ref=e175]:
+                - link "Home" [ref=e176] [cursor=pointer]:
+                  - /url: https://a2ui.org/
+                  - generic [ref=e177]: Home
+              - listitem [ref=e178]:
+                - link "Reference" [ref=e179] [cursor=pointer]:
+                  - /url: https://a2ui.org/reference/components/
+                  - generic [ref=e180]: Reference
+          - article [ref=e181]:
+            - link "View source of this page" [ref=e182] [cursor=pointer]:
+              - /url: https://github.com/google/A2UI/raw/main/docs/reference/components.md
+              - img [ref=e183]
+            - heading "Component Gallery ¶" [level=1] [ref=e185]:
+              - text: Component Gallery
+              - link "¶" [ref=e186] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#component-gallery
+            - paragraph [ref=e187]: This page showcases all A2UI components with examples and usage patterns.
+            - blockquote [ref=e188]:
+              - paragraph [ref=e189]: "NOTE: Schema Files"
+              - generic [ref=e190]:
+                - radio "v0.8" [checked]
+                - radio "v0.9"
+                - generic [ref=e191]:
+                  - link "v0.8" [ref=e193] [cursor=pointer]:
+                    - /url: "#v08"
+                  - link "v0.9" [ref=e195] [cursor=pointer]:
+                    - /url: "#v09"
+                - paragraph [ref=e198]:
+                  - link "Standard Catalog Definition (JSON Schema)" [ref=e199] [cursor=pointer]:
+                    - /url: https://github.com/google/A2UI/blob/main/specification/v0_8/json/standard_catalog_definition.json
+                    - img [ref=e201]
+                    - text: Standard Catalog Definition (JSON Schema)
+                - button [ref=e203] [cursor=pointer]
+                - button [ref=e204] [cursor=pointer]
+            - separator [ref=e205]
+            - heading "Layout Components ¶" [level=2] [ref=e206]:
+              - text: Layout Components
+              - link "¶" [ref=e207] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#layout-components
+            - heading "Row ¶" [level=3] [ref=e208]:
+              - text: Row
+              - link "¶" [ref=e209] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#row
+            - paragraph [ref=e210]: Horizontal layout container. Children are arranged left-to-right.
+            - generic [ref=e211]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e212]:
+                - link "v0.8" [ref=e214] [cursor=pointer]:
+                  - /url: "#v08_1"
+                - link "v0.9" [ref=e216] [cursor=pointer]:
+                  - /url: "#v09_1"
+              - generic [ref=e218]:
+                - paragraph [ref=e219]:
+                  - strong [ref=e220]: "Properties:"
+                  - code [ref=e221]: children
+                  - text: (
+                  - code [ref=e222]: explicitList
+                  - text: or
+                  - code [ref=e223]: template
+                  - text: ),
+                  - code [ref=e224]: distribution
+                  - text: ","
+                  - code [ref=e225]: alignment
+                - generic [ref=e227]:
+                  - navigation [ref=e228]:
+                    - button "Toggle line selection" [ref=e229] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e230] [cursor=pointer]
+                  - code [ref=e231]:
+                    - generic [ref=e232]: "{"
+                    - generic [ref=e233]: "\"id\": \"toolbar\","
+                    - generic [ref=e234]: "\"component\": {"
+                    - generic [ref=e235]: "\"Row\": {"
+                    - generic [ref=e236]: "\"children\": { \"explicitList\": [\"btn1\", \"btn2\", \"btn3\"] },"
+                    - generic [ref=e237]: "\"distribution\": \"spaceBetween\","
+                    - generic [ref=e238]: "\"alignment\": \"center\""
+                    - generic [ref=e239]: "}"
+                    - generic [ref=e240]: "}"
+                    - generic [ref=e241]: "}"
+              - button [ref=e242] [cursor=pointer]
+              - button [ref=e243] [cursor=pointer]
+            - heading "Column ¶" [level=3] [ref=e244]:
+              - text: Column
+              - link "¶" [ref=e245] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#column
+            - paragraph [ref=e246]: Vertical layout container. Children are arranged top-to-bottom.
+            - generic [ref=e247]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e248]:
+                - link "v0.8" [ref=e250] [cursor=pointer]:
+                  - /url: "#v08_2"
+                - link "v0.9" [ref=e252] [cursor=pointer]:
+                  - /url: "#v09_2"
+              - generic [ref=e254]:
+                - paragraph [ref=e255]:
+                  - strong [ref=e256]: "Properties:"
+                  - code [ref=e257]: children
+                  - text: (
+                  - code [ref=e258]: explicitList
+                  - text: or
+                  - code [ref=e259]: template
+                  - text: ),
+                  - code [ref=e260]: distribution
+                  - text: ","
+                  - code [ref=e261]: alignment
+                - generic [ref=e263]:
+                  - navigation [ref=e264]:
+                    - button "Toggle line selection" [ref=e265] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e266] [cursor=pointer]
+                  - code [ref=e267]:
+                    - generic [ref=e268]: "{"
+                    - generic [ref=e269]: "\"id\": \"content\","
+                    - generic [ref=e270]: "\"component\": {"
+                    - generic [ref=e271]: "\"Column\": {"
+                    - generic [ref=e272]: "\"children\": { \"explicitList\": [\"header\", \"body\", \"footer\"] },"
+                    - generic [ref=e273]: "\"distribution\": \"start\","
+                    - generic [ref=e274]: "\"alignment\": \"stretch\""
+                    - generic [ref=e275]: "}"
+                    - generic [ref=e276]: "}"
+                    - generic [ref=e277]: "}"
+              - button [ref=e278] [cursor=pointer]
+              - button [ref=e279] [cursor=pointer]
+            - heading "List ¶" [level=3] [ref=e280]:
+              - text: List
+              - link "¶" [ref=e281] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#list
+            - paragraph [ref=e282]: Scrollable list of items. Supports static children and dynamic templates.
+            - generic [ref=e283]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e284]:
+                - link "v0.8" [ref=e286] [cursor=pointer]:
+                  - /url: "#v08_3"
+                - link "v0.9" [ref=e288] [cursor=pointer]:
+                  - /url: "#v09_3"
+              - generic [ref=e290]:
+                - paragraph [ref=e291]:
+                  - strong [ref=e292]: "Properties:"
+                  - code [ref=e293]: children
+                  - text: (
+                  - code [ref=e294]: explicitList
+                  - text: or
+                  - code [ref=e295]: template
+                  - text: ),
+                  - code [ref=e296]: direction
+                  - text: ","
+                  - code [ref=e297]: alignment
+                - generic [ref=e299]:
+                  - navigation [ref=e300]:
+                    - button "Toggle line selection" [ref=e301] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e302] [cursor=pointer]
+                  - code [ref=e303]:
+                    - generic [ref=e304]: "{"
+                    - generic [ref=e305]: "\"id\": \"message-list\","
+                    - generic [ref=e306]: "\"component\": {"
+                    - generic [ref=e307]: "\"List\": {"
+                    - generic [ref=e308]: "\"children\": {"
+                    - generic [ref=e309]: "\"template\": {"
+                    - generic [ref=e310]: "\"dataBinding\": \"/messages\","
+                    - generic [ref=e311]: "\"componentId\": \"message-item\""
+                    - generic [ref=e312]: "}"
+                    - generic [ref=e313]: "},"
+                    - generic [ref=e314]: "\"direction\": \"vertical\""
+                    - generic [ref=e315]: "}"
+                    - generic [ref=e316]: "}"
+                    - generic [ref=e317]: "}"
+              - button [ref=e318] [cursor=pointer]
+              - button [ref=e319] [cursor=pointer]
+            - separator [ref=e320]
+            - heading "Display Components ¶" [level=2] [ref=e321]:
+              - text: Display Components
+              - link "¶" [ref=e322] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#display-components
+            - heading "Text ¶" [level=3] [ref=e323]:
+              - text: Text
+              - link "¶" [ref=e324] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#text
+            - paragraph [ref=e325]: Display text content with styling hints.
+            - generic [ref=e326]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e327]:
+                - link "v0.8" [ref=e329] [cursor=pointer]:
+                  - /url: "#v08_4"
+                - link "v0.9" [ref=e331] [cursor=pointer]:
+                  - /url: "#v09_4"
+              - generic [ref=e333]:
+                - paragraph [ref=e334]:
+                  - strong [ref=e335]: "Properties:"
+                  - code [ref=e336]: text
+                  - text: (BoundValue),
+                  - code [ref=e337]: usageHint
+                - paragraph [ref=e338]:
+                  - code [ref=e339]: usageHint
+                  - text: "values:"
+                  - code [ref=e340]: h1
+                  - text: ","
+                  - code [ref=e341]: h2
+                  - text: ","
+                  - code [ref=e342]: h3
+                  - text: ","
+                  - code [ref=e343]: h4
+                  - text: ","
+                  - code [ref=e344]: h5
+                  - text: ","
+                  - code [ref=e345]: caption
+                  - text: ","
+                  - code [ref=e346]: body
+                - generic [ref=e348]:
+                  - navigation [ref=e349]:
+                    - button "Toggle line selection" [ref=e350] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e351] [cursor=pointer]
+                  - code [ref=e352]:
+                    - generic [ref=e353]: "{"
+                    - generic [ref=e354]: "\"id\": \"title\","
+                    - generic [ref=e355]: "\"component\": {"
+                    - generic [ref=e356]: "\"Text\": {"
+                    - generic [ref=e357]: "\"text\": { \"literalString\": \"Welcome to A2UI\" },"
+                    - generic [ref=e358]: "\"usageHint\": \"h1\""
+                    - generic [ref=e359]: "}"
+                    - generic [ref=e360]: "}"
+                    - generic [ref=e361]: "}"
+              - button [ref=e362] [cursor=pointer]
+              - button [ref=e363] [cursor=pointer]
+            - heading "Image ¶" [level=3] [ref=e364]:
+              - text: Image
+              - link "¶" [ref=e365] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#image
+            - paragraph [ref=e366]: Display images from URLs.
+            - generic [ref=e367]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e368]:
+                - link "v0.8" [ref=e370] [cursor=pointer]:
+                  - /url: "#v08_5"
+                - link "v0.9" [ref=e372] [cursor=pointer]:
+                  - /url: "#v09_5"
+              - generic [ref=e374]:
+                - paragraph [ref=e375]:
+                  - strong [ref=e376]: "Properties:"
+                  - code [ref=e377]: url
+                  - text: (BoundValue),
+                  - code [ref=e378]: fit
+                  - text: ","
+                  - code [ref=e379]: usageHint
+                - generic [ref=e381]:
+                  - navigation [ref=e382]:
+                    - button "Toggle line selection" [ref=e383] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e384] [cursor=pointer]
+                  - code [ref=e385]:
+                    - generic [ref=e386]: "{"
+                    - generic [ref=e387]: "\"id\": \"hero\","
+                    - generic [ref=e388]: "\"component\": {"
+                    - generic [ref=e389]: "\"Image\": {"
+                    - generic [ref=e390]: "\"url\": { \"literalString\": \"https://example.com/hero.png\" },"
+                    - generic [ref=e391]: "\"fit\": \"cover\","
+                    - generic [ref=e392]: "\"usageHint\": \"hero\""
+                    - generic [ref=e393]: "}"
+                    - generic [ref=e394]: "}"
+                    - generic [ref=e395]: "}"
+              - button [ref=e396] [cursor=pointer]
+              - button [ref=e397] [cursor=pointer]
+            - heading "Icon ¶" [level=3] [ref=e398]:
+              - text: Icon
+              - link "¶" [ref=e399] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#icon
+            - paragraph [ref=e400]: Display icons from the basic set defined in the catalog.
+            - generic [ref=e401]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e402]:
+                - link "v0.8" [ref=e404] [cursor=pointer]:
+                  - /url: "#v08_6"
+                - link "v0.9" [ref=e406] [cursor=pointer]:
+                  - /url: "#v09_6"
+              - generic [ref=e408]:
+                - paragraph [ref=e409]:
+                  - strong [ref=e410]: "Properties:"
+                  - code [ref=e411]: name
+                  - text: (BoundValue)
+                - generic [ref=e413]:
+                  - navigation [ref=e414]:
+                    - button "Toggle line selection" [ref=e415] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e416] [cursor=pointer]
+                  - code [ref=e417]:
+                    - generic [ref=e418]: "{"
+                    - generic [ref=e419]: "\"id\": \"check-icon\","
+                    - generic [ref=e420]: "\"component\": {"
+                    - generic [ref=e421]: "\"Icon\": {"
+                    - generic [ref=e422]: "\"name\": { \"literalString\": \"check\" }"
+                    - generic [ref=e423]: "}"
+                    - generic [ref=e424]: "}"
+                    - generic [ref=e425]: "}"
+              - button [ref=e426] [cursor=pointer]
+              - button [ref=e427] [cursor=pointer]
+            - heading "Divider ¶" [level=3] [ref=e428]:
+              - text: Divider
+              - link "¶" [ref=e429] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#divider
+            - paragraph [ref=e430]: Visual separator line.
+            - generic [ref=e431]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e432]:
+                - link "v0.8" [ref=e434] [cursor=pointer]:
+                  - /url: "#v08_7"
+                - link "v0.9" [ref=e436] [cursor=pointer]:
+                  - /url: "#v09_7"
+              - generic [ref=e438]:
+                - paragraph [ref=e439]:
+                  - strong [ref=e440]: "Properties:"
+                  - code [ref=e441]: axis
+                - generic [ref=e443]:
+                  - navigation [ref=e444]:
+                    - button "Toggle line selection" [ref=e445] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e446] [cursor=pointer]
+                  - code [ref=e447]:
+                    - generic [ref=e448]: "{"
+                    - generic [ref=e449]: "\"id\": \"separator\","
+                    - generic [ref=e450]: "\"component\": {"
+                    - generic [ref=e451]: "\"Divider\": {"
+                    - generic [ref=e452]: "\"axis\": \"horizontal\""
+                    - generic [ref=e453]: "}"
+                    - generic [ref=e454]: "}"
+                    - generic [ref=e455]: "}"
+              - button [ref=e456] [cursor=pointer]
+              - button [ref=e457] [cursor=pointer]
+            - separator [ref=e458]
+            - heading "Interactive Components ¶" [level=2] [ref=e459]:
+              - text: Interactive Components
+              - link "¶" [ref=e460] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#interactive-components
+            - heading "Button ¶" [level=3] [ref=e461]:
+              - text: Button
+              - link "¶" [ref=e462] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#button
+            - paragraph [ref=e463]: Clickable button that triggers an action.
+            - generic [ref=e464]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e465]:
+                - link "v0.8" [ref=e467] [cursor=pointer]:
+                  - /url: "#v08_8"
+                - link "v0.9" [ref=e469] [cursor=pointer]:
+                  - /url: "#v09_8"
+              - generic [ref=e471]:
+                - paragraph [ref=e472]:
+                  - strong [ref=e473]: "Properties:"
+                  - code [ref=e474]: child
+                  - text: (component ID),
+                  - code [ref=e475]: primary
+                  - text: (boolean),
+                  - code [ref=e476]: action
+                - generic [ref=e478]:
+                  - navigation [ref=e479]:
+                    - button "Toggle line selection" [ref=e480] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e481] [cursor=pointer]
+                  - code [ref=e482]:
+                    - generic [ref=e483]: "{"
+                    - generic [ref=e484]: "\"id\": \"submit-btn\","
+                    - generic [ref=e485]: "\"component\": {"
+                    - generic [ref=e486]: "\"Button\": {"
+                    - generic [ref=e487]: "\"child\": \"submit-text\","
+                    - generic [ref=e488]: "\"primary\": true,"
+                    - generic [ref=e489]: "\"action\": {"
+                    - generic [ref=e490]: "\"name\": \"submit_form\""
+                    - generic [ref=e491]: "}"
+                    - generic [ref=e492]: "}"
+                    - generic [ref=e493]: "}"
+                    - generic [ref=e494]: "}"
+              - button [ref=e495] [cursor=pointer]
+              - button [ref=e496] [cursor=pointer]
+            - heading "TextField ¶" [level=3] [ref=e497]:
+              - text: TextField
+              - link "¶" [ref=e498] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#textfield
+            - paragraph [ref=e499]: Text input field with optional validation.
+            - generic [ref=e500]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e501]:
+                - link "v0.8" [ref=e503] [cursor=pointer]:
+                  - /url: "#v08_9"
+                - link "v0.9" [ref=e505] [cursor=pointer]:
+                  - /url: "#v09_9"
+              - generic [ref=e507]:
+                - paragraph [ref=e508]:
+                  - strong [ref=e509]: "Properties:"
+                  - code [ref=e510]: label
+                  - text: (BoundValue),
+                  - code [ref=e511]: text
+                  - text: (BoundValue),
+                  - code [ref=e512]: textFieldType
+                  - text: ","
+                  - code [ref=e513]: validationRegexp
+                - paragraph [ref=e514]:
+                  - code [ref=e515]: textFieldType
+                  - text: "values:"
+                  - code [ref=e516]: shortText
+                  - text: ","
+                  - code [ref=e517]: longText
+                  - text: ","
+                  - code [ref=e518]: number
+                  - text: ","
+                  - code [ref=e519]: obscured
+                  - text: ","
+                  - code [ref=e520]: date
+                - generic [ref=e522]:
+                  - navigation [ref=e523]:
+                    - button "Toggle line selection" [ref=e524] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e525] [cursor=pointer]
+                  - code [ref=e526]:
+                    - generic [ref=e527]: "{"
+                    - generic [ref=e528]: "\"id\": \"email-input\","
+                    - generic [ref=e529]: "\"component\": {"
+                    - generic [ref=e530]: "\"TextField\": {"
+                    - generic [ref=e531]: "\"label\": { \"literalString\": \"Email Address\" },"
+                    - generic [ref=e532]: "\"text\": { \"path\": \"/user/email\" },"
+                    - generic [ref=e533]: "\"textFieldType\": \"shortText\""
+                    - generic [ref=e534]: "}"
+                    - generic [ref=e535]: "}"
+                    - generic [ref=e536]: "}"
+              - button [ref=e537] [cursor=pointer]
+              - button [ref=e538] [cursor=pointer]
+            - heading "CheckBox ¶" [level=3] [ref=e539]:
+              - text: CheckBox
+              - link "¶" [ref=e540] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#checkbox
+            - paragraph [ref=e541]: Boolean toggle.
+            - generic [ref=e542]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e543]:
+                - link "v0.8" [ref=e545] [cursor=pointer]:
+                  - /url: "#v08_10"
+                - link "v0.9" [ref=e547] [cursor=pointer]:
+                  - /url: "#v09_10"
+              - generic [ref=e549]:
+                - paragraph [ref=e550]:
+                  - strong [ref=e551]: "Properties:"
+                  - code [ref=e552]: label
+                  - text: (BoundValue),
+                  - code [ref=e553]: value
+                  - text: (BoundValue, boolean)
+                - generic [ref=e555]:
+                  - navigation [ref=e556]:
+                    - button "Toggle line selection" [ref=e557] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e558] [cursor=pointer]
+                  - code [ref=e559]:
+                    - generic [ref=e560]: "{"
+                    - generic [ref=e561]: "\"id\": \"terms-checkbox\","
+                    - generic [ref=e562]: "\"component\": {"
+                    - generic [ref=e563]: "\"CheckBox\": {"
+                    - generic [ref=e564]: "\"label\": { \"literalString\": \"I agree to the terms\" },"
+                    - generic [ref=e565]: "\"value\": { \"path\": \"/form/agreedToTerms\" }"
+                    - generic [ref=e566]: "}"
+                    - generic [ref=e567]: "}"
+                    - generic [ref=e568]: "}"
+              - button [ref=e569] [cursor=pointer]
+              - button [ref=e570] [cursor=pointer]
+            - heading "Slider ¶" [level=3] [ref=e571]:
+              - text: Slider
+              - link "¶" [ref=e572] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#slider
+            - paragraph [ref=e573]: Numeric range input.
+            - generic [ref=e574]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e575]:
+                - link "v0.8" [ref=e577] [cursor=pointer]:
+                  - /url: "#v08_11"
+                - link "v0.9" [ref=e579] [cursor=pointer]:
+                  - /url: "#v09_11"
+              - generic [ref=e581]:
+                - paragraph [ref=e582]:
+                  - strong [ref=e583]: "Properties:"
+                  - code [ref=e584]: value
+                  - text: (BoundValue),
+                  - code [ref=e585]: minValue
+                  - text: ","
+                  - code [ref=e586]: maxValue
+                - generic [ref=e588]:
+                  - navigation [ref=e589]:
+                    - button "Toggle line selection" [ref=e590] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e591] [cursor=pointer]
+                  - code [ref=e592]:
+                    - generic [ref=e593]: "{"
+                    - generic [ref=e594]: "\"id\": \"volume\","
+                    - generic [ref=e595]: "\"component\": {"
+                    - generic [ref=e596]: "\"Slider\": {"
+                    - generic [ref=e597]: "\"value\": { \"path\": \"/settings/volume\" },"
+                    - generic [ref=e598]: "\"minValue\": 0,"
+                    - generic [ref=e599]: "\"maxValue\": 100"
+                    - generic [ref=e600]: "}"
+                    - generic [ref=e601]: "}"
+                    - generic [ref=e602]: "}"
+              - button [ref=e603] [cursor=pointer]
+              - button [ref=e604] [cursor=pointer]
+            - heading "DateTimeInput ¶" [level=3] [ref=e605]:
+              - text: DateTimeInput
+              - link "¶" [ref=e606] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#datetimeinput
+            - paragraph [ref=e607]: Date and/or time picker.
+            - generic [ref=e608]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e609]:
+                - link "v0.8" [ref=e611] [cursor=pointer]:
+                  - /url: "#v08_12"
+                - link "v0.9" [ref=e613] [cursor=pointer]:
+                  - /url: "#v09_12"
+              - generic [ref=e615]:
+                - paragraph [ref=e616]:
+                  - strong [ref=e617]: "Properties:"
+                  - code [ref=e618]: value
+                  - text: (BoundValue),
+                  - code [ref=e619]: enableDate
+                  - text: ","
+                  - code [ref=e620]: enableTime
+                - generic [ref=e622]:
+                  - navigation [ref=e623]:
+                    - button "Toggle line selection" [ref=e624] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e625] [cursor=pointer]
+                  - code [ref=e626]:
+                    - generic [ref=e627]: "{"
+                    - generic [ref=e628]: "\"id\": \"date-picker\","
+                    - generic [ref=e629]: "\"component\": {"
+                    - generic [ref=e630]: "\"DateTimeInput\": {"
+                    - generic [ref=e631]: "\"value\": { \"path\": \"/booking/date\" },"
+                    - generic [ref=e632]: "\"enableDate\": true,"
+                    - generic [ref=e633]: "\"enableTime\": false"
+                    - generic [ref=e634]: "}"
+                    - generic [ref=e635]: "}"
+                    - generic [ref=e636]: "}"
+              - button [ref=e637] [cursor=pointer]
+              - button [ref=e638] [cursor=pointer]
+            - heading "MultipleChoice (v0.8) / ChoicePicker (v0.9) ¶" [level=3] [ref=e639]:
+              - text: MultipleChoice (v0.8) / ChoicePicker (v0.9)
+              - link "¶" [ref=e640] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#multiplechoice-v08-choicepicker-v09
+            - paragraph [ref=e641]: Select one or more options from a list.
+            - generic [ref=e642]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e643]:
+                - link "v0.8" [ref=e645] [cursor=pointer]:
+                  - /url: "#v08_13"
+                - link "v0.9" [ref=e647] [cursor=pointer]:
+                  - /url: "#v09_13"
+              - generic [ref=e649]:
+                - paragraph [ref=e650]:
+                  - strong [ref=e651]: "Properties:"
+                  - code [ref=e652]: options
+                  - text: (array),
+                  - code [ref=e653]: selections
+                  - text: (BoundValue),
+                  - code [ref=e654]: maxAllowedSelections
+                - generic [ref=e656]:
+                  - navigation [ref=e657]:
+                    - button "Toggle line selection" [ref=e658] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e659] [cursor=pointer]
+                  - code [ref=e660]:
+                    - generic [ref=e661]: "{"
+                    - generic [ref=e662]: "\"id\": \"country-select\","
+                    - generic [ref=e663]: "\"component\": {"
+                    - generic [ref=e664]: "\"MultipleChoice\": {"
+                    - generic [ref=e665]: "\"options\": ["
+                    - generic [ref=e666]: "{ \"label\": { \"literalString\": \"USA\" }, \"value\": \"us\" },"
+                    - generic [ref=e667]: "{ \"label\": { \"literalString\": \"Canada\" }, \"value\": \"ca\" }"
+                    - generic [ref=e668]: "],"
+                    - generic [ref=e669]: "\"selections\": { \"path\": \"/form/country\" },"
+                    - generic [ref=e670]: "\"maxAllowedSelections\": 1"
+                    - generic [ref=e671]: "}"
+                    - generic [ref=e672]: "}"
+                    - generic [ref=e673]: "}"
+              - button [ref=e674] [cursor=pointer]
+              - button [ref=e675] [cursor=pointer]
+            - separator [ref=e676]
+            - heading "Container Components ¶" [level=2] [ref=e677]:
+              - text: Container Components
+              - link "¶" [ref=e678] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#container-components
+            - heading "Card ¶" [level=3] [ref=e679]:
+              - text: Card
+              - link "¶" [ref=e680] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#card
+            - paragraph [ref=e681]: Container with elevation/border and padding.
+            - generic [ref=e682]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e683]:
+                - link "v0.8" [ref=e685] [cursor=pointer]:
+                  - /url: "#v08_14"
+                - link "v0.9" [ref=e687] [cursor=pointer]:
+                  - /url: "#v09_14"
+              - generic [ref=e689]:
+                - paragraph [ref=e690]:
+                  - strong [ref=e691]: "Properties:"
+                  - code [ref=e692]: child
+                  - text: (component ID)
+                - generic [ref=e694]:
+                  - navigation [ref=e695]:
+                    - button "Toggle line selection" [ref=e696] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e697] [cursor=pointer]
+                  - code [ref=e698]:
+                    - generic [ref=e699]: "{"
+                    - generic [ref=e700]: "\"id\": \"info-card\","
+                    - generic [ref=e701]: "\"component\": {"
+                    - generic [ref=e702]: "\"Card\": {"
+                    - generic [ref=e703]: "\"child\": \"card-content\""
+                    - generic [ref=e704]: "}"
+                    - generic [ref=e705]: "}"
+                    - generic [ref=e706]: "}"
+              - button [ref=e707] [cursor=pointer]
+              - button [ref=e708] [cursor=pointer]
+            - heading "Modal ¶" [level=3] [ref=e709]:
+              - text: Modal
+              - link "¶" [ref=e710] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#modal
+            - paragraph [ref=e711]: Overlay dialog triggered by an entry point component.
+            - generic [ref=e712]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e713]:
+                - link "v0.8" [ref=e715] [cursor=pointer]:
+                  - /url: "#v08_15"
+                - link "v0.9" [ref=e717] [cursor=pointer]:
+                  - /url: "#v09_15"
+              - generic [ref=e719]:
+                - paragraph [ref=e720]:
+                  - strong [ref=e721]: "Properties:"
+                  - code [ref=e722]: entryPointChild
+                  - text: (component ID),
+                  - code [ref=e723]: contentChild
+                  - text: (component ID)
+                - generic [ref=e725]:
+                  - navigation [ref=e726]:
+                    - button "Toggle line selection" [ref=e727] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e728] [cursor=pointer]
+                  - code [ref=e729]:
+                    - generic [ref=e730]: "{"
+                    - generic [ref=e731]: "\"id\": \"confirmation-modal\","
+                    - generic [ref=e732]: "\"component\": {"
+                    - generic [ref=e733]: "\"Modal\": {"
+                    - generic [ref=e734]: "\"entryPointChild\": \"open-modal-btn\","
+                    - generic [ref=e735]: "\"contentChild\": \"modal-content\""
+                    - generic [ref=e736]: "}"
+                    - generic [ref=e737]: "}"
+                    - generic [ref=e738]: "}"
+              - button [ref=e739] [cursor=pointer]
+              - button [ref=e740] [cursor=pointer]
+            - heading "Tabs ¶" [level=3] [ref=e741]:
+              - text: Tabs
+              - link "¶" [ref=e742] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#tabs
+            - paragraph [ref=e743]: Tabbed interface for organizing content into switchable panels.
+            - generic [ref=e744]:
+              - radio "v0.8" [checked]
+              - radio "v0.9"
+              - generic [ref=e745]:
+                - link "v0.8" [ref=e747] [cursor=pointer]:
+                  - /url: "#v08_16"
+                - link "v0.9" [ref=e749] [cursor=pointer]:
+                  - /url: "#v09_16"
+              - generic [ref=e751]:
+                - paragraph [ref=e752]:
+                  - strong [ref=e753]: "Properties:"
+                  - code [ref=e754]: tabItems
+                  - text: (array of
+                  - code [ref=e755]: "{ title, child }"
+                  - text: )
+                - generic [ref=e757]:
+                  - navigation [ref=e758]:
+                    - button "Toggle line selection" [ref=e759] [cursor=pointer]
+                    - button "Copy to clipboard" [ref=e760] [cursor=pointer]
+                  - code [ref=e761]:
+                    - generic [ref=e762]: "{"
+                    - generic [ref=e763]: "\"id\": \"settings-tabs\","
+                    - generic [ref=e764]: "\"component\": {"
+                    - generic [ref=e765]: "\"Tabs\": {"
+                    - generic [ref=e766]: "\"tabItems\": ["
+                    - generic [ref=e767]: "{ \"title\": { \"literalString\": \"General\" }, \"child\": \"general-tab\" },"
+                    - generic [ref=e768]: "{ \"title\": { \"literalString\": \"Privacy\" }, \"child\": \"privacy-tab\" }"
+                    - generic [ref=e769]: "]"
+                    - generic [ref=e770]: "}"
+                    - generic [ref=e771]: "}"
+                    - generic [ref=e772]: "}"
+              - button [ref=e773] [cursor=pointer]
+              - button [ref=e774] [cursor=pointer]
+            - separator [ref=e775]
+            - heading "Common Properties ¶" [level=2] [ref=e776]:
+              - text: Common Properties
+              - link "¶" [ref=e777] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#common-properties
+            - paragraph [ref=e778]: "All components share:"
+            - list [ref=e779]:
+              - listitem [ref=e780]:
+                - code [ref=e781]: id
+                - text: "(required): Unique identifier within the surface."
+              - listitem [ref=e782]:
+                - code [ref=e783]: accessibility
+                - text: ": Accessibility attributes (label, role)."
+              - listitem [ref=e784]:
+                - code [ref=e785]: weight
+                - text: ": Flex-grow value when inside a Row or Column."
+            - heading "Version Differences Summary ¶" [level=2] [ref=e786]:
+              - text: Version Differences Summary
+              - link "¶" [ref=e787] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#version-differences-summary
+            - paragraph [ref=e788]: "The component names and properties are largely the same across versions. The structural differences are:"
+            - table [ref=e791]:
+              - rowgroup [ref=e792]:
+                - row "Aspect v0.8 v0.9" [ref=e793]:
+                  - columnheader "Aspect" [ref=e794]
+                  - columnheader "v0.8" [ref=e795]
+                  - columnheader "v0.9" [ref=e796]
+              - rowgroup [ref=e797]:
+                - 'row "Component wrapper \"component\": { \"Text\": { ... } } \"component\": \"Text\", ...props" [ref=e798]':
+                  - cell "Component wrapper" [ref=e799]
+                  - 'cell "\"component\": { \"Text\": { ... } }" [ref=e800]':
+                    - code [ref=e801]: "\"component\": { \"Text\": { ... } }"
+                  - 'cell "\"component\": \"Text\", ...props" [ref=e802]':
+                    - code [ref=e803]: "\"component\": \"Text\", ...props"
+                - 'row "String values { \"literalString\": \"Hello\" } \"Hello\"" [ref=e804]':
+                  - cell "String values" [ref=e805]
+                  - 'cell "{ \"literalString\": \"Hello\" }" [ref=e806]':
+                    - code [ref=e807]: "{ \"literalString\": \"Hello\" }"
+                  - cell "\"Hello\"" [ref=e808]:
+                    - code [ref=e809]: "\"Hello\""
+                - 'row "Children { \"explicitList\": [\"a\", \"b\"] } [\"a\", \"b\"]" [ref=e810]':
+                  - cell "Children" [ref=e811]
+                  - 'cell "{ \"explicitList\": [\"a\", \"b\"] }" [ref=e812]':
+                    - code [ref=e813]: "{ \"explicitList\": [\"a\", \"b\"] }"
+                  - cell "[\"a\", \"b\"]" [ref=e814]:
+                    - code [ref=e815]: "[\"a\", \"b\"]"
+                - 'row "Data binding { \"path\": \"/data\" } { \"path\": \"/data\" } (same)" [ref=e816]':
+                  - cell "Data binding" [ref=e817]
+                  - 'cell "{ \"path\": \"/data\" }" [ref=e818]':
+                    - code [ref=e819]: "{ \"path\": \"/data\" }"
+                  - 'cell "{ \"path\": \"/data\" } (same)" [ref=e820]':
+                    - code [ref=e821]: "{ \"path\": \"/data\" }"
+                    - text: (same)
+                - row "Text/Image styling usageHint variant" [ref=e822]:
+                  - cell "Text/Image styling" [ref=e823]
+                  - cell "usageHint" [ref=e824]:
+                    - code [ref=e825]: usageHint
+                  - cell "variant" [ref=e826]:
+                    - code [ref=e827]: variant
+                - 'row "Button styling primary: true variant: \"primary\"" [ref=e828]':
+                  - cell "Button styling" [ref=e829]
+                  - 'cell "primary: true" [ref=e830]':
+                    - code [ref=e831]: "primary: true"
+                  - 'cell "variant: \"primary\"" [ref=e832]':
+                    - code [ref=e833]: "variant: \"primary\""
+                - 'row "Action format { \"name\": \"...\" } { \"event\": { \"name\": \"...\" } }" [ref=e834]':
+                  - cell "Action format" [ref=e835]
+                  - 'cell "{ \"name\": \"...\" }" [ref=e836]':
+                    - code [ref=e837]: "{ \"name\": \"...\" }"
+                  - 'cell "{ \"event\": { \"name\": \"...\" } }" [ref=e838]':
+                    - code [ref=e839]: "{ \"event\": { \"name\": \"...\" } }"
+                - row "Choice component MultipleChoice ChoicePicker" [ref=e840]:
+                  - cell "Choice component" [ref=e841]
+                  - cell "MultipleChoice" [ref=e842]:
+                    - code [ref=e843]: MultipleChoice
+                  - cell "ChoicePicker" [ref=e844]:
+                    - code [ref=e845]: ChoicePicker
+                - row "Layout alignment distribution, alignment justify, align" [ref=e846]:
+                  - cell "Layout alignment" [ref=e847]
+                  - cell "distribution, alignment" [ref=e848]:
+                    - code [ref=e849]: distribution
+                    - text: ","
+                    - code [ref=e850]: alignment
+                  - cell "justify, align" [ref=e851]:
+                    - code [ref=e852]: justify
+                    - text: ","
+                    - code [ref=e853]: align
+                - row "TextField value text value" [ref=e854]:
+                  - cell "TextField value" [ref=e855]
+                  - cell "text" [ref=e856]:
+                    - code [ref=e857]: text
+                  - cell "value" [ref=e858]:
+                    - code [ref=e859]: value
+            - heading "Live Examples ¶" [level=2] [ref=e860]:
+              - text: Live Examples
+              - link "¶" [ref=e861] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#live-examples
+            - paragraph [ref=e862]: "To see all components in action:"
+            - generic [ref=e864]:
+              - navigation [ref=e865]:
+                - button "Toggle line selection" [ref=e866] [cursor=pointer]
+                - button "Copy to clipboard" [ref=e867] [cursor=pointer]
+              - code [ref=e868]:
+                - generic [ref=e869]: cd samples/client/angular
+                - generic [ref=e870]: npm start -- gallery
+            - heading "Further Reading ¶" [level=2] [ref=e871]:
+              - text: Further Reading
+              - link "¶" [ref=e872] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/components/#further-reading
+            - blockquote [ref=e873]:
+              - paragraph [ref=e874]: "NOTE: Schema Files"
+              - generic [ref=e875]:
+                - radio "v0.8" [checked]
+                - radio "v0.9"
+                - generic [ref=e876]:
+                  - link "v0.8" [ref=e878] [cursor=pointer]:
+                    - /url: "#v08_17"
+                  - link "v0.9" [ref=e880] [cursor=pointer]:
+                    - /url: "#v09_17"
+                - paragraph [ref=e883]:
+                  - link "Standard Catalog Definition (JSON Schema)" [ref=e884] [cursor=pointer]:
+                    - /url: https://github.com/google/A2UI/blob/main/specification/v0_8/json/standard_catalog_definition.json
+                    - img [ref=e886]
+                    - text: Standard Catalog Definition (JSON Schema)
+                - button [ref=e888] [cursor=pointer]
+                - button [ref=e889] [cursor=pointer]
+            - list [ref=e890]:
+              - listitem [ref=e891]:
+                - strong [ref=e892]:
+                  - link "Defining Your Own Catalog" [ref=e893] [cursor=pointer]:
+                    - /url: https://a2ui.org/guides/defining-your-own-catalog/
+                - text: ": Build your own components"
+              - listitem [ref=e894]:
+                - strong [ref=e895]:
+                  - link "Theming Guide" [ref=e896] [cursor=pointer]:
+                    - /url: https://a2ui.org/guides/theming/
+                - text: ": Style components to match your brand"
+      - button "Back to top":
+        - img
+        - text: Back to top
+    - contentinfo [ref=e897]:
+      - navigation "Footer" [ref=e898]:
+        - 'link "Previous: A2UI in MCP Apps" [ref=e899] [cursor=pointer]':
+          - /url: https://a2ui.org/guides/a2ui-in-mcp-apps/
+          - img [ref=e901]
+          - generic [ref=e903]:
+            - text: Previous
+            - generic [ref=e904]: A2UI in MCP Apps
+        - 'link "Next: Message Reference" [ref=e905] [cursor=pointer]':
+          - /url: https://a2ui.org/reference/messages/
+          - generic [ref=e906]:
+            - text: Next
+            - generic [ref=e907]: Message Reference
+          - img [ref=e909]
+      - generic [ref=e913]:
+        - generic [ref=e914]:
+          - text: Copyright Google 2025 |
+          - link "Terms" [ref=e915] [cursor=pointer]:
+            - /url: //policies.google.com/terms
+          - text: "|"
+          - link "Privacy" [ref=e916] [cursor=pointer]:
+            - /url: //policies.google.com/privacy
+          - text: "|"
+          - link "Manage cookies" [ref=e917] [cursor=pointer]:
+            - /url: https://a2ui.org/reference/components/#__consent
+        - text: Made with
+        - link "Material for MkDocs" [ref=e918] [cursor=pointer]:
+          - /url: https://squidfunk.github.io/mkdocs-material/
+  - progressbar
+  - complementary [ref=e920]:
+    - generic [ref=e921]:
+      - heading "Cookie consent" [level=4] [ref=e922]
+      - paragraph [ref=e923]: We use cookies to recognize repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find the information they need. With your consent, you're helping us to make our documentation better.
+      - generic [ref=e924]:
+        - button "Accept" [ref=e925] [cursor=pointer]
+        - text: Manage settings

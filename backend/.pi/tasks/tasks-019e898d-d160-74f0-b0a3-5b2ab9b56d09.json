@@ -1,0 +1,56 @@
+{
+  "nextId": 5,
+  "tasks": [
+    {
+      "id": "1",
+      "subject": "Define Scope and Structure of Aftonbladet Headlines",
+      "description": "Research Question: How does Aftonbladet organize and present its daily headlines on the website (aftonbladet.se)?\nSource Priority: Official website (aftonbladet.se), web archive comparisons, media design studies.\nSuccess Criteria: Clear identification of headline tiers (top stories, secondary, breaking news banners) and an understanding of the front-page layout hierarchy.",
+      "status": "pending",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780424256094,
+      "updatedAt": 1780424256094
+    },
+    {
+      "id": "2",
+      "subject": "Extract Top-Tier Headlines",
+      "description": "Research Question: What are the main/top headlines on Aftonbladet's front page today (June 2, 2026)?\nSource Priority: Aftonbladet.se front page, mobile homepage, top-story carousels.\nSuccess Criteria: A curated list of 5-8 primary headlines with exact article titles and a brief subject tag for each story.",
+      "status": "pending",
+      "metadata": {},
+      "blocks": [
+        "4"
+      ],
+      "blockedBy": [],
+      "createdAt": 1780424256095,
+      "updatedAt": 1780424256916
+    },
+    {
+      "id": "3",
+      "subject": "Extract Section-Specific Headlines",
+      "description": "Research Question: What are today's notable headlines across Aftonbladet's major editorial sections (e.g., Sport, Nöje, Kultur, Opinion, Nyheter)?\nSource Priority: Aftonbladet.se section landing pages, sub-navigation menus.\nSuccess Criteria: A categorized list of 3-5 significant headlines per major section, with section labels.",
+      "status": "pending",
+      "metadata": {},
+      "blocks": [
+        "4"
+      ],
+      "blockedBy": [],
+      "createdAt": 1780424256096,
+      "updatedAt": 1780424256916
+    },
+    {
+      "id": "4",
+      "subject": "Verify Timeliness and Breaking News Status",
+      "description": "Research Question: Which of the extracted headlines are marked as breaking news, live updates, or published/updated specifically today (June 2, 2026)?\nSource Priority: Aftonbladet.se article timestamps, \"breaking\" labels, live tickers, update logs.\nSuccess Criteria: Confirmation that all listed headlines are from today; identification of any live/updating stories and exact publication/update timestamps where available.",
+      "status": "pending",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [
+        "2",
+        "3"
+      ],
+      "createdAt": 1780424256096,
+      "updatedAt": 1780424256916
+    }
+  ]
+}

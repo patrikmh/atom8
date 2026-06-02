@@ -1,0 +1,253 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - link "Mojeek" [ref=e6] [cursor=pointer]:
+        - /url: https://www.mojeek.com
+        - img "Mojeek" [ref=e7]
+      - generic [ref=e10]:
+        - textbox "Search The Web using Mojeek..." [ref=e11]: agui UI framework
+        - button "✕" [ref=e12] [cursor=pointer]
+        - button [ref=e13] [cursor=pointer]
+        - link "Mojeek User Survey" [ref=e15] [cursor=pointer]:
+          - /url: https://blocksurvey.io/mojeek-stub-survey-short-2024-28uiW3RZSli2OP1LpLPu6Q
+      - button "Menu":
+        - generic "Menu" [ref=e16] [cursor=pointer]
+    - generic [ref=e19]:
+      - list [ref=e21]:
+        - listitem [ref=e22]:
+          - link "Web" [ref=e23] [cursor=pointer]:
+            - /url: /search?q=agui+UI+framework
+        - listitem [ref=e24]:
+          - link "Summary" [ref=e25] [cursor=pointer]:
+            - /url: https://www.mojeek.com/search?q=agui+UI+framework&fmt=summary
+        - listitem [ref=e26]:
+          - link "Images" [ref=e27] [cursor=pointer]:
+            - /url: https://www.mojeek.com/search?q=agui+UI+framework&fmt=images
+        - listitem [ref=e28]:
+          - link "News" [ref=e29] [cursor=pointer]:
+            - /url: https://www.mojeek.com/search?q=agui+UI+framework&fmt=news
+      - list [ref=e31]:
+        - listitem [ref=e32]:
+          - generic "Region" [ref=e33] [cursor=pointer]
+        - listitem [ref=e34]:
+          - generic "Settings" [ref=e35] [cursor=pointer]
+    - generic [ref=e36]:
+      - paragraph [ref=e40]: Results 1 to 10 from 117 in 0.1s
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - list [ref=e43]:
+            - listitem [ref=e44]:
+              - link "https://baeke.info › tag › agui" [ref=e45] [cursor=pointer]:
+                - /url: https://baeke.info/tag/agui/
+                - paragraph [ref=e46]:
+                  - generic [ref=e47]: https://baeke.info › tag › agui
+              - heading "agui – baeke.info" [level=2] [ref=e48]:
+                - link "agui – baeke.info" [ref=e49] [cursor=pointer]:
+                  - /url: https://baeke.info/tag/agui/
+              - paragraph [ref=e50]:
+                - text: ...
+                - strong [ref=e51]: agui
+                - text: ", ai , artificial-intelligence , chatgpt , copilotkit , llm , microsoft , technology Leave a comment on Building an AI Agent Server with AG-"
+                - strong [ref=e52]: UI
+                - text: ...
+            - listitem [ref=e53]:
+              - link "https://baeke.info › category › dev" [ref=e54] [cursor=pointer]:
+                - /url: https://baeke.info/category/dev/
+                - paragraph [ref=e55]:
+                  - generic [ref=e56]: https://baeke.info › category › dev
+              - heading "dev – baeke.info" [level=2] [ref=e57]:
+                - link "dev – baeke.info" [ref=e58] [cursor=pointer]:
+                  - /url: https://baeke.info/category/dev/
+              - paragraph [ref=e59]:
+                - text: ...
+                - strong [ref=e60]: agui
+                - text: ", ai , artificial-intelligence , chatgpt , copilotkit , llm , microsoft , technology Leave a comment on Building an AI Agent Server with AG-"
+                - strong [ref=e61]: UI
+                - text: ...
+            - listitem [ref=e62]:
+              - link "https://learn.microsoft.com › en-us › agent-framework › integrations › ag-ui" [ref=e63] [cursor=pointer]:
+                - /url: https://learn.microsoft.com/en-us/agent-framework/integrations/ag-ui/
+                - paragraph [ref=e64]:
+                  - generic [ref=e65]: https://learn.microsoft.com › en-us › agent-framework › integrations › ag-ui
+              - heading "AG-UI Integration with Agent Framework | Microsoft Learn" [level=2] [ref=e66]:
+                - link "AG-UI Integration with Agent Framework | Microsoft Learn" [ref=e67] [cursor=pointer]:
+                  - /url: https://learn.microsoft.com/en-us/agent-framework/integrations/ag-ui/
+              - paragraph [ref=e68]:
+                - text: The Agent
+                - strong [ref=e69]: Framework
+                - text: AG-
+                - strong [ref=e70]: UI
+                - text: integration provides seamless connectivity between your agents and web clients. ... both the core agent
+                - strong [ref=e71]: framework
+                - text: and AG-
+                - strong [ref=e72]: UI
+                - text: ...
+            - listitem [ref=e73]:
+              - link "https://learn.microsoft.com › en-gb › answers › questions › 5626748 › is-it-p..." [ref=e74] [cursor=pointer]:
+                - /url: https://learn.microsoft.com/en-gb/answers/questions/5626748/is-it-possible-to-integrate-a-workflow-builder-wit
+                - paragraph [ref=e75]:
+                  - generic [ref=e76]: https://learn.microsoft.com › en-gb › answers › questions › 5626748 › is-it-p...
+              - heading "Is it possible to integrate a workflow builder with agui or dev" [level=2] [ref=e77]:
+                - link "Is it possible to integrate a workflow builder with agui or dev" [ref=e78] [cursor=pointer]:
+                  - /url: https://learn.microsoft.com/en-gb/answers/questions/5626748/is-it-possible-to-integrate-a-workflow-builder-wit
+              - paragraph [ref=e79]:
+                - text: The provided context does not contain specific information regarding the integration of the WorkflowBuilder from the agent_
+                - strong [ref=e80]: framework
+                - text: with
+                - strong [ref=e81]: AGUI
+                - text: or ...
+              - paragraph [ref=e82]:
+                - link "See more results from learn.microsoft.com »" [ref=e83] [cursor=pointer]:
+                  - /url: /search?q=site%3Alearn.microsoft.com+agui+UI+framework
+            - listitem [ref=e84]:
+              - link "https://techcommunity.microsoft.com › ... › ... › building-interactive-ag..." [ref=e85] [cursor=pointer]:
+                - /url: https://techcommunity.microsoft.com/blog/azuredevcommunityblog/building-interactive-agent-uis-with-ag-ui-and-microsoft-agent-framework/4488249
+                - paragraph [ref=e86]:
+                  - generic [ref=e87]: https://techcommunity.microsoft.com › ... › ... › building-interactive-ag...
+              - heading "techcommunity.microsoft.com/blog/azuredevcommunityblog/building-interactive-agent-uis-with-ag-ui-and-microsoft-agent-framework/" [level=2] [ref=e88]:
+                - link "techcommunity.microsoft.com/blog/azuredevcommunityblog/building-interactive-agent-uis-with-ag-ui-and-microsoft-agent-framework/" [ref=e89] [cursor=pointer]:
+                  - /url: https://techcommunity.microsoft.com/blog/azuredevcommunityblog/building-interactive-agent-uis-with-ag-ui-and-microsoft-agent-framework/4488249
+            - listitem [ref=e90]:
+              - link "https://community.agno.com › t › mcp-ui-integration-pattern-tools-that-..." [ref=e91] [cursor=pointer]:
+                - /url: https://community.agno.com/t/mcp-ui-integration-pattern-tools-that-return-pre-formatted-ui-content/1986
+                - paragraph [ref=e92]:
+                  - generic [ref=e93]: https://community.agno.com › t › mcp-ui-integration-pattern-tools-that-...
+              - heading "MCP UI integration pattern - tools that return pre-formatted UI" [level=2] [ref=e94]:
+                - link "MCP UI integration pattern - tools that return pre-formatted UI" [ref=e95] [cursor=pointer]:
+                  - /url: https://community.agno.com/t/mcp-ui-integration-pattern-tools-that-return-pre-formatted-ui-content/1986
+              - paragraph [ref=e96]:
+                - text: I’m using
+                - strong [ref=e97]: AgUI
+                - text: as my front-end
+                - strong [ref=e98]: framework
+                - text: ", and I’d like advice on the most suitable approach to handle this pattern."
+          - separator [ref=e99]
+          - generic [ref=e100]:
+            - paragraph [ref=e101]: The following results matched your query but are likely to have limited relevance.
+            - paragraph [ref=e102]: Using words that might appear on the page you're looking for could help. For example, 'cake recipe' instead of 'how to make a cake'.
+          - list [ref=e103]:
+            - listitem [ref=e104]:
+              - link "https://dev.to › copilotkit › deploying-ag-ui-agents-to-production-with..." [ref=e105] [cursor=pointer]:
+                - /url: https://dev.to/copilotkit/deploying-ag-ui-agents-to-production-with-amazon-bedrock-agentcore-3ok0
+                - paragraph [ref=e106]:
+                  - generic [ref=e107]: https://dev.to › copilotkit › deploying-ag-ui-agents-to-production-with...
+              - heading "Deploying AG-UI Agents to Production with Amazon Bedrock" [level=2] [ref=e108]:
+                - link "Deploying AG-UI Agents to Production with Amazon Bedrock" [ref=e109] [cursor=pointer]:
+                  - /url: https://dev.to/copilotkit/deploying-ag-ui-agents-to-production-with-amazon-bedrock-agentcore-3ok0
+              - paragraph [ref=e110]:
+                - text: ... and other
+                - strong [ref=e111]: frameworks
+                - text: ", see the AG-"
+                - strong [ref=e112]: UI
+                - text: ... The protocol itself isn't tied to any of them - you pick the
+                - strong [ref=e113]: framework
+                - text: ", AG-"
+                - strong [ref=e114]: UI
+                - text: handles the interaction layer.
+            - listitem [ref=e115]:
+              - link "https://www.yiichina.com › code › 446" [ref=e116] [cursor=pointer]:
+                - /url: https://www.yiichina.com/code/446
+                - paragraph [ref=e117]:
+                  - generic [ref=e118]: https://www.yiichina.com › code › 446
+              - heading "Yii2整合B-JUI进行微信开发(已删除源码) - 源码 -" [level=2] [ref=e119]:
+                - link "Yii2整合B-JUI进行微信开发(已删除源码) - 源码 -" [ref=e120] [cursor=pointer]:
+                  - /url: https://www.yiichina.com/code/446
+              - paragraph [ref=e121]:
+                - text: qq3737002 404太多了，POST也没有成功案例，这个都不管了，反正BJUI也只是个
+                - strong [ref=e122]: UI
+                - text: 。我是下载的你源码，本地演示的。
+            - listitem [ref=e123]:
+              - link "https://deepwiki.com › agentscope-ai › agentscope-java" [ref=e124] [cursor=pointer]:
+                - /url: https://deepwiki.com/agentscope-ai/agentscope-java
+                - paragraph [ref=e125]:
+                  - generic [ref=e126]: https://deepwiki.com › agentscope-ai › agentscope-java
+              - heading "agentscope-ai/agentscope-java | DeepWiki" [level=2] [ref=e127]:
+                - link "agentscope-ai/agentscope-java | DeepWiki" [ref=e128] [cursor=pointer]:
+                  - /url: https://deepwiki.com/agentscope-ai/agentscope-java
+              - paragraph [ref=e129]:
+                - text: This
+                - strong [ref=e130]: framework
+                - text: provides ReAct reasoning, tool integration, memory management, multi-agent collaboration, and enterprise- grade features built on ...
+            - listitem [ref=e131]:
+              - link "https://reachat.dev › docs › examples › ag-ui" [ref=e132] [cursor=pointer]:
+                - /url: https://reachat.dev/docs/examples/ag-ui
+                - paragraph [ref=e133]:
+                  - generic [ref=e134]: https://reachat.dev › docs › examples › ag-ui
+              - heading "AG-UI Protocol – reachat" [level=2] [ref=e135]:
+                - link "AG-UI Protocol – reachat" [ref=e136] [cursor=pointer]:
+                  - /url: https://reachat.dev/docs/examples/ag-ui
+              - paragraph [ref=e137]:
+                - text: Any
+                - strong [ref=e138]: framework
+                - text: that implements the AG-
+                - strong [ref=e139]: UI
+                - text: protocol — LangGraph, Mastra, CrewAI, or a custom backend — will work out of the box.
+        - list [ref=e141]:
+          - listitem [ref=e142]: Prev
+          - listitem [ref=e143]: "1"
+          - listitem [ref=e144]:
+            - link "2" [ref=e145] [cursor=pointer]:
+              - /url: /search?q=agui+UI+framework&s=11
+          - listitem [ref=e146]:
+            - link "3" [ref=e147] [cursor=pointer]:
+              - /url: /search?q=agui+UI+framework&s=21
+          - listitem [ref=e148]:
+            - link "4" [ref=e149] [cursor=pointer]:
+              - /url: /search?q=agui+UI+framework&s=31
+          - listitem [ref=e150]:
+            - link "5" [ref=e151] [cursor=pointer]:
+              - /url: /search?q=agui+UI+framework&s=41
+          - listitem [ref=e152]:
+            - link "Next" [ref=e153] [cursor=pointer]:
+              - /url: /search?q=agui+UI+framework&s=11
+        - generic [ref=e154]:
+          - paragraph [ref=e155]: "Try elsewhere:"
+          - link "Brave" [ref=e156] [cursor=pointer]:
+            - /url: /search?q=agui+UI+framework&sc=Brave
+          - link "Ecosia" [ref=e157] [cursor=pointer]:
+            - /url: /search?q=agui+UI+framework&sc=Ecosia
+          - link "Startpage" [ref=e158] [cursor=pointer]:
+            - /url: /search?q=agui+UI+framework&sc=Startpage
+          - link [ref=e159] [cursor=pointer]:
+            - /url: /preferences#choices
+            - img [ref=e160]
+      - link "Summarise these results »" [ref=e166] [cursor=pointer]:
+        - /url: https://www.mojeek.com/search?q=agui+UI+framework&mal=1
+    - link "Submit feedback" [ref=e168] [cursor=pointer]:
+      - /url: /about/contact?q=agui+UI+framework
+  - generic [ref=e171]:
+    - textbox "Search The Web using Mojeek..." [ref=e172]: agui UI framework
+    - link "✕" [ref=e173] [cursor=pointer]:
+      - /url: "#"
+    - button [ref=e174] [cursor=pointer]
+  - generic [ref=e177]:
+    - text: Malmoe, SE - detected automatically|
+    - link "Change" [ref=e178] [cursor=pointer]:
+      - /url: /preferences?tab=location-language
+  - generic [ref=e179]:
+    - list [ref=e180]:
+      - listitem [ref=e181]:
+        - link "About" [ref=e182] [cursor=pointer]:
+          - /url: /about/
+      - listitem [ref=e183]:
+        - link "API" [ref=e184] [cursor=pointer]:
+          - /url: /services/search/web-search-api/
+      - listitem [ref=e185]:
+        - link "Support" [ref=e186] [cursor=pointer]:
+          - /url: /support/
+      - listitem [ref=e187]:
+        - link "Blog" [ref=e188] [cursor=pointer]:
+          - /url: https://blog.mojeek.com/
+    - list [ref=e189]:
+      - listitem [ref=e190]:
+        - link "Feedback" [ref=e191] [cursor=pointer]:
+          - /url: /about/contact?q=agui+UI+framework
+      - listitem [ref=e192]:
+        - link "Privacy" [ref=e193] [cursor=pointer]:
+          - /url: /about/privacy/
+      - listitem [ref=e194]:
+        - link "Terms" [ref=e195] [cursor=pointer]:
+          - /url: /about/terms.html
+      - listitem [ref=e196]:
+        - link "Settings" [ref=e197] [cursor=pointer]:
+          - /url: /preferences

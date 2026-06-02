@@ -1,0 +1,161 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e7]
+        - generic [ref=e10]: A2UI Composer
+      - separator [ref=e11]
+      - navigation [ref=e12]:
+        - link "Create" [ref=e14] [cursor=pointer]:
+          - /url: /
+          - img [ref=e15]
+          - generic [ref=e18]: Create
+        - link "Gallery" [ref=e20] [cursor=pointer]:
+          - /url: /gallery
+          - img [ref=e21]
+          - generic [ref=e27]: Gallery
+        - link "Basic Catalog" [ref=e29] [cursor=pointer]:
+          - /url: /basic-catalog
+          - img [ref=e30]
+          - generic [ref=e34]: Basic Catalog
+        - generic [ref=e35]:
+          - link "Custom Catalog" [ref=e36] [cursor=pointer]:
+            - /url: /custom-catalog
+            - img [ref=e37]
+            - generic [ref=e41]: Custom Catalog
+          - generic [ref=e42]:
+            - link "Assembled Components" [ref=e43] [cursor=pointer]:
+              - /url: /custom-catalog
+            - link "Catalog Components" [ref=e44] [cursor=pointer]:
+              - /url: /custom-catalog/catalog-components
+        - link "Icons" [ref=e46] [cursor=pointer]:
+          - /url: /icons
+          - img [ref=e47]
+          - generic [ref=e52]: Icons
+        - link "Theater JSONL Playback" [ref=e54] [cursor=pointer]:
+          - /url: /theater
+          - img [ref=e55]
+          - generic [ref=e57]:
+            - generic [ref=e58]: Theater
+            - generic [ref=e59]: JSONL Playback
+        - link "Tutorial CopilotKit + A2UI" [ref=e61] [cursor=pointer]:
+          - /url: https://docs.copilotkit.ai/a2a/generative-ui/declarative-a2ui
+          - img [ref=e62]
+          - generic [ref=e64]:
+            - generic [ref=e65]: Tutorial
+            - generic [ref=e66]: CopilotKit + A2UI
+      - separator [ref=e67]
+      - generic [ref=e68]:
+        - generic [ref=e70]: Widgets
+        - generic [ref=e72]: Loading...
+    - main [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - heading "Custom Catalog" [level=1] [ref=e77]
+            - generic [ref=e78]:
+              - 'link "Concept: Catalogs" [ref=e79] [cursor=pointer]':
+                - /url: https://a2ui.org/concepts/catalogs/
+                - text: "Concept: Catalogs"
+                - img [ref=e80]
+              - 'link "Guide: Define your own" [ref=e84] [cursor=pointer]':
+                - /url: https://a2ui.org/guides/defining-your-own-catalog/
+                - text: "Guide: Define your own"
+                - img [ref=e85]
+          - paragraph [ref=e89]: Two example trees assembled from the same custom A2UI v0.9 catalog (11 components, runs alongside the basic catalog) — toggle between them under Assembled Components.
+        - generic [ref=e93]:
+          - generic [ref=e95]:
+            - generic [ref=e97]: Catalog Components
+            - generic [ref=e98]:
+              - navigation [ref=e99]:
+                - generic [ref=e100]:
+                  - generic [ref=e101]:
+                    - generic [ref=e102]: Layout
+                    - generic [ref=e103]:
+                      - button "Row" [ref=e104]
+                      - button "Column" [ref=e105]
+                      - button "DashboardCard" [ref=e106]
+                  - generic [ref=e107]:
+                    - generic [ref=e108]: Content
+                    - generic [ref=e109]:
+                      - button "Title" [ref=e110]
+                      - button "Metric" [ref=e111]
+                      - button "Badge" [ref=e112]
+                  - generic [ref=e113]:
+                    - generic [ref=e114]: Data Display
+                    - generic [ref=e115]:
+                      - button "PieChart" [ref=e116]
+                      - button "BarChart" [ref=e117]
+                      - button "DataTable" [ref=e118]
+                  - generic [ref=e119]:
+                    - generic [ref=e120]: Interactive
+                    - button "Button" [ref=e122]
+              - generic [ref=e123]:
+                - heading "Row" [level=1] [ref=e124]
+                - paragraph [ref=e125]: "Horizontal flex container. Accepts either a static array of child IDs or a v0.9 template `{ componentId, path }` that repeats one child per array element in the data model."
+                - heading "Preview" [level=2] [ref=e127]
+                - heading "Usage" [level=2] [ref=e129]
+                - generic [ref=e130]:
+                  - generic [ref=e131]: "{ \"id\": \"row-1\", \"component\": \"Row\", \"gap\": 16, \"justify\": \"spaceBetween\", \"children\": [\"badge-1\", \"badge-2\", \"badge-3\"] }"
+                  - button "Copy to clipboard" [ref=e132]:
+                    - img [ref=e133]
+                - heading "Props" [level=2] [ref=e136]
+                - table [ref=e138]:
+                  - rowgroup [ref=e139]:
+                    - row "Name Description Default" [ref=e140]:
+                      - columnheader "Name" [ref=e141]
+                      - columnheader "Description" [ref=e142]
+                      - columnheader "Default" [ref=e143]
+                  - rowgroup [ref=e144]:
+                    - 'row "children Static list of child component IDs, or a `{ componentId, path }` template that expands once per item in the bound array. string[] | { componentId, path } —" [ref=e145]':
+                      - cell "children" [ref=e146]:
+                        - code [ref=e147]: children
+                      - 'cell "Static list of child component IDs, or a `{ componentId, path }` template that expands once per item in the bound array. string[] | { componentId, path }" [ref=e148]':
+                        - generic [ref=e149]: "Static list of child component IDs, or a `{ componentId, path }` template that expands once per item in the bound array."
+                        - code [ref=e150]: "string[] | { componentId, path }"
+                      - cell "—" [ref=e151]
+                    - row "gap Pixel gap between children. number 16" [ref=e152]:
+                      - cell "gap" [ref=e153]:
+                        - code [ref=e154]: gap
+                      - cell "Pixel gap between children. number" [ref=e155]:
+                        - generic [ref=e156]: Pixel gap between children.
+                        - code [ref=e157]: number
+                      - cell "16" [ref=e158]:
+                        - code [ref=e159]: "16"
+                    - row "align Cross-axis (vertical) alignment of children. \"start\" \"center\" \"end\" \"stretch\" stretch" [ref=e160]:
+                      - cell "align" [ref=e161]:
+                        - code [ref=e162]: align
+                      - cell "Cross-axis (vertical) alignment of children. \"start\" \"center\" \"end\" \"stretch\"" [ref=e163]:
+                        - generic [ref=e164]: Cross-axis (vertical) alignment of children.
+                        - generic [ref=e165]:
+                          - code [ref=e166]: "\"start\""
+                          - code [ref=e167]: "\"center\""
+                          - code [ref=e168]: "\"end\""
+                          - code [ref=e169]: "\"stretch\""
+                      - cell "stretch" [ref=e170]:
+                        - code [ref=e171]: stretch
+                    - row "justify Main-axis (horizontal) distribution of children. \"start\" \"center\" \"end\" \"spaceBetween\" \"spaceAround\" \"spaceEvenly\" \"stretch\" start" [ref=e172]:
+                      - cell "justify" [ref=e173]:
+                        - code [ref=e174]: justify
+                      - cell "Main-axis (horizontal) distribution of children. \"start\" \"center\" \"end\" \"spaceBetween\" \"spaceAround\" \"spaceEvenly\" \"stretch\"" [ref=e175]:
+                        - generic [ref=e176]: Main-axis (horizontal) distribution of children.
+                        - generic [ref=e177]:
+                          - code [ref=e178]: "\"start\""
+                          - code [ref=e179]: "\"center\""
+                          - code [ref=e180]: "\"end\""
+                          - code [ref=e181]: "\"spaceBetween\""
+                          - code [ref=e182]: "\"spaceAround\""
+                          - code [ref=e183]: "\"spaceEvenly\""
+                          - code [ref=e184]: "\"stretch\""
+                      - cell "start" [ref=e185]:
+                        - code [ref=e186]: start
+          - separator:
+            - img [ref=e188]
+          - generic [ref=e196]:
+            - generic [ref=e197]:
+              - generic [ref=e198]:
+                - button "Catalog Definitions" [ref=e199]
+                - button "Catalog Renderers" [ref=e200]
+              - generic [ref=e201]: apis.ts (zod ComponentApi definitions)
+            - generic [ref=e205]: Loading...
+  - alert [ref=e206]

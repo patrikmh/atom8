@@ -1,0 +1,8 @@
+[      29ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://www.npmjs.com/package/pi-agui:0
+[      92ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://www.npmjs.com/favicon.ico:0
+[     111ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://www.npmjs.com/favicon.ico:0
+[     842ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/a0575ca22c63de4e/1780412785202/5f47ba15ca7626e669475e4223a260062d87f9155cf35b0fd1d8fc118c961236/y2weRGbyYZC6bXF:0
+[    1187ms] [ERROR] %c%d font-size:0;color:transparent NaN @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/ehjt7/0x4AAAAAAADnPIDROrmt1Wwj/light/fbE/new/normal?lang=auto:0
+[    1187ms] [ERROR] %c%d font-size:0;color:transparent NaN @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/ehjt7/0x4AAAAAAADnPIDROrmt1Wwj/light/fbE/new/normal?lang=auto:0
+[    1187ms] [WARNING] %c%d font-size:0;color:transparent NaN @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/ehjt7/0x4AAAAAAADnPIDROrmt1Wwj/light/fbE/new/normal?lang=auto:0
+[    1187ms] [WARNING] %c%d font-size:0;color:transparent NaN @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/ehjt7/0x4AAAAAAADnPIDROrmt1Wwj/light/fbE/new/normal?lang=auto:0

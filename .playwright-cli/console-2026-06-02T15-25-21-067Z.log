@@ -1,0 +1,6 @@
+[     606ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://github.com/Stumblinbear/agui/tree/master/crates/agui_primitives/src/stack:0
+[     911ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://github.com/Stumblinbear/agui/latest-commit/master/crates/agui_primitives/src/stack:0
+[     944ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://github.com/Stumblinbear/agui/tree-commit-info/master/crates/agui_primitives/src/stack:0
+[    1019ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://collector.github.com/github/collect:0
+[    3632ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://collector.github.com/github/collect:0
+[    7230ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://collector.github.com/github/collect:0

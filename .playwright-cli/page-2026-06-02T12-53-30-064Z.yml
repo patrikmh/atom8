@@ -1,0 +1,171 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e3]:
+    - banner:
+      - generic [ref=e6]:
+        - text: menu
+        - link "Google for Developers" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "Google for Developers" [ref=e10]
+        - generic [ref=e11]:
+          - navigation "Upper tabs" [ref=e14]:
+            - link "Community/Events" [ref=e16] [cursor=pointer]:
+              - /url: https://developers.google.com/community
+            - link "Learn" [ref=e18] [cursor=pointer]:
+              - /url: https://developers.google.com/solutions/catalog
+            - link "Blog" [ref=e20] [cursor=pointer]:
+              - /url: https://developers.googleblog.com/
+            - link "YouTube" [ref=e22] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/GoogleDevelopers
+            - text: arrow_drop_down
+          - generic [ref=e23]:
+            - generic:
+              - generic:
+                - generic:
+                  - combobox "Sök"
+                  - generic:
+                    - img
+                  - generic: /
+        - generic "Välj önskat språk." [ref=e24]:
+          - button "Language" [ref=e25] [cursor=pointer]:
+            - img
+            - generic [ref=e26]: Language
+            - img
+    - text: filter_list close close chevron_left
+    - generic [ref=e28]:
+      - main [ref=e29]:
+        - generic:
+          - generic:
+            - navigation "On this page"
+        - article [ref=e31]:
+          - article [ref=e32]:
+            - generic [ref=e34]:
+              - heading "404" [level=3] [ref=e35]
+              - generic [ref=e36]:
+                - text: Vi kunde inte hitta sidan. You may need to
+                - link "sign in" [ref=e37] [cursor=pointer]:
+                  - /url: "#"
+                  - generic: sign in
+                - text: .
+              - generic [ref=e41]:
+                - combobox "Sök" [ref=e42]
+                - generic [ref=e43]: search
+                - generic [ref=e44]: /
+      - navigation "Footer links" [ref=e47]:
+        - list [ref=e48]:
+          - listitem [ref=e49]:
+            - heading "Engage" [level=3] [ref=e50]
+            - list [ref=e51]:
+              - listitem [ref=e52]:
+                - link "Google Developer Program" [ref=e53] [cursor=pointer]:
+                  - /url: https://developers.google.com/program
+              - listitem [ref=e54]:
+                - link "Google Developer Groups" [ref=e55] [cursor=pointer]:
+                  - /url: https://developers.google.com/community
+              - listitem [ref=e56]:
+                - link "Google Developer Experts" [ref=e57] [cursor=pointer]:
+                  - /url: https://developers.google.com/community/experts
+              - listitem [ref=e58]:
+                - link "Accelerators" [ref=e59] [cursor=pointer]:
+                  - /url: https://developers.google.com/community/accelerators
+              - listitem [ref=e60]:
+                - link "Google Cloud & NVIDIA" [ref=e61] [cursor=pointer]:
+                  - /url: https://developers.google.com/community/nvidia
+          - listitem [ref=e62]:
+            - heading "Connect" [level=3] [ref=e63]
+            - list [ref=e64]:
+              - listitem [ref=e65]:
+                - link "Blog" [ref=e66] [cursor=pointer]:
+                  - /url: https://developers.googleblog.com/
+              - listitem [ref=e67]:
+                - link "Bluesky" [ref=e68] [cursor=pointer]:
+                  - /url: https://bsky.app/profile/developers.google.com
+              - listitem [ref=e69]:
+                - link "Instagram" [ref=e70] [cursor=pointer]:
+                  - /url: https://www.instagram.com/googlefordevs/
+              - listitem [ref=e71]:
+                - link "LinkedIn" [ref=e72] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/showcase/googledevelopers/
+              - listitem [ref=e73]:
+                - link "X (Twitter)" [ref=e74] [cursor=pointer]:
+                  - /url: https://x.com/googledevs
+              - listitem [ref=e75]:
+                - link "YouTube" [ref=e76] [cursor=pointer]:
+                  - /url: https://www.youtube.com/user/GoogleDevelopers
+          - listitem [ref=e77]:
+            - heading "Build" [level=3] [ref=e78]
+            - list [ref=e79]:
+              - listitem [ref=e80]:
+                - link "Android" [ref=e81] [cursor=pointer]:
+                  - /url: https://developer.android.com/
+              - listitem [ref=e82]:
+                - link "Chrome" [ref=e83] [cursor=pointer]:
+                  - /url: https://developer.chrome.com/
+              - listitem [ref=e84]:
+                - link "Firebase" [ref=e85] [cursor=pointer]:
+                  - /url: https://firebase.google.com/
+              - listitem [ref=e86]:
+                - link "Google AI Studio" [ref=e87] [cursor=pointer]:
+                  - /url: https://aistudio.google.com/
+              - listitem [ref=e88]:
+                - link "Google Antigravity" [ref=e89] [cursor=pointer]:
+                  - /url: https://antigravity.google/
+              - listitem [ref=e90]:
+                - link "Google Cloud" [ref=e91] [cursor=pointer]:
+                  - /url: https://cloud.google.com/
+              - listitem [ref=e92]:
+                - link "Google Play" [ref=e93] [cursor=pointer]:
+                  - /url: https://play.google.com/console/about/
+              - listitem [ref=e94]:
+                - link "View all" [ref=e95] [cursor=pointer]:
+                  - /url: https://developers.google.com/products
+      - generic [ref=e97]:
+        - navigation "Other Google Developers websites" [ref=e98]:
+          - link "Google Developers" [ref=e99] [cursor=pointer]:
+            - /url: https://developers.google.com/
+            - img "Google Developers" [ref=e101]
+          - list [ref=e102]:
+            - listitem [ref=e103]:
+              - link "Android" [ref=e104] [cursor=pointer]:
+                - /url: //developer.android.com
+            - listitem [ref=e105]:
+              - link "Chrome" [ref=e106] [cursor=pointer]:
+                - /url: //developer.chrome.com/home
+            - listitem [ref=e107]:
+              - link "Firebase" [ref=e108] [cursor=pointer]:
+                - /url: //firebase.google.com
+            - listitem [ref=e109]:
+              - link "Google Cloud Platform" [ref=e110] [cursor=pointer]:
+                - /url: //cloud.google.com
+            - listitem [ref=e111]:
+              - link "Google AI" [ref=e112] [cursor=pointer]:
+                - /url: //ai.google.dev/
+            - listitem [ref=e113]:
+              - link "Alla produkter" [ref=e114] [cursor=pointer]:
+                - /url: /products
+        - navigation "Utility links" [ref=e115]:
+          - list [ref=e116]:
+            - listitem [ref=e117]:
+              - link "Villkor" [ref=e118] [cursor=pointer]:
+                - /url: /terms/site-terms
+            - listitem [ref=e119]:
+              - text: "|"
+              - link "Integritet" [ref=e120] [cursor=pointer]:
+                - /url: //policies.google.com/privacy
+            - text: "|"
+          - generic "Välj önskat språk." [ref=e121]:
+            - button "Language" [ref=e122] [cursor=pointer]:
+              - img
+              - generic [ref=e123]: Language
+              - img
+      - toolbar "Meny i sidopanelen" [ref=e126]:
+        - button "Information" [ref=e127] [cursor=pointer]:
+          - img [ref=e129]
+          - generic [ref=e132]: Information
+        - button "Chatt" [ref=e133] [cursor=pointer]:
+          - img [ref=e135]
+          - generic [ref=e138]: Chatt
+        - button "API" [ref=e139] [cursor=pointer]:
+          - img [ref=e141]
+          - generic [ref=e143]: API

@@ -1,0 +1,139 @@
+- generic [active] [ref=e1]:
+  - navigation "Main navigation" [ref=e4]:
+    - generic [ref=e5]:
+      - link "Docs.rs" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic "Docs.rs" [ref=e7]:
+          - generic [ref=e8]: 
+        - text: Docs.rs
+      - list [ref=e9]:
+        - listitem [ref=e10]:
+          - link "agui_core-0.3.0 ▼" [ref=e11] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e12]: 
+            - text: agui_core-0.3.0 ▼
+          - text:         
+        - listitem [ref=e13]:
+          - link "Platform" [ref=e14] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e15]: 
+            - text: Platform ▼
+        - listitem [ref=e16]:
+          - link "Feature flags" [ref=e17] [cursor=pointer]:
+            - /url: /crate/agui_core/latest/features
+            - generic [ref=e18]: 
+            - text: Feature flags
+      - list [ref=e20]:
+        - listitem [ref=e21]:
+          - link "docs.rs" [ref=e22] [cursor=pointer]:
+            - /url: "#"
+            - text: docs.rs▼
+          - text:         
+      - list [ref=e23]:
+        - listitem [ref=e24]:
+          - link "Rust" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - text: Rust▼
+      - generic [ref=e26]:
+        - generic [ref=e28] [cursor=pointer]: 
+        - textbox "Find crate by search query" [ref=e29]:
+          - /placeholder: Find crate
+  - generic [ref=e30]:
+    - link "Skip to main content" [ref=e31] [cursor=pointer]:
+      - /url: "#main-content"
+    - navigation [ref=e32]:
+      - heading "agui_core 0.3.0" [level=2] [ref=e34]:
+        - link "agui_core" [ref=e35] [cursor=pointer]:
+          - /url: ../agui_core/index.html
+          - text: agui_
+          - text: core
+        - generic [ref=e36]: 0.3.0
+      - generic [ref=e37]:
+        - list [ref=e38]:
+          - listitem [ref=e39]:
+            - link "All Items" [ref=e40] [cursor=pointer]:
+              - /url: all.html
+        - generic [ref=e41]:
+          - heading "Crate Items" [level=3] [ref=e42]:
+            - link "Crate Items" [ref=e43] [cursor=pointer]:
+              - /url: "#modules"
+          - list [ref=e44]:
+            - listitem [ref=e45]:
+              - link "Modules" [ref=e46] [cursor=pointer]:
+                - /url: "#modules"
+            - listitem [ref=e47]:
+              - link "Structs" [ref=e48] [cursor=pointer]:
+                - /url: "#structs"
+            - listitem [ref=e49]:
+              - link "Enums" [ref=e50] [cursor=pointer]:
+                - /url: "#enums"
+        - generic [ref=e51]:
+          - heading "Crates" [level=3] [ref=e52]
+          - list [ref=e53]:
+            - listitem [ref=e54]:
+              - link "agui_core" [ref=e55] [cursor=pointer]:
+                - /url: ../agui_core/index.html
+    - generic "Drag to resize sidebar" [ref=e56]
+    - main [ref=e57]:
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - navigation [ref=e62]:
+            - searchbox "Run search in the documentation" [ref=e64]: CanvasPainter
+          - generic [ref=e65]: Search results
+          - generic [ref=e66]:
+            - link "Exit" [ref=e68] [cursor=pointer]:
+              - /url: https://docs.rs/agui_core/latest/agui_core/?search=CanvasPainter
+              - generic [ref=e69]: Exit
+            - link "Settings" [ref=e71] [cursor=pointer]:
+              - /url: ../settings.html
+              - generic [ref=e72]: Settings
+            - link "Help" [ref=e74] [cursor=pointer]:
+              - /url: ../help.html
+              - generic [ref=e75]: Help
+            - button "Summary" [disabled] [ref=e76] [cursor=pointer]:
+              - generic [ref=e77]: Summary
+        - generic [ref=e78]:
+          - generic [ref=e79]:
+            - button "In Names (0)" [ref=e80] [cursor=pointer]
+            - button "In Parameters (0)" [ref=e81] [cursor=pointer]
+            - button "In Return Types (0)" [ref=e82] [cursor=pointer]
+          - generic [ref=e84]:
+            - text: No results :(
+            - text: Try on
+            - link "DuckDuckGo" [ref=e85] [cursor=pointer]:
+              - /url: https://duckduckgo.com/?q=rust%20CanvasPainter
+            - text: "?"
+            - text: "Or try looking in one of these:"
+            - list [ref=e86]:
+              - listitem [ref=e87]:
+                - text: The
+                - link "Rust Reference" [ref=e88] [cursor=pointer]:
+                  - /url: https://doc.rust-lang.org/nightly/reference/index.html
+                - text: for technical details about the language.
+              - listitem [ref=e89]:
+                - link "Rust By Example" [ref=e90] [cursor=pointer]:
+                  - /url: https://doc.rust-lang.org/nightly/rust-by-example/index.html
+                - text: for expository code examples.
+              - listitem [ref=e91]:
+                - text: The
+                - link "Rust Book" [ref=e92] [cursor=pointer]:
+                  - /url: https://doc.rust-lang.org/nightly/book/index.html
+                - text: for introductions to language features and the language itself.
+              - listitem [ref=e93]:
+                - link "Docs.rs" [ref=e94] [cursor=pointer]:
+                  - /url: https://docs.rs
+                - text: for documentation of crates released on
+                - link "crates.io" [ref=e95] [cursor=pointer]:
+                  - /url: https://crates.io/
+                - text: .
+            - text: "Example searches:"
+            - list [ref=e96]:
+              - listitem [ref=e97]:
+                - link "std::vec" [ref=e98] [cursor=pointer]:
+                  - /url: https://docs.rs/agui_core/latest/agui_core/?search=std::vec
+              - listitem [ref=e99]:
+                - link "u32 -> bool" [ref=e100] [cursor=pointer]:
+                  - /url: https://docs.rs/agui_core/latest/agui_core/?search=u32+->+bool
+              - listitem [ref=e101]:
+                - link "Option<T>, (T -> U) -> Option<U>" [ref=e102] [cursor=pointer]:
+                  - /url: https://docs.rs/agui_core/latest/agui_core/?search=Option<T>,+(T+->+U)+->+Option<U>

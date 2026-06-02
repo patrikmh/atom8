@@ -1,0 +1,16 @@
+Total messages: 17 (Errors: 0, Warnings: 0)
+Returning 13 messages for level "info"
+
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=0240ea33:21550
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780423207614:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780423207614:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780423207614:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780423207614:10
+[LOG] [api] /api/ai/chat -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780423207614:10
+[LOG] [api] /api/ai/chat/clear -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780423207614:10
+[LOG] [api] /api/ai/chat/new -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780423207614:10
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=0240ea33:21550
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780423207614:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780423207614:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780423207614:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780423207614:10

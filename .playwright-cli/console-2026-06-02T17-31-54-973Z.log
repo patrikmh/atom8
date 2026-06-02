@@ -1,0 +1,51 @@
+[   13542ms] ReferenceError: process is not defined
+    at log (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2098:7)
+    at DraggableCore.handleDragStart (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2139:11)
+    at DraggableCore.onMouseDown (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2208:23)
+    at HTMLUnknownElement.callCallback2 (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3674:22)
+    at Object.invokeGuardedCallbackDev (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3699:24)
+    at invokeGuardedCallback (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3736:33)
+    at executeDispatch (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7014:11)
+    at processDispatchQueueItemsInOrder (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7034:15)
+    at processDispatchQueue (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7043:13)
+[   13542ms] ReferenceError: process is not defined
+    at log (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2098:7)
+    at DraggableCore.handleDragStart (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2139:11)
+    at DraggableCore.onMouseDown (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2208:23)
+    at HTMLUnknownElement.callCallback2 (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3674:22)
+    at Object.invokeGuardedCallbackDev (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3699:24)
+    at invokeGuardedCallback (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3736:33)
+    at executeDispatch (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7014:11)
+    at processDispatchQueueItemsInOrder (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7034:15)
+    at processDispatchQueue (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7043:13)
+[   35616ms] ReferenceError: process is not defined
+    at log (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2098:7)
+    at DraggableCore.handleDragStart (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2139:11)
+    at DraggableCore.onMouseDown (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2208:23)
+    at HTMLUnknownElement.callCallback2 (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3674:22)
+    at Object.invokeGuardedCallbackDev (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3699:24)
+    at invokeGuardedCallback (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3736:33)
+    at executeDispatch (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7014:11)
+    at processDispatchQueueItemsInOrder (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7034:15)
+    at processDispatchQueue (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7043:13)
+[   35616ms] ReferenceError: process is not defined
+    at log (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2098:7)
+    at DraggableCore.handleDragStart (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2139:11)
+    at DraggableCore.onMouseDown (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2208:23)
+    at HTMLUnknownElement.callCallback2 (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3674:22)
+    at Object.invokeGuardedCallbackDev (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3699:24)
+    at invokeGuardedCallback (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3736:33)
+    at executeDispatch (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7014:11)
+    at processDispatchQueueItemsInOrder (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7034:15)
+    at processDispatchQueue (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7043:13)
+[   48478ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:3000/:0
+[   52938ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:3000/:0
+[   53940ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:3000/:0
+[   54941ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:3000/:0
+[   87338ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:3000/:0
+[   88340ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:3000/:0
+[   89342ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:3000/:0

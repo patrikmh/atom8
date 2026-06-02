@@ -1,0 +1,304 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: https://a2ui.org/guides/defining-your-own-catalog/#defining-your-own-catalog
+  - banner [ref=e3]:
+    - navigation "Header" [ref=e4]:
+      - link "A2UI" [ref=e5] [cursor=pointer]:
+        - /url: https://a2ui.org/
+        - img "logo" [ref=e6]
+      - generic [ref=e8]:
+        - generic [ref=e10]: A2UI
+        - generic:
+          - generic: Defining Your Own Catalog
+      - generic [ref=e11]:
+        - radio "Switch to dark mode"
+        - generic "Switch to dark mode" [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+        - radio "Switch to light mode"
+      - dialog [ref=e15]:
+        - search [ref=e16]:
+          - generic [ref=e17]:
+            - textbox "Search" [ref=e18]
+            - generic:
+              - img
+            - navigation "Search":
+              - button "Clear":
+                - img
+          - generic [ref=e20]: Type to start searching
+      - link "google/A2UI" [ref=e22] [cursor=pointer]:
+        - /url: https://github.com/google/A2UI
+        - img [ref=e24]
+        - generic [ref=e26]: google/A2UI
+  - generic [ref=e27]:
+    - main [ref=e28]:
+      - generic [ref=e29]:
+        - navigation "Navigation" [ref=e33]:
+          - generic [ref=e34]: A2UI
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "Home" [ref=e37] [cursor=pointer]:
+                - /url: https://a2ui.org/
+                - generic [ref=e38]: Home
+            - listitem [ref=e39]:
+              - generic [ref=e41]: Introduction & FAQ
+            - listitem [ref=e43]:
+              - link "Quickstart" [ref=e44] [cursor=pointer]:
+                - /url: https://a2ui.org/quickstart/
+                - generic [ref=e45]: Quickstart
+            - listitem [ref=e46]:
+              - link "A2UI Composer ⭐" [ref=e47] [cursor=pointer]:
+                - /url: https://a2ui.org/composer/
+                - generic [ref=e48]: A2UI Composer ⭐
+            - listitem [ref=e49]:
+              - generic [ref=e51]: Concepts
+            - listitem [ref=e53]:
+              - generic [ref=e55]: Guides
+              - navigation "Guides" [ref=e57]:
+                - list [ref=e58]:
+                  - listitem [ref=e59]:
+                    - link "Client Setup" [ref=e60] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/client-setup/
+                      - generic [ref=e61]: Client Setup
+                  - listitem [ref=e62]:
+                    - link "Agent Development" [ref=e63] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/agent-development/
+                      - generic [ref=e64]: Agent Development
+                  - listitem [ref=e65]:
+                    - link "Use A2UI with Any Agent Framework (AG-UI)" [ref=e66] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/a2ui-with-any-agent-framework/
+                      - generic [ref=e67]: Use A2UI with Any Agent Framework (AG-UI)
+                  - listitem [ref=e68]:
+                    - link "Renderer Development" [ref=e69] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/renderer-development/
+                      - generic [ref=e70]: Renderer Development
+                  - listitem [ref=e71]:
+                    - link "Defining Your Own Catalog" [ref=e72] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/defining-your-own-catalog/
+                      - generic [ref=e73]: Defining Your Own Catalog
+                  - listitem [ref=e74]:
+                    - link "Authoring Custom Components" [ref=e75] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/authoring-components/
+                      - generic [ref=e76]: Authoring Custom Components
+                  - listitem [ref=e77]:
+                    - link "Theming & Styling" [ref=e78] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/theming/
+                      - generic [ref=e79]: Theming & Styling
+                  - listitem [ref=e80]:
+                    - link "A2UI over MCP" [ref=e81] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/a2ui_over_mcp/
+                      - generic [ref=e82]: A2UI over MCP
+                  - listitem [ref=e83]:
+                    - link "MCP Apps in A2UI" [ref=e84] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/mcp-apps-in-a2ui/
+                      - generic [ref=e85]: MCP Apps in A2UI
+                  - listitem [ref=e86]:
+                    - link "A2UI in MCP Apps" [ref=e87] [cursor=pointer]:
+                      - /url: https://a2ui.org/guides/a2ui-in-mcp-apps/
+                      - generic [ref=e88]: A2UI in MCP Apps
+            - listitem [ref=e89]:
+              - generic [ref=e91]: Reference
+            - listitem [ref=e93]:
+              - generic [ref=e95]: Specifications
+            - listitem [ref=e97]:
+              - generic [ref=e99]: Ecosystem
+            - listitem [ref=e101]:
+              - link "Roadmap" [ref=e102] [cursor=pointer]:
+                - /url: https://a2ui.org/roadmap/
+                - generic [ref=e103]: Roadmap
+        - navigation "Table of contents" [ref=e107]:
+          - generic [ref=e108]: Table of contents
+          - list [ref=e109]:
+            - listitem [ref=e110]:
+              - link "Why Define Your Own Catalog?" [ref=e111] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/defining-your-own-catalog/#why-define-your-own-catalog
+                - generic [ref=e112]: Why Define Your Own Catalog?
+            - listitem [ref=e113]:
+              - link "How It Works" [ref=e114] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/defining-your-own-catalog/#how-it-works
+                - generic [ref=e115]: How It Works
+            - listitem [ref=e116]:
+              - link "Implementation Guide" [ref=e117] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/defining-your-own-catalog/#implementation-guide
+                - generic [ref=e118]: Implementation Guide
+            - listitem [ref=e119]:
+              - link "Security Considerations" [ref=e120] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/defining-your-own-catalog/#security-considerations
+                - generic [ref=e121]: Security Considerations
+            - listitem [ref=e122]:
+              - link "Next Steps" [ref=e123] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/defining-your-own-catalog/#next-steps
+                - generic [ref=e124]: Next Steps
+        - generic [ref=e125]:
+          - navigation "Navigation" [ref=e126]:
+            - list [ref=e127]:
+              - listitem [ref=e128]:
+                - link "Home" [ref=e129] [cursor=pointer]:
+                  - /url: https://a2ui.org/
+                  - generic [ref=e130]: Home
+              - listitem [ref=e131]:
+                - link "Guides" [ref=e132] [cursor=pointer]:
+                  - /url: https://a2ui.org/guides/client-setup/
+                  - generic [ref=e133]: Guides
+          - article [ref=e134]:
+            - link "View source of this page" [ref=e135] [cursor=pointer]:
+              - /url: https://github.com/google/A2UI/raw/main/docs/guides/defining-your-own-catalog.md
+              - img [ref=e136]
+            - heading "Defining Your Own Catalog ¶" [level=1] [ref=e138]:
+              - text: Defining Your Own Catalog
+              - link "¶" [ref=e139] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/defining-your-own-catalog/#defining-your-own-catalog
+            - paragraph [ref=e140]:
+              - text: While the
+              - link "Basic Catalog" [ref=e141] [cursor=pointer]:
+                - /url: https://github.com/google/A2UI/blob/main/specification/v0_9/catalogs/basic/catalog.json
+              - text: is useful for starting out and bootstrapping an application, most production applications will define their own catalog to reflect their specific design system.
+            - paragraph [ref=e142]: By defining your own catalog, you restrict the agent to using exactly the components and visual language that exist in your application, rather than generic inputs or buttons.
+            - heading "Why Define Your Own Catalog? ¶" [level=2] [ref=e143]:
+              - text: Why Define Your Own Catalog?
+              - link "¶" [ref=e144] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/defining-your-own-catalog/#why-define-your-own-catalog
+            - paragraph [ref=e145]:
+              - text: Every A2UI surface is driven by a
+              - strong [ref=e146]: Catalog
+              - text: . A catalog is simply a JSON Schema file that tells the agent which components, functions, and themes are available for it to use.
+            - paragraph [ref=e147]: "Defining your own catalog offers the following benefits:"
+            - list [ref=e148]:
+              - listitem [ref=e149]:
+                - strong [ref=e150]: Design System Alignment
+                - text: ": Restrict the agent to using exactly the components and visual language that exist in your application."
+              - listitem [ref=e151]:
+                - strong [ref=e152]: Security and Type Safety
+                - text: ": You register entire catalogs with your client application, ensuring that only trusted components are rendered."
+              - listitem [ref=e153]:
+                - strong [ref=e154]: No Mappers Needed
+                - text: ": It is recommended to build catalogs that directly reflect your client's design system rather than trying to map a generic catalog (like the Basic Catalog) to it through an adapter."
+            - paragraph [ref=e155]: The Basic Catalog is just one example and is intentionally sparse to remain easily implementable by different renderers.
+            - heading "How It Works ¶" [level=2] [ref=e156]:
+              - text: How It Works
+              - link "¶" [ref=e157] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/defining-your-own-catalog/#how-it-works
+            - list [ref=e158]:
+              - listitem [ref=e159]:
+                - strong [ref=e160]: Define the Catalog
+                - text: ": Create a catalog definition (JSON Schema) listing the components, functions, and styles your application supports."
+              - listitem [ref=e161]:
+                - strong [ref=e162]: Register the Catalog
+                - text: ": Register the catalog and its corresponding component implementations (renderers) with your client application."
+              - listitem [ref=e163]:
+                - strong [ref=e164]: Announce Support
+                - text: ": The client informs the agent which catalogs it supports (via"
+                - code [ref=e165]: supportedCatalogIds
+                - text: ).
+              - listitem [ref=e166]:
+                - strong [ref=e167]: Agent Selects Catalog
+                - text: ": The agent chooses a catalog for a given UI surface (via"
+                - code [ref=e168]: catalogId
+                - text: inside the creation message, like
+                - code [ref=e169]: createSurface
+                - text: ).
+              - listitem [ref=e170]:
+                - strong [ref=e171]: Agent Generates UI
+                - text: ": The agent generates component messages using the components defined in that catalog by name."
+            - heading "Implementation Guide ¶" [level=2] [ref=e172]:
+              - text: Implementation Guide
+              - link "¶" [ref=e173] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/defining-your-own-catalog/#implementation-guide
+            - paragraph [ref=e174]: It is recommended to create catalogs that directly map to your existing component library.
+            - generic [ref=e175]:
+              - radio "Web (Lit / Angular / React)" [checked]
+              - radio "Flutter"
+              - generic [ref=e176]:
+                - link "Web (Lit / Angular / React)" [ref=e178] [cursor=pointer]:
+                  - /url: "#web-lit--angular--react"
+                - link "Flutter" [ref=e180] [cursor=pointer]:
+                  - /url: "#flutter"
+              - generic [ref=e182]:
+                - paragraph [ref=e183]: "To implement your own catalog on the web:"
+                - list [ref=e184]:
+                  - listitem [ref=e185]: Create a JSON Schema containing your component definitions.
+                  - listitem [ref=e186]:
+                    - text: Create your own
+                    - code [ref=e187]: Component
+                    - text: objects and
+                    - code [ref=e188]: Catalog
+                    - text: object within your chosen web renderer.
+                    - list [ref=e189]:
+                      - listitem [ref=e190]: Provide the schema or reference ID to the agent.
+                - paragraph [ref=e191]:
+                  - emphasis [ref=e192]: Detailed guides for each framework coming soon.
+              - button [ref=e193] [cursor=pointer]
+              - button [ref=e194] [cursor=pointer]
+            - heading "Security Considerations ¶" [level=2] [ref=e195]:
+              - text: Security Considerations
+              - link "¶" [ref=e196] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/defining-your-own-catalog/#security-considerations
+            - paragraph [ref=e197]: "When defining and registering catalogs:"
+            - list [ref=e198]:
+              - listitem [ref=e199]:
+                - strong [ref=e200]: Allowlist components
+                - text: ": Only register components you trust in your catalog definition. Don't expose components that offer dangerous capabilities (e.g., executing arbitrary scripts) unless strictly controlled."
+              - listitem [ref=e201]:
+                - strong [ref=e202]: Validate properties
+                - text: ": Always validate component properties from agent messages to ensure they match expected type constraints."
+              - listitem [ref=e203]:
+                - strong [ref=e204]: Sanitize text
+                - text: ": Avoid rendering un-sanitized content provided by the agent unless safe bounds are established."
+            - heading "Next Steps ¶" [level=2] [ref=e205]:
+              - text: Next Steps
+              - link "¶" [ref=e206] [cursor=pointer]:
+                - /url: https://a2ui.org/guides/defining-your-own-catalog/#next-steps
+            - list [ref=e207]:
+              - listitem [ref=e208]:
+                - strong [ref=e209]:
+                  - link "Theming & Styling" [ref=e210] [cursor=pointer]:
+                    - /url: https://a2ui.org/guides/theming/
+                - text: ": Customize the look and feel of components."
+              - listitem [ref=e211]:
+                - strong [ref=e212]:
+                  - link "Component Reference" [ref=e213] [cursor=pointer]:
+                    - /url: https://a2ui.org/reference/components/
+                - text: ": Explore standard types that might be available for reuse."
+              - listitem [ref=e214]:
+                - strong [ref=e215]:
+                  - link "Agent Development" [ref=e216] [cursor=pointer]:
+                    - /url: https://a2ui.org/guides/agent-development/
+                - text: ": Build agents that interact with your Catalog."
+      - button "Back to top":
+        - img
+        - text: Back to top
+    - contentinfo [ref=e217]:
+      - navigation "Footer" [ref=e218]:
+        - 'link "Previous: Renderer Development" [ref=e219] [cursor=pointer]':
+          - /url: https://a2ui.org/guides/renderer-development/
+          - img [ref=e221]
+          - generic [ref=e223]:
+            - text: Previous
+            - generic [ref=e224]: Renderer Development
+        - 'link "Next: Authoring Custom Components" [ref=e225] [cursor=pointer]':
+          - /url: https://a2ui.org/guides/authoring-components/
+          - generic [ref=e226]:
+            - text: Next
+            - generic [ref=e227]: Authoring Custom Components
+          - img [ref=e229]
+      - generic [ref=e233]:
+        - generic [ref=e234]:
+          - text: Copyright Google 2025 |
+          - link "Terms" [ref=e235] [cursor=pointer]:
+            - /url: //policies.google.com/terms
+          - text: "|"
+          - link "Privacy" [ref=e236] [cursor=pointer]:
+            - /url: //policies.google.com/privacy
+          - text: "|"
+          - link "Manage cookies" [ref=e237] [cursor=pointer]:
+            - /url: https://a2ui.org/guides/defining-your-own-catalog/#__consent
+        - text: Made with
+        - link "Material for MkDocs" [ref=e238] [cursor=pointer]:
+          - /url: https://squidfunk.github.io/mkdocs-material/
+  - progressbar
+  - complementary [ref=e240]:
+    - generic [ref=e241]:
+      - heading "Cookie consent" [level=4] [ref=e242]
+      - paragraph [ref=e243]: We use cookies to recognize repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find the information they need. With your consent, you're helping us to make our documentation better.
+      - generic [ref=e244]:
+        - button "Accept" [ref=e245] [cursor=pointer]
+        - text: Manage settings

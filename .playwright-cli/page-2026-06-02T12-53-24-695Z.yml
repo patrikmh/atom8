@@ -1,0 +1,561 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e3]:
+    - banner:
+      - generic:
+        - generic [ref=e6]:
+          - text: menu
+          - generic [ref=e7]:
+            - link "Google Workspace" [ref=e8] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace
+              - img "Google Workspace" [ref=e11]
+            - list [ref=e13]:
+              - listitem [ref=e14]:
+                - link "GoogleWorkspace" [ref=e15] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace
+                  - img "Google" [ref=e16]
+                  - text: Workspace
+          - generic [ref=e18]:
+            - navigation "Upper tabs" [ref=e21]:
+              - link "Home" [ref=e23] [cursor=pointer]:
+                - /url: https://developers.google.com/workspace
+              - link "Gmail, selected" [ref=e25] [cursor=pointer]:
+                - /url: https://developers.google.com/workspace/gmail
+                - text: Gmail
+              - generic [ref=e26]:
+                - link "All products" [ref=e27] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace/products-menu
+                - button "Dropdown menu for All products" [ref=e28] [cursor=pointer]: arrow_drop_down
+              - generic [ref=e29]:
+                - link "Resources" [ref=e30] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace/resources-menu
+                - button "Dropdown menu for Resources" [ref=e31] [cursor=pointer]: arrow_drop_down
+              - generic [ref=e32]:
+                - button "Rullgardinsmeny för utökad navigering" [ref=e33] [cursor=pointer]: arrow_drop_down Mer
+                - text: arrow_drop_down
+            - generic [ref=e37]:
+              - combobox "Search" [ref=e38]
+              - img [ref=e40]
+              - generic [ref=e43]: /
+          - generic "Välj önskat språk." [ref=e44]:
+            - button "Language" [ref=e45] [cursor=pointer]:
+              - img
+              - generic [ref=e46]: Language
+              - img
+        - generic [ref=e49]:
+          - list [ref=e53]:
+            - listitem [ref=e54]:
+              - link "Gmail" [ref=e55] [cursor=pointer]:
+                - /url: https://developers.google.com/workspace/gmail
+          - navigation "Lower tabs" [ref=e58]:
+            - link "Overview" [ref=e60] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace/gmail
+            - link "Guides, selected" [ref=e62] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace/gmail/api/guides
+              - text: Guides
+            - link "Reference" [ref=e64] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace/gmail/api/reference/rest
+            - link "MCP server" [ref=e66] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace/gmail/api/guides/configure-mcp-server
+            - link "Samples" [ref=e68] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace/gmail/api/samples
+            - link "Support" [ref=e70] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace/gmail/api/support
+            - text: arrow_drop_down
+    - generic [ref=e72]:
+      - generic [ref=e73]:
+        - text: filter_list
+        - searchbox "Type to filter" [ref=e74]
+        - text: close
+      - navigation "Side menu" [ref=e75]:
+        - text: arrow_back
+        - generic [ref=e76]:
+          - text: arrow_forward arrow_forward arrow_forward
+          - list [ref=e78]:
+            - listitem [ref=e79]:
+              - generic [ref=e81]: Get started
+            - listitem [ref=e82]:
+              - link "Gmail API overview" [ref=e83] [cursor=pointer]:
+                - /url: /workspace/gmail/api/guides
+                - generic [ref=e84]: Gmail API overview
+            - listitem [ref=e85]:
+              - link "Get started with Google Workspace" [ref=e86] [cursor=pointer]:
+                - /url: /workspace/guides/get-started
+                - generic [ref=e87]: Get started with Google Workspace
+                - generic [ref=e88]: open_in_new
+            - listitem [ref=e89]:
+              - link "Configure OAuth consent" [ref=e90] [cursor=pointer]:
+                - /url: /workspace/guides/configure-oauth-consent
+                - generic [ref=e91]: Configure OAuth consent
+                - generic [ref=e92]: open_in_new
+            - listitem [ref=e93]:
+              - generic [ref=e95]: Gmail API
+            - listitem [ref=e96]:
+              - generic [ref=e97]:
+                - generic [ref=e98] [cursor=pointer]: arrow_drop_down
+                - button "Authenticate and authorize" [ref=e99] [cursor=pointer]:
+                  - generic [ref=e100]: Authenticate and authorize
+            - listitem [ref=e101]:
+              - generic [ref=e102]:
+                - generic [ref=e103] [cursor=pointer]: arrow_drop_down
+                - button "Quickstarts" [ref=e104] [cursor=pointer]:
+                  - generic [ref=e105]: Quickstarts
+            - listitem [ref=e106]:
+              - generic [ref=e107]:
+                - generic [ref=e108] [cursor=pointer]: arrow_drop_down
+                - button "Create and send mail" [ref=e109] [cursor=pointer]:
+                  - generic [ref=e110]: Create and send mail
+            - listitem [ref=e111]:
+              - generic [ref=e112]:
+                - generic [ref=e113] [cursor=pointer]: arrow_drop_down
+                - button "Manage mailboxes" [ref=e114] [cursor=pointer]:
+                  - generic [ref=e115]: Manage mailboxes
+            - listitem [ref=e116]:
+              - generic [ref=e117]:
+                - generic [ref=e118] [cursor=pointer]: arrow_drop_down
+                - button "Manage settings" [ref=e119] [cursor=pointer]:
+                  - generic [ref=e120]: Manage settings
+            - listitem [ref=e121]:
+              - generic [ref=e122]:
+                - generic [ref=e123] [cursor=pointer]: arrow_drop_down
+                - button "Techniques and best practices" [ref=e124] [cursor=pointer]:
+                  - generic [ref=e125]: Techniques and best practices
+            - listitem [ref=e126]:
+              - generic [ref=e127]:
+                - generic [ref=e128] [cursor=pointer]: arrow_drop_down
+                - button "Troubleshoot" [ref=e129] [cursor=pointer]:
+                  - generic [ref=e130]: Troubleshoot
+            - listitem [ref=e131]:
+              - link "Migrate from the Email Settings API" [ref=e132] [cursor=pointer]:
+                - /url: /workspace/gmail/api/guides/migrate-from-email-settings
+                - generic [ref=e133]: Migrate from the Email Settings API
+            - listitem [ref=e134]:
+              - generic [ref=e136]: IMAP for Gmail
+            - listitem [ref=e137]:
+              - link "Overview" [ref=e138] [cursor=pointer]:
+                - /url: /workspace/gmail/imap/imap-smtp
+                - generic [ref=e139]: Overview
+            - listitem [ref=e140]:
+              - link "XOAUTH2 Mechanism" [ref=e141] [cursor=pointer]:
+                - /url: /workspace/gmail/imap/xoauth2-protocol
+                - generic [ref=e142]: XOAUTH2 Mechanism
+            - listitem [ref=e143]:
+              - link "Libraries and Samples" [ref=e144] [cursor=pointer]:
+                - /url: /workspace/gmail/imap/xoauth2-libraries
+                - generic [ref=e145]: Libraries and Samples
+            - listitem [ref=e146]:
+              - link "IMAP Extensions" [ref=e147] [cursor=pointer]:
+                - /url: /workspace/gmail/imap/imap-extensions
+                - generic [ref=e148]: IMAP Extensions
+            - listitem [ref=e149]:
+              - generic [ref=e151]: Postmaster Tools API
+            - listitem [ref=e152]:
+              - link "Overview" [ref=e153] [cursor=pointer]:
+                - /url: /workspace/gmail/postmaster
+                - generic [ref=e154]: Overview
+            - listitem [ref=e155]:
+              - generic [ref=e156]:
+                - generic [ref=e157] [cursor=pointer]: arrow_drop_down
+                - button "Quickstarts" [ref=e158] [cursor=pointer]:
+                  - generic [ref=e159]: Quickstarts
+            - listitem [ref=e160]:
+              - generic [ref=e161]:
+                - generic [ref=e162] [cursor=pointer]: arrow_drop_down
+                - button "How do I..." [ref=e163] [cursor=pointer]:
+                  - generic [ref=e164]:
+                    - text: How do I.
+                    - text: .
+                    - text: .
+            - listitem [ref=e165]:
+              - generic [ref=e166]:
+                - generic [ref=e167] [cursor=pointer]: arrow_drop_down
+                - button "Troubleshoot" [ref=e168] [cursor=pointer]:
+                  - generic [ref=e169]: Troubleshoot
+            - listitem [ref=e170]:
+              - generic [ref=e172]: Sender resources
+            - listitem [ref=e173]:
+              - generic [ref=e174]:
+                - generic [ref=e175] [cursor=pointer]: arrow_drop_down
+                - button "AMP for Gmail" [ref=e176] [cursor=pointer]:
+                  - generic [ref=e177]: AMP for Gmail
+                - text: open_in_new open_in_new
+            - listitem [ref=e178]:
+              - link "Bulk sender guidelines" [ref=e179] [cursor=pointer]:
+                - /url: https://support.google.com/mail/answer/81126
+                - generic [ref=e180]: Bulk sender guidelines
+                - generic [ref=e181]: open_in_new
+            - listitem [ref=e182]:
+              - link "Email CSS" [ref=e183] [cursor=pointer]:
+                - /url: /workspace/gmail/design/css
+                - generic [ref=e184]: Email CSS
+            - listitem [ref=e185]:
+              - generic [ref=e186]:
+                - generic [ref=e187] [cursor=pointer]: arrow_drop_down
+                - button "Email markup" [ref=e188] [cursor=pointer]:
+                  - generic [ref=e189]: Email markup
+                - text: arrow_drop_down arrow_drop_down arrow_drop_down
+            - listitem [ref=e190]:
+              - generic [ref=e191]:
+                - generic [ref=e192] [cursor=pointer]: arrow_drop_down
+                - button "Email promotions" [ref=e193] [cursor=pointer]:
+                  - generic [ref=e194]: Email promotions
+            - listitem [ref=e195]:
+              - generic [ref=e196]:
+                - generic [ref=e197] [cursor=pointer]: arrow_drop_down
+                - button "Email reactions" [ref=e198] [cursor=pointer]:
+                  - generic [ref=e199]: Email reactions
+            - listitem [ref=e200]:
+              - generic [ref=e202]: Android content provider
+            - listitem [ref=e203]:
+              - link "Overview" [ref=e204] [cursor=pointer]:
+                - /url: /workspace/gmail/android
+                - generic [ref=e205]: Overview
+            - listitem [ref=e206]:
+              - link "Download a sample app" [ref=e207] [cursor=pointer]:
+                - /url: /static/workspace/gmail/android/android-gmail-api-sample.tar.gz
+                - generic [ref=e208]: Download a sample app
+                - generic [ref=e209]: open_in_new
+            - listitem [ref=e210]:
+              - link "Content provider basics" [ref=e211] [cursor=pointer]:
+                - /url: https://developer.android.com/guide/topics/providers/content-provider-basics.html
+                - generic [ref=e212]: Content provider basics
+                - generic [ref=e213]: open_in_new
+            - listitem [ref=e214]:
+              - generic [ref=e216]: Extend & automate
+            - listitem [ref=e217]:
+              - link "Add-ons" [ref=e218] [cursor=pointer]:
+                - /url: /workspace/add-ons/gmail
+                - generic [ref=e219]: Add-ons
+            - listitem [ref=e220]:
+              - link "Apps Script" [ref=e221] [cursor=pointer]:
+                - /url: /apps-script/reference/gmail
+                - generic [ref=e222]: Apps Script
+    - button "Hide side navigation" [expanded] [ref=e223] [cursor=pointer]:
+      - generic [ref=e224]: chevron_left
+    - generic [ref=e225]:
+      - main [ref=e226]:
+        - generic [ref=e227]:
+          - article [ref=e228]:
+            - navigation [ref=e229]:
+              - list "Breadcrumb" [ref=e230]:
+                - listitem [ref=e231]:
+                  - link "Home" [ref=e232] [cursor=pointer]:
+                    - /url: https://developers.google.com/
+                - listitem [ref=e233]:
+                  - generic [ref=e234]: chevron_right
+                  - link "Google Workspace" [ref=e235] [cursor=pointer]:
+                    - /url: https://developers.google.com/workspace
+                - listitem [ref=e236]:
+                  - generic [ref=e237]: chevron_right
+                  - link "Gmail" [ref=e238] [cursor=pointer]:
+                    - /url: https://developers.google.com/workspace/gmail
+                - listitem [ref=e239]:
+                  - generic [ref=e240]: chevron_right
+                  - link "Guides" [ref=e241] [cursor=pointer]:
+                    - /url: https://developers.google.com/workspace/gmail/api/guides
+            - button "Send feedback" [ref=e243] [cursor=pointer]
+            - heading "Gmail API overview LLM-verktyg" [level=1] [ref=e244]:
+              - text: Gmail API overview
+              - generic [ref=e245]:
+                - listbox "Bookmark collections drop down" [ref=e248] [cursor=pointer]:
+                  - button "Öppna rullgardinsmenyn" [ref=e249]:
+                    - generic:
+                      - generic [ref=e250]: bookmark_border
+                      - text: bookmark
+                    - text: arrow_drop_down
+                - group "LLM-verktyg" [ref=e252]:
+                  - button "Kopiera sidan som Markdown" [ref=e254] [cursor=pointer]:
+                    - generic [ref=e255]: content_copy
+                  - button "Fler alternativ för LLM-verktyg" [ref=e258] [cursor=pointer]: arrow_drop_down
+            - list [ref=e260]:
+              - listitem [ref=e261]:
+                - heading "On this page" [level=2] [ref=e262]:
+                  - generic [ref=e263]: On this page
+                - text: expand_more
+              - listitem [ref=e264]:
+                - link "Common terms" [ref=e265] [cursor=pointer]:
+                  - /url: "#common-terms"
+                  - generic [ref=e266]: Common terms
+              - listitem [ref=e267]:
+                - link "Related topics" [ref=e268] [cursor=pointer]:
+                  - /url: "#related-topics"
+                  - generic [ref=e269]: Related topics
+              - listitem: more_horiz
+            - generic [ref=e270]:
+              - paragraph [ref=e271]: "The Gmail API is a RESTful API that can be used to access Gmail mailboxes and send mail. For most web applications the Gmail API is the best choice for authorized access to a user's Gmail data and is suitable for various applications, such as:"
+              - list [ref=e272]:
+                - listitem [ref=e273]: Read-only mail extraction, indexing, and backup
+                - listitem [ref=e274]: Automated or programmatic message sending
+                - listitem [ref=e275]: Email account migration
+                - listitem [ref=e276]: Email organization including filtering and sorting of messages
+                - listitem [ref=e277]: Standardization of email signatures across an organization
+              - 'heading "Common terms Copy link to this section: Common terms" [level=2] [ref=e278]':
+                - heading "Common terms" [level=2] [ref=e279]
+                - 'button "Copy link to this section: Common terms" [ref=e280] [cursor=pointer]': link
+              - paragraph [ref=e281]: "The following is a list of common terms used in this API:"
+              - generic [ref=e282]:
+                - term [ref=e283]:
+                  - emphasis [ref=e284]: Delegator and Delegate
+                - definition [ref=e285]:
+                  - text: A delegator is a Gmail user who grants mailbox access to another user within the same Google Workspace organization. The user receiving this access is the delegate. Delegates can read, send, and delete messages, as well as view and add contacts on behalf of the delegator's account. For more information, see
+                  - link "Manage delegates" [ref=e286] [cursor=pointer]:
+                    - /url: /workspace/gmail/api/guides/delegate_settings
+                  - text: .
+                - term [ref=e287]:
+                  - emphasis [ref=e288]: Draft
+                - definition [ref=e289]:
+                  - text: An unsent message. A message contained within the draft can be replaced. Sending a draft automatically deletes the draft and creates a message with the
+                  - code [ref=e290]: SENT
+                  - text: system label. A draft is represented by the
+                  - link "drafts" [ref=e291] [cursor=pointer]:
+                    - /url: /workspace/gmail/api/reference/rest/v1/users.drafts
+                    - code [ref=e292]: drafts
+                  - text: resource. For more information, see
+                  - link "Work with drafts" [ref=e293] [cursor=pointer]:
+                    - /url: /workspace/gmail/api/guides/drafts
+                  - text: .
+                - term [ref=e294]:
+                  - emphasis [ref=e295]: Filters
+                - definition [ref=e296]:
+                  - text: Advanced rules configured for an account that evaluate incoming messages against specific matching criteria (like sender, subject, or size). When a message matches, filters automatically trigger actions such as adding or removing labels, or forwarding the email to a specified address. For more information, see
+                  - link "Manage filters" [ref=e297] [cursor=pointer]:
+                    - /url: /workspace/gmail/api/guides/filter_settings
+                  - text: .
+                - term [ref=e298]:
+                  - emphasis [ref=e299]: Forwarding addresses
+                - definition [ref=e300]:
+                  - text: Specific, verified email addresses configured to receive auto-forwarded messages from a user's account. Before an address can be used in a forwarding rule or filter, it must be officially registered and verified to prove ownership. For more information, see
+                  - link "Manage forwarding" [ref=e301] [cursor=pointer]:
+                    - /url: /workspace/gmail/api/guides/forwarding_settings
+                  - text: .
+                - term [ref=e302]:
+                  - emphasis [ref=e303]: Label
+                - definition [ref=e304]:
+                  - paragraph [ref=e305]:
+                    - text: A mechanism for organizing messages and threads. For example, the label "taxes" might be created and applied to all messages and threads having to do with a user's taxes. For more information, see
+                    - link "Manage labels" [ref=e306] [cursor=pointer]:
+                      - /url: /workspace/gmail/api/guides/labels
+                    - text: .
+                  - paragraph [ref=e307]: "There are two types of labels:"
+                  - generic [ref=e308]:
+                    - term [ref=e309]:
+                      - emphasis [ref=e310]: System labels
+                    - definition [ref=e311]:
+                      - text: Internally-created labels, such as
+                      - code [ref=e312]: INBOX
+                      - text: ","
+                      - code [ref=e313]: TRASH
+                      - text: ", or"
+                      - code [ref=e314]: SPAM
+                      - text: . These labels cannot be deleted or modified. However, some system labels, such as
+                      - code [ref=e315]: INBOX
+                      - text: can be applied to, or removed from, messages and threads.
+                    - term [ref=e316]:
+                      - emphasis [ref=e317]: User labels
+                    - definition [ref=e318]:
+                      - text: Labels created by a user. These labels can be deleted or modified by the user or an application. A user label is represented by the
+                      - link "labels" [ref=e319] [cursor=pointer]:
+                        - /url: /workspace/gmail/api/reference/rest/v1/users.labels
+                        - code [ref=e320]: labels
+                      - text: resource.
+                - term [ref=e321]:
+                  - emphasis [ref=e322]: Message
+                - definition [ref=e323]:
+                  - paragraph [ref=e324]:
+                    - text: An email message containing the sender, recipients, subject, and body. Once a message is created, it cannot be changed. A message is represented by the
+                    - link "messages" [ref=e325] [cursor=pointer]:
+                      - /url: /workspace/gmail/api/reference/rest/v1/users.messages
+                      - code [ref=e326]: messages
+                    - text: resource.
+                - term [ref=e327]:
+                  - emphasis [ref=e328]: Push notifications
+                - definition [ref=e329]:
+                  - paragraph [ref=e330]:
+                    - text: A server-side notification system integrating with Google Cloud Pub/Sub. Applications can "watch" a mailbox, and the Gmail API will send automatic webhooks or alerts whenever a change occurs (like a new email arriving), eliminating the need for the app to continuously poll the server for updates. For more information, see
+                    - link "Push notifications" [ref=e331] [cursor=pointer]:
+                      - /url: /workspace/gmail/api/guides/push
+                    - text: .
+                - term [ref=e332]:
+                  - emphasis [ref=e333]: S/MIME certificates
+                - definition [ref=e334]:
+                  - paragraph [ref=e335]:
+                    - text: Digital certificates uploaded to specific send-as aliases that allow a user to send encrypted and digitally signed emails, ensuring message security and sender authenticity. For more information, see
+                    - link "Manage S/MIME certificates" [ref=e336] [cursor=pointer]:
+                      - /url: /workspace/gmail/api/guides/smime_certs
+                    - text: .
+                - term [ref=e337]:
+                  - emphasis [ref=e338]: Send-as aliases
+                - definition [ref=e339]:
+                  - paragraph [ref=e340]:
+                    - text: These represent the various email addresses from which an account is authorized to send mail. Every account has at least one alias representing the primary email address. Aliases correspond to the "Send mail as" feature in the Gmail web interface and are also the basis for configuring per-address email signatures. For more information, see
+                    - link "Manage aliases" [ref=e341] [cursor=pointer]:
+                      - /url: /workspace/gmail/api/guides/alias_and_signature_settings
+                    - text: .
+                - term [ref=e342]:
+                  - emphasis [ref=e343]: Thread
+                - definition [ref=e344]:
+                  - paragraph [ref=e345]:
+                    - text: A collection of related messages forming a conversation. In an email client app, a thread is formed when one or more recipients respond to a message with their own message. For more information, see
+                    - link "Manage threads" [ref=e346] [cursor=pointer]:
+                      - /url: /workspace/gmail/api/guides/threads
+                    - text: .
+              - heading "Related topics" [level=2] [ref=e347]
+              - list [ref=e348]:
+                - listitem [ref=e349]:
+                  - paragraph [ref=e350]:
+                    - text: To learn about developing with Google Workspace APIs, including handling authentication and authorization, refer to
+                    - link "Develop on Google Workspace" [ref=e351] [cursor=pointer]:
+                      - /url: /workspace/guides/getstarted-overview
+                    - text: .
+                - listitem [ref=e352]:
+                  - paragraph [ref=e353]:
+                    - text: To learn how to configure and run a Gmail API app, read the
+                    - link "Quickstarts" [ref=e354] [cursor=pointer]:
+                      - /url: /workspace/gmail/api/quickstart/js
+                    - text: .
+            - button "Send feedback" [ref=e356] [cursor=pointer]
+          - generic [ref=e389]:
+            - paragraph [ref=e390]:
+              - text: Except as otherwise noted, the content of this page is licensed under the
+              - link "Creative Commons Attribution 4.0 License" [ref=e391] [cursor=pointer]:
+                - /url: https://creativecommons.org/licenses/by/4.0/
+              - text: ", and code samples are licensed under the"
+              - link "Apache 2.0 License" [ref=e392] [cursor=pointer]:
+                - /url: https://www.apache.org/licenses/LICENSE-2.0
+              - text: . For details, see the
+              - link "Google Developers Site Policies" [ref=e393] [cursor=pointer]:
+                - /url: https://developers.google.com/site-policies
+              - text: . Java is a registered trademark of Oracle and/or its affiliates.
+            - paragraph [ref=e394]: Last updated 2026-04-20 UTC.
+      - navigation "Promotions" [ref=e396]:
+        - list [ref=e397]:
+          - listitem [ref=e398]:
+            - link "Blog Blog" [ref=e399] [cursor=pointer]:
+              - /url: https://developers.googleblog.com/search/?query=Google+Workspace
+              - img "Blog" [ref=e401]
+              - text: Blog
+            - generic [ref=e402]: Read the Google Workspace Developers blog
+          - listitem [ref=e403]:
+            - link "X (Twitter) X (Twitter)" [ref=e404] [cursor=pointer]:
+              - /url: https://twitter.com/workspacedevs
+              - img "X (Twitter)" [ref=e406]
+              - text: X (Twitter)
+            - generic [ref=e407]: Follow @workspacedevs on X (Twitter)
+          - listitem [ref=e408]:
+            - link "Code Samples Code Samples" [ref=e409] [cursor=pointer]:
+              - /url: https://github.com/googleworkspace
+              - img "Code Samples" [ref=e411]
+              - text: Code Samples
+            - generic [ref=e412]: Explore our sample apps or copy them to build your own
+          - listitem [ref=e413]:
+            - link "Codelabs Codelabs" [ref=e414] [cursor=pointer]:
+              - /url: https://codelabs.developers.google.com/?product=googleworkspace
+              - img "Codelabs" [ref=e416]
+              - text: Codelabs
+            - generic [ref=e417]: Try a guided, hands-on coding experience
+          - listitem [ref=e418]:
+            - link "Videos Videos" [ref=e419] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCUcg6az6etU_gRtZVAhBXaw
+              - img "Videos" [ref=e421]
+              - text: Videos
+            - generic [ref=e422]: Subscribe to our YouTube channel
+      - navigation "Footer links" [ref=e424]:
+        - list [ref=e425]:
+          - listitem [ref=e426]:
+            - heading "Google Workspace for Developers" [level=3] [ref=e427]
+            - list [ref=e428]:
+              - listitem [ref=e429]:
+                - link "Platform overview" [ref=e430] [cursor=pointer]:
+                  - /url: /workspace
+              - listitem [ref=e431]:
+                - link "Developer products" [ref=e432] [cursor=pointer]:
+                  - /url: /workspace/products
+              - listitem [ref=e433]:
+                - link "Release notes" [ref=e434] [cursor=pointer]:
+                  - /url: /workspace/release-notes
+              - listitem [ref=e435]:
+                - link "Developer support" [ref=e436] [cursor=pointer]:
+                  - /url: /workspace/support
+              - listitem [ref=e437]:
+                - link "Terms of Service" [ref=e438] [cursor=pointer]:
+                  - /url: /workspace/terms
+          - listitem [ref=e439]:
+            - heading "Tools" [level=3] [ref=e440]
+            - list [ref=e441]:
+              - listitem [ref=e442]:
+                - link "Admin console" [ref=e443] [cursor=pointer]:
+                  - /url: https://admin.google.com/
+              - listitem [ref=e444]:
+                - link "Apps Script Dashboard" [ref=e445] [cursor=pointer]:
+                  - /url: https://script.google.com/
+              - listitem [ref=e446]:
+                - link "Google Cloud console" [ref=e447] [cursor=pointer]:
+                  - /url: https://console.cloud.google.com/workspace-api
+              - listitem [ref=e448]:
+                - link "APIs Explorer" [ref=e449] [cursor=pointer]:
+                  - /url: /workspace/explore
+          - listitem [ref=e450]:
+            - heading "Connect" [level=3] [ref=e451]
+            - list [ref=e452]:
+              - listitem [ref=e453]:
+                - link "Blog" [ref=e454] [cursor=pointer]:
+                  - /url: https://developers.googleblog.com/search/?query=Google+Workspace
+              - listitem [ref=e455]:
+                - link "Newsletter" [ref=e456] [cursor=pointer]:
+                  - /url: /workspace/newsletters
+              - listitem [ref=e457]:
+                - link "X (Twitter)" [ref=e458] [cursor=pointer]:
+                  - /url: https://twitter.com/workspacedevs
+              - listitem [ref=e459]:
+                - link "YouTube" [ref=e460] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCUcg6az6etU_gRtZVAhBXaw
+      - generic [ref=e462]:
+        - navigation "Other Google Developers websites" [ref=e463]:
+          - link "Google Developers" [ref=e464] [cursor=pointer]:
+            - /url: https://developers.google.com/
+            - img "Google Developers" [ref=e466]
+          - list [ref=e467]:
+            - listitem [ref=e468]:
+              - link "Android" [ref=e469] [cursor=pointer]:
+                - /url: //developer.android.com
+            - listitem [ref=e470]:
+              - link "Chrome" [ref=e471] [cursor=pointer]:
+                - /url: //developer.chrome.com/home
+            - listitem [ref=e472]:
+              - link "Firebase" [ref=e473] [cursor=pointer]:
+                - /url: //firebase.google.com
+            - listitem [ref=e474]:
+              - link "Google Cloud Platform" [ref=e475] [cursor=pointer]:
+                - /url: //cloud.google.com
+            - listitem [ref=e476]:
+              - link "Google AI" [ref=e477] [cursor=pointer]:
+                - /url: //ai.google.dev/
+            - listitem [ref=e478]:
+              - link "All products" [ref=e479] [cursor=pointer]:
+                - /url: /products
+        - navigation "Utility links" [ref=e480]:
+          - list [ref=e481]:
+            - listitem [ref=e482]:
+              - link "Terms" [ref=e483] [cursor=pointer]:
+                - /url: /terms/site-terms
+            - listitem [ref=e484]:
+              - text: "|"
+              - link "Privacy" [ref=e485] [cursor=pointer]:
+                - /url: //policies.google.com/privacy
+            - text: "|"
+          - generic "Välj önskat språk." [ref=e486]:
+            - button "Language" [ref=e487] [cursor=pointer]:
+              - img
+              - generic [ref=e488]: Language
+              - img
+      - toolbar "Meny i sidopanelen" [ref=e491]:
+        - button "Information" [ref=e492] [cursor=pointer]:
+          - img [ref=e494]
+          - generic [ref=e497]: Information
+        - button "Chatt" [ref=e498] [cursor=pointer]:
+          - img [ref=e500]
+          - generic [ref=e503]: Chatt
+        - button "API" [ref=e504] [cursor=pointer]:
+          - img [ref=e506]
+          - generic [ref=e508]: API

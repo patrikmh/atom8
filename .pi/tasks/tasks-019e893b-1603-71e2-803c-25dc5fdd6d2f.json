@@ -1,0 +1,17 @@
+{
+  "nextId": 2,
+  "tasks": [
+    {
+      "id": "1",
+      "subject": "Add prompt-based fetching and scheduled updates to widgets",
+      "description": "Make widgets support prompt-based fetching (backend parses prompt to modify API calls), editable prompts in widget settings, and scheduled auto-refresh. This includes:\n\n1. Backend: Add `prompt` field to request models and modify services to parse prompts\n2. Backend: Create prompt parsers for Gmail, Calendar, Tasks, Drive\n3. Frontend: Pass prompt to API calls when fetching data\n4. Frontend: Add prompt editor to widget settings\n5. Frontend: Add scheduled refresh logic (interval-based polling)\n6. Frontend: Make refresh button use the current prompt\n\nBackend files to modify:\n- backend/models.py (add prompt field)\n- backend/routers/data.py (pass prompt to services)\n- backend/services/google_api.py (parse prompt and modify API calls)\n\nFrontend files to modify:\n- frontend/src/services/api.ts (pass prompt to API calls)\n- frontend/src/components/GridWidget.tsx (add prompt editor)\n- frontend/src/components/widgets/GmailWidget.tsx (pass prompt to fetchData)\n- frontend/src/components/widgets/CalendarWidget.tsx (pass prompt to fetchData)\n- frontend/src/components/widgets/TasksWidget.tsx (pass prompt to fetchData)\n- frontend/src/components/widgets/DriveWidget.tsx (pass prompt to fetchData)\n- frontend/src/components/widgets/AIWidget.tsx (pass prompt to fetchData)\n- frontend/src/stores/layoutStore.ts (add refresh intervals)",
+      "status": "completed",
+      "activeForm": "Adding prompt-based fetching and scheduled updates",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780420659219,
+      "updatedAt": 1780420794590
+    }
+  ]
+}

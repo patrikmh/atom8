@@ -1,0 +1,221 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e7]
+        - generic [ref=e10]: A2UI Composer
+      - separator [ref=e11]
+      - navigation [ref=e12]:
+        - link "Create" [ref=e14] [cursor=pointer]:
+          - /url: /
+          - img [ref=e15]
+          - generic [ref=e18]: Create
+        - link "Gallery" [ref=e20] [cursor=pointer]:
+          - /url: /gallery
+          - img [ref=e21]
+          - generic [ref=e27]: Gallery
+        - link "Basic Catalog" [ref=e29] [cursor=pointer]:
+          - /url: /basic-catalog
+          - img [ref=e30]
+          - generic [ref=e34]: Basic Catalog
+        - generic [ref=e35]:
+          - link "Custom Catalog" [ref=e36] [cursor=pointer]:
+            - /url: /custom-catalog
+            - img [ref=e37]
+            - generic [ref=e41]: Custom Catalog
+          - generic [ref=e42]:
+            - link "Assembled Components" [ref=e43] [cursor=pointer]:
+              - /url: /custom-catalog
+            - link "Catalog Components" [active] [ref=e44] [cursor=pointer]:
+              - /url: /custom-catalog/catalog-components
+        - link "Icons" [ref=e46] [cursor=pointer]:
+          - /url: /icons
+          - img [ref=e47]
+          - generic [ref=e52]: Icons
+        - link "Theater JSONL Playback" [ref=e54] [cursor=pointer]:
+          - /url: /theater
+          - img [ref=e55]
+          - generic [ref=e57]:
+            - generic [ref=e58]: Theater
+            - generic [ref=e59]: JSONL Playback
+        - link "Tutorial CopilotKit + A2UI" [ref=e61] [cursor=pointer]:
+          - /url: https://docs.copilotkit.ai/a2a/generative-ui/declarative-a2ui
+          - img [ref=e62]
+          - generic [ref=e64]:
+            - generic [ref=e65]: Tutorial
+            - generic [ref=e66]: CopilotKit + A2UI
+      - separator [ref=e67]
+      - generic [ref=e68]:
+        - generic [ref=e70]: Widgets
+        - generic [ref=e72]: No widgets yet
+    - main [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - heading "Custom Catalog" [level=1] [ref=e77]
+            - generic [ref=e78]:
+              - 'link "Concept: Catalogs" [ref=e79] [cursor=pointer]':
+                - /url: https://a2ui.org/concepts/catalogs/
+                - text: "Concept: Catalogs"
+                - img [ref=e80]
+              - 'link "Guide: Define your own" [ref=e84] [cursor=pointer]':
+                - /url: https://a2ui.org/guides/defining-your-own-catalog/
+                - text: "Guide: Define your own"
+                - img [ref=e85]
+          - paragraph [ref=e89]: Two example trees assembled from the same custom A2UI v0.9 catalog (11 components, runs alongside the basic catalog) — toggle between them under Assembled Components.
+        - generic [ref=e795]:
+          - generic [ref=e797]:
+            - generic [ref=e799]: Catalog Components
+            - generic [ref=e800]:
+              - navigation [ref=e801]:
+                - generic [ref=e802]:
+                  - generic [ref=e803]:
+                    - generic [ref=e804]: Layout
+                    - generic [ref=e805]:
+                      - button "Row" [ref=e806]
+                      - button "Column" [ref=e807]
+                      - button "DashboardCard" [ref=e808]
+                  - generic [ref=e809]:
+                    - generic [ref=e810]: Content
+                    - generic [ref=e811]:
+                      - button "Title" [ref=e812]
+                      - button "Metric" [ref=e813]
+                      - button "Badge" [ref=e814]
+                  - generic [ref=e815]:
+                    - generic [ref=e816]: Data Display
+                    - generic [ref=e817]:
+                      - button "PieChart" [ref=e818]
+                      - button "BarChart" [ref=e819]
+                      - button "DataTable" [ref=e820]
+                  - generic [ref=e821]:
+                    - generic [ref=e822]: Interactive
+                    - button "Button" [ref=e824]
+              - generic [ref=e825]:
+                - heading "Row" [level=1] [ref=e826]
+                - paragraph [ref=e827]: "Horizontal flex container. Accepts either a static array of child IDs or a v0.9 template `{ componentId, path }` that repeats one child per array element in the data model."
+                - generic [ref=e828]:
+                  - heading "Preview" [level=2] [ref=e829]
+                  - generic [ref=e832]:
+                    - generic [ref=e833]: On Time
+                    - generic [ref=e834]: Delayed
+                    - generic [ref=e835]: Cancelled
+                - heading "Usage" [level=2] [ref=e836]
+                - generic [ref=e837]:
+                  - generic [ref=e838]: "{ \"id\": \"row-1\", \"component\": \"Row\", \"gap\": 16, \"justify\": \"spaceBetween\", \"children\": [\"badge-1\", \"badge-2\", \"badge-3\"] }"
+                  - button "Copy to clipboard" [ref=e839]:
+                    - img [ref=e840]
+                - heading "Props" [level=2] [ref=e843]
+                - table [ref=e845]:
+                  - rowgroup [ref=e846]:
+                    - row "Name Description Default" [ref=e847]:
+                      - columnheader "Name" [ref=e848]
+                      - columnheader "Description" [ref=e849]
+                      - columnheader "Default" [ref=e850]
+                  - rowgroup [ref=e851]:
+                    - 'row "children Static list of child component IDs, or a `{ componentId, path }` template that expands once per item in the bound array. string[] | { componentId, path } —" [ref=e852]':
+                      - cell "children" [ref=e853]:
+                        - code [ref=e854]: children
+                      - 'cell "Static list of child component IDs, or a `{ componentId, path }` template that expands once per item in the bound array. string[] | { componentId, path }" [ref=e855]':
+                        - generic [ref=e856]: "Static list of child component IDs, or a `{ componentId, path }` template that expands once per item in the bound array."
+                        - code [ref=e857]: "string[] | { componentId, path }"
+                      - cell "—" [ref=e858]
+                    - row "gap Pixel gap between children. number 16" [ref=e859]:
+                      - cell "gap" [ref=e860]:
+                        - code [ref=e861]: gap
+                      - cell "Pixel gap between children. number" [ref=e862]:
+                        - generic [ref=e863]: Pixel gap between children.
+                        - code [ref=e864]: number
+                      - cell "16" [ref=e865]:
+                        - code [ref=e866]: "16"
+                    - row "align Cross-axis (vertical) alignment of children. \"start\" \"center\" \"end\" \"stretch\" stretch" [ref=e867]:
+                      - cell "align" [ref=e868]:
+                        - code [ref=e869]: align
+                      - cell "Cross-axis (vertical) alignment of children. \"start\" \"center\" \"end\" \"stretch\"" [ref=e870]:
+                        - generic [ref=e871]: Cross-axis (vertical) alignment of children.
+                        - generic [ref=e872]:
+                          - code [ref=e873]: "\"start\""
+                          - code [ref=e874]: "\"center\""
+                          - code [ref=e875]: "\"end\""
+                          - code [ref=e876]: "\"stretch\""
+                      - cell "stretch" [ref=e877]:
+                        - code [ref=e878]: stretch
+                    - row "justify Main-axis (horizontal) distribution of children. \"start\" \"center\" \"end\" \"spaceBetween\" \"spaceAround\" \"spaceEvenly\" \"stretch\" start" [ref=e879]:
+                      - cell "justify" [ref=e880]:
+                        - code [ref=e881]: justify
+                      - cell "Main-axis (horizontal) distribution of children. \"start\" \"center\" \"end\" \"spaceBetween\" \"spaceAround\" \"spaceEvenly\" \"stretch\"" [ref=e882]:
+                        - generic [ref=e883]: Main-axis (horizontal) distribution of children.
+                        - generic [ref=e884]:
+                          - code [ref=e885]: "\"start\""
+                          - code [ref=e886]: "\"center\""
+                          - code [ref=e887]: "\"end\""
+                          - code [ref=e888]: "\"spaceBetween\""
+                          - code [ref=e889]: "\"spaceAround\""
+                          - code [ref=e890]: "\"spaceEvenly\""
+                          - code [ref=e891]: "\"stretch\""
+                      - cell "start" [ref=e892]:
+                        - code [ref=e893]: start
+          - separator:
+            - img [ref=e895]
+          - generic [ref=e903]:
+            - generic [ref=e904]:
+              - generic [ref=e905]:
+                - button "Catalog Definitions" [ref=e906]
+                - button "Catalog Renderers" [ref=e907]
+              - generic [ref=e908]: apis.ts (zod ComponentApi definitions)
+            - code [ref=e913]:
+              - generic [ref=e914]:
+                - textbox "Editor content" [ref=e915]
+                - textbox [ref=e916]
+                - generic [ref=e918]:
+                  - generic [ref=e919]:
+                    - generic [ref=e921] [cursor=pointer]: 
+                    - generic [ref=e922]: "1"
+                  - generic [ref=e924]: "2"
+                  - generic [ref=e927]: "3"
+                  - generic [ref=e929]: "4"
+                  - generic [ref=e932]: "5"
+                  - generic [ref=e935]: "6"
+                  - generic [ref=e937]: "7"
+                  - generic [ref=e940]: "8"
+                  - generic [ref=e943]: "9"
+                  - generic [ref=e946]: "10"
+                  - generic [ref=e949]: "11"
+                  - generic [ref=e952]: "12"
+                  - generic [ref=e955]: "13"
+                  - generic [ref=e957]: "14"
+                  - generic [ref=e960]: "15"
+                  - generic [ref=e963]: "16"
+                - generic [ref=e995]:
+                  - generic [ref=e997]: /**
+                  - generic [ref=e999]: "* Custom catalog — `ComponentApi` definitions (the"
+                  - generic [ref=e1001]: "\"Catalog Definitions\" tab)."
+                  - generic [ref=e1003]: "*"
+                  - generic [ref=e1005]: "* This catalog powers the `/custom-catalog` page,"
+                  - generic [ref=e1007]: which assembles two
+                  - generic [ref=e1009]: "* different example trees from the same 11"
+                  - generic [ref=e1011]: "definitions below:"
+                  - generic [ref=e1013]: "*"
+                  - generic [ref=e1015]: "* • **Flight Card** — `Row` template-children"
+                  - generic [ref=e1017]: "expand one `FlightCard` per"
+                  - generic [ref=e1019]: "* element of `/flights`, with each instance's `{"
+                  - generic [ref=e1021]: "path: … }` bindings"
+                  - generic [ref=e1023]: "* scoped to its flight. Exercises repeater +"
+                  - generic [ref=e1025]: action dispatch.
+                  - generic [ref=e1027]: "* • **Sales Dashboard** — `DashboardCard`s wrap"
+                  - generic [ref=e1029]: "`Metric`s and charts into"
+                  - generic [ref=e1031]: "* a KPI grid. Scalar props (titles, KPI labels/"
+                  - generic [ref=e1033]: values) bind to
+                  - generic [ref=e1035]: "* `/period` + `/kpis`; chart data and table rows"
+                  - generic [ref=e1037]: are inline literals.
+                  - generic [ref=e1039]: "*"
+                  - generic [ref=e1041]: "* Both trees share the 11 `ComponentApi` entries"
+                  - generic [ref=e1043]: below, so the Catalog
+                  - generic [ref=e1045]: "* Renderers tab on `/custom-catalog` is the single"
+                  - generic [ref=e1047]: source of truth for how
+                  - generic [ref=e1049]: "* each component renders — the difference between the"
+                  - generic [ref=e1051]: examples is purely in
+  - alert [ref=e133]
+  - generic [ref=e397]:
+    - alert
+    - alert
+  - generic [ref=e792]: $0K

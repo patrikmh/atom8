@@ -1,0 +1,7 @@
+[  353113ms] [ERROR] WebSocket connection to 'ws://192.168.0.108:3000/?token=PCvVQgL1f8B7' failed:  @ http://192.168.0.108:3000/@vite/client:535
+[  354173ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:8000/api/data/calendar:0
+[  354177ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:8000/api/data/gmail:0
+[  354179ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:8000/api/data/tasks:0
+[  354180ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:8000/api/data/calendar:0
+[  354181ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:8000/api/data/gmail:0
+[  354182ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:8000/api/data/tasks:0

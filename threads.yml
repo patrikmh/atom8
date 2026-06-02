@@ -1,0 +1,104 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e2]:
+    - generic [ref=e4]:
+      - img [ref=e7]
+      - generic [ref=e9]:
+        - heading "LinkedIn respekterar din sekretess" [level=2] [ref=e10]
+        - generic [ref=e12]:
+          - paragraph [ref=e13]:
+            - text: LinkedIn och tredje parter använder nödvändiga och icke-nödvändiga cookies för att tillhandahålla, säkra, analysera och förbättra våra tjänster och för att visa dig relevanta annonser (inklusive yrkes- och jobbannonser) på och utanför LinkedIn. Läs mer i vår
+            - link "cookiepolicy" [ref=e14] [cursor=pointer]:
+              - /url: https://www.linkedin.com/legal/cookie-policy
+            - text: .
+          - paragraph [ref=e15]:
+            - text: Välj Acceptera för att godkänna eller Avvisa för att neka icke-nödvändiga cookies för den här användningen. Du kan ändra dina val när som helst i
+            - link "inställningarna" [ref=e16] [cursor=pointer]:
+              - /url: https://www.linkedin.com/mypreferences/g/guest-cookies
+            - text: .
+        - generic [ref=e17]:
+          - button "Acceptera" [ref=e18] [cursor=pointer]
+          - button "Avvisa" [ref=e19] [cursor=pointer]
+  - generic [ref=e20]:
+    - link "Gå till huvudinnehåll" [ref=e21] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner [ref=e22]:
+      - navigation "Primär" [ref=e23]:
+        - link "LinkedIn" [ref=e24] [cursor=pointer]:
+          - /url: /?trk=seo-authwall-base_nav-header-logo
+          - generic [ref=e25]: LinkedIn
+          - img [ref=e27]
+    - main [ref=e38]:
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - heading "Gå med i LinkedIn" [level=1] [ref=e41]
+          - generic [ref=e42]:
+            - generic [ref=e43]:
+              - generic [ref=e44]:
+                - textbox "E-postadress" [ref=e45]:
+                  - /placeholder: " "
+                - generic: E-postadress
+              - generic [ref=e46]:
+                - textbox "Lösenord (minst 6 tecken)" [ref=e47]:
+                  - /placeholder: " "
+                - generic: Lösenord (minst 6 tecken)
+            - paragraph [ref=e48]:
+              - text: Genom att klicka på Samtyck och gå med samtycker du till LinkedIns
+              - link "användaravtal" [ref=e49] [cursor=pointer]:
+                - /url: https://www.linkedin.com/legal/user-agreement?trk=seo-authwall-base_join-form-user-agreement
+              - text: ","
+              - link "sekretesspolicy" [ref=e50] [cursor=pointer]:
+                - /url: https://www.linkedin.com/legal/privacy-policy?trk=seo-authwall-base_join-form-privacy-policy
+              - text: och
+              - link "cookiepolicy" [ref=e51] [cursor=pointer]:
+                - /url: https://www.linkedin.com/legal/cookie-policy?trk=seo-authwall-base_join-form-cookie-policy
+              - text: .
+            - button "Samtyck och gå med" [ref=e52] [cursor=pointer]
+            - generic [ref=e53]:
+              - generic [ref=e57]: eller
+              - button "Fortsätt med Google" [ref=e58]:
+                - iframe [ref=e60]:
+                  - button "Fortsätt med GoogleÖppnas på en ny flik" [ref=f25e3] [cursor=pointer]:
+                    - generic [ref=f25e5]:
+                      - img [ref=f25e7]
+                      - generic [ref=f25e14]: Fortsätt med Google
+          - paragraph [ref=e61]:
+            - text: Redan medlem i LinkedIn?
+            - button "Logga in" [ref=e62]
+        - button [ref=e64]
+    - contentinfo [ref=e65]:
+      - list [ref=e66]:
+        - listitem [ref=e67]:
+          - generic [ref=e68]: LinkedIn
+          - img [ref=e70]
+          - generic [ref=e73]: © 2026
+        - listitem [ref=e74]:
+          - link "Om" [ref=e75] [cursor=pointer]:
+            - /url: https://about.linkedin.com?trk=seo-authwall-base_footer-about
+        - listitem [ref=e76]:
+          - link "Tillgänglighet" [ref=e77] [cursor=pointer]:
+            - /url: https://www.linkedin.com/accessibility?trk=seo-authwall-base_footer-accessibility
+        - listitem [ref=e78]:
+          - link "Användaravtal" [ref=e79] [cursor=pointer]:
+            - /url: https://www.linkedin.com/legal/user-agreement?trk=seo-authwall-base_footer-user-agreement
+        - listitem [ref=e80]:
+          - link "Sekretesspolicy" [ref=e81] [cursor=pointer]:
+            - /url: https://www.linkedin.com/legal/privacy-policy?trk=seo-authwall-base_footer-privacy-policy
+        - listitem [ref=e82]:
+          - link "Cookiepolicy" [ref=e83] [cursor=pointer]:
+            - /url: https://www.linkedin.com/legal/cookie-policy?trk=seo-authwall-base_footer-cookie-policy
+        - listitem [ref=e84]:
+          - link "Upphovsrättspolicy" [ref=e85] [cursor=pointer]:
+            - /url: https://www.linkedin.com/legal/copyright-policy?trk=seo-authwall-base_footer-copyright-policy
+        - listitem [ref=e86]:
+          - link "Varumärkespolicy" [ref=e87] [cursor=pointer]:
+            - /url: https://brand.linkedin.com/policies?trk=seo-authwall-base_footer-brand-policy
+        - listitem [ref=e88]:
+          - link "Gästinställningar" [ref=e89] [cursor=pointer]:
+            - /url: https://www.linkedin.com/psettings/guest-controls?trk=seo-authwall-base_footer-guest-controls
+        - listitem [ref=e90]:
+          - link "Riktlinjer" [ref=e91] [cursor=pointer]:
+            - /url: https://www.linkedin.com/legal/professional-community-policies?trk=seo-authwall-base_footer-community-guide
+        - listitem [ref=e92]:
+          - button "Språk" [ref=e94]:
+            - text: Språk
+            - img [ref=e96]

@@ -1,0 +1,2291 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "Skip to content" [ref=e4] [cursor=pointer]:
+        - /url: "#start-of-content"
+      - banner [ref=e6]:
+        - heading "Navigation Menu" [level=2] [ref=e7]
+        - generic [ref=e8]:
+          - link "Homepage" [ref=e10] [cursor=pointer]:
+            - /url: /
+            - img [ref=e11]
+          - generic [ref=e13]:
+            - navigation "Global" [ref=e16]:
+              - list [ref=e17]:
+                - listitem [ref=e18]:
+                  - button "Platform" [ref=e20] [cursor=pointer]:
+                    - text: Platform
+                    - img [ref=e21]
+                - listitem [ref=e23]:
+                  - button "Solutions" [ref=e25] [cursor=pointer]:
+                    - text: Solutions
+                    - img [ref=e26]
+                - listitem [ref=e28]:
+                  - button "Resources" [ref=e30] [cursor=pointer]:
+                    - text: Resources
+                    - img [ref=e31]
+                - listitem [ref=e33]:
+                  - button "Open Source" [ref=e35] [cursor=pointer]:
+                    - text: Open Source
+                    - img [ref=e36]
+                - listitem [ref=e38]:
+                  - button "Enterprise" [ref=e40] [cursor=pointer]:
+                    - text: Enterprise
+                    - img [ref=e41]
+                - listitem [ref=e43]:
+                  - link "Pricing" [ref=e44] [cursor=pointer]:
+                    - /url: https://github.com/pricing
+                    - generic [ref=e45]: Pricing
+            - generic [ref=e46]:
+              - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+                - img [ref=e51]
+              - link "Sign in" [ref=e54] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2FStumblinbear%2Fagui%2Fblob%2Fmaster%2Fcrates%2Fagui_core%2Fsrc%2Frender%2Fcanvas%2Fpainter.rs
+              - link "Sign up" [ref=e55] [cursor=pointer]:
+                - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fblob%2Fshow&source=header-repo&source_repo=Stumblinbear%2Fagui
+              - button "Appearance settings" [ref=e58] [cursor=pointer]:
+                - img
+    - main [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e66]:
+            - img [ref=e67]
+            - link "Stumblinbear" [ref=e70] [cursor=pointer]:
+              - /url: /Stumblinbear
+            - generic [ref=e71]: /
+            - strong [ref=e72]:
+              - link "agui" [ref=e73] [cursor=pointer]:
+                - /url: /Stumblinbear/agui
+            - generic [ref=e74]: Public
+          - generic [ref=e75]:
+            - list:
+              - listitem [ref=e76]:
+                - link "You must be signed in to change notification settings" [ref=e77] [cursor=pointer]:
+                  - /url: /login?return_to=%2FStumblinbear%2Fagui
+                  - img [ref=e78]
+                  - text: Notifications
+              - listitem [ref=e80]:
+                - link "Fork 3" [ref=e81] [cursor=pointer]:
+                  - /url: /login?return_to=%2FStumblinbear%2Fagui
+                  - img [ref=e82]
+                  - text: Fork
+                  - generic "3" [ref=e84]
+              - listitem [ref=e85]:
+                - link "You must be signed in to star a repository" [ref=e87] [cursor=pointer]:
+                  - /url: /login?return_to=%2FStumblinbear%2Fagui
+                  - img [ref=e88]
+                  - text: Star
+                  - generic "37 users starred this repository" [ref=e90]: "37"
+        - navigation "Repository" [ref=e91]:
+          - list [ref=e92]:
+            - listitem [ref=e93]:
+              - link "Code" [ref=e94] [cursor=pointer]:
+                - /url: /Stumblinbear/agui
+                - img [ref=e95]
+                - generic [ref=e97]: Code
+            - listitem [ref=e98]:
+              - link "Issues 4" [ref=e99] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/issues
+                - img [ref=e100]
+                - generic [ref=e103]: Issues
+                - generic "4" [ref=e104]
+            - listitem [ref=e105]:
+              - link "Pull requests 3" [ref=e106] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/pulls
+                - img [ref=e107]
+                - generic [ref=e109]: Pull requests
+                - generic "3" [ref=e110]
+            - listitem [ref=e111]:
+              - link "Discussions" [ref=e112] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/discussions
+                - img [ref=e113]
+                - generic [ref=e115]: Discussions
+            - listitem [ref=e116]:
+              - link "Actions" [ref=e117] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/actions
+                - img [ref=e118]
+                - generic [ref=e120]: Actions
+            - listitem [ref=e121]:
+              - link "Projects" [ref=e122] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/projects
+                - img [ref=e123]
+                - generic [ref=e125]: Projects
+            - listitem [ref=e126]:
+              - link "Security and quality" [ref=e127] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/security
+                - img [ref=e128]
+                - generic [ref=e130]: Security and quality
+            - listitem [ref=e131]:
+              - link "Insights" [ref=e132] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/pulse
+                - img [ref=e133]
+                - generic [ref=e135]: Insights
+      - generic [ref=e143]:
+        - generic [ref=e145]:
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - generic [ref=e150]:
+                - heading "Collapse file tree" [level=2] [ref=e151]:
+                  - button "Collapse file tree" [expanded] [ref=e152] [cursor=pointer]:
+                    - img [ref=e153]
+                - heading "Files" [level=2] [ref=e156]
+              - generic [ref=e157]:
+                - button "master branch" [ref=e159] [cursor=pointer]:
+                  - generic [ref=e160]:
+                    - generic [ref=e162]:
+                      - img [ref=e164]
+                      - generic [ref=e167]: master
+                    - generic:
+                      - img
+                - button "Search this repository (forward slash)" [ref=e169] [cursor=pointer]:
+                  - img [ref=e170]
+            - generic [ref=e173]:
+              - img [ref=e175]
+              - combobox "Go to file" [ref=e177]
+            - navigation "File Tree Navigation" [ref=e183]:
+              - tree "Files" [ref=e185]:
+                - treeitem ".cargo" [level=1] [ref=e186]:
+                  - generic [ref=e187] [cursor=pointer]:
+                    - img [ref=e189]
+                    - generic [ref=e191]:
+                      - img [ref=e195]
+                      - generic [ref=e197]: .cargo
+                - treeitem ".github" [level=1] [ref=e198]:
+                  - generic [ref=e199] [cursor=pointer]:
+                    - img [ref=e201]
+                    - generic [ref=e203]:
+                      - img [ref=e207]
+                      - generic [ref=e209]: .github
+                - treeitem ".vscode" [level=1] [ref=e210]:
+                  - generic [ref=e211] [cursor=pointer]:
+                    - img [ref=e213]
+                    - generic [ref=e215]:
+                      - img [ref=e219]
+                      - generic [ref=e221]: .vscode
+                - treeitem "crates" [expanded] [level=1] [ref=e222]:
+                  - generic [ref=e223] [cursor=pointer]:
+                    - img [ref=e225]
+                    - generic [ref=e227]:
+                      - img [ref=e231]
+                      - generic [ref=e233]: crates
+                  - group "crates" [ref=e234]:
+                    - treeitem "agui_core" [expanded] [level=2] [ref=e235]:
+                      - generic [ref=e236] [cursor=pointer]:
+                        - img [ref=e241]
+                        - generic [ref=e243]:
+                          - img [ref=e247]
+                          - generic [ref=e249]: agui_core
+                      - group "agui_core" [ref=e250]:
+                        - treeitem "benches" [level=3] [ref=e251]:
+                          - generic [ref=e252] [cursor=pointer]:
+                            - img [ref=e258]
+                            - generic [ref=e260]:
+                              - img [ref=e264]
+                              - generic [ref=e266]: benches
+                        - treeitem "src" [expanded] [level=3] [ref=e267]:
+                          - generic [ref=e268] [cursor=pointer]:
+                            - img [ref=e274]
+                            - generic [ref=e276]:
+                              - img [ref=e280]
+                              - generic [ref=e282]: src
+                          - group "src" [ref=e283]:
+                            - treeitem "callback" [level=4] [ref=e284]:
+                              - generic [ref=e285] [cursor=pointer]:
+                                - img [ref=e292]
+                                - generic [ref=e294]:
+                                  - img [ref=e298]
+                                  - generic [ref=e300]: callback
+                            - treeitem "element" [level=4] [ref=e301]:
+                              - generic [ref=e302] [cursor=pointer]:
+                                - img [ref=e309]
+                                - generic [ref=e311]:
+                                  - img [ref=e315]
+                                  - generic [ref=e317]: element
+                            - treeitem "engine" [level=4] [ref=e318]:
+                              - generic [ref=e319] [cursor=pointer]:
+                                - img [ref=e326]
+                                - generic [ref=e328]:
+                                  - img [ref=e332]
+                                  - generic [ref=e334]: engine
+                            - treeitem "inheritance" [level=4] [ref=e335]:
+                              - generic [ref=e336] [cursor=pointer]:
+                                - img [ref=e343]
+                                - generic [ref=e345]:
+                                  - img [ref=e349]
+                                  - generic [ref=e351]: inheritance
+                            - treeitem "query" [level=4] [ref=e352]:
+                              - generic [ref=e353] [cursor=pointer]:
+                                - img [ref=e360]
+                                - generic [ref=e362]:
+                                  - img [ref=e366]
+                                  - generic [ref=e368]: query
+                            - treeitem "reactivity" [level=4] [ref=e369]:
+                              - generic [ref=e370] [cursor=pointer]:
+                                - img [ref=e377]
+                                - generic [ref=e379]:
+                                  - img [ref=e383]
+                                  - generic [ref=e385]: reactivity
+                            - treeitem "render" [expanded] [level=4] [ref=e386]:
+                              - generic [ref=e387] [cursor=pointer]:
+                                - img [ref=e394]
+                                - generic [ref=e396]:
+                                  - img [ref=e400]
+                                  - generic [ref=e402]: render
+                              - group "render" [ref=e403]:
+                                - treeitem "canvas" [expanded] [level=5] [ref=e404]:
+                                  - generic [ref=e405] [cursor=pointer]:
+                                    - img [ref=e413]
+                                    - generic [ref=e415]:
+                                      - img [ref=e419]
+                                      - generic [ref=e421]: canvas
+                                  - group "canvas" [ref=e422]:
+                                    - treeitem "command.rs" [level=6] [ref=e423]:
+                                      - generic [ref=e432] [cursor=pointer]:
+                                        - img [ref=e435]
+                                        - generic [ref=e437]: command.rs
+                                    - treeitem "mod.rs" [level=6] [ref=e438]:
+                                      - generic [ref=e447] [cursor=pointer]:
+                                        - img [ref=e450]
+                                        - generic [ref=e452]: mod.rs
+                                    - treeitem "paint.rs" [level=6] [ref=e453]:
+                                      - generic [ref=e462] [cursor=pointer]:
+                                        - img [ref=e465]
+                                        - generic [ref=e467]: paint.rs
+                                    - treeitem "painter.rs" [level=6] [ref=e468]:
+                                      - generic [ref=e477] [cursor=pointer]:
+                                        - img [ref=e480]
+                                        - generic [ref=e482]: painter.rs
+                                - treeitem "object" [level=5] [ref=e483]:
+                                  - generic [ref=e484] [cursor=pointer]:
+                                    - img [ref=e492]
+                                    - generic [ref=e494]:
+                                      - img [ref=e498]
+                                      - generic [ref=e500]: object
+                                - treeitem "mod.rs" [level=5] [ref=e501]:
+                                  - generic [ref=e509] [cursor=pointer]:
+                                    - img [ref=e512]
+                                    - generic [ref=e514]: mod.rs
+                            - treeitem "task" [level=4] [ref=e515]:
+                              - generic [ref=e516] [cursor=pointer]:
+                                - img [ref=e523]
+                                - generic [ref=e525]:
+                                  - img [ref=e529]
+                                  - generic [ref=e531]: task
+                            - treeitem "unit" [level=4] [ref=e532]:
+                              - generic [ref=e533] [cursor=pointer]:
+                                - img [ref=e540]
+                                - generic [ref=e542]:
+                                  - img [ref=e546]
+                                  - generic [ref=e548]: unit
+                            - treeitem "util" [level=4] [ref=e549]:
+                              - generic [ref=e550] [cursor=pointer]:
+                                - img [ref=e557]
+                                - generic [ref=e559]:
+                                  - img [ref=e563]
+                                  - generic [ref=e565]: util
+                            - treeitem "widget" [level=4] [ref=e566]:
+                              - generic [ref=e567] [cursor=pointer]:
+                                - img [ref=e574]
+                                - generic [ref=e576]:
+                                  - img [ref=e580]
+                                  - generic [ref=e582]: widget
+                            - treeitem "lib.rs" [level=4] [ref=e583]:
+                              - generic [ref=e590] [cursor=pointer]:
+                                - img [ref=e593]
+                                - generic [ref=e595]: lib.rs
+                        - treeitem "Cargo.toml" [level=3] [ref=e596]:
+                          - generic [ref=e602] [cursor=pointer]:
+                            - img [ref=e605]
+                            - generic [ref=e607]: Cargo.toml
+                        - treeitem "Makefile.toml" [level=3] [ref=e608]:
+                          - generic [ref=e614] [cursor=pointer]:
+                            - img [ref=e617]
+                            - generic [ref=e619]: Makefile.toml
+                        - treeitem "README.md" [level=3] [ref=e620]:
+                          - generic [ref=e626] [cursor=pointer]:
+                            - img [ref=e629]
+                            - generic [ref=e631]: README.md
+                    - treeitem "agui_elements" [level=2] [ref=e632]:
+                      - generic [ref=e633] [cursor=pointer]:
+                        - img [ref=e638]
+                        - generic [ref=e640]:
+                          - img [ref=e644]
+                          - generic [ref=e646]: agui_elements
+                    - treeitem "agui_executor" [level=2] [ref=e647]:
+                      - generic [ref=e648] [cursor=pointer]:
+                        - img [ref=e653]
+                        - generic [ref=e655]:
+                          - img [ref=e659]
+                          - generic [ref=e661]: agui_executor
+                    - treeitem "agui_gestures" [level=2] [ref=e662]:
+                      - generic [ref=e663] [cursor=pointer]:
+                        - img [ref=e668]
+                        - generic [ref=e670]:
+                          - img [ref=e674]
+                          - generic [ref=e676]: agui_gestures
+                    - treeitem "agui_macros" [level=2] [ref=e677]:
+                      - generic [ref=e678] [cursor=pointer]:
+                        - img [ref=e683]
+                        - generic [ref=e685]:
+                          - img [ref=e689]
+                          - generic [ref=e691]: agui_macros
+                    - treeitem "agui_primitives" [level=2] [ref=e692]:
+                      - generic [ref=e693] [cursor=pointer]:
+                        - img [ref=e698]
+                        - generic [ref=e700]:
+                          - img [ref=e704]
+                          - generic [ref=e706]: agui_primitives
+                    - treeitem "agui_renderer" [level=2] [ref=e707]:
+                      - generic [ref=e708] [cursor=pointer]:
+                        - img [ref=e713]
+                        - generic [ref=e715]:
+                          - img [ref=e719]
+                          - generic [ref=e721]: agui_renderer
+                    - treeitem "agui_sync" [level=2] [ref=e722]:
+                      - generic [ref=e723] [cursor=pointer]:
+                        - img [ref=e728]
+                        - generic [ref=e730]:
+                          - img [ref=e734]
+                          - generic [ref=e736]: agui_sync
+                    - treeitem "agui_vello" [level=2] [ref=e737]:
+                      - generic [ref=e738] [cursor=pointer]:
+                        - img [ref=e743]
+                        - generic [ref=e745]:
+                          - img [ref=e749]
+                          - generic [ref=e751]: agui_vello
+                    - treeitem "agui_widgets" [level=2] [ref=e752]:
+                      - generic [ref=e753] [cursor=pointer]:
+                        - img [ref=e758]
+                        - generic [ref=e760]:
+                          - img [ref=e764]
+                          - generic [ref=e766]: agui_widgets
+                    - treeitem "agui_winit" [level=2] [ref=e767]:
+                      - generic [ref=e768] [cursor=pointer]:
+                        - img [ref=e773]
+                        - generic [ref=e775]:
+                          - img [ref=e779]
+                          - generic [ref=e781]: agui_winit
+                - treeitem "docs" [level=1] [ref=e782]:
+                  - generic [ref=e783] [cursor=pointer]:
+                    - img [ref=e785]
+                    - generic [ref=e787]:
+                      - img [ref=e791]
+                      - generic [ref=e793]: docs
+                - treeitem "examples" [level=1] [ref=e794]:
+                  - generic [ref=e795] [cursor=pointer]:
+                    - img [ref=e797]
+                    - generic [ref=e799]:
+                      - img [ref=e803]
+                      - generic [ref=e805]: examples
+                - treeitem "src" [level=1] [ref=e806]:
+                  - generic [ref=e807] [cursor=pointer]:
+                    - img [ref=e809]
+                    - generic [ref=e811]:
+                      - img [ref=e815]
+                      - generic [ref=e817]: src
+                - treeitem "tests" [level=1] [ref=e818]:
+                  - generic [ref=e819] [cursor=pointer]:
+                    - img [ref=e821]
+                    - generic [ref=e823]:
+                      - img [ref=e827]
+                      - generic [ref=e829]: tests
+                - treeitem "tools" [level=1] [ref=e830]:
+                  - generic [ref=e831] [cursor=pointer]:
+                    - img [ref=e833]
+                    - generic [ref=e835]:
+                      - img [ref=e839]
+                      - generic [ref=e841]: tools
+                - treeitem ".gitignore" [level=1] [ref=e842]:
+                  - generic [ref=e844] [cursor=pointer]:
+                    - img [ref=e847]
+                    - generic [ref=e849]: .gitignore
+                - treeitem ".rust-toolchain.toml" [level=1] [ref=e850]:
+                  - generic [ref=e852] [cursor=pointer]:
+                    - img [ref=e855]
+                    - generic [ref=e857]: .rust-toolchain.toml
+                - treeitem "Cargo.toml" [level=1] [ref=e858]:
+                  - generic [ref=e860] [cursor=pointer]:
+                    - img [ref=e863]
+                    - generic [ref=e865]: Cargo.toml
+                - treeitem "README.md" [level=1] [ref=e866]:
+                  - generic [ref=e868] [cursor=pointer]:
+                    - img [ref=e871]
+                    - generic [ref=e873]: README.md
+                - treeitem "clippy.toml" [level=1] [ref=e874]:
+                  - generic [ref=e876] [cursor=pointer]:
+                    - img [ref=e879]
+                    - generic [ref=e881]: clippy.toml
+          - slider "Draggable pane splitter" [ref=e883]
+        - generic [ref=e886]:
+          - generic [ref=e890]:
+            - generic [ref=e892]:
+              - navigation "Breadcrumbs" [ref=e893]:
+                - heading "Breadcrumbs" [level=2] [ref=e894]
+                - list [ref=e895]:
+                  - listitem [ref=e896]:
+                    - link "agui" [ref=e897] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master
+                  - listitem [ref=e898]:
+                    - text: /
+                    - link "crates" [ref=e899] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master/crates
+                  - listitem [ref=e900]:
+                    - text: /
+                    - link "agui_core" [ref=e901] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master/crates/agui_core
+                  - listitem [ref=e902]:
+                    - text: /
+                    - link "src" [ref=e903] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master/crates/agui_core/src
+                  - listitem [ref=e904]:
+                    - text: /
+                    - link "render" [ref=e905] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master/crates/agui_core/src/render
+                  - listitem [ref=e906]:
+                    - text: /
+                    - link "canvas" [ref=e907] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master/crates/agui_core/src/render/canvas
+              - generic [ref=e908]:
+                - text: /
+                - heading "painter.rs" [level=1] [ref=e909]
+              - button "Copy path" [ref=e910] [cursor=pointer]:
+                - img [ref=e911]
+            - button "More file actions" [ref=e917] [cursor=pointer]:
+              - img [ref=e918]
+          - generic [ref=e920]:
+            - generic [ref=e922]:
+              - heading "Latest commit" [level=2] [ref=e923]
+              - generic [ref=e924]:
+                - generic [ref=e926]:
+                  - link "Stumblinbear" [ref=e927] [cursor=pointer]:
+                    - /url: /Stumblinbear
+                    - img "Stumblinbear" [ref=e928]
+                  - link "commits by Stumblinbear" [ref=e929] [cursor=pointer]:
+                    - /url: /Stumblinbear/agui/commits?author=Stumblinbear
+                    - text: Stumblinbear
+                - 'link "refactor: separate render object management" [ref=e933] [cursor=pointer]':
+                  - /url: /Stumblinbear/agui/commit/defb9f8380135acd579e590ebd4e485f2fcba36c
+              - generic [ref=e934]:
+                - generic [ref=e936]:
+                  - link "Commit defb9f8" [ref=e937] [cursor=pointer]:
+                    - /url: /Stumblinbear/agui/commit/defb9f8380135acd579e590ebd4e485f2fcba36c
+                    - text: defb9f8
+                  - text: ·
+                  - generic "Jan 2, 2024, 3:34 PM GMT+1" [ref=e938]: Jan 2, 20243 years ago
+                - generic [ref=e939]:
+                  - heading "History" [level=2] [ref=e940]
+                  - link "History" [ref=e941] [cursor=pointer]:
+                    - /url: /Stumblinbear/agui/commits/master/crates/agui_core/src/render/canvas/painter.rs
+                    - generic [ref=e942]:
+                      - generic:
+                        - img
+                      - generic [ref=e943]: History
+            - generic [ref=e945]:
+              - generic [ref=e947]:
+                - heading "File metadata and controls" [level=2] [ref=e948]
+                - list "File view" [ref=e950]:
+                  - listitem [ref=e951]:
+                    - button "Code" [ref=e952] [cursor=pointer]:
+                      - generic [ref=e954]: Code
+                  - listitem [ref=e955]:
+                    - button "Blame" [ref=e956] [cursor=pointer]:
+                      - generic [ref=e958]: Blame
+                - generic [ref=e959]:
+                  - generic [ref=e960]:
+                    - generic [ref=e961]:
+                      - link "Raw" [ref=e963] [cursor=pointer]:
+                        - /url: https://github.com/Stumblinbear/agui/raw/refs/heads/master/crates/agui_core/src/render/canvas/painter.rs
+                        - generic [ref=e965]: Raw
+                      - button "Copy raw file" [ref=e967] [cursor=pointer]:
+                        - img [ref=e968]
+                      - button "Download raw file" [ref=e972] [cursor=pointer]:
+                        - img [ref=e973]
+                    - generic [ref=e976]:
+                      - button "You must be signed in to make or propose changes" [disabled] [ref=e978]:
+                        - img [ref=e979]
+                      - button "More edit options" [ref=e982] [cursor=pointer]:
+                        - img [ref=e983]
+                  - button "Open symbols panel" [ref=e985] [cursor=pointer]:
+                    - img [ref=e986]
+              - region "painter.rs" [ref=e989]:
+                - generic [ref=e993]:
+                  - textbox "file content" [ref=e998]: "use std::{borrow::Cow, marker::PhantomData}; use lyon::path::Path; use crate::{ render::canvas::{ command::CanvasCommand, paint::{Brush, Paint}, Canvas, CanvasLayer, LayerStyle, }, unit::{Rect, Shape, Size, TextStyle}, }; pub trait CanvasPainterState {} pub struct Head<T> { phantom: PhantomData<T>, } pub struct Layer<T> { phantom: PhantomData<T>, } pub struct Tail<T> { phantom: PhantomData<T>, } impl CanvasPainterState for () {} impl<T> CanvasPainterState for Head<T> where T: CanvasPainterState {} impl<T> CanvasPainterState for Layer<T> where T: CanvasPainterState {} impl<T> CanvasPainterState for Tail<T> where T: CanvasPainterState {} pub struct CanvasPainter<'paint, State = Head<()>> where State: CanvasPainterState, { phantom: PhantomData<State>, canvas: &'paint mut Canvas, } impl<'paint, State> CanvasPainter<'paint, State> where State: CanvasPainterState, { pub fn begin(canvas: &'paint mut Canvas) -> CanvasPainter<'paint, State> { CanvasPainter { phantom: PhantomData, canvas, } } pub fn size(&self) -> Size { self.canvas.size } // TODO: add a lifetime to brushes so they cannot be used outside of the canvas or layer they belong to pub fn add_paint(&mut self, paint: Paint) -> Brush<State> { self.canvas.paints.push(paint); Brush { phantom: PhantomData, idx: self.canvas.paints.len() - 1, } } fn push_command(&mut self, command: CanvasCommand) { // If we have children, but a new layer has not been started afterwards, panic if !self.canvas.children.is_empty() { panic!(\"cannot start drawing on an uninitialized layer\"); } self.canvas.head.push(command); } /// Creates a layer with `shape`. It will be the `rect` of the canvas. pub fn layer<F>( self, brush: &Brush<State>, shape: Shape, func: F, ) -> CanvasPainter<'paint, Tail<State>> where F: for<'layer> FnOnce(CanvasPainter<'layer, Head<State>>), { let rect = self.canvas.size.into(); self.layer_at(rect, brush, shape, func) } /// Creates a layer with `shape`. It will be the `rect` of the canvas. pub fn layer_at<F>( self, rect: Rect, brush: &Brush<State>, shape: Shape, func: F, ) -> CanvasPainter<'paint, Tail<State>> where F: for<'layer> FnOnce(CanvasPainter<'layer, Head<State>>), { tracing::trace!(\"creating new layer\"); self.canvas.children.push(CanvasLayer { offset: rect.into(), style: LayerStyle { paint_idx: brush.idx(), shape, }, canvas: Canvas { size: rect.into(), paints: Vec::default(), head: Vec::default(), children: Vec::default(), tail: None, }, }); func(CanvasPainter { phantom: PhantomData, canvas: &mut self.canvas.children.last_mut().unwrap().canvas, }); CanvasPainter::<Tail<State>>::begin(self.canvas) } /// Starts a layer with `shape` which child widgets will drawn to. It will be the `rect` of the canvas. pub fn start_layer( self, brush: &Brush<State>, shape: Shape, ) -> CanvasPainter<'paint, Head<State>> { let rect = self.canvas.size.into(); self.start_layer_at(rect, brush, shape) } /// Starts a layer in the defined `rect` with `shape` which child widgets will drawn to. pub fn start_layer_at( self, rect: Rect, brush: &Brush<State>, shape: Shape, ) -> CanvasPainter<'paint, Head<State>> { tracing::trace!(\"starting new layer\"); self.canvas.tail = Some(Box::new(CanvasLayer { offset: rect.into(), style: LayerStyle { paint_idx: brush.idx(), shape, }, canvas: Canvas { size: rect.into(), paints: Vec::default(), head: Vec::default(), children: Vec::default(), tail: None, }, })); CanvasPainter::<Head<State>>::begin(&mut self.canvas.tail.as_mut().unwrap().canvas) } } impl<'paint, State> CanvasPainter<'paint, Head<State>> where State: CanvasPainterState, { /// Draws a rectangle. It will be the `rect` of the canvas. pub fn draw_rect(&mut self, brush: &Brush<Head<State>>) { self.draw_rect_at(self.canvas.size.into(), brush); } /// Draws a rectangle in the defined `rect`. pub fn draw_rect_at(&mut self, rect: Rect, brush: &Brush<Head<State>>) { tracing::trace!(\"drawing rect\"); self.push_command(CanvasCommand::Shape { paint_idx: brush.idx(), rect, shape: Shape::Rect, }); } /// Draws a rounded rectangle. It will be the `rect` of the canvas. pub fn draw_rounded_rect( &mut self, brush: &Brush<Head<State>>, top_left: f32, top_right: f32, bottom_right: f32, bottom_left: f32, ) { self.draw_rounded_rect_at( self.canvas.size.into(), brush, top_left, top_right, bottom_right, bottom_left, ); } /// Draws a rounded rectangle in the defined `rect`. pub fn draw_rounded_rect_at( &mut self, rect: Rect, brush: &Brush<Head<State>>, top_left: f32, top_right: f32, bottom_right: f32, bottom_left: f32, ) { tracing::trace!(\"drawing rounded rect\"); self.push_command(CanvasCommand::Shape { paint_idx: brush.idx(), rect, shape: Shape::RoundedRect { top_left, top_right, bottom_right, bottom_left, }, }); } /// Draws a path. It will be the `rect` of the canvas. pub fn draw_path(&mut self, brush: &Brush<Head<State>>, path: Path) { self.draw_path_at(self.canvas.size.into(), brush, path); } /// Draws a path in the defined `rect`. pub fn draw_path_at(&mut self, rect: Rect, brush: &Brush<Head<State>>, path: Path) { tracing::trace!(\"drawing path\"); self.push_command(CanvasCommand::Shape { paint_idx: brush.idx(), rect, shape: Shape::Path(path), }); } /// Draws text on the canvas. It will be wrapped to the `rect` of the canvas. pub fn draw_text<T>(&mut self, brush: &Brush<Head<State>>, text_style: TextStyle, text: T) where T: Into<Cow<'static, str>>, { self.draw_text_at(self.canvas.size.into(), brush, text_style, text); } /// Draws text on the canvas, ensuring it remains within the `rect`. pub fn draw_text_at<T>( &mut self, rect: Rect, brush: &Brush<Head<State>>, text_style: TextStyle, text: T, ) where T: Into<Cow<'static, str>>, { tracing::trace!(\"drawing text\"); self.push_command(CanvasCommand::Text { paint_idx: brush.idx(), rect, text_style, text: text.into(), }); } } #[cfg(test)] mod tests { #[test] pub fn canvas_style() {} }"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic [ref=e999]:
+                          - generic [ref=e1000] [cursor=pointer]: "1"
+                          - generic [ref=e1001] [cursor=pointer]: "2"
+                          - generic [ref=e1002] [cursor=pointer]: "3"
+                          - generic [ref=e1003] [cursor=pointer]: "4"
+                          - generic [ref=e1004] [cursor=pointer]: "5"
+                          - generic [ref=e1005] [cursor=pointer]: "6"
+                          - generic [ref=e1006] [cursor=pointer]: "7"
+                          - generic [ref=e1007] [cursor=pointer]: "8"
+                          - generic [ref=e1008] [cursor=pointer]: "9"
+                          - generic [ref=e1009] [cursor=pointer]: "10"
+                          - generic [ref=e1010] [cursor=pointer]: "11"
+                          - generic [ref=e1011] [cursor=pointer]: "12"
+                          - generic [ref=e1012] [cursor=pointer]: "13"
+                          - generic [ref=e1013] [cursor=pointer]: "14"
+                          - generic [ref=e1014] [cursor=pointer]: "15"
+                          - generic [ref=e1015] [cursor=pointer]: "16"
+                          - generic [ref=e1016] [cursor=pointer]: "17"
+                          - generic [ref=e1017] [cursor=pointer]: "18"
+                          - generic [ref=e1018] [cursor=pointer]: "19"
+                          - generic [ref=e1019] [cursor=pointer]: "20"
+                          - generic [ref=e1020] [cursor=pointer]: "21"
+                          - generic [ref=e1021] [cursor=pointer]: "22"
+                          - generic [ref=e1022] [cursor=pointer]: "23"
+                          - generic [ref=e1023] [cursor=pointer]: "24"
+                          - generic [ref=e1024] [cursor=pointer]: "25"
+                          - generic [ref=e1025] [cursor=pointer]: "26"
+                          - generic [ref=e1026] [cursor=pointer]: "27"
+                          - generic [ref=e1027] [cursor=pointer]: "28"
+                          - generic [ref=e1028] [cursor=pointer]: "29"
+                          - generic [ref=e1029] [cursor=pointer]: "30"
+                          - generic [ref=e1030] [cursor=pointer]: "31"
+                          - generic [ref=e1031] [cursor=pointer]: "32"
+                          - generic [ref=e1032] [cursor=pointer]:
+                            - text: "33"
+                            - button [ref=e1033]:
+                              - img [ref=e1034]
+                          - generic [ref=e1036] [cursor=pointer]: "34"
+                          - generic [ref=e1037] [cursor=pointer]: "35"
+                          - generic [ref=e1038] [cursor=pointer]: "36"
+                          - generic [ref=e1039] [cursor=pointer]: "37"
+                          - generic [ref=e1040] [cursor=pointer]: "38"
+                          - generic [ref=e1041] [cursor=pointer]: "39"
+                          - generic [ref=e1042] [cursor=pointer]: "40"
+                          - generic [ref=e1043] [cursor=pointer]: "41"
+                          - generic [ref=e1044] [cursor=pointer]:
+                            - text: "42"
+                            - button [ref=e1045]:
+                              - img [ref=e1046]
+                          - generic [ref=e1048] [cursor=pointer]: "43"
+                          - generic [ref=e1049] [cursor=pointer]: "44"
+                          - generic [ref=e1050] [cursor=pointer]: "45"
+                          - generic [ref=e1051] [cursor=pointer]:
+                            - text: "46"
+                            - button [ref=e1052]:
+                              - img [ref=e1053]
+                          - generic [ref=e1055] [cursor=pointer]: "47"
+                          - generic [ref=e1056] [cursor=pointer]: "48"
+                          - generic [ref=e1057] [cursor=pointer]: "49"
+                          - generic [ref=e1058] [cursor=pointer]: "50"
+                          - generic [ref=e1059] [cursor=pointer]: "51"
+                          - generic [ref=e1060] [cursor=pointer]: "52"
+                          - generic [ref=e1061] [cursor=pointer]: "53"
+                          - generic [ref=e1062] [cursor=pointer]: "54"
+                          - generic [ref=e1063] [cursor=pointer]: "55"
+                          - generic [ref=e1064] [cursor=pointer]: "56"
+                          - generic [ref=e1065] [cursor=pointer]: "57"
+                          - generic [ref=e1066] [cursor=pointer]: "58"
+                          - generic [ref=e1067] [cursor=pointer]:
+                            - text: "59"
+                            - button [ref=e1068]:
+                              - img [ref=e1069]
+                          - generic [ref=e1071] [cursor=pointer]: "60"
+                          - generic [ref=e1072] [cursor=pointer]: "61"
+                          - generic [ref=e1073] [cursor=pointer]: "62"
+                          - generic [ref=e1074] [cursor=pointer]: "63"
+                          - generic [ref=e1075] [cursor=pointer]: "64"
+                          - generic [ref=e1076] [cursor=pointer]: "65"
+                          - generic [ref=e1077] [cursor=pointer]: "66"
+                          - generic [ref=e1078] [cursor=pointer]: "67"
+                          - generic [ref=e1079] [cursor=pointer]: "68"
+                          - generic [ref=e1080] [cursor=pointer]:
+                            - text: "69"
+                            - button [ref=e1081]:
+                              - img [ref=e1082]
+                          - generic [ref=e1084] [cursor=pointer]: "70"
+                          - generic [ref=e1085] [cursor=pointer]: "71"
+                          - generic [ref=e1086] [cursor=pointer]: "72"
+                          - generic [ref=e1087] [cursor=pointer]: "73"
+                          - generic [ref=e1088] [cursor=pointer]: "74"
+                          - generic [ref=e1089] [cursor=pointer]: "75"
+                          - generic [ref=e1090] [cursor=pointer]: "76"
+                          - generic [ref=e1091] [cursor=pointer]: "77"
+                          - generic [ref=e1092] [cursor=pointer]: "78"
+                          - generic [ref=e1093] [cursor=pointer]:
+                            - text: "79"
+                            - button [ref=e1094]:
+                              - img [ref=e1095]
+                          - generic [ref=e1097] [cursor=pointer]: "80"
+                          - generic [ref=e1098] [cursor=pointer]: "81"
+                          - generic [ref=e1099] [cursor=pointer]: "82"
+                          - generic [ref=e1100] [cursor=pointer]: "83"
+                          - generic [ref=e1101] [cursor=pointer]: "84"
+                          - generic [ref=e1102] [cursor=pointer]: "85"
+                          - generic [ref=e1103] [cursor=pointer]: "86"
+                          - generic [ref=e1104] [cursor=pointer]: "87"
+                          - generic [ref=e1105] [cursor=pointer]: "88"
+                          - generic [ref=e1106] [cursor=pointer]: "89"
+                          - generic [ref=e1107] [cursor=pointer]: "90"
+                          - generic [ref=e1108] [cursor=pointer]: "91"
+                          - generic [ref=e1109] [cursor=pointer]: "92"
+                          - generic [ref=e1110] [cursor=pointer]: "93"
+                          - generic [ref=e1111] [cursor=pointer]:
+                            - text: "94"
+                            - button [ref=e1112]:
+                              - img [ref=e1113]
+                          - generic [ref=e1115] [cursor=pointer]: "95"
+                          - generic [ref=e1116] [cursor=pointer]: "96"
+                          - generic [ref=e1117] [cursor=pointer]: "97"
+                          - generic [ref=e1118] [cursor=pointer]: "98"
+                          - generic [ref=e1119] [cursor=pointer]: "99"
+                          - generic [ref=e1120] [cursor=pointer]: "100"
+                          - generic [ref=e1121] [cursor=pointer]: "101"
+                          - generic [ref=e1122] [cursor=pointer]: "102"
+                          - generic [ref=e1123] [cursor=pointer]: "103"
+                          - generic [ref=e1124] [cursor=pointer]: "104"
+                          - generic [ref=e1125] [cursor=pointer]: "105"
+                          - generic [ref=e1126] [cursor=pointer]: "106"
+                          - generic [ref=e1127] [cursor=pointer]: "107"
+                          - generic [ref=e1128] [cursor=pointer]: "108"
+                          - generic [ref=e1129] [cursor=pointer]: "109"
+                          - generic [ref=e1130] [cursor=pointer]: "110"
+                          - generic [ref=e1131] [cursor=pointer]: "111"
+                          - generic [ref=e1132] [cursor=pointer]: "112"
+                          - generic [ref=e1133] [cursor=pointer]: "113"
+                          - generic [ref=e1134] [cursor=pointer]: "114"
+                          - generic [ref=e1135] [cursor=pointer]: "115"
+                          - generic [ref=e1136] [cursor=pointer]: "116"
+                          - generic [ref=e1137] [cursor=pointer]: "117"
+                          - generic [ref=e1138] [cursor=pointer]: "118"
+                          - generic [ref=e1139] [cursor=pointer]: "119"
+                          - generic [ref=e1140] [cursor=pointer]: "120"
+                          - generic [ref=e1141] [cursor=pointer]: "121"
+                          - generic [ref=e1142] [cursor=pointer]: "122"
+                          - generic [ref=e1143] [cursor=pointer]: "123"
+                          - generic [ref=e1144] [cursor=pointer]: "124"
+                          - generic [ref=e1145] [cursor=pointer]: "125"
+                          - generic [ref=e1146] [cursor=pointer]: "126"
+                          - generic [ref=e1147] [cursor=pointer]: "127"
+                          - generic [ref=e1148] [cursor=pointer]: "128"
+                          - generic [ref=e1149] [cursor=pointer]: "129"
+                          - generic [ref=e1150] [cursor=pointer]: "130"
+                          - generic [ref=e1151] [cursor=pointer]: "131"
+                          - generic [ref=e1152] [cursor=pointer]: "132"
+                          - generic [ref=e1153] [cursor=pointer]: "133"
+                          - generic [ref=e1154] [cursor=pointer]: "134"
+                          - generic [ref=e1155] [cursor=pointer]: "135"
+                          - generic [ref=e1156] [cursor=pointer]:
+                            - text: "136"
+                            - button [ref=e1157]:
+                              - img [ref=e1158]
+                          - generic [ref=e1160] [cursor=pointer]: "223"
+                          - generic [ref=e1161] [cursor=pointer]: "224"
+                          - generic [ref=e1162] [cursor=pointer]: "225"
+                          - generic [ref=e1163] [cursor=pointer]: "226"
+                          - generic [ref=e1164] [cursor=pointer]: "227"
+                          - generic [ref=e1165] [cursor=pointer]: "228"
+                          - generic [ref=e1166] [cursor=pointer]: "229"
+                          - generic [ref=e1167] [cursor=pointer]: "230"
+                          - generic [ref=e1168] [cursor=pointer]: "231"
+                          - generic [ref=e1169] [cursor=pointer]: "232"
+                          - generic [ref=e1170] [cursor=pointer]: "233"
+                          - generic [ref=e1171] [cursor=pointer]: "234"
+                          - generic [ref=e1172] [cursor=pointer]: "235"
+                          - generic [ref=e1173] [cursor=pointer]: "236"
+                          - generic [ref=e1174] [cursor=pointer]: "237"
+                          - generic [ref=e1175] [cursor=pointer]: "238"
+                          - generic [ref=e1176] [cursor=pointer]: "239"
+                          - generic [ref=e1177] [cursor=pointer]: "240"
+                          - generic [ref=e1178] [cursor=pointer]: "241"
+                          - generic [ref=e1179] [cursor=pointer]: "242"
+                          - generic [ref=e1180] [cursor=pointer]: "243"
+                          - generic [ref=e1181] [cursor=pointer]: "244"
+                          - generic [ref=e1182] [cursor=pointer]: "245"
+                          - generic [ref=e1183] [cursor=pointer]: "246"
+                          - generic [ref=e1184] [cursor=pointer]: "247"
+                          - generic [ref=e1185] [cursor=pointer]: "248"
+                          - generic [ref=e1186] [cursor=pointer]: "249"
+                          - generic [ref=e1187] [cursor=pointer]:
+                            - text: "250"
+                            - button [ref=e1188]:
+                              - img [ref=e1189]
+                          - generic [ref=e1191] [cursor=pointer]: "251"
+                          - generic [ref=e1192] [cursor=pointer]: "252"
+                          - generic [ref=e1193] [cursor=pointer]: "253"
+                          - generic [ref=e1194] [cursor=pointer]: "254"
+                          - generic [ref=e1195] [cursor=pointer]: "255"
+                          - generic [ref=e1196] [cursor=pointer]: "256"
+                          - generic [ref=e1197] [cursor=pointer]: "257"
+                          - generic [ref=e1198] [cursor=pointer]: "258"
+                          - generic [ref=e1199] [cursor=pointer]: "259"
+                          - generic [ref=e1200] [cursor=pointer]: "260"
+                          - generic [ref=e1201] [cursor=pointer]: "261"
+                          - generic [ref=e1202] [cursor=pointer]:
+                            - text: "262"
+                            - button [ref=e1203]:
+                              - img [ref=e1204]
+                          - generic [ref=e1206] [cursor=pointer]: "263"
+                          - generic [ref=e1207] [cursor=pointer]: "264"
+                          - generic [ref=e1208] [cursor=pointer]: "265"
+                          - generic [ref=e1209] [cursor=pointer]: "266"
+                          - generic [ref=e1210] [cursor=pointer]: "267"
+                          - generic [ref=e1211] [cursor=pointer]: "268"
+                          - generic [ref=e1212] [cursor=pointer]: "269"
+                          - generic [ref=e1213] [cursor=pointer]:
+                            - text: "270"
+                            - button [ref=e1214]:
+                              - img [ref=e1215]
+                          - generic [ref=e1217] [cursor=pointer]: "271"
+                          - generic [ref=e1218] [cursor=pointer]: "272"
+                          - generic [ref=e1219] [cursor=pointer]: "273"
+                          - generic [ref=e1220] [cursor=pointer]: "274"
+                          - generic [ref=e1221] [cursor=pointer]: "275"
+                          - generic [ref=e1222] [cursor=pointer]: "276"
+                          - generic [ref=e1223] [cursor=pointer]: "277"
+                          - generic [ref=e1224] [cursor=pointer]: "278"
+                          - generic [ref=e1225] [cursor=pointer]: "279"
+                          - generic [ref=e1226] [cursor=pointer]: "280"
+                          - generic [ref=e1227] [cursor=pointer]: "281"
+                          - generic [ref=e1228] [cursor=pointer]: "282"
+                          - generic [ref=e1229] [cursor=pointer]: "283"
+                          - generic [ref=e1230] [cursor=pointer]: "284"
+                          - generic [ref=e1231] [cursor=pointer]: "285"
+                          - generic [ref=e1232] [cursor=pointer]: "286"
+                          - generic [ref=e1233] [cursor=pointer]: "287"
+                          - generic [ref=e1234] [cursor=pointer]: "288"
+                          - generic [ref=e1235] [cursor=pointer]: "289"
+                          - generic [ref=e1236] [cursor=pointer]: "290"
+                          - generic [ref=e1237] [cursor=pointer]: "291"
+                          - generic [ref=e1238] [cursor=pointer]: "292"
+                          - generic [ref=e1239] [cursor=pointer]: "293"
+                          - generic [ref=e1240] [cursor=pointer]: "294"
+                          - generic [ref=e1241] [cursor=pointer]: "295"
+                          - generic [ref=e1242] [cursor=pointer]: "296"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: use
+                                - text: std
+                                - generic: "::"
+                                - generic: "{"
+                                - text: borrow
+                                - generic: "::"
+                                - generic: Cow
+                                - generic: ","
+                                - text: marker
+                                - generic: "::"
+                                - generic: PhantomData
+                                - generic: "}"
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: use
+                                - text: lyon
+                                - generic: "::"
+                                - text: path
+                                - generic: "::"
+                                - generic: Path
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: use
+                                - generic: crate
+                                - generic: "::"
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: render
+                                - generic: "::"
+                                - text: canvas
+                                - generic: "::"
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: command
+                                - generic: "::"
+                                - generic: CanvasCommand
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: paint
+                                - generic: "::"
+                                - generic: "{"
+                                - generic: Brush
+                                - generic: ","
+                                - generic: Paint
+                                - generic: "}"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Canvas
+                                - generic: ","
+                                - generic: CanvasLayer
+                                - generic: ","
+                                - generic: LayerStyle
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: unit
+                                - generic: "::"
+                                - generic: "{"
+                                - generic: Rect
+                                - generic: ","
+                                - generic: Shape
+                                - generic: ","
+                                - generic: Size
+                                - generic: ","
+                                - generic: TextStyle
+                                - generic: "}"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: trait
+                                - generic: CanvasPainterState
+                                - generic: "{"
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: struct
+                                - generic: Head
+                                - generic: <
+                                - generic: T
+                                - generic: ">"
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: phantom
+                                - generic: ":"
+                                - generic: PhantomData
+                                - generic: <
+                                - generic: T
+                                - generic: ">"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: struct
+                                - generic: Layer
+                                - generic: <
+                                - generic: T
+                                - generic: ">"
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: phantom
+                                - generic: ":"
+                                - generic: PhantomData
+                                - generic: <
+                                - generic: T
+                                - generic: ">"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: struct
+                                - generic: Tail
+                                - generic: <
+                                - generic: T
+                                - generic: ">"
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: phantom
+                                - generic: ":"
+                                - generic: PhantomData
+                                - generic: <
+                                - generic: T
+                                - generic: ">"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: impl
+                                - generic: CanvasPainterState
+                                - generic: for
+                                - generic: (
+                                - generic: )
+                                - generic: "{"
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: impl
+                                - generic: <
+                                - generic: T
+                                - generic: ">"
+                                - generic: CanvasPainterState
+                                - generic: for
+                                - generic: Head
+                                - generic: <
+                                - generic: T
+                                - generic: ">"
+                                - generic: where
+                                - generic: T
+                                - generic: ":"
+                                - generic: CanvasPainterState
+                                - generic: "{"
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: impl
+                                - generic: <
+                                - generic: T
+                                - generic: ">"
+                                - generic: CanvasPainterState
+                                - generic: for
+                                - generic: Layer
+                                - generic: <
+                                - generic: T
+                                - generic: ">"
+                                - generic: where
+                                - generic: T
+                                - generic: ":"
+                                - generic: CanvasPainterState
+                                - generic: "{"
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: impl
+                                - generic: <
+                                - generic: T
+                                - generic: ">"
+                                - generic: CanvasPainterState
+                                - generic: for
+                                - generic: Tail
+                                - generic: <
+                                - generic: T
+                                - generic: ">"
+                                - generic: where
+                                - generic: T
+                                - generic: ":"
+                                - generic: CanvasPainterState
+                                - generic: "{"
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: struct
+                                - generic: CanvasPainter
+                                - generic: <
+                                - generic: "'"
+                                - generic: paint
+                                - generic: ","
+                                - generic: State
+                                - text: =
+                                - generic: Head
+                                - generic: <
+                                - generic: (
+                                - generic: )
+                                - generic: ">"
+                                - generic: ">"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: where
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: State
+                                - generic: ":"
+                                - generic: CanvasPainterState
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: phantom
+                                - generic: ":"
+                                - generic: PhantomData
+                                - generic: <
+                                - generic: State
+                                - generic: ">"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: canvas
+                                - generic: ":"
+                                - generic: "&"
+                                - generic: "'"
+                                - generic: paint
+                                - generic: mut
+                                - generic: Canvas
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: impl
+                                - generic: <
+                                - generic: "'"
+                                - generic: paint
+                                - generic: ","
+                                - generic: State
+                                - generic: ">"
+                                - generic: CanvasPainter
+                                - generic: <
+                                - generic: "'"
+                                - generic: paint
+                                - generic: ","
+                                - generic: State
+                                - generic: ">"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: where
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: State
+                                - generic: ":"
+                                - generic: CanvasPainterState
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: fn
+                                - generic: begin
+                                - generic: (
+                                - generic: canvas
+                                - generic: ":"
+                                - generic: "&"
+                                - generic: "'"
+                                - generic: paint
+                                - generic: mut
+                                - generic: Canvas
+                                - generic: )
+                                - text: "->"
+                                - generic: CanvasPainter
+                                - generic: <
+                                - generic: "'"
+                                - generic: paint
+                                - generic: ","
+                                - generic: State
+                                - generic: ">"
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: CanvasPainter
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: phantom
+                                - generic: ":"
+                                - generic: PhantomData
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: canvas
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: fn
+                                - generic: size
+                                - generic: (
+                                - generic: "&"
+                                - generic: self
+                                - generic: )
+                                - text: "->"
+                                - generic: Size
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: self
+                                - generic: .
+                                - generic: canvas
+                                - generic: .
+                                - generic: size
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// TODO: add a lifetime to brushes so they cannot be used outside of the canvas or layer they belong to"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: fn
+                                - generic: add_paint
+                                - generic: (
+                                - generic: "&"
+                                - generic: mut
+                                - generic: self
+                                - generic: ","
+                                - generic: paint
+                                - generic: ":"
+                                - generic: Paint
+                                - generic: )
+                                - text: "->"
+                                - generic: Brush
+                                - generic: <
+                                - generic: State
+                                - generic: ">"
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: self
+                                - generic: .
+                                - generic: canvas
+                                - generic: .
+                                - generic: paints
+                                - generic: .
+                                - generic: push
+                                - generic: (
+                                - text: paint
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Brush
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: phantom
+                                - generic: ":"
+                                - generic: PhantomData
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: idx
+                                - generic: ":"
+                                - generic: self
+                                - generic: .
+                                - generic: canvas
+                                - generic: .
+                                - generic: paints
+                                - generic: .
+                                - generic: len
+                                - generic: (
+                                - generic: )
+                                - text: "-"
+                                - generic: "1"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: fn
+                                - generic: push_command
+                                - generic: (
+                                - generic: "&"
+                                - generic: mut
+                                - generic: self
+                                - generic: ","
+                                - generic: command
+                                - generic: ":"
+                                - generic: CanvasCommand
+                                - generic: )
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // If we have children, but a new layer has not been started afterwards, panic
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: if
+                                - text: "!"
+                                - generic: self
+                                - generic: .
+                                - generic: canvas
+                                - generic: .
+                                - generic: children
+                                - generic: .
+                                - generic: is_empty
+                                - generic: (
+                                - generic: )
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: panic
+                                - generic: "!"
+                                - generic: (
+                                - generic: "\"cannot start drawing on an uninitialized layer\""
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: self
+                                - generic: .
+                                - generic: canvas
+                                - generic: .
+                                - generic: head
+                                - generic: .
+                                - generic: push
+                                - generic: (
+                                - text: command
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "/// Creates a layer with `shape`. It will be the `rect` of the canvas."
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: fn
+                                - generic: layer
+                                - generic: <
+                                - generic: F
+                                - generic: ">"
+                                - generic: (
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: self
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: brush
+                                - generic: ":"
+                                - generic: "&"
+                                - generic: Brush
+                                - generic: <
+                                - generic: State
+                                - generic: ">"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: shape
+                                - generic: ":"
+                                - generic: Shape
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: func
+                                - generic: ":"
+                                - generic: F
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: )
+                                - text: "->"
+                                - generic: CanvasPainter
+                                - generic: <
+                                - generic: "'"
+                                - generic: paint
+                                - generic: ","
+                                - generic: Tail
+                                - generic: <
+                                - generic: State
+                                - generic: ">"
+                                - generic: ">"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: where
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: F
+                                - generic: ":"
+                                - generic: for
+                                - generic: <
+                                - generic: "'"
+                                - generic: layer
+                                - generic: ">"
+                                - generic: FnOnce
+                                - generic: (
+                                - generic: CanvasPainter
+                                - generic: <
+                                - generic: "'"
+                                - generic: layer
+                                - generic: ","
+                                - generic: Head
+                                - generic: <
+                                - generic: State
+                                - generic: ">"
+                                - generic: ">"
+                                - generic: )
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: let
+                                - text: rect =
+                                - generic: self
+                                - generic: .
+                                - generic: canvas
+                                - generic: .
+                                - generic: size
+                                - generic: .
+                                - generic: into
+                                - generic: (
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: self
+                                - generic: .
+                                - generic: layer_at
+                                - generic: (
+                                - text: rect
+                                - generic: ","
+                                - text: brush
+                                - generic: ","
+                                - text: shape
+                                - generic: ","
+                                - text: func
+                                - generic: )
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "/// Creates a layer with `shape`. It will be the `rect` of the canvas."
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: fn
+                                - generic: layer_at
+                                - generic: <
+                                - generic: F
+                                - generic: ">"
+                                - generic: (
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: self
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: rect
+                                - generic: ":"
+                                - generic: Rect
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: brush
+                                - generic: ":"
+                                - generic: "&"
+                                - generic: Brush
+                                - generic: <
+                                - generic: State
+                                - generic: ">"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: shape
+                                - generic: ":"
+                                - generic: Shape
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: func
+                                - generic: ":"
+                                - generic: F
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: )
+                                - text: "->"
+                                - generic: CanvasPainter
+                                - generic: <
+                                - generic: "'"
+                                - generic: paint
+                                - generic: ","
+                                - generic: Tail
+                                - generic: <
+                                - generic: State
+                                - generic: ">"
+                                - generic: ">"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: where
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: F
+                                - generic: ":"
+                                - generic: for
+                                - generic: <
+                                - generic: "'"
+                                - generic: layer
+                                - generic: ">"
+                                - generic: FnOnce
+                                - generic: (
+                                - generic: CanvasPainter
+                                - generic: <
+                                - generic: "'"
+                                - generic: layer
+                                - generic: ","
+                                - generic: Head
+                                - generic: <
+                                - generic: State
+                                - generic: ">"
+                                - generic: ">"
+                                - generic: )
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: tracing
+                                - generic: "::"
+                                - text: trace!
+                                - generic: (
+                                - generic: "\"creating new layer\""
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: self
+                                - generic: .
+                                - generic: canvas
+                                - generic: .
+                                - generic: children
+                                - generic: .
+                                - generic: push
+                                - generic: (
+                                - generic: CanvasLayer
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: offset
+                                - generic: ":"
+                                - text: rect
+                                - generic: .
+                                - generic: into
+                                - generic: (
+                                - generic: )
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: style
+                                - generic: ":"
+                                - generic: LayerStyle
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: paint_idx
+                                - generic: ":"
+                                - text: brush
+                                - generic: .
+                                - generic: idx
+                                - generic: (
+                                - generic: )
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: shape
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: canvas
+                                - generic: ":"
+                                - generic: Canvas
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: size
+                                - generic: ":"
+                                - text: rect
+                                - generic: .
+                                - generic: into
+                                - generic: (
+                                - generic: )
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: paints
+                                - generic: ":"
+                                - generic: Vec
+                                - generic: "::"
+                                - generic: default
+                                - generic: (
+                                - generic: )
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: head
+                                - generic: ":"
+                                - generic: Vec
+                                - generic: "::"
+                                - generic: default
+                                - generic: (
+                                - generic: )
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: children
+                                - generic: ":"
+                                - generic: Vec
+                                - generic: "::"
+                                - generic: default
+                                - generic: (
+                                - generic: )
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: tail
+                                - generic: ":"
+                                - generic: None
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: func
+                                - generic: (
+                                - generic: CanvasPainter
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: phantom
+                                - generic: ":"
+                                - generic: PhantomData
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: canvas
+                                - generic: ":"
+                                - generic: "&"
+                                - generic: mut
+                                - generic: self
+                                - generic: .
+                                - generic: canvas
+                                - generic: .
+                                - generic: children
+                                - generic: .
+                                - generic: last_mut
+                                - generic: (
+                                - generic: )
+                                - generic: .
+                                - generic: unwrap
+                                - generic: (
+                                - generic: )
+                                - generic: .
+                                - generic: canvas
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: CanvasPainter
+                                - generic: "::"
+                                - generic: <
+                                - generic: Tail
+                                - generic: <
+                                - generic: State
+                                - generic: ">"
+                                - generic: ">"
+                                - generic: "::"
+                                - generic: begin
+                                - generic: (
+                                - generic: self
+                                - generic: .
+                                - generic: canvas
+                                - generic: )
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "/// Starts a layer with `shape` which child widgets will drawn to. It will be the `rect` of the canvas."
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: fn
+                                - generic: start_layer
+                                - generic: (
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: brush
+                                - generic: ":"
+                                - generic: "&"
+                                - generic: Brush
+                                - generic: <
+                                - generic: Head
+                                - generic: <
+                                - generic: State
+                                - generic: ">"
+                                - generic: ">"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: top_left
+                                - generic: ":"
+                                - generic: f32
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: top_right
+                                - generic: ":"
+                                - generic: f32
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: bottom_right
+                                - generic: ":"
+                                - generic: f32
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: bottom_left
+                                - generic: ":"
+                                - generic: f32
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: )
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: tracing
+                                - generic: "::"
+                                - text: trace!
+                                - generic: (
+                                - generic: "\"drawing rounded rect\""
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: self
+                                - generic: .
+                                - generic: push_command
+                                - generic: (
+                                - generic: CanvasCommand
+                                - generic: "::"
+                                - generic: Shape
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: paint_idx
+                                - generic: ":"
+                                - text: brush
+                                - generic: .
+                                - generic: idx
+                                - generic: (
+                                - generic: )
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: rect
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: shape
+                                - generic: ":"
+                                - generic: Shape
+                                - generic: "::"
+                                - generic: RoundedRect
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: top_left
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: top_right
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: bottom_right
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: bottom_left
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "/// Draws a path. It will be the `rect` of the canvas."
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: fn
+                                - generic: draw_path
+                                - generic: (
+                                - generic: "&"
+                                - generic: mut
+                                - generic: self
+                                - generic: ","
+                                - generic: brush
+                                - generic: ":"
+                                - generic: "&"
+                                - generic: Brush
+                                - generic: <
+                                - generic: Head
+                                - generic: <
+                                - generic: State
+                                - generic: ">"
+                                - generic: ">"
+                                - generic: ","
+                                - generic: path
+                                - generic: ":"
+                                - generic: Path
+                                - generic: )
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: self
+                                - generic: .
+                                - generic: draw_path_at
+                                - generic: (
+                                - generic: self
+                                - generic: .
+                                - generic: canvas
+                                - generic: .
+                                - generic: size
+                                - generic: .
+                                - generic: into
+                                - generic: (
+                                - generic: )
+                                - generic: ","
+                                - text: brush
+                                - generic: ","
+                                - text: path
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "/// Draws a path in the defined `rect`."
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: fn
+                                - generic: draw_path_at
+                                - generic: (
+                                - generic: "&"
+                                - generic: mut
+                                - generic: self
+                                - generic: ","
+                                - generic: rect
+                                - generic: ":"
+                                - generic: Rect
+                                - generic: ","
+                                - generic: brush
+                                - generic: ":"
+                                - generic: "&"
+                                - generic: Brush
+                                - generic: <
+                                - generic: Head
+                                - generic: <
+                                - generic: State
+                                - generic: ">"
+                                - generic: ">"
+                                - generic: ","
+                                - generic: path
+                                - generic: ":"
+                                - generic: Path
+                                - generic: )
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: tracing
+                                - generic: "::"
+                                - text: trace!
+                                - generic: (
+                                - generic: "\"drawing path\""
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: self
+                                - generic: .
+                                - generic: push_command
+                                - generic: (
+                                - generic: CanvasCommand
+                                - generic: "::"
+                                - generic: Shape
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: paint_idx
+                                - generic: ":"
+                                - text: brush
+                                - generic: .
+                                - generic: idx
+                                - generic: (
+                                - generic: )
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: rect
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: shape
+                                - generic: ":"
+                                - generic: Shape
+                                - generic: "::"
+                                - generic: Path
+                                - generic: (
+                                - text: path
+                                - generic: )
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "/// Draws text on the canvas. It will be wrapped to the `rect` of the canvas."
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: fn
+                                - generic: draw_text
+                                - generic: <
+                                - generic: T
+                                - generic: ">"
+                                - generic: (
+                                - generic: "&"
+                                - generic: mut
+                                - generic: self
+                                - generic: ","
+                                - generic: brush
+                                - generic: ":"
+                                - generic: "&"
+                                - generic: Brush
+                                - generic: <
+                                - generic: Head
+                                - generic: <
+                                - generic: State
+                                - generic: ">"
+                                - generic: ">"
+                                - generic: ","
+                                - generic: text_style
+                                - generic: ":"
+                                - generic: TextStyle
+                                - generic: ","
+                                - generic: text
+                                - generic: ":"
+                                - generic: T
+                                - generic: )
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: where
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: T
+                                - generic: ":"
+                                - generic: Into
+                                - generic: <
+                                - generic: Cow
+                                - generic: <
+                                - generic: "'"
+                                - generic: static
+                                - generic: ","
+                                - generic: str
+                                - generic: ">"
+                                - generic: ">"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: self
+                                - generic: .
+                                - generic: draw_text_at
+                                - generic: (
+                                - generic: self
+                                - generic: .
+                                - generic: canvas
+                                - generic: .
+                                - generic: size
+                                - generic: .
+                                - generic: into
+                                - generic: (
+                                - generic: )
+                                - generic: ","
+                                - text: brush
+                                - generic: ","
+                                - text: text_style
+                                - generic: ","
+                                - text: text
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "/// Draws text on the canvas, ensuring it remains within the `rect`."
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: fn
+                                - generic: draw_text_at
+                                - generic: <
+                                - generic: T
+                                - generic: ">"
+                                - generic: (
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "&"
+                                - generic: mut
+                                - generic: self
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: rect
+                                - generic: ":"
+                                - generic: Rect
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: brush
+                                - generic: ":"
+                                - generic: "&"
+                                - generic: Brush
+                                - generic: <
+                                - generic: Head
+                                - generic: <
+                                - generic: State
+                                - generic: ">"
+                                - generic: ">"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: text_style
+                                - generic: ":"
+                                - generic: TextStyle
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: text
+                                - generic: ":"
+                                - generic: T
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: )
+                                - generic: where
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: T
+                                - generic: ":"
+                                - generic: Into
+                                - generic: <
+                                - generic: Cow
+                                - generic: <
+                                - generic: "'"
+                                - generic: static
+                                - generic: ","
+                                - generic: str
+                                - generic: ">"
+                                - generic: ">"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: tracing
+                                - generic: "::"
+                                - text: trace!
+                                - generic: (
+                                - generic: "\"drawing text\""
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: self
+                                - generic: .
+                                - generic: push_command
+                                - generic: (
+                                - generic: CanvasCommand
+                                - generic: "::"
+                                - generic: Text
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: paint_idx
+                                - generic: ":"
+                                - text: brush
+                                - generic: .
+                                - generic: idx
+                                - generic: (
+                                - generic: )
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: rect
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: text_style
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: text
+                                - generic: ":"
+                                - text: text
+                                - generic: .
+                                - generic: into
+                                - generic: (
+                                - generic: )
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - text: "#"
+                                  - generic: "["
+                                  - text: cfg
+                                  - generic: (
+                                  - text: test
+                                  - generic: )
+                                  - generic: "]"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: mod
+                                - text: tests
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - text: "#"
+                                  - generic: "["
+                                  - text: test
+                                  - generic: "]"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: fn
+                                - generic: canvas_style
+                                - generic: (
+                                - generic: )
+                                - generic: "{"
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+  - alert [ref=e1246]

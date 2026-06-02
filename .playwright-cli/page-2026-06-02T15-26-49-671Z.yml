@@ -1,0 +1,191 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e7]
+        - generic [ref=e10]: A2UI Composer
+      - separator [ref=e11]
+      - navigation [ref=e12]:
+        - link "Create" [ref=e14] [cursor=pointer]:
+          - /url: /
+          - img [ref=e15]
+          - generic [ref=e18]: Create
+        - link "Gallery" [ref=e20] [cursor=pointer]:
+          - /url: /gallery
+          - img [ref=e21]
+          - generic [ref=e27]: Gallery
+        - link "Basic Catalog" [ref=e29] [cursor=pointer]:
+          - /url: /basic-catalog
+          - img [ref=e30]
+          - generic [ref=e34]: Basic Catalog
+        - generic [ref=e35]:
+          - link "Custom Catalog" [ref=e36] [cursor=pointer]:
+            - /url: /custom-catalog
+            - img [ref=e37]
+            - generic [ref=e41]: Custom Catalog
+          - generic [ref=e42]:
+            - link "Assembled Components" [ref=e43] [cursor=pointer]:
+              - /url: /custom-catalog
+            - link "Catalog Components" [ref=e44] [cursor=pointer]:
+              - /url: /custom-catalog/catalog-components
+        - link "Icons" [ref=e46] [cursor=pointer]:
+          - /url: /icons
+          - img [ref=e47]
+          - generic [ref=e52]: Icons
+        - link "Theater JSONL Playback" [ref=e54] [cursor=pointer]:
+          - /url: /theater
+          - img [ref=e55]
+          - generic [ref=e57]:
+            - generic [ref=e58]: Theater
+            - generic [ref=e59]: JSONL Playback
+        - link "Tutorial CopilotKit + A2UI" [ref=e61] [cursor=pointer]:
+          - /url: https://docs.copilotkit.ai/a2a/generative-ui/declarative-a2ui
+          - img [ref=e62]
+          - generic [ref=e64]:
+            - generic [ref=e65]: Tutorial
+            - generic [ref=e66]: CopilotKit + A2UI
+      - separator [ref=e67]
+      - generic [ref=e68]:
+        - generic [ref=e70]: Widgets
+        - generic [ref=e72]: No widgets yet
+    - main [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - heading "Custom Catalog" [level=1] [ref=e77]
+            - generic [ref=e78]:
+              - 'link "Concept: Catalogs" [ref=e79] [cursor=pointer]':
+                - /url: https://a2ui.org/concepts/catalogs/
+                - text: "Concept: Catalogs"
+                - img [ref=e80]
+              - 'link "Guide: Define your own" [ref=e84] [cursor=pointer]':
+                - /url: https://a2ui.org/guides/defining-your-own-catalog/
+                - text: "Guide: Define your own"
+                - img [ref=e85]
+          - paragraph [ref=e89]: Two example trees assembled from the same custom A2UI v0.9 catalog (11 components, runs alongside the basic catalog) — toggle between them under Assembled Components.
+        - generic [ref=e93]:
+          - generic [ref=e95]:
+            - generic [ref=e97]: Assembled Components
+            - generic [ref=e98]:
+              - generic [ref=e99] [cursor=pointer]: Flight Card
+              - generic [ref=e100] [cursor=pointer]: Sales Dashboard
+            - generic [ref=e105]:
+              - generic [ref=e106]:
+                - generic [ref=e107]:
+                  - generic [ref=e108]:
+                    - img "United Airlines" [ref=e109]
+                    - generic [ref=e110]: United Airlines
+                  - generic [ref=e111]: $289
+                - generic [ref=e112]:
+                  - generic [ref=e113]: UA 1201
+                  - generic [ref=e114]: Tue, Mar 18
+                - separator [ref=e115]
+                - generic [ref=e116]:
+                  - generic [ref=e117]: 08:15
+                  - generic [ref=e118]: 5h 25m
+                  - generic [ref=e119]: 16:40
+                - generic [ref=e120]:
+                  - generic [ref=e121]: SFO
+                  - generic [ref=e122]: →
+                  - generic [ref=e123]: JFK
+                - generic [ref=e124]:
+                  - separator [ref=e125]
+                  - generic [ref=e128]: On Time
+                  - button "Select" [ref=e129] [cursor=pointer]
+              - generic [ref=e130]:
+                - generic [ref=e131]:
+                  - generic [ref=e132]:
+                    - img "Delta Air Lines" [ref=e133]
+                    - generic [ref=e134]: Delta Air Lines
+                  - generic [ref=e135]: $312
+                - generic [ref=e136]:
+                  - generic [ref=e137]: DL 2204
+                  - generic [ref=e138]: Tue, Mar 18
+                - separator [ref=e139]
+                - generic [ref=e140]:
+                  - generic [ref=e141]: 10:45
+                  - generic [ref=e142]: 5h 45m
+                  - generic [ref=e143]: 19:30
+                - generic [ref=e144]:
+                  - generic [ref=e145]: SFO
+                  - generic [ref=e146]: →
+                  - generic [ref=e147]: JFK
+                - generic [ref=e148]:
+                  - separator [ref=e149]
+                  - generic [ref=e152]: Delayed
+                  - button "Select" [ref=e153] [cursor=pointer]
+          - separator:
+            - img [ref=e155]
+          - generic [ref=e163]:
+            - generic [ref=e164]:
+              - generic [ref=e166]: Component Data
+              - generic [ref=e167]: flight-data.json (each tab renders one FlightCard per entry in /flights)
+            - generic [ref=e169]:
+              - generic [ref=e170]:
+                - generic [ref=e172] [cursor=pointer]: Morning Flights
+                - generic [ref=e173] [cursor=pointer]:
+                  - generic [ref=e174]: Afternoon Flights
+                  - button [ref=e175]:
+                    - img [ref=e176]
+                - button [ref=e179] [cursor=pointer]:
+                  - img
+              - code [ref=e183]:
+                - generic [ref=e184]:
+                  - textbox "Editor content" [ref=e185]
+                  - textbox [ref=e186]
+                  - generic [ref=e188]:
+                    - generic [ref=e191]: "1"
+                    - generic [ref=e193]: "2"
+                    - generic [ref=e195]: "3"
+                    - generic [ref=e197]: "4"
+                    - generic [ref=e199]: "5"
+                    - generic [ref=e201]: "6"
+                    - generic [ref=e204]: "7"
+                    - generic [ref=e206]: "8"
+                    - generic [ref=e208]: "9"
+                    - generic [ref=e210]: "10"
+                    - generic [ref=e212]: "11"
+                    - generic [ref=e214]: "12"
+                    - generic [ref=e216]: "13"
+                    - generic [ref=e218]: "14"
+                    - generic [ref=e220]: "15"
+                    - generic [ref=e222]: "16"
+                    - generic [ref=e224]: "17"
+                    - generic [ref=e226]: "18"
+                    - generic [ref=e228]: "19"
+                    - generic [ref=e230]: "20"
+                    - generic [ref=e233]: "21"
+                    - generic [ref=e235]: "22"
+                    - generic [ref=e237]: "23"
+                    - generic [ref=e239]: "24"
+                  - generic [ref=e338]:
+                    - generic [ref=e340]: "{"
+                    - generic [ref=e342]: "\"flights\": ["
+                    - generic [ref=e344]: "{"
+                    - generic [ref=e346]: "\"id\": \"ua-1201\","
+                    - generic [ref=e348]: "\"airline\": \"United Airlines\","
+                    - generic [ref=e350]: "\"airlineLogo\": \"https://www.google.com/s2/"
+                    - generic [ref=e352]: favicons?domain=united.com&sz=128",
+                    - generic [ref=e354]: "\"flightNumber\": \"UA 1201\","
+                    - generic [ref=e356]: "\"origin\": \"SFO\","
+                    - generic [ref=e358]: "\"destination\": \"JFK\","
+                    - generic [ref=e360]: "\"date\": \"Tue, Mar 18\","
+                    - generic [ref=e362]: "\"departureTime\": \"08:15\","
+                    - generic [ref=e364]: "\"arrivalTime\": \"16:40\","
+                    - generic [ref=e366]: "\"duration\": \"5h 25m\","
+                    - generic [ref=e368]: "\"status\": \"On Time\","
+                    - generic [ref=e370]: "\"price\": \"$289\""
+                    - generic [ref=e372]: "},"
+                    - generic [ref=e374]: "{"
+                    - generic [ref=e376]: "\"id\": \"dl-2204\","
+                    - generic [ref=e378]: "\"airline\": \"Delta Air Lines\","
+                    - generic [ref=e380]: "\"airlineLogo\": \"https://www.google.com/s2/"
+                    - generic [ref=e382]: favicons?domain=delta.com&sz=128",
+                    - generic [ref=e384]: "\"flightNumber\": \"DL 2204\","
+                    - generic [ref=e386]: "\"origin\": \"SFO\","
+                    - generic [ref=e388]: "\"destination\": \"JFK\","
+                    - generic [ref=e390]: "\"date\": \"Tue, Mar 18\","
+  - alert [ref=e391]
+  - generic [ref=e392]:
+    - alert
+    - alert

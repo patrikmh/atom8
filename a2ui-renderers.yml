@@ -1,0 +1,397 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: https://a2ui.org/reference/renderers/#renderers-client-libraries
+  - banner [ref=e3]:
+    - navigation "Header" [ref=e4]:
+      - link "A2UI" [ref=e5] [cursor=pointer]:
+        - /url: https://a2ui.org/
+        - img "logo" [ref=e6]
+      - generic [ref=e8]:
+        - generic [ref=e10]: A2UI
+        - generic:
+          - generic: Renderers (Clients)
+      - generic [ref=e11]:
+        - radio "Switch to dark mode"
+        - generic "Switch to dark mode" [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+        - radio "Switch to light mode"
+      - dialog [ref=e15]:
+        - search [ref=e16]:
+          - generic [ref=e17]:
+            - textbox "Search" [ref=e18]
+            - generic:
+              - img
+            - navigation "Search":
+              - button "Clear":
+                - img
+          - generic [ref=e20]: Type to start searching
+      - link "google/A2UI" [ref=e22] [cursor=pointer]:
+        - /url: https://github.com/google/A2UI
+        - img [ref=e24]
+        - generic [ref=e26]: google/A2UI
+  - generic [ref=e27]:
+    - main [ref=e28]:
+      - generic [ref=e29]:
+        - navigation "Navigation" [ref=e33]:
+          - generic [ref=e34]: A2UI
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "Home" [ref=e37] [cursor=pointer]:
+                - /url: https://a2ui.org/
+                - generic [ref=e38]: Home
+            - listitem [ref=e39]:
+              - generic [ref=e41]: Introduction & FAQ
+            - listitem [ref=e43]:
+              - link "Quickstart" [ref=e44] [cursor=pointer]:
+                - /url: https://a2ui.org/quickstart/
+                - generic [ref=e45]: Quickstart
+            - listitem [ref=e46]:
+              - link "A2UI Composer ⭐" [ref=e47] [cursor=pointer]:
+                - /url: https://a2ui.org/composer/
+                - generic [ref=e48]: A2UI Composer ⭐
+            - listitem [ref=e49]:
+              - generic [ref=e51]: Concepts
+            - listitem [ref=e53]:
+              - generic [ref=e55]: Guides
+            - listitem [ref=e57]:
+              - generic [ref=e59]: Reference
+              - navigation "Reference" [ref=e61]:
+                - list [ref=e62]:
+                  - listitem [ref=e63]:
+                    - link "Component Gallery" [ref=e64] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/components/
+                      - generic [ref=e65]: Component Gallery
+                  - listitem [ref=e66]:
+                    - link "Message Reference" [ref=e67] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/messages/
+                      - generic [ref=e68]: Message Reference
+                  - listitem [ref=e69]:
+                    - link "Renderers (Clients)" [ref=e70] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/renderers/
+                      - generic [ref=e71]: Renderers (Clients)
+                  - listitem [ref=e72]:
+                    - link "Agents (Server-side)" [ref=e73] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/agents/
+                      - generic [ref=e74]: Agents (Server-side)
+            - listitem [ref=e75]:
+              - generic [ref=e77]: Specifications
+            - listitem [ref=e79]:
+              - generic [ref=e81]: Ecosystem
+            - listitem [ref=e83]:
+              - link "Roadmap" [ref=e84] [cursor=pointer]:
+                - /url: https://a2ui.org/roadmap/
+                - generic [ref=e85]: Roadmap
+        - navigation "Table of contents" [ref=e89]:
+          - generic [ref=e90]: Table of contents
+          - list [ref=e91]:
+            - listitem [ref=e92]:
+              - link "Maintained Renderers" [ref=e93] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/renderers/#maintained-renderers
+                - generic [ref=e94]: Maintained Renderers
+              - navigation "Maintained Renderers" [ref=e95]:
+                - list [ref=e96]:
+                  - listitem [ref=e97]:
+                    - link "Web" [ref=e98] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/renderers/#web
+                      - generic [ref=e99]: Web
+                  - listitem [ref=e100]:
+                    - link "Mobile" [ref=e101] [cursor=pointer]:
+                      - /url: https://a2ui.org/reference/renderers/#mobile
+                      - generic [ref=e102]: Mobile
+            - listitem [ref=e103]:
+              - link "Ecosystem Renderers" [ref=e104] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/renderers/#ecosystem-renderers
+                - generic [ref=e105]: Ecosystem Renderers
+            - listitem [ref=e106]:
+              - link "How Renderers Work" [ref=e107] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/renderers/#how-renderers-work
+                - generic [ref=e108]: How Renderers Work
+            - listitem [ref=e109]:
+              - link "Using a Renderer" [ref=e110] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/renderers/#using-a-renderer
+                - generic [ref=e111]: Using a Renderer
+            - listitem [ref=e112]:
+              - link "Building a Renderer" [ref=e113] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/renderers/#building-a-renderer
+                - generic [ref=e114]: Building a Renderer
+        - generic [ref=e115]:
+          - navigation "Navigation" [ref=e116]:
+            - list [ref=e117]:
+              - listitem [ref=e118]:
+                - link "Home" [ref=e119] [cursor=pointer]:
+                  - /url: https://a2ui.org/
+                  - generic [ref=e120]: Home
+              - listitem [ref=e121]:
+                - link "Reference" [ref=e122] [cursor=pointer]:
+                  - /url: https://a2ui.org/reference/components/
+                  - generic [ref=e123]: Reference
+          - article [ref=e124]:
+            - link "View source of this page" [ref=e125] [cursor=pointer]:
+              - /url: https://github.com/google/A2UI/raw/main/docs/reference/renderers.md
+              - img [ref=e126]
+            - heading "Renderers (Client Libraries) ¶" [level=1] [ref=e128]:
+              - text: Renderers (Client Libraries)
+              - link "¶" [ref=e129] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/renderers/#renderers-client-libraries
+            - paragraph [ref=e130]: Renderers convert A2UI JSON messages into native UI components for different platforms.
+            - paragraph [ref=e131]:
+              - text: The
+              - link "agents" [ref=e132] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/agents/
+              - text: are responsible for generating the A2UI messages, and the
+              - link "transports" [ref=e133] [cursor=pointer]:
+                - /url: https://a2ui.org/concepts/transports/
+              - text: are responsible for delivering the messages to the client. The client renderer library must buffer and handle A2UI messages, implement the A2UI lifecycle, render widgets, and route user actions back to the agent.
+            - paragraph [ref=e134]: Let's use the web as an analogy. The A2UI protocol is like HTML. It provides a language and the semantics of the UI model. The agent is like the server that serves HTML to the client. The renderer is like a browser. It talks to the agent, interprets the A2UI protocol, and renders the UI. Just like there are multiple browser engines for HTML, there are multiple different renderers for A2UI.
+            - paragraph [ref=e135]: You have a lot of flexibility, to bring custom components to a renderer, or build your own renderer to support your UI component framework.
+            - heading "Maintained Renderers ¶" [level=2] [ref=e136]:
+              - text: Maintained Renderers
+              - link "¶" [ref=e137] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/renderers/#maintained-renderers
+            - heading "Web ¶" [level=3] [ref=e138]:
+              - text: Web
+              - link "¶" [ref=e139] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/renderers/#web
+            - table [ref=e142]:
+              - rowgroup [ref=e143]:
+                - row "Renderer Platform v0.8 v0.9 Links" [ref=e144]:
+                  - columnheader "Renderer" [ref=e145]
+                  - columnheader "Platform" [ref=e146]
+                  - columnheader "v0.8" [ref=e147]
+                  - columnheader "v0.9" [ref=e148]
+                  - columnheader "Links" [ref=e149]
+              - rowgroup [ref=e150]:
+                - row "React Web ✅ Stable ✅ Stable Code" [ref=e151]:
+                  - cell "React" [ref=e152]:
+                    - strong [ref=e153]: React
+                  - cell "Web" [ref=e154]
+                  - cell "✅ Stable" [ref=e155]
+                  - cell "✅ Stable" [ref=e156]
+                  - cell "Code" [ref=e157]:
+                    - link "Code" [ref=e158] [cursor=pointer]:
+                      - /url: https://github.com/google/A2UI/tree/main/renderers/react
+                - row "Lit (Web Components) Web ✅ Stable ✅ Stable Code" [ref=e159]:
+                  - cell "Lit (Web Components)" [ref=e160]:
+                    - strong [ref=e161]: Lit (Web Components)
+                  - cell "Web" [ref=e162]
+                  - cell "✅ Stable" [ref=e163]
+                  - cell "✅ Stable" [ref=e164]
+                  - cell "Code" [ref=e165]:
+                    - link "Code" [ref=e166] [cursor=pointer]:
+                      - /url: https://github.com/google/A2UI/tree/main/renderers/lit
+                - row "Angular Web ✅ Stable ✅ Stable Code" [ref=e167]:
+                  - cell "Angular" [ref=e168]:
+                    - strong [ref=e169]: Angular
+                  - cell "Web" [ref=e170]
+                  - cell "✅ Stable" [ref=e171]
+                  - cell "✅ Stable" [ref=e172]
+                  - cell "Code" [ref=e173]:
+                    - link "Code" [ref=e174] [cursor=pointer]:
+                      - /url: https://github.com/google/A2UI/tree/main/renderers/angular
+                - row "Flutter (GenUI SDK) Mobile/Desktop/Web ✅ Stable ✅ Stable Docs · Code" [ref=e175]:
+                  - cell "Flutter (GenUI SDK)" [ref=e176]:
+                    - strong [ref=e177]: Flutter (GenUI SDK)
+                  - cell "Mobile/Desktop/Web" [ref=e178]
+                  - cell "✅ Stable" [ref=e179]
+                  - cell "✅ Stable" [ref=e180]
+                  - cell "Docs · Code" [ref=e181]:
+                    - link "Docs" [ref=e182] [cursor=pointer]:
+                      - /url: https://docs.flutter.dev/ai/genui
+                    - text: ·
+                    - link "Code" [ref=e183] [cursor=pointer]:
+                      - /url: https://github.com/flutter/genui
+            - heading "Mobile ¶" [level=3] [ref=e184]:
+              - text: Mobile
+              - link "¶" [ref=e185] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/renderers/#mobile
+            - table [ref=e188]:
+              - rowgroup [ref=e189]:
+                - row "Renderer Platform v0.8 v0.9 Links" [ref=e190]:
+                  - columnheader "Renderer" [ref=e191]
+                  - columnheader "Platform" [ref=e192]
+                  - columnheader "v0.8" [ref=e193]
+                  - columnheader "v0.9" [ref=e194]
+                  - columnheader "Links" [ref=e195]
+              - rowgroup [ref=e196]:
+                - row "Flutter (GenUI SDK) Mobile/Desktop/Web ✅ Stable ✅ Stable Docs · Code" [ref=e197]:
+                  - cell "Flutter (GenUI SDK)" [ref=e198]:
+                    - strong [ref=e199]: Flutter (GenUI SDK)
+                  - cell "Mobile/Desktop/Web" [ref=e200]
+                  - cell "✅ Stable" [ref=e201]
+                  - cell "✅ Stable" [ref=e202]
+                  - cell "Docs · Code" [ref=e203]:
+                    - link "Docs" [ref=e204] [cursor=pointer]:
+                      - /url: https://docs.flutter.dev/ai/genui
+                    - text: ·
+                    - link "Code" [ref=e205] [cursor=pointer]:
+                      - /url: https://github.com/flutter/genui
+                - row "SwiftUI iOS/macOS — 🚧 Planned Q2 —" [ref=e206]:
+                  - cell "SwiftUI" [ref=e207]:
+                    - strong [ref=e208]: SwiftUI
+                  - cell "iOS/macOS" [ref=e209]
+                  - cell "—" [ref=e210]
+                  - cell "🚧 Planned Q2" [ref=e211]
+                  - cell "—" [ref=e212]
+                - row "Jetpack Compose Android — 🚧 Planned Q2 —" [ref=e213]:
+                  - cell "Jetpack Compose" [ref=e214]:
+                    - strong [ref=e215]: Jetpack Compose
+                  - cell "Android" [ref=e216]
+                  - cell "—" [ref=e217]
+                  - cell "🚧 Planned Q2" [ref=e218]
+                  - cell "—" [ref=e219]
+            - paragraph [ref=e220]:
+              - text: Check the
+              - link "Roadmap" [ref=e221] [cursor=pointer]:
+                - /url: https://a2ui.org/roadmap/
+              - text: for more.
+            - heading "Ecosystem Renderers ¶" [level=2] [ref=e222]:
+              - text: Ecosystem Renderers
+              - link "¶" [ref=e223] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/renderers/#ecosystem-renderers
+            - paragraph [ref=e224]: "The community is building A2UI renderers for additional platforms:"
+            - list [ref=e225]:
+              - listitem [ref=e226]:
+                - strong [ref=e227]:
+                  - link "json-render" [ref=e228] [cursor=pointer]:
+                    - /url: https://json-render.dev/docs/a2ui
+                - text: — Vercel's React library for rendering A2UI catalogs via Zod schemas (
+                - link "comparison" [ref=e229] [cursor=pointer]:
+                  - /url: https://dipjyotimetia.medium.com/vercels-json-render-vs-google-s-a2ui-the-head-to-head-6f213cf1a23b
+                - text: )
+              - listitem [ref=e230]:
+                - strong [ref=e231]:
+                  - link "A2UI-Android" [ref=e232] [cursor=pointer]:
+                    - /url: https://github.com/lmee/A2UI-Android
+                - text: — Community Jetpack Compose renderer, 20+ components (~15 ⭐, v0.8)
+              - listitem [ref=e233]:
+                - strong [ref=e234]:
+                  - link "a2ui-react-native" [ref=e235] [cursor=pointer]:
+                    - /url: https://github.com/sivamrudram-eng/a2ui-react-native
+                - text: — React Native renderer for iOS/Android (~9 ⭐, v0.8)
+            - paragraph [ref=e236]:
+              - text: See the
+              - strong [ref=e237]:
+                - link "full ecosystem renderers list" [ref=e238] [cursor=pointer]:
+                  - /url: https://a2ui.org/ecosystem/renderers/
+              - text: for more community projects and how to submit your own.
+            - heading "How Renderers Work ¶" [level=2] [ref=e239]:
+              - text: How Renderers Work
+              - link "¶" [ref=e240] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/renderers/#how-renderers-work
+            - paragraph [ref=e241]: "The rendering process typically involves the following steps:"
+            - list [ref=e242]:
+              - listitem [ref=e243]:
+                - strong [ref=e244]: Receive
+                - text: A2UI messages from the transport.
+              - listitem [ref=e245]:
+                - strong [ref=e246]: Parse
+                - text: the JSON and validate against the schema.
+              - listitem [ref=e247]:
+                - strong [ref=e248]: Render
+                - text: using platform-native components.
+              - listitem [ref=e249]:
+                - strong [ref=e250]: Style
+                - text: according to your app's theme.
+            - heading "Using a Renderer ¶" [level=2] [ref=e251]:
+              - text: Using a Renderer
+              - link "¶" [ref=e252] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/renderers/#using-a-renderer
+            - paragraph [ref=e253]: "Get started integrating A2UI into your application by following the setup guide for your chosen renderer:"
+            - list [ref=e254]:
+              - listitem [ref=e255]:
+                - strong [ref=e256]:
+                  - link "React" [ref=e257] [cursor=pointer]:
+                    - /url: https://a2ui.org/guides/client-setup/#react
+              - listitem [ref=e258]:
+                - strong [ref=e259]:
+                  - link "Lit (Web Components)" [ref=e260] [cursor=pointer]:
+                    - /url: https://a2ui.org/guides/client-setup/#web-components-lit
+              - listitem [ref=e261]:
+                - strong [ref=e262]:
+                  - link "Angular" [ref=e263] [cursor=pointer]:
+                    - /url: https://a2ui.org/guides/client-setup/#angular
+              - listitem [ref=e264]:
+                - strong [ref=e265]:
+                  - link "Flutter (GenUI SDK)" [ref=e266] [cursor=pointer]:
+                    - /url: https://a2ui.org/guides/client-setup/#flutter-genui-sdk
+            - heading "Building a Renderer ¶" [level=2] [ref=e267]:
+              - text: Building a Renderer
+              - link "¶" [ref=e268] [cursor=pointer]:
+                - /url: https://a2ui.org/reference/renderers/#building-a-renderer
+            - paragraph [ref=e269]: Want to build a renderer for your platform?
+            - list [ref=e270]:
+              - listitem [ref=e271]:
+                - text: See the
+                - link "Roadmap" [ref=e272] [cursor=pointer]:
+                  - /url: https://a2ui.org/roadmap/
+                - text: for planned frameworks.
+              - listitem [ref=e273]: Review existing renderers for patterns.
+              - listitem [ref=e274]:
+                - text: Check out our
+                - link "Renderer Development Guide" [ref=e275] [cursor=pointer]:
+                  - /url: https://a2ui.org/guides/renderer-development/
+                - text: for details on implementing a renderer.
+            - paragraph [ref=e276]: "A compliant renderer must meet the following key requirements:"
+            - list [ref=e277]:
+              - listitem [ref=e278]: Parse A2UI JSON messages, specifically the adjacency list format.
+              - listitem [ref=e279]: Map A2UI components to native widgets.
+              - listitem [ref=e280]: Handle data binding, lifecycle events.
+              - listitem [ref=e281]: Process a sequence of incremental A2UI messages to build and update the UI.
+              - listitem [ref=e282]: Support server-initiated updates.
+              - listitem [ref=e283]: Support user actions.
+            - paragraph [ref=e284]: "For more information, see the following resources:"
+            - list [ref=e285]:
+              - listitem [ref=e286]:
+                - strong [ref=e287]:
+                  - link "Client Setup Guide" [ref=e288] [cursor=pointer]:
+                    - /url: https://a2ui.org/guides/client-setup/
+                - text: ": Integration instructions."
+              - listitem [ref=e289]:
+                - strong [ref=e290]:
+                  - link "Quickstart" [ref=e291] [cursor=pointer]:
+                    - /url: https://a2ui.org/quickstart/
+                - text: ": Try the Lit renderer."
+              - listitem [ref=e292]:
+                - strong [ref=e293]:
+                  - link "Component Reference" [ref=e294] [cursor=pointer]:
+                    - /url: https://a2ui.org/reference/components/
+                - text: ": What components to support."
+      - button "Back to top":
+        - img
+        - text: Back to top
+    - contentinfo [ref=e295]:
+      - navigation "Footer" [ref=e296]:
+        - 'link "Previous: Message Reference" [ref=e297] [cursor=pointer]':
+          - /url: https://a2ui.org/reference/messages/
+          - img [ref=e299]
+          - generic [ref=e301]:
+            - text: Previous
+            - generic [ref=e302]: Message Reference
+        - 'link "Next: Agents (Server-side)" [ref=e303] [cursor=pointer]':
+          - /url: https://a2ui.org/reference/agents/
+          - generic [ref=e304]:
+            - text: Next
+            - generic [ref=e305]: Agents (Server-side)
+          - img [ref=e307]
+      - generic [ref=e311]:
+        - generic [ref=e312]:
+          - text: Copyright Google 2025 |
+          - link "Terms" [ref=e313] [cursor=pointer]:
+            - /url: //policies.google.com/terms
+          - text: "|"
+          - link "Privacy" [ref=e314] [cursor=pointer]:
+            - /url: //policies.google.com/privacy
+          - text: "|"
+          - link "Manage cookies" [ref=e315] [cursor=pointer]:
+            - /url: https://a2ui.org/reference/renderers/#__consent
+        - text: Made with
+        - link "Material for MkDocs" [ref=e316] [cursor=pointer]:
+          - /url: https://squidfunk.github.io/mkdocs-material/
+  - progressbar
+  - complementary [ref=e318]:
+    - generic [ref=e319]:
+      - heading "Cookie consent" [level=4] [ref=e320]
+      - paragraph [ref=e321]: We use cookies to recognize repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find the information they need. With your consent, you're helping us to make our documentation better.
+      - generic [ref=e322]:
+        - button "Accept" [ref=e323] [cursor=pointer]
+        - text: Manage settings

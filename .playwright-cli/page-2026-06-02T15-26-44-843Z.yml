@@ -1,0 +1,620 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: https://a2ui.org/roadmap/#roadmap
+  - banner [ref=e3]:
+    - navigation "Header" [ref=e4]:
+      - link "A2UI" [ref=e5] [cursor=pointer]:
+        - /url: https://a2ui.org/
+        - img "logo" [ref=e6]
+      - generic [ref=e8]:
+        - generic [ref=e10]: A2UI
+        - generic:
+          - generic: Roadmap
+      - generic [ref=e11]:
+        - radio "Switch to dark mode"
+        - generic "Switch to dark mode" [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+        - radio "Switch to light mode"
+      - dialog [ref=e15]:
+        - search [ref=e16]:
+          - generic [ref=e17]:
+            - textbox "Search" [ref=e18]
+            - generic:
+              - img
+            - navigation "Search":
+              - button "Clear":
+                - img
+          - generic [ref=e20]: Initializing search
+      - link "google/A2UI" [ref=e22] [cursor=pointer]:
+        - /url: https://github.com/google/A2UI
+        - img [ref=e24]
+        - generic [ref=e26]: google/A2UI
+  - generic [ref=e27]:
+    - main [ref=e28]:
+      - generic [ref=e29]:
+        - navigation "Navigation" [ref=e33]:
+          - generic [ref=e34]: A2UI
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "Home" [ref=e37] [cursor=pointer]:
+                - /url: https://a2ui.org/
+                - generic [ref=e38]: Home
+            - listitem [ref=e39]:
+              - generic [ref=e41]: Introduction & FAQ
+            - listitem [ref=e43]:
+              - link "Quickstart" [ref=e44] [cursor=pointer]:
+                - /url: https://a2ui.org/quickstart/
+                - generic [ref=e45]: Quickstart
+            - listitem [ref=e46]:
+              - link "A2UI Composer ⭐" [ref=e47] [cursor=pointer]:
+                - /url: https://a2ui.org/composer/
+                - generic [ref=e48]: A2UI Composer ⭐
+            - listitem [ref=e49]:
+              - generic [ref=e51]: Concepts
+            - listitem [ref=e53]:
+              - generic [ref=e55]: Guides
+            - listitem [ref=e57]:
+              - generic [ref=e59]: Reference
+            - listitem [ref=e61]:
+              - generic [ref=e63]: Specifications
+            - listitem [ref=e65]:
+              - generic [ref=e67]: Ecosystem
+            - listitem [ref=e69]:
+              - link "Roadmap" [ref=e70] [cursor=pointer]:
+                - /url: https://a2ui.org/roadmap/
+                - generic [ref=e71]: Roadmap
+        - navigation "Table of contents" [ref=e75]:
+          - generic [ref=e76]: Table of contents
+          - list [ref=e77]:
+            - listitem [ref=e78]:
+              - link "Current Status" [ref=e79] [cursor=pointer]:
+                - /url: https://a2ui.org/roadmap/#current-status
+                - generic [ref=e80]: Current Status
+              - navigation "Current Status" [ref=e81]:
+                - list [ref=e82]:
+                  - listitem [ref=e83]:
+                    - link "Protocol" [ref=e84] [cursor=pointer]:
+                      - /url: https://a2ui.org/roadmap/#protocol
+                      - generic [ref=e85]: Protocol
+                  - listitem [ref=e86]:
+                    - link "Renderers" [ref=e87] [cursor=pointer]:
+                      - /url: https://a2ui.org/roadmap/#renderers
+                      - generic [ref=e88]: Renderers
+                  - listitem [ref=e89]:
+                    - link "Transports" [ref=e90] [cursor=pointer]:
+                      - /url: https://a2ui.org/roadmap/#transports
+                      - generic [ref=e91]: Transports
+                  - listitem [ref=e92]:
+                    - link "Agent frameworks" [ref=e93] [cursor=pointer]:
+                      - /url: https://a2ui.org/roadmap/#agent-frameworks
+                      - generic [ref=e94]: Agent frameworks
+            - listitem [ref=e95]:
+              - link "Recent Milestones" [ref=e96] [cursor=pointer]:
+                - /url: https://a2ui.org/roadmap/#recent-milestones
+                - generic [ref=e97]: Recent Milestones
+              - navigation "Recent Milestones" [ref=e98]:
+                - list [ref=e99]:
+                  - listitem [ref=e100]:
+                    - link "Q2 2025" [ref=e101] [cursor=pointer]:
+                      - /url: https://a2ui.org/roadmap/#q2-2025
+                      - generic [ref=e102]: Q2 2025
+                  - listitem [ref=e103]:
+                    - link "Q4 2025 v0.8" [ref=e104] [cursor=pointer]:
+                      - /url: https://a2ui.org/roadmap/#q4-2025-v08
+                      - generic [ref=e105]: Q4 2025 v0.8
+                  - listitem [ref=e106]:
+                    - link "Q2 2026 v0.9" [ref=e107] [cursor=pointer]:
+                      - /url: https://a2ui.org/roadmap/#q2-2026-v09
+                      - generic [ref=e108]: Q2 2026 v0.9
+            - listitem [ref=e109]:
+              - link "Upcoming Milestones" [ref=e110] [cursor=pointer]:
+                - /url: https://a2ui.org/roadmap/#upcoming-milestones
+                - generic [ref=e111]: Upcoming Milestones
+              - navigation "Upcoming Milestones" [ref=e112]:
+                - list [ref=e113]:
+                  - listitem [ref=e114]:
+                    - link "Q3 2026 v0.9 & v0.10" [ref=e115] [cursor=pointer]:
+                      - /url: https://a2ui.org/roadmap/#q3-2026-v09-v010
+                      - generic [ref=e116]: Q3 2026 v0.9 & v0.10
+                  - listitem [ref=e117]:
+                    - link "Q4 2026 v1.0" [ref=e118] [cursor=pointer]:
+                      - /url: https://a2ui.org/roadmap/#q4-2026-v10
+                      - generic [ref=e119]: Q4 2026 v1.0
+            - listitem [ref=e120]:
+              - link "Long-Term Vision" [ref=e121] [cursor=pointer]:
+                - /url: https://a2ui.org/roadmap/#long-term-vision
+                - generic [ref=e122]: Long-Term Vision
+              - navigation "Long-Term Vision" [ref=e123]:
+                - list [ref=e124]:
+                  - listitem [ref=e125]:
+                    - link "Full App UIs" [ref=e126] [cursor=pointer]:
+                      - /url: https://a2ui.org/roadmap/#full-app-uis
+                      - generic [ref=e127]: Full App UIs
+                  - listitem [ref=e128]:
+                    - link "Multi-Agent Coordination" [ref=e129] [cursor=pointer]:
+                      - /url: https://a2ui.org/roadmap/#multi-agent-coordination
+                      - generic [ref=e130]: Multi-Agent Coordination
+                  - listitem [ref=e131]:
+                    - link "Accessibility Features" [ref=e132] [cursor=pointer]:
+                      - /url: https://a2ui.org/roadmap/#accessibility-features
+                      - generic [ref=e133]: Accessibility Features
+                  - listitem [ref=e134]:
+                    - link "Advanced UI Patterns" [ref=e135] [cursor=pointer]:
+                      - /url: https://a2ui.org/roadmap/#advanced-ui-patterns
+                      - generic [ref=e136]: Advanced UI Patterns
+                  - listitem [ref=e137]:
+                    - link "Ecosystem Growth" [ref=e138] [cursor=pointer]:
+                      - /url: https://a2ui.org/roadmap/#ecosystem-growth
+                      - generic [ref=e139]: Ecosystem Growth
+            - listitem [ref=e140]:
+              - link "How to Influence the Roadmap" [ref=e141] [cursor=pointer]:
+                - /url: https://a2ui.org/roadmap/#how-to-influence-the-roadmap
+                - generic [ref=e142]: How to Influence the Roadmap
+            - listitem [ref=e143]:
+              - link "Planned Release Cycle" [ref=e144] [cursor=pointer]:
+                - /url: https://a2ui.org/roadmap/#planned-release-cycle
+                - generic [ref=e145]: Planned Release Cycle
+            - listitem [ref=e146]:
+              - link "Versioning Policy" [ref=e147] [cursor=pointer]:
+                - /url: https://a2ui.org/roadmap/#versioning-policy
+                - generic [ref=e148]: Versioning Policy
+            - listitem [ref=e149]:
+              - link "Stay Updated" [ref=e150] [cursor=pointer]:
+                - /url: https://a2ui.org/roadmap/#stay-updated
+                - generic [ref=e151]: Stay Updated
+        - article [ref=e153]:
+          - link "View source of this page" [ref=e154] [cursor=pointer]:
+            - /url: https://github.com/google/A2UI/raw/main/docs/roadmap.md
+            - img [ref=e155]
+          - heading "Roadmap ¶" [level=1] [ref=e157]:
+            - text: Roadmap
+            - link "¶" [ref=e158] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#roadmap
+          - paragraph [ref=e159]: This roadmap outlines the current state and future plans for the A2UI project. The project is under active development, and priorities may shift based on community feedback and emerging use cases.
+          - heading "Current Status ¶" [level=2] [ref=e160]:
+            - text: Current Status
+            - link "¶" [ref=e161] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#current-status
+          - heading "Protocol ¶" [level=3] [ref=e162]:
+            - text: Protocol
+            - link "¶" [ref=e163] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#protocol
+          - table [ref=e166]:
+            - rowgroup [ref=e167]:
+              - row "Version Status Notes" [ref=e168]:
+                - columnheader "Version" [ref=e169]
+                - columnheader "Status" [ref=e170]
+                - columnheader "Notes" [ref=e171]
+            - rowgroup [ref=e172]:
+              - row "v0.8 🆗 Prior Initial public release, minimal support" [ref=e173]:
+                - cell "v0.8" [ref=e174]:
+                  - strong [ref=e175]: v0.8
+                - cell "🆗 Prior" [ref=e176]
+                - cell "Initial public release, minimal support" [ref=e177]
+              - row "v0.9 ✅ Current Feature complete, supported" [ref=e178]:
+                - cell "v0.9" [ref=e179]:
+                  - strong [ref=e180]: v0.9
+                - cell "✅ Current" [ref=e181]
+                - cell "Feature complete, supported" [ref=e182]
+              - row "v0.10 🚧 Draft Minimal changes to spec, new features" [ref=e183]:
+                - cell "v0.10" [ref=e184]:
+                  - strong [ref=e185]: v0.10
+                - cell "🚧 Draft" [ref=e186]
+                - cell "Minimal changes to spec, new features" [ref=e187]
+              - row "v1.0 🚧 Draft Targeting stable and complete release" [ref=e188]:
+                - cell "v1.0" [ref=e189]:
+                  - strong [ref=e190]: v1.0
+                - cell "🚧 Draft" [ref=e191]
+                - cell "Targeting stable and complete release" [ref=e192]
+          - heading "Renderers ¶" [level=3] [ref=e193]:
+            - text: Renderers
+            - link "¶" [ref=e194] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#renderers
+          - table [ref=e197]:
+            - rowgroup [ref=e198]:
+              - row "Client libraries Status Platform Notes" [ref=e199]:
+                - columnheader "Client libraries" [ref=e200]
+                - columnheader "Status" [ref=e201]
+                - columnheader "Platform" [ref=e202]
+                - columnheader "Notes" [ref=e203]
+            - rowgroup [ref=e204]:
+              - row "Web Core Lib ✅ Stable Web Shared core lib for all web renderers" [ref=e205]:
+                - cell "Web Core Lib" [ref=e206]:
+                  - strong [ref=e207]: Web Core Lib
+                - cell "✅ Stable" [ref=e208]
+                - cell "Web" [ref=e209]
+                - cell "Shared core lib for all web renderers" [ref=e210]
+              - row "Web Components (Lit) ✅ Stable Web Framework-agnostic, works anywhere" [ref=e211]:
+                - cell "Web Components (Lit)" [ref=e212]:
+                  - strong [ref=e213]: Web Components (Lit)
+                - cell "✅ Stable" [ref=e214]
+                - cell "Web" [ref=e215]
+                - cell "Framework-agnostic, works anywhere" [ref=e216]
+              - row "Angular ✅ Stable Web Full Angular integration" [ref=e217]:
+                - cell "Angular" [ref=e218]:
+                  - strong [ref=e219]: Angular
+                - cell "✅ Stable" [ref=e220]
+                - cell "Web" [ref=e221]
+                - cell "Full Angular integration" [ref=e222]
+              - row "Flutter (GenUI SDK) ✅ Stable Multi-platform Works on mobile, web, desktop" [ref=e223]:
+                - cell "Flutter (GenUI SDK)" [ref=e224]:
+                  - strong [ref=e225]: Flutter (GenUI SDK)
+                - cell "✅ Stable" [ref=e226]
+                - cell "Multi-platform" [ref=e227]
+                - cell "Works on mobile, web, desktop" [ref=e228]
+              - row "React ✅ Stable Web Official React renderer" [ref=e229]:
+                - cell "React" [ref=e230]:
+                  - strong [ref=e231]: React
+                - cell "✅ Stable" [ref=e232]
+                - cell "Web" [ref=e233]
+                - cell "Official React renderer" [ref=e234]
+              - row "SwiftUI 📋 Planned iOS/macOS Planned for Q2 2026" [ref=e235]:
+                - cell "SwiftUI" [ref=e236]:
+                  - strong [ref=e237]: SwiftUI
+                - cell "📋 Planned" [ref=e238]
+                - cell "iOS/macOS" [ref=e239]
+                - cell "Planned for Q2 2026" [ref=e240]
+              - row "Jetpack Compose 📋 Planned Android Planned for Q2 2026" [ref=e241]:
+                - cell "Jetpack Compose" [ref=e242]:
+                  - strong [ref=e243]: Jetpack Compose
+                - cell "📋 Planned" [ref=e244]
+                - cell "Android" [ref=e245]
+                - cell "Planned for Q2 2026" [ref=e246]
+              - row "Vue 💡 Proposed Web Community interest" [ref=e247]:
+                - cell "Vue" [ref=e248]:
+                  - strong [ref=e249]: Vue
+                - cell "💡 Proposed" [ref=e250]
+                - cell "Web" [ref=e251]
+                - cell "Community interest" [ref=e252]
+              - row "Svelte/Kit 💡 Proposed Web Community interest" [ref=e253]:
+                - cell "Svelte/Kit" [ref=e254]:
+                  - link "Svelte/Kit" [ref=e255] [cursor=pointer]:
+                    - /url: https://svelte.dev/docs/kit/introduction
+                    - strong [ref=e256]: Svelte/Kit
+                - cell "💡 Proposed" [ref=e257]
+                - cell "Web" [ref=e258]
+                - cell "Community interest" [ref=e259]:
+                  - link "Community interest" [ref=e260] [cursor=pointer]:
+                    - /url: https://news.ycombinator.com/item?id=46287728
+              - row "ShadCN (React) 💡 Proposed Web Community interest" [ref=e261]:
+                - cell "ShadCN (React)" [ref=e262]:
+                  - strong [ref=e263]: ShadCN (React)
+                - cell "💡 Proposed" [ref=e264]
+                - cell "Web" [ref=e265]
+                - cell "Community interest" [ref=e266]
+          - heading "Transports ¶" [level=3] [ref=e267]:
+            - text: Transports
+            - link "¶" [ref=e268] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#transports
+          - table [ref=e271]:
+            - rowgroup [ref=e272]:
+              - row "Transport Status Notes" [ref=e273]:
+                - columnheader "Transport" [ref=e274]
+                - columnheader "Status" [ref=e275]
+                - columnheader "Notes" [ref=e276]
+            - rowgroup [ref=e277]:
+              - row "A2A Protocol ✅ Complete Native A2A transport" [ref=e278]:
+                - cell "A2A Protocol" [ref=e279]:
+                  - strong [ref=e280]: A2A Protocol
+                - cell "✅ Complete" [ref=e281]
+                - cell "Native A2A transport" [ref=e282]
+              - row "AG UI ✅ Complete Day-zero compatibility" [ref=e283]:
+                - cell "AG UI" [ref=e284]:
+                  - strong [ref=e285]: AG UI
+                - cell "✅ Complete" [ref=e286]
+                - cell "Day-zero compatibility" [ref=e287]
+              - row "REST API ✅ Complete Request/response over HTTP" [ref=e288]:
+                - cell "REST API" [ref=e289]:
+                  - strong [ref=e290]: REST API
+                - cell "✅ Complete" [ref=e291]
+                - cell "Request/response over HTTP" [ref=e292]
+              - row "WebSockets ✅ Complete Bidirectional WS" [ref=e293]:
+                - cell "WebSockets" [ref=e294]:
+                  - strong [ref=e295]: WebSockets
+                - cell "✅ Complete" [ref=e296]
+                - cell "Bidirectional WS" [ref=e297]
+              - row "MCP (Model Context Protocol) ✅ Complete Context sharing" [ref=e298]:
+                - cell "MCP (Model Context Protocol)" [ref=e299]:
+                  - strong [ref=e300]: MCP (Model Context Protocol)
+                - cell "✅ Complete" [ref=e301]
+                - cell "Context sharing" [ref=e302]
+          - heading "Agent frameworks ¶" [level=3] [ref=e303]:
+            - text: Agent frameworks
+            - link "¶" [ref=e304] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#agent-frameworks
+          - table [ref=e307]:
+            - rowgroup [ref=e308]:
+              - row "Integration Status Notes" [ref=e309]:
+                - columnheader "Integration" [ref=e310]
+                - columnheader "Status" [ref=e311]
+                - columnheader "Notes" [ref=e312]
+            - rowgroup [ref=e313]:
+              - row "Any agent with A2A support ✅ Complete Day-zero compatibility thanks to A2A protocol" [ref=e314]:
+                - cell "Any agent with A2A support" [ref=e315]:
+                  - strong [ref=e316]: Any agent with A2A support
+                - cell "✅ Complete" [ref=e317]
+                - cell "Day-zero compatibility thanks to A2A protocol" [ref=e318]
+              - row "Any agent with AG-UI support ✅ Complete Day-zero compatibility thanks to AG UI protocol" [ref=e319]:
+                - cell "Any agent with AG-UI support" [ref=e320]:
+                  - strong [ref=e321]: Any agent with AG-UI support
+                - cell "✅ Complete" [ref=e322]
+                - cell "Day-zero compatibility thanks to AG UI protocol" [ref=e323]
+              - row "AG2 ✅ Complete A2UIAgent" [ref=e324]:
+                - cell "AG2" [ref=e325]:
+                  - strong [ref=e326]: AG2
+                - cell "✅ Complete" [ref=e327]
+                - cell "A2UIAgent" [ref=e328]:
+                  - link "A2UIAgent" [ref=e329] [cursor=pointer]:
+                    - /url: https://docs.ag2.ai/latest/docs/user-guide/reference-agents/a2uiagent
+              - row "ADK 🚧 In Progress Still designing developer ergonomics, see samples" [ref=e330]:
+                - cell "ADK" [ref=e331]:
+                  - strong [ref=e332]: ADK
+                - cell "🚧 In Progress" [ref=e333]
+                - cell "Still designing developer ergonomics, see samples" [ref=e334]:
+                  - text: Still designing developer ergonomics, see
+                  - link "samples" [ref=e335] [cursor=pointer]:
+                    - /url: https://github.com/google/A2UI/blob/main/samples/agent/adk
+              - row "Genkit 💡 Proposed Community interest" [ref=e336]:
+                - cell "Genkit" [ref=e337]:
+                  - strong [ref=e338]: Genkit
+                - cell "💡 Proposed" [ref=e339]
+                - cell "Community interest" [ref=e340]
+              - row "LangGraph 💡 Proposed Community interest" [ref=e341]:
+                - cell "LangGraph" [ref=e342]:
+                  - strong [ref=e343]: LangGraph
+                - cell "💡 Proposed" [ref=e344]
+                - cell "Community interest" [ref=e345]
+              - row "CrewAI 💡 Proposed Community interest" [ref=e346]:
+                - cell "CrewAI" [ref=e347]:
+                  - strong [ref=e348]: CrewAI
+                - cell "💡 Proposed" [ref=e349]
+                - cell "Community interest" [ref=e350]
+              - row "Claude Agent SDK 💡 Proposed Community interest" [ref=e351]:
+                - cell "Claude Agent SDK" [ref=e352]:
+                  - strong [ref=e353]: Claude Agent SDK
+                - cell "💡 Proposed" [ref=e354]
+                - cell "Community interest" [ref=e355]
+              - row "OpenAI Agent SDK 💡 Proposed Community interest" [ref=e356]:
+                - cell "OpenAI Agent SDK" [ref=e357]:
+                  - strong [ref=e358]: OpenAI Agent SDK
+                - cell "💡 Proposed" [ref=e359]
+                - cell "Community interest" [ref=e360]
+              - row "Microsoft Agent Framework 💡 Proposed Community interest" [ref=e361]:
+                - cell "Microsoft Agent Framework" [ref=e362]:
+                  - strong [ref=e363]: Microsoft Agent Framework
+                - cell "💡 Proposed" [ref=e364]
+                - cell "Community interest" [ref=e365]
+              - row "AWS Strands Agent SDK 💡 Proposed Community interest" [ref=e366]:
+                - cell "AWS Strands Agent SDK" [ref=e367]:
+                  - strong [ref=e368]: AWS Strands Agent SDK
+                - cell "💡 Proposed" [ref=e369]
+                - cell "Community interest" [ref=e370]
+          - heading "Recent Milestones ¶" [level=2] [ref=e371]:
+            - text: Recent Milestones
+            - link "¶" [ref=e372] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#recent-milestones
+          - heading "Q2 2025 ¶" [level=3] [ref=e373]:
+            - text: Q2 2025
+            - link "¶" [ref=e374] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#q2-2025
+          - paragraph [ref=e375]: Many research projects across multiple Google teams, including integration into internal products and agents.
+          - heading "Q4 2025 v0.8 ¶" [level=3] [ref=e376]:
+            - text: Q4 2025 v0.8
+            - link "¶" [ref=e377] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#q4-2025-v08
+          - list [ref=e378]:
+            - listitem [ref=e379]: v0.8.0 spec released
+            - listitem [ref=e380]:
+              - text: A2A extension (thanks Google A2A team! teased at
+              - link "a2asummit.ai" [ref=e381] [cursor=pointer]:
+                - /url: https://a2asummit.ai
+              - text: )
+            - listitem [ref=e382]: Flutter renderer (thanks Flutter team!)
+            - listitem [ref=e383]: Angular renderer (thanks Angular team!)
+            - listitem [ref=e384]: Web components (Lit) renderer (thanks Opal team & friends!)
+            - listitem [ref=e385]: AG UI / CopilotKit integration (thanks CopilotKit team!)
+            - listitem [ref=e386]: Github public release (Apache 2.0)
+          - heading "Q2 2026 v0.9 ¶" [level=3] [ref=e387]:
+            - text: Q2 2026 v0.9
+            - link "¶" [ref=e388] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#q2-2026-v09
+          - list [ref=e389]:
+            - listitem [ref=e390]: Release spec 0.9
+            - listitem [ref=e391]: Release web core and renderers to support spec 0.9
+            - listitem [ref=e392]: Launch official A2UI React renderer
+            - listitem [ref=e393]: Improve theming support for renderers
+            - listitem [ref=e394]: Launch A2UI Agents SDK (python)
+            - listitem [ref=e395]: Improve developer ergonomics
+          - heading "Upcoming Milestones ¶" [level=2] [ref=e396]:
+            - text: Upcoming Milestones
+            - link "¶" [ref=e397] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#upcoming-milestones
+          - heading "Q3 2026 v0.9 & v0.10 ¶" [level=3] [ref=e398]:
+            - text: Q3 2026 v0.9 & v0.10
+            - link "¶" [ref=e399] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#q3-2026-v09-v010
+          - paragraph [ref=e400]:
+            - strong [ref=e401]: "Jetpack Compose Renderer (Android):"
+          - list [ref=e402]:
+            - listitem [ref=e403]: Native Compose UI components
+            - listitem [ref=e404]: Material Design 3 support
+            - listitem [ref=e405]: Android platform integration
+          - paragraph [ref=e406]:
+            - strong [ref=e407]: "SwiftUI Renderer (iOS/macOS):"
+          - list [ref=e408]:
+            - listitem [ref=e409]: Native SwiftUI components
+            - listitem [ref=e410]: iOS design language support
+            - listitem [ref=e411]: macOS compatibility
+          - paragraph [ref=e412]:
+            - strong [ref=e413]: Performance Optimizations
+          - list [ref=e414]:
+            - listitem [ref=e415]: Renderer performance benchmarks
+            - listitem [ref=e416]: Lazy loading for large component trees
+            - listitem [ref=e417]: Virtual scrolling for lists
+            - listitem [ref=e418]: Component memoization strategies
+          - heading "Q4 2026 v1.0 ¶" [level=3] [ref=e419]:
+            - text: Q4 2026 v1.0
+            - link "¶" [ref=e420] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#q4-2026-v10
+          - paragraph [ref=e421]:
+            - strong [ref=e422]: "Finalize v1.0 of the protocol with:"
+          - list [ref=e423]:
+            - listitem [ref=e424]: Stability guarantees
+            - listitem [ref=e425]: Migration path from v0.9
+            - listitem [ref=e426]: Comprehensive test suite
+            - listitem [ref=e427]: Certification program for renderers
+          - heading "Long-Term Vision ¶" [level=2] [ref=e428]:
+            - text: Long-Term Vision
+            - link "¶" [ref=e429] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#long-term-vision
+          - heading "Full App UIs ¶" [level=3] [ref=e430]:
+            - text: Full App UIs
+            - link "¶" [ref=e431] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#full-app-uis
+          - paragraph [ref=e432]: Configurable, Customizable UIs - facilitated by A2UI (agent optional)
+          - list [ref=e433]:
+            - listitem [ref=e434]: Developer tooling for A2UI at build time
+            - listitem [ref=e435]: Patterns for A2UI caching, as config layer for static UI
+            - listitem [ref=e436]: Designs and samples for full app composition
+          - heading "Multi-Agent Coordination ¶" [level=3] [ref=e437]:
+            - text: Multi-Agent Coordination
+            - link "¶" [ref=e438] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#multi-agent-coordination
+          - paragraph [ref=e439]: "Enhanced support for multiple agents contributing to the same UI:"
+          - list [ref=e440]:
+            - listitem [ref=e441]: Recommended agent composition patterns
+            - listitem [ref=e442]: Conflict resolution strategies
+            - listitem [ref=e443]: Shared surface management
+          - heading "Accessibility Features ¶" [level=3] [ref=e444]:
+            - text: Accessibility Features
+            - link "¶" [ref=e445] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#accessibility-features
+          - paragraph [ref=e446]: "First-class accessibility support:"
+          - list [ref=e447]:
+            - listitem [ref=e448]: ARIA attribute generation
+            - listitem [ref=e449]: Screen reader optimization
+            - listitem [ref=e450]: Keyboard navigation standards
+            - listitem [ref=e451]: Contrast and color guidance
+          - heading "Advanced UI Patterns ¶" [level=3] [ref=e452]:
+            - text: Advanced UI Patterns
+            - link "¶" [ref=e453] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#advanced-ui-patterns
+          - paragraph [ref=e454]: "Support for more complex UI interactions:"
+          - list [ref=e455]:
+            - listitem [ref=e456]: Drag and drop
+            - listitem [ref=e457]: Gestures and animations
+            - listitem [ref=e458]: 3D rendering
+            - listitem [ref=e459]: AR/VR interfaces (exploratory)
+          - heading "Ecosystem Growth ¶" [level=3] [ref=e460]:
+            - text: Ecosystem Growth
+            - link "¶" [ref=e461] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#ecosystem-growth
+          - list [ref=e462]:
+            - listitem [ref=e463]: More framework integrations
+            - listitem [ref=e464]: Third-party component libraries
+            - listitem [ref=e465]: Agent marketplace integration
+            - listitem [ref=e466]: Enterprise features and support
+          - heading "How to Influence the Roadmap ¶" [level=2] [ref=e467]:
+            - text: How to Influence the Roadmap
+            - link "¶" [ref=e468] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#how-to-influence-the-roadmap
+          - paragraph [ref=e469]: "We welcome community input on priorities:"
+          - list [ref=e470]:
+            - listitem [ref=e471]:
+              - strong [ref=e472]: Submit feedback form
+              - text: ": Use"
+              - link "this anonymous form" [ref=e473] [cursor=pointer]:
+                - /url: https://forms.gle/Tj8E3dMsJ1NcvQnFA
+              - text: to share your requirements and feedback
+            - listitem [ref=e474]:
+              - strong [ref=e475]: Vote on Issues
+              - text: ": Give 👍 to GitHub issues you care about"
+            - listitem [ref=e476]:
+              - strong [ref=e477]: Propose Features
+              - text: ": Open a discussion on GitHub (search for existing discussions first)"
+            - listitem [ref=e478]:
+              - strong [ref=e479]: Submit PRs
+              - text: ": Build the features you need (search for existing PRs first)"
+            - listitem [ref=e480]:
+              - strong [ref=e481]: Join Discussions
+              - text: ": Share your use cases and requirements (search for existing discussions first)"
+          - heading "Planned Release Cycle ¶" [level=2] [ref=e482]:
+            - text: Planned Release Cycle
+            - link "¶" [ref=e483] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#planned-release-cycle
+          - list [ref=e484]:
+            - listitem [ref=e485]:
+              - strong [ref=e486]: Major versions
+              - text: "(1.0, 2.0): Annual or when significant breaking changes are needed"
+            - listitem [ref=e487]:
+              - strong [ref=e488]: Minor versions
+              - text: "(1.1, 1.2): Quarterly with new features"
+            - listitem [ref=e489]:
+              - strong [ref=e490]: Patch versions
+              - text: "(1.1.1, 1.1.2): As needed for bug fixes"
+          - heading "Versioning Policy ¶" [level=2] [ref=e491]:
+            - text: Versioning Policy
+            - link "¶" [ref=e492] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#versioning-policy
+          - paragraph [ref=e493]:
+            - text: A2UI follows
+            - link "Semantic Versioning" [ref=e494] [cursor=pointer]:
+              - /url: https://semver.org/
+            - text: ":"
+          - list [ref=e495]:
+            - listitem [ref=e496]:
+              - strong [ref=e497]: MAJOR
+              - text: ": Incompatible protocol changes"
+            - listitem [ref=e498]:
+              - strong [ref=e499]: MINOR
+              - text: ": Backward-compatible functionality additions"
+            - listitem [ref=e500]:
+              - strong [ref=e501]: PATCH
+              - text: ": Backward-compatible bug fixes"
+          - heading "Stay Updated ¶" [level=2] [ref=e502]:
+            - text: Stay Updated
+            - link "¶" [ref=e503] [cursor=pointer]:
+              - /url: https://a2ui.org/roadmap/#stay-updated
+          - list [ref=e504]:
+            - listitem [ref=e505]:
+              - text: Watch the
+              - link "GitHub repository" [ref=e506] [cursor=pointer]:
+                - /url: https://github.com/google/A2UI
+              - text: for updates
+            - listitem [ref=e507]: Star the repo to show your support
+            - listitem [ref=e508]: Follow releases to get notified of new versions
+          - separator [ref=e509]
+          - paragraph [ref=e510]:
+            - strong [ref=e511]: "Last Updated:"
+            - text: March 2026
+          - paragraph [ref=e512]:
+            - text: Have questions about the roadmap?
+            - link "Start a discussion on GitHub" [ref=e513] [cursor=pointer]:
+              - /url: https://github.com/google/A2UI/discussions
+            - text: .
+      - button "Back to top":
+        - img
+        - text: Back to top
+    - contentinfo [ref=e514]:
+      - navigation "Footer" [ref=e515]:
+        - 'link "Previous: Community" [ref=e516] [cursor=pointer]':
+          - /url: https://a2ui.org/ecosystem/community/
+          - img [ref=e518]
+          - generic [ref=e520]:
+            - text: Previous
+            - generic [ref=e521]: Community
+      - generic [ref=e524]:
+        - generic [ref=e525]:
+          - text: Copyright Google 2025 |
+          - link "Terms" [ref=e526] [cursor=pointer]:
+            - /url: //policies.google.com/terms
+          - text: "|"
+          - link "Privacy" [ref=e527] [cursor=pointer]:
+            - /url: //policies.google.com/privacy
+          - text: "|"
+          - link "Manage cookies" [ref=e528] [cursor=pointer]:
+            - /url: https://a2ui.org/roadmap/#__consent
+        - text: Made with
+        - link "Material for MkDocs" [ref=e529] [cursor=pointer]:
+          - /url: https://squidfunk.github.io/mkdocs-material/
+  - progressbar

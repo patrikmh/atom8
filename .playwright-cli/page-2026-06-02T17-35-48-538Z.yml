@@ -1,0 +1,178 @@
+- generic [ref=e3]:
+  - complementary [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Components" [level=2] [ref=e7]
+      - button "Collapse sidebar" [ref=e8] [cursor=pointer]:
+        - img [ref=e9]
+    - button "AI Designer" [ref=e12] [cursor=pointer]:
+      - generic [ref=e13]:
+        - img [ref=e14]
+        - generic [ref=e17]: AI Designer
+      - img [ref=e18]
+    - button "Theme" [ref=e21] [cursor=pointer]:
+      - generic [ref=e22]:
+        - img [ref=e23]
+        - generic [ref=e29]: Theme
+      - img [ref=e30]
+    - generic [ref=e33]:
+      - img [ref=e34]
+      - textbox "Search components..." [ref=e37]
+    - generic [ref=e39]:
+      - button "All" [ref=e40] [cursor=pointer]
+      - button "Gmail" [ref=e41] [cursor=pointer]:
+        - img [ref=e42]
+        - text: Gmail
+      - button "Calendar" [ref=e45] [cursor=pointer]:
+        - img [ref=e46]
+        - text: Calendar
+      - button "Tasks" [ref=e48] [cursor=pointer]:
+        - img [ref=e49]
+        - text: Tasks
+      - button "Drive" [ref=e52] [cursor=pointer]:
+        - img [ref=e53]
+        - text: Drive
+      - button "AI" [ref=e55] [cursor=pointer]:
+        - img [ref=e56]
+        - text: AI
+      - button "Custom" [ref=e58] [cursor=pointer]:
+        - img [ref=e59]
+        - text: Custom
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - heading "Gmail" [level=3] [ref=e63]
+        - generic [ref=e64]:
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - img [ref=e68]
+              - generic [ref=e71]: Last N Emails
+            - paragraph [ref=e72]: "Get last {{count}} emails"
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - img [ref=e76]
+              - generic [ref=e79]: Starred Emails
+            - paragraph [ref=e80]: Get starred emails
+      - generic [ref=e81]:
+        - heading "Calendar" [level=3] [ref=e82]
+        - generic [ref=e83]:
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - img [ref=e87]
+              - generic [ref=e89]: Today's Events
+            - paragraph [ref=e90]: Get today's calendar events
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - img [ref=e94]
+              - generic [ref=e96]: Upcoming Events
+            - paragraph [ref=e97]: Get upcoming events for next 7 days
+      - generic [ref=e98]:
+        - heading "Tasks" [level=3] [ref=e99]
+        - generic [ref=e100]:
+          - generic [ref=e102]:
+            - generic [ref=e103]:
+              - img [ref=e104]
+              - generic [ref=e107]: Today's Tasks
+            - paragraph [ref=e108]: Get today's tasks
+          - generic [ref=e110]:
+            - generic [ref=e111]:
+              - img [ref=e112]
+              - generic [ref=e115]: All Tasks
+            - paragraph [ref=e116]: Get all tasks
+      - generic [ref=e117]:
+        - heading "Drive" [level=3] [ref=e118]
+        - generic [ref=e121]:
+          - generic [ref=e122]:
+            - img [ref=e123]
+            - generic [ref=e125]: Recent Files
+          - paragraph [ref=e126]: Get recent files
+      - generic [ref=e127]:
+        - heading "AI" [level=3] [ref=e128]
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - img [ref=e133]
+            - generic [ref=e135]: AI Research
+          - paragraph [ref=e136]: "Research the latest news on {{topic}}"
+      - generic [ref=e137]:
+        - heading "Custom" [level=3] [ref=e138]
+        - generic [ref=e141]:
+          - generic [ref=e142]:
+            - img [ref=e143]
+            - generic [ref=e145]: Custom Widget
+          - paragraph [ref=e146]: Custom data query
+  - main [ref=e147]:
+    - generic [ref=e148]:
+      - button "Settings" [ref=e151] [cursor=pointer]:
+        - img [ref=e152]
+      - generic [ref=e155]:
+        - generic [ref=e157]:
+          - generic [ref=e158]:
+            - generic [ref=e159]:
+              - img [ref=e161]
+              - generic [ref=e168]:
+                - textbox [ref=e318]: My Calendar
+                - button [ref=e319] [cursor=pointer]:
+                  - img [ref=e320]
+                - button [ref=e322] [cursor=pointer]:
+                  - img [ref=e323]
+            - generic [ref=e176]:
+              - button "Refresh data" [ref=e177] [cursor=pointer]:
+                - img [ref=e178]
+              - button "Settings" [ref=e184] [cursor=pointer]:
+                - img [ref=e185]
+              - button "Remove" [ref=e188] [cursor=pointer]:
+                - img [ref=e189]
+          - generic [ref=e193]:
+            - heading "Tuesday, Jun 2" [level=3] [ref=e306]
+            - generic [ref=e307]: No events today
+            - button "Refresh" [ref=e309] [cursor=pointer]
+          - generic [ref=e198]:
+            - generic [ref=e199]: Get today's calendar events
+            - button "Edit prompt" [ref=e200] [cursor=pointer]:
+              - img [ref=e201]
+        - generic [ref=e205]:
+          - generic [ref=e206]:
+            - generic [ref=e207]:
+              - img [ref=e209]
+              - generic [ref=e216]:
+                - img [ref=e218]
+                - generic [ref=e221]: Recent Emails
+                - button "Edit title" [ref=e222] [cursor=pointer]:
+                  - img [ref=e223]
+            - generic [ref=e225]:
+              - button "Refresh data" [ref=e226] [cursor=pointer]:
+                - img [ref=e227]
+              - button "Settings" [ref=e233] [cursor=pointer]:
+                - img [ref=e234]
+              - button "Remove" [ref=e237] [cursor=pointer]:
+                - img [ref=e238]
+          - button "Refresh" [ref=e311] [cursor=pointer]
+          - generic [ref=e247]:
+            - generic [ref=e248]: Get last 10 emails
+            - button "Edit prompt" [ref=e249] [cursor=pointer]:
+              - img [ref=e250]
+        - generic [ref=e254]:
+          - generic [ref=e255]:
+            - generic [ref=e256]:
+              - img [ref=e258]
+              - generic [ref=e265]:
+                - textbox [active] [ref=e326]: Today's Tasks
+                - button [ref=e327] [cursor=pointer]:
+                  - img [ref=e328]
+                - button [ref=e330] [cursor=pointer]:
+                  - img [ref=e331]
+            - generic [ref=e274]:
+              - button "Refresh data" [ref=e275] [cursor=pointer]:
+                - img [ref=e276]
+              - button "Settings" [ref=e282] [cursor=pointer]:
+                - img [ref=e283]
+              - button "Remove" [ref=e286] [cursor=pointer]:
+                - img [ref=e287]
+          - generic [ref=e291]:
+            - generic [ref=e313]: 0 of 0 completed
+            - generic [ref=e315]: No tasks for today
+            - button "Refresh" [ref=e317] [cursor=pointer]
+          - generic [ref=e296]:
+            - generic [ref=e297]: Get today's tasks
+            - button "Edit prompt" [ref=e298] [cursor=pointer]:
+              - img [ref=e299]
+  - button [ref=e302] [cursor=pointer]:
+    - img [ref=e303]

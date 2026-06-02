@@ -1,0 +1,1110 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - link "Homepage" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - navigation "Global" [ref=e16]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - button "Platform" [ref=e20] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e21]
+              - listitem [ref=e23]:
+                - button "Solutions" [ref=e25] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - button "Resources" [ref=e30] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e31]
+              - listitem [ref=e33]:
+                - button "Open Source" [ref=e35] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e36]
+              - listitem [ref=e38]:
+                - button "Enterprise" [ref=e40] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e41]
+              - listitem [ref=e43]:
+                - link "Pricing" [ref=e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+                  - generic [ref=e45]: Pricing
+          - generic [ref=e46]:
+            - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+            - link "Sign in" [ref=e54] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fgoogle%2FA2UI
+            - link "Sign up" [ref=e55] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=google%2FA2UI
+            - button "Appearance settings" [ref=e58] [cursor=pointer]:
+              - img
+  - main [ref=e62]:
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e66]:
+          - img [ref=e67]
+          - link "google" [ref=e70] [cursor=pointer]:
+            - /url: /google
+          - generic [ref=e71]: /
+          - strong [ref=e72]:
+            - link "A2UI" [ref=e73] [cursor=pointer]:
+              - /url: /google/A2UI
+          - generic [ref=e74]: Public
+        - generic [ref=e75]:
+          - list:
+            - listitem [ref=e76]:
+              - link "You must be signed in to change notification settings" [ref=e77] [cursor=pointer]:
+                - /url: /login?return_to=%2Fgoogle%2FA2UI
+                - img [ref=e78]
+                - text: Notifications
+            - listitem [ref=e80]:
+              - link "Fork 1.2k" [ref=e81] [cursor=pointer]:
+                - /url: /login?return_to=%2Fgoogle%2FA2UI
+                - img [ref=e82]
+                - text: Fork
+                - generic "1,179" [ref=e84]: 1.2k
+            - listitem [ref=e85]:
+              - link "You must be signed in to star a repository" [ref=e87] [cursor=pointer]:
+                - /url: /login?return_to=%2Fgoogle%2FA2UI
+                - img [ref=e88]
+                - text: Star
+                - generic "15113 users starred this repository" [ref=e90]: 15.1k
+      - navigation "Repository" [ref=e91]:
+        - list [ref=e92]:
+          - listitem [ref=e93]:
+            - link "Code" [ref=e94] [cursor=pointer]:
+              - /url: /google/A2UI
+              - img [ref=e95]
+              - generic [ref=e97]: Code
+          - listitem [ref=e98]:
+            - link "Issues 198" [ref=e99] [cursor=pointer]:
+              - /url: /google/A2UI/issues
+              - img [ref=e100]
+              - generic [ref=e103]: Issues
+              - generic "198" [ref=e104]
+          - listitem [ref=e105]:
+            - link "Pull requests 101" [ref=e106] [cursor=pointer]:
+              - /url: /google/A2UI/pulls
+              - img [ref=e107]
+              - generic [ref=e109]: Pull requests
+              - generic "101" [ref=e110]
+          - listitem [ref=e111]:
+            - link "Discussions" [ref=e112] [cursor=pointer]:
+              - /url: /google/A2UI/discussions
+              - img [ref=e113]
+              - generic [ref=e115]: Discussions
+          - listitem [ref=e116]:
+            - link "Actions" [ref=e117] [cursor=pointer]:
+              - /url: /google/A2UI/actions
+              - img [ref=e118]
+              - generic [ref=e120]: Actions
+          - listitem [ref=e121]:
+            - link "Projects" [ref=e122] [cursor=pointer]:
+              - /url: /google/A2UI/projects
+              - img [ref=e123]
+              - generic [ref=e125]: Projects
+          - listitem [ref=e126]:
+            - link "Security and quality" [ref=e127] [cursor=pointer]:
+              - /url: /google/A2UI/security
+              - img [ref=e128]
+              - generic [ref=e130]: Security and quality
+          - listitem [ref=e131]:
+            - link "Insights" [ref=e132] [cursor=pointer]:
+              - /url: /google/A2UI/pulse
+              - img [ref=e133]
+              - generic [ref=e135]: Insights
+    - generic [ref=e148]:
+      - heading "google/A2UI" [level=1] [ref=e150]
+      - generic [ref=e151]:
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - button "main branch" [ref=e158] [cursor=pointer]:
+                - generic [ref=e159]:
+                  - generic [ref=e161]:
+                    - img [ref=e163]
+                    - generic [ref=e166]: main
+                  - generic:
+                    - img
+              - generic [ref=e167]:
+                - link "53 Branches" [ref=e168] [cursor=pointer]:
+                  - /url: /google/A2UI/branches
+                  - generic [ref=e169]:
+                    - generic:
+                      - img
+                    - generic [ref=e171]:
+                      - strong [ref=e172]: "53"
+                      - text: Branches
+                - link "2 Tags" [ref=e173] [cursor=pointer]:
+                  - /url: /google/A2UI/tags
+                  - generic [ref=e174]:
+                    - generic:
+                      - img
+                    - generic [ref=e176]:
+                      - strong [ref=e177]: "2"
+                      - text: Tags
+            - generic [ref=e178]:
+              - generic [ref=e182]:
+                - img [ref=e184]
+                - combobox "Go to file" [ref=e186]
+              - button "Code" [ref=e187] [cursor=pointer]:
+                - generic [ref=e188]:
+                  - generic:
+                    - img
+                  - generic [ref=e189]: Code
+                  - generic:
+                    - img
+          - generic [ref=e190]:
+            - generic [ref=e191]:
+              - heading "Folders and files" [level=2] [ref=e192]
+              - table "Folders and files" [ref=e193]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e194]:
+                  - row "Latest commit gspencergoog commits by gspencergoog Add migration notice (#1512) success Commit 0fde624 · Jun 1, 2026yesterday History 776 Commits" [ref=e195]:
+                    - cell "Latest commit gspencergoog commits by gspencergoog Add migration notice (#1512) success Commit 0fde624 · Jun 1, 2026yesterday History 776 Commits" [ref=e196]:
+                      - generic [ref=e197]:
+                        - heading "Latest commit" [level=2] [ref=e198]
+                        - generic [ref=e199]:
+                          - generic [ref=e201]:
+                            - link "gspencergoog" [ref=e202] [cursor=pointer]:
+                              - /url: /gspencergoog
+                              - img "gspencergoog" [ref=e203]
+                            - link "commits by gspencergoog" [ref=e204] [cursor=pointer]:
+                              - /url: /google/A2UI/commits?author=gspencergoog
+                              - text: gspencergoog
+                          - generic [ref=e205]:
+                            - generic [ref=e207]:
+                              - link "Add migration notice (" [ref=e208] [cursor=pointer]:
+                                - /url: /google/A2UI/commit/0fde624719c500133c526f49df5b007d0392f3cb
+                              - link "#1512" [ref=e209] [cursor=pointer]:
+                                - /url: https://github.com/google/A2UI/pull/1512
+                              - link ")" [ref=e210] [cursor=pointer]:
+                                - /url: /google/A2UI/commit/0fde624719c500133c526f49df5b007d0392f3cb
+                            - button "success" [ref=e211] [cursor=pointer]:
+                              - img [ref=e212]
+                        - generic [ref=e214]:
+                          - generic [ref=e216]:
+                            - link "Commit 0fde624" [ref=e217] [cursor=pointer]:
+                              - /url: /google/A2UI/commit/0fde624719c500133c526f49df5b007d0392f3cb
+                              - text: 0fde624
+                            - text: ·
+                            - generic "Jun 1, 2026, 5:51 PM GMT+2" [ref=e218]: Jun 1, 2026yesterday
+                          - generic [ref=e219]:
+                            - heading "History" [level=2] [ref=e220]
+                            - link "776 Commits" [ref=e221] [cursor=pointer]:
+                              - /url: /google/A2UI/commits/main/
+                              - generic [ref=e222]:
+                                - generic:
+                                  - img
+                                - generic [ref=e223]: 776 Commits
+                  - row ".gemini, (Directory) Enforce formatting in repo (#1338) May 5, 2026last month" [ref=e224]:
+                    - cell ".gemini, (Directory)" [ref=e225]:
+                      - generic [ref=e226]:
+                        - img [ref=e227]
+                        - link ".gemini, (Directory)" [ref=e232] [cursor=pointer]:
+                          - /url: /google/A2UI/tree/main/.gemini
+                          - text: .gemini
+                    - cell "Enforce formatting in repo (#1338)" [ref=e233]:
+                      - generic [ref=e235]:
+                        - link "Enforce formatting in repo (" [ref=e236] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/9526ab2ec05549443aa592cab056940aa360b37d
+                        - link "#1338" [ref=e237] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1338
+                        - link ")" [ref=e238] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/9526ab2ec05549443aa592cab056940aa360b37d
+                    - cell "May 5, 2026last month" [ref=e239]:
+                      - generic [ref=e240]: May 5, 2026last month
+                  - 'row ".github, (Directory) ci: use dart-lang/setup-dart for formatting checks (#1494) May 29, 20264 days ago" [ref=e241]':
+                    - cell ".github, (Directory)" [ref=e242]:
+                      - generic [ref=e243]:
+                        - img [ref=e244]
+                        - link ".github, (Directory)" [ref=e249] [cursor=pointer]:
+                          - /url: /google/A2UI/tree/main/.github
+                          - text: .github
+                    - 'cell "ci: use dart-lang/setup-dart for formatting checks (#1494)" [ref=e250]':
+                      - generic [ref=e252]:
+                        - 'link "ci: use dart-lang/setup-dart for formatting checks (" [ref=e253] [cursor=pointer]':
+                          - /url: /google/A2UI/commit/db1ee2749d72d8b3178e1f57694043375bd02c08
+                        - link "#1494" [ref=e254] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1494
+                        - link ")" [ref=e255] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/db1ee2749d72d8b3178e1f57694043375bd02c08
+                    - cell "May 29, 20264 days ago" [ref=e256]:
+                      - generic [ref=e257]: May 29, 20264 days ago
+                  - row ".vscode, (Directory) Minor improvements. (#1438) May 14, 20263 weeks ago" [ref=e258]:
+                    - cell ".vscode, (Directory)" [ref=e259]:
+                      - generic [ref=e260]:
+                        - img [ref=e261]
+                        - link ".vscode, (Directory)" [ref=e266] [cursor=pointer]:
+                          - /url: /google/A2UI/tree/main/.vscode
+                          - text: .vscode
+                    - cell "Minor improvements. (#1438)" [ref=e267]:
+                      - generic [ref=e269]:
+                        - link "Minor improvements. (" [ref=e270] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/52bdc874a2da7d9c1ea9f819682a51e9d328de5d
+                        - link "#1438" [ref=e271] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1438
+                        - link ")" [ref=e272] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/52bdc874a2da7d9c1ea9f819682a51e9d328de5d
+                    - cell "May 14, 20263 weeks ago" [ref=e273]:
+                      - generic [ref=e274]: May 14, 20263 weeks ago
+                  - 'row "agent_sdks, (Directory) POTENTIALLY BREAKING CHANGE refactor: IANA convention requires mime t… May 29, 20264 days ago" [ref=e275]':
+                    - cell "agent_sdks, (Directory)" [ref=e276]:
+                      - generic [ref=e277]:
+                        - img [ref=e278]
+                        - link "agent_sdks, (Directory)" [ref=e283] [cursor=pointer]:
+                          - /url: /google/A2UI/tree/main/agent_sdks
+                          - text: agent_sdks
+                    - 'cell "POTENTIALLY BREAKING CHANGE refactor: IANA convention requires mime t…" [ref=e284]':
+                      - 'link "POTENTIALLY BREAKING CHANGE refactor: IANA convention requires mime t…" [ref=e287] [cursor=pointer]':
+                        - /url: /google/A2UI/commit/c712e0fee618250d730487583a8ef31c732c48c5
+                    - cell "May 29, 20264 days ago" [ref=e288]:
+                      - generic [ref=e289]: May 29, 20264 days ago
+                  - 'row "docs, (Directory) docs: a2ui-vue add support v0.9 (#1489) May 30, 20264 days ago" [ref=e290]':
+                    - cell "docs, (Directory)" [ref=e291]:
+                      - generic [ref=e292]:
+                        - img [ref=e293]
+                        - link "docs, (Directory)" [ref=e298] [cursor=pointer]:
+                          - /url: /google/A2UI/tree/main/docs
+                          - text: docs
+                    - 'cell "docs: a2ui-vue add support v0.9 (#1489)" [ref=e299]':
+                      - generic [ref=e301]:
+                        - 'link "docs: a2ui-vue add support v0.9 (" [ref=e302] [cursor=pointer]':
+                          - /url: /google/A2UI/commit/bc4639c47d64a8d70f0c0cb87adb66aff4972a78
+                        - link "#1489" [ref=e303] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1489
+                        - link ")" [ref=e304] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/bc4639c47d64a8d70f0c0cb87adb66aff4972a78
+                    - cell "May 30, 20264 days ago" [ref=e305]:
+                      - generic [ref=e306]: May 30, 20264 days ago
+                  - 'row "eval, (Directory) refactor(spec): restructure v0.9 and v0.10 catalog files into dedicat… ( May 20, 20262 weeks ago" [ref=e307]':
+                    - cell "eval, (Directory)" [ref=e308]:
+                      - generic [ref=e309]:
+                        - img [ref=e310]
+                        - link "eval, (Directory)" [ref=e315] [cursor=pointer]:
+                          - /url: /google/A2UI/tree/main/eval
+                          - text: eval
+                    - 'cell "refactor(spec): restructure v0.9 and v0.10 catalog files into dedicat… (" [ref=e316]':
+                      - 'link "refactor(spec): restructure v0.9 and v0.10 catalog files into dedicat… (" [ref=e319] [cursor=pointer]':
+                        - /url: /google/A2UI/commit/e2053fff00fb30972c60d9604511f9cfa15890a7
+                    - cell "May 20, 20262 weeks ago" [ref=e320]:
+                      - generic [ref=e321]: May 20, 20262 weeks ago
+                  - 'row "renderers, (Directory) docs: Update Flutter renderer package from genui_a2ui to genui_a2a (#… May 29, 20264 days ago" [ref=e322]':
+                    - cell "renderers, (Directory)" [ref=e323]:
+                      - generic [ref=e324]:
+                        - img [ref=e325]
+                        - link "renderers, (Directory)" [ref=e330] [cursor=pointer]:
+                          - /url: /google/A2UI/tree/main/renderers
+                          - text: renderers
+                    - 'cell "docs: Update Flutter renderer package from genui_a2ui to genui_a2a (#…" [ref=e331]':
+                      - generic [ref=e333]:
+                        - 'link "docs: Update Flutter renderer package from genui_a2ui to genui_a2a (" [ref=e334] [cursor=pointer]':
+                          - /url: /google/A2UI/commit/40239365752450c8491fa765090652c01f1ed989
+                        - link "#…" [ref=e335] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1500
+                    - cell "May 29, 20264 days ago" [ref=e336]:
+                      - generic [ref=e337]: May 29, 20264 days ago
+                  - row "samples, (Directory) ./scripts/fix_format.sh (#1508) May 29, 20264 days ago" [ref=e338]:
+                    - cell "samples, (Directory)" [ref=e339]:
+                      - generic [ref=e340]:
+                        - img [ref=e341]
+                        - link "samples, (Directory)" [ref=e346] [cursor=pointer]:
+                          - /url: /google/A2UI/tree/main/samples
+                          - text: samples
+                    - cell "./scripts/fix_format.sh (#1508)" [ref=e347]:
+                      - generic [ref=e349]:
+                        - link "./scripts/fix_format.sh (" [ref=e350] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/b3414f00e2999ac97cff7537c4be7384f7339e36
+                        - link "#1508" [ref=e351] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1508
+                        - link ")" [ref=e352] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/b3414f00e2999ac97cff7537c4be7384f7339e36
+                    - cell "May 29, 20264 days ago" [ref=e353]:
+                      - generic [ref=e354]: May 29, 20264 days ago
+                  - 'row "scripts, (Directory) fix(infra): run dart pub get before formatting to avoid resolution wa… May 29, 20264 days ago" [ref=e355]':
+                    - cell "scripts, (Directory)" [ref=e356]:
+                      - generic [ref=e357]:
+                        - img [ref=e358]
+                        - link "scripts, (Directory)" [ref=e363] [cursor=pointer]:
+                          - /url: /google/A2UI/tree/main/scripts
+                          - text: scripts
+                    - 'cell "fix(infra): run dart pub get before formatting to avoid resolution wa…" [ref=e364]':
+                      - 'link "fix(infra): run dart pub get before formatting to avoid resolution wa…" [ref=e367] [cursor=pointer]':
+                        - /url: /google/A2UI/commit/e52d4863a87cb31d6ac2426a70a3b80758c495d2
+                    - cell "May 29, 20264 days ago" [ref=e368]:
+                      - generic [ref=e369]: May 29, 20264 days ago
+                  - 'row "specification, (Directory) docs: Fix broken link for Custom Functions documentation (#1492) May 30, 20264 days ago" [ref=e370]':
+                    - cell "specification, (Directory)" [ref=e371]:
+                      - generic [ref=e372]:
+                        - img [ref=e373]
+                        - link "specification, (Directory)" [ref=e378] [cursor=pointer]:
+                          - /url: /google/A2UI/tree/main/specification
+                          - text: specification
+                    - 'cell "docs: Fix broken link for Custom Functions documentation (#1492)" [ref=e379]':
+                      - generic [ref=e381]:
+                        - 'link "docs: Fix broken link for Custom Functions documentation (" [ref=e382] [cursor=pointer]':
+                          - /url: /google/A2UI/commit/ade478faf8dcad611b5efb6b864dcbfbc4a51f68
+                        - link "#1492" [ref=e383] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1492
+                        - link ")" [ref=e384] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/ade478faf8dcad611b5efb6b864dcbfbc4a51f68
+                    - cell "May 30, 20264 days ago" [ref=e385]:
+                      - generic [ref=e386]: May 30, 20264 days ago
+                  - 'row "tools, (Directory) chore(deps): bump next (#1485) May 22, 20262 weeks ago" [ref=e387]':
+                    - cell "tools, (Directory)" [ref=e388]:
+                      - generic [ref=e389]:
+                        - img [ref=e390]
+                        - link "tools, (Directory)" [ref=e395] [cursor=pointer]:
+                          - /url: /google/A2UI/tree/main/tools
+                          - text: tools
+                    - 'cell "chore(deps): bump next (#1485)" [ref=e396]':
+                      - generic [ref=e398]:
+                        - 'link "chore(deps): bump next (" [ref=e399] [cursor=pointer]':
+                          - /url: /google/A2UI/commit/305336f137034922053874471d95614a3831e186
+                        - link "#1485" [ref=e400] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1485
+                        - link ")" [ref=e401] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/305336f137034922053874471d95614a3831e186
+                    - cell "May 22, 20262 weeks ago" [ref=e402]:
+                      - generic [ref=e403]: May 22, 20262 weeks ago
+                  - row ".editorconfig, (File) Enforce formatting in repo (#1338) May 5, 2026last month" [ref=e404]:
+                    - cell ".editorconfig, (File)" [ref=e405]:
+                      - generic [ref=e406]:
+                        - img [ref=e407]
+                        - link ".editorconfig, (File)" [ref=e412] [cursor=pointer]:
+                          - /url: /google/A2UI/blob/main/.editorconfig
+                          - text: .editorconfig
+                    - cell "Enforce formatting in repo (#1338)" [ref=e413]:
+                      - generic [ref=e415]:
+                        - link "Enforce formatting in repo (" [ref=e416] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/9526ab2ec05549443aa592cab056940aa360b37d
+                        - link "#1338" [ref=e417] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1338
+                        - link ")" [ref=e418] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/9526ab2ec05549443aa592cab056940aa360b37d
+                    - cell "May 5, 2026last month" [ref=e419]:
+                      - generic [ref=e420]: May 5, 2026last month
+                  - row ".geminiignore, (File) Add gemignore (#578) Jan 30, 20265 months ago" [ref=e421]:
+                    - cell ".geminiignore, (File)" [ref=e422]:
+                      - generic [ref=e423]:
+                        - img [ref=e424]
+                        - link ".geminiignore, (File)" [ref=e429] [cursor=pointer]:
+                          - /url: /google/A2UI/blob/main/.geminiignore
+                          - text: .geminiignore
+                    - cell "Add gemignore (#578)" [ref=e430]:
+                      - generic [ref=e432]:
+                        - link "Add gemignore (" [ref=e433] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/788bea45163d7d234ad1982d9f97de0d9e55bb83
+                        - link "#578" [ref=e434] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/578
+                        - link ")" [ref=e435] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/788bea45163d7d234ad1982d9f97de0d9e55bb83
+                    - cell "Jan 30, 20265 months ago" [ref=e436]:
+                      - generic [ref=e437]: Jan 30, 20265 months ago
+                  - row ".gitignore, (File) Delete all C++ agent SDK source files and build configurations (#1335) May 5, 2026last month" [ref=e438]:
+                    - cell ".gitignore, (File)" [ref=e439]:
+                      - generic [ref=e440]:
+                        - img [ref=e441]
+                        - link ".gitignore, (File)" [ref=e446] [cursor=pointer]:
+                          - /url: /google/A2UI/blob/main/.gitignore
+                          - text: .gitignore
+                    - cell "Delete all C++ agent SDK source files and build configurations (#1335)" [ref=e447]:
+                      - generic [ref=e449]:
+                        - link "Delete all C++ agent SDK source files and build configurations (" [ref=e450] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/878fef2bb92345ea721cbc48324ab83a76270a60
+                        - link "#1335" [ref=e451] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1335
+                        - link ")" [ref=e452] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/878fef2bb92345ea721cbc48324ab83a76270a60
+                    - cell "May 5, 2026last month" [ref=e453]:
+                      - generic [ref=e454]: May 5, 2026last month
+                  - row ".prettierignore, (File) Ignore generated file in Prettier (#1418) May 14, 20263 weeks ago" [ref=e455]:
+                    - cell ".prettierignore, (File)" [ref=e456]:
+                      - generic [ref=e457]:
+                        - img [ref=e458]
+                        - link ".prettierignore, (File)" [ref=e463] [cursor=pointer]:
+                          - /url: /google/A2UI/blob/main/.prettierignore
+                          - text: .prettierignore
+                    - cell "Ignore generated file in Prettier (#1418)" [ref=e464]:
+                      - generic [ref=e466]:
+                        - link "Ignore generated file in Prettier (" [ref=e467] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/d9fbb846198b40aecfd94e2398d2491d28d3e649
+                        - link "#1418" [ref=e468] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1418
+                        - link ")" [ref=e469] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/d9fbb846198b40aecfd94e2398d2491d28d3e649
+                    - cell "May 14, 20263 weeks ago" [ref=e470]:
+                      - generic [ref=e471]: May 14, 20263 weeks ago
+                  - 'row ".prettierrc, (File) [Docs]: Fix nested list indentation in docs (#1368) May 20, 20262 weeks ago" [ref=e472]':
+                    - cell ".prettierrc, (File)" [ref=e473]:
+                      - generic [ref=e474]:
+                        - img [ref=e475]
+                        - link ".prettierrc, (File)" [ref=e480] [cursor=pointer]:
+                          - /url: /google/A2UI/blob/main/.prettierrc
+                          - text: .prettierrc
+                    - 'cell "[Docs]: Fix nested list indentation in docs (#1368)" [ref=e481]':
+                      - generic [ref=e483]:
+                        - 'link "[Docs]: Fix nested list indentation in docs (" [ref=e484] [cursor=pointer]':
+                          - /url: /google/A2UI/commit/3344569be4d7222f011c2f1c505860a0f455053d
+                        - link "#1368" [ref=e485] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1368
+                        - link ")" [ref=e486] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/3344569be4d7222f011c2f1c505860a0f455053d
+                    - cell "May 20, 20262 weeks ago" [ref=e487]:
+                      - generic [ref=e488]: May 20, 20262 weeks ago
+                  - row "CONTRIBUTING.md, (File) Enforce formatting in repo (#1338) May 5, 2026last month" [ref=e489]:
+                    - cell "CONTRIBUTING.md, (File)" [ref=e490]:
+                      - generic [ref=e491]:
+                        - img [ref=e492]
+                        - link "CONTRIBUTING.md, (File)" [ref=e497] [cursor=pointer]:
+                          - /url: /google/A2UI/blob/main/CONTRIBUTING.md
+                          - text: CONTRIBUTING.md
+                    - cell "Enforce formatting in repo (#1338)" [ref=e498]:
+                      - generic [ref=e500]:
+                        - link "Enforce formatting in repo (" [ref=e501] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/9526ab2ec05549443aa592cab056940aa360b37d
+                        - link "#1338" [ref=e502] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1338
+                        - link ")" [ref=e503] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/9526ab2ec05549443aa592cab056940aa360b37d
+                    - cell "May 5, 2026last month" [ref=e504]:
+                      - generic [ref=e505]: May 5, 2026last month
+                  - 'row "LICENSE, (File) docs: add MIT license for transcrypt to LICENSE file (#1361) May 8, 2026last month" [ref=e506]':
+                    - cell "LICENSE, (File)" [ref=e507]:
+                      - generic [ref=e508]:
+                        - img [ref=e509]
+                        - link "LICENSE, (File)" [ref=e514] [cursor=pointer]:
+                          - /url: /google/A2UI/blob/main/LICENSE
+                          - text: LICENSE
+                    - 'cell "docs: add MIT license for transcrypt to LICENSE file (#1361)" [ref=e515]':
+                      - generic [ref=e517]:
+                        - 'link "docs: add MIT license for transcrypt to LICENSE file (" [ref=e518] [cursor=pointer]':
+                          - /url: /google/A2UI/commit/4d1a15cb4c2f7ecddb034e4ab0ff8777e475a712
+                        - link "#1361" [ref=e519] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1361
+                        - link ")" [ref=e520] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/4d1a15cb4c2f7ecddb034e4ab0ff8777e475a712
+                    - cell "May 8, 2026last month" [ref=e521]:
+                      - generic [ref=e522]: May 8, 2026last month
+                  - row "README.md, (File) Add migration notice (#1512) Jun 1, 2026yesterday" [ref=e523]:
+                    - cell "README.md, (File)" [ref=e524]:
+                      - generic [ref=e525]:
+                        - img [ref=e526]
+                        - link "README.md, (File)" [ref=e531] [cursor=pointer]:
+                          - /url: /google/A2UI/blob/main/README.md
+                          - text: README.md
+                    - cell "Add migration notice (#1512)" [ref=e532]:
+                      - generic [ref=e534]:
+                        - link "Add migration notice (" [ref=e535] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/0fde624719c500133c526f49df5b007d0392f3cb
+                        - link "#1512" [ref=e536] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1512
+                        - link ")" [ref=e537] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/0fde624719c500133c526f49df5b007d0392f3cb
+                    - cell "Jun 1, 2026yesterday" [ref=e538]:
+                      - generic [ref=e539]: Jun 1, 2026yesterday
+                  - row "analysis_options.yaml, (File) Define workflow for tests with ai and create initial tests for Dart S… Apr 24, 20262 months ago" [ref=e540]:
+                    - cell "analysis_options.yaml, (File)" [ref=e541]:
+                      - generic [ref=e542]:
+                        - img [ref=e543]
+                        - link "analysis_options.yaml, (File)" [ref=e548] [cursor=pointer]:
+                          - /url: /google/A2UI/blob/main/analysis_options.yaml
+                          - text: analysis_options.yaml
+                    - cell "Define workflow for tests with ai and create initial tests for Dart S…" [ref=e549]:
+                      - link "Define workflow for tests with ai and create initial tests for Dart S…" [ref=e552] [cursor=pointer]:
+                        - /url: /google/A2UI/commit/e37809a0dc34c0f02e8bf0c17d0133ea2aa3f05a
+                    - cell "Apr 24, 20262 months ago" [ref=e553]:
+                      - generic [ref=e554]: Apr 24, 20262 months ago
+                  - row "hooks.py, (File) Add missing license header (#1095) Apr 8, 20262 months ago" [ref=e555]:
+                    - cell "hooks.py, (File)" [ref=e556]:
+                      - generic [ref=e557]:
+                        - img [ref=e558]
+                        - link "hooks.py, (File)" [ref=e563] [cursor=pointer]:
+                          - /url: /google/A2UI/blob/main/hooks.py
+                          - text: hooks.py
+                    - cell "Add missing license header (#1095)" [ref=e564]:
+                      - generic [ref=e566]:
+                        - link "Add missing license header (" [ref=e567] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/9992d9c9f7dcd3550dc3159f2912cd3211815784
+                        - link "#1095" [ref=e568] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1095
+                        - link ")" [ref=e569] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/9992d9c9f7dcd3550dc3159f2912cd3211815784
+                    - cell "Apr 8, 20262 months ago" [ref=e570]:
+                      - generic [ref=e571]: Apr 8, 20262 months ago
+                  - 'row "mkdocs.yaml, (File) feat: add custom SVG favicon and update site configuration (#1506) May 28, 20265 days ago" [ref=e572]':
+                    - cell "mkdocs.yaml, (File)" [ref=e573]:
+                      - generic [ref=e574]:
+                        - img [ref=e575]
+                        - link "mkdocs.yaml, (File)" [ref=e580] [cursor=pointer]:
+                          - /url: /google/A2UI/blob/main/mkdocs.yaml
+                          - text: mkdocs.yaml
+                    - 'cell "feat: add custom SVG favicon and update site configuration (#1506)" [ref=e581]':
+                      - generic [ref=e583]:
+                        - 'link "feat: add custom SVG favicon and update site configuration (" [ref=e584] [cursor=pointer]':
+                          - /url: /google/A2UI/commit/cba34e4747965f36776fc8066db83e3ffbc22d93
+                        - link "#1506" [ref=e585] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1506
+                        - link ")" [ref=e586] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/cba34e4747965f36776fc8066db83e3ffbc22d93
+                    - cell "May 28, 20265 days ago" [ref=e587]:
+                      - generic [ref=e588]: May 28, 20265 days ago
+                  - row "pubspec.yaml, (File) Enforce formatting in repo (#1338) May 5, 2026last month" [ref=e589]:
+                    - cell "pubspec.yaml, (File)" [ref=e590]:
+                      - generic [ref=e591]:
+                        - img [ref=e592]
+                        - link "pubspec.yaml, (File)" [ref=e597] [cursor=pointer]:
+                          - /url: /google/A2UI/blob/main/pubspec.yaml
+                          - text: pubspec.yaml
+                    - cell "Enforce formatting in repo (#1338)" [ref=e598]:
+                      - generic [ref=e600]:
+                        - link "Enforce formatting in repo (" [ref=e601] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/9526ab2ec05549443aa592cab056940aa360b37d
+                        - link "#1338" [ref=e602] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/1338
+                        - link ")" [ref=e603] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/9526ab2ec05549443aa592cab056940aa360b37d
+                    - cell "May 5, 2026last month" [ref=e604]:
+                      - generic [ref=e605]: May 5, 2026last month
+                  - 'row "requirements-docs.txt, (File) docs(a2ui): Update documentation to align with v0.9 specification (#622) Mar 5, 20263 months ago" [ref=e606]':
+                    - cell "requirements-docs.txt, (File)" [ref=e607]:
+                      - generic [ref=e608]:
+                        - img [ref=e609]
+                        - link "requirements-docs.txt, (File)" [ref=e614] [cursor=pointer]:
+                          - /url: /google/A2UI/blob/main/requirements-docs.txt
+                          - text: requirements-docs.txt
+                    - 'cell "docs(a2ui): Update documentation to align with v0.9 specification (#622)" [ref=e615]':
+                      - generic [ref=e617]:
+                        - 'link "docs(a2ui): Update documentation to align with v0.9 specification (" [ref=e618] [cursor=pointer]':
+                          - /url: /google/A2UI/commit/3f90ed201fb600e55d105c7a53fa630674bd2e0a
+                        - link "#622" [ref=e619] [cursor=pointer]:
+                          - /url: https://github.com/google/A2UI/pull/622
+                        - link ")" [ref=e620] [cursor=pointer]:
+                          - /url: /google/A2UI/commit/3f90ed201fb600e55d105c7a53fa630674bd2e0a
+                    - cell "Mar 5, 20263 months ago" [ref=e621]:
+                      - generic [ref=e622]: Mar 5, 20263 months ago
+            - generic [ref=e624]:
+              - generic [ref=e625]:
+                - heading "Repository files navigation" [level=2] [ref=e626]
+                - navigation "Repository files" [ref=e627]:
+                  - list [ref=e628]:
+                    - listitem [ref=e629]:
+                      - link "README" [ref=e630] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e632]
+                        - generic [ref=e634]: README
+                    - listitem [ref=e635]:
+                      - link "Code of conduct" [ref=e636] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e638]
+                        - generic [ref=e640]: Code of conduct
+                    - listitem [ref=e641]:
+                      - link "Contributing" [ref=e642] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e644]
+                        - generic [ref=e646]: Contributing
+                    - listitem [ref=e647]:
+                      - link "Apache-2.0 license" [ref=e648] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e650]
+                        - generic [ref=e652]: Apache-2.0 license
+                    - listitem [ref=e653]:
+                      - link "Security" [ref=e654] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e656]
+                        - generic [ref=e658]: Security
+                - button "Outline" [ref=e659] [cursor=pointer]:
+                  - img [ref=e660]
+              - article [ref=e663]:
+                - blockquote [ref=e664]:
+                  - paragraph [ref=e665]:
+                    - generic [ref=e666]: ⚠️
+                    - text: "NOTICE: This repository will be moved to another GitHub organization on Wednesday June 3rd, 2026. We will be locking this repo on that day to facilitate the transfer. If you have this repo cloned or forked, you may need to re-clone, create a new fork, or modify your remotes in order to maintain your development setup. We will automatically migrate pull requests and issues as they are once the repo is locked."
+                - generic [ref=e667]:
+                  - 'heading "A2UI: Agent-to-User Interface" [level=1] [ref=e668]'
+                  - 'link "Permalink: A2UI: Agent-to-User Interface" [ref=e669] [cursor=pointer]':
+                    - /url: "#a2ui-agent-to-user-interface"
+                    - img [ref=e670]
+                - paragraph [ref=e672]: A2UI is an open-source project, complete with a format optimized for representing updatable agent-generated UIs and an initial set of renderers, that allows agents to generate or populate rich user interfaces.
+                - paragraph [ref=e673]:
+                  - link "Gallery of A2UI components" [ref=e674] [cursor=pointer]:
+                    - /url: /google/A2UI/blob/main/docs/assets/a2ui_gallery_examples.png
+                    - img "Gallery of A2UI components" [ref=e675]
+                - paragraph [ref=e676]:
+                  - emphasis [ref=e677]: A gallery of A2UI rendered cards, showing a variety of UI compositions that A2UI can achieve.
+                - generic [ref=e678]:
+                  - 'heading "⚠️ Status: Early stage public preview" [level=2] [ref=e679]':
+                    - generic [ref=e680]: ⚠️
+                    - text: "Status: Early stage public preview"
+                  - 'link "Permalink: ⚠️ Status: Early stage public preview" [ref=e681] [cursor=pointer]':
+                    - /url: "#️-status-early-stage-public-preview"
+                    - img [ref=e682]
+                - blockquote [ref=e684]:
+                  - paragraph [ref=e685]:
+                    - strong [ref=e686]: "Note:"
+                    - text: A2UI is currently in
+                    - strong [ref=e687]: v0.8 (Public Preview)
+                    - text: . The specification and implementations are functional but are still evolving. We are opening the project to foster collaboration, gather feedback, and solicit contributions (e.g., on client renderers). Expect changes.
+                - generic [ref=e688]:
+                  - heading "Summary" [level=2] [ref=e689]
+                  - 'link "Permalink: Summary" [ref=e690] [cursor=pointer]':
+                    - /url: "#summary"
+                    - img [ref=e691]
+                - paragraph [ref=e693]: Generative AI excels at creating text and code, but agents can struggle to present rich, interactive interfaces to users, especially when those agents are remote or running across trust boundaries.
+                - paragraph [ref=e694]:
+                  - strong [ref=e695]: A2UI
+                  - text: is an open standard and set of libraries that allows agents to "speak UI." Agents send a declarative JSON format describing the
+                  - emphasis [ref=e696]: intent
+                  - text: of the UI. The client application then renders this using its own native component library (Flutter, Angular, Lit, etc.).
+                - paragraph [ref=e697]:
+                  - text: This approach ensures that agent-generated UIs are
+                  - strong [ref=e698]: safe like data, but expressive like code
+                  - text: .
+                - generic [ref=e699]:
+                  - heading "High-level philosophy" [level=2] [ref=e700]
+                  - 'link "Permalink: High-level philosophy" [ref=e701] [cursor=pointer]':
+                    - /url: "#high-level-philosophy"
+                    - img [ref=e702]
+                - paragraph [ref=e704]: A2UI was designed to address the specific challenges of interoperable, cross-platform, generative or template-based UI responses from agents.
+                - paragraph [ref=e705]: "The project's core philosophies:"
+                - list [ref=e706]:
+                  - listitem [ref=e707]:
+                    - strong [ref=e708]: Security first
+                    - text: ": Running arbitrary code generated by an LLM may present a security risk. A2UI is a declarative data format, not executable code. Your client application maintains a \"catalog\" of trusted, pre-approved UI components (e.g., Card, Button, TextField), and the agent can only request to render components from that catalog."
+                  - listitem [ref=e709]:
+                    - strong [ref=e710]: LLM-friendly and incrementally updatable
+                    - text: ": The UI is represented as a flat list of components with ID references which is easy for LLMs to generate incrementally, allowing for progressive rendering and a responsive user experience. An agent can efficiently make incremental changes to the UI based on new user requests as the conversation progresses."
+                  - listitem [ref=e711]:
+                    - strong [ref=e712]: Framework-agnostic and portable
+                    - text: ": A2UI separates the UI structure from the UI implementation. The agent sends a description of the component tree and its associated data model. Your client application is responsible for mapping these abstract descriptions to its native widgets—be it web components, Flutter widgets, React components, SwiftUI views or something else entirely. The same A2UI JSON payload from an agent can be rendered on multiple different clients built on top of different frameworks."
+                  - listitem [ref=e713]:
+                    - strong [ref=e714]: Flexibility
+                    - text: ": A2UI also features an open registry pattern that allows developers to map server-side types to custom client implementations, from native mobile widgets to React components. By registering a \"Smart Wrapper,\" you can connect any existing UI component—including secure iframe containers for legacy content—to A2UI's data binding and event system. Crucially, this places security firmly in the developer's hands, enabling them to enforce strict sandboxing policies and \"trust ladders\" directly within their custom component logic rather than relying solely on the core system."
+                - generic [ref=e715]:
+                  - heading "Use cases" [level=2] [ref=e716]
+                  - 'link "Permalink: Use cases" [ref=e717] [cursor=pointer]':
+                    - /url: "#use-cases"
+                    - img [ref=e718]
+                - paragraph [ref=e720]: "Some of the use cases include:"
+                - list [ref=e721]:
+                  - listitem [ref=e722]:
+                    - strong [ref=e723]: "Dynamic Data Collection:"
+                    - text: An agent generates a bespoke form (date pickers, sliders, inputs) based on the specific context of a conversation (e.g., booking a specialized reservation).
+                  - listitem [ref=e724]:
+                    - strong [ref=e725]: "Remote Sub-Agents:"
+                    - text: An orchestrator agent delegates a task to a remote specialized agent (e.g., a travel booking agent) which returns a UI payload to be rendered inside the main chat window.
+                  - listitem [ref=e726]:
+                    - strong [ref=e727]: "Adaptive Workflows:"
+                    - text: Enterprise agents that generate approval dashboards or data visualizations on the fly based on the user's query.
+                - generic [ref=e728]:
+                  - heading "Architecture" [level=2] [ref=e729]
+                  - 'link "Permalink: Architecture" [ref=e730] [cursor=pointer]':
+                    - /url: "#architecture"
+                    - img [ref=e731]
+                - paragraph [ref=e733]: "The A2UI flow disconnects the generation of UI from the execution of UI:"
+                - list [ref=e734]:
+                  - listitem [ref=e735]:
+                    - strong [ref=e736]: "Generation:"
+                    - text: An Agent (using Gemini or another LLM) generates or uses a pre-generated
+                    - code [ref=e737]: A2UI Response
+                    - text: ", a JSON payload describing the composition of UI components and their properties."
+                  - listitem [ref=e738]:
+                    - strong [ref=e739]: "Transport:"
+                    - text: This message is sent to the client application (via A2A, AG UI, etc.).
+                  - listitem [ref=e740]:
+                    - strong [ref=e741]: "Resolution:"
+                    - text: The Client's
+                    - strong [ref=e742]: A2UI Renderer
+                    - text: parses the JSON.
+                  - listitem [ref=e743]:
+                    - strong [ref=e744]: "Rendering:"
+                    - text: The Renderer maps the abstract components (e.g.,
+                    - code [ref=e745]: "type: 'text-field'"
+                    - text: ) to the concrete implementation in the client's codebase.
+                - generic [ref=e746]:
+                  - heading "Dependencies" [level=2] [ref=e747]
+                  - 'link "Permalink: Dependencies" [ref=e748] [cursor=pointer]':
+                    - /url: "#dependencies"
+                    - img [ref=e749]
+                - paragraph [ref=e751]: "A2UI is designed to be a lightweight format, but it fits into a larger ecosystem:"
+                - list [ref=e752]:
+                  - listitem [ref=e753]:
+                    - strong [ref=e754]: "Transports:"
+                    - text: Compatible with
+                    - strong [ref=e755]: A2A Protocol
+                    - text: and
+                    - strong [ref=e756]: AG UI
+                    - text: .
+                  - listitem [ref=e757]:
+                    - strong [ref=e758]: "LLMs:"
+                    - text: Can be generated by any model capable of generating JSON output.
+                  - listitem [ref=e759]:
+                    - strong [ref=e760]: "Host Frameworks:"
+                    - text: "Requires a host application built in a supported framework (currently: Web or Flutter)."
+                - generic [ref=e761]:
+                  - heading "Getting started" [level=2] [ref=e762]
+                  - 'link "Permalink: Getting started" [ref=e763] [cursor=pointer]':
+                    - /url: "#getting-started"
+                    - img [ref=e764]
+                - paragraph [ref=e766]: "Pick the path that matches where you want to start:"
+                - table [ref=e768]:
+                  - rowgroup [ref=e769]:
+                    - row "Path What you get Time" [ref=e770]:
+                      - columnheader "Path" [ref=e771]
+                      - columnheader "What you get" [ref=e772]
+                      - columnheader "Time" [ref=e773]
+                  - rowgroup [ref=e774]:
+                    - row "🍜 Quickstart Restaurant Finder Demo Full-stack A2UI running locally with a Gemini powered ADK agent and Lit renderer. Learn A2UI end-to-end and customize to your use case. ~5 min" [ref=e775]:
+                      - cell "🍜 Quickstart Restaurant Finder Demo" [ref=e776]:
+                        - text: 🍜
+                        - strong [ref=e777]:
+                          - link "Quickstart Restaurant Finder Demo" [ref=e778] [cursor=pointer]:
+                            - /url: https://a2ui.org/quickstart/
+                      - cell "Full-stack A2UI running locally with a Gemini powered ADK agent and Lit renderer. Learn A2UI end-to-end and customize to your use case." [ref=e779]
+                      - cell "~5 min" [ref=e780]
+                    - row "⚛️ A2UI + AG-UI (CopilotKit) Set up CopilotKit with your agent framework of choice, then enable A2UI rendering. Ready to ship A2UI in a React app. ~5 min" [ref=e781]:
+                      - cell "⚛️ A2UI + AG-UI (CopilotKit)" [ref=e782]:
+                        - text: ⚛️
+                        - strong [ref=e783]:
+                          - link "A2UI + AG-UI (CopilotKit)" [ref=e784] [cursor=pointer]:
+                            - /url: /google/A2UI/blob/main/docs/guides/a2ui-with-any-agent-framework.md
+                      - cell "Set up CopilotKit with your agent framework of choice, then enable A2UI rendering. Ready to ship A2UI in a React app." [ref=e785]
+                      - cell "~5 min" [ref=e786]
+                    - row "🎨 A2UI Composer · Widget Builder Generate A2UI JSON from a visual editor and paste it into any agent prompt — no install required. ~1 min" [ref=e787]:
+                      - cell "🎨 A2UI Composer · Widget Builder" [ref=e788]:
+                        - text: 🎨
+                        - strong [ref=e789]:
+                          - link "A2UI Composer" [ref=e790] [cursor=pointer]:
+                            - /url: https://a2ui-composer.ag-ui.com/
+                        - text: ·
+                        - strong [ref=e791]:
+                          - link "Widget Builder" [ref=e792] [cursor=pointer]:
+                            - /url: https://go.copilotkit.ai/A2UI-widget-builder
+                      - cell "Generate A2UI JSON from a visual editor and paste it into any agent prompt — no install required." [ref=e793]
+                      - cell "~1 min" [ref=e794]
+                    - row "🎬 A2UI Theater Step through pre-built A2UI streaming scenarios across Lit, React, and Angular renderers — no install required. ~1 min" [ref=e795]:
+                      - cell "🎬 A2UI Theater" [ref=e796]:
+                        - text: 🎬
+                        - strong [ref=e797]:
+                          - link "A2UI Theater" [ref=e798] [cursor=pointer]:
+                            - /url: https://a2ui-composer.ag-ui.com/theater
+                      - cell "Step through pre-built A2UI streaming scenarios across Lit, React, and Angular renderers — no install required." [ref=e799]
+                      - cell "~1 min" [ref=e800]
+                - generic [ref=e801]:
+                  - heading "Restaurant Finder demo — TL;DR" [level=3] [ref=e802]
+                  - 'link "Permalink: Restaurant Finder demo — TL;DR" [ref=e803] [cursor=pointer]':
+                    - /url: "#restaurant-finder-demo--tldr"
+                    - img [ref=e804]
+                - paragraph [ref=e806]:
+                  - text: "Prerequisites: Node.js 18+,"
+                  - link "uv" [ref=e807] [cursor=pointer]:
+                    - /url: https://docs.astral.sh/uv/
+                  - text: ", and a"
+                  - link "Gemini API key" [ref=e808] [cursor=pointer]:
+                    - /url: https://aistudio.google.com/apikey
+                  - text: .
+                - generic [ref=e809]:
+                  - generic [ref=e810]:
+                    - text: git clone https://github.com/google/A2UI.git cd A2UI export GEMINI_API_KEY=
+                    - generic [ref=e811]: "\"your_gemini_api_key\""
+                    - text: cd samples/client/lit npm run demo:restaurant
+                  - button "Copy code to clipboard" [ref=e813] [cursor=pointer]:
+                    - img [ref=e814]
+                - paragraph [ref=e817]:
+                  - text: This one command installs dependencies, builds the renderers, starts the Python agent, and opens the client at
+                  - code [ref=e818]: http://localhost:5173
+                  - text: . For step-by-step instructions, alternative demos, and troubleshooting see the
+                  - strong [ref=e819]:
+                    - link "full Quickstart" [ref=e820] [cursor=pointer]:
+                      - /url: /google/A2UI/blob/main/docs/quickstart.md
+                  - text: .
+                - generic [ref=e821]:
+                  - heading "A2UI + AG-UI — TL;DR" [level=3] [ref=e822]
+                  - 'link "Permalink: A2UI + AG-UI — TL;DR" [ref=e823] [cursor=pointer]':
+                    - /url: "#a2ui--ag-ui--tldr"
+                    - img [ref=e824]
+                - generic [ref=e826]:
+                  - generic [ref=e827]: npx copilotkit@latest init
+                  - button "Copy code to clipboard" [ref=e829] [cursor=pointer]:
+                    - img [ref=e830]
+                - paragraph [ref=e833]:
+                  - text: Set up CopilotKit with your framework of choice (ADK, LangGraph, CrewAI, Mastra, …), then follow the
+                  - strong [ref=e834]:
+                    - link "AG-UI guide" [ref=e835] [cursor=pointer]:
+                      - /url: /google/A2UI/blob/main/docs/guides/a2ui-with-any-agent-framework.md
+                  - text: to enable A2UI rendering. CopilotKit's
+                  - link "quickstart" [ref=e836] [cursor=pointer]:
+                    - /url: https://docs.copilotkit.ai/quickstart
+                  - text: covers the initial install for any supported agent framework.
+                - generic [ref=e837]:
+                  - heading "Other renderers" [level=3] [ref=e838]
+                  - 'link "Permalink: Other renderers" [ref=e839] [cursor=pointer]':
+                    - /url: "#other-renderers"
+                    - img [ref=e840]
+                - paragraph [ref=e842]:
+                  - text: For Flutter, check out the
+                  - link "GenUI SDK" [ref=e843] [cursor=pointer]:
+                    - /url: https://github.com/flutter/genui
+                  - text: ", which uses A2UI under the hood. See"
+                  - link "docs/reference/renderers.md" [ref=e844] [cursor=pointer]:
+                    - /url: /google/A2UI/blob/main/docs/reference/renderers.md
+                  - text: for the full list of client implementations.
+                - generic [ref=e845]:
+                  - heading "Roadmap" [level=2] [ref=e846]
+                  - 'link "Permalink: Roadmap" [ref=e847] [cursor=pointer]':
+                    - /url: "#roadmap"
+                    - img [ref=e848]
+                - paragraph [ref=e850]: "We hope to work with the community on the following:"
+                - list [ref=e851]:
+                  - listitem [ref=e852]:
+                    - strong [ref=e853]: "Spec stabilization:"
+                    - text: Moving towards a v1.0 specification.
+                  - listitem [ref=e854]:
+                    - strong [ref=e855]: "More renderers:"
+                    - text: Adding official support for React, Jetpack Compose, iOS (SwiftUI), and more.
+                  - listitem [ref=e856]:
+                    - strong [ref=e857]: "Additional transports:"
+                    - text: Support for REST and more.
+                  - listitem [ref=e858]:
+                    - strong [ref=e859]: "Additional Agent frameworks:"
+                    - text: Genkit, LangGraph, and more.
+                - generic [ref=e860]:
+                  - heading "Contribute" [level=2] [ref=e861]
+                  - 'link "Permalink: Contribute" [ref=e862] [cursor=pointer]':
+                    - /url: "#contribute"
+                    - img [ref=e863]
+                - paragraph [ref=e865]:
+                  - text: A2UI is an
+                  - strong [ref=e866]: Apache 2.0
+                  - text: licensed project. We believe the future of UI is agentic, and we want to work with you to help build it.
+                - paragraph [ref=e867]:
+                  - text: See
+                  - link "CONTRIBUTING.md" [ref=e868] [cursor=pointer]:
+                    - /url: /google/A2UI/blob/main/CONTRIBUTING.md
+                  - text: for details on how to get started.
+        - generic [ref=e872]:
+          - generic [ref=e875]:
+            - heading "About" [level=2] [ref=e876]
+            - generic [ref=e877]:
+              - img [ref=e878]
+              - link "a2ui.org/" [ref=e881] [cursor=pointer]:
+                - /url: https://a2ui.org/
+            - heading "Resources" [level=3] [ref=e882]
+            - link "Readme" [ref=e884] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+              - img [ref=e885]
+              - text: Readme
+            - heading "License" [level=3] [ref=e887]
+            - link "Apache-2.0 license" [ref=e889] [cursor=pointer]:
+              - /url: "#Apache-2.0-1-ov-file"
+              - img [ref=e890]
+              - text: Apache-2.0 license
+            - heading "Code of conduct" [level=3] [ref=e892]
+            - link "Code of conduct" [ref=e894] [cursor=pointer]:
+              - /url: "#coc-ov-file"
+              - img [ref=e895]
+              - text: Code of conduct
+            - heading "Contributing" [level=3] [ref=e897]
+            - link "Contributing" [ref=e899] [cursor=pointer]:
+              - /url: "#contributing-ov-file"
+              - img [ref=e900]
+              - text: Contributing
+            - heading "Security policy" [level=3] [ref=e902]
+            - link "Security policy" [ref=e904] [cursor=pointer]:
+              - /url: "#security-ov-file"
+              - img [ref=e905]
+              - text: Security policy
+            - link "Activity" [ref=e908] [cursor=pointer]:
+              - /url: /google/A2UI/activity
+              - img [ref=e909]
+              - text: Activity
+            - link "Custom properties" [ref=e912] [cursor=pointer]:
+              - /url: /google/A2UI/custom-properties
+              - img [ref=e913]
+              - text: Custom properties
+            - heading "Stars" [level=3] [ref=e915]
+            - link "15.1k stars" [ref=e917] [cursor=pointer]:
+              - /url: /google/A2UI/stargazers
+              - img [ref=e918]
+              - strong [ref=e920]: 15.1k
+              - text: stars
+            - heading "Watchers" [level=3] [ref=e921]
+            - link "96 watching" [ref=e923] [cursor=pointer]:
+              - /url: /google/A2UI/watchers
+              - img [ref=e924]
+              - strong [ref=e926]: "96"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e927]
+            - link "1.2k forks" [ref=e929] [cursor=pointer]:
+              - /url: /google/A2UI/forks
+              - img [ref=e930]
+              - strong [ref=e932]: 1.2k
+              - text: forks
+            - link "Report repository" [ref=e934] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fgoogle%2FA2UI&report=google+%28user%29
+          - generic [ref=e936]:
+            - heading "Releases" [level=2] [ref=e937]:
+              - link "Releases" [ref=e938] [cursor=pointer]:
+                - /url: /google/A2UI/releases
+            - link "2 tags" [ref=e939] [cursor=pointer]:
+              - /url: /google/A2UI/tags
+              - img [ref=e940]
+              - text: 2 tags
+          - generic [ref=e943]:
+            - heading "Contributors 68" [level=2] [ref=e944]:
+              - link "Contributors 68" [ref=e945] [cursor=pointer]:
+                - /url: /google/A2UI/graphs/contributors
+                - text: Contributors
+                - generic "68" [ref=e946]
+            - list [ref=e947]:
+              - listitem [ref=e948]:
+                - link "@jacobsimionato" [ref=e949] [cursor=pointer]:
+                  - /url: https://github.com/jacobsimionato
+                  - img "@jacobsimionato" [ref=e950]
+              - listitem [ref=e951]:
+                - link "@gspencergoog" [ref=e952] [cursor=pointer]:
+                  - /url: https://github.com/gspencergoog
+                  - img "@gspencergoog" [ref=e953]
+              - listitem [ref=e954]:
+                - link "@github-actions[bot]" [ref=e955] [cursor=pointer]:
+                  - /url: https://github.com/apps/github-actions
+                  - img "@github-actions[bot]" [ref=e956]
+              - listitem [ref=e957]:
+                - link "@nan-yu" [ref=e958] [cursor=pointer]:
+                  - /url: https://github.com/nan-yu
+                  - img "@nan-yu" [ref=e959]
+              - listitem [ref=e960]:
+                - link "@paullewis" [ref=e961] [cursor=pointer]:
+                  - /url: https://github.com/paullewis
+                  - img "@paullewis" [ref=e962]
+              - listitem [ref=e963]:
+                - link "@sugoi-yuzuru" [ref=e964] [cursor=pointer]:
+                  - /url: https://github.com/sugoi-yuzuru
+                  - img "@sugoi-yuzuru" [ref=e965]
+              - listitem [ref=e966]:
+                - link "@wrenj" [ref=e967] [cursor=pointer]:
+                  - /url: https://github.com/wrenj
+                  - img "@wrenj" [ref=e968]
+              - listitem [ref=e969]:
+                - link "@josemontespg" [ref=e970] [cursor=pointer]:
+                  - /url: https://github.com/josemontespg
+                  - img "@josemontespg" [ref=e971]
+              - listitem [ref=e972]:
+                - link "@ditman" [ref=e973] [cursor=pointer]:
+                  - /url: https://github.com/ditman
+                  - img "@ditman" [ref=e974]
+              - listitem [ref=e975]:
+                - link "@zeroasterisk" [ref=e976] [cursor=pointer]:
+                  - /url: https://github.com/zeroasterisk
+                  - img "@zeroasterisk" [ref=e977]
+              - listitem [ref=e978]:
+                - link "@jgindin" [ref=e979] [cursor=pointer]:
+                  - /url: https://github.com/jgindin
+                  - img "@jgindin" [ref=e980]
+              - listitem [ref=e981]:
+                - link "@crisbeto" [ref=e982] [cursor=pointer]:
+                  - /url: https://github.com/crisbeto
+                  - img "@crisbeto" [ref=e983]
+              - listitem [ref=e984]:
+                - link "@dmandar" [ref=e985] [cursor=pointer]:
+                  - /url: https://github.com/dmandar
+                  - img "@dmandar" [ref=e986]
+              - listitem [ref=e987]:
+                - link "@ava-cassiopeia" [ref=e988] [cursor=pointer]:
+                  - /url: https://github.com/ava-cassiopeia
+                  - img "@ava-cassiopeia" [ref=e989]
+            - link "+ 54 contributors" [ref=e991] [cursor=pointer]:
+              - /url: /google/A2UI/graphs/contributors
+          - generic [ref=e993]:
+            - heading "Languages" [level=2] [ref=e994]
+            - list [ref=e1004]:
+              - listitem [ref=e1005]:
+                - link "TypeScript 77.7%" [ref=e1006] [cursor=pointer]:
+                  - /url: /google/A2UI/search?l=typescript
+                  - img [ref=e1007]
+                  - generic [ref=e1009]: TypeScript
+                  - generic [ref=e1010]: 77.7%
+              - listitem [ref=e1011]:
+                - link "Python 11.2%" [ref=e1012] [cursor=pointer]:
+                  - /url: /google/A2UI/search?l=python
+                  - img [ref=e1013]
+                  - generic [ref=e1015]: Python
+                  - generic [ref=e1016]: 11.2%
+              - listitem [ref=e1017]:
+                - link "Kotlin 6.1%" [ref=e1018] [cursor=pointer]:
+                  - /url: /google/A2UI/search?l=kotlin
+                  - img [ref=e1019]
+                  - generic [ref=e1021]: Kotlin
+                  - generic [ref=e1022]: 6.1%
+              - listitem [ref=e1023]:
+                - link "JavaScript 1.9%" [ref=e1024] [cursor=pointer]:
+                  - /url: /google/A2UI/search?l=javascript
+                  - img [ref=e1025]
+                  - generic [ref=e1027]: JavaScript
+                  - generic [ref=e1028]: 1.9%
+              - listitem [ref=e1029]:
+                - link "Shell 1.8%" [ref=e1030] [cursor=pointer]:
+                  - /url: /google/A2UI/search?l=shell
+                  - img [ref=e1031]
+                  - generic [ref=e1033]: Shell
+                  - generic [ref=e1034]: 1.8%
+              - listitem [ref=e1035]:
+                - link "HTML 0.7%" [ref=e1036] [cursor=pointer]:
+                  - /url: /google/A2UI/search?l=html
+                  - img [ref=e1037]
+                  - generic [ref=e1039]: HTML
+                  - generic [ref=e1040]: 0.7%
+              - listitem [ref=e1041]:
+                - link "CSS 0.6%" [ref=e1042] [cursor=pointer]:
+                  - /url: /google/A2UI/search?l=css
+                  - img [ref=e1043]
+                  - generic [ref=e1045]: CSS
+                  - generic [ref=e1046]: 0.6%
+  - contentinfo [ref=e1048]:
+    - heading "Footer" [level=2] [ref=e1049]
+    - generic [ref=e1050]:
+      - generic [ref=e1051]:
+        - link "GitHub Homepage" [ref=e1052] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e1053]
+        - generic [ref=e1055]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e1056]:
+        - heading "Footer navigation" [level=3] [ref=e1057]
+        - list "Footer navigation" [ref=e1058]:
+          - listitem [ref=e1059]:
+            - link "Terms" [ref=e1060] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e1061]:
+            - link "Privacy" [ref=e1062] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e1063]:
+            - link "Security" [ref=e1064] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e1065]:
+            - link "Status" [ref=e1066] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e1067]:
+            - link "Community" [ref=e1068] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e1069]:
+            - link "Docs" [ref=e1070] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e1071]:
+            - link "Contact" [ref=e1072] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e1073]:
+            - button "Manage cookies" [ref=e1075] [cursor=pointer]
+          - listitem [ref=e1076]:
+            - button "Do not share my personal information" [ref=e1078] [cursor=pointer]

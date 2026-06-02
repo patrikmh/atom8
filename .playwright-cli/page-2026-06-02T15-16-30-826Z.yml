@@ -1,0 +1,2092 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - link "Homepage" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - navigation "Global" [ref=e16]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - button "Platform" [ref=e20] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e21]
+              - listitem [ref=e23]:
+                - button "Solutions" [ref=e25] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - button "Resources" [ref=e30] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e31]
+              - listitem [ref=e33]:
+                - button "Open Source" [ref=e35] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e36]
+              - listitem [ref=e38]:
+                - button "Enterprise" [ref=e40] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e41]
+              - listitem [ref=e43]:
+                - link "Pricing" [ref=e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+                  - generic [ref=e45]: Pricing
+          - generic [ref=e46]:
+            - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+            - link "Sign in" [ref=e54] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fzhama-ai%2Fa2ui-react
+            - link "Sign up" [ref=e55] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=zhama-ai%2Fa2ui-react
+            - button "Appearance settings" [ref=e58] [cursor=pointer]:
+              - img
+  - main [ref=e62]:
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e66]:
+          - img [ref=e67]
+          - link "zhama-ai" [ref=e70] [cursor=pointer]:
+            - /url: /zhama-ai
+          - generic [ref=e71]: /
+          - strong [ref=e72]:
+            - link "a2ui-react" [ref=e73] [cursor=pointer]:
+              - /url: /zhama-ai/a2ui-react
+          - generic [ref=e74]: Public
+        - generic [ref=e75]:
+          - list:
+            - listitem [ref=e76]:
+              - link "You must be signed in to change notification settings" [ref=e77] [cursor=pointer]:
+                - /url: /login?return_to=%2Fzhama-ai%2Fa2ui-react
+                - img [ref=e78]
+                - text: Notifications
+            - listitem [ref=e80]:
+              - link "Fork 0" [ref=e81] [cursor=pointer]:
+                - /url: /login?return_to=%2Fzhama-ai%2Fa2ui-react
+                - img [ref=e82]
+                - text: Fork
+                - generic "0" [ref=e84]
+            - listitem [ref=e85]:
+              - link "You must be signed in to star a repository" [ref=e87] [cursor=pointer]:
+                - /url: /login?return_to=%2Fzhama-ai%2Fa2ui-react
+                - img [ref=e88]
+                - text: Star
+                - generic "16 users starred this repository" [ref=e90]: "16"
+      - navigation "Repository" [ref=e91]:
+        - list [ref=e92]:
+          - listitem [ref=e93]:
+            - link "Code" [ref=e94] [cursor=pointer]:
+              - /url: /zhama-ai/a2ui-react
+              - img [ref=e95]
+              - generic [ref=e97]: Code
+          - listitem [ref=e98]:
+            - link "Issues 1" [ref=e99] [cursor=pointer]:
+              - /url: /zhama-ai/a2ui-react/issues
+              - img [ref=e100]
+              - generic [ref=e103]: Issues
+              - generic "1" [ref=e104]
+          - listitem [ref=e105]:
+            - link "Pull requests" [ref=e106] [cursor=pointer]:
+              - /url: /zhama-ai/a2ui-react/pulls
+              - img [ref=e107]
+              - generic [ref=e109]: Pull requests
+          - listitem [ref=e110]:
+            - link "Actions" [ref=e111] [cursor=pointer]:
+              - /url: /zhama-ai/a2ui-react/actions
+              - img [ref=e112]
+              - generic [ref=e114]: Actions
+          - listitem [ref=e115]:
+            - link "Projects" [ref=e116] [cursor=pointer]:
+              - /url: /zhama-ai/a2ui-react/projects
+              - img [ref=e117]
+              - generic [ref=e119]: Projects
+          - listitem [ref=e120]:
+            - link "Security and quality" [ref=e121] [cursor=pointer]:
+              - /url: /zhama-ai/a2ui-react/security
+              - img [ref=e122]
+              - generic [ref=e124]: Security and quality
+          - listitem [ref=e125]:
+            - link "Insights" [ref=e126] [cursor=pointer]:
+              - /url: /zhama-ai/a2ui-react/pulse
+              - img [ref=e127]
+              - generic [ref=e129]: Insights
+    - generic [ref=e142]:
+      - heading "zhama-ai/a2ui-react" [level=1] [ref=e144]
+      - generic [ref=e145]:
+        - generic [ref=e148]:
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - button "main branch" [ref=e152] [cursor=pointer]:
+                - generic [ref=e153]:
+                  - generic [ref=e155]:
+                    - img [ref=e157]
+                    - generic [ref=e160]: main
+                  - generic:
+                    - img
+              - generic [ref=e161]:
+                - link "1 Branch" [ref=e162] [cursor=pointer]:
+                  - /url: /zhama-ai/a2ui-react/branches
+                  - generic [ref=e163]:
+                    - generic:
+                      - img
+                    - generic [ref=e165]:
+                      - strong [ref=e166]: "1"
+                      - text: Branch
+                - link "2 Tags" [ref=e167] [cursor=pointer]:
+                  - /url: /zhama-ai/a2ui-react/tags
+                  - generic [ref=e168]:
+                    - generic:
+                      - img
+                    - generic [ref=e170]:
+                      - strong [ref=e171]: "2"
+                      - text: Tags
+            - generic [ref=e172]:
+              - generic [ref=e176]:
+                - img [ref=e178]
+                - combobox "Go to file" [ref=e180]
+              - button "Code" [ref=e181] [cursor=pointer]:
+                - generic [ref=e182]:
+                  - generic:
+                    - img
+                  - generic [ref=e183]: Code
+                  - generic:
+                    - img
+          - generic [ref=e184]:
+            - generic [ref=e185]:
+              - heading "Folders and files" [level=2] [ref=e186]
+              - table "Folders and files" [ref=e187]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e188]:
+                  - 'row "Latest commit zhama cursoragent zhama and commits by cursoragent chore: migrate type-check to tsgo and add CSS module types Open commit details Commit d1e4e4f · May 20, 20262 weeks ago History 30 Commits" [ref=e189]':
+                    - 'cell "Latest commit zhama cursoragent zhama and commits by cursoragent chore: migrate type-check to tsgo and add CSS module types Open commit details Commit d1e4e4f · May 20, 20262 weeks ago History 30 Commits" [ref=e190]':
+                      - generic [ref=e191]:
+                        - heading "Latest commit" [level=2] [ref=e192]
+                        - generic [ref=e193]:
+                          - generic [ref=e194]:
+                            - generic [ref=e196]:
+                              - img "zhama" [ref=e197]
+                              - img "cursoragent" [ref=e198]
+                            - generic "zhama" [ref=e200]
+                            - generic [ref=e201]: and
+                            - link "commits by cursoragent" [ref=e203] [cursor=pointer]:
+                              - /url: /zhama-ai/a2ui-react/commits?author=cursoragent
+                              - text: cursoragent
+                          - generic [ref=e204]:
+                            - 'link "chore: migrate type-check to tsgo and add CSS module types" [ref=e207] [cursor=pointer]':
+                              - /url: /zhama-ai/a2ui-react/commit/d1e4e4fec7dd93ec8a050f18d9a423e151dcdbcd
+                            - button "Open commit details" [ref=e208] [cursor=pointer]:
+                              - img [ref=e209]
+                        - generic [ref=e211]:
+                          - generic [ref=e213]:
+                            - link "Commit d1e4e4f" [ref=e214] [cursor=pointer]:
+                              - /url: /zhama-ai/a2ui-react/commit/d1e4e4fec7dd93ec8a050f18d9a423e151dcdbcd
+                              - text: d1e4e4f
+                            - text: ·
+                            - generic "May 20, 2026, 6:19 AM GMT+2" [ref=e215]: May 20, 20262 weeks ago
+                          - generic [ref=e216]:
+                            - heading "History" [level=2] [ref=e217]
+                            - link "30 Commits" [ref=e218] [cursor=pointer]:
+                              - /url: /zhama-ai/a2ui-react/commits/main/
+                              - generic [ref=e219]:
+                                - generic:
+                                  - img
+                                - generic [ref=e220]: 30 Commits
+                  - 'row ".github, (Directory) chore: normalize formatting across docs and examples Mar 24, 20263 months ago" [ref=e221]':
+                    - cell ".github, (Directory)" [ref=e222]:
+                      - generic [ref=e223]:
+                        - img [ref=e224]
+                        - link ".github, (Directory)" [ref=e229] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/tree/main/.github
+                          - text: .github
+                    - 'cell "chore: normalize formatting across docs and examples" [ref=e230]':
+                      - 'link "chore: normalize formatting across docs and examples" [ref=e233] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/b1b847bedeaee744c44dcfe8b162297dc1da714a
+                    - cell "Mar 24, 20263 months ago" [ref=e234]:
+                      - generic [ref=e235]: Mar 24, 20263 months ago
+                  - 'row "docs, (Directory) chore: normalize formatting across docs and examples Mar 24, 20263 months ago" [ref=e236]':
+                    - cell "docs, (Directory)" [ref=e237]:
+                      - generic [ref=e238]:
+                        - img [ref=e239]
+                        - link "docs, (Directory)" [ref=e244] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/tree/main/docs
+                          - text: docs
+                    - 'cell "chore: normalize formatting across docs and examples" [ref=e245]':
+                      - 'link "chore: normalize formatting across docs and examples" [ref=e248] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/b1b847bedeaee744c44dcfe8b162297dc1da714a
+                    - cell "Mar 24, 20263 months ago" [ref=e249]:
+                      - generic [ref=e250]: Mar 24, 20263 months ago
+                  - 'row "examples, (Directory) chore: normalize formatting across docs and examples Mar 24, 20263 months ago" [ref=e251]':
+                    - cell "examples, (Directory)" [ref=e252]:
+                      - generic [ref=e253]:
+                        - img [ref=e254]
+                        - link "examples, (Directory)" [ref=e259] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/tree/main/examples
+                          - text: examples
+                    - 'cell "chore: normalize formatting across docs and examples" [ref=e260]':
+                      - 'link "chore: normalize formatting across docs and examples" [ref=e263] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/b1b847bedeaee744c44dcfe8b162297dc1da714a
+                    - cell "Mar 24, 20263 months ago" [ref=e264]:
+                      - generic [ref=e265]: Mar 24, 20263 months ago
+                  - 'row "scripts, (Directory) chore: normalize formatting across docs and examples Mar 24, 20263 months ago" [ref=e266]':
+                    - cell "scripts, (Directory)" [ref=e267]:
+                      - generic [ref=e268]:
+                        - img [ref=e269]
+                        - link "scripts, (Directory)" [ref=e274] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/tree/main/scripts
+                          - text: scripts
+                    - 'cell "chore: normalize formatting across docs and examples" [ref=e275]':
+                      - 'link "chore: normalize formatting across docs and examples" [ref=e278] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/b1b847bedeaee744c44dcfe8b162297dc1da714a
+                    - cell "Mar 24, 20263 months ago" [ref=e279]:
+                      - generic [ref=e280]: Mar 24, 20263 months ago
+                  - 'row "src, (Directory) chore: migrate type-check to tsgo and add CSS module types May 20, 20262 weeks ago" [ref=e281]':
+                    - cell "src, (Directory)" [ref=e282]:
+                      - generic [ref=e283]:
+                        - img [ref=e284]
+                        - link "src, (Directory)" [ref=e289] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/tree/main/src
+                          - text: src
+                    - 'cell "chore: migrate type-check to tsgo and add CSS module types" [ref=e290]':
+                      - 'link "chore: migrate type-check to tsgo and add CSS module types" [ref=e293] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/d1e4e4fec7dd93ec8a050f18d9a423e151dcdbcd
+                    - cell "May 20, 20262 weeks ago" [ref=e294]:
+                      - generic [ref=e295]: May 20, 20262 weeks ago
+                  - row ".editorconfig, (File) initial commit Dec 25, 20256 months ago" [ref=e296]:
+                    - cell ".editorconfig, (File)" [ref=e297]:
+                      - generic [ref=e298]:
+                        - img [ref=e299]
+                        - link ".editorconfig, (File)" [ref=e304] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/.editorconfig
+                          - text: .editorconfig
+                    - cell "initial commit" [ref=e305]:
+                      - link "initial commit" [ref=e308] [cursor=pointer]:
+                        - /url: /zhama-ai/a2ui-react/commit/7379ec03c86c02f4c5545306d68b989dcddd9fb4
+                    - cell "Dec 25, 20256 months ago" [ref=e309]:
+                      - generic [ref=e310]: Dec 25, 20256 months ago
+                  - 'row ".gitignore, (File) refactor(a2ui): 移除 TailwindCSS 依赖，实现独立样式系统 Dec 28, 20256 months ago" [ref=e311]':
+                    - cell ".gitignore, (File)" [ref=e312]:
+                      - generic [ref=e313]:
+                        - img [ref=e314]
+                        - link ".gitignore, (File)" [ref=e319] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/.gitignore
+                          - text: .gitignore
+                    - 'cell "refactor(a2ui): 移除 TailwindCSS 依赖，实现独立样式系统" [ref=e320]':
+                      - 'link "refactor(a2ui): 移除 TailwindCSS 依赖，实现独立样式系统" [ref=e323] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/d514e8529854b5d0e19f1064b0c36ab79afe07cc
+                    - cell "Dec 28, 20256 months ago" [ref=e324]:
+                      - generic [ref=e325]: Dec 28, 20256 months ago
+                  - row ".npmignore, (File) initial commit Dec 25, 20256 months ago" [ref=e326]:
+                    - cell ".npmignore, (File)" [ref=e327]:
+                      - generic [ref=e328]:
+                        - img [ref=e329]
+                        - link ".npmignore, (File)" [ref=e334] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/.npmignore
+                          - text: .npmignore
+                    - cell "initial commit" [ref=e335]:
+                      - link "initial commit" [ref=e338] [cursor=pointer]:
+                        - /url: /zhama-ai/a2ui-react/commit/7379ec03c86c02f4c5545306d68b989dcddd9fb4
+                    - cell "Dec 25, 20256 months ago" [ref=e339]:
+                      - generic [ref=e340]: Dec 25, 20256 months ago
+                  - 'row ".prettierrc, (File) chore: normalize formatting across docs and examples Mar 24, 20263 months ago" [ref=e341]':
+                    - cell ".prettierrc, (File)" [ref=e342]:
+                      - generic [ref=e343]:
+                        - img [ref=e344]
+                        - link ".prettierrc, (File)" [ref=e349] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/.prettierrc
+                          - text: .prettierrc
+                    - 'cell "chore: normalize formatting across docs and examples" [ref=e350]':
+                      - 'link "chore: normalize formatting across docs and examples" [ref=e353] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/b1b847bedeaee744c44dcfe8b162297dc1da714a
+                    - cell "Mar 24, 20263 months ago" [ref=e354]:
+                      - generic [ref=e355]: Mar 24, 20263 months ago
+                  - 'row "CHANGELOG.md, (File) chore: normalize formatting across docs and examples Mar 24, 20263 months ago" [ref=e356]':
+                    - cell "CHANGELOG.md, (File)" [ref=e357]:
+                      - generic [ref=e358]:
+                        - img [ref=e359]
+                        - link "CHANGELOG.md, (File)" [ref=e364] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/CHANGELOG.md
+                          - text: CHANGELOG.md
+                    - 'cell "chore: normalize formatting across docs and examples" [ref=e365]':
+                      - 'link "chore: normalize formatting across docs and examples" [ref=e368] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/b1b847bedeaee744c44dcfe8b162297dc1da714a
+                    - cell "Mar 24, 20263 months ago" [ref=e369]:
+                      - generic [ref=e370]: Mar 24, 20263 months ago
+                  - 'row "CODE_OF_CONDUCT.md, (File) chore: normalize formatting across docs and examples Mar 24, 20263 months ago" [ref=e371]':
+                    - cell "CODE_OF_CONDUCT.md, (File)" [ref=e372]:
+                      - generic [ref=e373]:
+                        - img [ref=e374]
+                        - link "CODE_OF_CONDUCT.md, (File)" [ref=e379] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/CODE_OF_CONDUCT.md
+                          - text: CODE_OF_CONDUCT.md
+                    - 'cell "chore: normalize formatting across docs and examples" [ref=e380]':
+                      - 'link "chore: normalize formatting across docs and examples" [ref=e383] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/b1b847bedeaee744c44dcfe8b162297dc1da714a
+                    - cell "Mar 24, 20263 months ago" [ref=e384]:
+                      - generic [ref=e385]: Mar 24, 20263 months ago
+                  - 'row "CONTRIBUTING.md, (File) chore: normalize formatting across docs and examples Mar 24, 20263 months ago" [ref=e386]':
+                    - cell "CONTRIBUTING.md, (File)" [ref=e387]:
+                      - generic [ref=e388]:
+                        - img [ref=e389]
+                        - link "CONTRIBUTING.md, (File)" [ref=e394] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/CONTRIBUTING.md
+                          - text: CONTRIBUTING.md
+                    - 'cell "chore: normalize formatting across docs and examples" [ref=e395]':
+                      - 'link "chore: normalize formatting across docs and examples" [ref=e398] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/b1b847bedeaee744c44dcfe8b162297dc1da714a
+                    - cell "Mar 24, 20263 months ago" [ref=e399]:
+                      - generic [ref=e400]: Mar 24, 20263 months ago
+                  - row "LICENSE, (File) initial commit Dec 25, 20256 months ago" [ref=e401]:
+                    - cell "LICENSE, (File)" [ref=e402]:
+                      - generic [ref=e403]:
+                        - img [ref=e404]
+                        - link "LICENSE, (File)" [ref=e409] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/LICENSE
+                          - text: LICENSE
+                    - cell "initial commit" [ref=e410]:
+                      - link "initial commit" [ref=e413] [cursor=pointer]:
+                        - /url: /zhama-ai/a2ui-react/commit/7379ec03c86c02f4c5545306d68b989dcddd9fb4
+                    - cell "Dec 25, 20256 months ago" [ref=e414]:
+                      - generic [ref=e415]: Dec 25, 20256 months ago
+                  - 'row "README.md, (File) chore: normalize formatting across docs and examples Mar 24, 20263 months ago" [ref=e416]':
+                    - cell "README.md, (File)" [ref=e417]:
+                      - generic [ref=e418]:
+                        - img [ref=e419]
+                        - link "README.md, (File)" [ref=e424] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/README.md
+                          - text: README.md
+                    - 'cell "chore: normalize formatting across docs and examples" [ref=e425]':
+                      - 'link "chore: normalize formatting across docs and examples" [ref=e428] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/b1b847bedeaee744c44dcfe8b162297dc1da714a
+                    - cell "Mar 24, 20263 months ago" [ref=e429]:
+                      - generic [ref=e430]: Mar 24, 20263 months ago
+                  - 'row "SECURITY.md, (File) chore: normalize formatting across docs and examples Mar 24, 20263 months ago" [ref=e431]':
+                    - cell "SECURITY.md, (File)" [ref=e432]:
+                      - generic [ref=e433]:
+                        - img [ref=e434]
+                        - link "SECURITY.md, (File)" [ref=e439] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/SECURITY.md
+                          - text: SECURITY.md
+                    - 'cell "chore: normalize formatting across docs and examples" [ref=e440]':
+                      - 'link "chore: normalize formatting across docs and examples" [ref=e443] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/b1b847bedeaee744c44dcfe8b162297dc1da714a
+                    - cell "Mar 24, 20263 months ago" [ref=e444]:
+                      - generic [ref=e445]: Mar 24, 20263 months ago
+                  - 'row "eslint.config.js, (File) fix: config Dec 25, 20256 months ago" [ref=e446]':
+                    - cell "eslint.config.js, (File)" [ref=e447]:
+                      - generic [ref=e448]:
+                        - img [ref=e449]
+                        - link "eslint.config.js, (File)" [ref=e454] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/eslint.config.js
+                          - text: eslint.config.js
+                    - 'cell "fix: config" [ref=e455]':
+                      - 'link "fix: config" [ref=e458] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/86ab27695772921c8aa6a9f48afa13791200e9a2
+                    - cell "Dec 25, 20256 months ago" [ref=e459]:
+                      - generic [ref=e460]: Dec 25, 20256 months ago
+                  - 'row "package.json, (File) chore: migrate type-check to tsgo and add CSS module types May 20, 20262 weeks ago" [ref=e461]':
+                    - cell "package.json, (File)" [ref=e462]:
+                      - generic [ref=e463]:
+                        - img [ref=e464]
+                        - link "package.json, (File)" [ref=e469] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/package.json
+                          - text: package.json
+                    - 'cell "chore: migrate type-check to tsgo and add CSS module types" [ref=e470]':
+                      - 'link "chore: migrate type-check to tsgo and add CSS module types" [ref=e473] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/d1e4e4fec7dd93ec8a050f18d9a423e151dcdbcd
+                    - cell "May 20, 20262 weeks ago" [ref=e474]:
+                      - generic [ref=e475]: May 20, 20262 weeks ago
+                  - 'row "test.md, (File) fix: lint Jan 8, 20265 months ago" [ref=e476]':
+                    - cell "test.md, (File)" [ref=e477]:
+                      - generic [ref=e478]:
+                        - img [ref=e479]
+                        - link "test.md, (File)" [ref=e484] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/test.md
+                          - text: test.md
+                    - 'cell "fix: lint" [ref=e485]':
+                      - 'link "fix: lint" [ref=e488] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/d8b5e4b5d8750bb2fb7def22d2c43d0e284e0e3e
+                    - cell "Jan 8, 20265 months ago" [ref=e489]:
+                      - generic [ref=e490]: Jan 8, 20265 months ago
+                  - 'row "tsconfig.json, (File) chore: migrate type-check to tsgo and add CSS module types May 20, 20262 weeks ago" [ref=e491]':
+                    - cell "tsconfig.json, (File)" [ref=e492]:
+                      - generic [ref=e493]:
+                        - img [ref=e494]
+                        - link "tsconfig.json, (File)" [ref=e499] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/tsconfig.json
+                          - text: tsconfig.json
+                    - 'cell "chore: migrate type-check to tsgo and add CSS module types" [ref=e500]':
+                      - 'link "chore: migrate type-check to tsgo and add CSS module types" [ref=e503] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/d1e4e4fec7dd93ec8a050f18d9a423e151dcdbcd
+                    - cell "May 20, 20262 weeks ago" [ref=e504]:
+                      - generic [ref=e505]: May 20, 20262 weeks ago
+                  - 'row "tsup.config.ts, (File) feat: major A2UI component updates and improvements Jan 22, 20265 months ago" [ref=e506]':
+                    - cell "tsup.config.ts, (File)" [ref=e507]:
+                      - generic [ref=e508]:
+                        - img [ref=e509]
+                        - link "tsup.config.ts, (File)" [ref=e514] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/tsup.config.ts
+                          - text: tsup.config.ts
+                    - 'cell "feat: major A2UI component updates and improvements" [ref=e515]':
+                      - 'link "feat: major A2UI component updates and improvements" [ref=e518] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/888040ba493c69958dd3b6a6a0060e838bf38630
+                    - cell "Jan 22, 20265 months ago" [ref=e519]:
+                      - generic [ref=e520]: Jan 22, 20265 months ago
+                  - 'row "vitest.config.ts, (File) chore: normalize formatting across docs and examples Mar 24, 20263 months ago" [ref=e521]':
+                    - cell "vitest.config.ts, (File)" [ref=e522]:
+                      - generic [ref=e523]:
+                        - img [ref=e524]
+                        - link "vitest.config.ts, (File)" [ref=e529] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/vitest.config.ts
+                          - text: vitest.config.ts
+                    - 'cell "chore: normalize formatting across docs and examples" [ref=e530]':
+                      - 'link "chore: normalize formatting across docs and examples" [ref=e533] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/b1b847bedeaee744c44dcfe8b162297dc1da714a
+                    - cell "Mar 24, 20263 months ago" [ref=e534]:
+                      - generic [ref=e535]: Mar 24, 20263 months ago
+                  - 'row "vitest.setup.ts, (File) chore: normalize formatting across docs and examples Mar 24, 20263 months ago" [ref=e536]':
+                    - cell "vitest.setup.ts, (File)" [ref=e537]:
+                      - generic [ref=e538]:
+                        - img [ref=e539]
+                        - link "vitest.setup.ts, (File)" [ref=e544] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/vitest.setup.ts
+                          - text: vitest.setup.ts
+                    - 'cell "chore: normalize formatting across docs and examples" [ref=e545]':
+                      - 'link "chore: normalize formatting across docs and examples" [ref=e548] [cursor=pointer]':
+                        - /url: /zhama-ai/a2ui-react/commit/b1b847bedeaee744c44dcfe8b162297dc1da714a
+                    - cell "Mar 24, 20263 months ago" [ref=e549]:
+                      - generic [ref=e550]: Mar 24, 20263 months ago
+            - generic [ref=e552]:
+              - generic [ref=e553]:
+                - heading "Repository files navigation" [level=2] [ref=e554]
+                - navigation "Repository files" [ref=e555]:
+                  - list [ref=e556]:
+                    - listitem [ref=e557]:
+                      - link "README" [ref=e558] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e560]
+                        - generic [ref=e562]: README
+                    - listitem [ref=e563]:
+                      - link "Code of conduct" [ref=e564] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e566]
+                        - generic [ref=e568]: Code of conduct
+                    - listitem [ref=e569]:
+                      - link "Contributing" [ref=e570] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e572]
+                        - generic [ref=e574]: Contributing
+                    - listitem [ref=e575]:
+                      - link "MIT license" [ref=e576] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e578]
+                        - generic [ref=e580]: MIT license
+                    - listitem [ref=e581]:
+                      - link "Security" [ref=e582] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e584]
+                        - generic [ref=e586]: Security
+                - button "Outline" [ref=e587] [cursor=pointer]:
+                  - img [ref=e588]
+              - article [ref=e591]:
+                - generic [ref=e592]:
+                  - heading "@zhama/a2ui" [level=1] [ref=e593]
+                  - 'link "Permalink: @zhama/a2ui" [ref=e594] [cursor=pointer]':
+                    - /url: "#zhamaa2ui"
+                    - img [ref=e595]
+                - generic [ref=e597]:
+                  - paragraph [ref=e598]:
+                    - strong [ref=e599]: A2UI Protocol - React Implementation for AI-Driven Dynamic User Interfaces
+                  - paragraph [ref=e600]:
+                    - strong [ref=e601]: A2UI 协议 - 用于 AI 驱动动态用户界面的 React 实现
+                  - paragraph [ref=e602]:
+                    - link "npm version" [ref=e603] [cursor=pointer]:
+                      - /url: https://www.npmjs.com/package/@zhama/a2ui
+                      - img "npm version" [ref=e604]
+                    - link "License" [ref=e605] [cursor=pointer]:
+                      - /url: /zhama-ai/a2ui-react/blob/main/LICENSE
+                      - img "License" [ref=e606]
+                    - link "TypeScript" [ref=e607] [cursor=pointer]:
+                      - /url: https://www.typescriptlang.org/
+                      - img "TypeScript" [ref=e608]
+                    - link "React" [ref=e609] [cursor=pointer]:
+                      - /url: https://reactjs.org/
+                      - img "React" [ref=e610]
+                  - paragraph [ref=e611]:
+                    - link "English" [ref=e612] [cursor=pointer]:
+                      - /url: "#english"
+                    - text: "|"
+                    - link "中文" [ref=e613] [cursor=pointer]:
+                      - /url: "#%E4%B8%AD%E6%96%87"
+                - separator [ref=e614]
+                - generic [ref=e615]:
+                  - heading "English" [level=2] [ref=e616]
+                  - 'link "Permalink: English" [ref=e617] [cursor=pointer]':
+                    - /url: "#english"
+                    - img [ref=e618]
+                - generic [ref=e620]:
+                  - heading "📖 Overview" [level=3] [ref=e621]
+                  - 'link "Permalink: 📖 Overview" [ref=e622] [cursor=pointer]':
+                    - /url: "#-overview"
+                    - img [ref=e623]
+                - paragraph [ref=e625]: A2UI (Agent-to-User Interface) is a protocol that enables AI agents to dynamically generate and control user interfaces. This library provides a complete React implementation based on Google's A2UI protocol specification, allowing AI agents to create rich, interactive UIs through structured data instead of plain text responses.
+                - generic [ref=e626]:
+                  - heading "🎬 Live Demo" [level=3] [ref=e627]
+                  - 'link "Permalink: 🎬 Live Demo" [ref=e628] [cursor=pointer]':
+                    - /url: "#-live-demo"
+                    - img [ref=e629]
+                - paragraph [ref=e631]: See A2UI in action! The demo showcases an AI training assistant that generates dynamic, interactive UIs based on user conversations.
+                - paragraph [ref=e632]:
+                  - strong [ref=e633]: "Try it yourself:"
+                - generic [ref=e634]:
+                  - generic [ref=e635]: cd examples/basic-demo npm install npm run dev
+                  - button "Copy code to clipboard" [ref=e637] [cursor=pointer]:
+                    - img [ref=e638]
+                - paragraph [ref=e641]:
+                  - text: Then open
+                  - link "http://localhost:5174" [ref=e642] [cursor=pointer]:
+                    - /url: http://localhost:5174
+                  - text: "and try these commands:"
+                - list [ref=e643]:
+                  - listitem [ref=e644]:
+                    - text: Type
+                    - code [ref=e645]: hello
+                    - text: "- Get a welcome screen with topic cards"
+                  - listitem [ref=e646]: Click a topic button - See a structured learning path
+                  - listitem [ref=e647]:
+                    - text: Type
+                    - code [ref=e648]: practice
+                    - text: "- Get interactive quiz questions"
+                  - listitem [ref=e649]:
+                    - text: Type
+                    - code [ref=e650]: progress
+                    - text: "- View learning statistics"
+                - paragraph [ref=e651]:
+                  - strong [ref=e652]: "What you'll see:"
+                - table [ref=e654]:
+                  - rowgroup [ref=e655]:
+                    - row "Welcome Screen Welcome Screen AI generates topic cards with actions Learning Path Learning Path Structured content with sections Practice Quiz Practice Quiz Interactive questions with buttons" [ref=e656]:
+                      - cell "Welcome Screen Welcome Screen AI generates topic cards with actions" [ref=e657]:
+                        - link "Welcome Screen" [ref=e658] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/docs/welcome.jpg
+                          - img "Welcome Screen" [ref=e659]
+                        - strong [ref=e660]: Welcome Screen
+                        - emphasis [ref=e661]: AI generates topic cards with actions
+                      - cell "Learning Path Learning Path Structured content with sections" [ref=e662]:
+                        - link "Learning Path" [ref=e663] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/docs/learning.jpg
+                          - img "Learning Path" [ref=e664]
+                        - strong [ref=e665]: Learning Path
+                        - emphasis [ref=e666]: Structured content with sections
+                      - cell "Practice Quiz Practice Quiz Interactive questions with buttons" [ref=e667]:
+                        - link "Practice Quiz" [ref=e668] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/docs/answer.jpg
+                          - img "Practice Quiz" [ref=e669]
+                        - strong [ref=e670]: Practice Quiz
+                        - emphasis [ref=e671]: Interactive questions with buttons
+                - blockquote [ref=e672]:
+                  - paragraph [ref=e673]:
+                    - text: 💡
+                    - strong [ref=e674]: "Note:"
+                    - text: All UIs above are generated dynamically by the AI agent using A2UI protocol - no hardcoded components!
+                - generic [ref=e675]:
+                  - heading "✨ Features" [level=3] [ref=e676]
+                  - 'link "Permalink: ✨ Features" [ref=e677] [cursor=pointer]':
+                    - /url: "#-features"
+                    - img [ref=e678]
+                - list [ref=e680]:
+                  - listitem [ref=e681]:
+                    - text: 🤖
+                    - strong [ref=e682]: AI-First Design
+                    - text: "- Built specifically for AI-driven UI generation"
+                  - listitem [ref=e683]:
+                    - text: 📦
+                    - strong [ref=e684]: Complete Protocol Support
+                    - text: "- Full implementation of A2UI protocol specifications"
+                  - listitem [ref=e685]:
+                    - text: 🎨
+                    - strong [ref=e686]: Standalone Style System
+                    - text: "- No Tailwind dependency, built-in CSS utility classes with"
+                    - code [ref=e687]: a2-
+                    - text: prefix
+                  - listitem [ref=e688]:
+                    - text: 🔒
+                    - strong [ref=e689]: Style Isolation
+                    - text: "- Avoid conflicts with host applications"
+                  - listitem [ref=e690]:
+                    - text: 🌓
+                    - strong [ref=e691]: Auto Dark Mode
+                    - text: "- Uses CSS"
+                    - code [ref=e692]: light-dark()
+                    - text: function
+                  - listitem [ref=e693]:
+                    - text: 🧩
+                    - strong [ref=e694]: Rich Components
+                    - text: "- Comprehensive set of UI components (Text, Button, Card, List, TextField, etc.)"
+                  - listitem [ref=e695]:
+                    - text: 🔌
+                    - strong [ref=e696]: Extensible
+                    - text: "- Support for custom component registration"
+                  - listitem [ref=e697]:
+                    - text: 📱
+                    - strong [ref=e698]: Responsive
+                    - text: "- Mobile-first responsive design"
+                  - listitem [ref=e699]:
+                    - text: ⚡
+                    - strong [ref=e700]: Performance
+                    - text: "- Optimized rendering with React best practices"
+                  - listitem [ref=e701]:
+                    - text: 🎯
+                    - strong [ref=e702]: Type-Safe
+                    - text: "- Full TypeScript support with comprehensive type definitions"
+                  - listitem [ref=e703]:
+                    - text: 🌐
+                    - strong [ref=e704]: Framework Agnostic
+                    - text: "- Core protocol can be adapted to other frameworks"
+                  - listitem [ref=e705]:
+                    - text: 🎭
+                    - strong [ref=e706]: Event Handling
+                    - text: "- Built-in action handling system for interactive components"
+                - generic [ref=e707]:
+                  - heading "🚀 Quick Start" [level=3] [ref=e708]
+                  - 'link "Permalink: 🚀 Quick Start" [ref=e709] [cursor=pointer]':
+                    - /url: "#-quick-start"
+                    - img [ref=e710]
+                - generic [ref=e712]:
+                  - heading "Installation" [level=4] [ref=e713]
+                  - 'link "Permalink: Installation" [ref=e714] [cursor=pointer]':
+                    - /url: "#installation"
+                    - img [ref=e715]
+                - generic [ref=e717]:
+                  - generic [ref=e718]:
+                    - text: npm install @zhama/a2ui
+                    - generic [ref=e719]: "# or"
+                    - text: yarn add @zhama/a2ui
+                    - generic [ref=e720]: "# or"
+                    - text: pnpm add @zhama/a2ui
+                  - button "Copy code to clipboard" [ref=e722] [cursor=pointer]:
+                    - img [ref=e723]
+                - generic [ref=e726]:
+                  - heading "Peer Dependencies" [level=4] [ref=e727]
+                  - 'link "Permalink: Peer Dependencies" [ref=e728] [cursor=pointer]':
+                    - /url: "#peer-dependencies"
+                    - img [ref=e729]
+                - generic [ref=e731]:
+                  - generic [ref=e732]: npm install react react-dom react-markdown
+                  - button "Copy code to clipboard" [ref=e734] [cursor=pointer]:
+                    - img [ref=e735]
+                - generic [ref=e738]:
+                  - heading "Basic Setup" [level=4] [ref=e739]
+                  - 'link "Permalink: Basic Setup" [ref=e740] [cursor=pointer]':
+                    - /url: "#basic-setup"
+                    - img [ref=e741]
+                - list [ref=e743]:
+                  - listitem [ref=e744]:
+                    - strong [ref=e745]: Wrap with StyleProvider and ThemeProvider
+                - generic [ref=e746]:
+                  - generic [ref=e747]: "import { StyleProvider, ThemeProvider, A2UIRoot } from '@zhama/a2ui-react'; function App() { return ( <StyleProvider> <ThemeProvider> <div className=\"a2ui-root\">{/* Your A2UI components */}</div> </ThemeProvider> </StyleProvider> ); }"
+                  - button "Copy code to clipboard" [ref=e749] [cursor=pointer]:
+                    - img [ref=e750]
+                - blockquote [ref=e753]:
+                  - paragraph [ref=e754]:
+                    - text: 💡
+                    - strong [ref=e755]: "Note:"
+                    - code [ref=e756]: StyleProvider
+                    - text: automatically injects A2UI's CSS utility classes. The
+                    - code [ref=e757]: a2ui-root
+                    - text: class applies base styles and CSS variables.
+                - list [ref=e758]:
+                  - listitem [ref=e759]:
+                    - strong [ref=e760]: Use A2UIRoot Component
+                - generic [ref=e761]:
+                  - generic [ref=e762]: "import { A2UIRoot } from '@zhama/a2ui-react'; import type { AnyComponentNode } from '@zhama/a2ui/types'; function App() { const components: AnyComponentNode[] = [ { id: 'text-1', type: 'Text', properties: { text: { literal: 'Hello from A2UI!' }, usageHint: { literal: 'h1' }, }, }, { id: 'button-1', type: 'Button', properties: { child: { id: 'btn-text', type: 'Text', properties: { text: { literal: 'Click Me' }, }, }, action: { type: 'postback', payload: 'button_clicked', }, }, }, ]; const handleAction = (event) => { console.log('Action triggered:', event); }; return ( <A2UIRoot childComponents={components} processor={null} surfaceId={null} onAction={handleAction} /> ); }"
+                  - button "Copy code to clipboard" [ref=e764] [cursor=pointer]:
+                    - img [ref=e765]
+                - generic [ref=e768]:
+                  - heading "📦 Package Exports" [level=3] [ref=e769]
+                  - 'link "Permalink: 📦 Package Exports" [ref=e770] [cursor=pointer]':
+                    - /url: "#-package-exports"
+                    - img [ref=e771]
+                - paragraph [ref=e773]: "The library provides multiple entry points for different use cases:"
+                - generic [ref=e774]:
+                  - generic [ref=e775]: "// Main entry - everything import { A2UIRoot, createButton, createText } from '@zhama/a2ui-react'; // Type definitions only import type { AnyComponentNode, ButtonNode } from '@zhama/a2ui/types'; // Data utilities import { A2UIRegistry } from '@zhama/a2ui/data'; // Event types import type { A2UIAction } from '@zhama/a2ui/events'; // Styles import '@zhama/a2ui/styles'; // UI components individually import { Button, Card, List } from '@zhama/a2ui/ui'; // Context providers import { A2UIProvider, useA2UI } from '@zhama/a2ui/context';"
+                  - button "Copy code to clipboard" [ref=e777] [cursor=pointer]:
+                    - img [ref=e778]
+                - generic [ref=e781]:
+                  - heading "🎨 Theming" [level=3] [ref=e782]
+                  - 'link "Permalink: 🎨 Theming" [ref=e783] [cursor=pointer]':
+                    - /url: "#-theming"
+                    - img [ref=e784]
+                - paragraph [ref=e786]: "A2UI comes with a customizable theme system:"
+                - generic [ref=e787]:
+                  - generic [ref=e788]: "import { ThemeProvider, createTheme } from '@zhama/a2ui-react'; const customTheme = createTheme({ components: { Button: { 'a2-bgc-p40': true, // Custom button background 'a2-br-4': true, // Larger border radius }, Card: { 'a2-shadow-lg': true, // Larger shadow }, }, }); function App() { return ( <ThemeProvider theme={customTheme}> <YourApp /> </ThemeProvider> ); }"
+                  - button "Copy code to clipboard" [ref=e790] [cursor=pointer]:
+                    - img [ref=e791]
+                - generic [ref=e794]:
+                  - heading "🎨 Style System" [level=3] [ref=e795]
+                  - 'link "Permalink: 🎨 Style System" [ref=e796] [cursor=pointer]':
+                    - /url: "#-style-system"
+                    - img [ref=e797]
+                - paragraph [ref=e799]: A2UI uses a standalone CSS utility class system that doesn't depend on Tailwind CSS.
+                - generic [ref=e800]:
+                  - heading "Class Naming Convention" [level=4] [ref=e801]
+                  - 'link "Permalink: Class Naming Convention" [ref=e802] [cursor=pointer]':
+                    - /url: "#class-naming-convention"
+                    - img [ref=e803]
+                - paragraph [ref=e805]:
+                  - text: All style classes use the
+                  - code [ref=e806]: a2-
+                  - text: "prefix:"
+                - table [ref=e808]:
+                  - rowgroup [ref=e809]:
+                    - row "Category Prefix Examples" [ref=e810]:
+                      - columnheader "Category" [ref=e811]
+                      - columnheader "Prefix" [ref=e812]
+                      - columnheader "Examples" [ref=e813]
+                  - rowgroup [ref=e814]:
+                    - row "Layout a2-p-*, a2-m-*, a2-gap-* a2-p-4, a2-mx-2, a2-gap-2" [ref=e815]:
+                      - cell "Layout" [ref=e816]
+                      - cell "a2-p-*, a2-m-*, a2-gap-*" [ref=e817]:
+                        - code [ref=e818]: a2-p-*
+                        - text: ","
+                        - code [ref=e819]: a2-m-*
+                        - text: ","
+                        - code [ref=e820]: a2-gap-*
+                      - cell "a2-p-4, a2-mx-2, a2-gap-2" [ref=e821]:
+                        - code [ref=e822]: a2-p-4
+                        - text: ","
+                        - code [ref=e823]: a2-mx-2
+                        - text: ","
+                        - code [ref=e824]: a2-gap-2
+                    - row "Display a2-dsp-* a2-dsp-flex, a2-dsp-grid" [ref=e825]:
+                      - cell "Display" [ref=e826]
+                      - cell "a2-dsp-*" [ref=e827]:
+                        - code [ref=e828]: a2-dsp-*
+                      - cell "a2-dsp-flex, a2-dsp-grid" [ref=e829]:
+                        - code [ref=e830]: a2-dsp-flex
+                        - text: ","
+                        - code [ref=e831]: a2-dsp-grid
+                    - row "Flex a2-flex-*, a2-al-*, a2-jc-* a2-flex-1, a2-al-center" [ref=e832]:
+                      - cell "Flex" [ref=e833]
+                      - cell "a2-flex-*, a2-al-*, a2-jc-*" [ref=e834]:
+                        - code [ref=e835]: a2-flex-*
+                        - text: ","
+                        - code [ref=e836]: a2-al-*
+                        - text: ","
+                        - code [ref=e837]: a2-jc-*
+                      - cell "a2-flex-1, a2-al-center" [ref=e838]:
+                        - code [ref=e839]: a2-flex-1
+                        - text: ","
+                        - code [ref=e840]: a2-al-center
+                    - row "Colors a2-c-*, a2-bgc-*, a2-bc-* a2-c-p50, a2-bgc-n0" [ref=e841]:
+                      - cell "Colors" [ref=e842]
+                      - cell "a2-c-*, a2-bgc-*, a2-bc-*" [ref=e843]:
+                        - code [ref=e844]: a2-c-*
+                        - text: ","
+                        - code [ref=e845]: a2-bgc-*
+                        - text: ","
+                        - code [ref=e846]: a2-bc-*
+                      - cell "a2-c-p50, a2-bgc-n0" [ref=e847]:
+                        - code [ref=e848]: a2-c-p50
+                        - text: ","
+                        - code [ref=e849]: a2-bgc-n0
+                    - row "Typography a2-font-*, a2-fw-*, a2-text-* a2-font-sans, a2-fw-500" [ref=e850]:
+                      - cell "Typography" [ref=e851]
+                      - cell "a2-font-*, a2-fw-*, a2-text-*" [ref=e852]:
+                        - code [ref=e853]: a2-font-*
+                        - text: ","
+                        - code [ref=e854]: a2-fw-*
+                        - text: ","
+                        - code [ref=e855]: a2-text-*
+                      - cell "a2-font-sans, a2-fw-500" [ref=e856]:
+                        - code [ref=e857]: a2-font-sans
+                        - text: ","
+                        - code [ref=e858]: a2-fw-500
+                    - row "Border a2-br-*, a2-bw-*, a2-bs-* a2-br-4, a2-bw-1" [ref=e859]:
+                      - cell "Border" [ref=e860]
+                      - cell "a2-br-*, a2-bw-*, a2-bs-*" [ref=e861]:
+                        - code [ref=e862]: a2-br-*
+                        - text: ","
+                        - code [ref=e863]: a2-bw-*
+                        - text: ","
+                        - code [ref=e864]: a2-bs-*
+                      - cell "a2-br-4, a2-bw-1" [ref=e865]:
+                        - code [ref=e866]: a2-br-4
+                        - text: ","
+                        - code [ref=e867]: a2-bw-1
+                    - row "Behavior a2-opacity-*, a2-shadow-* a2-opacity-80, a2-shadow-md" [ref=e868]:
+                      - cell "Behavior" [ref=e869]
+                      - cell "a2-opacity-*, a2-shadow-*" [ref=e870]:
+                        - code [ref=e871]: a2-opacity-*
+                        - text: ","
+                        - code [ref=e872]: a2-shadow-*
+                      - cell "a2-opacity-80, a2-shadow-md" [ref=e873]:
+                        - code [ref=e874]: a2-opacity-80
+                        - text: ","
+                        - code [ref=e875]: a2-shadow-md
+                - generic [ref=e876]:
+                  - heading "Color System" [level=4] [ref=e877]
+                  - 'link "Permalink: Color System" [ref=e878] [cursor=pointer]':
+                    - /url: "#color-system"
+                    - img [ref=e879]
+                - paragraph [ref=e881]: "Uses OKLCH color space with 6 palettes:"
+                - table [ref=e883]:
+                  - rowgroup [ref=e884]:
+                    - row "Prefix Description" [ref=e885]:
+                      - columnheader "Prefix" [ref=e886]
+                      - columnheader "Description" [ref=e887]
+                  - rowgroup [ref=e888]:
+                    - row "p Primary - Main color" [ref=e889]:
+                      - cell "p" [ref=e890]:
+                        - code [ref=e891]: p
+                      - cell "Primary - Main color" [ref=e892]
+                    - row "s Secondary - Secondary color" [ref=e893]:
+                      - cell "s" [ref=e894]:
+                        - code [ref=e895]: s
+                      - cell "Secondary - Secondary color" [ref=e896]
+                    - row "t Tertiary - Third color" [ref=e897]:
+                      - cell "t" [ref=e898]:
+                        - code [ref=e899]: t
+                      - cell "Tertiary - Third color" [ref=e900]
+                    - row "n Neutral - Gray tones" [ref=e901]:
+                      - cell "n" [ref=e902]:
+                        - code [ref=e903]: "n"
+                      - cell "Neutral - Gray tones" [ref=e904]
+                    - row "nv Neutral Variant - Neutral variant" [ref=e905]:
+                      - cell "nv" [ref=e906]:
+                        - code [ref=e907]: nv
+                      - cell "Neutral Variant - Neutral variant" [ref=e908]
+                    - row "e Error - Error color" [ref=e909]:
+                      - cell "e" [ref=e910]:
+                        - code [ref=e911]: e
+                      - cell "Error - Error color" [ref=e912]
+                - paragraph [ref=e913]: "Color scale: 0 (lightest) ~ 100 (darkest)"
+                - generic [ref=e914]:
+                  - generic [ref=e915]: "/* Examples */ .a2-c-p50 { /* Primary 50% */ } .a2-bgc-n0 { /* White background */ } .a2-bc-e40 { /* Error color border */ }"
+                  - button "Copy code to clipboard" [ref=e917] [cursor=pointer]:
+                    - img [ref=e918]
+                - generic [ref=e921]:
+                  - heading "Manual Style Injection" [level=4] [ref=e922]
+                  - 'link "Permalink: Manual Style Injection" [ref=e923] [cursor=pointer]':
+                    - /url: "#manual-style-injection"
+                    - img [ref=e924]
+                - paragraph [ref=e926]: "For SSR or special scenarios:"
+                - generic [ref=e927]:
+                  - generic [ref=e928]: "import { getStylesCSS } from '@zhama/a2ui-react'; // Get complete CSS string const css = getStylesCSS(); // Inject into head const style = document.createElement('style'); style.textContent = css; document.head.appendChild(style);"
+                  - button "Copy code to clipboard" [ref=e930] [cursor=pointer]:
+                    - img [ref=e931]
+                - generic [ref=e934]:
+                  - heading "🧩 Available Components" [level=3] [ref=e935]
+                  - 'link "Permalink: 🧩 Available Components" [ref=e936] [cursor=pointer]':
+                    - /url: "#-available-components"
+                    - img [ref=e937]
+                - table [ref=e940]:
+                  - rowgroup [ref=e941]:
+                    - row "Component Description Use Case" [ref=e942]:
+                      - columnheader "Component" [ref=e943]
+                      - columnheader "Description" [ref=e944]
+                      - columnheader "Use Case" [ref=e945]
+                  - rowgroup [ref=e946]:
+                    - row "Text Render formatted text with markdown support Headings, paragraphs, captions" [ref=e947]:
+                      - cell "Text" [ref=e948]:
+                        - strong [ref=e949]: Text
+                      - cell "Render formatted text with markdown support" [ref=e950]
+                      - cell "Headings, paragraphs, captions" [ref=e951]
+                    - row "Button Interactive button with action support User actions, navigation" [ref=e952]:
+                      - cell "Button" [ref=e953]:
+                        - strong [ref=e954]: Button
+                      - cell "Interactive button with action support" [ref=e955]
+                      - cell "User actions, navigation" [ref=e956]
+                    - row "Card Container for grouped content Content grouping, layouts" [ref=e957]:
+                      - cell "Card" [ref=e958]:
+                        - strong [ref=e959]: Card
+                      - cell "Container for grouped content" [ref=e960]
+                      - cell "Content grouping, layouts" [ref=e961]
+                    - row "List Vertical or horizontal list layout Multiple items display" [ref=e962]:
+                      - cell "List" [ref=e963]:
+                        - strong [ref=e964]: List
+                      - cell "Vertical or horizontal list layout" [ref=e965]
+                      - cell "Multiple items display" [ref=e966]
+                    - row "Row Horizontal layout container Side-by-side elements" [ref=e967]:
+                      - cell "Row" [ref=e968]:
+                        - strong [ref=e969]: Row
+                      - cell "Horizontal layout container" [ref=e970]
+                      - cell "Side-by-side elements" [ref=e971]
+                    - row "Column Vertical layout container Stacked elements" [ref=e972]:
+                      - cell "Column" [ref=e973]:
+                        - strong [ref=e974]: Column
+                      - cell "Vertical layout container" [ref=e975]
+                      - cell "Stacked elements" [ref=e976]
+                    - row "TextField Text input field User input, forms" [ref=e977]:
+                      - cell "TextField" [ref=e978]:
+                        - strong [ref=e979]: TextField
+                      - cell "Text input field" [ref=e980]
+                      - cell "User input, forms" [ref=e981]
+                    - row "CheckBox Checkbox input Boolean selections" [ref=e982]:
+                      - cell "CheckBox" [ref=e983]:
+                        - strong [ref=e984]: CheckBox
+                      - cell "Checkbox input" [ref=e985]
+                      - cell "Boolean selections" [ref=e986]
+                    - row "Image Display images Visual content" [ref=e987]:
+                      - cell "Image" [ref=e988]:
+                        - strong [ref=e989]: Image
+                      - cell "Display images" [ref=e990]
+                      - cell "Visual content" [ref=e991]
+                    - row "Tabs Tabbed interface Multiple views" [ref=e992]:
+                      - cell "Tabs" [ref=e993]:
+                        - strong [ref=e994]: Tabs
+                      - cell "Tabbed interface" [ref=e995]
+                      - cell "Multiple views" [ref=e996]
+                    - row "Surface Container with elevation Modal dialogs, panels" [ref=e997]:
+                      - cell "Surface" [ref=e998]:
+                        - strong [ref=e999]: Surface
+                      - cell "Container with elevation" [ref=e1000]
+                      - cell "Modal dialogs, panels" [ref=e1001]
+                - generic [ref=e1002]:
+                  - heading "💼 Use Cases" [level=3] [ref=e1003]
+                  - 'link "Permalink: 💼 Use Cases" [ref=e1004] [cursor=pointer]':
+                    - /url: "#-use-cases"
+                    - img [ref=e1005]
+                - paragraph [ref=e1007]: "A2UI is perfect for scenarios where AI agents need to provide rich, interactive experiences:"
+                - generic [ref=e1008]:
+                  - heading "🎓 AI Training & Education" [level=4] [ref=e1009]:
+                    - text: 🎓
+                    - strong [ref=e1010]: AI Training & Education
+                  - 'link "Permalink: 🎓 AI Training & Education" [ref=e1011] [cursor=pointer]':
+                    - /url: "#-ai-training--education"
+                    - img [ref=e1012]
+                - list [ref=e1014]:
+                  - listitem [ref=e1015]: Dynamic course content generation
+                  - listitem [ref=e1016]: Interactive quizzes and assessments
+                  - listitem [ref=e1017]: Personalized learning paths
+                  - listitem [ref=e1018]: Progress tracking dashboards
+                - generic [ref=e1019]:
+                  - heading "🤖 Conversational AI Assistants" [level=4] [ref=e1020]:
+                    - text: 🤖
+                    - strong [ref=e1021]: Conversational AI Assistants
+                  - 'link "Permalink: 🤖 Conversational AI Assistants" [ref=e1022] [cursor=pointer]':
+                    - /url: "#-conversational-ai-assistants"
+                    - img [ref=e1023]
+                - list [ref=e1025]:
+                  - listitem [ref=e1026]: Customer support with form filling
+                  - listitem [ref=e1027]: Product recommendations with cards
+                  - listitem [ref=e1028]: Multi-step workflows
+                  - listitem [ref=e1029]: Data visualization
+                - generic [ref=e1030]:
+                  - heading "📊 Business Applications" [level=4] [ref=e1031]:
+                    - text: 📊
+                    - strong [ref=e1032]: Business Applications
+                  - 'link "Permalink: 📊 Business Applications" [ref=e1033] [cursor=pointer]':
+                    - /url: "#-business-applications"
+                    - img [ref=e1034]
+                - list [ref=e1036]:
+                  - listitem [ref=e1037]: Report generation with charts
+                  - listitem [ref=e1038]: Data entry forms
+                  - listitem [ref=e1039]: Approval workflows
+                  - listitem [ref=e1040]: Dashboard creation
+                - generic [ref=e1041]:
+                  - heading "🛠️ Development Tools" [level=4] [ref=e1042]:
+                    - text: 🛠️
+                    - strong [ref=e1043]: Development Tools
+                  - 'link "Permalink: 🛠️ Development Tools" [ref=e1044] [cursor=pointer]':
+                    - /url: "#️-development-tools"
+                    - img [ref=e1045]
+                - list [ref=e1047]:
+                  - listitem [ref=e1048]: Code generation with syntax highlighting
+                  - listitem [ref=e1049]: Interactive documentation
+                  - listitem [ref=e1050]: Configuration wizards
+                  - listitem [ref=e1051]: Debugging interfaces
+                - generic [ref=e1052]:
+                  - heading "🏗️ Architecture" [level=3] [ref=e1053]
+                  - 'link "Permalink: 🏗️ Architecture" [ref=e1054] [cursor=pointer]':
+                    - /url: "#️-architecture"
+                    - img [ref=e1055]
+                - paragraph [ref=e1057]: "A2UI follows a two-layer architecture inspired by modern AI applications:"
+                - list [ref=e1058]:
+                  - listitem [ref=e1059]:
+                    - paragraph [ref=e1060]:
+                      - strong [ref=e1061]: ContentModel Layer
+                      - text: (High-level Semantic)
+                    - list [ref=e1062]:
+                      - listitem [ref=e1063]: Scene-based content structure (Welcome, Learning, Practice, etc.)
+                      - listitem [ref=e1064]: Business logic representation
+                      - listitem [ref=e1065]: LLM-friendly format - AI outputs meaningful scenes, not UI components
+                      - listitem [ref=e1066]: Easy to understand and modify
+                  - listitem [ref=e1067]:
+                    - paragraph [ref=e1068]:
+                      - strong [ref=e1069]: A2UI Protocol Layer
+                      - text: (Low-level UI)
+                    - list [ref=e1070]:
+                      - listitem [ref=e1071]: ComponentNode structure (Button, Card, List, etc.)
+                      - listitem [ref=e1072]: UI rendering specification
+                      - listitem [ref=e1073]: Framework implementation
+                      - listitem [ref=e1074]: Optimized for rendering
+                - paragraph [ref=e1075]:
+                  - strong [ref=e1076]: "Flow:"
+                - generic [ref=e1077]:
+                  - code [ref=e1079]: "┌─────────────┐ ┌──────────────┐ ┌─────────────┐ ┌──────────┐ │ LLM Output │ → │ ContentModel │ → │ Scene │ → │ A2UI UI │ │ (JSON) │ │ (Semantic) │ │ Renderer │ │ (React) │ └─────────────┘ └──────────────┘ └─────────────┘ └──────────┘ ↓ ↓ Scene: \"welcome\" ComponentNodes Topics: [...] [Card, Button, ...]"
+                  - button "Copy code to clipboard" [ref=e1081] [cursor=pointer]:
+                    - img [ref=e1082]
+                - paragraph [ref=e1085]:
+                  - strong [ref=e1086]: "Benefits:"
+                - list [ref=e1087]:
+                  - listitem [ref=e1088]:
+                    - text: ✅
+                    - strong [ref=e1089]: Separation of Concerns
+                    - text: ": LLM focuses on content, not UI details"
+                  - listitem [ref=e1090]:
+                    - text: ✅
+                    - strong [ref=e1091]: Flexibility
+                    - text: ": Change UI rendering without changing LLM prompts"
+                  - listitem [ref=e1092]:
+                    - text: ✅
+                    - strong [ref=e1093]: Testability
+                    - text: ": Test content logic separately from UI"
+                  - listitem [ref=e1094]:
+                    - text: ✅
+                    - strong [ref=e1095]: Maintainability
+                    - text: ": Easier to update and extend"
+                - generic [ref=e1096]:
+                  - heading "📚 Examples" [level=3] [ref=e1097]
+                  - 'link "Permalink: 📚 Examples" [ref=e1098] [cursor=pointer]':
+                    - /url: "#-examples"
+                    - img [ref=e1099]
+                - paragraph [ref=e1101]:
+                  - text: Check out the
+                  - code [ref=e1102]: /examples
+                  - text: "directory for complete examples:"
+                - list [ref=e1103]:
+                  - listitem [ref=e1104]:
+                    - strong [ref=e1105]: basic-demo
+                    - text: ": Full-featured demo showcasing all A2UI capabilities"
+                  - listitem [ref=e1106]: Includes 7 different scenes (Welcome, Learning, Practice, Feedback, Progress, Conversation)
+                  - listitem [ref=e1107]: Interactive components with action handling
+                  - listitem [ref=e1108]: ContentModel to ComponentNode rendering pipeline
+                - paragraph [ref=e1109]: "To run the examples:"
+                - generic [ref=e1110]:
+                  - generic [ref=e1111]: cd examples/basic-demo npm install npm run dev
+                  - button "Copy code to clipboard" [ref=e1113] [cursor=pointer]:
+                    - img [ref=e1114]
+                - generic [ref=e1117]:
+                  - heading "🛠️ Development" [level=3] [ref=e1118]
+                  - 'link "Permalink: 🛠️ Development" [ref=e1119] [cursor=pointer]':
+                    - /url: "#️-development"
+                    - img [ref=e1120]
+                - generic [ref=e1122]:
+                  - heading "Setup" [level=4] [ref=e1123]
+                  - 'link "Permalink: Setup" [ref=e1124] [cursor=pointer]':
+                    - /url: "#setup"
+                    - img [ref=e1125]
+                - generic [ref=e1127]:
+                  - generic [ref=e1128]:
+                    - generic [ref=e1129]: "# Install dependencies"
+                    - text: pnpm install
+                    - generic [ref=e1130]: "# Build the library"
+                    - text: pnpm run build
+                    - generic [ref=e1131]: "# Run type checking"
+                    - text: pnpm run type-check
+                    - generic [ref=e1132]: "# Lint"
+                    - text: pnpm run lint
+                    - generic [ref=e1133]: "# Format code"
+                    - text: pnpm run format
+                  - button "Copy code to clipboard" [ref=e1135] [cursor=pointer]:
+                    - img [ref=e1136]
+                - generic [ref=e1139]:
+                  - heading "Project Structure" [level=4] [ref=e1140]
+                  - 'link "Permalink: Project Structure" [ref=e1141] [cursor=pointer]':
+                    - /url: "#project-structure"
+                    - img [ref=e1142]
+                - generic [ref=e1144]:
+                  - code [ref=e1146]: "zhama/a2ui/ ├── src/ │ ├── types/ # TypeScript type definitions │ ├── data/ # Data structures and utilities │ ├── events/ # Event handling │ ├── ui/ # React components │ ├── context/ # React context providers │ ├── styles/ # CSS and theme definitions │ └── index.ts # Main entry point ├── examples/ # Example applications │ └── basic-demo/ # Full-featured demo ├── dist/ # Build output └── README.md"
+                  - button "Copy code to clipboard" [ref=e1148] [cursor=pointer]:
+                    - img [ref=e1149]
+                - generic [ref=e1152]:
+                  - heading "🤝 Contributing" [level=3] [ref=e1153]
+                  - 'link "Permalink: 🤝 Contributing" [ref=e1154] [cursor=pointer]':
+                    - /url: "#-contributing"
+                    - img [ref=e1155]
+                - paragraph [ref=e1157]: "We welcome contributions! Please follow these guidelines:"
+                - list [ref=e1158]:
+                  - listitem [ref=e1159]:
+                    - strong [ref=e1160]: Fork
+                    - text: the repository
+                  - listitem [ref=e1161]:
+                    - strong [ref=e1162]: Create
+                    - text: a feature branch (
+                    - code [ref=e1163]: git checkout -b feature/amazing-feature
+                    - text: )
+                  - listitem [ref=e1164]:
+                    - strong [ref=e1165]: Commit
+                    - text: your changes (
+                    - code [ref=e1166]: git commit -m 'Add amazing feature'
+                    - text: )
+                  - listitem [ref=e1167]:
+                    - strong [ref=e1168]: Push
+                    - text: to the branch (
+                    - code [ref=e1169]: git push origin feature/amazing-feature
+                    - text: )
+                  - listitem [ref=e1170]:
+                    - strong [ref=e1171]: Open
+                    - text: a Pull Request
+                - generic [ref=e1172]:
+                  - heading "Development Guidelines" [level=4] [ref=e1173]
+                  - 'link "Permalink: Development Guidelines" [ref=e1174] [cursor=pointer]':
+                    - /url: "#development-guidelines"
+                    - img [ref=e1175]
+                - list [ref=e1177]:
+                  - listitem [ref=e1178]: Write clear, self-documenting code
+                  - listitem [ref=e1179]: Follow the existing code style (enforced by ESLint/Prettier)
+                  - listitem [ref=e1180]: Add tests for new features
+                  - listitem [ref=e1181]: Update documentation as needed
+                  - listitem [ref=e1182]: Ensure all tests pass before submitting PR
+                - generic [ref=e1183]:
+                  - heading "📄 License" [level=3] [ref=e1184]
+                  - 'link "Permalink: 📄 License" [ref=e1185] [cursor=pointer]':
+                    - /url: "#-license"
+                    - img [ref=e1186]
+                - paragraph [ref=e1188]:
+                  - text: This project is licensed under the MIT License - see the
+                  - link "LICENSE" [ref=e1189] [cursor=pointer]:
+                    - /url: /zhama-ai/a2ui-react/blob/main/LICENSE
+                  - text: file for details.
+                - generic [ref=e1190]:
+                  - heading "🙏 Acknowledgments" [level=3] [ref=e1191]
+                  - 'link "Permalink: 🙏 Acknowledgments" [ref=e1192] [cursor=pointer]':
+                    - /url: "#-acknowledgments"
+                    - img [ref=e1193]
+                - list [ref=e1195]:
+                  - listitem [ref=e1196]:
+                    - text: Inspired by
+                    - link "Google's A2UI Protocol" [ref=e1197] [cursor=pointer]:
+                      - /url: https://developers.google.com/assistant/conversational/a2ui
+                  - listitem [ref=e1198]:
+                    - text: Built with
+                    - link "React" [ref=e1199] [cursor=pointer]:
+                      - /url: https://reactjs.org/
+                    - text: and
+                    - link "TypeScript" [ref=e1200] [cursor=pointer]:
+                      - /url: https://www.typescriptlang.org/
+                - generic [ref=e1201]:
+                  - heading "📞 Support" [level=3] [ref=e1202]
+                  - 'link "Permalink: 📞 Support" [ref=e1203] [cursor=pointer]':
+                    - /url: "#-support"
+                    - img [ref=e1204]
+                - list [ref=e1206]:
+                  - listitem [ref=e1207]:
+                    - text: 🐛
+                    - strong [ref=e1208]: Issues
+                    - text: ":"
+                    - link "GitHub Issues" [ref=e1209] [cursor=pointer]:
+                      - /url: https://github.com/zhama/a2ui/issues
+                  - listitem [ref=e1210]:
+                    - text: 💬
+                    - strong [ref=e1211]: Discussions
+                    - text: ":"
+                    - link "GitHub Discussions" [ref=e1212] [cursor=pointer]:
+                      - /url: https://github.com/zhama/a2ui/discussions
+                  - listitem [ref=e1213]:
+                    - text: 📧
+                    - strong [ref=e1214]: Email
+                    - text: ":"
+                    - link "support@zhama.com" [ref=e1215] [cursor=pointer]:
+                      - /url: mailto:support@zhama.com
+                  - listitem [ref=e1216]:
+                    - text: 🌐
+                    - strong [ref=e1217]: Website
+                    - text: ":"
+                    - link "https://zhama.com" [ref=e1218] [cursor=pointer]:
+                      - /url: https://zhama.com
+                - generic [ref=e1219]:
+                  - heading "❓ FAQ" [level=3] [ref=e1220]
+                  - 'link "Permalink: ❓ FAQ" [ref=e1221] [cursor=pointer]':
+                    - /url: "#-faq"
+                    - img [ref=e1222]
+                - group [ref=e1224]:
+                  - generic "What's the difference between A2UI and regular React components?" [ref=e1225] [cursor=pointer]
+                - group [ref=e1226]:
+                  - generic "Can I use A2UI without AI / LLMs?" [ref=e1227] [cursor=pointer]
+                - group [ref=e1228]:
+                  - generic "How does this compare to shadcn/ui or other component libraries?" [ref=e1229] [cursor=pointer]
+                - group [ref=e1230]:
+                  - generic "What LLM models work best with A2UI?" [ref=e1231] [cursor=pointer]
+                - group [ref=e1232]:
+                  - generic "Can I customize the styling?" [ref=e1233] [cursor=pointer]
+                - group [ref=e1234]:
+                  - generic "Is this production-ready?" [ref=e1235] [cursor=pointer]
+                - separator [ref=e1236]
+                - generic [ref=e1237]:
+                  - heading "中文" [level=2] [ref=e1238]
+                  - 'link "Permalink: 中文" [ref=e1239] [cursor=pointer]':
+                    - /url: "#中文"
+                    - img [ref=e1240]
+                - generic [ref=e1242]:
+                  - heading "📖 概述" [level=3] [ref=e1243]
+                  - 'link "Permalink: 📖 概述" [ref=e1244] [cursor=pointer]':
+                    - /url: "#-概述"
+                    - img [ref=e1245]
+                - paragraph [ref=e1247]: A2UI（Agent-to-User Interface，智能体到用户界面）是一种协议，使 AI 智能体能够动态生成和控制用户界面。本库基于 Google 的 A2UI 协议规范提供了完整的 React 实现，允许 AI 智能体通过结构化数据而非纯文本响应来创建丰富的交互式 UI。
+                - generic [ref=e1248]:
+                  - heading "🎬 在线演示" [level=3] [ref=e1249]
+                  - 'link "Permalink: 🎬 在线演示" [ref=e1250] [cursor=pointer]':
+                    - /url: "#-在线演示"
+                    - img [ref=e1251]
+                - paragraph [ref=e1253]: 查看 A2UI 的实际效果！演示展示了一个 AI 培训助手，它根据用户对话动态生成交互式 UI。
+                - paragraph [ref=e1254]:
+                  - strong [ref=e1255]: 亲自试用：
+                - generic [ref=e1256]:
+                  - generic [ref=e1257]: cd examples/basic-demo npm install npm run dev
+                  - button "Copy code to clipboard" [ref=e1259] [cursor=pointer]:
+                    - img [ref=e1260]
+                - paragraph [ref=e1263]:
+                  - text: 然后打开
+                  - link "http://localhost:5174" [ref=e1264] [cursor=pointer]:
+                    - /url: http://localhost:5174
+                  - text: 并尝试以下命令：
+                - list [ref=e1265]:
+                  - listitem [ref=e1266]:
+                    - text: 输入
+                    - code [ref=e1267]: hello
+                    - text: "- 获取带主题卡片的欢迎屏幕"
+                  - listitem [ref=e1268]: 点击主题按钮 - 查看结构化学习路径
+                  - listitem [ref=e1269]:
+                    - text: 输入
+                    - code [ref=e1270]: practice
+                    - text: "- 获取交互式练习题"
+                  - listitem [ref=e1271]:
+                    - text: 输入
+                    - code [ref=e1272]: progress
+                    - text: "- 查看学习统计"
+                - paragraph [ref=e1273]:
+                  - strong [ref=e1274]: 你将看到：
+                - table [ref=e1276]:
+                  - rowgroup [ref=e1277]:
+                    - row "欢迎界面 欢迎界面 AI 生成带操作的主题卡片 学习路径 学习路径 带章节的结构化内容 练习题 练习题 带按钮的交互式问题" [ref=e1278]:
+                      - cell "欢迎界面 欢迎界面 AI 生成带操作的主题卡片" [ref=e1279]:
+                        - link "欢迎界面" [ref=e1280] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/docs/welcome.jpg
+                          - img "欢迎界面" [ref=e1281]
+                        - strong [ref=e1282]: 欢迎界面
+                        - emphasis [ref=e1283]: AI 生成带操作的主题卡片
+                      - cell "学习路径 学习路径 带章节的结构化内容" [ref=e1284]:
+                        - link "学习路径" [ref=e1285] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/docs/learning.jpg
+                          - img "学习路径" [ref=e1286]
+                        - strong [ref=e1287]: 学习路径
+                        - emphasis [ref=e1288]: 带章节的结构化内容
+                      - cell "练习题 练习题 带按钮的交互式问题" [ref=e1289]:
+                        - link "练习题" [ref=e1290] [cursor=pointer]:
+                          - /url: /zhama-ai/a2ui-react/blob/main/docs/answer.jpg
+                          - img "练习题" [ref=e1291]
+                        - strong [ref=e1292]: 练习题
+                        - emphasis [ref=e1293]: 带按钮的交互式问题
+                - blockquote [ref=e1294]:
+                  - paragraph [ref=e1295]:
+                    - text: 💡
+                    - strong [ref=e1296]: 注意：
+                    - text: 上面所有 UI 都是由 AI 智能体使用 A2UI 协议动态生成的 - 没有硬编码组件！
+                - generic [ref=e1297]:
+                  - heading "✨ 特性" [level=3] [ref=e1298]
+                  - 'link "Permalink: ✨ 特性" [ref=e1299] [cursor=pointer]':
+                    - /url: "#-特性"
+                    - img [ref=e1300]
+                - list [ref=e1302]:
+                  - listitem [ref=e1303]:
+                    - text: 🤖
+                    - strong [ref=e1304]: AI 优先设计
+                    - text: "- 专为 AI 驱动的 UI 生成而构建"
+                  - listitem [ref=e1305]:
+                    - text: 📦
+                    - strong [ref=e1306]: 完整协议支持
+                    - text: "- 完整实现 A2UI 协议规范"
+                  - listitem [ref=e1307]:
+                    - text: 🎨
+                    - strong [ref=e1308]: 独立样式系统
+                    - text: "- 不依赖 Tailwind，自带完整的"
+                    - code [ref=e1309]: a2-
+                    - text: 前缀 CSS 工具类
+                  - listitem [ref=e1310]:
+                    - text: 🔒
+                    - strong [ref=e1311]: 样式隔离
+                    - text: "- 使用"
+                    - code [ref=e1312]: a2-
+                    - text: 前缀避免与宿主应用冲突
+                  - listitem [ref=e1313]:
+                    - text: 🌓
+                    - strong [ref=e1314]: 自动暗色模式
+                    - text: "- 使用 CSS"
+                    - code [ref=e1315]: light-dark()
+                    - text: 函数
+                  - listitem [ref=e1316]:
+                    - text: 🧩
+                    - strong [ref=e1317]: 丰富组件
+                    - text: "- 全面的 UI 组件集（Text、Button、Card、List、TextField 等）"
+                  - listitem [ref=e1318]:
+                    - text: 🔌
+                    - strong [ref=e1319]: 可扩展
+                    - text: "- 支持自定义组件注册"
+                  - listitem [ref=e1320]:
+                    - text: 📱
+                    - strong [ref=e1321]: 响应式
+                    - text: "- 移动优先的响应式设计"
+                  - listitem [ref=e1322]:
+                    - text: ⚡
+                    - strong [ref=e1323]: 高性能
+                    - text: "- 遵循 React 最佳实践的优化渲染"
+                  - listitem [ref=e1324]:
+                    - text: 🎯
+                    - strong [ref=e1325]: 类型安全
+                    - text: "- 完整的 TypeScript 支持和全面的类型定义"
+                  - listitem [ref=e1326]:
+                    - text: 🌐
+                    - strong [ref=e1327]: 框架无关
+                    - text: "- 核心协议可适配其他框架"
+                  - listitem [ref=e1328]:
+                    - text: 🎭
+                    - strong [ref=e1329]: 事件处理
+                    - text: "- 内置交互组件的动作处理系统"
+                - generic [ref=e1330]:
+                  - heading "🚀 快速开始" [level=3] [ref=e1331]
+                  - 'link "Permalink: 🚀 快速开始" [ref=e1332] [cursor=pointer]':
+                    - /url: "#-快速开始"
+                    - img [ref=e1333]
+                - generic [ref=e1335]:
+                  - heading "安装" [level=4] [ref=e1336]
+                  - 'link "Permalink: 安装" [ref=e1337] [cursor=pointer]':
+                    - /url: "#安装"
+                    - img [ref=e1338]
+                - generic [ref=e1340]:
+                  - generic [ref=e1341]:
+                    - text: npm install @zhama/a2ui
+                    - generic [ref=e1342]: "# 或"
+                    - text: yarn add @zhama/a2ui
+                    - generic [ref=e1343]: "# 或"
+                    - text: pnpm add @zhama/a2ui
+                  - button "Copy code to clipboard" [ref=e1345] [cursor=pointer]:
+                    - img [ref=e1346]
+                - generic [ref=e1349]:
+                  - heading "对等依赖" [level=4] [ref=e1350]
+                  - 'link "Permalink: 对等依赖" [ref=e1351] [cursor=pointer]':
+                    - /url: "#对等依赖"
+                    - img [ref=e1352]
+                - generic [ref=e1354]:
+                  - generic [ref=e1355]: npm install react react-dom react-markdown
+                  - button "Copy code to clipboard" [ref=e1357] [cursor=pointer]:
+                    - img [ref=e1358]
+                - generic [ref=e1361]:
+                  - heading "基础设置" [level=4] [ref=e1362]
+                  - 'link "Permalink: 基础设置" [ref=e1363] [cursor=pointer]':
+                    - /url: "#基础设置"
+                    - img [ref=e1364]
+                - list [ref=e1366]:
+                  - listitem [ref=e1367]:
+                    - strong [ref=e1368]: 使用 StyleProvider 和 ThemeProvider 包裹应用
+                - generic [ref=e1369]:
+                  - generic [ref=e1370]: "import { StyleProvider, ThemeProvider, A2UIRoot } from '@zhama/a2ui-react'; function App() { return ( <StyleProvider> <ThemeProvider> <div className=\"a2ui-root\">{/* 你的 A2UI 组件 */}</div> </ThemeProvider> </StyleProvider> ); }"
+                  - button "Copy code to clipboard" [ref=e1372] [cursor=pointer]:
+                    - img [ref=e1373]
+                - blockquote [ref=e1376]:
+                  - paragraph [ref=e1377]:
+                    - text: 💡
+                    - strong [ref=e1378]: 注意：
+                    - code [ref=e1379]: StyleProvider
+                    - text: 会自动注入 A2UI 的 CSS 工具类。
+                    - code [ref=e1380]: a2ui-root
+                    - text: 类会应用基础样式和 CSS 变量。
+                - list [ref=e1381]:
+                  - listitem [ref=e1382]:
+                    - strong [ref=e1383]: 使用 A2UIRoot 组件
+                - generic [ref=e1384]:
+                  - generic [ref=e1385]: "import { A2UIRoot } from '@zhama/a2ui-react'; import type { AnyComponentNode } from '@zhama/a2ui/types'; function App() { const components: AnyComponentNode[] = [ { id: 'text-1', type: 'Text', properties: { text: { literal: 'Hello from A2UI!' }, usageHint: { literal: 'h1' }, }, }, { id: 'button-1', type: 'Button', properties: { child: { id: 'btn-text', type: 'Text', properties: { text: { literal: '点击我' }, }, }, action: { type: 'postback', payload: 'button_clicked', }, }, }, ]; const handleAction = (event) => { console.log('动作触发:', event); }; return ( <A2UIRoot childComponents={components} processor={null} surfaceId={null} onAction={handleAction} /> ); }"
+                  - button "Copy code to clipboard" [ref=e1387] [cursor=pointer]:
+                    - img [ref=e1388]
+                - generic [ref=e1391]:
+                  - heading "📦 包导出" [level=3] [ref=e1392]
+                  - 'link "Permalink: 📦 包导出" [ref=e1393] [cursor=pointer]':
+                    - /url: "#-包导出"
+                    - img [ref=e1394]
+                - paragraph [ref=e1396]: 库提供多个入口点用于不同用例：
+                - generic [ref=e1397]:
+                  - generic [ref=e1398]: "// 主入口 - 所有内容 import { A2UIRoot, createButton, createText } from '@zhama/a2ui-react'; // 仅类型定义 import type { AnyComponentNode, ButtonNode } from '@zhama/a2ui/types'; // 数据工具 import { A2UIRegistry } from '@zhama/a2ui/data'; // 事件类型 import type { A2UIAction } from '@zhama/a2ui/events'; // 样式 import '@zhama/a2ui/styles'; // 单独的 UI 组件 import { Button, Card, List } from '@zhama/a2ui/ui'; // Context 提供者 import { A2UIProvider, useA2UI } from '@zhama/a2ui/context';"
+                  - button "Copy code to clipboard" [ref=e1400] [cursor=pointer]:
+                    - img [ref=e1401]
+                - generic [ref=e1404]:
+                  - heading "🎨 主题化" [level=3] [ref=e1405]
+                  - 'link "Permalink: 🎨 主题化" [ref=e1406] [cursor=pointer]':
+                    - /url: "#-主题化"
+                    - img [ref=e1407]
+                - paragraph [ref=e1409]: A2UI 自带可定制的主题系统：
+                - generic [ref=e1410]:
+                  - generic [ref=e1411]: "import { ThemeProvider, createTheme } from '@zhama/a2ui-react'; const customTheme = createTheme({ components: { Button: { 'a2-bgc-p40': true, // 自定义按钮背景 'a2-br-4': true, // 更大圆角 }, Card: { 'a2-shadow-lg': true, // 更大阴影 }, }, }); function App() { return ( <ThemeProvider theme={customTheme}> <YourApp /> </ThemeProvider> ); }"
+                  - button "Copy code to clipboard" [ref=e1413] [cursor=pointer]:
+                    - img [ref=e1414]
+                - generic [ref=e1417]:
+                  - heading "🎨 样式系统" [level=3] [ref=e1418]
+                  - 'link "Permalink: 🎨 样式系统" [ref=e1419] [cursor=pointer]':
+                    - /url: "#-样式系统"
+                    - img [ref=e1420]
+                - paragraph [ref=e1422]: A2UI 使用独立的 CSS 工具类系统，不依赖 Tailwind CSS。
+                - generic [ref=e1423]:
+                  - heading "类名规范" [level=4] [ref=e1424]
+                  - 'link "Permalink: 类名规范" [ref=e1425] [cursor=pointer]':
+                    - /url: "#类名规范"
+                    - img [ref=e1426]
+                - paragraph [ref=e1428]:
+                  - text: 所有样式类使用
+                  - code [ref=e1429]: a2-
+                  - text: 前缀：
+                - table [ref=e1431]:
+                  - rowgroup [ref=e1432]:
+                    - row "类别 前缀 示例" [ref=e1433]:
+                      - columnheader "类别" [ref=e1434]
+                      - columnheader "前缀" [ref=e1435]
+                      - columnheader "示例" [ref=e1436]
+                  - rowgroup [ref=e1437]:
+                    - row "Layout a2-p-*, a2-m-*, a2-gap-* a2-p-4, a2-mx-2, a2-gap-2" [ref=e1438]:
+                      - cell "Layout" [ref=e1439]
+                      - cell "a2-p-*, a2-m-*, a2-gap-*" [ref=e1440]:
+                        - code [ref=e1441]: a2-p-*
+                        - text: ","
+                        - code [ref=e1442]: a2-m-*
+                        - text: ","
+                        - code [ref=e1443]: a2-gap-*
+                      - cell "a2-p-4, a2-mx-2, a2-gap-2" [ref=e1444]:
+                        - code [ref=e1445]: a2-p-4
+                        - text: ","
+                        - code [ref=e1446]: a2-mx-2
+                        - text: ","
+                        - code [ref=e1447]: a2-gap-2
+                    - row "Display a2-dsp-* a2-dsp-flex, a2-dsp-grid" [ref=e1448]:
+                      - cell "Display" [ref=e1449]
+                      - cell "a2-dsp-*" [ref=e1450]:
+                        - code [ref=e1451]: a2-dsp-*
+                      - cell "a2-dsp-flex, a2-dsp-grid" [ref=e1452]:
+                        - code [ref=e1453]: a2-dsp-flex
+                        - text: ","
+                        - code [ref=e1454]: a2-dsp-grid
+                    - row "Flex a2-flex-*, a2-al-*, a2-jc-* a2-flex-1, a2-al-center" [ref=e1455]:
+                      - cell "Flex" [ref=e1456]
+                      - cell "a2-flex-*, a2-al-*, a2-jc-*" [ref=e1457]:
+                        - code [ref=e1458]: a2-flex-*
+                        - text: ","
+                        - code [ref=e1459]: a2-al-*
+                        - text: ","
+                        - code [ref=e1460]: a2-jc-*
+                      - cell "a2-flex-1, a2-al-center" [ref=e1461]:
+                        - code [ref=e1462]: a2-flex-1
+                        - text: ","
+                        - code [ref=e1463]: a2-al-center
+                    - row "Colors a2-c-*, a2-bgc-*, a2-bc-* a2-c-p50, a2-bgc-n0" [ref=e1464]:
+                      - cell "Colors" [ref=e1465]
+                      - cell "a2-c-*, a2-bgc-*, a2-bc-*" [ref=e1466]:
+                        - code [ref=e1467]: a2-c-*
+                        - text: ","
+                        - code [ref=e1468]: a2-bgc-*
+                        - text: ","
+                        - code [ref=e1469]: a2-bc-*
+                      - cell "a2-c-p50, a2-bgc-n0" [ref=e1470]:
+                        - code [ref=e1471]: a2-c-p50
+                        - text: ","
+                        - code [ref=e1472]: a2-bgc-n0
+                    - row "Typography a2-font-*, a2-fw-*, a2-text-* a2-font-sans, a2-fw-500" [ref=e1473]:
+                      - cell "Typography" [ref=e1474]
+                      - cell "a2-font-*, a2-fw-*, a2-text-*" [ref=e1475]:
+                        - code [ref=e1476]: a2-font-*
+                        - text: ","
+                        - code [ref=e1477]: a2-fw-*
+                        - text: ","
+                        - code [ref=e1478]: a2-text-*
+                      - cell "a2-font-sans, a2-fw-500" [ref=e1479]:
+                        - code [ref=e1480]: a2-font-sans
+                        - text: ","
+                        - code [ref=e1481]: a2-fw-500
+                    - row "Border a2-br-*, a2-bw-*, a2-bs-* a2-br-4, a2-bw-1" [ref=e1482]:
+                      - cell "Border" [ref=e1483]
+                      - cell "a2-br-*, a2-bw-*, a2-bs-*" [ref=e1484]:
+                        - code [ref=e1485]: a2-br-*
+                        - text: ","
+                        - code [ref=e1486]: a2-bw-*
+                        - text: ","
+                        - code [ref=e1487]: a2-bs-*
+                      - cell "a2-br-4, a2-bw-1" [ref=e1488]:
+                        - code [ref=e1489]: a2-br-4
+                        - text: ","
+                        - code [ref=e1490]: a2-bw-1
+                    - row "Behavior a2-opacity-*, a2-shadow-* a2-opacity-80, a2-shadow-md" [ref=e1491]:
+                      - cell "Behavior" [ref=e1492]
+                      - cell "a2-opacity-*, a2-shadow-*" [ref=e1493]:
+                        - code [ref=e1494]: a2-opacity-*
+                        - text: ","
+                        - code [ref=e1495]: a2-shadow-*
+                      - cell "a2-opacity-80, a2-shadow-md" [ref=e1496]:
+                        - code [ref=e1497]: a2-opacity-80
+                        - text: ","
+                        - code [ref=e1498]: a2-shadow-md
+                - generic [ref=e1499]:
+                  - heading "颜色系统" [level=4] [ref=e1500]
+                  - 'link "Permalink: 颜色系统" [ref=e1501] [cursor=pointer]':
+                    - /url: "#颜色系统"
+                    - img [ref=e1502]
+                - paragraph [ref=e1504]: 使用 OKLCH 色彩空间，支持 6 个调色板：
+                - table [ref=e1506]:
+                  - rowgroup [ref=e1507]:
+                    - row "前缀 说明" [ref=e1508]:
+                      - columnheader "前缀" [ref=e1509]
+                      - columnheader "说明" [ref=e1510]
+                  - rowgroup [ref=e1511]:
+                    - row "p Primary - 主色调" [ref=e1512]:
+                      - cell "p" [ref=e1513]:
+                        - code [ref=e1514]: p
+                      - cell "Primary - 主色调" [ref=e1515]
+                    - row "s Secondary - 次要色" [ref=e1516]:
+                      - cell "s" [ref=e1517]:
+                        - code [ref=e1518]: s
+                      - cell "Secondary - 次要色" [ref=e1519]
+                    - row "t Tertiary - 第三色" [ref=e1520]:
+                      - cell "t" [ref=e1521]:
+                        - code [ref=e1522]: t
+                      - cell "Tertiary - 第三色" [ref=e1523]
+                    - row "n Neutral - 中性灰色" [ref=e1524]:
+                      - cell "n" [ref=e1525]:
+                        - code [ref=e1526]: "n"
+                      - cell "Neutral - 中性灰色" [ref=e1527]
+                    - row "nv Neutral Variant - 中性变体" [ref=e1528]:
+                      - cell "nv" [ref=e1529]:
+                        - code [ref=e1530]: nv
+                      - cell "Neutral Variant - 中性变体" [ref=e1531]
+                    - row "e Error - 错误色" [ref=e1532]:
+                      - cell "e" [ref=e1533]:
+                        - code [ref=e1534]: e
+                      - cell "Error - 错误色" [ref=e1535]
+                - paragraph [ref=e1536]: 色阶：0 (最亮) ~ 100 (最暗)
+                - generic [ref=e1537]:
+                  - generic [ref=e1538]: "/* 示例 */ .a2-c-p50 { /* 主色 50% */ } .a2-bgc-n0 { /* 白色背景 */ } .a2-bc-e40 { /* 错误色边框 */ }"
+                  - button "Copy code to clipboard" [ref=e1540] [cursor=pointer]:
+                    - img [ref=e1541]
+                - generic [ref=e1544]:
+                  - heading "手动注入样式" [level=4] [ref=e1545]
+                  - 'link "Permalink: 手动注入样式" [ref=e1546] [cursor=pointer]':
+                    - /url: "#手动注入样式"
+                    - img [ref=e1547]
+                - paragraph [ref=e1549]: 对于 SSR 或特殊场景：
+                - generic [ref=e1550]:
+                  - generic [ref=e1551]: "import { getStylesCSS } from '@zhama/a2ui-react'; // 获取完整 CSS 字符串 const css = getStylesCSS(); // 注入到 head const style = document.createElement('style'); style.textContent = css; document.head.appendChild(style);"
+                  - button "Copy code to clipboard" [ref=e1553] [cursor=pointer]:
+                    - img [ref=e1554]
+                - generic [ref=e1557]:
+                  - heading "🧩 可用组件" [level=3] [ref=e1558]
+                  - 'link "Permalink: 🧩 可用组件" [ref=e1559] [cursor=pointer]':
+                    - /url: "#-可用组件"
+                    - img [ref=e1560]
+                - table [ref=e1563]:
+                  - rowgroup [ref=e1564]:
+                    - row "组件 描述 使用场景" [ref=e1565]:
+                      - columnheader "组件" [ref=e1566]
+                      - columnheader "描述" [ref=e1567]
+                      - columnheader "使用场景" [ref=e1568]
+                  - rowgroup [ref=e1569]:
+                    - row "Text 支持 markdown 的格式化文本渲染 标题、段落、说明文字" [ref=e1570]:
+                      - cell "Text" [ref=e1571]:
+                        - strong [ref=e1572]: Text
+                      - cell "支持 markdown 的格式化文本渲染" [ref=e1573]
+                      - cell "标题、段落、说明文字" [ref=e1574]
+                    - row "Button 支持动作的交互按钮 用户操作、导航" [ref=e1575]:
+                      - cell "Button" [ref=e1576]:
+                        - strong [ref=e1577]: Button
+                      - cell "支持动作的交互按钮" [ref=e1578]
+                      - cell "用户操作、导航" [ref=e1579]
+                    - row "Card 分组内容的容器 内容分组、布局" [ref=e1580]:
+                      - cell "Card" [ref=e1581]:
+                        - strong [ref=e1582]: Card
+                      - cell "分组内容的容器" [ref=e1583]
+                      - cell "内容分组、布局" [ref=e1584]
+                    - row "List 垂直或水平列表布局 多项目展示" [ref=e1585]:
+                      - cell "List" [ref=e1586]:
+                        - strong [ref=e1587]: List
+                      - cell "垂直或水平列表布局" [ref=e1588]
+                      - cell "多项目展示" [ref=e1589]
+                    - row "Row 水平布局容器 并排元素" [ref=e1590]:
+                      - cell "Row" [ref=e1591]:
+                        - strong [ref=e1592]: Row
+                      - cell "水平布局容器" [ref=e1593]
+                      - cell "并排元素" [ref=e1594]
+                    - row "Column 垂直布局容器 堆叠元素" [ref=e1595]:
+                      - cell "Column" [ref=e1596]:
+                        - strong [ref=e1597]: Column
+                      - cell "垂直布局容器" [ref=e1598]
+                      - cell "堆叠元素" [ref=e1599]
+                    - row "TextField 文本输入框 用户输入、表单" [ref=e1600]:
+                      - cell "TextField" [ref=e1601]:
+                        - strong [ref=e1602]: TextField
+                      - cell "文本输入框" [ref=e1603]
+                      - cell "用户输入、表单" [ref=e1604]
+                    - row "CheckBox 复选框输入 布尔选择" [ref=e1605]:
+                      - cell "CheckBox" [ref=e1606]:
+                        - strong [ref=e1607]: CheckBox
+                      - cell "复选框输入" [ref=e1608]
+                      - cell "布尔选择" [ref=e1609]
+                    - row "Image 图片显示 视觉内容" [ref=e1610]:
+                      - cell "Image" [ref=e1611]:
+                        - strong [ref=e1612]: Image
+                      - cell "图片显示" [ref=e1613]
+                      - cell "视觉内容" [ref=e1614]
+                    - row "Tabs 选项卡界面 多视图" [ref=e1615]:
+                      - cell "Tabs" [ref=e1616]:
+                        - strong [ref=e1617]: Tabs
+                      - cell "选项卡界面" [ref=e1618]
+                      - cell "多视图" [ref=e1619]
+                    - row "Surface 带高度的容器 模态对话框、面板" [ref=e1620]:
+                      - cell "Surface" [ref=e1621]:
+                        - strong [ref=e1622]: Surface
+                      - cell "带高度的容器" [ref=e1623]
+                      - cell "模态对话框、面板" [ref=e1624]
+                - generic [ref=e1625]:
+                  - heading "💼 使用场景" [level=3] [ref=e1626]
+                  - 'link "Permalink: 💼 使用场景" [ref=e1627] [cursor=pointer]':
+                    - /url: "#-使用场景"
+                    - img [ref=e1628]
+                - paragraph [ref=e1630]: A2UI 非常适合 AI 智能体需要提供丰富交互体验的场景：
+                - generic [ref=e1631]:
+                  - heading "🎓 AI 培训与教育" [level=4] [ref=e1632]:
+                    - text: 🎓
+                    - strong [ref=e1633]: AI 培训与教育
+                  - 'link "Permalink: 🎓 AI 培训与教育" [ref=e1634] [cursor=pointer]':
+                    - /url: "#-ai-培训与教育"
+                    - img [ref=e1635]
+                - list [ref=e1637]:
+                  - listitem [ref=e1638]: 动态课程内容生成
+                  - listitem [ref=e1639]: 交互式测验和评估
+                  - listitem [ref=e1640]: 个性化学习路径
+                  - listitem [ref=e1641]: 进度追踪仪表板
+                - generic [ref=e1642]:
+                  - heading "🤖 对话式 AI 助手" [level=4] [ref=e1643]:
+                    - text: 🤖
+                    - strong [ref=e1644]: 对话式 AI 助手
+                  - 'link "Permalink: 🤖 对话式 AI 助手" [ref=e1645] [cursor=pointer]':
+                    - /url: "#-对话式-ai-助手"
+                    - img [ref=e1646]
+                - list [ref=e1648]:
+                  - listitem [ref=e1649]: 带表单填写的客户支持
+                  - listitem [ref=e1650]: 带卡片的产品推荐
+                  - listitem [ref=e1651]: 多步骤工作流程
+                  - listitem [ref=e1652]: 数据可视化
+                - generic [ref=e1653]:
+                  - heading "📊 商业应用" [level=4] [ref=e1654]:
+                    - text: 📊
+                    - strong [ref=e1655]: 商业应用
+                  - 'link "Permalink: 📊 商业应用" [ref=e1656] [cursor=pointer]':
+                    - /url: "#-商业应用"
+                    - img [ref=e1657]
+                - list [ref=e1659]:
+                  - listitem [ref=e1660]: 带图表的报告生成
+                  - listitem [ref=e1661]: 数据录入表单
+                  - listitem [ref=e1662]: 审批工作流程
+                  - listitem [ref=e1663]: 仪表板创建
+                - generic [ref=e1664]:
+                  - heading "🛠️ 开发工具" [level=4] [ref=e1665]:
+                    - text: 🛠️
+                    - strong [ref=e1666]: 开发工具
+                  - 'link "Permalink: 🛠️ 开发工具" [ref=e1667] [cursor=pointer]':
+                    - /url: "#️-开发工具"
+                    - img [ref=e1668]
+                - list [ref=e1670]:
+                  - listitem [ref=e1671]: 带语法高亮的代码生成
+                  - listitem [ref=e1672]: 交互式文档
+                  - listitem [ref=e1673]: 配置向导
+                  - listitem [ref=e1674]: 调试界面
+                - generic [ref=e1675]:
+                  - heading "🏗️ 架构" [level=3] [ref=e1676]
+                  - 'link "Permalink: 🏗️ 架构" [ref=e1677] [cursor=pointer]':
+                    - /url: "#️-架构"
+                    - img [ref=e1678]
+                - paragraph [ref=e1680]: A2UI 采用受现代 AI 应用启发的两层架构：
+                - list [ref=e1681]:
+                  - listitem [ref=e1682]:
+                    - paragraph [ref=e1683]:
+                      - strong [ref=e1684]: ContentModel 层
+                      - text: （高级语义）
+                    - list [ref=e1685]:
+                      - listitem [ref=e1686]: 基于场景的内容结构（欢迎、学习、练习等）
+                      - listitem [ref=e1687]: 业务逻辑表示
+                      - listitem [ref=e1688]: LLM 友好格式 - AI 输出有意义的场景，而非 UI 组件
+                      - listitem [ref=e1689]: 易于理解和修改
+                  - listitem [ref=e1690]:
+                    - paragraph [ref=e1691]:
+                      - strong [ref=e1692]: A2UI 协议层
+                      - text: （低级 UI）
+                    - list [ref=e1693]:
+                      - listitem [ref=e1694]: ComponentNode 结构（Button、Card、List 等）
+                      - listitem [ref=e1695]: UI 渲染规范
+                      - listitem [ref=e1696]: 框架实现
+                      - listitem [ref=e1697]: 为渲染优化
+                - paragraph [ref=e1698]:
+                  - strong [ref=e1699]: 流程：
+                - generic [ref=e1700]:
+                  - code [ref=e1702]: "┌─────────────┐ ┌──────────────┐ ┌─────────────┐ ┌──────────┐ │ LLM 输出 │ → │ ContentModel │ → │ 场景 │ → │ A2UI UI │ │ (JSON) │ │ (语义) │ │ 渲染器 │ │ (React) │ └─────────────┘ └──────────────┘ └─────────────┘ └──────────┘ ↓ ↓ 场景: \"welcome\" ComponentNodes 主题: [...] [Card, Button, ...]"
+                  - button "Copy code to clipboard" [ref=e1704] [cursor=pointer]:
+                    - img [ref=e1705]
+                - paragraph [ref=e1708]:
+                  - strong [ref=e1709]: 优势：
+                - list [ref=e1710]:
+                  - listitem [ref=e1711]:
+                    - text: ✅
+                    - strong [ref=e1712]: 关注点分离
+                    - text: ": LLM 专注于内容，而非 UI 细节"
+                  - listitem [ref=e1713]:
+                    - text: ✅
+                    - strong [ref=e1714]: 灵活性
+                    - text: ": 更改 UI 渲染而无需更改 LLM 提示词"
+                  - listitem [ref=e1715]:
+                    - text: ✅
+                    - strong [ref=e1716]: 可测试性
+                    - text: ": 独立测试内容逻辑和 UI"
+                  - listitem [ref=e1717]:
+                    - text: ✅
+                    - strong [ref=e1718]: 可维护性
+                    - text: ": 更容易更新和扩展"
+                - generic [ref=e1719]:
+                  - heading "📚 示例" [level=3] [ref=e1720]
+                  - 'link "Permalink: 📚 示例" [ref=e1721] [cursor=pointer]':
+                    - /url: "#-示例"
+                    - img [ref=e1722]
+                - paragraph [ref=e1724]:
+                  - text: 查看
+                  - code [ref=e1725]: /examples
+                  - text: 目录获取完整示例：
+                - list [ref=e1726]:
+                  - listitem [ref=e1727]:
+                    - strong [ref=e1728]: basic-demo
+                    - text: ": 展示所有 A2UI 功能的完整演示"
+                  - listitem [ref=e1729]: 包含 7 个不同场景（欢迎、学习、练习、反馈、进度、对话）
+                  - listitem [ref=e1730]: 带动作处理的交互组件
+                  - listitem [ref=e1731]: ContentModel 到 ComponentNode 的渲染流程
+                - paragraph [ref=e1732]: 运行示例：
+                - generic [ref=e1733]:
+                  - generic [ref=e1734]: cd examples/basic-demo npm install npm run dev
+                  - button "Copy code to clipboard" [ref=e1736] [cursor=pointer]:
+                    - img [ref=e1737]
+                - generic [ref=e1740]:
+                  - heading "🛠️ 开发" [level=3] [ref=e1741]
+                  - 'link "Permalink: 🛠️ 开发" [ref=e1742] [cursor=pointer]':
+                    - /url: "#️-开发"
+                    - img [ref=e1743]
+                - generic [ref=e1745]:
+                  - heading "设置" [level=4] [ref=e1746]
+                  - 'link "Permalink: 设置" [ref=e1747] [cursor=pointer]':
+                    - /url: "#设置"
+                    - img [ref=e1748]
+                - generic [ref=e1750]:
+                  - generic [ref=e1751]:
+                    - generic [ref=e1752]: "# 安装依赖"
+                    - text: pnpm install
+                    - generic [ref=e1753]: "# 构建库"
+                    - text: pnpm run build
+                    - generic [ref=e1754]: "# 运行类型检查"
+                    - text: pnpm run type-check
+                    - generic [ref=e1755]: "# 代码检查"
+                    - text: pnpm run lint
+                    - generic [ref=e1756]: "# 格式化代码"
+                    - text: pnpm run format
+                  - button "Copy code to clipboard" [ref=e1758] [cursor=pointer]:
+                    - img [ref=e1759]
+                - generic [ref=e1762]:
+                  - heading "项目结构" [level=4] [ref=e1763]
+                  - 'link "Permalink: 项目结构" [ref=e1764] [cursor=pointer]':
+                    - /url: "#项目结构"
+                    - img [ref=e1765]
+                - generic [ref=e1767]:
+                  - code [ref=e1769]: "zhama/a2ui/ ├── src/ │ ├── types/ # TypeScript 类型定义 │ ├── data/ # 数据结构和工具 │ ├── events/ # 事件处理 │ ├── ui/ # React 组件 │ ├── context/ # React context 提供者 │ ├── styles/ # CSS 和主题定义 │ └── index.ts # 主入口点 ├── examples/ # 示例应用 │ └── basic-demo/ # 完整功能演示 ├── dist/ # 构建输出 └── README.md"
+                  - button "Copy code to clipboard" [ref=e1771] [cursor=pointer]:
+                    - img [ref=e1772]
+                - generic [ref=e1775]:
+                  - heading "🤝 贡献" [level=3] [ref=e1776]
+                  - 'link "Permalink: 🤝 贡献" [ref=e1777] [cursor=pointer]':
+                    - /url: "#-贡献"
+                    - img [ref=e1778]
+                - paragraph [ref=e1780]: 我们欢迎贡献！请遵循以下指南：
+                - list [ref=e1781]:
+                  - listitem [ref=e1782]:
+                    - strong [ref=e1783]: Fork
+                    - text: 仓库
+                  - listitem [ref=e1784]:
+                    - strong [ref=e1785]: 创建
+                    - text: 特性分支 (
+                    - code [ref=e1786]: git checkout -b feature/amazing-feature
+                    - text: )
+                  - listitem [ref=e1787]:
+                    - strong [ref=e1788]: 提交
+                    - text: 你的更改 (
+                    - code [ref=e1789]: git commit -m 'Add amazing feature'
+                    - text: )
+                  - listitem [ref=e1790]:
+                    - strong [ref=e1791]: 推送
+                    - text: 到分支 (
+                    - code [ref=e1792]: git push origin feature/amazing-feature
+                    - text: )
+                  - listitem [ref=e1793]:
+                    - strong [ref=e1794]: 打开
+                    - text: Pull Request
+                - generic [ref=e1795]:
+                  - heading "开发指南" [level=4] [ref=e1796]
+                  - 'link "Permalink: 开发指南" [ref=e1797] [cursor=pointer]':
+                    - /url: "#开发指南"
+                    - img [ref=e1798]
+                - list [ref=e1800]:
+                  - listitem [ref=e1801]: 编写清晰、自文档化的代码
+                  - listitem [ref=e1802]: 遵循现有代码风格（由 ESLint/Prettier 强制执行）
+                  - listitem [ref=e1803]: 为新功能添加测试
+                  - listitem [ref=e1804]: 根据需要更新文档
+                  - listitem [ref=e1805]: 提交 PR 前确保所有测试通过
+                - generic [ref=e1806]:
+                  - heading "📄 许可证" [level=3] [ref=e1807]
+                  - 'link "Permalink: 📄 许可证" [ref=e1808] [cursor=pointer]':
+                    - /url: "#-许可证"
+                    - img [ref=e1809]
+                - paragraph [ref=e1811]:
+                  - text: 本项目采用 MIT 许可证 - 详见
+                  - link "LICENSE" [ref=e1812] [cursor=pointer]:
+                    - /url: /zhama-ai/a2ui-react/blob/main/LICENSE
+                  - text: 文件。
+                - generic [ref=e1813]:
+                  - heading "🙏 致谢" [level=3] [ref=e1814]
+                  - 'link "Permalink: 🙏 致谢" [ref=e1815] [cursor=pointer]':
+                    - /url: "#-致谢"
+                    - img [ref=e1816]
+                - list [ref=e1818]:
+                  - listitem [ref=e1819]:
+                    - text: 受
+                    - link "Google 的 A2UI 协议" [ref=e1820] [cursor=pointer]:
+                      - /url: https://developers.google.com/assistant/conversational/a2ui
+                    - text: 启发
+                  - listitem [ref=e1821]:
+                    - text: 使用
+                    - link "React" [ref=e1822] [cursor=pointer]:
+                      - /url: https://reactjs.org/
+                    - text: 和
+                    - link "TypeScript" [ref=e1823] [cursor=pointer]:
+                      - /url: https://www.typescriptlang.org/
+                    - text: 构建
+                - generic [ref=e1824]:
+                  - heading "📞 支持" [level=3] [ref=e1825]
+                  - 'link "Permalink: 📞 支持" [ref=e1826] [cursor=pointer]':
+                    - /url: "#-支持"
+                    - img [ref=e1827]
+                - list [ref=e1829]:
+                  - listitem [ref=e1830]:
+                    - text: 🐛
+                    - strong [ref=e1831]: 问题反馈
+                    - text: ":"
+                    - link "GitHub Issues" [ref=e1832] [cursor=pointer]:
+                      - /url: https://github.com/zhama-ai/a2ui-react/issues
+                  - listitem [ref=e1833]:
+                    - text: 💬
+                    - strong [ref=e1834]: 讨论
+                    - text: ":"
+                    - link "GitHub Discussions" [ref=e1835] [cursor=pointer]:
+                      - /url: https://github.com/zhama-ai/a2ui-react/discussions
+                  - listitem [ref=e1836]:
+                    - text: 📧
+                    - strong [ref=e1837]: 邮箱
+                    - text: ":"
+                    - link "support@zhama.com" [ref=e1838] [cursor=pointer]:
+                      - /url: mailto:support@zhama.com
+                - generic [ref=e1839]:
+                  - heading "❓ 常见问题" [level=3] [ref=e1840]
+                  - 'link "Permalink: ❓ 常见问题" [ref=e1841] [cursor=pointer]':
+                    - /url: "#-常见问题"
+                    - img [ref=e1842]
+                - group [ref=e1844]:
+                  - generic "A2UI 和普通 React 组件有什么区别？" [ref=e1845] [cursor=pointer]
+                - group [ref=e1846]:
+                  - generic "可以不使用 AI / LLM 就使用 A2UI 吗？" [ref=e1847] [cursor=pointer]
+                - group [ref=e1848]:
+                  - generic "这和 shadcn/ui 或其他组件库相比如何？" [ref=e1849] [cursor=pointer]
+                - group [ref=e1850]:
+                  - generic "哪些 LLM 模型最适合 A2UI？" [ref=e1851] [cursor=pointer]
+                - group [ref=e1852]:
+                  - generic "可以自定义样式吗？" [ref=e1853] [cursor=pointer]
+                - group [ref=e1854]:
+                  - generic "这个库生产可用吗？" [ref=e1855] [cursor=pointer]
+                - separator [ref=e1856]
+                - generic [ref=e1857]:
+                  - paragraph [ref=e1858]:
+                    - text: Made with ❤️ by
+                    - link "Zhama AI" [ref=e1859] [cursor=pointer]:
+                      - /url: https://zhama.com
+                  - paragraph [ref=e1860]:
+                    - strong [ref=e1861]: 如果你觉得有帮助，请给个 Star ⭐！
+        - generic [ref=e1865]:
+          - generic [ref=e1868]:
+            - heading "About" [level=2] [ref=e1869]
+            - paragraph [ref=e1870]: 🤖 A2UI Protocol React Implementation | AI 驱动的动态 UI 协议 Enable AI agents to generate rich, interactive user interfaces through structured JSON. Transform LLM outputs into beautiful UIs instead of plain text responses. 让 AI 智能体通过结构化 JSON 生成丰富的交互式用户界面，将 LLM 输出转化为精美 UI。
+            - generic [ref=e1871]:
+              - img [ref=e1872]
+              - link "www.zhama.com" [ref=e1875] [cursor=pointer]:
+                - /url: https://www.zhama.com
+            - heading "Topics" [level=3] [ref=e1876]
+            - generic [ref=e1878]:
+              - link "agent" [ref=e1879] [cursor=pointer]:
+                - /url: /topics/agent
+              - link "generative-ui" [ref=e1880] [cursor=pointer]:
+                - /url: /topics/generative-ui
+              - link "ag-ui" [ref=e1881] [cursor=pointer]:
+                - /url: /topics/ag-ui
+              - link "a2ui" [ref=e1882] [cursor=pointer]:
+                - /url: /topics/a2ui
+              - link "react-a2ui" [ref=e1883] [cursor=pointer]:
+                - /url: /topics/react-a2ui
+            - heading "Resources" [level=3] [ref=e1884]
+            - link "Readme" [ref=e1886] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+              - img [ref=e1887]
+              - text: Readme
+            - heading "License" [level=3] [ref=e1889]
+            - link "MIT license" [ref=e1891] [cursor=pointer]:
+              - /url: "#MIT-1-ov-file"
+              - img [ref=e1892]
+              - text: MIT license
+            - heading "Code of conduct" [level=3] [ref=e1894]
+            - link "Code of conduct" [ref=e1896] [cursor=pointer]:
+              - /url: "#coc-ov-file"
+              - img [ref=e1897]
+              - text: Code of conduct
+            - heading "Contributing" [level=3] [ref=e1899]
+            - link "Contributing" [ref=e1901] [cursor=pointer]:
+              - /url: "#contributing-ov-file"
+              - img [ref=e1902]
+              - text: Contributing
+            - heading "Security policy" [level=3] [ref=e1904]
+            - link "Security policy" [ref=e1906] [cursor=pointer]:
+              - /url: "#security-ov-file"
+              - img [ref=e1907]
+              - text: Security policy
+            - link "Activity" [ref=e1910] [cursor=pointer]:
+              - /url: /zhama-ai/a2ui-react/activity
+              - img [ref=e1911]
+              - text: Activity
+            - link "Custom properties" [ref=e1914] [cursor=pointer]:
+              - /url: /zhama-ai/a2ui-react/custom-properties
+              - img [ref=e1915]
+              - text: Custom properties
+            - heading "Stars" [level=3] [ref=e1917]
+            - link "16 stars" [ref=e1919] [cursor=pointer]:
+              - /url: /zhama-ai/a2ui-react/stargazers
+              - img [ref=e1920]
+              - strong [ref=e1922]: "16"
+              - text: stars
+            - heading "Watchers" [level=3] [ref=e1923]
+            - link "0 watching" [ref=e1925] [cursor=pointer]:
+              - /url: /zhama-ai/a2ui-react/watchers
+              - img [ref=e1926]
+              - strong [ref=e1928]: "0"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e1929]
+            - link "0 forks" [ref=e1931] [cursor=pointer]:
+              - /url: /zhama-ai/a2ui-react/forks
+              - img [ref=e1932]
+              - strong [ref=e1934]: "0"
+              - text: forks
+            - link "Report repository" [ref=e1936] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fzhama-ai%2Fa2ui-react&report=zhama-ai+%28user%29
+          - generic [ref=e1938]:
+            - heading "Releases 2" [level=2] [ref=e1939]:
+              - link "Releases 2" [ref=e1940] [cursor=pointer]:
+                - /url: /zhama-ai/a2ui-react/releases
+                - text: Releases
+                - generic "2" [ref=e1941]
+            - link "Release-v0.10.5 Latest Dec 25, 2025on Dec 25, 2025" [ref=e1942] [cursor=pointer]:
+              - /url: /zhama-ai/a2ui-react/releases/tag/0.10.5
+              - img [ref=e1943]
+              - generic [ref=e1945]:
+                - generic [ref=e1946]:
+                  - generic [ref=e1947]: Release-v0.10.5
+                  - 'generic "Label: Latest" [ref=e1948]': Latest
+                - generic [ref=e1949]: Dec 25, 2025on Dec 25, 2025
+            - link "+ 1 release" [ref=e1951] [cursor=pointer]:
+              - /url: /zhama-ai/a2ui-react/releases
+          - generic [ref=e1953]:
+            - heading "Packages" [level=2] [ref=e1954]:
+              - link "Packages" [ref=e1955] [cursor=pointer]:
+                - /url: /orgs/zhama-ai/packages?repo_name=a2ui-react
+            - generic [ref=e1956]: No packages published
+          - generic [ref=e1958]:
+            - heading "Contributors 2" [level=2] [ref=e1959]:
+              - link "Contributors 2" [ref=e1960] [cursor=pointer]:
+                - /url: /zhama-ai/a2ui-react/graphs/contributors
+                - text: Contributors
+                - generic "2" [ref=e1961]
+            - list [ref=e1962]:
+              - listitem [ref=e1963]:
+                - link "@zhama-tech" [ref=e1964] [cursor=pointer]:
+                  - /url: https://github.com/zhama-tech
+                  - img "@zhama-tech" [ref=e1965]
+                - link "zhama-tech zhama-tech" [ref=e1967] [cursor=pointer]:
+                  - /url: https://github.com/zhama-tech
+                  - strong [ref=e1968]: zhama-tech
+                  - text: zhama-tech
+              - listitem [ref=e1969]:
+                - link "@cursoragent" [ref=e1970] [cursor=pointer]:
+                  - /url: https://github.com/cursoragent
+                  - img "@cursoragent" [ref=e1971]
+                - link "cursoragent Cursor Agent" [ref=e1973] [cursor=pointer]:
+                  - /url: https://github.com/cursoragent
+                  - strong [ref=e1974]: cursoragent
+                  - text: Cursor Agent
+          - generic [ref=e1976]:
+            - heading "Languages" [level=2] [ref=e1977]
+            - list [ref=e1982]:
+              - listitem [ref=e1983]:
+                - link "TypeScript 93.3%" [ref=e1984] [cursor=pointer]:
+                  - /url: /zhama-ai/a2ui-react/search?l=typescript
+                  - img [ref=e1985]
+                  - generic [ref=e1987]: TypeScript
+                  - generic [ref=e1988]: 93.3%
+              - listitem [ref=e1989]:
+                - link "JavaScript 6.7%" [ref=e1990] [cursor=pointer]:
+                  - /url: /zhama-ai/a2ui-react/search?l=javascript
+                  - img [ref=e1991]
+                  - generic [ref=e1993]: JavaScript
+                  - generic [ref=e1994]: 6.7%
+  - contentinfo [ref=e1996]:
+    - heading "Footer" [level=2] [ref=e1997]
+    - generic [ref=e1998]:
+      - generic [ref=e1999]:
+        - link "GitHub Homepage" [ref=e2000] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e2001]
+        - generic [ref=e2003]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e2004]:
+        - heading "Footer navigation" [level=3] [ref=e2005]
+        - list "Footer navigation" [ref=e2006]:
+          - listitem [ref=e2007]:
+            - link "Terms" [ref=e2008] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e2009]:
+            - link "Privacy" [ref=e2010] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e2011]:
+            - link "Security" [ref=e2012] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e2013]:
+            - link "Status" [ref=e2014] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e2015]:
+            - link "Community" [ref=e2016] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e2017]:
+            - link "Docs" [ref=e2018] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e2019]:
+            - link "Contact" [ref=e2020] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e2021]:
+            - button "Manage cookies" [ref=e2023] [cursor=pointer]
+          - listitem [ref=e2024]:
+            - button "Do not share my personal information" [ref=e2026] [cursor=pointer]

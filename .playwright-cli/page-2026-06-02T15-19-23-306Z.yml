@@ -1,0 +1,173 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "crates.io" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: crates.io
+      - search [ref=e8]:
+        - textbox "Search" [ref=e9]:
+          - /placeholder: Type 'S' or '/' to search
+        - button "Search" [ref=e10] [cursor=pointer]:
+          - generic [ref=e11]: Search
+      - navigation [ref=e13]:
+        - 'button "Change color scheme. Current: system" [ref=e16] [cursor=pointer]':
+          - generic [ref=e18]: "Change color scheme. Current: system"
+        - button "Log in with GitHub" [ref=e19] [cursor=pointer]: Log in with GitHub
+      - text: ▼
+  - main [ref=e21]:
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - heading "agui_core v0.3.0" [level=1] [ref=e24]:
+          - generic [ref=e25]: agui_core
+          - generic [ref=e26]: v0.3.0
+        - generic [ref=e27]: The core library of agui
+        - list [ref=e28]:
+          - listitem [ref=e29]:
+            - link "#gamedev" [ref=e30] [cursor=pointer]:
+              - /url: /keywords/gamedev
+          - listitem [ref=e31]:
+            - link "#gui" [ref=e32] [cursor=pointer]:
+              - /url: /keywords/gui
+      - navigation "agui_core crate subpages" [ref=e33]:
+        - list [ref=e34]:
+          - listitem [ref=e35]:
+            - link "Readme" [ref=e36] [cursor=pointer]:
+              - /url: /crates/agui_core/0.3.0
+          - listitem [ref=e37]:
+            - link "3 Versions" [ref=e38] [cursor=pointer]:
+              - /url: /crates/agui_core/versions
+          - listitem [ref=e39]:
+            - link "Dependencies" [ref=e40] [cursor=pointer]:
+              - /url: /crates/agui_core/0.3.0/dependencies
+          - listitem [ref=e41]:
+            - link "Dependents" [ref=e42] [cursor=pointer]:
+              - /url: /crates/agui_core/reverse_dependencies
+          - listitem [ref=e43]:
+            - link "Security" [ref=e44] [cursor=pointer]:
+              - /url: /crates/agui_core/security
+      - heading "Dependencies" [level=2] [ref=e45]
+      - list [ref=e46]:
+        - listitem [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: ^1.0
+            - generic [ref=e50]:
+              - link "cfg-if" [ref=e52] [cursor=pointer]:
+                - /url: /crates/cfg-if/range/^1.0
+              - generic [ref=e53]: "A macro to ergonomically define an item depending on a large number of #[cfg] parameters. Structured like an if-else chain, the first matching branch is the item that gets emitted."
+        - listitem [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: ^1.2
+            - generic [ref=e57]:
+              - link "downcast-rs" [ref=e59] [cursor=pointer]:
+                - /url: /crates/downcast-rs/range/^1.2
+              - generic [ref=e60]: Trait object downcasting support using only safe Rust. It supports type parameters, associated types, and type constraints.
+        - listitem [ref=e61]:
+          - generic [ref=e62]:
+            - generic [ref=e63]: ^0.2
+            - generic [ref=e64]:
+              - link "generational-arena" [ref=e66] [cursor=pointer]:
+                - /url: /crates/generational-arena/range/^0.2
+              - generic [ref=e67]: A safe arena allocator that supports deletion without suffering from the ABA problem by using generational indices.
+        - listitem [ref=e68]:
+          - generic [ref=e69]:
+            - generic [ref=e70]: ^0.4
+            - generic [ref=e71]:
+              - link "log" [ref=e73] [cursor=pointer]:
+                - /url: /crates/log/range/^0.4
+              - generic [ref=e74]: A lightweight logging facade for Rust
+        - listitem [ref=e75]:
+          - generic [ref=e76]:
+            - generic [ref=e77]: ^0.17
+            - generic [ref=e78]:
+              - link "lyon" [ref=e80] [cursor=pointer]:
+                - /url: /crates/lyon/range/^0.17
+              - generic [ref=e81]: 2D Graphics rendering on the GPU using tessellation.
+        - listitem [ref=e82]:
+          - generic [ref=e83]:
+            - generic [ref=e84]: ^0.2
+            - generic [ref=e85]:
+              - link "morphorm" [ref=e87] [cursor=pointer]:
+                - /url: /crates/morphorm/range/^0.2
+              - generic [ref=e88]: A UI layout engine
+        - listitem [ref=e89]:
+          - generic [ref=e90]:
+            - generic [ref=e91]: ^0.11
+            - generic [ref=e92]:
+              - link "parking_lot" [ref=e94] [cursor=pointer]:
+                - /url: /crates/parking_lot/range/^0.11
+              - generic [ref=e95]: More compact and efficient implementations of the standard synchronization primitives.
+        - listitem [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]: ^0.8
+            - generic [ref=e99]:
+              - link "rand" [ref=e101] [cursor=pointer]:
+                - /url: /crates/rand/range/^0.8
+              - generic [ref=e102]: Random number generators and other randomness functionality.
+  - contentinfo [ref=e103]:
+    - generic [ref=e104]:
+      - generic [ref=e105]:
+        - heading "Rust" [level=2] [ref=e106]
+        - list [ref=e107]:
+          - listitem [ref=e108]:
+            - link "rust-lang.org" [ref=e109] [cursor=pointer]:
+              - /url: https://www.rust-lang.org/
+          - listitem [ref=e110]:
+            - link "Rust Foundation" [ref=e111] [cursor=pointer]:
+              - /url: https://foundation.rust-lang.org/
+          - listitem [ref=e112]:
+            - link "The crates.io team" [ref=e113] [cursor=pointer]:
+              - /url: https://www.rust-lang.org/governance/teams/dev-tools#team-crates-io
+      - generic [ref=e114]:
+        - heading "Get Help" [level=2] [ref=e115]
+        - list [ref=e116]:
+          - listitem [ref=e117]:
+            - link "The Cargo Book" [ref=e118] [cursor=pointer]:
+              - /url: https://doc.rust-lang.org/cargo/
+          - listitem [ref=e119]:
+            - link "Support" [ref=e120] [cursor=pointer]:
+              - /url: /support
+          - listitem [ref=e121]:
+            - link "System Status" [ref=e122] [cursor=pointer]:
+              - /url: https://status.crates.io/
+          - listitem [ref=e123]:
+            - link "Report a bug" [ref=e124] [cursor=pointer]:
+              - /url: https://github.com/rust-lang/crates.io/issues/new/choose
+      - generic [ref=e125]:
+        - heading "Policies" [level=2] [ref=e126]
+        - list [ref=e127]:
+          - listitem [ref=e128]:
+            - link "Usage Policy" [ref=e129] [cursor=pointer]:
+              - /url: /policies
+          - listitem [ref=e130]:
+            - link "Security" [ref=e131] [cursor=pointer]:
+              - /url: /policies/security
+          - listitem [ref=e132]:
+            - link "Privacy Policy" [ref=e133] [cursor=pointer]:
+              - /url: https://foundation.rust-lang.org/policies/privacy-policy/
+          - listitem [ref=e134]:
+            - link "Code of Conduct" [ref=e135] [cursor=pointer]:
+              - /url: https://www.rust-lang.org/policies/code-of-conduct
+          - listitem [ref=e136]:
+            - link "Data Access" [ref=e137] [cursor=pointer]:
+              - /url: /data-access
+          - listitem [ref=e138]:
+            - link "Rate Limits" [ref=e139] [cursor=pointer]:
+              - /url: /docs/rate-limits
+      - generic [ref=e140]:
+        - heading "Social" [level=2] [ref=e141]
+        - list [ref=e142]:
+          - listitem [ref=e143]:
+            - 'link "GitHub: rust-lang/crates.io" [ref=e144] [cursor=pointer]':
+              - /url: https://github.com/rust-lang/crates.io/
+              - generic [ref=e146]: "GitHub:"
+              - text: rust-lang/crates.io
+          - listitem [ref=e147]:
+            - 'link "Zulip: #t-crates-io" [ref=e148] [cursor=pointer]':
+              - /url: https://rust-lang.zulipchat.com/#streams/318791/t-crates-io
+              - generic [ref=e150]: "Zulip:"
+              - text: "#t-crates-io"
+          - listitem [ref=e151]:
+            - 'link "X: @cratesiostatus" [ref=e152] [cursor=pointer]':
+              - /url: https://twitter.com/cratesiostatus
+              - generic [ref=e154]: "X:"
+              - text: "@cratesiostatus"

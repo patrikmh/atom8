@@ -1,0 +1,98 @@
+Total messages: 67 (Errors: 8, Warnings: 0)
+Returning 55 messages for level "info"
+
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:21550
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+ReferenceError: process is not defined
+    at log (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2098:7)
+    at DraggableCore.handleDragStart (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2139:11)
+    at DraggableCore.onMouseDown (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2208:23)
+    at HTMLUnknownElement.callCallback2 (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3674:22)
+    at Object.invokeGuardedCallbackDev (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3699:24)
+    at invokeGuardedCallback (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3736:33)
+    at executeDispatch (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7014:11)
+    at processDispatchQueueItemsInOrder (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7034:15)
+    at processDispatchQueue (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7043:13)
+ReferenceError: process is not defined
+    at log (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2098:7)
+    at DraggableCore.handleDragStart (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2139:11)
+    at DraggableCore.onMouseDown (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2208:23)
+    at HTMLUnknownElement.callCallback2 (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3674:22)
+    at Object.invokeGuardedCallbackDev (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3699:24)
+    at invokeGuardedCallback (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3736:33)
+    at executeDispatch (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7014:11)
+    at processDispatchQueueItemsInOrder (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7034:15)
+    at processDispatchQueue (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7043:13)
+[LOG] Widget 0 472px 288px translate(16px, 16px) @ :0
+[LOG] Widget 1 472px 288px translate(504px, 16px) @ :0
+[LOG] Widget 2 309px 212px translate(16px, 320px) @ :0
+ReferenceError: process is not defined
+    at log (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2098:7)
+    at DraggableCore.handleDragStart (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2139:11)
+    at DraggableCore.onMouseDown (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2208:23)
+    at HTMLUnknownElement.callCallback2 (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3674:22)
+    at Object.invokeGuardedCallbackDev (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3699:24)
+    at invokeGuardedCallback (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3736:33)
+    at executeDispatch (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7014:11)
+    at processDispatchQueueItemsInOrder (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7034:15)
+    at processDispatchQueue (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7043:13)
+ReferenceError: process is not defined
+    at log (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2098:7)
+    at DraggableCore.handleDragStart (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2139:11)
+    at DraggableCore.onMouseDown (http://192.168.0.108:3000/node_modules/.vite/deps/react-grid-layout.js?v=8505f435:2208:23)
+    at HTMLUnknownElement.callCallback2 (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3674:22)
+    at Object.invokeGuardedCallbackDev (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3699:24)
+    at invokeGuardedCallback (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:3736:33)
+    at executeDispatch (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7014:11)
+    at processDispatchQueueItemsInOrder (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7034:15)
+    at processDispatchQueue (http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:7043:13)
+[LOG] [vite] server connection lost. Polling for restart... @ http://192.168.0.108:3000/@vite/client:559
+[ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:3000/:0
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:21550
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:21550
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [vite] server connection lost. Polling for restart... @ http://192.168.0.108:3000/@vite/client:559
+[ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:3000/:0
+[ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:3000/:0
+[ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://192.168.0.108:3000/:0
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:21550
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:21550
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=8505f435:21550
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10

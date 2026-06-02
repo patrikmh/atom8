@@ -1,0 +1,1019 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - link "Homepage" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - navigation "Global" [ref=e16]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - button "Platform" [ref=e20] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e21]
+              - listitem [ref=e23]:
+                - button "Solutions" [ref=e25] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - button "Resources" [ref=e30] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e31]
+              - listitem [ref=e33]:
+                - button "Open Source" [ref=e35] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e36]
+              - listitem [ref=e38]:
+                - button "Enterprise" [ref=e40] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e41]
+              - listitem [ref=e43]:
+                - link "Pricing" [ref=e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+                  - generic [ref=e45]: Pricing
+          - generic [ref=e46]:
+            - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+            - link "Sign in" [ref=e54] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fvizia%2Fmorphorm
+            - link "Sign up" [ref=e55] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=vizia%2Fmorphorm
+            - button "Appearance settings" [ref=e58] [cursor=pointer]:
+              - img
+  - main [ref=e62]:
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e66]:
+          - img [ref=e67]
+          - link "vizia" [ref=e70] [cursor=pointer]:
+            - /url: /vizia
+          - generic [ref=e71]: /
+          - strong [ref=e72]:
+            - link "morphorm" [ref=e73] [cursor=pointer]:
+              - /url: /vizia/morphorm
+          - generic [ref=e74]: Public
+        - generic [ref=e75]:
+          - list:
+            - listitem [ref=e76]:
+              - link "You must be signed in to change notification settings" [ref=e77] [cursor=pointer]:
+                - /url: /login?return_to=%2Fvizia%2Fmorphorm
+                - img [ref=e78]
+                - text: Notifications
+            - listitem [ref=e80]:
+              - link "Fork 9" [ref=e81] [cursor=pointer]:
+                - /url: /login?return_to=%2Fvizia%2Fmorphorm
+                - img [ref=e82]
+                - text: Fork
+                - generic "9" [ref=e84]
+            - listitem [ref=e85]:
+              - link "You must be signed in to star a repository" [ref=e87] [cursor=pointer]:
+                - /url: /login?return_to=%2Fvizia%2Fmorphorm
+                - img [ref=e88]
+                - text: Star
+                - generic "318 users starred this repository" [ref=e90]: "318"
+      - navigation "Repository" [ref=e91]:
+        - list [ref=e92]:
+          - listitem [ref=e93]:
+            - link "Code" [ref=e94] [cursor=pointer]:
+              - /url: /vizia/morphorm
+              - img [ref=e95]
+              - generic [ref=e97]: Code
+          - listitem [ref=e98]:
+            - link "Issues 5" [ref=e99] [cursor=pointer]:
+              - /url: /vizia/morphorm/issues
+              - img [ref=e100]
+              - generic [ref=e103]: Issues
+              - generic "5" [ref=e104]
+          - listitem [ref=e105]:
+            - link "Pull requests" [ref=e106] [cursor=pointer]:
+              - /url: /vizia/morphorm/pulls
+              - img [ref=e107]
+              - generic [ref=e109]: Pull requests
+          - listitem [ref=e110]:
+            - link "Actions" [ref=e111] [cursor=pointer]:
+              - /url: /vizia/morphorm/actions
+              - img [ref=e112]
+              - generic [ref=e114]: Actions
+          - listitem [ref=e115]:
+            - link "Projects" [ref=e116] [cursor=pointer]:
+              - /url: /vizia/morphorm/projects
+              - img [ref=e117]
+              - generic [ref=e119]: Projects
+          - listitem [ref=e120]:
+            - link "Security and quality" [ref=e121] [cursor=pointer]:
+              - /url: /vizia/morphorm/security
+              - img [ref=e122]
+              - generic [ref=e124]: Security and quality
+          - listitem [ref=e125]:
+            - link "Insights" [ref=e126] [cursor=pointer]:
+              - /url: /vizia/morphorm/pulse
+              - img [ref=e127]
+              - generic [ref=e129]: Insights
+    - generic [ref=e142]:
+      - heading "vizia/morphorm" [level=1] [ref=e144]
+      - generic [ref=e145]:
+        - generic [ref=e148]:
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - button "main branch" [ref=e152] [cursor=pointer]:
+                - generic [ref=e153]:
+                  - generic [ref=e155]:
+                    - img [ref=e157]
+                    - generic [ref=e160]: main
+                  - generic:
+                    - img
+              - generic [ref=e161]:
+                - link "22 Branches" [ref=e162] [cursor=pointer]:
+                  - /url: /vizia/morphorm/branches
+                  - generic [ref=e163]:
+                    - generic:
+                      - img
+                    - generic [ref=e165]:
+                      - strong [ref=e166]: "22"
+                      - text: Branches
+                - link "0 Tags" [ref=e167] [cursor=pointer]:
+                  - /url: /vizia/morphorm/tags
+                  - generic [ref=e168]:
+                    - generic:
+                      - img
+                    - generic [ref=e170]:
+                      - strong [ref=e171]: "0"
+                      - text: Tags
+            - generic [ref=e172]:
+              - generic [ref=e176]:
+                - img [ref=e178]
+                - combobox "Go to file" [ref=e180]
+              - button "Code" [ref=e181] [cursor=pointer]:
+                - generic [ref=e182]:
+                  - generic:
+                    - img
+                  - generic [ref=e183]: Code
+                  - generic:
+                    - img
+          - generic [ref=e184]:
+            - generic [ref=e185]:
+              - heading "Folders and files" [level=2] [ref=e186]
+              - table "Folders and files" [ref=e187]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e188]:
+                  - row "Latest commit geom3trik commits by geom3trik Flip horizontal offsets for RTL in column layout (#38) Open commit details success Commit e7e5fe3 · Apr 25, 20262 months ago History 242 Commits" [ref=e189]:
+                    - cell "Latest commit geom3trik commits by geom3trik Flip horizontal offsets for RTL in column layout (#38) Open commit details success Commit e7e5fe3 · Apr 25, 20262 months ago History 242 Commits" [ref=e190]:
+                      - generic [ref=e191]:
+                        - heading "Latest commit" [level=2] [ref=e192]
+                        - generic [ref=e193]:
+                          - generic [ref=e195]:
+                            - link "geom3trik" [ref=e196] [cursor=pointer]:
+                              - /url: /geom3trik
+                              - img "geom3trik" [ref=e197]
+                            - link "commits by geom3trik" [ref=e198] [cursor=pointer]:
+                              - /url: /vizia/morphorm/commits?author=geom3trik
+                              - text: geom3trik
+                          - generic [ref=e199]:
+                            - generic [ref=e201]:
+                              - link "Flip horizontal offsets for RTL in column layout (" [ref=e202] [cursor=pointer]:
+                                - /url: /vizia/morphorm/commit/e7e5fe35e5f184500d3030287f948a4f4c7f57ae
+                              - link "#38" [ref=e203] [cursor=pointer]:
+                                - /url: https://github.com/vizia/morphorm/pull/38
+                              - link ")" [ref=e204] [cursor=pointer]:
+                                - /url: /vizia/morphorm/commit/e7e5fe35e5f184500d3030287f948a4f4c7f57ae
+                            - button "Open commit details" [ref=e205] [cursor=pointer]:
+                              - img [ref=e206]
+                            - button "success" [ref=e208] [cursor=pointer]:
+                              - img [ref=e209]
+                        - generic [ref=e211]:
+                          - generic [ref=e213]:
+                            - link "Commit e7e5fe3" [ref=e214] [cursor=pointer]:
+                              - /url: /vizia/morphorm/commit/e7e5fe35e5f184500d3030287f948a4f4c7f57ae
+                              - text: e7e5fe3
+                            - text: ·
+                            - generic "Apr 25, 2026, 2:21 PM GMT+2" [ref=e215]: Apr 25, 20262 months ago
+                          - generic [ref=e216]:
+                            - heading "History" [level=2] [ref=e217]
+                            - link "242 Commits" [ref=e218] [cursor=pointer]:
+                              - /url: /vizia/morphorm/commits/main/
+                              - generic [ref=e219]:
+                                - generic:
+                                  - img
+                                - generic [ref=e220]: 242 Commits
+                  - row ".github/workflows, (Directory) Fix CI Sep 19, 20233 years ago" [ref=e221]:
+                    - cell ".github/workflows, (Directory)" [ref=e222]:
+                      - generic [ref=e223]:
+                        - img [ref=e224]
+                        - link ".github/workflows, (Directory)" [ref=e229] [cursor=pointer]:
+                          - /url: /vizia/morphorm/tree/main/.github/workflows
+                          - text: .github/workflows
+                    - cell "Fix CI" [ref=e230]:
+                      - link "Fix CI" [ref=e233] [cursor=pointer]:
+                        - /url: /vizia/morphorm/commit/7b0ff848c4998cc1ccad03dcb9526f41fc5b3f02
+                    - cell "Sep 19, 20233 years ago" [ref=e234]:
+                      - generic [ref=e235]: Sep 19, 20233 years ago
+                  - row ".vscode, (Directory) Experimental auto-layout system Apr 16, 2025last year" [ref=e236]:
+                    - cell ".vscode, (Directory)" [ref=e237]:
+                      - generic [ref=e238]:
+                        - img [ref=e239]
+                        - link ".vscode, (Directory)" [ref=e244] [cursor=pointer]:
+                          - /url: /vizia/morphorm/tree/main/.vscode
+                          - text: .vscode
+                    - cell "Experimental auto-layout system" [ref=e245]:
+                      - link "Experimental auto-layout system" [ref=e248] [cursor=pointer]:
+                        - /url: /vizia/morphorm/commit/f7d473e66dd896d62d47edab0b0550575e6132ac
+                    - cell "Apr 16, 2025last year" [ref=e249]:
+                      - generic [ref=e250]: Apr 16, 2025last year
+                  - row "benches, (Directory) Remove layout-result memoization hooks and relayout caching Apr 23, 20262 months ago" [ref=e251]:
+                    - cell "benches, (Directory)" [ref=e252]:
+                      - generic [ref=e253]:
+                        - img [ref=e254]
+                        - link "benches, (Directory)" [ref=e259] [cursor=pointer]:
+                          - /url: /vizia/morphorm/tree/main/benches
+                          - text: benches
+                    - cell "Remove layout-result memoization hooks and relayout caching" [ref=e260]:
+                      - link "Remove layout-result memoization hooks and relayout caching" [ref=e263] [cursor=pointer]:
+                        - /url: /vizia/morphorm/commit/fb8cf6a176ed270f2fc4fb84f01491cbb9679a07
+                    - cell "Apr 23, 20262 months ago" [ref=e264]:
+                      - generic [ref=e265]: Apr 23, 20262 months ago
+                  - row "docs/images, (Directory) Revise README layout docs and add images Mar 23, 20263 months ago" [ref=e266]:
+                    - cell "docs/images, (Directory)" [ref=e267]:
+                      - generic [ref=e268]:
+                        - img [ref=e269]
+                        - link "docs/images, (Directory)" [ref=e274] [cursor=pointer]:
+                          - /url: /vizia/morphorm/tree/main/docs/images
+                          - text: docs/images
+                    - cell "Revise README layout docs and add images" [ref=e275]:
+                      - link "Revise README layout docs and add images" [ref=e278] [cursor=pointer]:
+                        - /url: /vizia/morphorm/commit/ce4bbddb0b58bd523c81d20036ff4f57cffc2fed
+                    - cell "Mar 23, 20263 months ago" [ref=e279]:
+                      - generic [ref=e280]: Mar 23, 20263 months ago
+                  - row "ecs, (Directory) Bump version Apr 23, 20262 months ago" [ref=e281]:
+                    - cell "ecs, (Directory)" [ref=e282]:
+                      - generic [ref=e283]:
+                        - img [ref=e284]
+                        - link "ecs, (Directory)" [ref=e289] [cursor=pointer]:
+                          - /url: /vizia/morphorm/tree/main/ecs
+                          - text: ecs
+                    - cell "Bump version" [ref=e290]:
+                      - link "Bump version" [ref=e293] [cursor=pointer]:
+                        - /url: /vizia/morphorm/commit/1df0abcdd896152a764f51a10a5bb752636795f3
+                    - cell "Apr 23, 20262 months ago" [ref=e294]:
+                      - generic [ref=e295]: Apr 23, 20262 months ago
+                  - row "examples, (Directory) Improve layout logic, API updates and cleanups Apr 23, 20262 months ago" [ref=e296]:
+                    - cell "examples, (Directory)" [ref=e297]:
+                      - generic [ref=e298]:
+                        - img [ref=e299]
+                        - link "examples, (Directory)" [ref=e304] [cursor=pointer]:
+                          - /url: /vizia/morphorm/tree/main/examples
+                          - text: examples
+                    - cell "Improve layout logic, API updates and cleanups" [ref=e305]:
+                      - link "Improve layout logic, API updates and cleanups" [ref=e308] [cursor=pointer]:
+                        - /url: /vizia/morphorm/commit/61dc704d91f4087095d4d356be9fa4777ed33197
+                    - cell "Apr 23, 20262 months ago" [ref=e309]:
+                      - generic [ref=e310]: Apr 23, 20262 months ago
+                  - row "src, (Directory) Flip horizontal offsets for RTL in column layout (#38) Apr 25, 20262 months ago" [ref=e311]:
+                    - cell "src, (Directory)" [ref=e312]:
+                      - generic [ref=e313]:
+                        - img [ref=e314]
+                        - link "src, (Directory)" [ref=e319] [cursor=pointer]:
+                          - /url: /vizia/morphorm/tree/main/src
+                          - text: src
+                    - cell "Flip horizontal offsets for RTL in column layout (#38)" [ref=e320]:
+                      - generic [ref=e322]:
+                        - link "Flip horizontal offsets for RTL in column layout (" [ref=e323] [cursor=pointer]:
+                          - /url: /vizia/morphorm/commit/e7e5fe35e5f184500d3030287f948a4f4c7f57ae
+                        - link "#38" [ref=e324] [cursor=pointer]:
+                          - /url: https://github.com/vizia/morphorm/pull/38
+                        - link ")" [ref=e325] [cursor=pointer]:
+                          - /url: /vizia/morphorm/commit/e7e5fe35e5f184500d3030287f948a4f4c7f57ae
+                    - cell "Apr 25, 20262 months ago" [ref=e326]:
+                      - generic [ref=e327]: Apr 25, 20262 months ago
+                  - row "tests, (Directory) Flip horizontal offsets for RTL in column layout (#38) Apr 25, 20262 months ago" [ref=e328]:
+                    - cell "tests, (Directory)" [ref=e329]:
+                      - generic [ref=e330]:
+                        - img [ref=e331]
+                        - link "tests, (Directory)" [ref=e336] [cursor=pointer]:
+                          - /url: /vizia/morphorm/tree/main/tests
+                          - text: tests
+                    - cell "Flip horizontal offsets for RTL in column layout (#38)" [ref=e337]:
+                      - generic [ref=e339]:
+                        - link "Flip horizontal offsets for RTL in column layout (" [ref=e340] [cursor=pointer]:
+                          - /url: /vizia/morphorm/commit/e7e5fe35e5f184500d3030287f948a4f4c7f57ae
+                        - link "#38" [ref=e341] [cursor=pointer]:
+                          - /url: https://github.com/vizia/morphorm/pull/38
+                        - link ")" [ref=e342] [cursor=pointer]:
+                          - /url: /vizia/morphorm/commit/e7e5fe35e5f184500d3030287f948a4f4c7f57ae
+                    - cell "Apr 25, 20262 months ago" [ref=e343]:
+                      - generic [ref=e344]: Apr 25, 20262 months ago
+                  - row ".gitignore, (File) Update docs and README Sep 22, 20233 years ago" [ref=e345]:
+                    - cell ".gitignore, (File)" [ref=e346]:
+                      - generic [ref=e347]:
+                        - img [ref=e348]
+                        - link ".gitignore, (File)" [ref=e353] [cursor=pointer]:
+                          - /url: /vizia/morphorm/blob/main/.gitignore
+                          - text: .gitignore
+                    - cell "Update docs and README" [ref=e354]:
+                      - link "Update docs and README" [ref=e357] [cursor=pointer]:
+                        - /url: /vizia/morphorm/commit/a13d5ffe2f9949692923e3af810db334a2235fe5
+                    - cell "Sep 22, 20233 years ago" [ref=e358]:
+                      - generic [ref=e359]: Sep 22, 20233 years ago
+                  - row ".rustfmt.toml, (File) Add tests for left and top constraints for pixels and percentage + re… May 24, 20233 years ago" [ref=e360]:
+                    - cell ".rustfmt.toml, (File)" [ref=e361]:
+                      - generic [ref=e362]:
+                        - img [ref=e363]
+                        - link ".rustfmt.toml, (File)" [ref=e368] [cursor=pointer]:
+                          - /url: /vizia/morphorm/blob/main/.rustfmt.toml
+                          - text: .rustfmt.toml
+                    - cell "Add tests for left and top constraints for pixels and percentage + re…" [ref=e369]:
+                      - link "Add tests for left and top constraints for pixels and percentage + re…" [ref=e372] [cursor=pointer]:
+                        - /url: /vizia/morphorm/commit/b67313ac5e7d924368b3b8a44cdccab1703df894
+                    - cell "May 24, 20233 years ago" [ref=e373]:
+                      - generic [ref=e374]: May 24, 20233 years ago
+                  - row "Cargo.toml, (File) Bump version Apr 23, 20262 months ago" [ref=e375]:
+                    - cell "Cargo.toml, (File)" [ref=e376]:
+                      - generic [ref=e377]:
+                        - img [ref=e378]
+                        - link "Cargo.toml, (File)" [ref=e383] [cursor=pointer]:
+                          - /url: /vizia/morphorm/blob/main/Cargo.toml
+                          - text: Cargo.toml
+                    - cell "Bump version" [ref=e384]:
+                      - link "Bump version" [ref=e387] [cursor=pointer]:
+                        - /url: /vizia/morphorm/commit/1df0abcdd896152a764f51a10a5bb752636795f3
+                    - cell "Apr 23, 20262 months ago" [ref=e388]:
+                      - generic [ref=e389]: Apr 23, 20262 months ago
+                  - row "LICENSE, (File) Initial commit Jul 17, 20215 years ago" [ref=e390]:
+                    - cell "LICENSE, (File)" [ref=e391]:
+                      - generic [ref=e392]:
+                        - img [ref=e393]
+                        - link "LICENSE, (File)" [ref=e398] [cursor=pointer]:
+                          - /url: /vizia/morphorm/blob/main/LICENSE
+                          - text: LICENSE
+                    - cell "Initial commit" [ref=e399]:
+                      - link "Initial commit" [ref=e402] [cursor=pointer]:
+                        - /url: /vizia/morphorm/commit/8e44b41cfe5c62387fd5be75f0024efe25209953
+                    - cell "Jul 17, 20215 years ago" [ref=e403]:
+                      - generic [ref=e404]: Jul 17, 20215 years ago
+                  - row "README.md, (File) Add Overlay layout type and implementation (#37) Apr 24, 20262 months ago" [ref=e405]:
+                    - cell "README.md, (File)" [ref=e406]:
+                      - generic [ref=e407]:
+                        - img [ref=e408]
+                        - link "README.md, (File)" [ref=e413] [cursor=pointer]:
+                          - /url: /vizia/morphorm/blob/main/README.md
+                          - text: README.md
+                    - cell "Add Overlay layout type and implementation (#37)" [ref=e414]:
+                      - generic [ref=e416]:
+                        - link "Add Overlay layout type and implementation (" [ref=e417] [cursor=pointer]:
+                          - /url: /vizia/morphorm/commit/37fa5aed027bae66d8021e79826ff334ff0b243c
+                        - link "#37" [ref=e418] [cursor=pointer]:
+                          - /url: https://github.com/vizia/morphorm/pull/37
+                        - link ")" [ref=e419] [cursor=pointer]:
+                          - /url: /vizia/morphorm/commit/37fa5aed027bae66d8021e79826ff334ff0b243c
+                    - cell "Apr 24, 20262 months ago" [ref=e420]:
+                      - generic [ref=e421]: Apr 24, 20262 months ago
+            - generic [ref=e423]:
+              - generic [ref=e424]:
+                - heading "Repository files navigation" [level=2] [ref=e425]
+                - navigation "Repository files" [ref=e426]:
+                  - list [ref=e427]:
+                    - listitem [ref=e428]:
+                      - link "README" [ref=e429] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e431]
+                        - generic [ref=e433]: README
+                    - listitem [ref=e434]:
+                      - link "MIT license" [ref=e435] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e437]
+                        - generic [ref=e439]: MIT license
+                - button "Outline" [ref=e440] [cursor=pointer]:
+                  - img [ref=e441]
+              - article [ref=e444]:
+                - generic [ref=e445]:
+                  - heading "Morphorm" [level=1] [ref=e446]
+                  - 'link "Permalink: Morphorm" [ref=e447] [cursor=pointer]':
+                    - /url: "#morphorm"
+                    - img [ref=e448]
+                - paragraph [ref=e450]: Morphorm is a crate for efficiently determining the size and position of UI elements which are organized into a tree structure.
+                - generic [ref=e451]:
+                  - heading "Description" [level=2] [ref=e452]
+                  - 'link "Permalink: Description" [ref=e453] [cursor=pointer]':
+                    - /url: "#description"
+                    - img [ref=e454]
+                - paragraph [ref=e456]: Morphorm is a 'one-pass' algorithm which recurses down the layout tree (depth-first), and determines the position and size of nodes based on their parent and children. It can produce similar layouts to flexbox, but with fewer concepts that need to be learned.
+                - generic [ref=e457]:
+                  - heading "Layout Type" [level=3] [ref=e458]
+                  - 'link "Permalink: Layout Type" [ref=e459] [cursor=pointer]':
+                    - /url: "#layout-type"
+                    - img [ref=e460]
+                - paragraph [ref=e462]:
+                  - text: The
+                  - code [ref=e463]: layout-type
+                  - text: "determines how a parent arranges its children. There are four variants:"
+                - list [ref=e464]:
+                  - listitem [ref=e465]:
+                    - code [ref=e466]: LayoutType::Row
+                    - text: "- The node will arrange its children into a horizontal row."
+                  - listitem [ref=e467]:
+                    - code [ref=e468]: LayoutType::Column
+                    - text: "- The node will arrange its children into a vertical column."
+                  - listitem [ref=e469]:
+                    - code [ref=e470]: LayoutType::Overlay
+                    - text: "- The node will align each relative child independently within its padded bounds, allowing children to overlap."
+                  - listitem [ref=e471]:
+                    - code [ref=e472]: LayoutType::Grid
+                    - text: "- The node will arrange its children into rows and columns."
+                - paragraph [ref=e473]:
+                  - link [ref=e474] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/layout_type.svg
+                - generic [ref=e475]:
+                  - heading "Size" [level=3] [ref=e476]
+                  - 'link "Permalink: Size" [ref=e477] [cursor=pointer]':
+                    - /url: "#size"
+                    - img [ref=e478]
+                - paragraph [ref=e480]:
+                  - text: The size of a node is determined by its
+                  - code [ref=e481]: width
+                  - text: and
+                  - code [ref=e482]: height
+                  - text: properties. These properties are specified with
+                  - code [ref=e483]: Units
+                  - text: ", which has four variants:"
+                - list [ref=e484]:
+                  - listitem [ref=e485]:
+                    - code [ref=e486]: Units::Pixels(val)
+                    - text: "- Sets the size to a fixed number of pixels."
+                - paragraph [ref=e487]:
+                  - link [ref=e488] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/fixed_width.svg
+                - list [ref=e489]:
+                  - listitem [ref=e490]:
+                    - code [ref=e491]: Units::Percentage(val)
+                    - text: "- Sets the size to a percentage of the nodes parent size."
+                - paragraph [ref=e492]:
+                  - link [ref=e493] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/percentage_width.svg
+                - list [ref=e494]:
+                  - listitem [ref=e495]:
+                    - code [ref=e496]: Units::Stretch(factor)
+                    - text: "- Sets the size to a proportion of the free space of the parent within the same axis."
+                - paragraph [ref=e497]:
+                  - link [ref=e498] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/stretch_width.svg
+                - list [ref=e499]:
+                  - listitem [ref=e500]:
+                    - code [ref=e501]: Units::Auto
+                    - text: "- Sets the size to either hug the nodes children, or to inherit the"
+                    - link "content size" [ref=e502] [cursor=pointer]:
+                      - /url: "#content-size"
+                    - text: of the node.
+                - paragraph [ref=e503]:
+                  - link [ref=e504] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/auto_width.svg
+                - generic [ref=e505]:
+                  - heading "Content Size" [level=3] [ref=e506]
+                  - 'link "Permalink: Content Size" [ref=e507] [cursor=pointer]':
+                    - /url: "#content-size"
+                    - img [ref=e508]
+                - paragraph [ref=e510]: Content size is used to determine the size of a node which has no children but may have an intrinsic size due to contents which do not correspond to nodes in the layout tree. For example, a node which contains text has an intrinsic size of the bounds of the text, which may introduce a dependency between the width and height (i.e. when text wraps). Similarly, content size can be used to size a node with a particular aspect ratio by constraining the height to be some proportion of the width (or conversely).
+                - generic [ref=e511]:
+                  - heading "Alignment" [level=3] [ref=e512]
+                  - 'link "Permalink: Alignment" [ref=e513] [cursor=pointer]':
+                    - /url: "#alignment"
+                    - img [ref=e514]
+                - paragraph [ref=e516]:
+                  - text: The
+                  - code [ref=e517]: alignment
+                  - text: "property determines how the children will be aligned within a view. There are 9 options:"
+                - list [ref=e518]:
+                  - listitem [ref=e519]:
+                    - code [ref=e520]: Alignment::TopLeft
+                  - listitem [ref=e521]:
+                    - code [ref=e522]: Alignment::TopCenter
+                  - listitem [ref=e523]:
+                    - code [ref=e524]: Alignment::TopRight
+                  - listitem [ref=e525]:
+                    - code [ref=e526]: Alignment::Left
+                  - listitem [ref=e527]:
+                    - code [ref=e528]: Alignment::Center
+                  - listitem [ref=e529]:
+                    - code [ref=e530]: Alignment::Right
+                  - listitem [ref=e531]:
+                    - code [ref=e532]: Alignment::BottomLeft
+                  - listitem [ref=e533]:
+                    - code [ref=e534]: Alignment::BottomCenter
+                  - listitem [ref=e535]:
+                    - code [ref=e536]: Alignment::BottomRight
+                - paragraph [ref=e537]:
+                  - link "alignment" [ref=e538] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/alignment.svg
+                    - img "alignment" [ref=e539]
+                - generic [ref=e540]:
+                  - heading "Padding" [level=3] [ref=e541]
+                  - 'link "Permalink: Padding" [ref=e542] [cursor=pointer]':
+                    - /url: "#padding"
+                    - img [ref=e543]
+                - paragraph [ref=e545]:
+                  - text: The
+                  - code [ref=e546]: padding
+                  - text: properties,
+                  - code [ref=e547]: padding-left
+                  - text: ","
+                  - code [ref=e548]: padding-top
+                  - text: ","
+                  - code [ref=e549]: padding-right
+                  - text: ", and"
+                  - code [ref=e550]: padding-bottom
+                  - text: ", determines the spacing between the parent bounds and the children of a view. It can be specified as pixels or a percentage."
+                - paragraph [ref=e551]:
+                  - link "padding" [ref=e552] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/padding.svg
+                    - img "padding" [ref=e553]
+                - generic [ref=e554]:
+                  - heading "Gap" [level=3] [ref=e555]
+                  - 'link "Permalink: Gap" [ref=e556] [cursor=pointer]':
+                    - /url: "#gap"
+                    - img [ref=e557]
+                - paragraph [ref=e559]:
+                  - text: The
+                  - code [ref=e560]: gap
+                  - text: properties,
+                  - code [ref=e561]: horizontal-gap
+                  - text: and
+                  - code [ref=e562]: vertical-gap
+                  - text: ", determines the spacing between the children of a view. They can be specified as pixels, a percentage, or a stretch factor."
+                - paragraph [ref=e563]:
+                  - link "gap" [ref=e564] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/gap.svg
+                    - img "gap" [ref=e565]
+                - generic [ref=e566]:
+                  - heading "Stretch Gap" [level=4] [ref=e567]
+                  - 'link "Permalink: Stretch Gap" [ref=e568] [cursor=pointer]':
+                    - /url: "#stretch-gap"
+                    - img [ref=e569]
+                - paragraph [ref=e571]: Setting the gap to a stretch factor will result in evenly distributed space between children.
+                - paragraph [ref=e572]:
+                  - link "stretch_gap" [ref=e573] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/stretch_gap.svg
+                    - img "stretch_gap" [ref=e574]
+                - generic [ref=e575]:
+                  - heading "Negative Gap" [level=4] [ref=e576]
+                  - 'link "Permalink: Negative Gap" [ref=e577] [cursor=pointer]':
+                    - /url: "#negative-gap"
+                    - img [ref=e578]
+                - paragraph [ref=e580]: A negative pixels value for gap can be used and results in the children of the view overlapping.
+                - paragraph [ref=e581]:
+                  - link "negative_gap" [ref=e582] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/negative_gap.svg
+                    - img "negative_gap" [ref=e583]
+                - generic [ref=e584]:
+                  - heading "Position Type" [level=3] [ref=e585]
+                  - 'link "Permalink: Position Type" [ref=e586] [cursor=pointer]':
+                    - /url: "#position-type"
+                    - img [ref=e587]
+                - paragraph [ref=e589]: "The position type property determines whether a node should be positioned in-line with its siblings in a stack, or out-of-line and independently of its siblings. There are two variants:"
+                - list [ref=e590]:
+                  - listitem [ref=e591]:
+                    - code [ref=e592]: PositionType::Relative
+                    - text: "- The node will be positioned relative to its in-line position with its siblings."
+                  - listitem [ref=e593]:
+                    - code [ref=e594]: PositionType::Absolute
+                    - text: "- The node will be positioned out-of-line and relative to the top-left corner of its parent."
+                - paragraph [ref=e595]:
+                  - link [ref=e596] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/position_type.svg
+                - paragraph [ref=e597]: Absolute nodes do not contribute to the size of the parent when the parent size is set to auto.
+                - generic [ref=e598]:
+                  - heading "Spacing" [level=3] [ref=e599]
+                  - 'link "Permalink: Spacing" [ref=e600] [cursor=pointer]':
+                    - /url: "#spacing"
+                    - img [ref=e601]
+                - paragraph [ref=e603]: "Spacing applies only to children with a position type of absolute. The position of a node within a stack can be adjusted by the spacing applied to each of its four sides:"
+                - list [ref=e604]:
+                  - listitem [ref=e605]:
+                    - code [ref=e606]: left
+                    - text: "- The space that should be applied to the left side of the node. This takes precedent over"
+                    - code [ref=e607]: right
+                    - text: spacing.
+                  - listitem [ref=e608]:
+                    - code [ref=e609]: right
+                    - text: "- The space that should be applied to the right side of the node."
+                  - listitem [ref=e610]:
+                    - code [ref=e611]: top
+                    - text: "- The space that should be applied to the top side of (above) the node. This takes precedent over"
+                    - code [ref=e612]: bottom
+                    - text: space.
+                  - listitem [ref=e613]:
+                    - code [ref=e614]: bottom
+                    - text: "- The space that should be applied to the bottom side of (below) the node."
+                - paragraph [ref=e615]:
+                  - link "spacing" [ref=e616] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/spacing.svg
+                    - img "spacing" [ref=e617]
+                - paragraph [ref=e618]:
+                  - text: Spacing is specified with
+                  - code [ref=e619]: Units
+                  - text: ", which has four variants:"
+                - list [ref=e620]:
+                  - listitem [ref=e621]:
+                    - code [ref=e622]: Units::Pixels(val)
+                    - text: "- Sets the spacing to a fixed number of pixels."
+                  - listitem [ref=e623]:
+                    - code [ref=e624]: Units::Percentage(val)
+                    - text: "- Sets the spacing to a percentage of the nodes parent size."
+                  - listitem [ref=e625]:
+                    - code [ref=e626]: Units::Stretch(factor)
+                    - text: "- Sets the spacing to a proportion of the free space of the parent within the same axis."
+                - generic [ref=e627]:
+                  - heading "Constraints" [level=3] [ref=e628]
+                  - 'link "Permalink: Constraints" [ref=e629] [cursor=pointer]':
+                    - /url: "#constraints"
+                    - img [ref=e630]
+                - paragraph [ref=e632]: Constraint properties can be used to specify a minimum or maximum value for size or gap.
+                - generic [ref=e633]:
+                  - heading "Size Constraints" [level=3] [ref=e634]
+                  - 'link "Permalink: Size Constraints" [ref=e635] [cursor=pointer]':
+                    - /url: "#size-constraints"
+                    - img [ref=e636]
+                - paragraph [ref=e638]: Size constraints can have a value in pixels, a percentage, or auto.
+                - paragraph [ref=e639]:
+                  - text: The
+                  - code [ref=e640]: min-size
+                  - text: property, which is shorthand for
+                  - code [ref=e641]: min_width
+                  - text: and
+                  - code [ref=e642]: min_height
+                  - text: ", can be used to set a minimum constraint for the size of a view."
+                - paragraph [ref=e643]:
+                  - link "min_width" [ref=e644] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/min_width.svg
+                    - img "min_width" [ref=e645]
+                - paragraph [ref=e646]:
+                  - text: The
+                  - code [ref=e647]: max-size
+                  - text: property, which is shorthand for
+                  - code [ref=e648]: max_width
+                  - text: and
+                  - code [ref=e649]: max_height
+                  - text: ", can be used to set a maximum constraint for the size of a view."
+                - paragraph [ref=e650]:
+                  - link "max_width" [ref=e651] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/max_width.svg
+                    - img "max_width" [ref=e652]
+                - generic [ref=e653]:
+                  - heading "Auto min-width/height" [level=4] [ref=e654]
+                  - 'link "Permalink: Auto min-width/height" [ref=e655] [cursor=pointer]':
+                    - /url: "#auto-min-widthheight"
+                    - img [ref=e656]
+                - paragraph [ref=e658]:
+                  - text: An auto
+                  - code [ref=e659]: min-width
+                  - text: or
+                  - code [ref=e660]: min-height
+                  - text: can be used to specify that a view should not be any smaller than its contents, i.e. the sum or max of its children depending on layout type, in the horizontal or vertical directions respectively.
+                - paragraph [ref=e661]: This is useful in combination with a stretch size, so the view can contract with its parent container but still maintain a minimum size of its content, for example the text of a view.
+                - paragraph [ref=e662]:
+                  - link "auto_min_width" [ref=e663] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/auto_min_width.svg
+                    - img "auto_min_width" [ref=e664]
+                - generic [ref=e665]:
+                  - heading "Auto max-width/height" [level=4] [ref=e666]
+                  - 'link "Permalink: Auto max-width/height" [ref=e667] [cursor=pointer]':
+                    - /url: "#auto-max-widthheight"
+                    - img [ref=e668]
+                - paragraph [ref=e670]:
+                  - text: An auto
+                  - code [ref=e671]: max-width
+                  - text: or
+                  - code [ref=e672]: max-height
+                  - text: can be used to specify that a view should not be any larger than its contents, i.e. the sum or max of its children depending on layout type, in the horizontal or vertical directions respectively.
+                - paragraph [ref=e673]: This is useful in combination with a stretch size, so the view can grow with its parent container but no larger than the size of its content.
+                - paragraph [ref=e674]:
+                  - link "auto_max_width" [ref=e675] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/auto_max_width.svg
+                    - img "auto_max_width" [ref=e676]
+                - generic [ref=e677]:
+                  - heading "Gap Constraints" [level=4] [ref=e678]
+                  - 'link "Permalink: Gap Constraints" [ref=e679] [cursor=pointer]':
+                    - /url: "#gap-constraints"
+                    - img [ref=e680]
+                - paragraph [ref=e682]: Gap constraints can have a value in pixels or a percentage.
+                - paragraph [ref=e683]:
+                  - text: The
+                  - code [ref=e684]: min-gap
+                  - text: property, which is shorthand for
+                  - code [ref=e685]: min_horizontal_gap
+                  - text: and
+                  - code [ref=e686]: min_vertical_gap
+                  - text: ", can be used to set a minimum constraint for the gap between the children of a view. This is particularly useful in combination with a stretch gap, so that the children are evenly distributed but cannot be closer than the minimum gap When the parent container shrinks."
+                - paragraph [ref=e687]:
+                  - link "min_gap" [ref=e688] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/min_gap.svg
+                    - img "min_gap" [ref=e689]
+                - paragraph [ref=e690]:
+                  - text: Similarly, the
+                  - code [ref=e691]: max-gap
+                  - text: property, which is shorthand for
+                  - code [ref=e692]: max_horizontal_gap
+                  - text: and
+                  - code [ref=e693]: max_vertical_gap
+                  - text: ", can be used to set a maximum constraint for the gap between the children of a view."
+                - paragraph [ref=e694]:
+                  - link "max_gap" [ref=e695] [cursor=pointer]:
+                    - /url: /vizia/morphorm/blob/main/docs/images/max_gap.svg
+                    - img "max_gap" [ref=e696]
+                - generic [ref=e697]:
+                  - heading "How to use" [level=2] [ref=e698]
+                  - 'link "Permalink: How to use" [ref=e699] [cursor=pointer]':
+                    - /url: "#how-to-use"
+                    - img [ref=e700]
+                - paragraph [ref=e702]: "To try and keep things as generic as possible Morphorm does not provide any containers for representing the layout properties or the tree. Instead, two traits must be implemented by the users' containers in order to utilize the layout algorithm:"
+                - list [ref=e703]:
+                  - listitem [ref=e704]:
+                    - code [ref=e705]: Node
+                    - text: represents a UI element which can be sized and positioned. The node itself could contain the desired layout properties, or the properties can be provided by an external source (such as an ECS component store), which is provided by the
+                    - code [ref=e706]: Store
+                    - text: associated type. The node must also provide an iterator over its children, specified by the
+                    - code [ref=e707]: ChildIter
+                    - text: associated type, and to allow the children to be stored externally as well, there is a
+                    - code [ref=e708]: Tree
+                    - text: associated type. Additionally, there is a
+                    - code [ref=e709]: SubLayout
+                    - text: associated type which can be used to provide an external context when the size of a childless node is determined by its content, for example it may be used to provide a context for computing and caching the bounds of text within a node.
+                  - listitem [ref=e710]:
+                    - code [ref=e711]: Cache
+                    - text: represents a store for the output of the layout computation. The store is indexed by a reference to the node type, however, to allow store types which cannot use the node reference as a key, the
+                    - code [ref=e712]: Node
+                    - text: trait also provides a
+                    - code [ref=e713]: CacheKey
+                    - text: associated type.
+                - generic [ref=e714]:
+                  - heading "Example (ECS)" [level=3] [ref=e715]
+                  - 'link "Permalink: Example (ECS)" [ref=e716] [cursor=pointer]':
+                    - /url: "#example-ecs"
+                    - img [ref=e717]
+                - paragraph [ref=e719]: In the following example, nodes are represented by an ID type, which is used as a key for slotmaps which store the properties of a layout node.
+                - generic [ref=e720]:
+                  - heading "Creating an ID type" [level=4] [ref=e721]
+                  - 'link "Permalink: Creating an ID type" [ref=e722] [cursor=pointer]':
+                    - /url: "#creating-an-id-type"
+                    - img [ref=e723]
+                - paragraph [ref=e725]:
+                  - text: First we define an
+                  - code [ref=e726]: Entity
+                  - text: "type to act as the ID:"
+                - generic [ref=e727]:
+                  - generic [ref=e728]:
+                    - generic [ref=e729]: "#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, PartialOrd, Ord)]"
+                    - text: pub struct Entity(pub usize);
+                  - button "Copy code to clipboard" [ref=e731] [cursor=pointer]:
+                    - img [ref=e732]
+                - paragraph [ref=e735]: We then create a simple entity manager which generates new entities. For this simple example the entity ID is generated from a counter, but a real system may need to handle the removal of entities.
+                - generic [ref=e736]:
+                  - generic [ref=e737]: "pub struct EntityManager { count: usize, } impl EntityManager { pub fn create(&mut self) -> Entity { self.count += 1; Entity(self.count - 1) } }"
+                  - button "Copy code to clipboard" [ref=e739] [cursor=pointer]:
+                    - img [ref=e740]
+                - paragraph [ref=e743]:
+                  - text: Next we'll implement the
+                  - code [ref=e744]: Key
+                  - text: trait and the
+                  - code [ref=e745]: From<KeyData>
+                  - text: trait so that the entity can be used as a key for a
+                  - code [ref=e746]: SecondaryMap
+                  - text: from the
+                  - code [ref=e747]: slotmap
+                  - text: "crate:"
+                - generic [ref=e748]:
+                  - generic [ref=e749]: "unsafe impl Key for Entity { fn data(&self) -> slotmap::KeyData { KeyData::from_ffi(self.0 as u64) } fn null() -> Self { Entity::default() } fn is_null(&self) -> bool { self.0 == usize::MAX } } impl From<KeyData> for Entity { fn from(value: KeyData) -> Self { Entity(value.as_ffi() as usize) } }"
+                  - button "Copy code to clipboard" [ref=e751] [cursor=pointer]:
+                    - img [ref=e752]
+                - generic [ref=e755]:
+                  - heading "Defining the Tree" [level=4] [ref=e756]:
+                    - text: Defining the
+                    - code [ref=e757]: Tree
+                  - 'link "Permalink: Defining the Tree" [ref=e758] [cursor=pointer]':
+                    - /url: "#defining-the-tree"
+                    - img [ref=e759]
+                - paragraph [ref=e761]: "One way to represent the layout tree using an ID type is to store the parent, first-child, and next/prev -sibling IDs for each entity:"
+                - generic [ref=e762]:
+                  - generic [ref=e763]: "pub struct Tree { pub parent: Vec<Option<Entity>>, pub first_child: Vec<Option<Entity>>, pub next_sibling: Vec<Option<Entity>>, pub prev_sibling: Vec<Option<Entity>>, }"
+                  - button "Copy code to clipboard" [ref=e765] [cursor=pointer]:
+                    - img [ref=e766]
+                - paragraph [ref=e769]:
+                  - text: See
+                  - code [ref=e770]: ecs/tree.rs
+                  - text: for full implementation.
+                - paragraph [ref=e771]: "An iterator over the children of a node can then be constructed:"
+                - generic [ref=e772]:
+                  - generic [ref=e773]:
+                    - text: /// An iterator for iterating the children of an entity.
+                    - text: "pub struct ChildIterator<'a> { pub tree: &'a Tree, pub current_node: Option<&'a Entity>, } impl<'a> Iterator for ChildIterator<'a> { type Item = &'a Entity; fn next(&mut self) -> Option<Self::Item> { if let Some(entity) = self.current_node { self.current_node = self.tree.get_next_sibling(entity); return Some(entity); } None } }"
+                  - button "Copy code to clipboard" [ref=e775] [cursor=pointer]:
+                    - img [ref=e776]
+                - generic [ref=e779]:
+                  - heading "Defining the Store" [level=4] [ref=e780]:
+                    - text: Defining the
+                    - code [ref=e781]: Store
+                  - 'link "Permalink: Defining the Store" [ref=e782] [cursor=pointer]':
+                    - /url: "#defining-the-store"
+                    - img [ref=e783]
+                - paragraph [ref=e785]: "Let's now create a store type which, as the name suggests, will store the properties of a node:"
+                - generic [ref=e786]:
+                  - generic [ref=e787]: "pub struct PropertyStore { pub visible: SecondaryMap<Entity, bool>, pub layout_type: SecondaryMap<Entity, LayoutType>, pub position_type: SecondaryMap<Entity, PositionType>, pub left: SecondaryMap<Entity, Units>, pub right: SecondaryMap<Entity, Units>, pub top: SecondaryMap<Entity, Units>, pub bottom: SecondaryMap<Entity, Units>, ... }"
+                  - button "Copy code to clipboard" [ref=e789] [cursor=pointer]:
+                    - img [ref=e790]
+                - paragraph [ref=e793]:
+                  - text: See
+                  - code [ref=e794]: ecs/store.rs
+                  - text: for full implementation.
+                - generic [ref=e795]:
+                  - heading "Defining the Cache" [level=4] [ref=e796]:
+                    - text: Defining the
+                    - code [ref=e797]: Cache
+                  - 'link "Permalink: Defining the Cache" [ref=e798] [cursor=pointer]':
+                    - /url: "#defining-the-cache"
+                    - img [ref=e799]
+                - paragraph [ref=e801]: "Next, we'll need a cache to store the output of the layout computation, also keyed by the entity ID:"
+                - generic [ref=e802]:
+                  - generic [ref=e803]: "pub struct NodeCache { // Computed size and position of nodes. pub rect: SecondaryMap<Entity, Rect>, }"
+                  - button "Copy code to clipboard" [ref=e805] [cursor=pointer]:
+                    - img [ref=e806]
+                - paragraph [ref=e809]:
+                  - text: Then we'll implement the
+                  - code [ref=e810]: Cache
+                  - text: "trait on it:"
+                - generic [ref=e811]:
+                  - generic [ref=e812]: "impl Cache for NodeCache { type Node = Entity; fn set_bounds(&mut self, node: &Self::Node, posx: f32, posy: f32, width: f32, height: f32) { if let Some(rect) = self.rect.get_mut(*node) { rect.posx = posx; rect.posy = posy; rect.width = width; rect.height = height; } } fn width(&self, node: &Self::Node) -> f32 { if let Some(rect) = self.rect.get(*node) { return rect.width; } 0.0 } ... }"
+                  - button "Copy code to clipboard" [ref=e814] [cursor=pointer]:
+                    - img [ref=e815]
+                - generic [ref=e818]:
+                  - heading "Implementing the Node trait" [level=4] [ref=e819]:
+                    - text: Implementing the
+                    - code [ref=e820]: Node
+                    - text: trait
+                  - 'link "Permalink: Implementing the Node trait" [ref=e821] [cursor=pointer]':
+                    - /url: "#implementing-the-node-trait"
+                    - img [ref=e822]
+                - paragraph [ref=e824]:
+                  - text: We can now implement the
+                  - code [ref=e825]: Node
+                  - text: trait for
+                  - code [ref=e826]: Entity
+                  - text: "type, filling in the associated types:"
+                - generic [ref=e827]:
+                  - generic [ref=e828]: "impl Node for Entity { type Store = Store; type Tree = Tree; type ChildIter<'t> = ChildIterator<'t>; type CacheKey = Entity; type SubLayout<'a> = (); fn key(&self) -> Self::CacheKey { *self } fn children<'t>(&self, tree: &'t Tree) -> Self::ChildIter<'t> { let current_node = tree.get_first_child(self); ChildIterator { tree, current_node } } fn visible(&self, store: &Store) -> bool { store.visible.get(*self).copied().unwrap_or(true) } fn layout_type(&self, store: &Store) -> Option<LayoutType> { store.layout_type.get(*self).copied() } fn grid_columns(&self, store: &Store) -> Option<Vec<Units>> { store.grid_columns.get(*self).cloned() } fn grid_rows(&self, store: &Store) -> Option<Vec<Units>> { store.grid_rows.get(*self).cloned() } fn column_start(&self, store: &Store) -> Option<usize> { store.column_start.get(*self).copied() } fn row_start(&self, store: &Store) -> Option<usize> { store.row_start.get(*self).copied() } fn column_span(&self, store: &Store) -> Option<usize> { store.column_span.get(*self).copied() } fn row_span(&self, store: &Store) -> Option<usize> { store.row_span.get(*self).copied() } }"
+                  - button "Copy code to clipboard" [ref=e830] [cursor=pointer]:
+                    - img [ref=e831]
+                - paragraph [ref=e834]:
+                  - text: Because the node is just an ID, we can use itself for the
+                  - code [ref=e835]: CacheKey
+                  - text: . For this example we've left the
+                  - code [ref=e836]: Sublayout
+                  - text: type as empty, but a real system might use this for a text context. Each 'getter' function, such as
+                  - code [ref=e837]: layout_type()
+                  - text: ", retrieves its returned value from the"
+                  - code [ref=e838]: Store
+                  - text: .
+                - generic [ref=e839]:
+                  - heading "Performing layout" [level=4] [ref=e840]
+                  - 'link "Permalink: Performing layout" [ref=e841] [cursor=pointer]':
+                    - /url: "#performing-layout"
+                    - img [ref=e842]
+                - paragraph [ref=e844]: "Finally, layout can be performed on the whole tree via the root node:"
+                - generic [ref=e845]:
+                  - generic [ref=e846]: root.layout(&mut cache, &tree, &store, &mut sublayout);
+                  - button "Copy code to clipboard" [ref=e848] [cursor=pointer]:
+                    - img [ref=e849]
+                - paragraph [ref=e852]:
+                  - text: Not shown here is the construction of the tree prior to calling
+                  - code [ref=e853]: layout
+                  - text: . See
+                  - code [ref=e854]: ecs/world.rs
+                  - text: and
+                  - code [ref=e855]: examples/basic.rs
+                  - text: for implementation details.
+        - generic [ref=e859]:
+          - generic [ref=e862]:
+            - heading "About" [level=2] [ref=e863]
+            - paragraph [ref=e864]: A UI layout engine written in Rust
+            - heading "Resources" [level=3] [ref=e865]
+            - link "Readme" [ref=e867] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+              - img [ref=e868]
+              - text: Readme
+            - heading "License" [level=3] [ref=e870]
+            - link "MIT license" [ref=e872] [cursor=pointer]:
+              - /url: "#MIT-1-ov-file"
+              - img [ref=e873]
+              - text: MIT license
+            - link "Activity" [ref=e876] [cursor=pointer]:
+              - /url: /vizia/morphorm/activity
+              - img [ref=e877]
+              - text: Activity
+            - link "Custom properties" [ref=e880] [cursor=pointer]:
+              - /url: /vizia/morphorm/custom-properties
+              - img [ref=e881]
+              - text: Custom properties
+            - heading "Stars" [level=3] [ref=e883]
+            - link "318 stars" [ref=e885] [cursor=pointer]:
+              - /url: /vizia/morphorm/stargazers
+              - img [ref=e886]
+              - strong [ref=e888]: "318"
+              - text: stars
+            - heading "Watchers" [level=3] [ref=e889]
+            - link "7 watching" [ref=e891] [cursor=pointer]:
+              - /url: /vizia/morphorm/watchers
+              - img [ref=e892]
+              - strong [ref=e894]: "7"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e895]
+            - link "9 forks" [ref=e897] [cursor=pointer]:
+              - /url: /vizia/morphorm/forks
+              - img [ref=e898]
+              - strong [ref=e900]: "9"
+              - text: forks
+            - link "Report repository" [ref=e902] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fvizia%2Fmorphorm&report=vizia+%28user%29
+          - generic [ref=e904]:
+            - heading "Releases" [level=2] [ref=e905]:
+              - link "Releases" [ref=e906] [cursor=pointer]:
+                - /url: /vizia/morphorm/releases
+            - generic [ref=e907]: No releases published
+          - generic [ref=e909]:
+            - heading "Packages" [level=2] [ref=e910]:
+              - link "Packages" [ref=e911] [cursor=pointer]:
+                - /url: /orgs/vizia/packages?repo_name=morphorm
+            - generic [ref=e912]: No packages published
+          - generic [ref=e914]:
+            - heading "Contributors 2" [level=2] [ref=e915]:
+              - link "Contributors 2" [ref=e916] [cursor=pointer]:
+                - /url: /vizia/morphorm/graphs/contributors
+                - text: Contributors
+                - generic "2" [ref=e917]
+            - list [ref=e918]:
+              - listitem [ref=e919]:
+                - link "@geom3trik" [ref=e920] [cursor=pointer]:
+                  - /url: https://github.com/geom3trik
+                  - img "@geom3trik" [ref=e921]
+                - link "geom3trik Dr George Atkinson" [ref=e923] [cursor=pointer]:
+                  - /url: https://github.com/geom3trik
+                  - strong [ref=e924]: geom3trik
+                  - text: Dr George Atkinson
+              - listitem [ref=e925]:
+                - link "@rhelmot" [ref=e926] [cursor=pointer]:
+                  - /url: https://github.com/rhelmot
+                  - img "@rhelmot" [ref=e927]
+                - link "rhelmot Audrey Dutcher" [ref=e929] [cursor=pointer]:
+                  - /url: https://github.com/rhelmot
+                  - strong [ref=e930]: rhelmot
+                  - text: Audrey Dutcher
+          - generic [ref=e932]:
+            - heading "Languages" [level=2] [ref=e933]
+            - list [ref=e937]:
+              - listitem [ref=e938]:
+                - link "Rust 100.0%" [ref=e939] [cursor=pointer]:
+                  - /url: /vizia/morphorm/search?l=rust
+                  - img [ref=e940]
+                  - generic [ref=e942]: Rust
+                  - generic [ref=e943]: 100.0%
+  - contentinfo [ref=e945]:
+    - heading "Footer" [level=2] [ref=e946]
+    - generic [ref=e947]:
+      - generic [ref=e948]:
+        - link "GitHub Homepage" [ref=e949] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e950]
+        - generic [ref=e952]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e953]:
+        - heading "Footer navigation" [level=3] [ref=e954]
+        - list "Footer navigation" [ref=e955]:
+          - listitem [ref=e956]:
+            - link "Terms" [ref=e957] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e958]:
+            - link "Privacy" [ref=e959] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e960]:
+            - link "Security" [ref=e961] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e962]:
+            - link "Status" [ref=e963] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e964]:
+            - link "Community" [ref=e965] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e966]:
+            - link "Docs" [ref=e967] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e968]:
+            - link "Contact" [ref=e969] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e970]:
+            - button "Manage cookies" [ref=e972] [cursor=pointer]
+          - listitem [ref=e973]:
+            - button "Do not share my personal information" [ref=e975] [cursor=pointer]

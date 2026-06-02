@@ -1,0 +1,233 @@
+- generic [active] [ref=e1]:
+  - navigation "Table of contents" [ref=e2]:
+    - list [ref=e4]:
+      - listitem [ref=e5]:
+        - link "Introduction" [ref=e6] [cursor=pointer]:
+          - /url: introduction.html
+      - listitem [ref=e7]:
+        - link "Getting Started" [ref=e8] [cursor=pointer]:
+          - /url: getting_started.html
+      - listitem
+      - listitem [ref=e9]: Usage
+      - listitem [ref=e10]:
+        - link "Macros" [ref=e11] [cursor=pointer]:
+          - /url: usage/macros.html
+          - strong [ref=e12]: "1."
+          - text: Macros
+      - listitem [ref=e13]:
+        - link "Widgets" [ref=e14] [cursor=pointer]:
+          - /url: usage/widgets.html
+          - strong [ref=e15]: "2."
+          - text: Widgets
+      - listitem [ref=e16]:
+        - link "Layout" [ref=e17] [cursor=pointer]:
+          - /url: usage/layout.html
+          - strong [ref=e18]: "3."
+          - text: Layout
+      - listitem [ref=e19]:
+        - link "State" [ref=e20] [cursor=pointer]:
+          - /url: usage/state.html
+          - strong [ref=e21]: "4."
+          - text: State
+      - listitem [ref=e22]:
+        - link "Fonts" [ref=e23] [cursor=pointer]:
+          - /url: usage/fonts.html
+          - strong [ref=e24]: "5."
+          - text: Fonts
+      - listitem [ref=e25]:
+        - link "Clipping" [ref=e26] [cursor=pointer]:
+          - /url: usage/clipping.html
+          - strong [ref=e27]: "6."
+          - text: Clipping
+      - listitem [ref=e28]:
+        - link "Keyed Widgets" [ref=e29] [cursor=pointer]:
+          - /url: usage/keyed-widgets.html
+          - strong [ref=e30]: "7."
+          - text: Keyed Widgets
+      - listitem [ref=e31]:
+        - link "Computed Values" [ref=e32] [cursor=pointer]:
+          - /url: usage/computed.html
+          - strong [ref=e33]: "8."
+          - text: Computed Values
+      - listitem [ref=e34]:
+        - link "Limiting Rebuilds" [ref=e35] [cursor=pointer]:
+          - /url: usage/limiting-rebuilds.html
+          - strong [ref=e36]: "9."
+          - text: Limiting Rebuilds
+      - listitem
+      - listitem [ref=e37]: Plugins
+      - listitem [ref=e38]:
+        - link "Providers & Consumers" [ref=e39] [cursor=pointer]:
+          - /url: plugins/providers_and_consumers.html
+          - strong [ref=e40]: "10."
+          - text: Providers & Consumers
+      - listitem [ref=e41]:
+        - link "Hovering" [ref=e42] [cursor=pointer]:
+          - /url: plugins/hovering.html
+          - strong [ref=e43]: "11."
+          - text: Hovering
+      - listitem
+      - listitem [ref=e44]: Reference
+      - listitem [ref=e45]:
+        - link "Primitives" [ref=e46] [cursor=pointer]:
+          - /url: reference/primitives.html
+          - strong [ref=e47]: "12."
+          - text: Primitives
+      - listitem [ref=e48]:
+        - link "Widgets" [ref=e49] [cursor=pointer]:
+          - /url: reference/widgets.html
+          - strong [ref=e50]: "13."
+          - text: Widgets
+      - listitem [ref=e51]:
+        - list [ref=e52]:
+          - listitem [ref=e53]:
+            - link "App" [ref=e54] [cursor=pointer]:
+              - /url: reference/widgets/app.html
+              - strong [ref=e55]: 13.1.
+              - text: App
+          - listitem [ref=e56]:
+            - link "Button" [ref=e57] [cursor=pointer]:
+              - /url: reference/widgets/button.html
+              - strong [ref=e58]: 13.2.
+              - text: Button
+      - listitem [ref=e59]:
+        - link "Globals" [ref=e60] [cursor=pointer]:
+          - /url: reference/globals.html
+          - strong [ref=e61]: "14."
+          - text: Globals
+      - listitem [ref=e62]:
+        - list [ref=e63]:
+          - listitem [ref=e64]:
+            - link "Mouse" [ref=e65] [cursor=pointer]:
+              - /url: reference/globals/mouse.html
+              - strong [ref=e66]: 14.1.
+              - text: Mouse
+          - listitem [ref=e67]:
+            - link "Keyboard" [ref=e68] [cursor=pointer]:
+              - /url: reference/globals/keyboard.html
+              - strong [ref=e69]: 14.2.
+              - text: Keyboard
+          - listitem [ref=e70]:
+            - link "Themes" [ref=e71] [cursor=pointer]:
+              - /url: reference/globals/themes.html
+              - strong [ref=e72]: 14.3.
+              - text: Themes
+      - listitem [ref=e73]:
+        - link "Animations" [ref=e74] [cursor=pointer]:
+          - /url: reference/animations.html
+          - strong [ref=e75]: "15."
+          - text: Animations
+      - listitem
+      - listitem [ref=e76]: Deeper Understanding
+      - listitem [ref=e77]:
+        - link "README.md" [ref=e78] [cursor=pointer]:
+          - /url: deeper/introduction.html
+          - strong [ref=e79]: "16."
+          - text: README.md
+  - generic [ref=e81]:
+    - generic [ref=e82]:
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - button "Toggle Table of Contents" [expanded] [ref=e86] [cursor=pointer]:
+            - generic [ref=e87]: 
+          - button "Change theme" [ref=e88] [cursor=pointer]:
+            - generic [ref=e89]: 
+          - button "Toggle Searchbar" [ref=e90] [cursor=pointer]:
+            - generic [ref=e91]: 
+        - heading "Agui Book" [level=1] [ref=e92] [cursor=pointer]
+        - link "Print this book" [ref=e94] [cursor=pointer]:
+          - /url: print.html
+          - generic [ref=e95]: 
+      - generic [ref=e96]:
+        - main [ref=e97]:
+          - blockquote [ref=e98]:
+            - paragraph [ref=e99]:
+              - strong [ref=e100]: Preface
+            - paragraph [ref=e101]:
+              - text: This book (or guide, whatever you want to call it) does not always take itself seriously (I mean, the library is called
+              - code [ref=e102]: agui
+              - text: ", what did you expect?). This is largely because I (the writer) personally find the Rust ecosystem's documentation dreadfully dull at the best of times. Now, for core libraries, I understand it; I even appreciate it! It's important that core functionality is explained well, and explained in great detail, leaving no room for misinterpretation (a comma mustn't end up being the debate of the century)."
+            - paragraph [ref=e103]: "That said: I don't believe this library deserves to be treated in such a robotic manner. When building UIs, we no longer are just code monkeys, tasked with building things users will never directly interact with, hiding flaws in the deepest foundation only we can see. In here, we draw, we paint, we render. We, in effect, become artists ourselves; and a robotic artist is a starving artist."
+            - paragraph [ref=e104]: I've put personality in this book (guide) to reflect that reality. Why can't programming be fun?
+          - heading "Introduction" [level=1] [ref=e105]:
+            - link "Introduction" [ref=e106] [cursor=pointer]:
+              - /url: "#introduction"
+          - paragraph [ref=e107]:
+            - strong [ref=e108]: Agui
+            - text: "is a reactive UI library, built in pure Rust, made for pure Rust. It's inspired by Flutter and other reactive UI libraries, and almost more importantly: it's renderer-agnostic. There are a few basic concepts to learn, but if you come from a background of Flutter, React, Vue, or other similar libraries, you'll feel right at home. However, I'll explain for those that have never heard of them."
+          - paragraph [ref=e109]: User interfaces are inheritly complex and must be orchestrated properly to keep the visuals in line with the actual state of the program. Generally, this is a complex problem, and many issues can (and will) occur if you leave this "refreshing" up to the actual logic of your code. What a reactive UI library does is abstract your interface a bit to provide automatic updates to it whenever your state changes, ensuring your visuals and your state are always in sync.
+          - paragraph [ref=e110]:
+            - text: However, with this ~magic~ comes additional considerations to your code. When state changes, all widgets listening to that state are updated in the UI tree. This means that you need to put some thought into limiting these rebuilds to as small of a piece of the tree as you can manage. While
+            - code [ref=e111]: agui
+            - text: manages to reduce rebuilds where it can, it's not a magic bullet; we forgo tree-diffing for performance reasons, and to prevent problematic edge cases.
+          - paragraph [ref=e112]:
+            - text: "Hopefully that wasn't too much jargon for you. Just in case, here's a tl;dr:"
+            - strong [ref=e113]:
+              - text: UIs are complex, use
+              - code [ref=e114]: agui
+              - text: to make them less of a pain to handle.
+          - heading "Glossary" [level=2] [ref=e115]:
+            - link "Glossary" [ref=e116] [cursor=pointer]:
+              - /url: "#glossary"
+          - list [ref=e117]:
+            - listitem [ref=e118]:
+              - strong [ref=e119]: Widget
+              - text: ": A user interface is built on Widgets, which can be anything from pure data, to managers, to elements drawn on screen."
+              - code [ref=e120]: agui
+              - text: makes little distinction between them.
+            - listitem [ref=e121]:
+              - strong [ref=e122]: Layout
+              - text: ":"
+              - code [ref=e123]: agui
+              - text: leverages
+              - link "morphorm" [ref=e124] [cursor=pointer]:
+                - /url: https://github.com/geom3trik/morphorm
+              - text: for its layout system, which itself is modeled after the
+              - link "subform layout system" [ref=e125] [cursor=pointer]:
+                - /url: https://subformapp.com/articles/why-not-flexbox/
+              - text: .
+            - listitem [ref=e126]:
+              - strong [ref=e127]: State
+              - text: ": At its core,"
+              - code [ref=e128]: agui
+              - text: is a state manager. It takes in your application's variables, and manages their lifecycle end-to-end, listening for changes and updating your widgets as necessary.
+            - listitem [ref=e129]:
+              - strong [ref=e130]: Global
+              - text: ": A global is state that exists as a singleton within your application. All widgets will read and write the same data."
+            - listitem [ref=e131]:
+              - strong [ref=e132]: Plugin
+              - text: ": A plugin is essentially a singleton widget that does not exist in the tree. They are often used to manage one (or more) globals that other widgets may listen to."
+            - listitem [ref=e133]:
+              - strong [ref=e134]: Computed Values
+              - text: ": A function that returns a value, only causing updates to the widget if the returned value changes."
+            - listitem [ref=e135]:
+              - strong [ref=e136]: Key
+              - text: ": A key is a way to instruct"
+              - code [ref=e137]: agui
+              - text: to cache a widget between rebuilds.
+          - heading "Stability Warning" [level=2] [ref=e138]:
+            - link "Stability Warning" [ref=e139] [cursor=pointer]:
+              - /url: "#stability-warning"
+          - paragraph [ref=e140]:
+            - text: While the core of
+            - code [ref=e141]: Agui
+            - text: "is mostly stable, it is still very much in its infancy. The API may change, and optimizations still need to be done, especially when it comes to talking to the render integrations, and the integrations themselves. We are still finding our way, and that will take time. That said: it works. If you need a feature that doesn't exist, feel free to contribute or make a plugin!"
+          - heading "Contributing" [level=2] [ref=e142]:
+            - link "Contributing" [ref=e143] [cursor=pointer]:
+              - /url: "#contributing"
+          - paragraph [ref=e144]:
+            - text: Agui is free and open source. You can find the source code on
+            - link "GitHub" [ref=e145] [cursor=pointer]:
+              - /url: https://github.com/stumblinbear/agui
+            - text: ", issues can be posted on the"
+            - link "GitHub issue tracker" [ref=e146] [cursor=pointer]:
+              - /url: https://github.com/stumblinbear/agui/issues
+            - text: ", with feature requests and questions directed to"
+            - link "Github discussions" [ref=e147] [cursor=pointer]:
+              - /url: https://github.com/stumblinbear/agui/discussions
+            - text: .
+        - navigation "Page navigation" [ref=e148]:
+          - link "Next chapter" [ref=e149] [cursor=pointer]:
+            - /url: getting_started.html
+            - generic [ref=e150]: 
+    - text: 

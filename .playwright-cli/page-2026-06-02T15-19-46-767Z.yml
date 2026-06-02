@@ -1,0 +1,1225 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "Skip to content" [ref=e4] [cursor=pointer]:
+        - /url: "#start-of-content"
+      - banner [ref=e6]:
+        - heading "Navigation Menu" [level=2] [ref=e7]
+        - generic [ref=e8]:
+          - link "Homepage" [ref=e10] [cursor=pointer]:
+            - /url: /
+            - img [ref=e11]
+          - generic [ref=e13]:
+            - navigation "Global" [ref=e16]:
+              - list [ref=e17]:
+                - listitem [ref=e18]:
+                  - button "Platform" [ref=e20] [cursor=pointer]:
+                    - text: Platform
+                    - img [ref=e21]
+                - listitem [ref=e23]:
+                  - button "Solutions" [ref=e25] [cursor=pointer]:
+                    - text: Solutions
+                    - img [ref=e26]
+                - listitem [ref=e28]:
+                  - button "Resources" [ref=e30] [cursor=pointer]:
+                    - text: Resources
+                    - img [ref=e31]
+                - listitem [ref=e33]:
+                  - button "Open Source" [ref=e35] [cursor=pointer]:
+                    - text: Open Source
+                    - img [ref=e36]
+                - listitem [ref=e38]:
+                  - button "Enterprise" [ref=e40] [cursor=pointer]:
+                    - text: Enterprise
+                    - img [ref=e41]
+                - listitem [ref=e43]:
+                  - link "Pricing" [ref=e44] [cursor=pointer]:
+                    - /url: https://github.com/pricing
+                    - generic [ref=e45]: Pricing
+            - generic [ref=e46]:
+              - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+                - img [ref=e51]
+              - link "Sign in" [ref=e54] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2FStumblinbear%2Fagui%2Fblob%2Fmaster%2Fcrates%2Fagui_widgets%2Fsrc%2Fwidgets%2Fgesture_detector.rs
+              - link "Sign up" [ref=e55] [cursor=pointer]:
+                - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fblob%2Fshow&source=header-repo&source_repo=Stumblinbear%2Fagui
+              - button "Appearance settings" [ref=e58] [cursor=pointer]:
+                - img
+    - main [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e66]:
+            - img [ref=e67]
+            - link "Stumblinbear" [ref=e70] [cursor=pointer]:
+              - /url: /Stumblinbear
+            - generic [ref=e71]: /
+            - strong [ref=e72]:
+              - link "agui" [ref=e73] [cursor=pointer]:
+                - /url: /Stumblinbear/agui
+            - generic [ref=e74]: Public
+          - generic [ref=e75]:
+            - list:
+              - listitem [ref=e76]:
+                - link "You must be signed in to change notification settings" [ref=e77] [cursor=pointer]:
+                  - /url: /login?return_to=%2FStumblinbear%2Fagui
+                  - img [ref=e78]
+                  - text: Notifications
+              - listitem [ref=e80]:
+                - link "Fork 3" [ref=e81] [cursor=pointer]:
+                  - /url: /login?return_to=%2FStumblinbear%2Fagui
+                  - img [ref=e82]
+                  - text: Fork
+                  - generic "3" [ref=e84]
+              - listitem [ref=e85]:
+                - link "You must be signed in to star a repository" [ref=e87] [cursor=pointer]:
+                  - /url: /login?return_to=%2FStumblinbear%2Fagui
+                  - img [ref=e88]
+                  - text: Star
+                  - generic "37 users starred this repository" [ref=e90]: "37"
+        - navigation "Repository" [ref=e91]:
+          - list [ref=e92]:
+            - listitem [ref=e93]:
+              - link "Code" [ref=e94] [cursor=pointer]:
+                - /url: /Stumblinbear/agui
+                - img [ref=e95]
+                - generic [ref=e97]: Code
+            - listitem [ref=e98]:
+              - link "Issues 4" [ref=e99] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/issues
+                - img [ref=e100]
+                - generic [ref=e103]: Issues
+                - generic "4" [ref=e104]
+            - listitem [ref=e105]:
+              - link "Pull requests 3" [ref=e106] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/pulls
+                - img [ref=e107]
+                - generic [ref=e109]: Pull requests
+                - generic "3" [ref=e110]
+            - listitem [ref=e111]:
+              - link "Discussions" [ref=e112] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/discussions
+                - img [ref=e113]
+                - generic [ref=e115]: Discussions
+            - listitem [ref=e116]:
+              - link "Actions" [ref=e117] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/actions
+                - img [ref=e118]
+                - generic [ref=e120]: Actions
+            - listitem [ref=e121]:
+              - link "Projects" [ref=e122] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/projects
+                - img [ref=e123]
+                - generic [ref=e125]: Projects
+            - listitem [ref=e126]:
+              - link "Security and quality" [ref=e127] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/security
+                - img [ref=e128]
+                - generic [ref=e130]: Security and quality
+            - listitem [ref=e131]:
+              - link "Insights" [ref=e132] [cursor=pointer]:
+                - /url: /Stumblinbear/agui/pulse
+                - img [ref=e133]
+                - generic [ref=e135]: Insights
+      - generic [ref=e143]:
+        - generic [ref=e145]:
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - generic [ref=e150]:
+                - heading "Collapse file tree" [level=2] [ref=e151]:
+                  - button "Collapse file tree" [expanded] [ref=e152] [cursor=pointer]:
+                    - img [ref=e153]
+                - heading "Files" [level=2] [ref=e156]
+              - generic [ref=e157]:
+                - button "master branch" [ref=e159] [cursor=pointer]:
+                  - generic [ref=e160]:
+                    - generic [ref=e162]:
+                      - img [ref=e164]
+                      - generic [ref=e167]: master
+                    - generic:
+                      - img
+                - button "Search this repository (forward slash)" [ref=e169] [cursor=pointer]:
+                  - img [ref=e170]
+            - generic [ref=e173]:
+              - img [ref=e175]
+              - combobox "Go to file" [ref=e177]
+            - img [ref=e185]
+          - slider "Draggable pane splitter" [ref=e189]
+        - generic [ref=e192]:
+          - generic [ref=e196]:
+            - generic [ref=e198]:
+              - navigation "Breadcrumbs" [ref=e199]:
+                - heading "Breadcrumbs" [level=2] [ref=e200]
+                - list [ref=e201]:
+                  - listitem [ref=e202]:
+                    - link "agui" [ref=e203] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master
+                  - listitem [ref=e204]:
+                    - text: /
+                    - link "crates" [ref=e205] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master/crates
+                  - listitem [ref=e206]:
+                    - text: /
+                    - link "agui_widgets" [ref=e207] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master/crates/agui_widgets
+                  - listitem [ref=e208]:
+                    - text: /
+                    - link "src" [ref=e209] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master/crates/agui_widgets/src
+                  - listitem [ref=e210]:
+                    - text: /
+                    - link "widgets" [ref=e211] [cursor=pointer]:
+                      - /url: /Stumblinbear/agui/tree/master/crates/agui_widgets/src/widgets
+              - generic [ref=e212]:
+                - text: /
+                - heading "gesture_detector.rs" [level=1] [ref=e213]
+              - button "Copy path" [ref=e214] [cursor=pointer]:
+                - img [ref=e215]
+            - button "More file actions" [ref=e221] [cursor=pointer]:
+              - img [ref=e222]
+          - generic [ref=e224]:
+            - generic [ref=e226]:
+              - heading "Latest commit" [level=2] [ref=e227]
+              - generic [ref=e230]:
+                - heading "History" [level=2] [ref=e231]
+                - link "History" [ref=e232] [cursor=pointer]:
+                  - /url: /Stumblinbear/agui/commits/master/crates/agui_widgets/src/widgets/gesture_detector.rs
+                  - generic [ref=e233]:
+                    - generic:
+                      - img
+                    - generic [ref=e234]: History
+            - generic [ref=e236]:
+              - generic [ref=e238]:
+                - heading "File metadata and controls" [level=2] [ref=e239]
+                - list "File view" [ref=e241]:
+                  - listitem [ref=e242]:
+                    - button "Code" [ref=e243] [cursor=pointer]:
+                      - generic [ref=e245]: Code
+                  - listitem [ref=e246]:
+                    - button "Blame" [ref=e247] [cursor=pointer]:
+                      - generic [ref=e249]: Blame
+                - generic [ref=e250]:
+                  - generic [ref=e251]:
+                    - generic [ref=e252]:
+                      - link "Raw" [ref=e254] [cursor=pointer]:
+                        - /url: https://github.com/Stumblinbear/agui/raw/refs/heads/master/crates/agui_widgets/src/widgets/gesture_detector.rs
+                        - generic [ref=e256]: Raw
+                      - button "Copy raw file" [ref=e258] [cursor=pointer]:
+                        - img [ref=e259]
+                      - button "Download raw file" [ref=e263] [cursor=pointer]:
+                        - img [ref=e264]
+                    - generic [ref=e267]:
+                      - button "You must be signed in to make or propose changes" [disabled] [ref=e269]:
+                        - img [ref=e270]
+                      - button "More edit options" [ref=e273] [cursor=pointer]:
+                        - img [ref=e274]
+                  - button "Open symbols panel" [ref=e276] [cursor=pointer]:
+                    - img [ref=e277]
+              - region "gesture_detector.rs" [ref=e280]:
+                - generic [ref=e284]:
+                  - textbox "file content" [ref=e289]: "use agui_core::{ callback::Callback, unit::{Layout, LayoutType, Sizing}, widget::{ BuildContext, BuildResult, LayoutContext, LayoutResult, Widget, WidgetRef, WidgetState, }, }; use agui_macros::StatefulWidget; use crate::{ plugins::{event::ContextEventPluginExt, global::ContextGlobalPluginExt}, state::mouse::{MouseButton, MousePos}, }; #[derive(StatefulWidget, Default, PartialEq)] pub struct GestureDetector { pub on_hover: Callback<bool>, pub on_pressed: Callback<bool>, pub is_focused: bool, pub on_focus: Callback<bool>, pub child: WidgetRef, } #[derive(Debug, Default)] pub struct GestureState { hovering: bool, pressed: bool, focused: bool, } impl WidgetState for GestureDetector { type State = GestureState; fn create_state(&self) -> Self::State { GestureState::default() } } impl WidgetView for GestureDetector { fn layout(&self, _: &mut LayoutContext<Self>) -> LayoutResult { LayoutResult { layout_type: LayoutType::default(), layout: Layout { sizing: Sizing::Fill, ..Default::default() }, } } fn build(&self, ctx: &mut BuildContext<Self>) -> BuildResult { // Allow us to carry over the focused state through rebuilds ctx.state.focused = self.is_focused; if self.on_hover.is_some() { ctx.listen_to::<MousePos, _>(|ctx, event| { // if let Some(rect) = ctx.get_rect() { // if let Some(pos) = **event { // if rect.contains((pos.x as f32, pos.y as f32)) { // if !ctx.state.hovering { // ctx.state.hovering = true; // ctx.on_hover.call(true); // } // return; // } // } // } if ctx.state.hovering { ctx.state.hovering = false; ctx.on_hover.call(false); } }); } if self.on_pressed.is_some() { ctx.listen_to::<MouseButton, _>(|ctx, event| { let pos = ctx.get_global::<MousePos>(); let pos = pos.borrow(); // let is_hovering = if let Some(rect) = ctx.get_rect() { // if let Some(pos) = **pos { // rect.contains((pos.x as f32, pos.y as f32)) // } else { // false // } // } else { // false // }; // if is_hovering { // if let MouseButton::Left(btn) = event { // match btn { // MouseButtonState::Pressed => { // ctx.state.pressed = true; // ctx.on_pressed.call(true); // } // MouseButtonState::Released => { // if ctx.state.pressed { // ctx.state.pressed = false; // ctx.on_pressed.call(false); // } // } // } // } // } }); } if self.on_focus.is_some() { ctx.listen_to::<MouseButton, _>(|ctx, event| { let pos = ctx.get_global::<MousePos>(); let pos = pos.borrow(); // let is_hovering = if let Some(rect) = ctx.get_rect() { // if let Some(pos) = **pos { // rect.contains((pos.x as f32, pos.y as f32)) // } else { // false // } // } else { // false // }; // if let MouseButton::Left(MouseButtonState::Pressed) = event { // if is_hovering { // ctx.state.focused = true; // ctx.on_focus.call(true); // } else if ctx.state.focused { // ctx.state.focused = false; // ctx.on_focus.call(false); // } // } }); } BuildResult::from(&self.child) } }"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic [ref=e290]:
+                          - generic [ref=e291] [cursor=pointer]: "1"
+                          - generic [ref=e292] [cursor=pointer]: "2"
+                          - generic [ref=e293] [cursor=pointer]: "3"
+                          - generic [ref=e294] [cursor=pointer]: "4"
+                          - generic [ref=e295] [cursor=pointer]: "5"
+                          - generic [ref=e296] [cursor=pointer]: "6"
+                          - generic [ref=e297] [cursor=pointer]: "7"
+                          - generic [ref=e298] [cursor=pointer]: "8"
+                          - generic [ref=e299] [cursor=pointer]: "9"
+                          - generic [ref=e300] [cursor=pointer]: "10"
+                          - generic [ref=e301] [cursor=pointer]: "11"
+                          - generic [ref=e302] [cursor=pointer]: "12"
+                          - generic [ref=e303] [cursor=pointer]: "13"
+                          - generic [ref=e304] [cursor=pointer]: "14"
+                          - generic [ref=e305] [cursor=pointer]: "15"
+                          - generic [ref=e306] [cursor=pointer]:
+                            - text: "16"
+                            - button [ref=e307]:
+                              - img [ref=e308]
+                          - generic [ref=e310] [cursor=pointer]: "17"
+                          - generic [ref=e311] [cursor=pointer]: "18"
+                          - generic [ref=e312] [cursor=pointer]: "19"
+                          - generic [ref=e313] [cursor=pointer]: "20"
+                          - generic [ref=e314] [cursor=pointer]: "21"
+                          - generic [ref=e315] [cursor=pointer]: "22"
+                          - generic [ref=e316] [cursor=pointer]: "23"
+                          - generic [ref=e317] [cursor=pointer]: "24"
+                          - generic [ref=e318] [cursor=pointer]: "25"
+                          - generic [ref=e319] [cursor=pointer]: "26"
+                          - generic [ref=e320] [cursor=pointer]:
+                            - text: "27"
+                            - button [ref=e321]:
+                              - img [ref=e322]
+                          - generic [ref=e324] [cursor=pointer]: "28"
+                          - generic [ref=e325] [cursor=pointer]: "29"
+                          - generic [ref=e326] [cursor=pointer]: "30"
+                          - generic [ref=e327] [cursor=pointer]: "31"
+                          - generic [ref=e328] [cursor=pointer]: "32"
+                          - generic [ref=e329] [cursor=pointer]:
+                            - text: "33"
+                            - button [ref=e330]:
+                              - img [ref=e331]
+                          - generic [ref=e333] [cursor=pointer]: "34"
+                          - generic [ref=e334] [cursor=pointer]: "35"
+                          - generic [ref=e335] [cursor=pointer]: "36"
+                          - generic [ref=e336] [cursor=pointer]: "37"
+                          - generic [ref=e337] [cursor=pointer]: "38"
+                          - generic [ref=e338] [cursor=pointer]: "39"
+                          - generic [ref=e339] [cursor=pointer]: "40"
+                          - generic [ref=e340] [cursor=pointer]:
+                            - text: "41"
+                            - button [ref=e341]:
+                              - img [ref=e342]
+                          - generic [ref=e344] [cursor=pointer]:
+                            - text: "42"
+                            - button [ref=e345]:
+                              - img [ref=e346]
+                          - generic [ref=e348] [cursor=pointer]: "43"
+                          - generic [ref=e349] [cursor=pointer]: "44"
+                          - generic [ref=e350] [cursor=pointer]: "45"
+                          - generic [ref=e351] [cursor=pointer]: "46"
+                          - generic [ref=e352] [cursor=pointer]: "47"
+                          - generic [ref=e353] [cursor=pointer]: "48"
+                          - generic [ref=e354] [cursor=pointer]: "49"
+                          - generic [ref=e355] [cursor=pointer]: "50"
+                          - generic [ref=e356] [cursor=pointer]: "51"
+                          - generic [ref=e357] [cursor=pointer]: "52"
+                          - generic [ref=e358] [cursor=pointer]:
+                            - text: "53"
+                            - button [ref=e359]:
+                              - img [ref=e360]
+                          - generic [ref=e362] [cursor=pointer]: "54"
+                          - generic [ref=e363] [cursor=pointer]: "55"
+                          - generic [ref=e364] [cursor=pointer]: "56"
+                          - generic [ref=e365] [cursor=pointer]: "57"
+                          - generic [ref=e366] [cursor=pointer]: "58"
+                          - generic [ref=e367] [cursor=pointer]: "59"
+                          - generic [ref=e368] [cursor=pointer]: "60"
+                          - generic [ref=e369] [cursor=pointer]: "61"
+                          - generic [ref=e370] [cursor=pointer]: "62"
+                          - generic [ref=e371] [cursor=pointer]: "63"
+                          - generic [ref=e372] [cursor=pointer]: "64"
+                          - generic [ref=e373] [cursor=pointer]: "65"
+                          - generic [ref=e374] [cursor=pointer]: "66"
+                          - generic [ref=e375] [cursor=pointer]: "67"
+                          - generic [ref=e376] [cursor=pointer]: "68"
+                          - generic [ref=e377] [cursor=pointer]: "69"
+                          - generic [ref=e378] [cursor=pointer]: "70"
+                          - generic [ref=e379] [cursor=pointer]: "71"
+                          - generic [ref=e380] [cursor=pointer]: "72"
+                          - generic [ref=e381] [cursor=pointer]: "73"
+                          - generic [ref=e382] [cursor=pointer]: "74"
+                          - generic [ref=e383] [cursor=pointer]: "75"
+                          - generic [ref=e384] [cursor=pointer]: "76"
+                          - generic [ref=e385] [cursor=pointer]: "77"
+                          - generic [ref=e386] [cursor=pointer]: "78"
+                          - generic [ref=e387] [cursor=pointer]: "79"
+                          - generic [ref=e388] [cursor=pointer]: "80"
+                          - generic [ref=e389] [cursor=pointer]: "81"
+                          - generic [ref=e390] [cursor=pointer]: "82"
+                          - generic [ref=e391] [cursor=pointer]: "83"
+                          - generic [ref=e392] [cursor=pointer]: "84"
+                          - generic [ref=e393] [cursor=pointer]: "85"
+                          - generic [ref=e394] [cursor=pointer]: "86"
+                          - generic [ref=e395] [cursor=pointer]: "87"
+                          - generic [ref=e396] [cursor=pointer]: "88"
+                          - generic [ref=e397] [cursor=pointer]: "89"
+                          - generic [ref=e398] [cursor=pointer]: "90"
+                          - generic [ref=e399] [cursor=pointer]: "91"
+                          - generic [ref=e400] [cursor=pointer]: "92"
+                          - generic [ref=e401] [cursor=pointer]: "93"
+                          - generic [ref=e402] [cursor=pointer]: "94"
+                          - generic [ref=e403] [cursor=pointer]: "95"
+                          - generic [ref=e404] [cursor=pointer]: "96"
+                          - generic [ref=e405] [cursor=pointer]: "97"
+                          - generic [ref=e406] [cursor=pointer]: "98"
+                          - generic [ref=e407] [cursor=pointer]: "99"
+                          - generic [ref=e408] [cursor=pointer]: "100"
+                          - generic [ref=e409] [cursor=pointer]: "101"
+                          - generic [ref=e410] [cursor=pointer]: "102"
+                          - generic [ref=e411] [cursor=pointer]: "103"
+                          - generic [ref=e412] [cursor=pointer]: "104"
+                          - generic [ref=e413] [cursor=pointer]: "105"
+                          - generic [ref=e414] [cursor=pointer]: "106"
+                          - generic [ref=e415] [cursor=pointer]: "107"
+                          - generic [ref=e416] [cursor=pointer]: "108"
+                          - generic [ref=e417] [cursor=pointer]: "109"
+                          - generic [ref=e418] [cursor=pointer]: "110"
+                          - generic [ref=e419] [cursor=pointer]: "111"
+                          - generic [ref=e420] [cursor=pointer]: "112"
+                          - generic [ref=e421] [cursor=pointer]: "113"
+                          - generic [ref=e422] [cursor=pointer]: "114"
+                          - generic [ref=e423] [cursor=pointer]: "115"
+                          - generic [ref=e424] [cursor=pointer]: "116"
+                          - generic [ref=e425] [cursor=pointer]: "117"
+                          - generic [ref=e426] [cursor=pointer]: "118"
+                          - generic [ref=e427] [cursor=pointer]: "119"
+                          - generic [ref=e428] [cursor=pointer]: "120"
+                          - generic [ref=e429] [cursor=pointer]: "121"
+                          - generic [ref=e430] [cursor=pointer]: "122"
+                          - generic [ref=e431] [cursor=pointer]: "123"
+                          - generic [ref=e432] [cursor=pointer]: "124"
+                          - generic [ref=e433] [cursor=pointer]: "125"
+                          - generic [ref=e434] [cursor=pointer]: "126"
+                          - generic [ref=e435] [cursor=pointer]: "127"
+                          - generic [ref=e436] [cursor=pointer]: "128"
+                          - generic [ref=e437] [cursor=pointer]: "129"
+                          - generic [ref=e438] [cursor=pointer]: "130"
+                          - generic [ref=e439] [cursor=pointer]: "131"
+                          - generic [ref=e440] [cursor=pointer]: "132"
+                          - generic [ref=e441] [cursor=pointer]: "133"
+                          - generic [ref=e442] [cursor=pointer]: "134"
+                          - generic [ref=e443] [cursor=pointer]: "135"
+                          - generic [ref=e444] [cursor=pointer]: "136"
+                          - generic [ref=e445] [cursor=pointer]: "137"
+                          - generic [ref=e446] [cursor=pointer]: "138"
+                          - generic [ref=e447] [cursor=pointer]: "139"
+                          - generic [ref=e448] [cursor=pointer]: "140"
+                          - generic [ref=e449] [cursor=pointer]: "141"
+                          - generic [ref=e450] [cursor=pointer]: "142"
+                          - generic [ref=e451] [cursor=pointer]: "143"
+                          - generic [ref=e452] [cursor=pointer]: "144"
+                          - generic [ref=e453] [cursor=pointer]: "145"
+                          - generic [ref=e454] [cursor=pointer]: "146"
+                          - generic [ref=e455] [cursor=pointer]: "147"
+                          - generic [ref=e456] [cursor=pointer]: "148"
+                          - generic [ref=e457] [cursor=pointer]: "149"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: use
+                                - text: agui_core
+                                - generic: "::"
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: callback
+                                - generic: "::"
+                                - generic: Callback
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: unit
+                                - generic: "::"
+                                - generic: "{"
+                                - generic: Layout
+                                - generic: ","
+                                - generic: LayoutType
+                                - generic: ","
+                                - generic: Sizing
+                                - generic: "}"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: widget
+                                - generic: "::"
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: BuildContext
+                                - generic: ","
+                                - generic: BuildResult
+                                - generic: ","
+                                - generic: LayoutContext
+                                - generic: ","
+                                - generic: LayoutResult
+                                - generic: ","
+                                - generic: Widget
+                                - generic: ","
+                                - generic: WidgetRef
+                                - generic: ","
+                                - generic: WidgetState
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: use
+                                - text: agui_macros
+                                - generic: "::"
+                                - generic: StatefulWidget
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: use
+                                - generic: crate
+                                - generic: "::"
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: plugins
+                                - generic: "::"
+                                - generic: "{"
+                                - text: event
+                                - generic: "::"
+                                - generic: ContextEventPluginExt
+                                - generic: ","
+                                - text: global
+                                - generic: "::"
+                                - generic: ContextGlobalPluginExt
+                                - generic: "}"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: state
+                                - generic: "::"
+                                - text: mouse
+                                - generic: "::"
+                                - generic: "{"
+                                - generic: MouseButton
+                                - generic: ","
+                                - generic: MousePos
+                                - generic: "}"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - text: "#"
+                                  - generic: "["
+                                  - text: derive
+                                  - generic: (
+                                  - generic: StatefulWidget
+                                  - generic: ","
+                                  - generic: Default
+                                  - generic: ","
+                                  - generic: PartialEq
+                                  - generic: )
+                                  - generic: "]"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: struct
+                                - generic: GestureDetector
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: on_hover
+                                - generic: ":"
+                                - generic: Callback
+                                - generic: <
+                                - generic: bool
+                                - generic: ">"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: on_pressed
+                                - generic: ":"
+                                - generic: Callback
+                                - generic: <
+                                - generic: bool
+                                - generic: ">"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: is_focused
+                                - generic: ":"
+                                - generic: bool
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: on_focus
+                                - generic: ":"
+                                - generic: Callback
+                                - generic: <
+                                - generic: bool
+                                - generic: ">"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: child
+                                - generic: ":"
+                                - generic: WidgetRef
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - text: "#"
+                                  - generic: "["
+                                  - text: derive
+                                  - generic: (
+                                  - generic: Debug
+                                  - generic: ","
+                                  - generic: Default
+                                  - generic: )
+                                  - generic: "]"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pub
+                                - generic: struct
+                                - generic: GestureState
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: hovering
+                                - generic: ":"
+                                - generic: bool
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: pressed
+                                - generic: ":"
+                                - generic: bool
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: focused
+                                - generic: ":"
+                                - generic: bool
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: impl
+                                - generic: WidgetState
+                                - generic: for
+                                - generic: GestureDetector
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: type
+                                - generic: State
+                                - text: =
+                                - generic: GestureState
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: fn
+                                - generic: create_state
+                                - generic: (
+                                - generic: "&"
+                                - generic: self
+                                - generic: )
+                                - text: "->"
+                                - generic: Self
+                                - generic: "::"
+                                - generic: State
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: GestureState
+                                - generic: "::"
+                                - generic: default
+                                - generic: (
+                                - generic: )
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: impl
+                                - generic: WidgetView
+                                - generic: for
+                                - generic: GestureDetector
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: fn
+                                - generic: layout
+                                - generic: (
+                                - generic: "&"
+                                - generic: self
+                                - generic: ","
+                                - text: _
+                                - generic: ":"
+                                - generic: "&"
+                                - generic: mut
+                                - generic: LayoutContext
+                                - generic: <
+                                - generic: Self
+                                - generic: ">"
+                                - generic: )
+                                - text: "->"
+                                - generic: LayoutResult
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: LayoutResult
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: layout_type
+                                - generic: ":"
+                                - generic: LayoutType
+                                - generic: "::"
+                                - generic: default
+                                - generic: (
+                                - generic: )
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: layout
+                                - generic: ":"
+                                - generic: Layout
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: sizing
+                                - generic: ":"
+                                - generic: Sizing
+                                - generic: "::"
+                                - generic: Fill
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: ..
+                                - generic: Default
+                                - generic: "::"
+                                - generic: default
+                                - generic: (
+                                - generic: )
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: ","
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: fn
+                                - generic: build
+                                - generic: (
+                                - generic: "&"
+                                - generic: self
+                                - generic: ","
+                                - generic: ctx
+                                - generic: ":"
+                                - generic: "&"
+                                - generic: mut
+                                - generic: BuildContext
+                                - generic: <
+                                - generic: Self
+                                - generic: ">"
+                                - generic: )
+                                - text: "->"
+                                - generic: BuildResult
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // Allow us to carry over the focused state through rebuilds
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: ctx
+                                - generic: .
+                                - generic: state
+                                - generic: .
+                                - generic: focused
+                                - text: =
+                                - generic: self
+                                - generic: .
+                                - generic: is_focused
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: if
+                                - generic: self
+                                - generic: .
+                                - generic: on_hover
+                                - generic: .
+                                - generic: is_some
+                                - generic: (
+                                - generic: )
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: ctx
+                                - generic: .
+                                - generic: listen_to
+                                - generic: "::"
+                                - generic: <
+                                - generic: MousePos
+                                - generic: ","
+                                - generic: _
+                                - generic: ">"
+                                - generic: (
+                                - text: "|ctx"
+                                - generic: ","
+                                - text: event|
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// if let Some(rect) = ctx.get_rect() {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// if let Some(pos) = **event {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// if rect.contains((pos.x as f32, pos.y as f32)) {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// if !ctx.state.hovering {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // ctx.state.hovering = true;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // ctx.on_hover.call(true);
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// }"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // return;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// }"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// }"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// }"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: if
+                                - text: ctx
+                                - generic: .
+                                - generic: state
+                                - generic: .
+                                - generic: hovering
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: ctx
+                                - generic: .
+                                - generic: state
+                                - generic: .
+                                - generic: hovering
+                                - text: =
+                                - generic: "false"
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: ctx
+                                - generic: .
+                                - generic: on_hover
+                                - generic: .
+                                - generic: call
+                                - generic: (
+                                - generic: "false"
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: if
+                                - generic: self
+                                - generic: .
+                                - generic: on_pressed
+                                - generic: .
+                                - generic: is_some
+                                - generic: (
+                                - generic: )
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: ctx
+                                - generic: .
+                                - generic: listen_to
+                                - generic: "::"
+                                - generic: <
+                                - generic: MouseButton
+                                - generic: ","
+                                - generic: _
+                                - generic: ">"
+                                - generic: (
+                                - text: "|ctx"
+                                - generic: ","
+                                - text: event|
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: let
+                                - text: pos = ctx
+                                - generic: .
+                                - generic: get_global
+                                - generic: "::"
+                                - generic: <
+                                - generic: MousePos
+                                - generic: ">"
+                                - generic: (
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: let
+                                - text: pos = pos
+                                - generic: .
+                                - generic: borrow
+                                - generic: (
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// let is_hovering = if let Some(rect) = ctx.get_rect() {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// if let Some(pos) = **pos {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // rect.contains((pos.x as f32, pos.y as f32))
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// } else {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // false
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// }"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// } else {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // false
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// };"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// if is_hovering {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// if let MouseButton::Left(btn) = event {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// match btn {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// MouseButtonState::Pressed => {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // ctx.state.pressed = true;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // ctx.on_pressed.call(true);
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// }"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// MouseButtonState::Released => {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// if ctx.state.pressed {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // ctx.state.pressed = false;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // ctx.on_pressed.call(false);
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// }"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// }"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// }"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// }"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// }"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: if
+                                - generic: self
+                                - generic: .
+                                - generic: on_focus
+                                - generic: .
+                                - generic: is_some
+                                - generic: (
+                                - generic: )
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - text: ctx
+                                - generic: .
+                                - generic: listen_to
+                                - generic: "::"
+                                - generic: <
+                                - generic: MouseButton
+                                - generic: ","
+                                - generic: _
+                                - generic: ">"
+                                - generic: (
+                                - text: "|ctx"
+                                - generic: ","
+                                - text: event|
+                                - generic: "{"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: let
+                                - text: pos = ctx
+                                - generic: .
+                                - generic: get_global
+                                - generic: "::"
+                                - generic: <
+                                - generic: MousePos
+                                - generic: ">"
+                                - generic: (
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: let
+                                - text: pos = pos
+                                - generic: .
+                                - generic: borrow
+                                - generic: (
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// let is_hovering = if let Some(rect) = ctx.get_rect() {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// if let Some(pos) = **pos {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // rect.contains((pos.x as f32, pos.y as f32))
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// } else {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // false
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// }"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// } else {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // false
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// };"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// if let MouseButton::Left(MouseButtonState::Pressed) = event {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// if is_hovering {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // ctx.state.focused = true;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // ctx.on_focus.call(true);
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// } else if ctx.state.focused {"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // ctx.state.focused = false;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: // ctx.on_focus.call(false);
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// }"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "// }"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                                - generic: )
+                                - generic: ;
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: BuildResult
+                                - generic: "::"
+                                - generic: from
+                                - generic: (
+                                - generic: "&"
+                                - generic: self
+                                - generic: .
+                                - generic: child
+                                - generic: )
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: "}"
+  - alert [ref=e461]

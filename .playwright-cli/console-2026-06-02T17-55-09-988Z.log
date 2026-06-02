@@ -1,0 +1,69 @@
+Total messages: 99 (Errors: 2, Warnings: 0)
+Returning 66 messages for level "info"
+
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=eead1460:21550
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/ai/research -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/ai/research -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/ai/research -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/ai/research -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=eead1460:21550
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=eead1460:21550
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=eead1460:21550
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/auth/google/status -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=eead1460:21550
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/auth/google/status -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://192.168.0.108:3000/src/components/ComponentLibrary.tsx?t=1780422883245:0
+[ERROR] [hmr] Failed to reload /src/components/ComponentLibrary.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://192.168.0.108:3000/@vite/client:175
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=eead1460:21550
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://192.168.0.108:3000/node_modules/.vite/deps/chunk-GKJBSOWT.js?v=eead1460:21550
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/calendar -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/tasks -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10
+[LOG] [api] /api/data/gmail -> 200 @ http://192.168.0.108:3000/src/services/api.ts?t=1780422790389:10

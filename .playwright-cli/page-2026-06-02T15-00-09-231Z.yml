@@ -1,0 +1,53 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - button "Hoppa till innehåll" [ref=e3] [cursor=pointer]:
+      - generic [ref=e5]: Hoppa till innehåll
+    - button "Feedback om hjälpmedel" [ref=e6] [cursor=pointer]:
+      - generic [ref=e8]: Feedback om hjälpmedel
+    - generic [ref=e9]:
+      - link "Tillbaka till Bing-sökning" [ref=e10] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Tillbaka till Bing-sökning" [level=1] [ref=e11]
+      - search [ref=e12]:
+        - button "Sök" [ref=e15] [cursor=pointer]
+        - searchbox "Skriv din sökning här – sökförslagen visas medan du söker" [ref=e16]: agui UI framework
+    - complementary "Poäng och inställningar för kontot" [ref=e17]:
+      - button "Microsoft Rewards"
+      - link "Logga in" [ref=e18] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic "Logga in" [ref=e19]
+    - navigation "Sökfilter" [ref=e20]:
+      - list [ref=e21]:
+        - listitem [ref=e22]:
+          - link "Alla" [ref=e23] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=e24]:
+          - link "Sök" [ref=e25] [cursor=pointer]:
+            - /url: /copilotsearch?q=agui+UI+framework&FORM=CSSCOP
+            - img [ref=e26]
+            - text: Sök
+        - listitem [ref=e28]:
+          - link "Bilder" [ref=e29] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=060699b1c7e8719611da4ebb1de04d072594afa819fcd673274a47a13aead1b6JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=34a493f4-741a-6fc4-2429-8498755b6e47&u=a1L2ltYWdlcy9zZWFyY2g_cT1hZ3VpK1VJK2ZyYW1ld29yayZGT1JNPUhEUlNDMg&ntb=1
+        - listitem [ref=e30]:
+          - link "Videoklipp" [ref=e31] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=516d1541f2c2c455000d7eb4eda298f9c4fc543964df1b8d11b6d60ca4e314a4JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=34a493f4-741a-6fc4-2429-8498755b6e47&u=a1L3ZpZGVvcy9zZWFyY2g_cT1hZ3VpK1VJK2ZyYW1ld29yayZGT1JNPUhEUlNDMw&ntb=1
+        - listitem [ref=e32]:
+          - link "Kartor" [ref=e33] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=6e36c31a8ef74d2d8a77819df1aae2ee0999cc834014b856f1d5081bef1d1be1JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=34a493f4-741a-6fc4-2429-8498755b6e47&u=a1L21hcHM_cT1hZ3VpK1VJK2ZyYW1ld29yayZGT1JNPUhEUlNDNA&ntb=1
+        - listitem [ref=e34]:
+          - link "Nyheter" [ref=e35] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=68a036d1b49762c80581d6a85df32a2f4492bfdde2e6dfe0408bc9dc621a5d56JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=34a493f4-741a-6fc4-2429-8498755b6e47&u=a1L25ld3Mvc2VhcmNoP3E9YWd1aStVSStmcmFtZXdvcmsmRk9STT1IRFJTQzY&ntb=1
+        - listitem [ref=e36]:
+          - button "Mer" [ref=e37] [cursor=pointer]:
+            - img [ref=e39]
+            - text: Mer
+  - contentinfo [ref=e41]:
+    - generic [ref=e42]:
+      - list:
+        - listitem [ref=e43]:
+          - link "Sekretess" [ref=e44] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=e7e0ac43837c765d39c0723297632651827c691fc0b94e03cfdd23b20e2a5af8JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=34a493f4-741a-6fc4-2429-8498755b6e47&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=e45]:
+          - link "Villkor" [ref=e46] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=051bc6f976ff34b17bad9e86626178932fa24859b70280820a1e6e8fa2240733JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=34a493f4-741a-6fc4-2429-8498755b6e47&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1

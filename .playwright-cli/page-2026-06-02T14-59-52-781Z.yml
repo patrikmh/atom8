@@ -1,0 +1,743 @@
+- generic [ref=e1]:
+  - main [ref=e5]:
+    - article [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e12]:
+          - link "Lär dig om DuckDuckGo" [ref=e14] [cursor=pointer]:
+            - /url: /about
+          - search "Sök på webben med DuckDuckGo" [ref=e18]:
+            - generic [ref=e19]:
+              - combobox "Sök med DuckDuckGo" [active] [ref=e22]
+              - radiogroup [ref=e25]:
+                - generic [ref=e27] [cursor=pointer]:
+                  - radio "Sök Sök" [checked]
+                  - generic "Sök" [ref=e28]:
+                    - button "Sök" [ref=e29]:
+                      - img [ref=e30]
+                    - text: Sök
+                - generic [ref=e35] [cursor=pointer]:
+                  - radio "Duck.ai Duck.ai"
+                  - generic "Duck.ai" [ref=e36]:
+                    - button "Duck.ai" [ref=e37]:
+                      - img [ref=e38]
+                    - text: Duck.ai
+          - generic [ref=e42]:
+            - link "Duck.ai" [ref=e43] [cursor=pointer]:
+              - /url: https://duck.ai/?origin=funnel_home_website
+              - img [ref=e45]
+              - text: Duck.ai
+            - navigation "navigation" [ref=e49]:
+              - list [ref=e50]:
+                - listitem [ref=e51]:
+                  - generic [ref=e52]: Huvudnavigeringsmenyn är stängd
+                  - button "Meny" [ref=e53] [cursor=pointer]:
+                    - generic [ref=e54]: Meny
+                    - img [ref=e55]
+        - generic [ref=e58]:
+          - heading "Byt till DuckDuckGo. Det är privat och gratis!" [level=2] [ref=e59]
+          - list [ref=e60]:
+            - listitem [ref=e61]:
+              - paragraph [ref=e63]: Gör DuckDuckGo till den sökmotor du använder som standard.
+              - generic [ref=e64] [cursor=pointer]: Ange som standard sökmotor
+            - listitem [ref=e65]:
+              - generic [ref=e66]:
+                - paragraph [ref=e67]: Den bästa integriteten
+                - img [ref=e68]
+              - paragraph [ref=e71]: Skaffa vår kostnadsfria webbläsare för ännu mer integritet.
+              - link "Ladda ner webbläsare" [ref=e72] [cursor=pointer]:
+                - /url: https://duckduckgo.com/mac?origin=funnel_home_website__hero
+                - text: Ladda ner webbläsare
+                - img [ref=e73]
+          - paragraph [ref=e77]: Tiotals miljoner personer världen om litar på den!
+        - generic [ref=e78]:
+          - heading "Läs mer" [level=6] [ref=e79]
+          - link [ref=e80] [cursor=pointer]:
+            - /url: "#features"
+            - img [ref=e82]
+        - button "Anpassa" [ref=e85] [cursor=pointer]:
+          - img [ref=e86]
+          - generic [ref=e88]: Anpassa
+      - main [ref=e90]:
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - img [ref=e97]
+            - heading "Webbläsaren som aktivt skyddar dina personuppgifter." [level=1] [ref=e107]:
+              - generic [ref=e108]: Webbläsaren som aktivt skyddar dina personuppgifter.
+          - generic [ref=e109]:
+            - link "Ladda ner DuckDuckGo för Mac" [ref=e111] [cursor=pointer]:
+              - /url: https://duckduckgo.com/mac?origin=funnel_home_website__details
+              - text: Ladda ner DuckDuckGo för Mac
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - paragraph [ref=e122]: Webbläsare på dator och mobil
+                - list [ref=e123]:
+                  - list [ref=e124]:
+                    - listitem [ref=e125]:
+                      - link "Mac" [ref=e126] [cursor=pointer]:
+                        - /url: https://duckduckgo.com/mac?origin=funnel_home_website__details
+                        - paragraph [ref=e127]: Mac
+                    - listitem [ref=e128]:
+                      - link "Windows" [ref=e129] [cursor=pointer]:
+                        - /url: https://duckduckgo.com/windows?origin=funnel_home_website__details
+                        - img [ref=e130]
+                        - paragraph [ref=e132]: Windows
+                  - list [ref=e133]:
+                    - listitem [ref=e134]:
+                      - link "iOS" [ref=e135] [cursor=pointer]:
+                        - /url: https://apps.apple.com/app/duckduckgo-privacy-browser/id663592361?platform=iphone&pt=866401&mt=8
+                        - img [ref=e136]
+                        - paragraph [ref=e138]: iOS
+                    - listitem [ref=e139]:
+                      - link "Android" [ref=e140] [cursor=pointer]:
+                        - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=origin%3Dfunnel_home_website__details
+                        - img [ref=e141]
+                        - paragraph [ref=e143]: Android
+              - generic [ref=e144]:
+                - paragraph [ref=e146]: Webbläsartillägg för dator
+                - list [ref=e147]:
+                  - listitem [ref=e148]:
+                    - link "Chrome" [ref=e149] [cursor=pointer]:
+                      - /url: https://chrome.google.com/webstore/detail/duckduckgo-privacy-essent/bkdgflcldnnnapblkhphbgpggdiikppg
+                      - paragraph [ref=e150]: Chrome
+                  - listitem [ref=e151]:
+                    - link "Edge" [ref=e152] [cursor=pointer]:
+                      - /url: https://microsoftedge.microsoft.com/addons/detail/caoacbimdbbljakfhgikoodekdnlcgpk
+                      - paragraph [ref=e153]: Edge
+                  - list [ref=e154]:
+                    - listitem [ref=e155]:
+                      - link "Firefox" [ref=e156] [cursor=pointer]:
+                        - /url: https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/
+                        - paragraph [ref=e157]: Firefox
+                    - listitem [ref=e158]:
+                      - link "Opera" [ref=e159] [cursor=pointer]:
+                        - /url: https://addons.opera.com/en/extensions/details/duckduckgo-for-opera-2/
+                        - paragraph [ref=e160]: Opera
+        - generic [ref=e164]:
+          - generic [ref=e165]:
+            - heading "Upptäck mer från DuckDuckGo." [level=2] [ref=e166]
+            - generic [ref=e167]:
+              - button "Privatsökning" [ref=e169] [cursor=pointer]:
+                - generic [ref=e171]: Privatsökning
+                - img [ref=e174]
+              - button "Duck.ai" [ref=e177] [cursor=pointer]:
+                - generic [ref=e179]: Duck.ai
+                - img [ref=e182]
+              - button "Abonnemang" [ref=e185] [cursor=pointer]:
+                - generic [ref=e187]: Abonnemang
+                - img [ref=e190]
+              - button "E-post" [ref=e193] [cursor=pointer]:
+                - generic [ref=e195]: E-post
+                - img [ref=e198]
+          - generic [ref=e204]:
+            - button "Skydd Undvik bedrägerier och dataslukande företag" [ref=e205] [cursor=pointer]:
+              - generic [ref=e212]:
+                - heading "Skydd" [level=5] [ref=e213]
+                - paragraph [ref=e214]: Undvik bedrägerier och dataslukande företag
+              - img [ref=e215]
+            - button "Integritet Blockera de flesta annonser och popup-fönster för cookies" [ref=e217] [cursor=pointer]:
+              - generic [ref=e224]:
+                - heading "Integritet" [level=5] [ref=e225]
+                - paragraph [ref=e226]: Blockera de flesta annonser och popup-fönster för cookies
+              - img [ref=e227]
+            - button "Sinnesro Sök och chatta utan att bli spårad" [ref=e229] [cursor=pointer]:
+              - generic [ref=e236]:
+                - heading "Sinnesro" [level=5] [ref=e237]
+                - paragraph [ref=e238]: Sök och chatta utan att bli spårad
+              - img [ref=e239]
+        - generic [ref=e243]:
+          - heading "Se hur DuckDuckGo står sig mot andra." [level=2] [ref=e244]
+          - tablist [ref=e247]:
+            - tab "Chrome" [selected] [ref=e248] [cursor=pointer]:
+              - generic [ref=e249]: Chrome
+            - tab "Edge" [ref=e250] [cursor=pointer]:
+              - generic [ref=e251]: Edge
+            - tab "Safari" [ref=e252] [cursor=pointer]:
+              - generic [ref=e253]: Safari
+            - tab "Firefox" [ref=e254] [cursor=pointer]:
+              - generic [ref=e255]: Firefox
+            - tab "Brave" [ref=e256] [cursor=pointer]:
+              - generic [ref=e257]: Brave
+          - generic [ref=e258]:
+            - table [ref=e259]:
+              - rowgroup [ref=e260]:
+                - row [ref=e261]:
+                  - columnheader [ref=e262]
+                  - columnheader [ref=e263]:
+                    - img [ref=e265]
+                  - columnheader [ref=e272]:
+                    - img [ref=e274]
+              - rowgroup [ref=e284]:
+                - row "Sök privat som standard" [ref=e285]:
+                  - cell "Sök privat som standard" [ref=e286]:
+                    - generic [ref=e287]:
+                      - img [ref=e289]
+                      - paragraph [ref=e294]: Sök privat som standard
+                  - cell [ref=e295]
+                  - cell [ref=e297]
+                - row "Chatta privat med populära AI-chatbotar (valfritt)" [ref=e299]:
+                  - cell "Chatta privat med populära AI-chatbotar (valfritt)" [ref=e300]:
+                    - generic [ref=e301]:
+                      - img [ref=e303]
+                      - paragraph [ref=e310]: Chatta privat med populära AI-chatbotar (valfritt)
+                  - cell [ref=e311]
+                  - cell [ref=e313]
+                - row "Blockerar tredjepartsspårning från Facebook, Google och andra" [ref=e315]:
+                  - cell "Blockerar tredjepartsspårning från Facebook, Google och andra" [ref=e316]:
+                    - generic [ref=e317]:
+                      - img [ref=e319]
+                      - paragraph [ref=e324]: Blockerar tredjepartsspårning från Facebook, Google och andra
+                  - cell [ref=e325]
+                  - cell [ref=e327]
+                - row "Blockerar riktade annonser" [ref=e329]:
+                  - cell "Blockerar riktade annonser" [ref=e330]:
+                    - generic [ref=e331]:
+                      - img [ref=e333]
+                      - paragraph [ref=e341]: Blockerar riktade annonser
+                  - cell [ref=e342]
+                  - cell [ref=e344]
+                - row "Blockerar popup-fönster för cookies" [ref=e346]:
+                  - cell "Blockerar popup-fönster för cookies" [ref=e347]:
+                    - generic [ref=e348]:
+                      - img [ref=e350]
+                      - paragraph [ref=e358]: Blockerar popup-fönster för cookies
+                  - cell [ref=e359]
+                  - cell [ref=e361]
+                - row "Spelar upp YouTube-videor utan riktade annonser" [ref=e363]:
+                  - cell "Spelar upp YouTube-videor utan riktade annonser" [ref=e364]:
+                    - generic [ref=e365]:
+                      - img [ref=e367]
+                      - paragraph [ref=e372]: Spelar upp YouTube-videor utan riktade annonser
+                  - cell [ref=e373]
+                  - cell [ref=e375]
+                - row "Hanterar lösenord säkert" [ref=e377]:
+                  - cell "Hanterar lösenord säkert" [ref=e378]:
+                    - generic [ref=e379]:
+                      - img [ref=e381]
+                      - paragraph [ref=e385]: Hanterar lösenord säkert
+                  - cell [ref=e386]
+                  - cell [ref=e388]
+                - row "Blockerar e-postspårare" [ref=e390]:
+                  - cell "Blockerar e-postspårare" [ref=e391]:
+                    - generic [ref=e392]:
+                      - img [ref=e394]
+                      - paragraph [ref=e401]: Blockerar e-postspårare
+                  - cell [ref=e402]
+                  - cell [ref=e404]
+                - row "Raderar surfdata med en knapp" [ref=e406]:
+                  - cell "Raderar surfdata med en knapp" [ref=e407]:
+                    - generic [ref=e408]:
+                      - img [ref=e410]
+                      - paragraph [ref=e416]: Raderar surfdata med en knapp
+                  - cell [ref=e417]
+                  - cell [ref=e419]
+                - row "Tar bort personlig information från webbplatser som säljer dem" [ref=e421]:
+                  - cell "Tar bort personlig information från webbplatser som säljer dem" [ref=e422]:
+                    - generic [ref=e423]:
+                      - img [ref=e425]
+                      - paragraph [ref=e433]: Tar bort personlig information från webbplatser som säljer dem
+                  - cell [ref=e434]
+                  - cell [ref=e436]
+                - row "Hjälper till att återställa din identitet" [ref=e438]:
+                  - cell "Hjälper till att återställa din identitet" [ref=e439]:
+                    - generic [ref=e440]:
+                      - img [ref=e442]
+                      - paragraph [ref=e448]: Hjälper till att återställa din identitet
+                  - cell [ref=e449]
+                  - cell [ref=e451]
+                - row "Skyddar din anslutning med VPN" [ref=e453]:
+                  - cell "Skyddar din anslutning med VPN" [ref=e454]:
+                    - generic [ref=e455]:
+                      - img [ref=e457]
+                      - paragraph [ref=e464]: Skyddar din anslutning med VPN
+                  - cell [ref=e465]
+                  - cell [ref=e467]
+            - generic [ref=e469]:
+              - generic [ref=e470]:
+                - generic [ref=e471]:
+                  - img [ref=e473]
+                  - paragraph [ref=e477]: Inkluderad
+                - generic [ref=e478]:
+                  - img [ref=e480]
+                  - paragraph [ref=e484]: Begränsad
+                - generic [ref=e485]:
+                  - img [ref=e487]
+                  - paragraph [ref=e491]: Betald
+                - generic [ref=e492]:
+                  - img [ref=e494]
+                  - paragraph [ref=e498]: Inga
+              - paragraph [ref=e499]: Jämförelser av webbläsare utfördes med standardinställningar. Informationen är korrekt från och med december 2025
+            - generic [ref=e500]:
+              - link "Ladda ner DuckDuckGo för Mac" [ref=e501] [cursor=pointer]:
+                - /url: https://duckduckgo.com/mac?origin=funnel_home_website__details
+                - img [ref=e503]
+                - text: Ladda ner DuckDuckGo för Mac
+              - link "Jämför fler skydd" [ref=e505] [cursor=pointer]:
+                - /url: /compare-privacy
+                - img [ref=e507]
+                - text: Jämför fler skydd
+        - generic [ref=e510]:
+          - generic [ref=e512]:
+            - generic [ref=e514]:
+              - text: Skydd. Integritet. Sinnesro.
+              - text: Skaffa webbläsaren som är byggd för dataskydd, inte datainsamling.
+            - generic [ref=e516]:
+              - paragraph [ref=e517]: DuckDuckGo-webbläsaren är tillgänglig på
+              - generic [ref=e518]:
+                - link "Mac" [ref=e519] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/mac?origin=funnel_home_website__details
+                  - img [ref=e521]
+                  - paragraph [ref=e524]: Mac
+                - link "Windows" [ref=e525] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/windows?origin=funnel_home_website__details
+                  - img [ref=e527]
+                  - paragraph [ref=e529]: Windows
+                - link "iOS" [ref=e530] [cursor=pointer]:
+                  - /url: https://apps.apple.com/app/duckduckgo-privacy-browser/id663592361?platform=iphone&pt=866401&mt=8
+                  - img [ref=e532]
+                  - paragraph [ref=e534]: iOS
+                - link "Android" [ref=e535] [cursor=pointer]:
+                  - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=origin%3Dfunnel_home_website__details
+                  - img [ref=e537]
+                  - paragraph [ref=e539]: Android
+          - generic [ref=e541]:
+            - generic [ref=e542]:
+              - generic [ref=e544]:
+                - heading "Ta tillbaka kontrollen över dina personuppgifter." [level=2] [ref=e546]
+                - paragraph [ref=e547]: Dolda spårare gömmer sig på 85 % av populära webbplatser. Vi blockerar dem aktivt som standard, vilket gör att du undviker hackare, bedragare och dataslukande företag.
+              - generic [ref=e548]:
+                - button "Adjö inkognitoläge, hej äkta integritet i alla flikar" [ref=e550] [cursor=pointer]:
+                  - heading "Adjö inkognitoläge, hej äkta integritet i alla flikar" [level=5] [ref=e551]
+                  - img [ref=e554]
+                - button "Blockera tredjepartsspårare från Google, Facebook och andra" [ref=e557] [cursor=pointer]:
+                  - heading "Blockera tredjepartsspårare från Google, Facebook och andra" [level=5] [ref=e558]
+                  - img [ref=e561]
+                - button "Radera alla flikar, historik och surfdata med ett klick" [ref=e564] [cursor=pointer]:
+                  - heading "Radera alla flikar, historik och surfdata med ett klick" [level=5] [ref=e565]
+                  - img [ref=e568]
+            - generic [ref=e570]:
+              - generic [ref=e572]:
+                - heading "Blockera de flesta annonser och popup-fönster för cookies och få färre avbrott." [level=2] [ref=e574]
+                - paragraph [ref=e575]: Vår spårningsblockering stoppar de flesta annonser innan de ens visas så att du kan njuta av ditt favoritinnehåll med mindre krångel. Vi upptäcker popup-fönster för cookies direkt och, där det är möjligt, väljer vi bort dem automatiskt så att du inte ens ser dem.
+              - generic [ref=e576]:
+                - button "Sluta låta annonser förfölja dig överallt" [ref=e578] [cursor=pointer]:
+                  - heading "Sluta låta annonser förfölja dig överallt" [level=5] [ref=e579]
+                  - img [ref=e582]
+                - button "Blockera irriterande cookie-popup-fönster" [ref=e585] [cursor=pointer]:
+                  - heading "Blockera irriterande cookie-popup-fönster" [level=5] [ref=e586]
+                  - img [ref=e589]
+                - button "Titta på YouTube-videor utan riktade annonser" [ref=e592] [cursor=pointer]:
+                  - heading "Titta på YouTube-videor utan riktade annonser" [level=5] [ref=e593]
+                  - img [ref=e596]
+            - generic [ref=e598]:
+              - generic [ref=e600]:
+                - heading "Dataskydd, inte datainsamling." [level=2] [ref=e602]
+                - paragraph [ref=e603]: Vi tror att det bästa sättet att skydda dina data är att inte samla in dem överhuvudtaget. Vi spårar aldrig dina sökningar, och våra surfskydd stoppar andra företag från att samla in dina data.
+              - generic [ref=e604]:
+                - button "Sök utan att bli spårad" [ref=e606] [cursor=pointer]:
+                  - heading "Sök utan att bli spårad" [level=5] [ref=e607]
+                  - img [ref=e610]
+                - button "En enkel, säker lösenordshanterare" [ref=e613] [cursor=pointer]:
+                  - heading "En enkel, säker lösenordshanterare" [level=5] [ref=e614]
+                  - img [ref=e617]
+                - button "Chatta privat med populära AI-chatbots (valfritt)" [ref=e620] [cursor=pointer]:
+                  - heading "Chatta privat med populära AI-chatbots (valfritt)" [level=5] [ref=e621]
+                  - img [ref=e624]
+          - generic [ref=e626]:
+            - heading "Du behöver inte enbart lita på vad vi säger." [level=2] [ref=e627]
+            - generic [ref=e629]:
+              - link "The Verge David Pierce" [ref=e631] [cursor=pointer]:
+                - /url: https://www.theverge.com/2023/6/22/23769084/duckduckgo-browser-windows-download
+                - generic:
+                  - img "The Verge"
+                - blockquote [ref=e632]:
+                  - text: “
+                  - paragraph [ref=e633]: a solid cross-platform browser that really can keep up with the Chromes and Edges of the world.”
+                - paragraph [ref=e635]: David Pierce
+              - link "Wired David Nield" [ref=e637] [cursor=pointer]:
+                - /url: https://www.wired.com/story/privacy-browsers-duckduckgo-ghostery-brave/
+                - generic:
+                  - img "Wired"
+                - blockquote [ref=e638]:
+                  - text: “
+                  - paragraph [ref=e639]: you're getting maximum protection with minimal effort.”
+                - paragraph [ref=e641]: David Nield
+              - link "Engadget Mariella Moon" [ref=e643] [cursor=pointer]:
+                - /url: https://www.engadget.com/duckduckgo-mac-browser-open-beta-092105957.html
+                - generic:
+                  - img "Engadget"
+                - blockquote [ref=e644]:
+                  - text: “
+                  - paragraph [ref=e645]: easy and quick to import passwords and bookmarks from other browsers like Chrome.”
+                - paragraph [ref=e647]: Mariella Moon
+              - link "CNET Zachary McAuliffe" [ref=e649] [cursor=pointer]:
+                - /url: https://www.cnet.com/tech/services-and-software/five-reasons-you-should-use-duckduckgo-instead-of-google/
+                - generic:
+                  - img "CNET"
+                - blockquote [ref=e650]:
+                  - text: “
+                  - paragraph [ref=e651]: frees up bandwidth and lets websites load faster.”
+                - paragraph [ref=e653]: Zachary McAuliffe
+              - link "TechRadar Desire Athow" [ref=e655] [cursor=pointer]:
+                - /url: https://www.techradar.com/pro/duckduckgo-private-browser
+                - generic:
+                  - img "TechRadar"
+                - blockquote [ref=e656]:
+                  - text: “
+                  - paragraph [ref=e657]: DuckDuckGo is a must-try”
+                - paragraph [ref=e659]: Desire Athow
+              - link "Apple App Store App Store Review" [ref=e661] [cursor=pointer]:
+                - /url: https://apps.apple.com/us/app/duckduckgo-private-browser/id663592361?see-all=reviews
+                - img "Apple App Store"
+                - blockquote [ref=e662]:
+                  - text: “
+                  - paragraph [ref=e663]: the most intuitive, well laid out, and quick browser I've used.”
+                - generic [ref=e664]:
+                  - img [ref=e665]
+                  - paragraph [ref=e672]: App Store Review
+              - link "Apple App Store App Store Review" [ref=e674] [cursor=pointer]:
+                - /url: https://apps.apple.com/us/app/duckduckgo-private-browser/id663592361?see-all=reviews
+                - img "Apple App Store"
+                - blockquote [ref=e675]:
+                  - text: “
+                  - paragraph [ref=e676]: absolutely love this browser, and cannot imagine using any other again.”
+                - generic [ref=e677]:
+                  - img [ref=e678]
+                  - paragraph [ref=e685]: App Store Review
+              - link "Apple App Store App Store Review" [ref=e687] [cursor=pointer]:
+                - /url: https://apps.apple.com/us/app/duckduckgo-private-browser/id663592361?see-all=reviews
+                - img "Apple App Store"
+                - blockquote [ref=e688]:
+                  - text: “
+                  - paragraph [ref=e689]: I find it faster than Safari, Chrome, and Firefox, and I feel way more protected.”
+                - generic [ref=e690]:
+                  - img [ref=e691]
+                  - paragraph [ref=e698]: App Store Review
+              - link "Google Play Store Google Play Review" [ref=e700] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=origin%3Dfunnel_home_website__details
+                - img "Google Play Store"
+                - blockquote [ref=e701]:
+                  - text: “
+                  - paragraph [ref=e702]: Gives me just the peace of mind that I need.”
+                - generic [ref=e703]:
+                  - img [ref=e704]
+                  - paragraph [ref=e711]: Google Play Review
+              - link "Google Play Store Google Play Review" [ref=e713] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=origin%3Dfunnel_home_website__details
+                - img "Google Play Store"
+                - blockquote [ref=e714]:
+                  - text: “
+                  - paragraph [ref=e715]: it keeps my personal and browsing data away from the big tech companies.”
+                - generic [ref=e716]:
+                  - img [ref=e717]
+                  - paragraph [ref=e724]: Google Play Review
+              - link "Google Play Store Google Play Review" [ref=e726] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=origin%3Dfunnel_home_website__details
+                - img "Google Play Store"
+                - blockquote [ref=e727]:
+                  - text: “
+                  - paragraph [ref=e728]: Pretty much all you could ask for in a browser.”
+                - generic [ref=e729]:
+                  - img [ref=e730]
+                  - paragraph [ref=e737]: Google Play Review
+              - link "The Verge David Pierce" [ref=e739] [cursor=pointer]:
+                - /url: https://www.theverge.com/2023/6/22/23769084/duckduckgo-browser-windows-download
+                - generic:
+                  - img "The Verge"
+                - blockquote [ref=e740]:
+                  - text: “
+                  - paragraph [ref=e741]: a solid cross-platform browser that really can keep up with the Chromes and Edges of the world.”
+                - paragraph [ref=e743]: David Pierce
+              - link "Wired David Nield" [ref=e745] [cursor=pointer]:
+                - /url: https://www.wired.com/story/privacy-browsers-duckduckgo-ghostery-brave/
+                - generic:
+                  - img "Wired"
+                - blockquote [ref=e746]:
+                  - text: “
+                  - paragraph [ref=e747]: you're getting maximum protection with minimal effort.”
+                - paragraph [ref=e749]: David Nield
+              - link "Engadget Mariella Moon" [ref=e751] [cursor=pointer]:
+                - /url: https://www.engadget.com/duckduckgo-mac-browser-open-beta-092105957.html
+                - generic:
+                  - img "Engadget"
+                - blockquote [ref=e752]:
+                  - text: “
+                  - paragraph [ref=e753]: easy and quick to import passwords and bookmarks from other browsers like Chrome.”
+                - paragraph [ref=e755]: Mariella Moon
+              - link "CNET Zachary McAuliffe" [ref=e757] [cursor=pointer]:
+                - /url: https://www.cnet.com/tech/services-and-software/five-reasons-you-should-use-duckduckgo-instead-of-google/
+                - generic:
+                  - img "CNET"
+                - blockquote [ref=e758]:
+                  - text: “
+                  - paragraph [ref=e759]: frees up bandwidth and lets websites load faster.”
+                - paragraph [ref=e761]: Zachary McAuliffe
+              - link "TechRadar Desire Athow" [ref=e763] [cursor=pointer]:
+                - /url: https://www.techradar.com/pro/duckduckgo-private-browser
+                - generic:
+                  - img "TechRadar"
+                - blockquote [ref=e764]:
+                  - text: “
+                  - paragraph [ref=e765]: DuckDuckGo is a must-try”
+                - paragraph [ref=e767]: Desire Athow
+              - link "Apple App Store App Store Review" [ref=e769] [cursor=pointer]:
+                - /url: https://apps.apple.com/us/app/duckduckgo-private-browser/id663592361?see-all=reviews
+                - img "Apple App Store"
+                - blockquote [ref=e770]:
+                  - text: “
+                  - paragraph [ref=e771]: the most intuitive, well laid out, and quick browser I've used.”
+                - generic [ref=e772]:
+                  - img [ref=e773]
+                  - paragraph [ref=e780]: App Store Review
+              - link "Apple App Store App Store Review" [ref=e782] [cursor=pointer]:
+                - /url: https://apps.apple.com/us/app/duckduckgo-private-browser/id663592361?see-all=reviews
+                - img "Apple App Store"
+                - blockquote [ref=e783]:
+                  - text: “
+                  - paragraph [ref=e784]: absolutely love this browser, and cannot imagine using any other again.”
+                - generic [ref=e785]:
+                  - img [ref=e786]
+                  - paragraph [ref=e793]: App Store Review
+              - link "Apple App Store App Store Review" [ref=e795] [cursor=pointer]:
+                - /url: https://apps.apple.com/us/app/duckduckgo-private-browser/id663592361?see-all=reviews
+                - img "Apple App Store"
+                - blockquote [ref=e796]:
+                  - text: “
+                  - paragraph [ref=e797]: I find it faster than Safari, Chrome, and Firefox, and I feel way more protected.”
+                - generic [ref=e798]:
+                  - img [ref=e799]
+                  - paragraph [ref=e806]: App Store Review
+              - link "Google Play Store Google Play Review" [ref=e808] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=origin%3Dfunnel_home_website__details
+                - img "Google Play Store"
+                - blockquote [ref=e809]:
+                  - text: “
+                  - paragraph [ref=e810]: Gives me just the peace of mind that I need.”
+                - generic [ref=e811]:
+                  - img [ref=e812]
+                  - paragraph [ref=e819]: Google Play Review
+              - link "Google Play Store Google Play Review" [ref=e821] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=origin%3Dfunnel_home_website__details
+                - img "Google Play Store"
+                - blockquote [ref=e822]:
+                  - text: “
+                  - paragraph [ref=e823]: it keeps my personal and browsing data away from the big tech companies.”
+                - generic [ref=e824]:
+                  - img [ref=e825]
+                  - paragraph [ref=e832]: Google Play Review
+              - link "Google Play Store Google Play Review" [ref=e834] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=origin%3Dfunnel_home_website__details
+                - img "Google Play Store"
+                - blockquote [ref=e835]:
+                  - text: “
+                  - paragraph [ref=e836]: Pretty much all you could ask for in a browser.”
+                - generic [ref=e837]:
+                  - img [ref=e838]
+                  - paragraph [ref=e845]: Google Play Review
+          - generic [ref=e848]:
+            - generic [ref=e851]:
+              - generic [ref=e852]:
+                - heading "Tiotals miljoner personer världen om litar på den!" [level=3] [ref=e853]
+                - list [ref=e854]:
+                  - listitem [ref=e855]:
+                    - generic [ref=e856]:
+                      - strong [ref=e857]: 100 %
+                      - paragraph [ref=e858]: gratis
+                  - listitem [ref=e859]:
+                    - generic [ref=e860]:
+                      - strong [ref=e861]: 3 miljarder
+                      - paragraph [ref=e862]: Månatliga sökningar
+                  - listitem [ref=e863]:
+                    - generic [ref=e864]:
+                      - strong [ref=e865]: 9 miljoner
+                      - paragraph [ref=e866]: Månatliga nedladdningar
+              - generic [ref=e868]:
+                - generic [ref=e869]:
+                  - paragraph [ref=e870]: Skaffa vår gratis webbläsare idag!
+                  - link "Ladda ner DuckDuckGo-webbläsaren" [ref=e871] [cursor=pointer]:
+                    - /url: https://duckduckgo.com/mac?origin=funnel_home_website__details
+                    - img [ref=e873]
+                    - text: Ladda ner DuckDuckGo-webbläsaren
+                - generic [ref=e875]:
+                  - generic [ref=e876]:
+                    - link "Ladda ner DuckDuckGo i App Store" [ref=e877] [cursor=pointer]:
+                      - /url: https://apps.apple.com/app/duckduckgo-privacy-browser/id663592361?platform=iphone&ct=home-atb-home&pt=866401&mt=8
+                      - img [ref=e878]
+                    - generic [ref=e881]:
+                      - img "stars" [ref=e882]
+                      - img "stars" [ref=e884]
+                      - img "stars" [ref=e886]
+                      - img "stars" [ref=e888]
+                      - img "stars" [ref=e890]
+                      - generic [ref=e892]: 4,8
+                    - paragraph [ref=e893]: 2,9 miljoner betyg
+                  - generic [ref=e894]:
+                    - link "Ladda ner DuckDuckGo på Google Play" [ref=e895] [cursor=pointer]:
+                      - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=utm_campaign%3Dhome-atb-home%26origin%3Dfunnel_home_website__details
+                      - img [ref=e896]
+                    - generic [ref=e904]:
+                      - img "stars" [ref=e905]
+                      - img "stars" [ref=e907]
+                      - img "stars" [ref=e909]
+                      - img "stars" [ref=e911]
+                      - img "stars" [ref=e913]
+                      - generic [ref=e915]: 4,7
+                    - paragraph [ref=e916]: 2,3 miljoner recensioner
+            - generic [ref=e917]:
+              - heading "Har du fortfarande frågor?" [level=2] [ref=e919]
+              - generic [ref=e923]:
+                - generic [ref=e924]:
+                  - heading "Vad är DuckDuckGo?" [level=3] [ref=e925]:
+                    - button "Vad är DuckDuckGo?" [expanded] [ref=e926]:
+                      - generic [ref=e927]: Vad är DuckDuckGo?
+                      - img [ref=e928]
+                  - region "Vad är DuckDuckGo?" [ref=e930]:
+                    - paragraph [ref=e931]:
+                      - text: Vi på DuckDuckGo vill skydda din personliga information mot hackare, bedragare och integritetskränkande företag – och den bästa metoden är att förhindra att den samlas in överhuvudtaget. Det är därför som miljontals människor
+                      - link "väljer DuckDuckGo framför Chrome och andra webbläsare" [ref=e932] [cursor=pointer]:
+                        - /url: https://duckduckgo.com/compare-privacy
+                      - text: för att söka och surfa online. Vår inbyggda sökmotor fungerar som Google, men spårar aldrig dina sökningar. Vår webbläsare blockerar annonser, spårare och cookies som samlar in dina data. Den erbjuder även privat, användbar och valfri AI, inklusive
+                      - link "Duck.ai" [ref=e933] [cursor=pointer]:
+                        - /url: https://duck.ai
+                      - text: ", så att du kan chatta privat med ChatGPT, Claude och andra AI-modeller på ett och samma ställe. Dessutom är vår webbläsare gratis. Vi tjänar pengar på"
+                      - link "sökannonser som respekterar integriteten" [ref=e934] [cursor=pointer]:
+                        - /url: https://duckduckgo.com/duckduckgo-help-pages/company/how-duckduckgo-makes-money/
+                      - text: ", inte genom att utnyttja dina data. Ta tillbaka kontrollen över din personliga information med webbläsaren som är utformad för dataskydd, inte datainsamling."
+                      - link "Mer information" [ref=e935] [cursor=pointer]:
+                        - /url: https://duckduckgo.com/duckduckgo-help-pages/company/
+                - heading "Hur skyddar DuckDuckGo min integritet?" [level=3] [ref=e937]:
+                  - button "Hur skyddar DuckDuckGo min integritet?" [ref=e938] [cursor=pointer]:
+                    - generic [ref=e939]: Hur skyddar DuckDuckGo min integritet?
+                    - img [ref=e940]
+                - heading "Blockerar DuckDuckGo alla spårare på webbplatser jag besöker?" [level=3] [ref=e943]:
+                  - button "Blockerar DuckDuckGo alla spårare på webbplatser jag besöker?" [ref=e944] [cursor=pointer]:
+                    - generic [ref=e945]: Blockerar DuckDuckGo alla spårare på webbplatser jag besöker?
+                    - img [ref=e946]
+                - heading "Hur många använder DuckDuckGo?" [level=3] [ref=e949]:
+                  - button "Hur många använder DuckDuckGo?" [ref=e950] [cursor=pointer]:
+                    - generic [ref=e951]: Hur många använder DuckDuckGo?
+                    - img [ref=e952]
+                - heading "Hur tjänar DuckDuckGo pengar?" [level=3] [ref=e955]:
+                  - button "Hur tjänar DuckDuckGo pengar?" [ref=e956] [cursor=pointer]:
+                    - generic [ref=e957]: Hur tjänar DuckDuckGo pengar?
+                    - img [ref=e958]
+                - heading "Varför bör du använda DuckDuckGo istället för Google?" [level=3] [ref=e961]:
+                  - button "Varför bör du använda DuckDuckGo istället för Google?" [ref=e962] [cursor=pointer]:
+                    - generic [ref=e963]: Varför bör du använda DuckDuckGo istället för Google?
+                    - img [ref=e964]
+                - heading "Är inkognitoläget privat?" [level=3] [ref=e967]:
+                  - button "Är inkognitoläget privat?" [ref=e968] [cursor=pointer]:
+                    - generic [ref=e969]: Är inkognitoläget privat?
+                    - img [ref=e970]
+                - heading "Hur står sig sökresultaten från DuckDuckGo mot Google?" [level=3] [ref=e973]:
+                  - button "Hur står sig sökresultaten från DuckDuckGo mot Google?" [ref=e974] [cursor=pointer]:
+                    - generic [ref=e975]: Hur står sig sökresultaten från DuckDuckGo mot Google?
+                    - img [ref=e976]
+                - heading "Ägs DuckDuckGo av Google eller någon annan enhet?" [level=3] [ref=e979]:
+                  - button "Ägs DuckDuckGo av Google eller någon annan enhet?" [ref=e980] [cursor=pointer]:
+                    - generic [ref=e981]: Ägs DuckDuckGo av Google eller någon annan enhet?
+                    - img [ref=e982]
+            - generic [ref=e985]:
+              - generic [ref=e989]:
+                - navigation [ref=e990]:
+                  - generic [ref=e991]:
+                    - heading "Läs mer" [level=2] [ref=e992]
+                    - list [ref=e993]:
+                      - listitem [ref=e994]:
+                        - paragraph [ref=e995]:
+                          - link "Om DuckDuckGo" [ref=e996] [cursor=pointer]:
+                            - /url: /about
+                      - listitem [ref=e997]:
+                        - paragraph [ref=e998]:
+                          - link "Om vår webbläsare" [ref=e999] [cursor=pointer]:
+                            - /url: /app?origin=funnel_home_website__details
+                      - listitem [ref=e1000]:
+                        - paragraph [ref=e1001]:
+                          - link "DuckDuckGo Abonnemang" [ref=e1002] [cursor=pointer]:
+                            - /url: https://duckduckgo.com/pro?origin=funnel_home_website__details
+                      - listitem [ref=e1003]:
+                        - paragraph [ref=e1004]:
+                          - link "Vad är nytt?" [ref=e1005] [cursor=pointer]:
+                            - /url: /updates
+                      - listitem [ref=e1006]:
+                        - paragraph [ref=e1007]:
+                          - link "Jämför integritet" [ref=e1008] [cursor=pointer]:
+                            - /url: /compare-privacy
+                      - listitem [ref=e1009]:
+                        - paragraph [ref=e1010]:
+                          - link "Blogg" [ref=e1011] [cursor=pointer]:
+                            - /url: https://spreadprivacy.com
+                      - listitem [ref=e1012]:
+                        - paragraph [ref=e1013]:
+                          - link "Nyhetsbrev" [ref=e1014] [cursor=pointer]:
+                            - /url: /newsletter
+                      - listitem [ref=e1015]:
+                        - paragraph [ref=e1016]:
+                          - link "Podcast" [ref=e1017] [cursor=pointer]:
+                            - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+                  - generic [ref=e1018]:
+                    - heading "Övriga resurser" [level=2] [ref=e1019]
+                    - list [ref=e1020]:
+                      - listitem [ref=e1021]:
+                        - paragraph [ref=e1022]:
+                          - link "Hjälp" [ref=e1023] [cursor=pointer]:
+                            - /url: https://duckduckgo.com/duckduckgo-help-pages
+                      - listitem [ref=e1024]:
+                        - paragraph [ref=e1025]:
+                          - link "Organisation" [ref=e1026] [cursor=pointer]:
+                            - /url: https://www.reddit.com/r/duckduckgo/
+                      - listitem [ref=e1027]:
+                        - paragraph [ref=e1028]:
+                          - link "Jobb" [ref=e1029] [cursor=pointer]:
+                            - /url: /hiring
+                      - listitem [ref=e1030]:
+                        - paragraph [ref=e1031]:
+                          - link "Integritetspolicy" [ref=e1032] [cursor=pointer]:
+                            - /url: /privacy
+                      - listitem [ref=e1033]:
+                        - paragraph [ref=e1034]:
+                          - link "Användarvillkor" [ref=e1035] [cursor=pointer]:
+                            - /url: /terms
+                      - listitem [ref=e1036]:
+                        - paragraph [ref=e1037]:
+                          - link "Mediekit" [ref=e1038] [cursor=pointer]:
+                            - /url: /press
+                      - listitem [ref=e1039]:
+                        - paragraph [ref=e1040]:
+                          - link "Annonsera på söksidan" [ref=e1041] [cursor=pointer]:
+                            - /url: https://duckduckgo.com/duckduckgo-help-pages/company/advertise-on-duckduckgo-search
+                      - listitem [ref=e1042]:
+                        - paragraph [ref=e1043]:
+                          - link "Samarbeten" [ref=e1044] [cursor=pointer]:
+                            - /url: /collaborations
+                - generic [ref=e1045]:
+                  - heading "Om DuckDuckGo" [level=2] [ref=e1046]
+                  - paragraph [ref=e1048]:
+                    - text: Vi på DuckDuckGo vill skydda din personliga information mot hackare, bedragare och integritetskränkande företag – och den bästa metoden är att förhindra att den samlas in överhuvudtaget. Det är därför som miljontals människor
+                    - link "väljer DuckDuckGo framför Chrome och andra webbläsare" [ref=e1049] [cursor=pointer]:
+                      - /url: https://duckduckgo.com/compare-privacy
+                    - text: för att söka och surfa online. Vår inbyggda sökmotor fungerar som Google, men spårar aldrig dina sökningar. Vår webbläsare blockerar annonser, spårare och cookies som samlar in dina data. Den erbjuder även privat, användbar och valfri AI, inklusive
+                    - link "Duck.ai" [ref=e1050] [cursor=pointer]:
+                      - /url: https://duck.ai
+                    - text: ", så att du kan chatta privat med ChatGPT, Claude och andra AI-modeller på ett och samma ställe. Dessutom är vår webbläsare gratis. Vi tjänar pengar på"
+                    - link "sökannonser som respekterar integriteten" [ref=e1051] [cursor=pointer]:
+                      - /url: https://duckduckgo.com/duckduckgo-help-pages/company/how-duckduckgo-makes-money
+                    - text: ", inte genom att utnyttja dina data. Tillgänglig att laddas ner för"
+                    - link "Mac" [ref=e1052] [cursor=pointer]:
+                      - /url: https://duckduckgo.com/mac?origin=funnel_home_website__details
+                    - text: ","
+                    - link "Windows" [ref=e1053] [cursor=pointer]:
+                      - /url: https://duckduckgo.com/windows?origin=funnel_home_website__details
+                    - text: ","
+                    - link "iOS" [ref=e1054] [cursor=pointer]:
+                      - /url: https://apps.apple.com/app/duckduckgo-privacy-browser/id663592361?platform=iphone
+                    - text: och
+                    - link "Android" [ref=e1055] [cursor=pointer]:
+                      - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=origin%3Dfunnel_home_website__details
+                    - text: .
+              - generic [ref=e1059]:
+                - paragraph [ref=e1061]:
+                  - text: © 2026
+                  - link "DuckDuckGo" [ref=e1062] [cursor=pointer]:
+                    - /url: https://duckduckgo.com
+                - paragraph [ref=e1064]: Skydd. Integritet. Sinnesro.
+  - alert [ref=e1065]

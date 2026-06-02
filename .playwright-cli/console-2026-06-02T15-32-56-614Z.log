@@ -1,0 +1,2 @@
+[     217ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://raw.githubusercontent.com/google/A2UI/main/specification/v0_9/json/standard_catalog_definition.json:0
+[    2046ms] [ERROR] Blocked script execution in 'https://raw.githubusercontent.com/google/A2UI/main/specification/v0_9/json/standard_catalog_definition.json' because the document's frame is sandboxed and the 'allow-scripts' permission is not set. @ https://raw.githubusercontent.com/google/A2UI/main/specification/v0_9/json/standard_catalog_definition.json:0

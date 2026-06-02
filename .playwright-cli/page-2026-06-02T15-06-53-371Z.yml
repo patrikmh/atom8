@@ -1,0 +1,144 @@
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#VPContent"
+  - banner:
+    - generic:
+      - generic:
+        - generic:
+          - link "ADV.JS" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e7]: ADV.JS
+          - generic [ref=e8]:
+            - button "Search" [ref=e11] [cursor=pointer]:
+              - generic [ref=e14]: Search
+              - generic [ref=e15]:
+                - generic [ref=e16]: ⌘
+                - generic [ref=e17]: K
+            - navigation "Main Navigation" [ref=e18]:
+              - generic [ref=e19]: Main Navigation
+              - link "指南" [ref=e20] [cursor=pointer]:
+                - /url: /guide/
+                - generic [ref=e21]: 指南
+              - link "AI" [ref=e22] [cursor=pointer]:
+                - /url: /ai/
+                - generic [ref=e23]: AI
+              - link "API" [ref=e24] [cursor=pointer]:
+                - /url: /api/
+                - generic [ref=e25]: API
+              - link "AGUI" [ref=e26] [cursor=pointer]:
+                - /url: /agui/
+                - generic [ref=e27]: AGUI
+              - button "关于" [ref=e29] [cursor=pointer]:
+                - generic [ref=e31]: 关于
+              - button "资源" [ref=e34] [cursor=pointer]:
+                - generic [ref=e36]: 资源
+              - button "生态" [ref=e39] [cursor=pointer]:
+                - generic [ref=e41]: 生态
+            - button "Change language" [ref=e44] [cursor=pointer]
+            - switch "Switch to dark theme" [ref=e49] [cursor=pointer]
+            - generic [ref=e54]:
+              - link "github" [ref=e55] [cursor=pointer]:
+                - /url: https://github.com/YunYouJun/advjs
+              - link "twitter" [ref=e57] [cursor=pointer]:
+                - /url: https://twitter.com/YunYouJun
+              - link "discord" [ref=e59] [cursor=pointer]:
+                - /url: https://discord.gg/HNNPywcTxw
+  - complementary [ref=e61]:
+    - navigation "Sidebar Navigation" [ref=e63]:
+      - generic [ref=e64]: Sidebar Navigation
+      - generic [ref=e66]:
+        - button "AGUI 指南 toggle section" [ref=e67] [cursor=pointer]:
+          - heading "AGUI 指南" [level=2] [ref=e69]
+          - button "toggle section" [ref=e70]
+        - generic [ref=e72]:
+          - link "介绍" [ref=e76] [cursor=pointer]:
+            - /url: /agui/
+            - paragraph [ref=e77]: 介绍
+          - link "快速开始" [ref=e81] [cursor=pointer]:
+            - /url: /agui/quick-start
+            - paragraph [ref=e82]: 快速开始
+      - generic [ref=e84]:
+        - button "AGUI Components toggle section" [ref=e85] [cursor=pointer]:
+          - heading "AGUI Components" [level=2] [ref=e87]
+          - button "toggle section" [ref=e88]
+        - generic [ref=e90]:
+          - link "Layout 布局" [ref=e94] [cursor=pointer]:
+            - /url: /agui/components/layout
+            - paragraph [ref=e95]: Layout 布局
+          - link "Assets Explorer 资源管理器" [ref=e99] [cursor=pointer]:
+            - /url: /agui/components/assets-explorer
+            - paragraph [ref=e100]: Assets Explorer 资源管理器
+          - link "Button 按钮" [ref=e104] [cursor=pointer]:
+            - /url: /agui/components/button
+            - paragraph [ref=e105]: Button 按钮
+          - link "Checkbox 复选框" [ref=e109] [cursor=pointer]:
+            - /url: /agui/components/checkbox
+            - paragraph [ref=e110]: Checkbox 复选框
+          - link "Input 输入框" [ref=e114] [cursor=pointer]:
+            - /url: /agui/components/input
+            - paragraph [ref=e115]: Input 输入框
+          - link "InputNumber 计数器" [ref=e119] [cursor=pointer]:
+            - /url: /agui/components/input-number
+            - paragraph [ref=e120]: InputNumber 计数器
+          - link "NumberSlider 数字滑块" [ref=e124] [cursor=pointer]:
+            - /url: /agui/components/number-slider
+            - paragraph [ref=e125]: NumberSlider 数字滑块
+          - link "Radio 单选框" [ref=e129] [cursor=pointer]:
+            - /url: /agui/components/radio
+            - paragraph [ref=e130]: Radio 单选框
+          - link "Select 选择器" [ref=e134] [cursor=pointer]:
+            - /url: /agui/components/select
+            - paragraph [ref=e135]: Select 选择器
+          - link "Sidebar 侧边栏" [ref=e139] [cursor=pointer]:
+            - /url: /agui/components/sidebar
+            - paragraph [ref=e140]: Sidebar 侧边栏
+          - link "Switch 开关" [ref=e144] [cursor=pointer]:
+            - /url: /agui/components/switch
+            - paragraph [ref=e145]: Switch 开关
+          - link "Tabs 标签页" [ref=e149] [cursor=pointer]:
+            - /url: /agui/components/tabs
+            - paragraph [ref=e150]: Tabs 标签页
+          - link "Tree 树形控件" [ref=e154] [cursor=pointer]:
+            - /url: /agui/components/tree
+            - paragraph [ref=e155]: Tree 树形控件
+  - generic [ref=e166]:
+    - main [ref=e167]:
+      - generic [ref=e169]:
+        - heading "AGUI - @advjs/gui Permalink to \"AGUI - @advjs/gui\"" [level=1] [ref=e170]:
+          - text: AGUI - @advjs/gui
+          - link "Permalink to \"AGUI - @advjs/gui\"" [ref=e171] [cursor=pointer]:
+            - /url: "#agui-advjs-gui"
+            - text: "#"
+        - blockquote [ref=e172]:
+          - paragraph [ref=e173]: GUI for Engine Editor.
+        - paragraph [ref=e174]:
+          - code [ref=e175]: "@advjs/gui"
+          - text: 简称 AGUI，是一个基于
+          - link "Vue" [ref=e176] [cursor=pointer]:
+            - /url: https://vuejs.org/
+          - text: 的 GUI 库，用于构建
+          - link "ADV.JS" [ref=e177] [cursor=pointer]:
+            - /url: https://advjs.org
+          - text: 引擎编辑器。
+        - paragraph [ref=e178]:
+          - text: 它参考了
+          - link "Blender" [ref=e179] [cursor=pointer]:
+            - /url: https://www.blender.org/
+          - text: 与
+          - link "Unity" [ref=e180] [cursor=pointer]:
+            - /url: https://unity.com/
+          - text: 的 UI 设计，旨在提供一套简单易用的编辑器风格组件。
+    - contentinfo [ref=e181]:
+      - generic [ref=e182]:
+        - link "✍️ 帮助改善此页面" [ref=e184] [cursor=pointer]:
+          - /url: https://github.com/YunYouJun/advjs/edit/main/docs/agui/index.md
+          - text: ✍️ 帮助改善此页面
+        - paragraph [ref=e187]:
+          - text: "Last Updated:"
+          - time [ref=e188]: 2025-08-10 13:35
+      - navigation "Pager" [ref=e189]:
+        - generic [ref=e190]: Pager
+        - link "Next page 快速开始" [ref=e193] [cursor=pointer]:
+          - /url: /agui/quick-start
+          - generic [ref=e194]: Next page
+          - generic [ref=e195]: 快速开始

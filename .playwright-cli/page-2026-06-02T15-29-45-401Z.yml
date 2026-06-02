@@ -1,0 +1,20 @@
+- banner [ref=e2]:
+  - button "Hoppa till innehåll" [ref=e3] [cursor=pointer]:
+    - generic [ref=e5]: Hoppa till innehåll
+  - button "Feedback om hjälpmedel" [ref=e6] [cursor=pointer]:
+    - generic [ref=e8]: Feedback om hjälpmedel
+  - generic [ref=e9]:
+    - link "Tillbaka till Bing-sökning" [ref=e10] [cursor=pointer]:
+      - /url: /?FORM=Z9FD1
+      - heading "Tillbaka till Bing-sökning" [level=1] [ref=e11]
+    - search [ref=e12]:
+      - button "Sök" [ref=e15] [cursor=pointer]
+      - searchbox "Skriv din sökning här – sökförslagen visas medan du söker" [ref=e16]: agui rust ui framework drag drop canvas dashboard site:reddit.com OR site:news.ycombinator.com OR site:github.com
+  - complementary "Poäng och inställningar för kontot" [ref=e17]:
+    - button "Microsoft Rewards"
+    - link "Logga in" [ref=e18] [cursor=pointer]:
+      - /url: javascript:void(0)
+      - generic "Logga in" [ref=e19]
+  - generic [ref=e20]:
+    - generic [ref=e21]: Ett sista steg
+    - generic [ref=e22]: Lös utmaningen nedan för att fortsätta

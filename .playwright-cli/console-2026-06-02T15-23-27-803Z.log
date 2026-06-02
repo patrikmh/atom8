@@ -1,0 +1,1 @@
+[    3905ms] [ERROR] Blocked script execution in 'https://raw.githubusercontent.com/Stumblinbear/agui/refs/heads/master/crates/agui_gestures/src/lib.rs' because the document's frame is sandboxed and the 'allow-scripts' permission is not set. @ https://raw.githubusercontent.com/Stumblinbear/agui/refs/heads/master/crates/agui_gestures/src/lib.rs:0

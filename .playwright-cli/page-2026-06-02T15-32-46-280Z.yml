@@ -1,0 +1,983 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - link "Homepage" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - navigation "Global" [ref=e16]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - button "Platform" [ref=e20] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e21]
+              - listitem [ref=e23]:
+                - button "Solutions" [ref=e25] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - button "Resources" [ref=e30] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e31]
+              - listitem [ref=e33]:
+                - button "Open Source" [ref=e35] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e36]
+              - listitem [ref=e38]:
+                - button "Enterprise" [ref=e40] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e41]
+              - listitem [ref=e43]:
+                - link "Pricing" [ref=e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+                  - generic [ref=e45]: Pricing
+          - generic [ref=e46]:
+            - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+            - link "Sign in" [ref=e54] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fgoogle%2FA2UI%2Fpull%2F1467
+            - link "Sign up" [ref=e55] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fvoltron%2Fpull_requests_fragments%2Fpull_request_layout&source=header-repo&source_repo=google%2FA2UI
+            - button "Appearance settings" [ref=e58] [cursor=pointer]:
+              - img
+  - main [ref=e62]:
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e66]:
+          - img [ref=e67]
+          - link "google" [ref=e70] [cursor=pointer]:
+            - /url: /google
+          - generic [ref=e71]: /
+          - strong [ref=e72]:
+            - link "A2UI" [ref=e73] [cursor=pointer]:
+              - /url: /google/A2UI
+          - generic [ref=e74]: Public
+        - generic [ref=e75]:
+          - list:
+            - listitem [ref=e76]:
+              - link "You must be signed in to change notification settings" [ref=e77] [cursor=pointer]:
+                - /url: /login?return_to=%2Fgoogle%2FA2UI
+                - img [ref=e78]
+                - text: Notifications
+            - listitem [ref=e80]:
+              - link "Fork 1.2k" [ref=e81] [cursor=pointer]:
+                - /url: /login?return_to=%2Fgoogle%2FA2UI
+                - img [ref=e82]
+                - text: Fork
+                - generic "1,179" [ref=e84]: 1.2k
+            - listitem [ref=e85]:
+              - link "You must be signed in to star a repository" [ref=e87] [cursor=pointer]:
+                - /url: /login?return_to=%2Fgoogle%2FA2UI
+                - img [ref=e88]
+                - text: Star
+                - generic "15113 users starred this repository" [ref=e90]: 15.1k
+      - navigation "Repository" [ref=e91]:
+        - list [ref=e92]:
+          - listitem [ref=e93]:
+            - link "Code" [ref=e94] [cursor=pointer]:
+              - /url: /google/A2UI
+              - img [ref=e95]
+              - generic [ref=e97]: Code
+          - listitem [ref=e98]:
+            - link "Issues 198" [ref=e99] [cursor=pointer]:
+              - /url: /google/A2UI/issues
+              - img [ref=e100]
+              - generic [ref=e103]: Issues
+              - generic "198" [ref=e104]
+          - listitem [ref=e105]:
+            - link "Pull requests 101" [ref=e106] [cursor=pointer]:
+              - /url: /google/A2UI/pulls
+              - img [ref=e107]
+              - generic [ref=e109]: Pull requests
+              - generic "101" [ref=e110]
+          - listitem [ref=e111]:
+            - link "Discussions" [ref=e112] [cursor=pointer]:
+              - /url: /google/A2UI/discussions
+              - img [ref=e113]
+              - generic [ref=e115]: Discussions
+          - listitem [ref=e116]:
+            - link "Actions" [ref=e117] [cursor=pointer]:
+              - /url: /google/A2UI/actions
+              - img [ref=e118]
+              - generic [ref=e120]: Actions
+          - listitem [ref=e121]:
+            - link "Projects" [ref=e122] [cursor=pointer]:
+              - /url: /google/A2UI/projects
+              - img [ref=e123]
+              - generic [ref=e125]: Projects
+          - listitem [ref=e126]:
+            - link "Security and quality" [ref=e127] [cursor=pointer]:
+              - /url: /google/A2UI/security
+              - img [ref=e128]
+              - generic [ref=e130]: Security and quality
+          - listitem [ref=e131]:
+            - link "Insights" [ref=e132] [cursor=pointer]:
+              - /url: /google/A2UI/pulse
+              - img [ref=e133]
+              - generic [ref=e135]: Insights
+    - generic [ref=e142]:
+      - generic [ref=e145]:
+        - 'heading "feat(samples): add enterprise_dashboard with compact layout patterns #1467" [level=1] [ref=e147]':
+          - text: "feat(samples): add enterprise_dashboard with compact layout patterns"
+          - generic [ref=e149]: "#1467"
+        - generic [ref=e151]:
+          - generic [ref=e153]:
+            - img "Pull request" [ref=e154]
+            - text: Open
+          - generic [ref=e157]:
+            - link "jswortz" [ref=e158] [cursor=pointer]:
+              - /url: /jswortz
+            - text: wants to merge 1 commit into
+            - generic [ref=e159]:
+              - link "google:main" [ref=e160] [cursor=pointer]:
+                - /url: /google/A2UI/tree/main
+              - generic [ref=e161]: from
+              - generic [ref=e162]:
+                - link "jswortz:feat/enterprise-dashboard-sample" [ref=e163] [cursor=pointer]:
+                  - /url: /jswortz/A2UI/tree/feat/enterprise-dashboard-sample
+                - button "Copy head branch name to clipboard" [ref=e164] [cursor=pointer]:
+                  - img [ref=e165]
+        - navigation "Pull request navigation tabs" [ref=e171]:
+          - tablist [ref=e172]:
+            - tab "Conversation" [selected] [ref=e173] [cursor=pointer]:
+              - img [ref=e174]
+              - text: Conversation
+            - tab "Commits (1)" [ref=e176] [cursor=pointer]:
+              - img [ref=e177]
+              - text: Commits
+              - generic [ref=e179]: "1"
+              - generic [ref=e180]: (1)
+            - tab "Checks" [ref=e181] [cursor=pointer]:
+              - img [ref=e182]
+              - text: Checks
+            - tab "Files changed" [ref=e184] [cursor=pointer]:
+              - img [ref=e185]
+              - text: Files changed
+      - generic [ref=e191]:
+        - generic [ref=e193]:
+          - heading "Conversation" [level=2] [ref=e194]
+          - generic [ref=e195]:
+            - generic [ref=e196]:
+              - generic [ref=e198]:
+                - link "@jswortz" [ref=e199] [cursor=pointer]:
+                  - /url: /jswortz
+                  - img "@jswortz" [ref=e200]
+                - generic [ref=e202]:
+                  - generic [ref=e203]:
+                    - group [ref=e206]:
+                      - button "Show options" [ref=e207] [cursor=pointer]:
+                        - img "Show options" [ref=e210]
+                    - heading "jswortz commented May 20, 20262 weeks ago" [level=3] [ref=e212]:
+                      - generic [ref=e213]:
+                        - strong [ref=e214]:
+                          - link "jswortz" [ref=e215] [cursor=pointer]:
+                            - /url: /jswortz
+                        - text: commented
+                        - link "May 20, 20262 weeks ago" [ref=e216] [cursor=pointer]:
+                          - /url: "#issue-4483611667"
+                  - generic [ref=e220]:
+                    - heading "Summary" [level=2] [ref=e221]
+                    - list [ref=e222]:
+                      - listitem [ref=e223]:
+                        - text: Add
+                        - code [ref=e224]: enterprise_dashboard
+                        - text: sample agent demonstrating compact, visual-first A2UI output patterns
+                      - listitem [ref=e225]: Include 2 reference A2UI JSON examples (KPI dashboard, store comparison)
+                      - listitem [ref=e226]: Document anti-wall-of-text prompt engineering patterns in README
+                    - heading "Motivation" [level=2] [ref=e227]
+                    - paragraph [ref=e228]:
+                      - text: Every existing sample (
+                      - code [ref=e229]: restaurant_finder
+                      - text: ","
+                      - code [ref=e230]: rizzcharts
+                      - text: ","
+                      - code [ref=e231]: personalized_learning
+                      - text: ) focuses on agent framework integration but doesn't demonstrate how to
+                      - strong [ref=e232]: prevent the LLM from falling back to markdown "walls of text"
+                      - text: when presenting data.
+                    - paragraph [ref=e233]: "Enterprise use cases — dashboards, KPIs, store comparisons, product rankings — are especially prone to this: the LLM defaults to markdown tables, bullet lists, and inline numbers instead of structured A2UI layouts. There's no reference sample showing the right patterns."
+                    - heading "What this sample teaches" [level=2] [ref=e234]
+                    - heading "Layout recipes (data type → A2UI component)" [level=3] [ref=e235]
+                    - table [ref=e237]:
+                      - rowgroup [ref=e238]:
+                        - row "Data Type Instead of (markdown) Use (A2UI)" [ref=e239]:
+                          - columnheader "Data Type" [ref=e240]
+                          - columnheader "Instead of (markdown)" [ref=e241]
+                          - columnheader "Use (A2UI)" [ref=e242]
+                      - rowgroup [ref=e243]:
+                        - row "KPI metrics Inline numbers in paragraphs Row of Card with bold Text" [ref=e244]:
+                          - cell "KPI metrics" [ref=e245]
+                          - cell "Inline numbers in paragraphs" [ref=e246]
+                          - cell "Row of Card with bold Text" [ref=e247]:
+                            - code [ref=e248]: Row
+                            - text: of
+                            - code [ref=e249]: Card
+                            - text: with bold
+                            - code [ref=e250]: Text
+                        - row "Comparisons Markdown table Row of Card side-by-side" [ref=e251]:
+                          - cell "Comparisons" [ref=e252]
+                          - cell "Markdown table" [ref=e253]
+                          - cell "Row of Card side-by-side" [ref=e254]:
+                            - code [ref=e255]: Row
+                            - text: of
+                            - code [ref=e256]: Card
+                            - text: side-by-side
+                        - row "Rankings Numbered list List with Card children" [ref=e257]:
+                          - cell "Rankings" [ref=e258]
+                          - cell "Numbered list" [ref=e259]
+                          - cell "List with Card children" [ref=e260]:
+                            - code [ref=e261]: List
+                            - text: with
+                            - code [ref=e262]: Card
+                            - text: children
+                        - 'row "Multi-section Multiple ## headers Tabs component" [ref=e263]':
+                          - cell "Multi-section" [ref=e264]
+                          - 'cell "Multiple ## headers" [ref=e265]':
+                            - text: Multiple
+                            - code [ref=e266]: "##"
+                            - text: headers
+                          - cell "Tabs component" [ref=e267]:
+                            - code [ref=e268]: Tabs
+                            - text: component
+                        - row "Separators --- horizontal rule Divider component" [ref=e269]:
+                          - cell "Separators" [ref=e270]
+                          - cell "--- horizontal rule" [ref=e271]:
+                            - code [ref=e272]: "---"
+                            - text: horizontal rule
+                          - cell "Divider component" [ref=e273]:
+                            - code [ref=e274]: Divider
+                            - text: component
+                        - row "Status indicators Text \"up\"/\"down\" Icon (trending_up, trending_down)" [ref=e275]:
+                          - cell "Status indicators" [ref=e276]
+                          - cell "Text \"up\"/\"down\"" [ref=e277]
+                          - cell "Icon (trending_up, trending_down)" [ref=e278]:
+                            - code [ref=e279]: Icon
+                            - text: (trending_up, trending_down)
+                    - heading "Prompt engineering patterns" [level=3] [ref=e280]
+                    - list [ref=e281]:
+                      - listitem [ref=e282]:
+                        - strong [ref=e283]: Anti-markdown rules
+                        - text: — Explicit bans with A2UI alternatives
+                      - listitem [ref=e284]:
+                        - strong [ref=e285]: Layout recipes
+                        - text: — Map each data type to a component composition
+                      - listitem [ref=e286]:
+                        - strong [ref=e287]: Output ordering
+                        - text: — A2UI JSON first, brief text after (max 1-2 sentences)
+                      - listitem [ref=e288]:
+                        - strong [ref=e289]: Component diversity
+                        - text: — Minimum 3 different component types per response
+                    - heading "Files" [level=2] [ref=e290]
+                    - table [ref=e292]:
+                      - rowgroup [ref=e293]:
+                        - row "File Purpose" [ref=e294]:
+                          - columnheader "File" [ref=e295]
+                          - columnheader "Purpose" [ref=e296]
+                      - rowgroup [ref=e297]:
+                        - row "agent.py Minimal LlmAgent runnable with adk web" [ref=e298]:
+                          - cell "agent.py" [ref=e299]:
+                            - code [ref=e300]: agent.py
+                          - cell "Minimal LlmAgent runnable with adk web" [ref=e301]:
+                            - text: Minimal
+                            - code [ref=e302]: LlmAgent
+                            - text: runnable with
+                            - code [ref=e303]: adk web
+                        - row "prompt_builder.py Compact layout prompt construction with anti-markdown rules" [ref=e304]:
+                          - cell "prompt_builder.py" [ref=e305]:
+                            - code [ref=e306]: prompt_builder.py
+                          - cell "Compact layout prompt construction with anti-markdown rules" [ref=e307]
+                        - row "tools.py Mock analytics tools (KPIs, store comparison, product rankings)" [ref=e308]:
+                          - cell "tools.py" [ref=e309]:
+                            - code [ref=e310]: tools.py
+                          - cell "Mock analytics tools (KPIs, store comparison, product rankings)" [ref=e311]
+                        - 'row "examples/0.8/kpi_dashboard.json Reference: 4 KPI metric cards in Row layout" [ref=e312]':
+                          - cell "examples/0.8/kpi_dashboard.json" [ref=e313]:
+                            - code [ref=e314]: examples/0.8/kpi_dashboard.json
+                          - 'cell "Reference: 4 KPI metric cards in Row layout" [ref=e315]'
+                        - 'row "examples/0.8/store_comparison.json Reference: 3 store cards with Icon indicators" [ref=e316]':
+                          - cell "examples/0.8/store_comparison.json" [ref=e317]:
+                            - code [ref=e318]: examples/0.8/store_comparison.json
+                          - 'cell "Reference: 3 store cards with Icon indicators" [ref=e319]'
+                        - row "README.md Pattern documentation and usage guide" [ref=e320]:
+                          - cell "README.md" [ref=e321]:
+                            - code [ref=e322]: README.md
+                          - cell "Pattern documentation and usage guide" [ref=e323]
+                    - heading "Running" [level=2] [ref=e324]
+                    - generic [ref=e325]:
+                      - generic [ref=e326]: cd samples/agent/adk adk web enterprise_dashboard
+                      - button "Copy code to clipboard" [ref=e328] [cursor=pointer]:
+                        - img [ref=e329]
+                    - paragraph [ref=e332]: "Example queries:"
+                    - list [ref=e333]:
+                      - listitem [ref=e334]: "\"Show me this week's KPIs\""
+                      - listitem [ref=e335]: "\"Compare store performance\""
+                      - listitem [ref=e336]: "\"What are the top 5 products?\""
+                    - heading "Production validation" [level=2] [ref=e337]
+                    - paragraph [ref=e338]: These patterns have been battle-tested across 3 production agents deployed on Vertex AI Agent Engine (Gemini 3.5 Flash). Before adding anti-markdown rules and layout recipes, ~30-40% of responses fell back to markdown. After, the rate dropped to <5%.
+                    - heading "Related" [level=2] [ref=e339]
+                    - list [ref=e340]:
+                      - listitem [ref=e341]:
+                        - generic [ref=e342]:
+                          - img [ref=e343]
+                          - 'link "feat(agent_sdk): add strict_output mode for reliable A2UI-first output #1465" [ref=e345] [cursor=pointer]':
+                            - /url: https://github.com/google/A2UI/pull/1465
+                        - text: —
+                        - code [ref=e346]: strict_output
+                        - text: mode for
+                        - code [ref=e347]: generate_system_prompt()
+                        - text: (SDK-level enforcement)
+                      - listitem [ref=e348]:
+                        - generic [ref=e349]:
+                          - img [ref=e350]
+                          - 'link "feat(agent_sdk): add A2UIOutputMode enum for unified prompt generation #1466" [ref=e352] [cursor=pointer]':
+                            - /url: https://github.com/google/A2UI/pull/1466
+                        - text: —
+                        - code [ref=e353]: A2UIOutputMode
+                        - text: enum for unified TEXT/TOOL prompt generation
+                  - 'button "eyes (1): jswortz, 06:00AM on May 20" [disabled] [ref=e358]':
+                    - generic [ref=e359]: 👀
+                    - generic [ref=e360]: "1"
+              - generic [ref=e361]:
+                - generic [ref=e365]:
+                  - img [ref=e367]
+                  - generic [ref=e372]:
+                    - link "@jswortz" [ref=e375] [cursor=pointer]:
+                      - /url: /jswortz
+                      - img "@jswortz" [ref=e376]
+                    - generic [ref=e377]:
+                      - code [ref=e378]:
+                        - 'link "feat(samples): add enterprise_dashboard sample with compact layout pa…" [ref=e379] [cursor=pointer]':
+                          - /url: /google/A2UI/pull/1467/commits/d3cc57c08ba6301dade38d0a32b3b78f139f9e14
+                      - button "Commit message body" [ref=e381] [cursor=pointer]: …
+                    - code [ref=e389]:
+                      - link "d3cc57c" [ref=e390] [cursor=pointer]:
+                        - /url: /google/A2UI/pull/1467/commits/d3cc57c08ba6301dade38d0a32b3b78f139f9e14
+                - generic [ref=e391]:
+                  - generic [ref=e392]:
+                    - img [ref=e394]
+                    - generic [ref=e396]:
+                      - link "@github-project-automation" [ref=e397] [cursor=pointer]:
+                        - /url: /apps/github-project-automation
+                        - img "@github-project-automation" [ref=e398]
+                      - link "github-project-automation" [ref=e399] [cursor=pointer]:
+                        - /url: /apps/github-project-automation
+                      - generic [ref=e400]: Bot
+                      - text: added this to
+                      - link "A2UI" [ref=e401] [cursor=pointer]:
+                        - /url: /orgs/google/projects/165
+                      - link "May 20, 20262 weeks ago" [ref=e402] [cursor=pointer]:
+                        - /url: "#event-25741423685"
+                  - generic [ref=e403]:
+                    - img [ref=e405]
+                    - generic [ref=e407]:
+                      - link "@github-project-automation" [ref=e408] [cursor=pointer]:
+                        - /url: /apps/github-project-automation
+                        - img "@github-project-automation" [ref=e409]
+                      - link "github-project-automation" [ref=e410] [cursor=pointer]:
+                        - /url: /apps/github-project-automation
+                      - generic [ref=e411]: Bot
+                      - text: moved this to
+                      - strong [ref=e412]: Todo
+                      - text: in
+                      - link "A2UI" [ref=e413] [cursor=pointer]:
+                        - /url: /orgs/google/projects/165
+                      - link "May 20, 20262 weeks ago" [ref=e414] [cursor=pointer]:
+                        - /url: "#event-25741424248"
+                - generic [ref=e416]:
+                  - link "@google-cla" [ref=e418] [cursor=pointer]:
+                    - /url: /apps/google-cla
+                    - img "@google-cla" [ref=e419]
+                  - generic [ref=e421]:
+                    - generic [ref=e422]:
+                      - group [ref=e425]:
+                        - button "Show options" [ref=e426] [cursor=pointer]:
+                          - img "Show options" [ref=e429]
+                      - heading "google-cla Bot commented May 20, 20262 weeks ago" [level=3] [ref=e431]:
+                        - generic [ref=e432]:
+                          - strong [ref=e433]:
+                            - link "google-cla" [ref=e434] [cursor=pointer]:
+                              - /url: /apps/google-cla
+                            - generic [ref=e435]: Bot
+                          - text: commented
+                          - link "May 20, 20262 weeks ago" [ref=e436] [cursor=pointer]:
+                            - /url: "#issuecomment-4495006344"
+                    - table [ref=e439]:
+                      - rowgroup [ref=e440]:
+                        - row "Thanks for your pull request! It looks like this may be your first contribution to a Google open source project. Before we can look at your pull request, you'll need to sign a Contributor License Agreement (CLA). View this failed invocation of the CLA check for more information. For the most up to date status, view the checks section at the bottom of the pull request." [ref=e441]:
+                          - cell "Thanks for your pull request! It looks like this may be your first contribution to a Google open source project. Before we can look at your pull request, you'll need to sign a Contributor License Agreement (CLA). View this failed invocation of the CLA check for more information. For the most up to date status, view the checks section at the bottom of the pull request." [ref=e442]:
+                            - paragraph [ref=e443]: Thanks for your pull request! It looks like this may be your first contribution to a Google open source project. Before we can look at your pull request, you'll need to sign a Contributor License Agreement (CLA).
+                            - paragraph [ref=e444]:
+                              - text: View this
+                              - link "failed invocation" [ref=e445] [cursor=pointer]:
+                                - /url: https://github.com/google/A2UI/pull/1467/checks?check_run_id=76896725377
+                              - text: of the CLA check for more information.
+                            - paragraph [ref=e446]: For the most up to date status, view the checks section at the bottom of the pull request.
+                - generic [ref=e449]:
+                  - generic [ref=e450]:
+                    - link "gemini-code-assist[bot]" [ref=e451] [cursor=pointer]:
+                      - /url: /apps/gemini-code-assist
+                      - img "gemini-code-assist[bot]" [ref=e452]
+                    - generic "Only reviews by reviewers with write access count toward mergeability" [ref=e453]:
+                      - img [ref=e454]
+                    - generic [ref=e456]:
+                      - generic [ref=e457]:
+                        - strong [ref=e458]:
+                          - link "gemini-code-assist" [ref=e459] [cursor=pointer]:
+                            - /url: /apps/gemini-code-assist
+                          - generic [ref=e460]: Bot
+                        - text: reviewed
+                        - link "May 20, 20262 weeks ago" [ref=e462] [cursor=pointer]:
+                          - /url: "#pullrequestreview-4325592979"
+                      - link "View reviewed changes" [ref=e464] [cursor=pointer]:
+                        - /url: /google/A2UI/pull/1467/files/d3cc57c08ba6301dade38d0a32b3b78f139f9e14
+                        - generic [ref=e466]: View reviewed changes
+                  - generic [ref=e469]:
+                    - generic [ref=e470]:
+                      - generic [ref=e471]:
+                        - group [ref=e473]:
+                          - button "Show options" [ref=e474] [cursor=pointer]:
+                            - img "Show options" [ref=e477]
+                        - generic "This user has previously committed to the A2UI repository." [ref=e480]:
+                          - generic [ref=e481]: Contributor
+                      - heading "gemini-code-assist Bot left a comment" [level=3] [ref=e482]:
+                        - generic [ref=e483]:
+                          - strong [ref=e484]:
+                            - link "gemini-code-assist" [ref=e485] [cursor=pointer]:
+                              - /url: /apps/gemini-code-assist
+                            - generic [ref=e486]: Bot
+                          - text: left a comment
+                    - generic [ref=e489]:
+                      - heading "Code Review" [level=2] [ref=e490]
+                      - paragraph [ref=e491]: This pull request introduces an Enterprise Dashboard sample for the A2UI agent framework, featuring an agent that prioritizes visual component layouts over standard markdown. The implementation includes mock analytics tools, example JSON payloads, and a specialized prompt builder. Review feedback focuses on improving the prompt builder's path handling for better portability, reducing redundancy in system instructions, and ensuring data consistency in mock tool responses. There is also a suggestion to better align example JSON files with the prompt's best practices regarding icon usage.
+                  - generic [ref=e493]:
+                    - generic [ref=e495]:
+                      - generic [ref=e496]:
+                        - button "Comment thread" [expanded] [ref=e497] [cursor=pointer]:
+                          - img
+                        - link "samples/agent/adk/enterprise_dashboard/prompt_builder.py" [ref=e499] [cursor=pointer]:
+                          - /url: /google/A2UI/pull/1467/files/d3cc57c08ba6301dade38d0a32b3b78f139f9e14#diff-7d234a1653d7510114100fd56a89a926b0000ed43a793e415a1272448bf92d78
+                      - generic [ref=e500]:
+                        - table [ref=e503]:
+                          - rowgroup [ref=e504]:
+                            - row "69 + version=VERSION_0_8," [ref=e505]:
+                              - cell [ref=e506] [cursor=pointer]
+                              - cell "69" [ref=e507] [cursor=pointer]
+                              - cell "+ version=VERSION_0_8," [ref=e508]:
+                                - generic [ref=e509]: + version=VERSION_0_8,
+                            - row "70 + catalogs=[BasicCatalog.get_config(" [ref=e510]:
+                              - cell [ref=e511] [cursor=pointer]
+                              - cell "70" [ref=e512] [cursor=pointer]
+                              - cell "+ catalogs=[BasicCatalog.get_config(" [ref=e513]:
+                                - generic [ref=e514]: + catalogs=[BasicCatalog.get_config(
+                            - row "71 + version=VERSION_0_8," [ref=e515]:
+                              - cell [ref=e516] [cursor=pointer]
+                              - cell "71" [ref=e517] [cursor=pointer]
+                              - cell "+ version=VERSION_0_8," [ref=e518]:
+                                - generic [ref=e519]: + version=VERSION_0_8,
+                            - row "72 + examples_path=\"examples/0.8\"," [ref=e520]:
+                              - cell [ref=e521] [cursor=pointer]
+                              - cell "72" [ref=e522] [cursor=pointer]
+                              - cell "+ examples_path=\"examples/0.8\"," [ref=e523]:
+                                - generic [ref=e524]: + examples_path="examples/0.8",
+                        - generic [ref=e528]:
+                          - generic [ref=e529]:
+                            - generic [ref=e530]:
+                              - group [ref=e532]:
+                                - button "Show options" [ref=e533] [cursor=pointer]:
+                                  - img "Show options" [ref=e536]
+                              - generic "This user has previously committed to the A2UI repository." [ref=e539]:
+                                - generic [ref=e540]: Contributor
+                            - heading "@gemini-code-assist gemini-code-assist Bot May 20, 20262 weeks ago" [level=3] [ref=e541]:
+                              - generic [ref=e542]:
+                                - img "@gemini-code-assist" [ref=e544]
+                                - strong [ref=e545]:
+                                  - link "gemini-code-assist" [ref=e546] [cursor=pointer]:
+                                    - /url: /apps/gemini-code-assist
+                                  - generic [ref=e547]: Bot
+                                - link "May 20, 20262 weeks ago" [ref=e548] [cursor=pointer]:
+                                  - /url: "#discussion_r3271559557"
+                          - generic [ref=e552]:
+                            - paragraph [ref=e553]:
+                              - link "high" [ref=e554] [cursor=pointer]:
+                                - /url: https://camo.githubusercontent.com/7559374fd248a2a146dfe7112beda558979c4f6d02dbe7c5161fd893fe834423/68747470733a2f2f7777772e677374617469632e636f6d2f636f64657265766965776167656e742f686967682d7072696f726974792e737667
+                                - img "high" [ref=e555]
+                            - paragraph [ref=e556]:
+                              - text: The hardcoded relative path
+                              - code [ref=e557]: examples/0.8
+                              - text: for
+                              - code [ref=e558]: examples_path
+                              - text: is brittle as it depends on the current working directory. This can cause issues when running the script from different locations, including the
+                              - code [ref=e559]: if __name__ == '__main__'
+                              - text: block. It's more robust to construct an absolute path based on the current file's location.
+                            - paragraph [ref=e560]:
+                              - text: You'll also need to add
+                              - code [ref=e561]: import os
+                              - text: at the top of the file.
+                            - generic [ref=e562]:
+                              - generic [ref=e564]: Suggested change
+                              - table [ref=e566]:
+                                - rowgroup [ref=e567]:
+                                  - row "72 - examples_path=\"examples/0.8\"," [ref=e568]:
+                                    - cell "72" [ref=e569] [cursor=pointer]
+                                    - cell "- examples_path=\"examples/0.8\"," [ref=e570]
+                                  - row "72 + examples_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), \"examples/0.8\")," [ref=e571]:
+                                    - cell "72" [ref=e572] [cursor=pointer]
+                                    - cell "+ examples_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), \"examples/0.8\")," [ref=e573]
+                    - generic [ref=e575]:
+                      - generic [ref=e576]:
+                        - button "Comment thread" [expanded] [ref=e577] [cursor=pointer]:
+                          - img
+                        - link "samples/agent/adk/enterprise_dashboard/prompt_builder.py" [ref=e579] [cursor=pointer]:
+                          - /url: /google/A2UI/pull/1467/files/d3cc57c08ba6301dade38d0a32b3b78f139f9e14#diff-7d234a1653d7510114100fd56a89a926b0000ed43a793e415a1272448bf92d78
+                      - generic [ref=e580]:
+                        - table [ref=e583]:
+                          - rowgroup [ref=e584]:
+                            - row "36 + )" [ref=e585]:
+                              - cell [ref=e586] [cursor=pointer]
+                              - cell "36" [ref=e587] [cursor=pointer]
+                              - cell "+ )" [ref=e588]:
+                                - generic [ref=e589]: + )
+                            - row "37 +" [ref=e590]:
+                              - cell [ref=e591] [cursor=pointer]
+                              - cell "37" [ref=e592] [cursor=pointer]
+                              - cell "+" [ref=e593]:
+                                - generic: +
+                            - row "38 + UI_DESCRIPTION = \"\"\"" [ref=e594]:
+                              - cell [ref=e595] [cursor=pointer]
+                              - cell "38" [ref=e596] [cursor=pointer]
+                              - cell "+ UI_DESCRIPTION = \"\"\"" [ref=e597]:
+                                - generic [ref=e598]: + UI_DESCRIPTION = """
+                            - row "39 + You are a VISUAL DASHBOARD, not a text chatbot." [ref=e599]:
+                              - cell [ref=e600] [cursor=pointer]
+                              - cell "39" [ref=e601] [cursor=pointer]
+                              - cell "+ You are a VISUAL DASHBOARD, not a text chatbot." [ref=e602]:
+                                - generic [ref=e603]: + You are a VISUAL DASHBOARD, not a text chatbot.
+                        - generic [ref=e607]:
+                          - generic [ref=e608]:
+                            - generic [ref=e609]:
+                              - group [ref=e611]:
+                                - button "Show options" [ref=e612] [cursor=pointer]:
+                                  - img "Show options" [ref=e615]
+                              - generic "This user has previously committed to the A2UI repository." [ref=e618]:
+                                - generic [ref=e619]: Contributor
+                            - heading "@gemini-code-assist gemini-code-assist Bot May 20, 20262 weeks ago" [level=3] [ref=e620]:
+                              - generic [ref=e621]:
+                                - img "@gemini-code-assist" [ref=e623]
+                                - strong [ref=e624]:
+                                  - link "gemini-code-assist" [ref=e625] [cursor=pointer]:
+                                    - /url: /apps/gemini-code-assist
+                                  - generic [ref=e626]: Bot
+                                - link "May 20, 20262 weeks ago" [ref=e627] [cursor=pointer]:
+                                  - /url: "#discussion_r3271559568"
+                          - generic [ref=e631]:
+                            - paragraph [ref=e632]:
+                              - link "medium" [ref=e633] [cursor=pointer]:
+                                - /url: https://camo.githubusercontent.com/32601710f6703a1d3cdbb05c7f9f05d1d8c88abc4d4e4d4e25ff218874a45279/68747470733a2f2f7777772e677374617469632e636f6d2f636f64657265766965776167656e742f6d656469756d2d7072696f726974792e737667
+                                - img "medium" [ref=e634]
+                            - paragraph [ref=e635]:
+                              - text: This sentence, "You are a VISUAL DASHBOARD, not a text chatbot.", repeats the core identity already established in
+                              - code [ref=e636]: ROLE_DESCRIPTION
+                              - text: . To make the prompt more concise, you could consider removing this line and starting the
+                              - code [ref=e637]: UI_DESCRIPTION
+                              - text: directly with the "Layout Recipes" section.
+                    - generic [ref=e639]:
+                      - generic [ref=e640]:
+                        - button "Comment thread" [expanded] [ref=e641] [cursor=pointer]:
+                          - img
+                        - link "samples/agent/adk/enterprise_dashboard/prompt_builder.py" [ref=e643] [cursor=pointer]:
+                          - /url: /google/A2UI/pull/1467/files/d3cc57c08ba6301dade38d0a32b3b78f139f9e14#diff-7d234a1653d7510114100fd56a89a926b0000ed43a793e415a1272448bf92d78
+                      - generic [ref=e644]:
+                        - table [ref=e647]:
+                          - rowgroup [ref=e648]:
+                            - 'row "42 + - KPI metrics: Row of Card components, each Card wrapping a Text child" [ref=e649]':
+                              - cell [ref=e650] [cursor=pointer]
+                              - cell "42" [ref=e651] [cursor=pointer]
+                              - 'cell "+ - KPI metrics: Row of Card components, each Card wrapping a Text child" [ref=e652]':
+                                - generic [ref=e653]: "+ - KPI metrics: Row of Card components, each Card wrapping a Text child"
+                            - row "43 + with bold metric name, large value, and trend indicator." [ref=e654]:
+                              - cell [ref=e655] [cursor=pointer]
+                              - cell "43" [ref=e656] [cursor=pointer]
+                              - cell "+ with bold metric name, large value, and trend indicator." [ref=e657]:
+                                - generic [ref=e658]: + with bold metric name, large value, and trend indicator.
+                            - 'row "44 + - Store/product comparisons: Row of Card components side-by-side." [ref=e659]':
+                              - cell [ref=e660] [cursor=pointer]
+                              - cell "44" [ref=e661] [cursor=pointer]
+                              - 'cell "+ - Store/product comparisons: Row of Card components side-by-side." [ref=e662]':
+                                - generic [ref=e663]: "+ - Store/product comparisons: Row of Card components side-by-side."
+                            - row "45 + NEVER use markdown tables." [ref=e664]:
+                              - cell [ref=e665] [cursor=pointer]
+                              - cell "45" [ref=e666] [cursor=pointer]
+                              - cell "+ NEVER use markdown tables." [ref=e667]:
+                                - generic [ref=e668]: + NEVER use markdown tables.
+                        - generic [ref=e672]:
+                          - generic [ref=e673]:
+                            - generic [ref=e674]:
+                              - group [ref=e676]:
+                                - button "Show options" [ref=e677] [cursor=pointer]:
+                                  - img "Show options" [ref=e680]
+                              - generic "This user has previously committed to the A2UI repository." [ref=e683]:
+                                - generic [ref=e684]: Contributor
+                            - heading "@gemini-code-assist gemini-code-assist Bot May 20, 20262 weeks ago" [level=3] [ref=e685]:
+                              - generic [ref=e686]:
+                                - img "@gemini-code-assist" [ref=e688]
+                                - strong [ref=e689]:
+                                  - link "gemini-code-assist" [ref=e690] [cursor=pointer]:
+                                    - /url: /apps/gemini-code-assist
+                                  - generic [ref=e691]: Bot
+                                - link "May 20, 20262 weeks ago" [ref=e692] [cursor=pointer]:
+                                  - /url: "#discussion_r3271559569"
+                          - generic [ref=e696]:
+                            - paragraph [ref=e697]:
+                              - link "medium" [ref=e698] [cursor=pointer]:
+                                - /url: https://camo.githubusercontent.com/32601710f6703a1d3cdbb05c7f9f05d1d8c88abc4d4e4d4e25ff218874a45279/68747470733a2f2f7777772e677374617469632e636f6d2f636f64657265766965776167656e742f6d656469756d2d7072696f726974792e737667
+                                - img "medium" [ref=e699]
+                            - paragraph [ref=e700]: This rule against using markdown tables is also stated more explicitly in the 'Output Rules' section on line 56. To keep the prompt concise and avoid redundancy, consider removing this line. The instruction on line 44 already provides the positive alternative.
+                    - generic [ref=e702]:
+                      - generic [ref=e703]:
+                        - button "Comment thread" [expanded] [ref=e704] [cursor=pointer]:
+                          - img
+                        - link "samples/agent/adk/enterprise_dashboard/tools.py" [ref=e706] [cursor=pointer]:
+                          - /url: /google/A2UI/pull/1467/files/d3cc57c08ba6301dade38d0a32b3b78f139f9e14#diff-a64b3b2d9c3f72f920f7292cc3ab92b396e1616551636ea6c287233ce871e86f
+                      - generic [ref=e707]:
+                        - table [ref=e710]:
+                          - rowgroup [ref=e711]:
+                            - 'row "71 + {" [ref=e712]':
+                              - cell [ref=e713] [cursor=pointer]
+                              - cell "71" [ref=e714] [cursor=pointer]
+                              - 'cell "+ {" [ref=e715]':
+                                - generic [ref=e716]: "+ {"
+                            - 'row "72 + \"name\": \"Downtown Market\"," [ref=e717]':
+                              - cell [ref=e718] [cursor=pointer]
+                              - cell "72" [ref=e719] [cursor=pointer]
+                              - 'cell "+ \"name\": \"Downtown Market\"," [ref=e720]':
+                                - generic [ref=e721]: "+ \"name\": \"Downtown Market\","
+                            - 'row "73 + \"revenue\": \"$112,400\"," [ref=e722]':
+                              - cell [ref=e723] [cursor=pointer]
+                              - cell "73" [ref=e724] [cursor=pointer]
+                              - 'cell "+ \"revenue\": \"$112,400\"," [ref=e725]':
+                                - generic [ref=e726]: "+ \"revenue\": \"$112,400\","
+                            - 'row "74 + \"transactions\": 5100," [ref=e727]':
+                              - cell [ref=e728] [cursor=pointer]
+                              - cell "74" [ref=e729] [cursor=pointer]
+                              - 'cell "+ \"transactions\": 5100," [ref=e730]':
+                                - generic [ref=e731]: "+ \"transactions\": 5100,"
+                        - generic [ref=e735]:
+                          - generic [ref=e736]:
+                            - generic [ref=e737]:
+                              - group [ref=e739]:
+                                - button "Show options" [ref=e740] [cursor=pointer]:
+                                  - img "Show options" [ref=e743]
+                              - generic "This user has previously committed to the A2UI repository." [ref=e746]:
+                                - generic [ref=e747]: Contributor
+                            - heading "@gemini-code-assist gemini-code-assist Bot May 20, 20262 weeks ago" [level=3] [ref=e748]:
+                              - generic [ref=e749]:
+                                - img "@gemini-code-assist" [ref=e751]
+                                - strong [ref=e752]:
+                                  - link "gemini-code-assist" [ref=e753] [cursor=pointer]:
+                                    - /url: /apps/gemini-code-assist
+                                  - generic [ref=e754]: Bot
+                                - link "May 20, 20262 weeks ago" [ref=e755] [cursor=pointer]:
+                                  - /url: "#discussion_r3271559570"
+                          - generic [ref=e759]:
+                            - paragraph [ref=e760]:
+                              - link "medium" [ref=e761] [cursor=pointer]:
+                                - /url: https://camo.githubusercontent.com/32601710f6703a1d3cdbb05c7f9f05d1d8c88abc4d4e4d4e25ff218874a45279/68747470733a2f2f7777772e677374617469632e636f6d2f636f64657265766965776167656e742f6d656469756d2d7072696f726974792e737667
+                                - img "medium" [ref=e762]
+                            - paragraph [ref=e763]:
+                              - text: The
+                              - code [ref=e764]: transactions
+                              - text: field is an integer, while other numeric-like fields such as
+                              - code [ref=e765]: revenue
+                              - text: and
+                              - code [ref=e766]: avg_basket
+                              - text: are pre-formatted strings. For consistency within this tool's return value and to make the data structure more predictable for the LLM, consider formatting
+                              - code [ref=e767]: transactions
+                              - text: as a string as well. This applies to all stores in the list.
+                            - generic [ref=e768]:
+                              - generic [ref=e770]: Suggested change
+                              - table [ref=e772]:
+                                - rowgroup [ref=e773]:
+                                  - 'row "74 - \"transactions\": 5100," [ref=e774]':
+                                    - cell "74" [ref=e775] [cursor=pointer]
+                                    - 'cell "- \"transactions\": 5100," [ref=e776]'
+                                  - 'row "74 + \"transactions\": \"5,100\"," [ref=e777]':
+                                    - cell "74" [ref=e778] [cursor=pointer]
+                                    - 'cell "+ \"transactions\": \"5,100\"," [ref=e779]'
+                    - generic [ref=e781]:
+                      - generic [ref=e782]:
+                        - button "Comment thread" [expanded] [ref=e783] [cursor=pointer]:
+                          - img
+                        - link "samples/agent/adk/enterprise_dashboard/tools.py" [ref=e785] [cursor=pointer]:
+                          - /url: /google/A2UI/pull/1467/files/d3cc57c08ba6301dade38d0a32b3b78f139f9e14#diff-a64b3b2d9c3f72f920f7292cc3ab92b396e1616551636ea6c287233ce871e86f
+                      - generic [ref=e786]:
+                        - table [ref=e789]:
+                          - rowgroup [ref=e790]:
+                            - 'row "109 + \"rank\": 1," [ref=e791]':
+                              - cell [ref=e792] [cursor=pointer]
+                              - cell "109" [ref=e793] [cursor=pointer]
+                              - 'cell "+ \"rank\": 1," [ref=e794]':
+                                - generic [ref=e795]: "+ \"rank\": 1,"
+                            - 'row "110 + \"name\": \"Organic Apples\"," [ref=e796]':
+                              - cell [ref=e797] [cursor=pointer]
+                              - cell "110" [ref=e798] [cursor=pointer]
+                              - 'cell "+ \"name\": \"Organic Apples\"," [ref=e799]':
+                                - generic [ref=e800]: "+ \"name\": \"Organic Apples\","
+                            - 'row "111 + \"category\": \"Produce\"," [ref=e801]':
+                              - cell [ref=e802] [cursor=pointer]
+                              - cell "111" [ref=e803] [cursor=pointer]
+                              - 'cell "+ \"category\": \"Produce\"," [ref=e804]':
+                                - generic [ref=e805]: "+ \"category\": \"Produce\","
+                            - 'row "112 + \"units_sold\": 1240," [ref=e806]':
+                              - cell [ref=e807] [cursor=pointer]
+                              - cell "112" [ref=e808] [cursor=pointer]
+                              - 'cell "+ \"units_sold\": 1240," [ref=e809]':
+                                - generic [ref=e810]: "+ \"units_sold\": 1240,"
+                        - generic [ref=e814]:
+                          - generic [ref=e815]:
+                            - generic [ref=e816]:
+                              - group [ref=e818]:
+                                - button "Show options" [ref=e819] [cursor=pointer]:
+                                  - img "Show options" [ref=e822]
+                              - generic "This user has previously committed to the A2UI repository." [ref=e825]:
+                                - generic [ref=e826]: Contributor
+                            - heading "@gemini-code-assist gemini-code-assist Bot May 20, 20262 weeks ago" [level=3] [ref=e827]:
+                              - generic [ref=e828]:
+                                - img "@gemini-code-assist" [ref=e830]
+                                - strong [ref=e831]:
+                                  - link "gemini-code-assist" [ref=e832] [cursor=pointer]:
+                                    - /url: /apps/gemini-code-assist
+                                  - generic [ref=e833]: Bot
+                                - link "May 20, 20262 weeks ago" [ref=e834] [cursor=pointer]:
+                                  - /url: "#discussion_r3271559575"
+                          - generic [ref=e838]:
+                            - paragraph [ref=e839]:
+                              - link "medium" [ref=e840] [cursor=pointer]:
+                                - /url: https://camo.githubusercontent.com/32601710f6703a1d3cdbb05c7f9f05d1d8c88abc4d4e4d4e25ff218874a45279/68747470733a2f2f7777772e677374617469632e636f6d2f636f64657265766965776167656e742f6d656469756d2d7072696f726974792e737667
+                                - img "medium" [ref=e841]
+                            - paragraph [ref=e842]:
+                              - text: Similar to
+                              - code [ref=e843]: get_store_comparison
+                              - text: ", the"
+                              - code [ref=e844]: units_sold
+                              - text: field is an integer while
+                              - code [ref=e845]: revenue
+                              - text: is a pre-formatted string. To improve consistency across the tools in this file, consider formatting
+                              - code [ref=e846]: units_sold
+                              - text: as a string with comma separators. This should be applied to all products in the list.
+                            - generic [ref=e847]:
+                              - generic [ref=e849]: Suggested change
+                              - table [ref=e851]:
+                                - rowgroup [ref=e852]:
+                                  - 'row "112 - \"units_sold\": 1240," [ref=e853]':
+                                    - cell "112" [ref=e854] [cursor=pointer]
+                                    - 'cell "- \"units_sold\": 1240," [ref=e855]'
+                                  - 'row "112 + \"units_sold\": \"1,240\"," [ref=e856]':
+                                    - cell "112" [ref=e857] [cursor=pointer]
+                                    - 'cell "+ \"units_sold\": \"1,240\"," [ref=e858]'
+                    - generic [ref=e860]:
+                      - generic [ref=e861]:
+                        - button "Comment thread" [expanded] [ref=e862] [cursor=pointer]:
+                          - img
+                        - link "samples/agent/adk/enterprise_dashboard/examples/0.8/kpi_dashboard.json" [ref=e864] [cursor=pointer]:
+                          - /url: /google/A2UI/pull/1467/files/d3cc57c08ba6301dade38d0a32b3b78f139f9e14#diff-5804a5f2f7cac4ca8127e3636a080dfda67d62d094c3fdb590294bdc0657e51f
+                      - generic [ref=e865]:
+                        - generic [ref=e867]: Comment on lines +109 to +116
+                        - table [ref=e870]:
+                          - rowgroup [ref=e871]:
+                            - 'row "109 + \"id\": \"aov-text\"," [ref=e872]':
+                              - cell [ref=e873] [cursor=pointer]
+                              - cell "109" [ref=e874] [cursor=pointer]
+                              - 'cell "+ \"id\": \"aov-text\"," [ref=e875]':
+                                - generic [ref=e876]: "+ \"id\": \"aov-text\","
+                            - 'row "110 + \"component\": {" [ref=e877]':
+                              - cell [ref=e878] [cursor=pointer]
+                              - cell "110" [ref=e879] [cursor=pointer]
+                              - 'cell "+ \"component\": {" [ref=e880]':
+                                - generic [ref=e881]: "+ \"component\": {"
+                            - 'row "111 + \"Text\": {" [ref=e882]':
+                              - cell [ref=e883] [cursor=pointer]
+                              - cell "111" [ref=e884] [cursor=pointer]
+                              - 'cell "+ \"Text\": {" [ref=e885]':
+                                - generic [ref=e886]: "+ \"Text\": {"
+                            - 'row "112 + \"text\": {" [ref=e887]':
+                              - cell [ref=e888] [cursor=pointer]
+                              - cell "112" [ref=e889] [cursor=pointer]
+                              - 'cell "+ \"text\": {" [ref=e890]':
+                                - generic [ref=e891]: "+ \"text\": {"
+                            - 'row "113 + \"literalString\": \"**Avg Order**\\n\\n**$22.85**\\n\\n-1.2% vs last week\"" [ref=e892]':
+                              - cell [ref=e893] [cursor=pointer]
+                              - cell "113" [ref=e894] [cursor=pointer]
+                              - 'cell "+ \"literalString\": \"**Avg Order**\\n\\n**$22.85**\\n\\n-1.2% vs last week\"" [ref=e895]':
+                                - generic [ref=e896]: "+ \"literalString\": \"**Avg Order**\\n\\n**$22.85**\\n\\n-1.2% vs last week\""
+                            - 'row "114 + }" [ref=e897]':
+                              - cell [ref=e898] [cursor=pointer]
+                              - cell "114" [ref=e899] [cursor=pointer]
+                              - 'cell "+ }" [ref=e900]':
+                                - generic [ref=e901]: "+ }"
+                            - 'row "115 + }" [ref=e902]':
+                              - cell [ref=e903] [cursor=pointer]
+                              - cell "115" [ref=e904] [cursor=pointer]
+                              - 'cell "+ }" [ref=e905]':
+                                - generic [ref=e906]: "+ }"
+                            - 'row "116 + }" [ref=e907]':
+                              - cell [ref=e908] [cursor=pointer]
+                              - cell "116" [ref=e909] [cursor=pointer]
+                              - 'cell "+ }" [ref=e910]':
+                                - generic [ref=e911]: "+ }"
+                        - generic [ref=e915]:
+                          - generic [ref=e916]:
+                            - generic [ref=e917]:
+                              - group [ref=e919]:
+                                - button "Show options" [ref=e920] [cursor=pointer]:
+                                  - img "Show options" [ref=e923]
+                              - generic "This user has previously committed to the A2UI repository." [ref=e926]:
+                                - generic [ref=e927]: Contributor
+                            - heading "@gemini-code-assist gemini-code-assist Bot May 20, 20262 weeks ago" [level=3] [ref=e928]:
+                              - generic [ref=e929]:
+                                - img "@gemini-code-assist" [ref=e931]
+                                - strong [ref=e932]:
+                                  - link "gemini-code-assist" [ref=e933] [cursor=pointer]:
+                                    - /url: /apps/gemini-code-assist
+                                  - generic [ref=e934]: Bot
+                                - link "May 20, 20262 weeks ago" [ref=e935] [cursor=pointer]:
+                                  - /url: "#discussion_r3271559581"
+                          - generic [ref=e939]:
+                            - paragraph [ref=e940]:
+                              - link "medium" [ref=e941] [cursor=pointer]:
+                                - /url: https://camo.githubusercontent.com/32601710f6703a1d3cdbb05c7f9f05d1d8c88abc4d4e4d4e25ff218874a45279/68747470733a2f2f7777772e677374617469632e636f6d2f636f64657265766965776167656e742f6d656469756d2d7072696f726974792e737667
+                                - img "medium" [ref=e942]
+                            - paragraph [ref=e943]:
+                              - text: The prompt in
+                              - code [ref=e944]: prompt_builder.py
+                              - text: encourages using
+                              - code [ref=e945]: Icon
+                              - text: components for status indicators. This metric has a downward trend (
+                              - code [ref=e946]: "-1.2%"
+                              - text: ), which is a perfect opportunity to demonstrate the use of a
+                              - code [ref=e947]: trending_down
+                              - text: icon, as suggested in the prompt's
+                              - code [ref=e948]: Status indicators
+                              - text: recipe. The current implementation only uses text. Using an icon here would make the example more consistent with the prompt's best practices and the
+                              - code [ref=e949]: store_comparison.json
+                              - text: example.
+                - generic [ref=e951]:
+                  - link "@ditman" [ref=e953] [cursor=pointer]:
+                    - /url: /ditman
+                    - img "@ditman" [ref=e954]
+                  - group [ref=e957]:
+                    - generic "This comment was marked as resolved. Sign in to view" [ref=e958] [cursor=pointer]:
+                      - generic [ref=e959]:
+                        - heading "This comment was marked as resolved." [level=3] [ref=e960]
+                        - link "Sign in to view" [ref=e962]:
+                          - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fgoogle%2FA2UI%2Fpull%2F1467
+                - generic [ref=e964]:
+                  - img [ref=e966]
+                  - generic [ref=e968]:
+                    - generic [ref=e969]: This was referenced May 22, 20262 weeks ago
+                    - generic [ref=e970]:
+                      - 'link "feat(agent_sdk): add A2UIOutputMode enum for unified prompt generation #1466" [ref=e972] [cursor=pointer]':
+                        - /url: /google/A2UI/pull/1466
+                      - 'generic "Status: Open" [ref=e974]':
+                        - img [ref=e975]
+                        - text: Open
+                    - generic [ref=e977]:
+                      - 'link "feat(agent_sdk): add strict_output mode for reliable A2UI-first output #1465" [ref=e979] [cursor=pointer]':
+                        - /url: /google/A2UI/pull/1465
+                      - 'generic "Status: Open" [ref=e981]':
+                        - img [ref=e982]
+                        - text: Open
+            - generic [ref=e987]:
+              - link "Sign up for free" [ref=e988] [cursor=pointer]:
+                - /url: /join?source=comment-repo
+              - strong [ref=e989]: to join this conversation on GitHub
+              - text: . Already have an account?
+              - link "Sign in to comment" [ref=e990] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fgoogle%2FA2UI%2Fpull%2F1467
+        - generic [ref=e994]:
+          - form "Select reviewers" [ref=e996]:
+            - heading "Reviewers" [level=3] [ref=e997]
+            - generic [ref=e998]:
+              - group [ref=e999]:
+                - generic "1 more reviewer" [ref=e1000] [cursor=pointer]:
+                  - text: 1 more reviewer
+                  - img [ref=e1002]
+                - paragraph [ref=e1005]:
+                  - generic [ref=e1006]:
+                    - link "@gemini-code-assist" [ref=e1007] [cursor=pointer]:
+                      - /url: /apps/gemini-code-assist
+                      - img "@gemini-code-assist" [ref=e1008]
+                    - link "gemini-code-assist[bot]" [ref=e1009] [cursor=pointer]:
+                      - /url: /apps/gemini-code-assist
+                  - link "gemini-code-assist[bot] left review comments" [ref=e1010] [cursor=pointer]:
+                    - /url: /google/A2UI/pull/1467/files/d3cc57c08ba6301dade38d0a32b3b78f139f9e14
+                    - img [ref=e1012]
+              - paragraph [ref=e1014]: At least 1 approving review is required to merge this pull request.
+          - form "Select assignees" [ref=e1016]:
+            - heading "Assignees" [level=3] [ref=e1017]
+            - text: No one assigned
+          - generic [ref=e1018]:
+            - heading "Labels" [level=3] [ref=e1019]
+            - generic [ref=e1020]: None yet
+          - form "Select projects" [ref=e1022]:
+            - heading "Projects" [level=3] [ref=e1023]
+            - generic [ref=e1026]:
+              - link "A2UI" [ref=e1028] [cursor=pointer]:
+                - /url: /orgs/google/projects/165
+                - img [ref=e1029]
+                - text: A2UI
+              - generic [ref=e1033]: "Status: Todo"
+          - form "Select milestones" [ref=e1035]:
+            - heading "Milestone" [level=3] [ref=e1036]
+            - text: No milestone
+          - form "Link issues" [ref=e1042]:
+            - heading "Development" [level=3] [ref=e1043]
+            - paragraph [ref=e1044]: Successfully merging this pull request may close these issues.
+          - generic [ref=e1046]:
+            - heading "2 participants" [level=3] [ref=e1047]
+            - generic [ref=e1048]:
+              - link "@jswortz" [ref=e1049] [cursor=pointer]:
+                - /url: /jswortz
+                - img "@jswortz" [ref=e1050]
+              - link "@ditman" [ref=e1051] [cursor=pointer]:
+                - /url: /ditman
+                - img "@ditman" [ref=e1052]
+  - contentinfo [ref=e1053]:
+    - heading "Footer" [level=2] [ref=e1054]
+    - generic [ref=e1055]:
+      - generic [ref=e1056]:
+        - link "GitHub Homepage" [ref=e1057] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e1058]
+        - generic [ref=e1060]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e1061]:
+        - heading "Footer navigation" [level=3] [ref=e1062]
+        - list "Footer navigation" [ref=e1063]:
+          - listitem [ref=e1064]:
+            - link "Terms" [ref=e1065] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e1066]:
+            - link "Privacy" [ref=e1067] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e1068]:
+            - link "Security" [ref=e1069] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e1070]:
+            - link "Status" [ref=e1071] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e1072]:
+            - link "Community" [ref=e1073] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e1074]:
+            - link "Docs" [ref=e1075] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e1076]:
+            - link "Contact" [ref=e1077] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e1078]:
+            - button "Manage cookies" [ref=e1080] [cursor=pointer]
+          - listitem [ref=e1081]:
+            - button "Do not share my personal information" [ref=e1083] [cursor=pointer]

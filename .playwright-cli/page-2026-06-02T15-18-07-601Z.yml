@@ -1,0 +1,219 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - button "Hoppa till innehåll" [ref=e3] [cursor=pointer]:
+      - generic [ref=e5]: Hoppa till innehåll
+    - button "Feedback om hjälpmedel" [ref=e6] [cursor=pointer]:
+      - generic [ref=e8]: Feedback om hjälpmedel
+    - generic [ref=e9]:
+      - link "Tillbaka till Bing-sökning" [ref=e10] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Tillbaka till Bing-sökning" [level=1] [ref=e11]
+      - search [ref=e12]:
+        - button "Sök" [ref=e15] [cursor=pointer]
+        - searchbox "Skriv din sökning här – sökförslagen visas medan du söker" [ref=e16]: agui rust drag and drop
+        - button "Sök med en bild" [ref=e19] [cursor=pointer]
+        - status [ref=e21]
+    - complementary "Poäng och inställningar för kontot" [ref=e22]:
+      - button "Microsoft Rewards" [ref=e23] [cursor=pointer]:
+        - generic [ref=e25]:
+          - generic [ref=e26]: Rewards
+          - img [ref=e28]
+      - link "Logga in" [ref=e40] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic "Logga in" [ref=e41]
+    - navigation "Sökfilter" [ref=e42]:
+      - list [ref=e43]:
+        - listitem [ref=e44]:
+          - link "Alla" [ref=e45] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=e46]:
+          - link "Sök" [ref=e47] [cursor=pointer]:
+            - /url: /copilotsearch?q=agui+rust+drag+and+drop&FORM=CSSCOP
+            - img [ref=e48]
+            - text: Sök
+        - listitem [ref=e50]:
+          - link "Bilder" [ref=e51] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=fe6db517d400b0f5753dbf790444fc3bff82b647891adf51bdec371783f259f9JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1L2ltYWdlcy9zZWFyY2g_cT1hZ3VpK3J1c3QrZHJhZythbmQrZHJvcCZGT1JNPUhEUlNDMg&ntb=1
+        - listitem [ref=e52]:
+          - link "Videoklipp" [ref=e53] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=f28e24bca4a044626b8e3dd61e387a226189f0b7b51b89950e372c4e15cd896eJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1L3ZpZGVvcy9zZWFyY2g_cT1hZ3VpK3J1c3QrZHJhZythbmQrZHJvcCZGT1JNPUhEUlNDMw&ntb=1
+        - listitem [ref=e54]:
+          - link "Kartor" [ref=e55] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=906adc5d79edca44a886aa74ba4d1ec587310cb8e0071365688a8a2d0cd4fe8cJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1L21hcHM_cT1hZ3VpK3J1c3QrZHJhZythbmQrZHJvcCZGT1JNPUhEUlNDNA&ntb=1
+        - listitem [ref=e56]:
+          - link "Nyheter" [ref=e57] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=a16661c286108182098ca1948670885e30ea706cbbde6543e4d2dde8321760f0JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1L25ld3Mvc2VhcmNoP3E9YWd1aStydXN0K2RyYWcrYW5kK2Ryb3AmRk9STT1IRFJTQzY&ntb=1
+        - listitem [ref=e58]:
+          - button "Mer" [ref=e59] [cursor=pointer]:
+            - img [ref=e61]
+            - text: Mer
+  - generic [ref=e63]:
+    - main "Sökresultat" [ref=e64]:
+      - generic [ref=e66]: Ungefär 6 810 resultat
+      - list [ref=e67]:
+        - listitem [ref=e68]:
+          - link "ag-ui.com" [ref=e70] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=7b182b015745815f75d430cfe30514dfc7c4f116a73f4acd7c6030f497ff4501JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly9kb2NzLmFnLXVpLmNvbS9pbnRyb2R1Y3Rpb24&ntb=1
+            - img "Ikon för global webb" [ref=e74]
+            - generic [ref=e75]:
+              - generic [ref=e76]: ag-ui.com
+              - generic [ref=e79]: https://docs.ag-ui.com
+          - heading "AG-UI Overview - Agent User Interaction Protocol" [level=2] [ref=e80]:
+            - link "AG-UI Overview - Agent User Interaction Protocol" [ref=e81] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=7b182b015745815f75d430cfe30514dfc7c4f116a73f4acd7c6030f497ff4501JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly9kb2NzLmFnLXVpLmNvbS9pbnRyb2R1Y3Rpb24&ntb=1
+              - strong [ref=e82]: AG-UI
+              - text: Overview - Agent User Interaction Protocol
+          - paragraph [ref=e84]: The Agent–User Interaction (AG-UI) Protocol AG-UI is an open, lightweight, event-based protocol that standardizes how AI agents connect to user-facing applications. AG-UI is designed to be the general …
+        - listitem [ref=e85]:
+          - link "github.com" [ref=e87] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=af3f35d7189fb1119ae96ce1391f5aeaf4e8229a6651187b5a881452502800d3JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly9naXRodWIuY29tL2FnLXVpLXByb3RvY29sL2FnLXVpLw&ntb=1
+            - img "Ikon för global webb" [ref=e91]
+            - generic [ref=e92]:
+              - generic [ref=e93]: github.com
+              - generic [ref=e96]: https://github.com › ag-ui-protocol › ag-ui
+          - 'heading "AG-UI: The Agent-User Interaction Protocol - GitHub" [level=2] [ref=e97]':
+            - 'link "AG-UI: The Agent-User Interaction Protocol - GitHub" [ref=e98] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=af3f35d7189fb1119ae96ce1391f5aeaf4e8229a6651187b5a881452502800d3JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly9naXRodWIuY29tL2FnLXVpLXByb3RvY29sL2FnLXVpLw&ntb=1
+              - strong [ref=e99]: AG-UI
+              - text: ": The Agent-User Interaction Protocol - GitHub"
+          - paragraph [ref=e101]: 19 feb. 2026 · Where does AGUI fit in the agentic protocol stack? AG-UI is complementary to the other 2 top agentic protocols MCP gives agents tools A2A allows agents to communicate with other agents …
+        - listitem [ref=e102]:
+          - link "microsoft.com" [ref=e104] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=d14d92bfd52c94f63f1045498144f2311d119de9d5f073c64bad275264fecbd8JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL2FnZW50LWZyYW1ld29yay9pbnRlZ3JhdGlvbnMvYWctdWkvZ2V0dGluZy1zdGFydGVk&ntb=1
+            - img "Ikon för global webb" [ref=e108]
+            - generic [ref=e109]:
+              - generic [ref=e110]: microsoft.com
+              - generic [ref=e113]: https://learn.microsoft.com › en-us › agent-framework › integrations › ag-ui › ...
+          - heading "Getting Started with AG-UI | Microsoft Learn" [level=2] [ref=e114]:
+            - link "Getting Started with AG-UI | Microsoft Learn" [ref=e115] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=d14d92bfd52c94f63f1045498144f2311d119de9d5f073c64bad275264fecbd8JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL2FnZW50LWZyYW1ld29yay9pbnRlZ3JhdGlvbnMvYWctdWkvZ2V0dGluZy1zdGFydGVk&ntb=1
+              - text: Getting Started with
+              - strong [ref=e116]: AG-UI
+              - text: "| Microsoft Learn"
+          - paragraph [ref=e118]: 2 apr. 2026 · This tutorial demonstrates how to build both server and client applications using the AG-UI protocol with .NET or Python and Agent Framework. You'll learn how to create an AG-UI server that …
+        - listitem [ref=e119]:
+          - link "copilotkit.ai" [ref=e121] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=f739543117db203326af36b81baeeb4452f87bcf86ae96febfc6ed371fcfb8a2JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly93d3cuY29waWxvdGtpdC5haS9hZy11aQ&ntb=1
+            - img "Ikon för global webb" [ref=e125]
+            - generic [ref=e126]:
+              - generic [ref=e127]: copilotkit.ai
+              - generic [ref=e130]: https://www.copilotkit.ai › ag-ui
+          - heading "AG-UI Protocol - CopilotKit" [level=2] [ref=e131]:
+            - link "AG-UI Protocol - CopilotKit" [ref=e132] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=f739543117db203326af36b81baeeb4452f87bcf86ae96febfc6ed371fcfb8a2JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly93d3cuY29waWxvdGtpdC5haS9hZy11aQ&ntb=1
+              - strong [ref=e133]: AG-UI
+              - text: Protocol - CopilotKit
+          - paragraph [ref=e135]: AG-UI is an open, lightweight, event-based protocol that defines how agents, users, and applications stay in sync. Transform agents from background processes into true collaborators.
+        - listitem [ref=e136]:
+          - link "brightcoding.dev" [ref=e138] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=25f6043b97817176251348e5e8786f73e93ecf327c429fd2389317044354d5ccJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly93d3cuYmxvZy5icmlnaHRjb2RpbmcuZGV2LzIwMjUvMDUvMzEvYWctdWktdGhlLWFnZW50LXVzZXItaW50ZXJhY3Rpb24tcHJvdG9jb2wv&ntb=1
+            - img "Ikon för global webb" [ref=e142]
+            - generic [ref=e143]:
+              - generic [ref=e144]: brightcoding.dev
+              - generic [ref=e147]: https://www.blog.brightcoding.dev › ag-ui-the-agent-user-interaction-protocol
+          - 'heading "AG-UI: The Agent-User Interaction Protocol - BrightCoding" [level=2] [ref=e148]':
+            - 'link "AG-UI: The Agent-User Interaction Protocol - BrightCoding" [ref=e149] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=25f6043b97817176251348e5e8786f73e93ecf327c429fd2389317044354d5ccJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly93d3cuYmxvZy5icmlnaHRjb2RpbmcuZGV2LzIwMjUvMDUvMzEvYWctdWktdGhlLWFnZW50LXVzZXItaW50ZXJhY3Rpb24tcHJvdG9jb2wv&ntb=1
+              - strong [ref=e150]: AG-UI
+              - text: ": The Agent-User Interaction Protocol - BrightCoding"
+          - paragraph [ref=e152]: 31 maj 2025 · Developers can explore a hello-world app demo at agui-demo.vercel.app. AG-UI supports multiple programming languages, including TypeScript and Python, making it accessible to a wide …
+        - listitem [ref=e153]:
+          - link "mindstudio.ai" [ref=e155] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=3211fd77d281f0b2749a0debe44909dc2a078cc2a3fbea533acabc58814fb8efJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly93d3cubWluZHN0dWRpby5haS9ibG9nL3doYXQtaXMtYWd1aS1odW1hbi1jb250cm9sLWxheWVyLWFpLWFnZW50cw&ntb=1
+            - img "Ikon för global webb" [ref=e159]
+            - generic [ref=e160]:
+              - generic [ref=e161]: mindstudio.ai
+              - generic [ref=e164]: https://www.mindstudio.ai › blog › what-is-agui-human-control-layer-ai-agents
+          - heading "What Is AGUI? The Human Control Layer for Long-Running AI Agents" [level=2] [ref=e165]:
+            - link "What Is AGUI? The Human Control Layer for Long-Running AI Agents" [ref=e166] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=3211fd77d281f0b2749a0debe44909dc2a078cc2a3fbea533acabc58814fb8efJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly93d3cubWluZHN0dWRpby5haS9ibG9nL3doYXQtaXMtYWd1aS1odW1hbi1jb250cm9sLWxheWVyLWFpLWFnZW50cw&ntb=1
+              - text: What Is
+              - strong [ref=e167]: AGUI
+              - text: "? The Human Control Layer for Long-Running AI Agents"
+          - paragraph [ref=e169]: 21 maj 2026 · AGUI is an open protocol that standardizes real-time communication between AI agents and user interfaces — enabling visibility, interruption, and approval during long-running agent tasks.
+        - listitem [ref=e170]:
+          - link "medium.com" [ref=e172] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=81f9a9369a924fb24bd4294205800c5c4049e36e450c2ab119acbd59adbaef5dJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly9tZWRpdW0uY29tL0BrcmFtMjU0L2FnLXVpLXRoZS1wcm90b2NvbC13aGVyZS1hZ2VudHMtbWVldC11c2Vycy1hLWRlZXAtZGl2ZS1pbnRvLWFnZW50aWMtcmFnLTc0ZWVkMTBkZmU1ZA&ntb=1
+            - img "Ikon för global webb" [ref=e176]
+            - generic [ref=e177]:
+              - generic [ref=e178]: medium.com
+              - generic [ref=e181]: https://medium.com › ag-ui-the-protocol-where-agents-meet-users...
+          - 'heading "AG-UI: The Protocol Where Agents Meet Users - Medium" [level=2] [ref=e182]':
+            - 'link "AG-UI: The Protocol Where Agents Meet Users - Medium" [ref=e183] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=81f9a9369a924fb24bd4294205800c5c4049e36e450c2ab119acbd59adbaef5dJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly9tZWRpdW0uY29tL0BrcmFtMjU0L2FnLXVpLXRoZS1wcm90b2NvbC13aGVyZS1hZ2VudHMtbWVldC11c2Vycy1hLWRlZXAtZGl2ZS1pbnRvLWFnZW50aWMtcmFnLTc0ZWVkMTBkZmU1ZA&ntb=1
+              - strong [ref=e184]: AG-UI
+              - text: ": The Protocol Where Agents Meet Users - Medium"
+          - paragraph [ref=e186]: "25 maj 2025 · (CrewAI + AG-UI integration): from crewai import Crew, Agent from agui import AGUIClient agui = AGUIClient(user_id=\"user123\") planner = Agent(name=\"Planner\", goal=\"Break …"
+        - listitem [ref=e187]:
+          - link "deepwiki.com" [ref=e189] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=c58558ac7e86b78b3d195c97d7fe7d6706174924d523f7ec54f721911232b5edJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly9kZWVwd2lraS5jb20vYWctdWktcHJvdG9jb2wvYWctdWk&ntb=1
+            - img "Ikon för global webb" [ref=e193]
+            - generic [ref=e194]:
+              - generic [ref=e195]: deepwiki.com
+              - generic [ref=e198]: https://deepwiki.com › ag-ui-protocol › ag-ui
+          - heading "ag-ui-protocol/ag-ui | DeepWiki" [level=2] [ref=e199]:
+            - link "ag-ui-protocol/ag-ui | DeepWiki" [ref=e200] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=c58558ac7e86b78b3d195c97d7fe7d6706174924d523f7ec54f721911232b5edJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly9kZWVwd2lraS5jb20vYWctdWktcHJvdG9jb2wvYWctdWk&ntb=1
+              - strong [ref=e201]: ag-ui
+              - text: "-protocol/"
+              - strong [ref=e202]: ag-ui
+              - text: "| DeepWiki"
+          - paragraph [ref=e204]: 15 maj 2026 · This document provides a high-level introduction to the AG-UI protocol repository. It covers the protocol's purpose, repository organization, core architectural patterns, and the major …
+        - listitem [ref=e205]:
+          - link "agui.com" [ref=e207] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=7f66861cdddeab28395c91189835061700817da8f3d0f4372c8b257234a9b9e0JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly93d3cuYWd1aS5jb20vZW4vbmV3cw&ntb=1
+            - img "Ikon för global webb" [ref=e211]
+            - generic [ref=e212]:
+              - generic [ref=e213]: agui.com
+              - generic [ref=e216]: https://www.agui.com › en › news
+          - heading "News | Agui" [level=2] [ref=e217]:
+            - link "News | Agui" [ref=e218] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=7f66861cdddeab28395c91189835061700817da8f3d0f4372c8b257234a9b9e0JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly93d3cuYWd1aS5jb20vZW4vbmV3cw&ntb=1
+              - strong [ref=e219]: News | Agui
+          - paragraph [ref=e221]: Agui achieves the EN-15085 welding qualification certification, what ensures the appropriate level of quality in the production of welded systems for the railway sector.
+        - listitem [ref=e222]:
+          - link "ag-ui.com" [ref=e224] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=6350fede68ec53a9b1514e56c60b6f892e23d788ddc65299a54097a46766a9fdJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly9kb2NzLmFnLXVpLmNvbS9jb25jZXB0cy9ldmVudHM&ntb=1
+            - img "Ikon för global webb" [ref=e228]
+            - generic [ref=e229]:
+              - generic [ref=e230]: ag-ui.com
+              - generic [ref=e233]: https://docs.ag-ui.com › concepts › events
+          - heading "Events - Agent User Interaction Protocol" [level=2] [ref=e234]:
+            - link "Events - Agent User Interaction Protocol" [ref=e235] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=6350fede68ec53a9b1514e56c60b6f892e23d788ddc65299a54097a46766a9fdJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cHM6Ly9kb2NzLmFnLXVpLmNvbS9jb25jZXB0cy9ldmVudHM&ntb=1
+          - paragraph [ref=e237]: Events The Agent User Interaction Protocol uses a streaming event-based architecture. Events are the fundamental units of communication between agents and frontends, enabling real-time, structured …
+        - listitem [ref=e238]:
+          - navigation "Fler resultat för agui rust drag and drop":
+            - list:
+              - listitem [ref=e239]:
+                - generic "Sida 1" [ref=e240]: "1"
+              - listitem [ref=e241]:
+                - link "Sida 2" [ref=e242] [cursor=pointer]:
+                  - /url: /search?q=agui+rust+drag+and+drop&rdr=1&rdrig=1D516FF9C1E84FBBA7CFA4C007EDA8D7&FPIG=A5E9EE6AF89D4528BF93075668BCC022&first=11&FORM=PERE
+                  - text: "2"
+              - listitem [ref=e243]:
+                - link "Sida 3" [ref=e244] [cursor=pointer]:
+                  - /url: /search?q=agui+rust+drag+and+drop&rdr=1&rdrig=1D516FF9C1E84FBBA7CFA4C007EDA8D7&FPIG=A5E9EE6AF89D4528BF93075668BCC022&first=21&FORM=PERE1
+                  - text: "3"
+              - listitem [ref=e245]:
+                - link "Nästa sida" [ref=e246] [cursor=pointer]:
+                  - /url: /search?q=agui+rust+drag+and+drop&rdr=1&rdrig=1D516FF9C1E84FBBA7CFA4C007EDA8D7&FPIG=A5E9EE6AF89D4528BF93075668BCC022&first=11&FORM=PORE
+    - complementary "Fler resultat" [ref=e247]:
+      - list
+    - complementary "Utforska mer"
+  - contentinfo [ref=e248]:
+    - generic [ref=e249]:
+      - list:
+        - listitem [ref=e250]:
+          - link "Sekretess" [ref=e251] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=54b60c4e1613fb389d94e8acb0743497449742cadccaae1ab1610d682723bba2JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=e252]:
+          - link "Villkor" [ref=e253] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=c333bbcae1486db7f41b0bbba934fe7ce52d4ec7b68380b68c4ae04f0bf58fd0JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=12f58222-c730-66c7-3eed-954ec6b167de&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1
+  - generic [ref=e257]:
+    - search [ref=e258]:
+      - textbox "Be om en uppföljning" [ref=e259]:
+        - /placeholder: "Be om en uppföljning "
+    - button "Skicka" [ref=e261] [cursor=pointer]:
+      - img [ref=e263]
+  - dialog "Quick Search"

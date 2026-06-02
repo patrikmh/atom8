@@ -1,0 +1,53 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - button "Hoppa till innehåll" [ref=e3] [cursor=pointer]:
+      - generic [ref=e5]: Hoppa till innehåll
+    - button "Feedback om hjälpmedel" [ref=e6] [cursor=pointer]:
+      - generic [ref=e8]: Feedback om hjälpmedel
+    - generic [ref=e9]:
+      - link "Tillbaka till Bing-sökning" [ref=e10] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Tillbaka till Bing-sökning" [level=1] [ref=e11]
+      - search [ref=e12]:
+        - button "Sök" [ref=e15] [cursor=pointer]
+        - searchbox "Skriv din sökning här – sökförslagen visas medan du söker" [ref=e16]: a2ui protocol google agent UI drag drop canvas dashboard
+    - complementary "Poäng och inställningar för kontot" [ref=e17]:
+      - button "Microsoft Rewards"
+      - link "Logga in" [ref=e18] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic "Logga in" [ref=e19]
+    - navigation "Sökfilter" [ref=e20]:
+      - list [ref=e21]:
+        - listitem [ref=e22]:
+          - link "Alla" [ref=e23] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=e24]:
+          - link "Sök" [ref=e25] [cursor=pointer]:
+            - /url: /copilotsearch?q=a2ui+protocol+google+agent+UI+drag+drop+canvas+dashboard&FORM=CSSCOP
+            - img [ref=e26]
+            - text: Sök
+        - listitem [ref=e28]:
+          - link "Bilder" [ref=e29] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=4c7a5dbece92580d94466beaaef5868c879b857b272602b18818d92b882fb63eJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=0b2114fb-8a7d-6921-2c1c-03978bda687d&u=a1L2ltYWdlcy9zZWFyY2g_cT1hMnVpK3Byb3RvY29sK2dvb2dsZSthZ2VudCtVSStkcmFnK2Ryb3ArY2FudmFzK2Rhc2hib2FyZCZGT1JNPUhEUlNDMg&ntb=1
+        - listitem [ref=e30]:
+          - link "Videoklipp" [ref=e31] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=529d6e8804fb4c774c2e37c18323b00a3743e638e91798e539e3c1531a6de4afJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=0b2114fb-8a7d-6921-2c1c-03978bda687d&u=a1L3ZpZGVvcy9zZWFyY2g_cT1hMnVpK3Byb3RvY29sK2dvb2dsZSthZ2VudCtVSStkcmFnK2Ryb3ArY2FudmFzK2Rhc2hib2FyZCZGT1JNPUhEUlNDMw&ntb=1
+        - listitem [ref=e32]:
+          - link "Kartor" [ref=e33] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=1241e9b8de8ab16ce62b808cb89c350b911c639e32438be915462bb3763a77ddJmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=0b2114fb-8a7d-6921-2c1c-03978bda687d&u=a1L21hcHM_cT1hMnVpK3Byb3RvY29sK2dvb2dsZSthZ2VudCtVSStkcmFnK2Ryb3ArY2FudmFzK2Rhc2hib2FyZCZGT1JNPUhEUlNDNA&ntb=1
+        - listitem [ref=e34]:
+          - link "Nyheter" [ref=e35] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=d77420d419996b51dfbc0cd1d13def2b0cae5127f96895931d9faed454ccc5f6JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=0b2114fb-8a7d-6921-2c1c-03978bda687d&u=a1L25ld3Mvc2VhcmNoP3E9YTJ1aStwcm90b2NvbCtnb29nbGUrYWdlbnQrVUkrZHJhZytkcm9wK2NhbnZhcytkYXNoYm9hcmQmRk9STT1IRFJTQzY&ntb=1
+        - listitem [ref=e36]:
+          - button "Mer" [ref=e37] [cursor=pointer]:
+            - img [ref=e39]
+            - text: Mer
+  - contentinfo [ref=e41]:
+    - generic [ref=e42]:
+      - list:
+        - listitem [ref=e43]:
+          - link "Sekretess" [ref=e44] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=fe79e8f9936c82b43a8cdfb27ce4a35b5f8f7bf63450fc967b3c4560e1388aa7JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=0b2114fb-8a7d-6921-2c1c-03978bda687d&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=e45]:
+          - link "Villkor" [ref=e46] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=52272091467b45d69b164562670c6ed2cc53c0358de7f4c3d1627786f6c3f406JmltdHM9MTc4MDM1ODQwMA&ptn=3&ver=2&hsh=4&fclid=0b2114fb-8a7d-6921-2c1c-03978bda687d&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1
