@@ -146,10 +146,18 @@ const ComponentLibrary = () => {
       <div className="flex items-center justify-between p-3 border-b" style={{ borderColor: theme.widgetBorder }}>
         {sidebarOpen ? (
           <>
-            <h2 className="font-semibold text-sm" style={{ color: theme.sidebarText }}>Components</h2>
+            <div className="flex items-center gap-2">
+              <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ backgroundColor: theme.accentColor + '22' }}>
+                <Puzzle className="w-4 h-4" style={{ color: theme.accentColor }} />
+              </div>
+              <div>
+                <h2 className="font-semibold text-sm leading-tight" style={{ color: theme.sidebarText }}>Components</h2>
+                <p className="text-[10px] leading-tight" style={{ color: theme.sidebarText + '88' }}>Drag to canvas</p>
+              </div>
+            </div>
             <button
               onClick={toggleSidebar}
-              className="p-1 rounded hover:opacity-70"
+              className="p-1.5 rounded-lg hover:bg-black/5 transition-colors"
               style={{ color: theme.sidebarText }}
               title="Collapse sidebar"
             >
@@ -159,7 +167,7 @@ const ComponentLibrary = () => {
         ) : (
           <button
             onClick={toggleSidebar}
-            className="p-1 rounded hover:opacity-70 mx-auto"
+            className="p-1.5 rounded-lg hover:bg-black/5 transition-colors mx-auto"
             style={{ color: theme.sidebarText }}
             title="Expand sidebar"
           >

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { WidgetConfig } from '@/types'
-import { FileText, FileSpreadsheet, Image, File, Folder, Loader2, HardDrive } from 'lucide-react'
+import { FileText, FileSpreadsheet, Image, File, Folder, HardDrive, FolderOpen, RefreshCw } from 'lucide-react'
 import { apiClient } from '@/services/api'
 import { useLayoutStore } from '@/stores/layoutStore'
 
@@ -30,6 +30,35 @@ const mimeTypeMap: Record<string, string> = {
   'application/vnd.google-apps.presentation': 'document',
 }
 
+const SkeletonRow = () => (
+  <div className="flex items-center gap-3 p-2 animate-pulse">
+    <div className="w-8 h-8 rounded-lg bg-gray-200 shrink-0" />
+    <div className="flex-1 space-y-1.5">
+      <div className="h-3 bg-gray-200 rounded w-3/5" />
+      <div className="h-2.5 bg-gray-200 rounded w-1/4" />
+    </div>
+  </div>
+)
+
+const EmptyState = ({ onRefresh }: { onRefresh: () => void }) => (
+  <div className="flex flex-col items-center justify-center h-full text-center p-4 gap-3">
+    <div className="w-12 h-12 rounded-2xl bg-orange-50 flex items-center justify-center">
+      <FolderOpen className="w-6 h-6 text-orange-300" />
+    </div>
+    <div className="space-y-1">
+      <p className="text-sm font-medium text-gray-600">No files found</p>
+      <p className="text-xs text-gray-400 max-w-[180px]">Try a different search or check your Drive.</p>
+    </div>
+    <button
+      onClick={onRefresh}
+      className="flex items-center gap-1.5 text-xs text-orange-500 hover:text-orange-600 font-medium px-3 py-1.5 rounded-lg hover:bg-orange-50 transition-colors"
+    >
+      <RefreshCw className="w-3 h-3" />
+      Refresh
+    </button>
+  </div>
+)
+
 const DriveWidget = ({ widget }: { widget: WidgetConfig }) => {
   const setWidgetData = useLayoutStore((s) => s.setWidgetData)
   const setWidgetLoading = useLayoutStore((s) => s.setWidgetLoading)
@@ -37,6 +66,7 @@ const DriveWidget = ({ widget }: { widget: WidgetConfig }) => {
   const [localData, setLocalData] = useState<any>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [fetchedAt, setFetchedAt] = useState<number | null>(null)
   const refreshTrigger = useLayoutStore((s) => s.refreshTriggers[widget.id])
 
   const fetchData = async () => {
@@ -56,10 +86,10 @@ const DriveWidget = ({ widget }: { widget: WidgetConfig }) => {
       } else {
         setLocalData(data)
         setWidgetData(widget.id, data)
+        setFetchedAt(Date.now())
       }
     } catch (err: any) {
       const msg = err.message || 'Failed to load files'
-      console.error(`[DriveWidget] fetch failed:`, msg)
       setError(msg)
       setWidgetError(widget.id, msg)
     } finally {
@@ -96,26 +126,38 @@ const DriveWidget = ({ widget }: { widget: WidgetConfig }) => {
 
   if (displayLoading) {
     return (
-      <div className="flex items-center justify-center h-full">
-        <Loader2 className="w-6 h-6 text-yellow-500 animate-spin" />
-        <span className="ml-2 text-sm text-gray-500">Loading files...</span>
+      <div className="space-y-1 py-2">
+        <SkeletonRow />
+        <SkeletonRow />
+        <SkeletonRow />
+        <SkeletonRow />
       </div>
     )
   }
 
   if (displayError) {
     return (
-      <div className="flex flex-col items-center justify-center h-full text-center p-4">
-        <HardDrive className="w-8 h-8 text-red-300 mb-2" />
-        <p className="text-sm text-red-500">{displayError}</p>
+      <div className="flex flex-col items-center justify-center h-full text-center p-4 gap-3">
+        <div className="w-12 h-12 rounded-2xl bg-red-50 flex items-center justify-center">
+          <HardDrive className="w-6 h-6 text-red-300" />
+        </div>
+        <div className="space-y-1">
+          <p className="text-sm font-medium text-red-500">{displayError}</p>
+          <p className="text-xs text-gray-400">Check your connection or try again.</p>
+        </div>
         <button
           onClick={fetchData}
-          className="mt-2 text-xs text-yellow-500 hover:text-yellow-600 font-medium"
+          className="flex items-center gap-1.5 text-xs text-orange-500 hover:text-orange-600 font-medium px-3 py-1.5 rounded-lg hover:bg-orange-50 transition-colors"
         >
+          <RefreshCw className="w-3 h-3" />
           Retry
         </button>
       </div>
     )
+  }
+
+  if (files.length === 0) {
+    return <EmptyState onRefresh={fetchData} />
   }
 
   return (
@@ -123,7 +165,7 @@ const DriveWidget = ({ widget }: { widget: WidgetConfig }) => {
       {files.map((file: any) => (
         <div
           key={file.id}
-          className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50/80 cursor-pointer transition-colors"
+          className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50/80 cursor-pointer transition-all hover:shadow-sm hover:translate-x-0.5"
         >
           {fileIcons[getFileType(file)] || <File className="w-8 h-8 text-gray-500" />}
           <div className="flex-1 min-w-0">
@@ -134,13 +176,27 @@ const DriveWidget = ({ widget }: { widget: WidgetConfig }) => {
           </div>
         </div>
       ))}
-      <div className="text-center pt-2">
-        <button onClick={fetchData} className="text-xs text-yellow-500 cursor-pointer hover:underline">
+      <div className="flex items-center justify-between pt-2 px-1">
+        <span className="text-[10px] text-gray-400">
+          {fetchedAt ? `Updated ${formatTimeAgo(fetchedAt)}` : ''}
+        </span>
+        <button onClick={fetchData} className="text-xs text-orange-500 cursor-pointer hover:underline flex items-center gap-1">
+          <RefreshCw className="w-3 h-3" />
           Refresh
         </button>
       </div>
     </div>
   )
+}
+
+const formatTimeAgo = (timestamp: number): string => {
+  const seconds = Math.floor((Date.now() - timestamp) / 1000)
+  if (seconds < 60) return 'just now'
+  const minutes = Math.floor(seconds / 60)
+  if (minutes < 60) return `${minutes}m ago`
+  const hours = Math.floor(minutes / 60)
+  if (hours < 24) return `${hours}h ago`
+  return `${Math.floor(hours / 24)}d ago`
 }
 
 export default DriveWidget

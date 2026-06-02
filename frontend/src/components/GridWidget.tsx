@@ -203,6 +203,13 @@ const GridWidget = ({ widget }: { widget: WidgetConfig }) => {
           )}
         </div>
         <div className="flex items-center gap-1">
+          {/* Data status dot */}
+          <div
+            className={`w-1.5 h-1.5 rounded-full transition-all ${
+              widget.isLoading ? 'bg-blue-400 animate-pulse' : widget.error ? 'bg-red-400' : 'bg-green-400'
+            }`}
+            title={widget.isLoading ? 'Loading...' : widget.error ? 'Error' : 'Live data'}
+          />
           <button
             onClick={() => triggerRefresh(widget.id)}
             className="p-1 rounded hover:opacity-70 transition-opacity"
