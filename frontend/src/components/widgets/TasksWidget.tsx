@@ -3,10 +3,11 @@ import { WidgetConfig } from '@/types'
 import { CheckCircle2, Circle, ListTodo } from 'lucide-react'
 import { apiClient } from '@/services/api'
 import { useWidgetData } from '@/hooks/useWidgetData'
-import { WidgetLoading, WidgetEmpty, WidgetError, WidgetRawText } from './WidgetUI'
+import { WidgetLoading, WidgetEmpty, WidgetError, WidgetRawText, WidgetRefreshBar } from './WidgetUI'
 
 interface TasksData {
   tasks?: any[]
+  data?: any[]
   error?: string
   status?: string
   needs_auth?: boolean

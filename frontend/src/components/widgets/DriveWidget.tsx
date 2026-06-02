@@ -3,10 +3,11 @@ import { WidgetConfig } from '@/types'
 import { FileText, FileSpreadsheet, Image, File, Folder, HardDrive } from 'lucide-react'
 import { apiClient } from '@/services/api'
 import { useWidgetData } from '@/hooks/useWidgetData'
-import { WidgetLoading, WidgetEmpty, WidgetError, WidgetRawText } from './WidgetUI'
+import { WidgetLoading, WidgetEmpty, WidgetError, WidgetRawText, WidgetRefreshBar } from './WidgetUI'
 
 interface DriveData {
   files?: any[]
+  data?: any[]
   error?: string
   status?: string
   needs_auth?: boolean
