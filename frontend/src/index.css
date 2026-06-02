@@ -90,4 +90,34 @@
     white-space: nowrap;
     border: 0;
   }
+
+  .canvas-grid-overlay {
+    background-image: linear-gradient(to right, rgba(128,128,128,0.08) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(128,128,128,0.08) 1px, transparent 1px);
+    background-size: calc(100% / 12) 60px;
+  }
+
+  .canvas-grid-overlay-dark {
+    background-image: linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px);
+    background-size: calc(100% / 12) 60px;
+  }
+
+  .ghost-cell-preview {
+    animation: ghost-pulse 1.2s ease-in-out infinite;
+  }
+
+  @keyframes ghost-pulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.7; }
+  }
+
+  .empty-state-bounce {
+    animation: empty-bounce 2s ease-in-out infinite;
+  }
+
+  @keyframes empty-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
 }

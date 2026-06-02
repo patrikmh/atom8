@@ -7,3 +7,6 @@ __pycache__/
 dist/
 .vite/
 .DS_Store
+.playwright-cli/
+.pi/tasks/
+

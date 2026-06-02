@@ -1,4 +1,4 @@
-import { useCallback, useRef, useEffect } from 'react'
+import { useCallback, useRef, useEffect, useState } from 'react'
 import { WidthProvider } from 'react-grid-layout'
 import GridLayoutBase from 'react-grid-layout'
 import 'react-grid-layout/css/styles.css'
@@ -10,6 +10,7 @@ import { useLayoutStore } from '@/stores/layoutStore'
 import { CanvasBackground } from '@/types'
 import GridWidget from './GridWidget'
 import SettingsPanel from './SettingsPanel'
+import { MousePointer2, ArrowRight } from 'lucide-react'
 
 const Canvas = () => {
   const widgets = useLayoutStore((state) => state.widgets)
@@ -20,6 +21,7 @@ const Canvas = () => {
   const newWidgetIds = useLayoutStore((state) => state.newWidgetIds)
   const clearNewWidget = useLayoutStore((state) => state.clearNewWidget)
   const canvasRef = useRef<HTMLDivElement>(null)
+  const [ghostCell, setGhostCell] = useState<{x: number; y: number} | null>(null)
 
   const handleLayoutChange = useCallback(
     (layout: GridLayoutBase.Layout[]) => {
@@ -64,6 +66,32 @@ const Canvas = () => {
       const y = Math.max(0, Math.round(mouseY / (rowHeight + marginY)))
 
       addWidget(item, { x, y, w: 4, h: 3 })
+      setGhostCell(null)
+    },
+    hover: (_item, monitor) => {
+      const offset = monitor.getClientOffset()
+      if (!offset || !canvasRef.current) {
+        setGhostCell(null)
+        return
+      }
+      const gridEl = canvasRef.current.querySelector('.react-grid-layout') as HTMLElement
+      if (!gridEl) {
+        setGhostCell(null)
+        return
+      }
+      const gridRect = gridEl.getBoundingClientRect()
+      const mouseX = offset.x - gridRect.left
+      const mouseY = offset.y - gridRect.top
+
+      const cols = 12
+      const rowHeight = 60
+      const marginX = 16
+      const marginY = 16
+      const width = gridRect.width
+      const colWidth = (width - (cols - 1) * marginX) / cols
+      const x = Math.max(0, Math.min(cols - 4, Math.round(mouseX / (colWidth + marginX))))
+      const y = Math.max(0, Math.round(mouseY / (rowHeight + marginY)))
+      setGhostCell({ x, y })
     },
     collect: (monitor) => ({
       isOver: !!monitor.isOver(),
@@ -128,27 +156,66 @@ const Canvas = () => {
         dropRef(node)
       }}
       style={getBackgroundStyle(background)}
-      className={`relative ${isOver && canDrop ? 'ring-2 ring-blue-400 ring-opacity-50' : ''}`}
+      className={`relative rounded-xl border m-2 overflow-hidden ${isOver && canDrop ? 'ring-2 ring-blue-400 ring-opacity-50 border-blue-300' : 'border-transparent'}`}
     >
+      {/* Grid overlay — always visible to show snap cells */}
+      <div
+        className={`absolute inset-0 pointer-events-none z-0 ${background.mode === 'dark' || theme.canvasBg === '#1a1a2e' ? 'canvas-grid-overlay-dark' : 'canvas-grid-overlay'}`}
+        style={{ opacity: widgets.length === 0 ? 0.3 : 0.15 }}
+      />
+
       {/* Drop zone indicator */}
       {isOver && canDrop && (
         <div className="absolute inset-0 z-10 pointer-events-none flex items-center justify-center">
           <div className="border-2 border-dashed border-blue-400 rounded-xl bg-blue-50/50 px-8 py-4 text-blue-600 font-medium text-sm flex items-center gap-2">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m0 0l-4-4m4 4l4-4" />
-            </svg>
+            <MousePointer2 className="w-5 h-5" />
             {itemType === 'WIDGET' ? 'Drop widget here' : 'Move widget here'}
           </div>
         </div>
       )}
+
+      {/* Ghost cell preview — shows exact snap position */}
+      {isOver && canDrop && ghostCell && (
+        <div
+          className="absolute pointer-events-none z-10 ghost-cell-preview rounded-lg border-2 border-blue-400 bg-blue-500/10"
+          style={{
+            left: `calc(${(ghostCell.x / 12) * 100}% + 8px)`,
+            top: ghostCell.y * 76 + 8,
+            width: `calc(${((4) / 12) * 100}% - 16px)`,
+            height: 3 * 60 + 2 * 16 - 16,
+          }}
+        />
+      )}
+
       <div className="absolute top-4 right-4 z-10 flex gap-2">
         <SettingsPanel />
       </div>
       <div aria-live="polite" aria-atomic="true" className="sr-only">
         {isOver && canDrop ? 'Drop zone active' : ''}
       </div>
+
+      {/* Empty state */}
+      {widgets.length === 0 && !isOver && (
+        <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
+          <div className="text-center">
+            <div className="empty-state-bounce inline-flex items-center justify-center w-16 h-16 rounded-2xl border-2 border-dashed mb-4"
+              style={{ borderColor: theme.widgetBorder + '66', backgroundColor: theme.widgetBg + '44' }}
+            >
+              <MousePointer2 className="w-8 h-8" style={{ color: theme.sidebarText + '44' }} />
+            </div>
+            <p className="text-sm font-medium mb-1" style={{ color: theme.sidebarText + 'aa' }}>
+              Your canvas is empty
+            </p>
+            <p className="text-xs flex items-center justify-center gap-1" style={{ color: theme.sidebarText + '66' }}>
+              Drag components from the sidebar
+              <ArrowRight className="w-3 h-3" />
+            </p>
+          </div>
+        </div>
+      )}
+
       <GridLayout
-        className="layout"
+        className="layout relative z-10"
         cols={12}
         rowHeight={60}
         margin={[16, 16]}

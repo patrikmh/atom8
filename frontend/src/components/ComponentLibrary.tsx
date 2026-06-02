@@ -15,6 +15,7 @@ import {
   X,
   Bot,
   Palette,
+  GripVertical,
 } from 'lucide-react'
 import AIDesignerPanel from '@/components/AIDesignerPanel'
 import ThemePicker from '@/components/ThemePicker'
@@ -32,6 +33,15 @@ const categoryIcons: Record<Category, React.ReactNode> = {
   Drive: <HardDrive className="w-4 h-4" />,
   AI: <Sparkles className="w-4 h-4" />,
   Custom: <Puzzle className="w-4 h-4" />,
+}
+
+const categoryColors: Record<Category, string> = {
+  Gmail: '#ef4444',
+  Calendar: '#8b5cf6',
+  Tasks: '#22c55e',
+  Drive: '#3b82f6',
+  AI: '#f59e0b',
+  Custom: '#6b7280',
 }
 
 const DraggableComponentItem = ({
@@ -57,6 +67,8 @@ const DraggableComponentItem = ({
     }
   }, [preview])
 
+  const catColor = categoryColors[item.category as Category]
+
   return (
     <div
       ref={drag}
@@ -65,7 +77,7 @@ const DraggableComponentItem = ({
       } ${
         isCollapsed
           ? 'p-2 rounded-lg flex items-center justify-center hover:scale-105 hover:shadow-md transition-transform'
-          : 'p-3 rounded-lg border hover:shadow-md hover:scale-[1.02] hover:border-blue-300 transition-all'
+          : 'group rounded-lg border hover:shadow-md hover:scale-[1.02] hover:border-blue-300 transition-all flex items-stretch overflow-hidden'
       }`}
       style={
         isCollapsed
@@ -77,13 +89,21 @@ const DraggableComponentItem = ({
       {isCollapsed ? (
         categoryIcons[item.category as Category]
       ) : (
-        <div>
-          <div className="flex items-center gap-2 mb-1">
-            {categoryIcons[item.category as Category]}
-            <span className="font-medium text-sm" style={{ color: theme.widgetText }}>{item.title}</span>
+        <>
+          {/* Category color accent bar */}
+          <div className="w-1 shrink-0 self-stretch" style={{ backgroundColor: catColor }} />
+          {/* Drag grip handle */}
+          <div className="flex items-center px-1.5 shrink-0" style={{ color: theme.sidebarText + '44' }}>
+            <GripVertical className="w-4 h-4 group-hover:text-blue-400 transition-colors" />
           </div>
-          <p className="text-xs truncate" style={{ color: theme.sidebarText + 'aa' }}>{item.prompt}</p>
-        </div>
+          <div className="flex-1 py-2.5 pr-3 min-w-0">
+            <div className="flex items-center gap-2 mb-1">
+              <span style={{ color: catColor }}>{categoryIcons[item.category as Category]}</span>
+              <span className="font-medium text-sm" style={{ color: theme.widgetText }}>{item.title}</span>
+            </div>
+            <p className="text-xs truncate" style={{ color: theme.sidebarText + 'aa' }}>{item.prompt}</p>
+          </div>
+        </>
       )}
     </div>
   )
@@ -318,6 +338,13 @@ const ComponentLibrary = () => {
                     isCollapsed={false}
                   />
                 ))}
+              </div>
+              {/* Category hint with dot */}
+              <div className="flex items-center gap-1.5 mt-2">
+                <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: categoryColors[category as Category] }} />
+                <span className="text-[10px] uppercase tracking-wider" style={{ color: categoryColors[category as Category] + 'aa' }}>
+                  {items.length} {items.length === 1 ? 'item' : 'items'}
+                </span>
               </div>
             </div>
           ))}

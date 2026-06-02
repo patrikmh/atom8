@@ -113,10 +113,14 @@ def parse_gmail_query(prompt: str) -> tuple[Optional[str], int]:
     # If no parts matched yet and there are non-stopword tokens, use them as a generic query
     if not parts:
         # Remove common filler words
-        fillers = {'get', 'all', 'my', 'the', 'last', 'recent', 'latest', 'emails', 'email', 
+        fillers = {'get', 'all', 'my', 'the', 'last', 'recent', 'latest', 'emails', 'email',
                    'messages', 'message', 'show', 'find', 'fetch', 'list', 'display', 'a', 'an'}
         tokens = [t for t in re.split(r'\s+', p) if t not in fillers and len(t) > 1]
         if tokens:
+            # If the remaining tokens are purely numeric (e.g. "10" from "last 10 emails"),
+            # there is no filter query — just return the count.
+            if all(t.isdigit() for t in tokens):
+                return None, count
             # If it looks like a domain or brand, search from: that
             combined = ' '.join(tokens)
             if '.' in combined or len(tokens) <= 2:
