@@ -48,6 +48,7 @@ const GridWidget = ({ widget }: { widget: WidgetConfig }) => {
   const updateWidgetPrompt = useLayoutStore((state) => state.updateWidgetPrompt)
   const updateWidgetTitle = useLayoutStore((state) => state.updateWidgetTitle)
   const setWidgetRefreshInterval = useLayoutStore((state) => state.setWidgetRefreshInterval)
+  const setWidgetData = useLayoutStore((state) => state.setWidgetData)
   const triggerRefresh = useLayoutStore((state) => state.triggerRefresh)
   const theme = useLayoutStore((state) => state.theme)
   const [isEditingPrompt, setIsEditingPrompt] = useState(false)
@@ -76,6 +77,10 @@ const GridWidget = ({ widget }: { widget: WidgetConfig }) => {
   const savePrompt = () => {
     updateWidgetPrompt(widget.id, promptDraft)
     setIsEditingPrompt(false)
+    // Clear existing data so the widget re-fetches with the new prompt
+    setWidgetData(widget.id, null)
+    // Trigger a refresh after a small delay to let the store update
+    setTimeout(() => triggerRefresh(widget.id), 50)
   }
 
   const cancelPromptEdit = () => {

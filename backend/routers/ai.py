@@ -142,10 +142,20 @@ async def research(request: Dict[str, Any]):
         emails = result.get("emails", [])
         if not emails:
             return {"content": "No emails found matching your query.", "sources": [], "status": "ok"}
-        content = f"Found {len(emails)} email(s):\n"
-        for i, e in enumerate(emails[:5], 1):
-            content += f"\n{i}. {e.get('subject', '(no subject)')} from {e.get('from_name', '')}"
-        return {"content": content, "sources": [], "status": "ok"}
+        
+        # If the prompt asks to summarize, also return the raw emails for A2UI rendering
+        is_summary = any(w in topic.lower() for w in ['summar', 'overview', 'digest', 'brief', 'recap', 'highlight'])
+        
+        sender_list = []
+        for i, e in enumerate(emails[:10]):
+            sender = e.get('from_name', '') or e.get('from_email', '') or e.get('from', '') or 'Unknown'
+            sender_list.append(f"{i+1}. {e.get('subject', '(no subject)')} from {sender}")
+        content = f"Found {len(emails)} email(s):\n" + "\n".join(sender_list)
+        
+        response = {"content": content, "sources": [], "status": "ok"}
+        # Always include raw emails so the frontend can render them as A2UI components
+        response["emails"] = emails
+        return response
 
     if intent == "calendar":
         result = await fetch_calendar_pi(prompt=topic)
@@ -156,7 +166,8 @@ async def research(request: Dict[str, Any]):
             return {"content": "No calendar events found.", "sources": [], "status": "ok"}
         content = f"Found {len(events)} event(s):\n"
         for i, e in enumerate(events[:5], 1):
-            content += f"\n{i}. {e.get('title', '(no title)')} at {e.get('start', '')}"
+            title = e.get('title', '') or e.get('summary', '') or '(no title)'
+            content += f"\n{i}. {title} at {e.get('start', '')}"
         return {"content": content, "sources": [], "status": "ok"}
 
     if intent == "task":

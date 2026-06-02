@@ -52,7 +52,7 @@ const CustomWidget = ({ widget }: { widget: WidgetConfig }) => {
   }
 
   useEffect(() => {
-    if (!widget.data && !localData && !defaultPrompt) {
+    if (!defaultPrompt) {
       fetchData()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
