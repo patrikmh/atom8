@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { MessageSquare, X, Send, Loader2, Sparkles, Minimize2, Maximize2, Trash2, Plus, CheckCircle, FileText, ExternalLink, ChevronRight } from 'lucide-react'
+import { MessageSquare, X, Send, Loader2, Sparkles, Minimize2, Maximize2, Trash2, Plus, CheckCircle, FileText, ExternalLink, ChevronRight, Mail, Calendar, CheckSquare, HardDrive, AlertTriangle, Info, Bell, ArrowUpRight, ArrowDownRight, Minus } from 'lucide-react'
 import { apiClient } from '@/services/api'
 import { useLayoutStore } from '@/stores/layoutStore'
 
@@ -163,6 +163,192 @@ const LinkListComponent = ({ links }: { links: any[] }) => (
   </div>
 )
 
+// ─── New Rich Component Types ───
+
+const EmailSummaryComponent = ({ unread_count, total, latest_from, latest_subject }: any) => (
+  <div className="bg-white border border-gray-200 rounded-lg p-3 shadow-sm flex items-center gap-3">
+    <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+      <Mail className="w-5 h-5 text-blue-500" />
+    </div>
+    <div className="flex-1 min-w-0">
+      <div className="flex items-center gap-2">
+        <span className="font-semibold text-sm text-gray-900">{unread_count || 0} unread</span>
+        <span className="text-xs text-gray-500">of {total || 0} total</span>
+      </div>
+      {latest_from && (
+        <div className="text-xs text-gray-500 truncate mt-0.5">Latest: {latest_subject || '(no subject)'} from {latest_from}</div>
+      )}
+    </div>
+    {unread_count > 0 && (
+      <span className="flex-shrink-0 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center font-bold">{unread_count}</span>
+    )}
+  </div>
+)
+
+const EventSummaryComponent = ({ next_event, today_count, upcoming_count }: any) => (
+  <div className="bg-white border border-gray-200 rounded-lg p-3 shadow-sm flex items-center gap-3">
+    <div className="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0">
+      <Calendar className="w-5 h-5 text-purple-500" />
+    </div>
+    <div className="flex-1 min-w-0">
+      <div className="text-sm font-semibold text-gray-900">{today_count || 0} today, {upcoming_count || 0} upcoming</div>
+      {next_event && (
+        <div className="text-xs text-gray-500 truncate mt-0.5">Next: {next_event}</div>
+      )}
+    </div>
+  </div>
+)
+
+const TaskSummaryComponent = ({ completed, total, overdue }: any) => (
+  <div className="bg-white border border-gray-200 rounded-lg p-3 shadow-sm flex items-center gap-3">
+    <div className="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
+      <CheckSquare className="w-5 h-5 text-green-500" />
+    </div>
+    <div className="flex-1 min-w-0">
+      <div className="text-sm font-semibold text-gray-900">{completed || 0} of {total || 0} done</div>
+      <div className="w-full bg-gray-200 rounded-full h-1.5 mt-1">
+        <div className="bg-green-500 h-1.5 rounded-full" style={{ width: `${total ? (completed / total) * 100 : 0}%` }} />
+      </div>
+    </div>
+    {overdue > 0 && (
+      <span className="flex-shrink-0 text-xs text-red-500 font-medium">{overdue} overdue</span>
+    )}
+  </div>
+)
+
+const FileSummaryComponent = ({ recent_count, total_size }: any) => (
+  <div className="bg-white border border-gray-200 rounded-lg p-3 shadow-sm flex items-center gap-3">
+    <div className="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0">
+      <HardDrive className="w-5 h-5 text-orange-500" />
+    </div>
+    <div className="flex-1 min-w-0">
+      <div className="text-sm font-semibold text-gray-900">{recent_count || 0} recent files</div>
+      {total_size && <div className="text-xs text-gray-500 mt-0.5">{total_size}</div>}
+    </div>
+  </div>
+)
+
+const ChartCardComponent = ({ title, data }: any) => {
+  const max = Math.max(...(data?.map((d: any) => d.value) || [1]))
+  return (
+    <div className="bg-white border border-gray-200 rounded-lg p-3 shadow-sm">
+      {title && <div className="font-semibold text-sm text-gray-900 mb-2">{title}</div>}
+      <div className="space-y-2">
+        {data?.map((item: any, idx: number) => (
+          <div key={idx} className="flex items-center gap-2">
+            <span className="text-xs text-gray-500 w-20 truncate flex-shrink-0">{item.label}</span>
+            <div className="flex-1 bg-gray-100 rounded-full h-4 overflow-hidden">
+              <div
+                className="h-full bg-blue-500 rounded-full flex items-center justify-end pr-1"
+                style={{ width: `${(item.value / max) * 100}%` }}
+              >
+                <span className="text-[10px] text-white font-medium">{item.value}</span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+const TableCardComponent = ({ title, headers, rows }: any) => (
+  <div className="bg-white border border-gray-200 rounded-lg p-3 shadow-sm overflow-hidden">
+    {title && <div className="font-semibold text-sm text-gray-900 mb-2">{title}</div>}
+    <div className="overflow-x-auto">
+      <table className="w-full text-xs">
+        <thead>
+          <tr className="border-b border-gray-200">
+            {headers?.map((h: string, i: number) => (
+              <th key={i} className="text-left py-1 px-2 font-medium text-gray-600">{h}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows?.map((row: any[], i: number) => (
+            <tr key={i} className="border-b border-gray-100 last:border-0">
+              {row?.map((cell: any, j: number) => (
+                <td key={j} className="py-1 px-2 text-gray-700">{cell}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+)
+
+const StatusCardComponent = ({ status, message, detail }: any) => {
+  const statusConfig: Record<string, { color: string; bg: string; icon: React.ReactNode }> = {
+    success: { color: 'text-green-600', bg: 'bg-green-50', icon: <CheckCircle className="w-5 h-5" /> },
+    warning: { color: 'text-yellow-600', bg: 'bg-yellow-50', icon: <AlertTriangle className="w-5 h-5" /> },
+    error: { color: 'text-red-600', bg: 'bg-red-50', icon: <AlertTriangle className="w-5 h-5" /> },
+    info: { color: 'text-blue-600', bg: 'bg-blue-50', icon: <Info className="w-5 h-5" /> },
+  }
+  const config = statusConfig[status] || statusConfig.info
+  return (
+    <div className={`${config.bg} border border-gray-200 rounded-lg p-3 flex items-center gap-3`}>
+      <div className={`${config.color} flex-shrink-0`}>{config.icon}</div>
+      <div className="flex-1 min-w-0">
+        <div className={`text-sm font-semibold ${config.color}`}>{message || status}</div>
+        {detail && <div className="text-xs text-gray-500 mt-0.5">{detail}</div>}
+      </div>
+    </div>
+  )
+}
+
+const NotificationCardComponent = ({ title, message, time, type = 'info' }: any) => {
+  const typeColors: Record<string, string> = {
+    info: 'border-blue-200 bg-blue-50',
+    success: 'border-green-200 bg-green-50',
+    warning: 'border-yellow-200 bg-yellow-50',
+    error: 'border-red-200 bg-red-50',
+  }
+  return (
+    <div className={`${typeColors[type] || typeColors.info} border rounded-lg p-3 flex items-start gap-3`}>
+      <Bell className="w-4 h-4 text-gray-500 flex-shrink-0 mt-0.5" />
+      <div className="flex-1 min-w-0">
+        <div className="text-sm font-semibold text-gray-900">{title}</div>
+        <div className="text-xs text-gray-600 mt-0.5">{message}</div>
+        {time && <div className="text-[10px] text-gray-400 mt-1">{time}</div>}
+      </div>
+    </div>
+  )
+}
+
+const TrendComponent = ({ label, value, previous, unit }: any) => {
+  const diff = value - (previous || 0)
+  const isUp = diff > 0
+  const isDown = diff < 0
+  return (
+    <div className="bg-white border border-gray-200 rounded-lg p-3 shadow-sm flex items-center gap-3">
+      <div className="flex-1">
+        <div className="text-xs text-gray-500">{label}</div>
+        <div className="text-lg font-bold text-gray-900">
+          {value}{unit ? <span className="text-sm text-gray-500">{unit}</span> : ''}
+        </div>
+      </div>
+      <div className={`flex items-center gap-1 text-sm font-medium ${isUp ? 'text-green-600' : isDown ? 'text-red-600' : 'text-gray-500'}`}>
+        {isUp ? <ArrowUpRight className="w-4 h-4" /> : isDown ? <ArrowDownRight className="w-4 h-4" /> : <Minus className="w-4 h-4" />}
+        {diff !== 0 ? Math.abs(diff) : '—'}
+      </div>
+    </div>
+  )
+}
+
+const ComponentGrid = ({ components, columns = 2 }: { components: A2UIComponent[]; columns?: number }) => {
+  if (!components?.length) return null
+  return (
+    <div className={`grid gap-2 mt-2`} style={{ gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))` }}>
+      {components.map((comp, idx) => (
+        <div key={idx} className="min-w-0">
+          <A2UIRenderer components={[comp]} />
+        </div>
+      ))}
+    </div>
+  )
+}
+
 const A2UIRenderer = ({ components }: { components: A2UIComponent[] }) => {
   if (!components?.length) return null
   return (
@@ -183,6 +369,26 @@ const A2UIRenderer = ({ components }: { components: A2UIComponent[] }) => {
             return <TextCardComponent key={idx} title={comp.title} text={comp.text} />
           case 'link_list':
             return <LinkListComponent key={idx} links={comp.links} />
+          case 'email_summary':
+            return <EmailSummaryComponent key={idx} {...comp} />
+          case 'event_summary':
+            return <EventSummaryComponent key={idx} {...comp} />
+          case 'task_summary':
+            return <TaskSummaryComponent key={idx} {...comp} />
+          case 'file_summary':
+            return <FileSummaryComponent key={idx} {...comp} />
+          case 'chart_card':
+            return <ChartCardComponent key={idx} {...comp} />
+          case 'table_card':
+            return <TableCardComponent key={idx} {...comp} />
+          case 'status_card':
+            return <StatusCardComponent key={idx} {...comp} />
+          case 'notification_card':
+            return <NotificationCardComponent key={idx} {...comp} />
+          case 'trend':
+            return <TrendComponent key={idx} {...comp} />
+          case 'component_grid':
+            return <ComponentGrid key={idx} components={comp.components} columns={comp.columns} />
           default:
             return null
         }
