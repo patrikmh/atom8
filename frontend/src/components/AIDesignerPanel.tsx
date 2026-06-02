@@ -30,7 +30,6 @@ const AIDesignerPanel = () => {
   const canUndo = useLayoutStore((s) => s.canUndo)
   const canRedo = useLayoutStore((s) => s.canRedo)
   const widgets = useLayoutStore((s) => s.widgets)
-  const pushSnapshot = useLayoutStore((s) => s.pushSnapshot)
   const [isLoading, setIsLoading] = useState(false)
 
   const getModeDescription = (mode: string) => {
@@ -67,9 +66,10 @@ const AIDesignerPanel = () => {
       }
 
       if (designerMode === 'auto') {
-        // Auto-apply: push snapshot, apply, notify
-        pushSnapshot()
+        // Auto-apply: set pending, apply (applySuggestion pushes its own snapshot)
+        setPendingSuggestion(suggestion)
         applySuggestion()
+        setPendingSuggestion(null)
       } else {
         // Suggest or Full: set pending
         setPendingSuggestion(suggestion)

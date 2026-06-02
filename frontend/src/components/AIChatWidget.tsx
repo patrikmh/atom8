@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { MessageSquare, X, Send, Loader2, Sparkles, Minimize2, Maximize2, Trash2, Plus, Mail, Calendar, CheckCircle, FileText, ExternalLink, ChevronRight } from 'lucide-react'
+import { MessageSquare, X, Send, Loader2, Sparkles, Minimize2, Maximize2, Trash2, Plus, CheckCircle, FileText, ExternalLink, ChevronRight } from 'lucide-react'
 import { apiClient } from '@/services/api'
 import { useLayoutStore } from '@/stores/layoutStore'
 

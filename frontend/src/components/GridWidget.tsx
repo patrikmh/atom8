@@ -23,6 +23,7 @@ import TasksWidget from './widgets/TasksWidget'
 import DriveWidget from './widgets/DriveWidget'
 import AIWidget from './widgets/AIWidget'
 import CustomWidget from './widgets/CustomWidget'
+import ErrorBoundary from './ErrorBoundary'
 
 const widgetIcons: Record<string, React.ReactNode> = {
   gmail: <Mail className="w-4 h-4" />,
@@ -242,7 +243,9 @@ const GridWidget = ({ widget }: { widget: WidgetConfig }) => {
             <span>{widget.error}</span>
           </div>
         ) : (
-          <WidgetComponent widget={widget} />
+          <ErrorBoundary>
+            <WidgetComponent widget={widget} />
+          </ErrorBoundary>
         )}
       </div>
 

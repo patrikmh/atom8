@@ -17,11 +17,11 @@ export default defineConfig({
     host: true,
     proxy: {
       '/api': {
-        target: 'http://192.168.0.108:8000',
+        target: process.env.VITE_API_HOST || 'http://localhost:8000',
         changeOrigin: true,
       },
       '/health': {
-        target: 'http://192.168.0.108:8000',
+        target: process.env.VITE_API_HOST || 'http://localhost:8000',
         changeOrigin: true,
       },
     },

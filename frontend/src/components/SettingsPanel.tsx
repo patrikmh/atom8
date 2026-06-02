@@ -19,7 +19,7 @@ const SettingsPanel = () => {
   const canUndo = useLayoutStore((s) => s.canUndo)
   const canRedo = useLayoutStore((s) => s.canRedo)
   const resetLayout = useLayoutStore((s) => s.resetLayout)
-  const refreshTriggers = useLayoutStore((s) => s.refreshTriggers)
+  const widgets = useLayoutStore((s) => s.widgets)
   const triggerRefresh = useLayoutStore((s) => s.triggerRefresh)
 
   const fetchAuthStatus = async () => {
@@ -150,7 +150,7 @@ const SettingsPanel = () => {
                         await apiClient.clearAuth()
                         fetchAuthStatus()
                         // Refresh all widgets to show mock data
-                        Object.keys(refreshTriggers).forEach(triggerRefresh)
+                        widgets.forEach((w) => triggerRefresh(w.id))
                       }
                     }}
                     className="ml-auto p-1 rounded hover:opacity-70 transition-opacity"

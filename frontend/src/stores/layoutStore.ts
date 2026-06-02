@@ -382,7 +382,8 @@ export const getFilteredComponents = (
     const matchesSearch =
       !searchQuery ||
       item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.prompt.toLowerCase().includes(searchQuery.toLowerCase());
+      item.prompt.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      item.category.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesCategory =
       selectedCategory === 'All' || item.category === selectedCategory;
     return matchesSearch && matchesCategory;

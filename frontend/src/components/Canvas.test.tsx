@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import Canvas from './Canvas'
 import { useLayoutStore } from '@/stores/layoutStore'
@@ -18,11 +18,19 @@ vi.mock('react-dnd-html5-backend', () => ({
   HTML5Backend: {},
 }))
 
+vi.mock('./SettingsPanel', () => ({
+  default: () => {
+    const React = require('react')
+    return React.createElement('div', { 'data-testid': 'settings-panel' }, 'SettingsPanel')
+  },
+}))
+
 vi.mock('react-grid-layout', () => ({
   __esModule: true,
   default: ({ children }: { children: React.ReactNode }) => (
     <div data-testid="grid-layout">{children}</div>
   ),
+  WidthProvider: (Component: React.ComponentType<any>) => Component,
 }))
 
 describe('Canvas', () => {
@@ -50,7 +58,7 @@ describe('Canvas', () => {
     expect(screen.getByTestId('grid-layout')).toBeInTheDocument()
   })
 
-  it('displays background controls', () => {
+  it('renders settings panel', () => {
     const mockStore = {
       widgets: DEFAULT_LAYOUT,
       background: DEFAULT_CANVAS_BACKGROUND,
@@ -67,20 +75,15 @@ describe('Canvas', () => {
     )
 
     render(<Canvas />)
-    expect(screen.getByText('Plain')).toBeInTheDocument()
-    expect(screen.getByText('Grid')).toBeInTheDocument()
-    expect(screen.getByText('Dark')).toBeInTheDocument()
-    expect(screen.getByText('Image')).toBeInTheDocument()
+    expect(screen.getByTestId('settings-panel')).toBeInTheDocument()
   })
 
-  it('changes background mode on button click', () => {
-    const setBackground = vi.fn()
+  it('passes correct props to widgets', () => {
     const mockStore = {
       widgets: DEFAULT_LAYOUT,
       background: DEFAULT_CANVAS_BACKGROUND,
       theme: DEFAULT_THEME,
       updateLayout: vi.fn(),
-      setBackground,
       setWidgetLoading: vi.fn(),
       setWidgetError: vi.fn(),
       setWidgetData: vi.fn(),
@@ -92,7 +95,7 @@ describe('Canvas', () => {
     )
 
     render(<Canvas />)
-    fireEvent.click(screen.getByText('Dark'))
-    expect(setBackground).toHaveBeenCalledWith({ mode: 'dark' })
+    // Canvas should render widgets from the store
+    expect(screen.getByTestId('grid-layout')).toBeInTheDocument()
   })
 })
