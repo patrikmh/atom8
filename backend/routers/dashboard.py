@@ -3,18 +3,10 @@ from sqlalchemy.orm import Session
 from datetime import datetime
 import json
 
-from database import SessionLocal, Layout, WidgetCache
+from database import SessionLocal, Layout, WidgetCache, get_db
 from models import LayoutSave
 
 router = APIRouter(prefix="/api/dashboard", tags=["dashboard"])
-
-
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
 
 
 @router.get("/layout")

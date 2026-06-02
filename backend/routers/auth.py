@@ -3,19 +3,11 @@ from sqlalchemy.orm import Session
 from datetime import datetime
 import os
 
-from database import Base, SessionLocal, User
+from database import Base, SessionLocal, User, get_db
 from models import UserToken
 from services.google_api import get_google_token, get_access_token
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
-
-
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
 
 
 @router.post("/google/token")

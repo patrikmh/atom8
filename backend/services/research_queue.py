@@ -6,10 +6,19 @@ from datetime import datetime
 from typing import Optional, Dict, Any, List
 from contextlib import contextmanager
 
-DB_PATH = "/Users/patrikandersson/telegram/atom8/backend/research_queue.db"
+import os
+
+DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'research_queue.db')
+
+
+_db_initialized = False
 
 
 def init_db():
+    global _db_initialized
+    if _db_initialized:
+        return
+    _db_initialized = True
     conn = sqlite3.connect(DB_PATH)
     conn.execute("""
         CREATE TABLE IF NOT EXISTS research_jobs (

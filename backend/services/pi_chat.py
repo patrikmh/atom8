@@ -7,10 +7,19 @@ import uuid
 import json
 from typing import Dict, List, Any
 
+# --- Configuration ---
+MAX_MESSAGE_LENGTH = 4000  # chars
+MAX_SESSIONS = 50
+
 # In-memory session store: session_id -> list of messages
 CHAT_SESSIONS: Dict[str, List[Dict[str, Any]]] = {}
+_sessions_lock = asyncio.Lock()
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# Configurable via environment
+PI_PROVIDER = os.getenv("PI_PROVIDER", "fireworks")
+PI_MODEL = os.getenv("PI_MODEL", "accounts/fireworks/routers/kimi-k2p6-turbo")
 
 
 def get_or_create_session(session_id: str | None) -> str:
@@ -124,15 +133,15 @@ def _send_to_pi_sync(prompt: str, timeout: int = 60) -> str:
                 "--print",
                 "--no-session",
                 "--provider",
-                "fireworks",
+                PI_PROVIDER,
                 "--model",
-                "accounts/fireworks/routers/kimi-k2p6-turbo",
+                PI_MODEL,
                 "--thinking",
                 "low",
                 "--extension",
                 ".pi/extensions/living-canvas.ts",
                 "--tools",
-                "read,bash,grep,find,fetch_gmail,fetch_calendar,fetch_tasks,fetch_drive",
+                "read,grep,find,fetch_gmail,fetch_calendar,fetch_tasks,fetch_drive",
                 "--skill",
                 "deep-research",
                 "--skill",
@@ -197,11 +206,23 @@ def parse_a2ui_components(text: str) -> tuple[str, List[Dict[str, Any]]]:
 
 async def chat(session_id: str | None, user_message: str) -> Dict[str, Any]:
     """Main chat handler: manages session, sends to pi, returns response."""
-    sid = get_or_create_session(session_id)
-    session_messages = get_session(sid)
+    # Input validation
+    if not user_message or not user_message.strip():
+        return {"content": "Please enter a message.", "components": [], "session_id": session_id, "status": "error"}
+    if len(user_message) > MAX_MESSAGE_LENGTH:
+        return {"content": f"Message too long ({len(user_message)} chars). Max {MAX_MESSAGE_LENGTH}.", "components": [], "session_id": session_id, "status": "error"}
 
-    # Append user message
-    append_to_session(sid, "user", user_message)
+    async with _sessions_lock:
+        sid = get_or_create_session(session_id)
+        session_messages = get_session(sid)
+
+        # Evict oldest session if limit reached
+        if len(CHAT_SESSIONS) > MAX_SESSIONS:
+            oldest = next(iter(CHAT_SESSIONS))
+            del CHAT_SESSIONS[oldest]
+
+        # Append user message
+        append_to_session(sid, "user", user_message)
 
     # Build prompt with full history
     prompt = build_prompt(session_messages, user_message)
@@ -213,7 +234,8 @@ async def chat(session_id: str | None, user_message: str) -> Dict[str, Any]:
     clean_text, components = parse_a2ui_components(response_content)
 
     # Append assistant response (clean text)
-    append_to_session(sid, "assistant", clean_text)
+    async with _sessions_lock:
+        append_to_session(sid, "assistant", clean_text)
 
     return {
         "content": clean_text,

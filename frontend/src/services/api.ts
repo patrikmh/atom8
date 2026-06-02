@@ -2,7 +2,9 @@ const API_BASE = (import.meta as any).env?.VITE_API_BASE ||
   (typeof window !== 'undefined' ? `${window.location.protocol}//${window.location.hostname}:8000` : 'http://localhost:8000')
 
 async function api<T>(path: string, options?: RequestInit): Promise<T> {
-  const url = `${API_BASE}${path}?_cb=${Date.now()}`
+  // Only cache-bust data/AI endpoints, not health or auth
+  const isDataEndpoint = path.startsWith('/api/data') || path.startsWith('/api/ai')
+  const url = isDataEndpoint ? `${API_BASE}${path}?_cb=${Date.now()}` : `${API_BASE}${path}`
   const res = await fetch(url, {
     credentials: 'omit',
     headers: {
@@ -10,10 +12,8 @@ async function api<T>(path: string, options?: RequestInit): Promise<T> {
     },
     ...options,
   })
-  console.log(`[api] ${path} -> ${res.status}`)
   if (!res.ok) {
     const err = await res.json().catch(() => ({}))
-    console.error(`[api] ${path} error:`, err)
     throw new Error(err.detail || `HTTP ${res.status}`)
   }
   return res.json() as Promise<T>

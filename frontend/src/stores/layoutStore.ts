@@ -330,26 +330,14 @@ export const useLayoutStore = create<LayoutState>()(
         }));
       },
       refreshWidget: (id) => {
-        const widget = get().widgets.find((w) => w.id === id);
-        if (!widget) return;
+        // Mark as loading and clear error; actual fetching is done by each widget's useEffect
+        // triggered by the refreshTrigger increment below.
         set((state) => ({
           widgets: state.widgets.map((w) =>
             w.id === id ? { ...w, isLoading: true, error: null } : w
           ),
         }));
-        setTimeout(() => {
-          set((state) => ({
-            widgets: state.widgets.map((w) =>
-              w.id === id
-                ? {
-                    ...w,
-                    isLoading: false,
-                    data: { refreshed: true, timestamp: Date.now() },
-                  }
-                : w
-            ),
-          }));
-        }, 500);
+        get().triggerRefresh(id);
       },
 
       resetLayout: () => {

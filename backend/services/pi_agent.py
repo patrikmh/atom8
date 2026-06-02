@@ -9,6 +9,10 @@ from typing import Dict, Any, Optional
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+# Configurable via environment
+PI_PROVIDER = os.getenv("PI_PROVIDER", "fireworks")
+PI_MODEL = os.getenv("PI_MODEL", "accounts/fireworks/routers/kimi-k2p6-turbo")
+
 
 def _run_pi_sync(
     task: str,
@@ -20,7 +24,7 @@ def _run_pi_sync(
         system_prompt = (
             "You are a data fetch agent for a dashboard application. "
             "You have access to the project-specific extension tools: fetch_gmail, fetch_calendar, fetch_tasks, fetch_drive, research_topic, research_gmail, research_calendar, research_tasks, research_drive. "
-            "You also have access to read, bash, grep, and find tools. "
+            "You also have access to read, grep, and find tools. "
             "Use the project-specific tools to fetch data directly. "
             "Return ONLY the JSON result, no extra text, no markdown, no explanations."
         )
@@ -35,9 +39,9 @@ def _run_pi_sync(
                 "--print",
                 "--no-session",
                 "--provider",
-                "fireworks",
+                PI_PROVIDER,
                 "--model",
-                "accounts/fireworks/routers/kimi-k2p6-turbo",
+                PI_MODEL,
                 "--thinking",
                 "low",
                 "--extension",
@@ -45,7 +49,7 @@ def _run_pi_sync(
                 "--extension",
                 ".pi/extensions/living-canvas-research.ts",
                 "--tools",
-                "read,bash,grep,find,fetch_gmail,fetch_calendar,fetch_tasks,fetch_drive,research_topic,research_gmail,research_calendar,research_tasks,research_drive",
+                "read,grep,find,fetch_gmail,fetch_calendar,fetch_tasks,fetch_drive,research_topic,research_gmail,research_calendar,research_tasks,research_drive",
                 prompt,
             ],
             capture_output=True,
