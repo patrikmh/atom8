@@ -56,7 +56,16 @@ const CalendarWidget = ({ widget }: { widget: WidgetConfig }) => {
   }, [widget.id, widget.refreshInterval])
 
   const rawEvents = (widget.data as any)?.events || localData?.events || []
-  const events = rawEvents.length > 0 ? rawEvents : MOCK_EVENTS
+  // Normalize API field names (Google returns 'summary' but we render 'title',
+  // and ISO timestamps need formatting while mock data has pre-formatted times)
+  const events = rawEvents.length > 0
+    ? rawEvents.map((e: any) => ({
+        ...e,
+        title: e.title || e.summary || 'Untitled',
+        start: e.start?.includes('T') ? new Date(e.start).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false }) : e.start,
+        end: e.end?.includes('T') ? new Date(e.end).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false }) : e.end,
+      }))
+    : MOCK_EVENTS
   const displayError = widget.error || error
   const displayLoading = widget.isLoading || isLoading
   const today = new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })
