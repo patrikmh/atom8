@@ -140,7 +140,7 @@ const GridWidget = ({ widget }: { widget: WidgetConfig }) => {
         style={{ borderColor: theme.widgetBorder + '44', backgroundColor: theme.headerBg + '88' }}
       >
         <div className="flex items-center gap-2 flex-1 min-w-0">
-          <div className="drag-handle cursor-move p-0.5 rounded">
+          <div className="drag-handle cursor-grab active:cursor-grabbing p-1 rounded hover:bg-black/10 transition-colors">
             <GripVertical className="w-4 h-4" style={{ color: theme.sidebarText + 'aa' }} />
           </div>
           {isEditingTitle ? (

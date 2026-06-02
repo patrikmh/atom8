@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useDrag } from 'react-dnd'
 import {
   ChevronLeft,
@@ -42,7 +42,7 @@ const DraggableComponentItem = ({
   isCollapsed: boolean
 }) => {
   const theme = useLayoutStore((state) => state.theme)
-  const [{ isDragging }, drag] = useDrag(() => ({
+  const [{ isDragging }, drag, preview] = useDrag(() => ({
     type: 'WIDGET',
     item: { type: item.type, title: item.title, category: item.category, prompt: item.prompt },
     collect: (monitor) => ({
@@ -50,15 +50,22 @@ const DraggableComponentItem = ({
     }),
   }))
 
+  // Hide default drag preview — our custom DragPreview layer renders it
+  useEffect(() => {
+    if (typeof preview === 'function') {
+      preview(null, { captureDraggingState: true })
+    }
+  }, [preview])
+
   return (
     <div
       ref={drag}
-      className={`cursor-move transition-opacity ${
+      className={`cursor-grab active:cursor-grabbing transition-all ${
         isDragging ? 'opacity-50' : 'opacity-100'
       } ${
         isCollapsed
-          ? 'p-2 rounded-lg flex items-center justify-center'
-          : 'p-3 rounded-lg border hover:shadow-sm'
+          ? 'p-2 rounded-lg flex items-center justify-center hover:scale-105 hover:shadow-md transition-transform'
+          : 'p-3 rounded-lg border hover:shadow-md hover:scale-[1.02] hover:border-blue-300 transition-all'
       }`}
       style={
         isCollapsed

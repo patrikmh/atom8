@@ -3,6 +3,7 @@ import { HTML5Backend } from 'react-dnd-html5-backend'
 import Canvas from '@/components/Canvas'
 import ComponentLibrary from '@/components/ComponentLibrary'
 import AIChatWidget from '@/components/AIChatWidget'
+import DragPreview from '@/components/DragPreview'
 import { useLayoutStore } from '@/stores/layoutStore'
 import { useEffect, useState, useRef } from 'react'
 import { Menu } from 'lucide-react'
@@ -69,6 +70,7 @@ function App() {
           <Canvas />
         </main>
         <AIChatWidget />
+        <DragPreview />
       </div>
     </DndProvider>
   )

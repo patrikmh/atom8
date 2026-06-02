@@ -118,6 +118,17 @@ const Canvas = () => {
       style={getBackgroundStyle(background)}
       className={`relative ${isOver && canDrop ? 'ring-2 ring-blue-400 ring-opacity-50' : ''}`}
     >
+      {/* Drop zone indicator */}
+      {isOver && canDrop && (
+        <div className="absolute inset-0 z-10 pointer-events-none flex items-center justify-center">
+          <div className="border-2 border-dashed border-blue-400 rounded-xl bg-blue-50/50 px-8 py-4 text-blue-600 font-medium text-sm flex items-center gap-2">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m0 0l-4-4m4 4l4-4" />
+            </svg>
+            Drop widget here
+          </div>
+        </div>
+      )}
       <div className="absolute top-4 right-4 z-10 flex gap-2">
         <SettingsPanel />
       </div>
