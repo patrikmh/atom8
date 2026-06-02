@@ -60,14 +60,18 @@ export function useWidgetData<T>(
     }
   }, [widget.id, widget.prompt, errorMessage, setWidgetData, setWidgetLoading, setWidgetError])
 
-  // Fetch on mount / refresh trigger (skip if data already provided)
-  const hasInitialData = !!widget.data
+  // Track first mount so we can skip initial fetch only when data exists
+  const hasMounted = useRef(false)
+
+  // Fetch on mount (skip if data already provided) AND on refresh trigger
   useEffect(() => {
-    console.log('[useWidgetData] effect triggered', widget.id, 'hasInitialData:', hasInitialData, 'widget.data:', widget.data)
-    if (hasInitialData) return
-    console.log('[useWidgetData] calling fetchData for', widget.id)
+    if (!hasMounted.current) {
+      hasMounted.current = true
+      if (widget.data) return  // skip initial fetch if data exists
+    }
+    console.log('[useWidgetData] calling fetchData for', widget.id, 'refreshTrigger:', refreshTrigger)
     fetchData()
-  }, [widget.id, refreshTrigger, fetchData, hasInitialData])
+  }, [widget.id, refreshTrigger, fetchData, widget.data])
 
   // Interval polling
   useEffect(() => {
