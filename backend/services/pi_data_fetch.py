@@ -8,10 +8,27 @@ A simple in-memory TTL cache keeps responses warm so widgets don't block on
 every refresh.
 """
 
+import os
+import re
 import time
 from typing import Any, Dict
 
 from services.pi_agent import run_pi_agent, parse_pi_output
+
+
+def sanitize_prompt(prompt: str | None) -> str | None:
+    """Remove shell metacharacters from user-provided prompts.
+
+    This prevents accidental shell injection when prompts are passed
+    through the pi CLI subprocess chain.
+    """
+    if not prompt:
+        return prompt
+    # Remove backticks, dollar-paren, semicolons, pipes, ampersands, and redirects
+    cleaned = re.sub(r"[`$;|&><]", "", prompt)
+    # Remove any attempt at command substitution $(...)
+    cleaned = re.sub(r"\$\([^)]*\)", "", cleaned)
+    return cleaned.strip()
 
 # In-memory TTL cache: {key: (timestamp, data)}
 _cache: Dict[str, Any] = {}
@@ -46,12 +63,14 @@ async def fetch_gmail_pi(prompt: str = None, count: int = 10) -> dict:
     if cached:
         return cached
 
-    task = f"Follow the gmail-fetch skill workflow. Fetch {count} emails from Gmail"
-    if prompt:
-        task += f" matching the query: '{prompt}'"
+    safe_prompt = sanitize_prompt(prompt)
+    task = f"/gmail-fetch Fetch {count} emails from Gmail"
+    if safe_prompt:
+        task += f" matching the query: '{safe_prompt}'"
     task += ". Return the results as JSON with emails array containing id, subject, from_name, from_email, date, preview."
 
-    output = await run_pi_agent(task, timeout=120)
+    skills = [os.path.expanduser("~/.pi/agent/skills/gmail-fetch/SKILL.md")]
+    output = await run_pi_agent(task, timeout=120, skills=skills)
     result = parse_pi_output(output)
     _set_cached(key, result)
     return result
@@ -64,16 +83,18 @@ async def fetch_calendar_pi(prompt: str = None, date: str = None) -> dict:
     if cached:
         return cached
 
-    task = "Follow the calendar-fetch skill workflow. Fetch calendar events"
-    if prompt:
-        task += f" matching the query: '{prompt}'"
+    safe_prompt = sanitize_prompt(prompt)
+    task = "/calendar-fetch Fetch calendar events"
+    if safe_prompt:
+        task += f" matching the query: '{safe_prompt}'"
     if date:
         task += f" for date '{date}'"
     else:
         task += " for today"
     task += ". Return the results as JSON with events array containing id, summary, start, end, location."
 
-    output = await run_pi_agent(task, timeout=120)
+    skills = [os.path.expanduser("~/.pi/agent/skills/calendar-fetch/SKILL.md")]
+    output = await run_pi_agent(task, timeout=120, skills=skills)
     result = parse_pi_output(output)
     _set_cached(key, result)
     return result
@@ -86,12 +107,14 @@ async def fetch_tasks_pi(prompt: str = None, list_id: str = "default") -> dict:
     if cached:
         return cached
 
-    task = f"Follow the tasks-fetch skill workflow. Fetch tasks from list '{list_id}'"
-    if prompt:
-        task += f" matching the query: '{prompt}'"
+    safe_prompt = sanitize_prompt(prompt)
+    task = f"/tasks-fetch Fetch tasks from list '{list_id}'"
+    if safe_prompt:
+        task += f" matching the query: '{safe_prompt}'"
     task += ". Return the results as JSON with tasks array containing id, title, completed, due."
 
-    output = await run_pi_agent(task, timeout=120)
+    skills = [os.path.expanduser("~/.pi/agent/skills/tasks-fetch/SKILL.md")]
+    output = await run_pi_agent(task, timeout=120, skills=skills)
     result = parse_pi_output(output)
     _set_cached(key, result)
     return result
@@ -104,12 +127,14 @@ async def fetch_drive_pi(prompt: str = None, count: int = 10) -> dict:
     if cached:
         return cached
 
-    task = f"Follow the drive-fetch skill workflow. Fetch {count} recent files from Google Drive"
-    if prompt:
-        task += f" matching the query: '{prompt}'"
+    safe_prompt = sanitize_prompt(prompt)
+    task = f"/drive-fetch Fetch {count} recent files from Google Drive"
+    if safe_prompt:
+        task += f" matching the query: '{safe_prompt}'"
     task += ". Return the results as JSON with files array containing id, name, mimeType, modifiedTime, size."
 
-    output = await run_pi_agent(task, timeout=120)
+    skills = [os.path.expanduser("~/.pi/agent/skills/drive-fetch/SKILL.md")]
+    output = await run_pi_agent(task, timeout=120, skills=skills)
     result = parse_pi_output(output)
     _set_cached(key, result)
     return result
@@ -122,8 +147,10 @@ async def do_web_research_pi(topic: str) -> dict:
     if cached:
         return cached
 
-    task = f"Follow the web-research skill workflow. Research the topic: '{topic}'. Return a structured report with summary, key findings, and sources as JSON."
-    output = await run_pi_agent(task, timeout=120)
+    safe_topic = sanitize_prompt(topic)
+    task = f"/web-research Research the topic: '{safe_topic}'. Return a structured report with summary, key findings, and sources as JSON."
+    skills = [os.path.expanduser("~/.pi/agent/skills/web-research/SKILL.md")]
+    output = await run_pi_agent(task, timeout=120, skills=skills)
     result = parse_pi_output(output)
     _set_cached(key, result)
     return result

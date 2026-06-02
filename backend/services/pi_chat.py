@@ -1,11 +1,18 @@
-"""Headless pi chat service with in-memory session management."""
+"""Chat session manager with in-memory history and A2UI component parsing.
 
-import subprocess
+The actual subprocess execution is delegated to ``services.pi_runner.PiRunner``.
+This module keeps the session-management and prompt-building logic that is
+specific to the chat feature.
+"""
+
 import asyncio
 import os
 import uuid
 import json
-from typing import Dict, List, Any
+import re
+from typing import Dict, List, Any, Optional
+
+from services.pi_runner import PiRunner, send_to_pi, parse_a2ui_components
 
 # --- Configuration ---
 MAX_MESSAGE_LENGTH = 4000  # chars
@@ -14,12 +21,6 @@ MAX_SESSIONS = 50
 # In-memory session store: session_id -> list of messages
 CHAT_SESSIONS: Dict[str, List[Dict[str, Any]]] = {}
 _sessions_lock = asyncio.Lock()
-
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-# Configurable via environment
-PI_PROVIDER = os.getenv("PI_PROVIDER", "fireworks")
-PI_MODEL = os.getenv("PI_MODEL", "accounts/fireworks/routers/kimi-k2p6-turbo")
 
 
 def get_or_create_session(session_id: str | None) -> str:
@@ -133,60 +134,24 @@ Respond concisely and helpfully. Answer the user's question directly."""
     return f"{system}\n\n" + "\n".join(conversation)
 
 
-def _send_to_pi_sync(prompt: str, timeout: int = 60) -> str:
-    """Synchronous pi runner — runs in a thread pool."""
-    try:
-        env = os.environ.copy()
-        # Load skills for data fetching and web research
-        result = subprocess.run(
-            [
-                "pi",
-                "--print",
-                "--no-session",
-                "--provider",
-                PI_PROVIDER,
-                "--model",
-                PI_MODEL,
-                "--thinking",
-                "low",
-                "--tools",
-                "read,grep,find,bash",
-                "--skill",
-                os.path.expanduser("~/.pi/agent/skills/web-research/SKILL.md"),
-                "--skill",
-                os.path.expanduser("~/.pi/agent/skills/gmail-fetch/SKILL.md"),
-                "--skill",
-                os.path.expanduser("~/.pi/agent/skills/calendar-fetch/SKILL.md"),
-                "--skill",
-                os.path.expanduser("~/.pi/agent/skills/tasks-fetch/SKILL.md"),
-                "--skill",
-                os.path.expanduser("~/.pi/agent/skills/drive-fetch/SKILL.md"),
-                prompt,
-            ],
-            capture_output=True,
-            text=True,
-            timeout=timeout,
-            cwd=PROJECT_ROOT,
-            env=env,
-        )
-        output = result.stdout.strip()
-        if not output:
-            output = result.stderr.strip()
-        if not output:
-            output = "No response from pi session."
-        return output
-    except subprocess.TimeoutExpired:
-        return "The pi session timed out. Please try a shorter query."
-    except FileNotFoundError:
-        return "Pi is not installed on the server. Please install it to enable AI chat."
-    except Exception as e:
-        return f"Error running pi session: {str(e)}"
+def parse_a2ui_components(text: str) -> tuple[str, List[Dict[str, Any]]]:
+    """Extract A2UI JSON components from the response text.
 
-
-async def send_to_pi(prompt: str, timeout: int = 60) -> str:
-    """Async wrapper that runs the synchronous pi subprocess in a thread pool."""
-    loop = asyncio.get_event_loop()
-    return await loop.run_in_executor(None, _send_to_pi_sync, prompt, timeout)
+    Returns a tuple ``(clean_text, components)`` where *clean_text* is the
+    original text with all `` ` `` `a2ui` blocks removed.
+    """
+    components: List[Dict[str, Any]] = []
+    pattern = r"```a2ui\s*\n(.*?)\n```"
+    matches = re.findall(pattern, text, re.DOTALL)
+    for match in matches:
+        try:
+            data = json.loads(match)
+            if isinstance(data, dict) and data.get("type"):
+                components.append(data)
+        except json.JSONDecodeError:
+            pass
+    clean_text = re.sub(pattern, "", text, flags=re.DOTALL).strip()
+    return clean_text, components
 
 
 def append_to_session(session_id: str, role: str, content: str) -> None:
@@ -199,33 +164,23 @@ def append_to_session(session_id: str, role: str, content: str) -> None:
     })
 
 
-import re
-
-def parse_a2ui_components(text: str) -> tuple[str, List[Dict[str, Any]]]:
-    """Extract A2UI JSON components from the response text."""
-    components = []
-    # Find all ```a2ui ... ``` blocks
-    pattern = r"```a2ui\s*\n(.*?)\n```"
-    matches = re.findall(pattern, text, re.DOTALL)
-    for match in matches:
-        try:
-            data = json.loads(match)
-            if isinstance(data, dict) and data.get("type"):
-                components.append(data)
-        except json.JSONDecodeError:
-            pass
-    # Remove the A2UI blocks from the text
-    clean_text = re.sub(pattern, "", text, flags=re.DOTALL).strip()
-    return clean_text, components
-
-
 async def chat(session_id: str | None, user_message: str) -> Dict[str, Any]:
     """Main chat handler: manages session, sends to pi, returns response."""
     # Input validation
     if not user_message or not user_message.strip():
-        return {"content": "Please enter a message.", "components": [], "session_id": session_id, "status": "error"}
+        return {
+            "content": "Please enter a message.",
+            "components": [],
+            "session_id": session_id,
+            "status": "error",
+        }
     if len(user_message) > MAX_MESSAGE_LENGTH:
-        return {"content": f"Message too long ({len(user_message)} chars). Max {MAX_MESSAGE_LENGTH}.", "components": [], "session_id": session_id, "status": "error"}
+        return {
+            "content": f"Message too long ({len(user_message)} chars). Max {MAX_MESSAGE_LENGTH}.",
+            "components": [],
+            "session_id": session_id,
+            "status": "error",
+        }
 
     async with _sessions_lock:
         sid = get_or_create_session(session_id)

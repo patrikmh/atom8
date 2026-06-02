@@ -232,3 +232,89 @@ export const COMPONENT_LIBRARY_ITEMS: Omit<WidgetConfig, 'id' | 'layout' | 'styl
     prompt: 'Custom data query',
   },
 ];
+
+// ─── API Response Types ───────────────────────────────────────────────────
+
+/** Single email item returned by the backend. */
+export interface EmailItem {
+  id: string;
+  subject: string;
+  from_name: string;
+  from_email: string;
+  date: string;
+  preview: string;
+  is_read?: boolean;
+}
+
+/** Gmail data endpoint response. */
+export interface GmailResponse {
+  emails: EmailItem[];
+  status: 'ok' | 'error';
+  error?: string;
+  needs_auth?: boolean;
+}
+
+/** Single calendar event returned by the backend. */
+export interface CalendarEvent {
+  id: string;
+  summary: string;
+  start: string;
+  end: string;
+  location?: string;
+}
+
+/** Calendar data endpoint response. */
+export interface CalendarResponse {
+  events: CalendarEvent[];
+  date: string;
+  status: 'ok' | 'error';
+  error?: string;
+  needs_auth?: boolean;
+}
+
+/** Single task item returned by the backend. */
+export interface TaskItem {
+  id: string;
+  title: string;
+  completed: boolean;
+  due?: string;
+}
+
+/** Tasks data endpoint response. */
+export interface TasksResponse {
+  tasks: TaskItem[];
+  status: 'ok' | 'error';
+  error?: string;
+  needs_auth?: boolean;
+}
+
+/** Single drive file returned by the backend. */
+export interface DriveFile {
+  id: string;
+  name: string;
+  mimeType: string;
+  modifiedTime: string;
+  size?: string;
+}
+
+/** Drive data endpoint response. */
+export interface DriveResponse {
+  files: DriveFile[];
+  status: 'ok' | 'error';
+  error?: string;
+  needs_auth?: boolean;
+}
+
+/** Web research endpoint response. */
+export interface ResearchResponse {
+  content: string;
+  sources?: string[];
+  status: 'ok' | 'error';
+  error?: string;
+}
+
+/** Generic API error response. */
+export interface ApiErrorResponse {
+  detail: string;
+  status: 'error';
+}

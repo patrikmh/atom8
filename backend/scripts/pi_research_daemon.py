@@ -35,9 +35,9 @@ def mark_error(job_id: str, error: str):
 
 def run_pi_research(topic: str) -> dict:
     """Run a headless pi session with the web-research skill."""
-    # Build the prompt that triggers the web-research skill
+    # Build the prompt that explicitly invokes the web-research skill
     prompt = (
-        f"Follow the web-research skill workflow. Research the topic: '{topic}'.\n\n"
+        f"/web-research Research the topic: '{topic}'.\n\n"
         "Search the web using playwright-cli via the bash tool. "
         "Browse pages, extract relevant content, and synthesize a structured report. "
         "Return the final result as a JSON object with 'content' and 'sources' fields."

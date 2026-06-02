@@ -1,5 +1,12 @@
-const API_BASE = (import.meta as any).env?.VITE_API_BASE || 
-  (typeof window !== 'undefined' ? `${window.location.protocol}//${window.location.hostname}:8000` : 'http://localhost:8000')
+import type {
+  GmailResponse,
+  CalendarResponse,
+  TasksResponse,
+  DriveResponse,
+  ResearchResponse,
+} from '@/types'
+
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000'
 
 async function api<T>(path: string, options?: RequestInit): Promise<T> {
   // Only cache-bust data/AI endpoints, not health or auth
@@ -22,16 +29,16 @@ async function api<T>(path: string, options?: RequestInit): Promise<T> {
 export const apiClient = {
   // Data endpoints
   getGmail: (count: number = 10, prompt?: string) =>
-    api('/api/data/gmail', { method: 'POST', body: JSON.stringify({ count, prompt }) }),
-  
+    api<GmailResponse>('/api/data/gmail', { method: 'POST', body: JSON.stringify({ count, prompt }) }),
+
   getCalendar: (date?: string, prompt?: string) =>
-    api('/api/data/calendar', { method: 'POST', body: JSON.stringify({ date, prompt }) }),
-  
+    api<CalendarResponse>('/api/data/calendar', { method: 'POST', body: JSON.stringify({ date, prompt }) }),
+
   getTasks: (listId: string = 'default', prompt?: string) =>
-    api('/api/data/tasks', { method: 'POST', body: JSON.stringify({ list_id: listId, prompt }) }),
-  
+    api<TasksResponse>('/api/data/tasks', { method: 'POST', body: JSON.stringify({ list_id: listId, prompt }) }),
+
   getDrive: (count: number = 10, prompt?: string) =>
-    api('/api/data/drive', { method: 'POST', body: JSON.stringify({ count, prompt }) }),
+    api<DriveResponse>('/api/data/drive', { method: 'POST', body: JSON.stringify({ count, prompt }) }),
 
   // Auth
   getAuthStatus: () => api<{ authenticated: boolean; has_token: boolean; is_expired?: boolean }>('/api/auth/google/status'),
@@ -53,7 +60,7 @@ export const apiClient = {
   newChatSession: (session_id?: string) =>
     api('/api/ai/chat/new', { method: 'POST', body: JSON.stringify({ session_id }) }),
   research: (topic: string) =>
-    api('/api/ai/research', { method: 'POST', body: JSON.stringify({ topic }) }),
+    api<ResearchResponse>('/api/ai/research', { method: 'POST', body: JSON.stringify({ topic }) }),
   designSuggestion: (layout: any) =>
     api('/api/ai/design', { method: 'POST', body: JSON.stringify({ layout }) }),
 

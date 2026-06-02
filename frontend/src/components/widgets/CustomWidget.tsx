@@ -1,8 +1,16 @@
-import { useEffect, useState } from 'react'
+import { useCallback } from 'react'
 import { WidgetConfig } from '@/types'
 import { Puzzle, Loader2, Mail, Calendar, CheckSquare, HardDrive, Globe, Sparkles, ChevronRight } from 'lucide-react'
 import { apiClient } from '@/services/api'
+import { useWidgetData } from '@/hooks/useWidgetData'
 import { useLayoutStore } from '@/stores/layoutStore'
+
+interface CustomData {
+  result?: string
+  sources?: string[]
+  error?: string
+  status?: string
+}
 
 const QUICK_PROMPTS = [
   { icon: <Mail className="w-4 h-4" />, label: 'Emails', prefix: 'Find emails about ' },
@@ -18,49 +26,81 @@ const isDefaultPrompt = (prompt: string) => {
 }
 
 const CustomWidget = ({ widget }: { widget: WidgetConfig }) => {
-  const [localData, setLocalData] = useState<{ result?: string; sources?: string[] } | null>(null)
-  const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-  const setWidgetData = useLayoutStore((s) => s.setWidgetData)
-  const setWidgetLoading = useLayoutStore((s) => s.setWidgetLoading)
-  const setWidgetError = useLayoutStore((s) => s.setWidgetError)
   const updateWidgetPrompt = useLayoutStore((s) => s.updateWidgetPrompt)
   const triggerRefresh = useLayoutStore((s) => s.triggerRefresh)
-  const refreshTrigger = useLayoutStore((s) => s.refreshTriggers[widget.id])
 
   const defaultPrompt = isDefaultPrompt(widget.prompt)
 
-  const fetchData = async () => {
-    if (defaultPrompt) return
-    setIsLoading(true)
-    setError(null)
-    setWidgetLoading(widget.id, true)
-    setWidgetError(widget.id, null)
-    try {
-      const data = await apiClient.research(widget.prompt) as { content?: string; sources?: string[]; status?: string }
-      const result = { result: data?.content || '', sources: data?.sources || [] }
-      setLocalData(result)
-      setWidgetData(widget.id, result)
-    } catch (err: any) {
-      const msg = err.message || 'Failed to fetch data'
-      setError(msg)
-      setWidgetError(widget.id, msg)
-    } finally {
-      setIsLoading(false)
-      setWidgetLoading(widget.id, false)
-    }
+  const detectIntent = (prompt: string): 'gmail' | 'calendar' | 'tasks' | 'drive' | 'research' => {
+    const p = prompt.toLowerCase()
+    if (p.includes('email') || p.includes('mail') || p.includes('inbox') || p.includes('message')) return 'gmail'
+    if (p.includes('calendar') || p.includes('event') || p.includes('meeting') || p.includes('schedule')) return 'calendar'
+    if (p.includes('task') || p.includes('todo') || p.includes('checklist')) return 'tasks'
+    if (p.includes('file') || p.includes('drive') || p.includes('document') || p.includes('folder')) return 'drive'
+    return 'research'
   }
 
-  useEffect(() => {
-    if (!defaultPrompt) {
-      fetchData()
+  const fetcher = useCallback(async (prompt: string) => {
+    if (isDefaultPrompt(prompt)) {
+      return { result: '', sources: [] } as CustomData
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [widget.id, refreshTrigger, widget.prompt])
 
-  const data = (widget.data as { result?: string; sources?: string[] } | undefined) || localData || null
-  const displayLoading = widget.isLoading || isLoading
-  const displayError = widget.error || error
+    const intent = detectIntent(prompt)
+    let result: { result: string; sources: string[] } = { result: '', sources: [] }
+
+    if (intent === 'gmail') {
+      const data = await apiClient.getGmail(10, prompt) as any
+      if (data?.emails?.length) {
+        const lines = data.emails.map((e: any, i: number) =>
+          `${i + 1}. ${e.subject || '(no subject)'} from ${e.from_name || e.from_email || 'Unknown'}`
+        )
+        result = { result: `Found ${data.emails.length} email(s):\n${lines.join('\n')}`, sources: [] }
+      } else {
+        result = { result: 'No emails found.', sources: [] }
+      }
+    } else if (intent === 'calendar') {
+      const data = await apiClient.getCalendar(undefined, prompt) as any
+      if (data?.events?.length) {
+        const lines = data.events.map((e: any, i: number) =>
+          `${i + 1}. ${e.title || e.summary || '(no title)'} at ${e.start || 'N/A'}`
+        )
+        result = { result: `Found ${data.events.length} event(s):\n${lines.join('\n')}`, sources: [] }
+      } else {
+        result = { result: 'No events found.', sources: [] }
+      }
+    } else if (intent === 'tasks') {
+      const data = await apiClient.getTasks('default', prompt) as any
+      if (data?.tasks?.length) {
+        const lines = data.tasks.map((t: any, i: number) =>
+          `${i + 1}. ${t.completed ? '✓' : '○'} ${t.title || '(no title)'}`
+        )
+        result = { result: `Found ${data.tasks.length} task(s):\n${lines.join('\n')}`, sources: [] }
+      } else {
+        result = { result: 'No tasks found.', sources: [] }
+      }
+    } else if (intent === 'drive') {
+      const data = await apiClient.getDrive(10, prompt) as any
+      if (data?.files?.length) {
+        const lines = data.files.map((f: any, i: number) =>
+          `${i + 1}. ${f.name || '(no name)'} (${f.mime_type || 'unknown'})`
+        )
+        result = { result: `Found ${data.files.length} file(s):\n${lines.join('\n')}`, sources: [] }
+      } else {
+        result = { result: 'No files found.', sources: [] }
+      }
+    } else {
+      const data = await apiClient.research(prompt) as { content?: string; sources?: string[]; status?: string }
+      result = { result: data?.content || '', sources: data?.sources || [] }
+    }
+
+    return result as CustomData
+  }, [])
+
+  const { data, isLoading, error, fetchData } = useWidgetData<CustomData>(
+    widget,
+    fetcher,
+    'Failed to fetch data',
+  )
 
   const handleQuickPrompt = (prefix: string) => {
     updateWidgetPrompt(widget.id, prefix)
@@ -99,7 +139,7 @@ const CustomWidget = ({ widget }: { widget: WidgetConfig }) => {
     )
   }
 
-  if (displayLoading) {
+  if (isLoading) {
     return (
       <div className="flex items-center justify-center h-full gap-2 text-gray-500">
         <Loader2 className="w-5 h-5 animate-spin" />
@@ -108,11 +148,17 @@ const CustomWidget = ({ widget }: { widget: WidgetConfig }) => {
     )
   }
 
-  if (displayError) {
+  if (error) {
+    const isTimeout = error.toLowerCase().includes('timeout') || error.toLowerCase().includes('timed out')
     return (
-      <div className="flex flex-col items-center justify-center h-full text-center p-4">
+      <div className="flex flex-col items-center justify-center h-full text-center p-4 gap-2">
         <Sparkles className="w-8 h-8 text-red-300 mb-2" />
-        <p className="text-sm text-red-500">{displayError}</p>
+        <p className="text-sm text-red-500">{error}</p>
+        <p className="text-xs text-gray-400 max-w-[180px]">
+          {isTimeout
+            ? 'The AI agent timed out. Try a Google data quick prompt for faster results.'
+            : 'Check your connection or try again.'}
+        </p>
         <button
           onClick={fetchData}
           className="mt-2 text-xs text-blue-500 hover:text-blue-600 font-medium"

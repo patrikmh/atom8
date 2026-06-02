@@ -4,7 +4,7 @@ from datetime import datetime
 import json
 
 from database import SessionLocal, Layout, WidgetCache, get_db
-from models import LayoutSave
+from models import LayoutSave, WidgetCacheRequest
 
 router = APIRouter(prefix="/api/dashboard", tags=["dashboard"])
 
@@ -74,7 +74,7 @@ async def get_widget_cache(widget_id: str, db: Session = Depends(get_db)):
 
 
 @router.post("/cache/{widget_id}")
-async def set_widget_cache(widget_id: str, data: dict, db: Session = Depends(get_db)):
+async def set_widget_cache(widget_id: str, request: WidgetCacheRequest, db: Session = Depends(get_db)):
     """Save cached data for a widget."""
     cache = db.query(WidgetCache).filter(
         WidgetCache.widget_id == widget_id,
@@ -86,12 +86,12 @@ async def set_widget_cache(widget_id: str, data: dict, db: Session = Depends(get
             id=f"{widget_id}_default",
             widget_id=widget_id,
             user_id="default",
-            data_json=json.dumps(data),
+            data_json=json.dumps(request.data),
             fetched_at=datetime.utcnow(),
         )
         db.add(cache)
     else:
-        cache.data_json = json.dumps(data)
+        cache.data_json = json.dumps(request.data)
         cache.fetched_at = datetime.utcnow()
     
     db.commit()

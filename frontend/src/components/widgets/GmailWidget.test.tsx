@@ -30,12 +30,15 @@ const mockSetWidgetLoading = vi.fn()
 const mockSetWidgetError = vi.fn()
 
 vi.mock('@/stores/layoutStore', () => ({
-  useLayoutStore: vi.fn((selector) => selector({
-    refreshTriggers: mockRefreshTriggers,
-    setWidgetData: mockSetWidgetData,
-    setWidgetLoading: mockSetWidgetLoading,
-    setWidgetError: mockSetWidgetError,
-  })),
+  useLayoutStore: vi.fn((selector) => {
+    const store = {
+      refreshTriggers: mockRefreshTriggers,
+      setWidgetData: mockSetWidgetData,
+      setWidgetLoading: mockSetWidgetLoading,
+      setWidgetError: mockSetWidgetError,
+    }
+    return selector ? selector(store) : store
+  }),
 }))
 
 describe('GmailWidget', () => {

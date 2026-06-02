@@ -1,60 +1,95 @@
-import { useEffect, useState } from 'react'
+import { useCallback } from 'react'
 import { WidgetConfig } from '@/types'
-import { Sparkles, RefreshCw, Search, BookOpen } from 'lucide-react'
+import { Search, BookOpen } from 'lucide-react'
 import { apiClient } from '@/services/api'
-import { useLayoutStore } from '@/stores/layoutStore'
+import { useWidgetData } from '@/hooks/useWidgetData'
+import { WidgetError } from './WidgetUI'
+
+interface AIResult {
+  result?: string
+  sources?: string[]
+  error?: string
+  status?: string
+}
 
 const AIWidget = ({ widget }: { widget: WidgetConfig }) => {
-  const [localData, setLocalData] = useState<{ result?: string; sources?: string[] } | null>(null)
-  const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-  const setWidgetData = useLayoutStore((s) => s.setWidgetData)
-  const setWidgetLoading = useLayoutStore((s) => s.setWidgetLoading)
-  const setWidgetError = useLayoutStore((s) => s.setWidgetError)
-  const refreshTrigger = useLayoutStore((s) => s.refreshTriggers[widget.id])
-
   const extractTopic = (prompt: string): string => {
-    // If prompt contains a placeholder, the actual topic is what remains after removing it
-    // and any surrounding template text. Use the last part as the topic.
     const topic = prompt.replace(/\{\{topic\}\}/g, '').trim()
     if (topic && topic !== prompt) {
       return topic.replace(/Research the latest news on\s*/i, '').trim() || 'general'
     }
-    // No placeholder — strip known prefixes and return the rest
     return prompt.replace(/Research the latest news on\s*/i, '').trim() || 'general'
   }
 
-  const fetchData = async () => {
-    setIsLoading(true)
-    setError(null)
-    setWidgetLoading(widget.id, true)
-    setWidgetError(widget.id, null)
-    try {
-      const topic = extractTopic(widget.prompt)
-      const data = await apiClient.research(topic) as { content?: string; sources?: string[] }
-      const result = { result: data?.content || '', sources: data?.sources || [] }
-      setLocalData(result)
-      setWidgetData(widget.id, result)
-    } catch (err: any) {
-      const msg = err.message || 'Failed to research'
-      setError(msg)
-      setWidgetError(widget.id, msg)
-    } finally {
-      setIsLoading(false)
-      setWidgetLoading(widget.id, false)
-    }
+  const detectIntent = (prompt: string): 'gmail' | 'calendar' | 'tasks' | 'drive' | 'research' => {
+    const p = prompt.toLowerCase()
+    if (p.includes('email') || p.includes('mail') || p.includes('inbox') || p.includes('message')) return 'gmail'
+    if (p.includes('calendar') || p.includes('event') || p.includes('meeting') || p.includes('schedule')) return 'calendar'
+    if (p.includes('task') || p.includes('todo') || p.includes('checklist')) return 'tasks'
+    if (p.includes('file') || p.includes('drive') || p.includes('document') || p.includes('folder')) return 'drive'
+    return 'research'
   }
 
-  useEffect(() => {
-    fetchData()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [widget.id, refreshTrigger])
+  const fetcher = useCallback(async (prompt: string) => {
+    const topic = extractTopic(prompt)
+    const intent = detectIntent(prompt)
+    let result: { result: string; sources: string[] } = { result: '', sources: [] }
 
-  const data = (widget.data as { result?: string; sources?: string[] } | undefined) || localData || null
-  const displayLoading = widget.isLoading || isLoading
-  const displayError = widget.error || error
+    if (intent === 'gmail') {
+      const data = await apiClient.getGmail(10, prompt) as any
+      if (data?.emails?.length) {
+        const lines = data.emails.map((e: any, i: number) =>
+          `${i + 1}. ${e.subject || '(no subject)'} from ${e.from_name || e.from_email || 'Unknown'}`
+        )
+        result = { result: `Found ${data.emails.length} email(s):\n${lines.join('\n')}`, sources: [] }
+      } else {
+        result = { result: 'No emails found matching your query.', sources: [] }
+      }
+    } else if (intent === 'calendar') {
+      const data = await apiClient.getCalendar(undefined, prompt) as any
+      if (data?.events?.length) {
+        const lines = data.events.map((e: any, i: number) =>
+          `${i + 1}. ${e.title || e.summary || '(no title)'} at ${e.start || 'N/A'}`
+        )
+        result = { result: `Found ${data.events.length} event(s):\n${lines.join('\n')}`, sources: [] }
+      } else {
+        result = { result: 'No events found for your query.', sources: [] }
+      }
+    } else if (intent === 'tasks') {
+      const data = await apiClient.getTasks('default', prompt) as any
+      if (data?.tasks?.length) {
+        const lines = data.tasks.map((t: any, i: number) =>
+          `${i + 1}. ${t.completed ? '✓' : '○'} ${t.title || '(no title)'}`
+        )
+        result = { result: `Found ${data.tasks.length} task(s):\n${lines.join('\n')}`, sources: [] }
+      } else {
+        result = { result: 'No tasks found for your query.', sources: [] }
+      }
+    } else if (intent === 'drive') {
+      const data = await apiClient.getDrive(10, prompt) as any
+      if (data?.files?.length) {
+        const lines = data.files.map((f: any, i: number) =>
+          `${i + 1}. ${f.name || '(no name)'} (${f.mime_type || 'unknown'})`
+        )
+        result = { result: `Found ${data.files.length} file(s):\n${lines.join('\n')}`, sources: [] }
+      } else {
+        result = { result: 'No files found for your query.', sources: [] }
+      }
+    } else {
+      const data = await apiClient.research(topic) as { content?: string; sources?: string[] }
+      result = { result: data?.content || '', sources: data?.sources || [] }
+    }
 
-  if (displayLoading) {
+    return result as AIResult
+  }, [])
+
+  const { data, isLoading, error, fetchData } = useWidgetData<AIResult>(
+    widget,
+    fetcher,
+    'Failed to research',
+  )
+
+  if (isLoading) {
     return (
       <div className="space-y-3 py-4">
         <div className="flex items-center gap-2 animate-pulse">
@@ -71,24 +106,12 @@ const AIWidget = ({ widget }: { widget: WidgetConfig }) => {
     )
   }
 
-  if (displayError) {
+  if (error) {
     return (
-      <div className="flex flex-col items-center justify-center h-full text-center p-4 gap-3">
-        <div className="w-12 h-12 rounded-2xl bg-red-50 flex items-center justify-center">
-          <Sparkles className="w-6 h-6 text-red-300" />
-        </div>
-        <div className="space-y-1">
-          <p className="text-sm font-medium text-red-500">{displayError}</p>
-          <p className="text-xs text-gray-400">Check your connection or try again.</p>
-        </div>
-        <button
-          onClick={fetchData}
-          className="flex items-center gap-1.5 text-xs text-blue-500 hover:text-blue-600 font-medium px-3 py-1.5 rounded-lg hover:bg-blue-50 transition-colors"
-        >
-          <RefreshCw className="w-3 h-3" />
-          Retry
-        </button>
-      </div>
+      <WidgetError
+        message={error}
+        onRetry={fetchData}
+      />
     )
   }
 

@@ -189,13 +189,25 @@ def parse_event(event: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
+def _infer_priority(task: Dict[str, Any]) -> str:
+    """Infer priority from task title/notes using keyword heuristics."""
+    text = f"{task.get('title', '')} {task.get('notes', '')}".lower()
+    high_keywords = ['urgent', 'asap', 'critical', 'important', 'high priority', 'p1', 'priority: high']
+    low_keywords = ['low priority', 'whenever', 'someday', 'later', 'p3', 'priority: low']
+    if any(k in text for k in high_keywords):
+        return 'high'
+    if any(k in text for k in low_keywords):
+        return 'low'
+    return 'medium'
+
+
 def parse_task(task: Dict[str, Any]) -> Dict[str, Any]:
     """Parse Tasks API task into simplified format."""
     return {
         "id": task.get("id", ""),
         "title": task.get("title", ""),
         "completed": task.get("status") == "completed",
-        "priority": "medium",
+        "priority": _infer_priority(task),
         "due_date": task.get("due", None),
     }
 

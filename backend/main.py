@@ -11,11 +11,14 @@ from routers import data, auth, dashboard, ai
 
 app = FastAPI(title="Living Canvas Dashboard API", version="0.2.0")
 
-# CORS — permissive for local development across all browsers including Safari
+# CORS — configurable via environment for production safety
+CORS_ORIGINS = os.getenv("CORS_ALLOW_ORIGINS", "*").split(",")
+CORS_CREDENTIALS = os.getenv("CORS_ALLOW_CREDENTIALS", "false").lower() == "true"
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=False,
+    allow_origins=CORS_ORIGINS,
+    allow_credentials=CORS_CREDENTIALS,
     allow_methods=["*"],
     allow_headers=["*"],
     expose_headers=["*"],

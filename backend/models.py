@@ -89,3 +89,32 @@ class UserToken(BaseModel):
     access_token: str
     refresh_token: Optional[str] = None
     expires_at: Optional[datetime] = None
+
+
+# ─── AI Endpoint Request Models ─────────────────────────────────────────────
+
+class ChatRequest(BaseModel):
+    message: str
+    session_id: Optional[str] = None
+
+
+class ChatClearRequest(BaseModel):
+    session_id: str
+
+
+class ChatNewRequest(BaseModel):
+    session_id: Optional[str] = None
+
+
+class ResearchRequest(BaseModel):
+    topic: str
+
+
+class DesignRequest(BaseModel):
+    layout: dict
+
+
+# ─── Dashboard Cache Request Model ──────────────────────────────────────────
+
+class WidgetCacheRequest(BaseModel):
+    data: dict

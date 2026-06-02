@@ -1,8 +1,9 @@
 from fastapi import APIRouter, HTTPException
 from typing import Dict, Any, List, Optional
-import random
 import json
+import os
 
+from models import ChatRequest, ChatClearRequest, ChatNewRequest, ResearchRequest, DesignRequest
 from services.research_queue import enqueue, get_job, pick_next_pending, mark_running, mark_done, mark_error
 from services.pi_agent import run_pi_agent, parse_pi_output
 from services.pi_chat import chat as pi_chat, get_or_create_session, clear_session, delete_session, list_sessions
@@ -15,80 +16,14 @@ from services.pi_data_fetch import (
 
 router = APIRouter(prefix="/api/ai", tags=["ai"])
 
-# Simple mock AI responses for v1
-# In production, this would call Claude/OpenAI API
-
-MOCK_RESPONSES = {
-    "email": [
-        "You have 5 unread emails today. The most important ones are from your team about the project update and a meeting invitation.",
-        "I found 3 emails from today. 2 are marked important and 1 is a newsletter.",
-    ],
-    "calendar": [
-        "You have 4 events today: Team Standup at 9:00, Design Review at 10:30, Lunch with Client at 12:00, and Sprint Planning at 14:00.",
-        "Your calendar is clear after 3 PM today. You have 2 meetings in the morning.",
-    ],
-    "task": [
-        "You have 3 tasks remaining today. 2 are high priority: Review PR #234 and Fix login bug.",
-        "2 out of 6 tasks are completed. The remaining ones are due by end of week.",
-    ],
-    "drive": [
-        "I found 5 recent files. The most recent is Q2 Report.pdf uploaded 2 hours ago.",
-        "You have 3 new files since yesterday, including a spreadsheet and 2 documents.",
-    ],
-    "component": [
-        "I'll create a new widget for you! I've added it to the dashboard.",
-    ],
-    "default": [
-        "I can help you with your dashboard! I can check your emails, calendar, tasks, or create new components.",
-        "I'm your AI assistant. Ask me about your data or tell me what component you'd like to add.",
-    ],
-}
-
-
-def analyze_intent(message: str) -> str:
-    msg = message.lower()
-    if any(w in msg for w in ["email", "mail", "inbox", "message"]):
-        return "email"
-    if any(w in msg for w in ["calendar", "event", "meeting", "schedule", "today"]):
-        return "calendar"
-    if any(w in msg for w in ["task", "todo", "todoist", "checklist"]):
-        return "task"
-    if any(w in msg for w in ["file", "drive", "document", "folder"]):
-        return "drive"
-    if any(w in msg for w in ["component", "widget", "add", "create", "new"]):
-        return "component"
-    return "default"
-
-
-def generate_a2ui_component(intent: str) -> Optional[Dict[str, Any]]:
-    if intent != "component":
-        return None
-    
-    # Return a simple A2UI-like component spec
-    return {
-        "type": "ai",
-        "title": "AI Generated Widget",
-        "category": "AI",
-        "prompt": "AI-generated research component",
-        "a2ui": {
-            "type": "card",
-            "content": [
-                {"type": "text", "value": "This is an AI-generated component"},
-                {"type": "metric", "label": "Value", "value": "42"}
-            ]
-        }
-    }
-
 
 @router.post("/chat")
-async def chat(message: Dict[str, Any]):
+async def chat(request: ChatRequest):
     """Process a chat message via a headless pi session."""
-    user_message = message.get("message", "")
-    if not user_message:
+    if not request.message or not request.message.strip():
         raise HTTPException(status_code=400, detail="Message is required")
 
-    session_id = message.get("session_id")
-    result = await pi_chat(session_id, user_message)
+    result = await pi_chat(request.session_id, request.message)
 
     return {
         "content": result["content"],
@@ -98,21 +33,17 @@ async def chat(message: Dict[str, Any]):
 
 
 @router.post("/chat/clear")
-async def chat_clear(body: Dict[str, Any]):
+async def chat_clear(request: ChatClearRequest):
     """Clear messages in a session (keep the session ID)."""
-    session_id = body.get("session_id")
-    if not session_id:
-        raise HTTPException(status_code=400, detail="session_id is required")
-    clear_session(session_id)
-    return {"status": "ok", "session_id": session_id}
+    clear_session(request.session_id)
+    return {"status": "ok", "session_id": request.session_id}
 
 
 @router.post("/chat/new")
-async def chat_new(body: Dict[str, Any]):
+async def chat_new(request: ChatNewRequest):
     """Delete an old session and create a new one."""
-    session_id = body.get("session_id")
-    if session_id:
-        delete_session(session_id)
+    if request.session_id:
+        delete_session(request.session_id)
     new_id = get_or_create_session(None)
     return {"status": "ok", "session_id": new_id}
 
@@ -124,10 +55,10 @@ async def chat_sessions():
 
 
 @router.post("/research")
-async def research(request: Dict[str, Any]):
+async def research(request: ResearchRequest):
     """Analyze topic and route to real data sources via headless pi sessions."""
-    topic = request.get("topic", "")
-    if not topic:
+    topic = request.topic
+    if not topic or not topic.strip():
         raise HTTPException(status_code=400, detail="Topic is required")
 
     # Detect intent: is this a Google data query or a web research topic?
@@ -141,28 +72,41 @@ async def research(request: Dict[str, Any]):
 
     if is_google_data:
         # Google data fetch via skill + bash + curl
+        # Determine which skill to use based on intent
+        if any(w in msg for w in ["email", "mail", "inbox", "message"]):
+            skill_name = "gmail-fetch"
+            task = f"/{skill_name} Fetch emails from Gmail matching: '{topic}'. Return JSON with emails array."
+        elif any(w in msg for w in ["calendar", "event", "meeting", "schedule", "today"]):
+            skill_name = "calendar-fetch"
+            task = f"/{skill_name} Fetch calendar events matching: '{topic}'. Return JSON with events array."
+        elif any(w in msg for w in ["task", "todo", "checklist"]):
+            skill_name = "tasks-fetch"
+            task = f"/{skill_name} Fetch tasks matching: '{topic}'. Return JSON with tasks array."
+        elif any(w in msg for w in ["file", "drive", "document", "folder"]):
+            skill_name = "drive-fetch"
+            task = f"/{skill_name} Fetch files from Google Drive matching: '{topic}'. Return JSON with files array."
+        else:
+            skill_name = "gmail-fetch"
+            task = f"/{skill_name} Fetch data from Google matching: '{topic}'. Return JSON."
+
         system = (
-            "You are a data fetch agent. Use the relevant skill (gmail-fetch, calendar-fetch, "
-            "tasks-fetch, or drive-fetch) to fetch data via the Google API. "
+            f"You are a data fetch agent. Use the /{skill_name} skill to fetch data. "
             "Follow the skill workflow: read auth.json, refresh token if needed, call API with curl. "
             "Return ONLY the JSON result, no extra text, no markdown, no explanations."
         )
-        task = (
-            f"The user asks: '{topic}'. "
-            "Follow the relevant skill workflow to fetch data from Gmail, Calendar, Tasks, or Drive. "
-            "Return the results as JSON with the appropriate data array."
-        )
-        output = await run_pi_agent(task, system_prompt=system, timeout=120)
+        skills = [os.path.expanduser(f"~/.pi/agent/skills/{skill_name}/SKILL.md")]
+        output = await run_pi_agent(task, system_prompt=system, timeout=120, skills=skills)
     else:
         # Web research via skill + bash + playwright-cli
         system = (
-            "You are a web research agent. Use the web-research skill workflow. "
+            "You are a web research agent. Use the /web-research skill. "
             "Search the web using playwright-cli via the bash tool. "
             "Browse pages, extract relevant content, and synthesize a structured report. "
             "Return ONLY the JSON result, no extra text, no markdown, no explanations."
         )
-        task = f"Research the topic: '{topic}'. Use the web-research skill workflow. Return a structured report with summary, key findings, and sources as JSON."
-        output = await run_pi_agent(task, system_prompt=system, timeout=120)
+        task = f"/web-research Research the topic: '{topic}'. Return a structured report with summary, key findings, and sources as JSON."
+        skills = [os.path.expanduser("~/.pi/agent/skills/web-research/SKILL.md")]
+        output = await run_pi_agent(task, system_prompt=system, timeout=120, skills=skills)
 
     result = parse_pi_output(output)
 
@@ -240,9 +184,9 @@ async def research(request: Dict[str, Any]):
 
 
 @router.post("/design")
-async def design_suggestion(request: Dict[str, Any]):
+async def design_suggestion(request: DesignRequest):
     """Get AI design suggestions for the dashboard."""
-    current_layout = request.get("layout", [])
+    current_layout = request.layout.get("widgets", []) if isinstance(request.layout, dict) else []
     
     # Simple heuristic: suggest moving calendar to top-left
     changes = []
