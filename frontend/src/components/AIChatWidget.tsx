@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect } from 'react'
-import { MessageSquare, X, Send, Loader2, Sparkles, Minimize2, Maximize2, Trash2, Plus, CheckCircle, FileText, ExternalLink, ChevronRight, Mail, Calendar, CheckSquare, HardDrive, AlertTriangle, Info, Bell, ArrowUpRight, ArrowDownRight, Minus } from 'lucide-react'
+import { useState, useRef, useEffect, useCallback } from 'react'
+import { MessageSquare, X, Sparkles, Minimize2, Maximize2, Trash2, Plus, CheckCircle, FileText, ExternalLink, ChevronRight, Mail, Calendar, CheckSquare, HardDrive, AlertTriangle, Info, Bell, ArrowUpRight, ArrowDownRight, Minus, User, Bot, Copy, Check, CornerDownLeft, ArrowDown } from 'lucide-react'
 import { apiClient } from '@/services/api'
 import { useLayoutStore } from '@/stores/layoutStore'
 
@@ -15,12 +15,48 @@ interface Message {
   isLoading?: boolean
   components?: A2UIComponent[]
   sources?: string[]
+  timestamp?: number
+  error?: boolean
 }
 
 const WELCOME_MESSAGE: Message = {
   id: 'welcome',
   role: 'assistant',
   content: 'Hi! I am connected to a headless pi session. I can help you with your dashboard data, create widgets, or answer questions about your project. What would you like to do?',
+  timestamp: Date.now(),
+}
+
+const STORAGE_KEY = 'aichat-messages'
+const STORAGE_SESSION_KEY = 'aichat-session'
+
+const TypingDots = () => (
+  <div className="flex items-center gap-1 py-1">
+    <div className="w-2 h-2 rounded-full bg-gray-400 animate-bounce" style={{ animationDelay: '0ms' }} />
+    <div className="w-2 h-2 rounded-full bg-gray-400 animate-bounce" style={{ animationDelay: '150ms' }} />
+    <div className="w-2 h-2 rounded-full bg-gray-400 animate-bounce" style={{ animationDelay: '300ms' }} />
+  </div>
+)
+
+const Avatar = ({ role }: { role: 'user' | 'assistant' }) => (
+  <div className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center ${
+    role === 'user' ? 'bg-blue-100' : 'bg-gradient-to-br from-purple-100 to-blue-100'
+  }`}>
+    {role === 'user' ? (
+      <User className="w-4 h-4 text-blue-600" />
+    ) : (
+      <Bot className="w-4 h-4 text-purple-600" />
+    )}
+  </div>
+)
+
+const formatMessageTime = (timestamp: number): string => {
+  const date = new Date(timestamp)
+  const now = new Date()
+  const isToday = date.toDateString() === now.toDateString()
+  if (isToday) {
+    return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+  }
+  return date.toLocaleDateString([], { month: 'short', day: 'numeric' }) + ' ' + date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
 }
 
 // ─── A2UI Component Renderers ───
@@ -402,42 +438,122 @@ const A2UIRenderer = ({ components }: { components: A2UIComponent[] }) => {
 const AIChatWidget = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isMinimized, setIsMinimized] = useState(false)
-  const [messages, setMessages] = useState<Message[]>([WELCOME_MESSAGE])
-  const [sessionId, setSessionId] = useState<string | undefined>(undefined)
+  const [messages, setMessages] = useState<Message[]>(() => {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY)
+      if (saved) {
+        const parsed = JSON.parse(saved)
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed
+      }
+    } catch {}
+    return [WELCOME_MESSAGE]
+  })
+  const [sessionId, setSessionId] = useState<string | undefined>(() => {
+    try {
+      return localStorage.getItem(STORAGE_SESSION_KEY) || undefined
+    } catch {
+      return undefined
+    }
+  })
   const [input, setInput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
+  const [showScrollButton, setShowScrollButton] = useState(false)
+  const [copiedId, setCopiedId] = useState<string | null>(null)
   const messagesEndRef = useRef<HTMLDivElement>(null)
+  const messagesContainerRef = useRef<HTMLDivElement>(null)
+  const textareaRef = useRef<HTMLTextAreaElement>(null)
   const addWidget = useLayoutStore((s) => s.addWidget)
 
-  const scrollToBottom = () => {
+  // Persist messages to localStorage
+  useEffect(() => {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(messages))
+    } catch {}
+  }, [messages])
+
+  useEffect(() => {
+    if (sessionId) {
+      try {
+        localStorage.setItem(STORAGE_SESSION_KEY, sessionId)
+      } catch {}
+    }
+  }, [sessionId])
+
+  const scrollToBottom = useCallback(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
-  }
+  }, [])
 
   useEffect(() => {
     scrollToBottom()
-  }, [messages])
+  }, [messages, scrollToBottom])
+
+  // Handle scroll to show/hide scroll-to-bottom button
+  const handleScroll = useCallback(() => {
+    const container = messagesContainerRef.current
+    if (!container) return
+    const { scrollTop, scrollHeight, clientHeight } = container
+    const isNearBottom = scrollHeight - scrollTop - clientHeight < 100
+    setShowScrollButton(!isNearBottom)
+  }, [])
+
+  useEffect(() => {
+    const container = messagesContainerRef.current
+    if (container) {
+      container.addEventListener('scroll', handleScroll)
+      return () => container.removeEventListener('scroll', handleScroll)
+    }
+  }, [handleScroll])
+
+  const handleCopy = useCallback(async (messageId: string, text: string) => {
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopiedId(messageId)
+      setTimeout(() => setCopiedId(null), 2000)
+    } catch {}
+  }, [])
+
+  const handleTextareaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setInput(e.target.value)
+    // Auto-resize textarea
+    const textarea = e.target
+    textarea.style.height = 'auto'
+    textarea.style.height = Math.min(textarea.scrollHeight, 120) + 'px'
+  }
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault()
+      handleSend()
+    }
+  }
 
   const handleSend = async () => {
     if (!input.trim() || isLoading) return
+    const trimmed = input.trim()
 
     const userMessage: Message = {
       id: `user-${Date.now()}`,
       role: 'user',
-      content: input.trim(),
+      content: trimmed,
+      timestamp: Date.now(),
     }
 
     setMessages((prev) => [...prev, userMessage])
     setInput('')
+    // Reset textarea height
+    if (textareaRef.current) {
+      textareaRef.current.style.height = 'auto'
+    }
     setIsLoading(true)
 
     const loadingId = `loading-${Date.now()}`
     setMessages((prev) => [
       ...prev,
-      { id: loadingId, role: 'assistant', content: '', isLoading: true },
+      { id: loadingId, role: 'assistant', content: '', isLoading: true, timestamp: Date.now() },
     ])
 
     try {
-      const response = (await apiClient.sendChatMessage(userMessage.content, sessionId)) as any
+      const response = (await apiClient.sendChatMessage(trimmed, sessionId)) as any
 
       setMessages((prev) =>
         prev
@@ -448,6 +564,7 @@ const AIChatWidget = () => {
             content: response?.content || 'I processed your request.',
             components: response?.components,
             sources: response?.sources,
+            timestamp: Date.now(),
           })
       )
 
@@ -471,6 +588,8 @@ const AIChatWidget = () => {
             id: `error-${Date.now()}`,
             role: 'assistant',
             content: `Sorry, I encountered an error: ${err.message || 'Unknown error'}`,
+            timestamp: Date.now(),
+            error: true,
           })
       )
     } finally {
@@ -482,11 +601,14 @@ const AIChatWidget = () => {
     if (sessionId) {
       try {
         await apiClient.clearChatSession(sessionId)
-      } catch (e) {
-        console.warn('Failed to clear session:', e)
-      }
+      } catch {}
     }
+    try {
+      localStorage.removeItem(STORAGE_KEY)
+      localStorage.removeItem(STORAGE_SESSION_KEY)
+    } catch {}
     setMessages([WELCOME_MESSAGE])
+    setSessionId(undefined)
   }
 
   const handleNewSession = async () => {
@@ -495,26 +617,26 @@ const AIChatWidget = () => {
       if (res?.session_id) {
         setSessionId(res.session_id)
       }
-    } catch (e) {
-      console.warn('Failed to create new session:', e)
-    }
+    } catch {}
+    try {
+      localStorage.removeItem(STORAGE_KEY)
+    } catch {}
     setMessages([WELCOME_MESSAGE])
   }
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault()
-      handleSend()
-    }
-  }
-
   if (!isOpen) {
+    const hasUnread = messages.length > 1 && messages[messages.length - 1]?.role === 'assistant'
     return (
       <button
         onClick={() => setIsOpen(true)}
         className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all flex items-center justify-center"
       >
         <MessageSquare className="w-6 h-6" />
+        {hasUnread && (
+          <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-red-500 rounded-full border-2 border-white text-[10px] flex items-center justify-center font-bold">
+            {messages.filter(m => m.role === 'assistant').length}
+          </span>
+        )}
       </button>
     )
   }
@@ -573,47 +695,75 @@ const AIChatWidget = () => {
       {!isMinimized && (
         <>
           {/* Messages */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-4">
+          <div
+            ref={messagesContainerRef}
+            className="flex-1 overflow-y-auto p-4 space-y-4 relative"
+          >
             {messages.map((message) => (
               <div
                 key={message.id}
-                className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
+                className={`flex gap-2 ${message.role === 'user' ? 'flex-row-reverse' : 'flex-row'}`}
               >
-                <div
-                  className={`max-w-[95%] rounded-2xl px-4 py-3 text-sm ${
-                    message.role === 'user'
-                      ? 'bg-blue-500 text-white rounded-br-sm'
-                      : 'bg-white border border-gray-200 text-gray-800 rounded-bl-sm shadow-sm'
-                  }`}
-                >
-                  {message.isLoading ? (
-                    <div className="flex items-center gap-2">
-                      <Loader2 className="w-4 h-4 animate-spin" />
-                      <span className="text-gray-500">Thinking...</span>
-                    </div>
-                  ) : (
-                    <>
-                      <div className="whitespace-pre-wrap">{message.content}</div>
-                      {message.components && message.components.length > 0 && (
-                        <A2UIRenderer components={message.components} />
-                      )}
-                    </>
-                  )}
-                  {message.sources && message.sources.length > 0 && (
-                    <div className="mt-2 pt-2 border-t border-gray-200/50">
-                      <div className="text-xs text-gray-500 mb-1">Sources:</div>
-                      {message.sources.map((source, idx) => (
-                        <a
-                          key={idx}
-                          href={source}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block text-xs text-blue-500 hover:underline truncate"
-                        >
-                          {source}
-                        </a>
-                      ))}
-                    </div>
+                <Avatar role={message.role} />
+                <div className="flex flex-col gap-1 max-w-[85%]">
+                  <div
+                    className={`relative rounded-2xl px-4 py-3 text-sm group ${
+                      message.role === 'user'
+                        ? 'bg-blue-500 text-white rounded-br-sm'
+                        : message.error
+                        ? 'bg-red-50 border border-red-200 text-red-800 rounded-bl-sm shadow-sm'
+                        : 'bg-white border border-gray-200 text-gray-800 rounded-bl-sm shadow-sm'
+                    }`}
+                  >
+                    {/* Copy button on assistant messages */}
+                    {message.role === 'assistant' && !message.isLoading && (
+                      <button
+                        onClick={() => handleCopy(message.id, message.content)}
+                        className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity p-1 rounded hover:bg-gray-100"
+                        title="Copy message"
+                      >
+                        {copiedId === message.id ? (
+                          <Check className="w-3 h-3 text-green-600" />
+                        ) : (
+                          <Copy className="w-3 h-3 text-gray-400" />
+                        )}
+                      </button>
+                    )}
+                    {message.isLoading ? (
+                      <div className="flex items-center gap-2 pr-6">
+                        <TypingDots />
+                        <span className="text-xs text-gray-400">Thinking...</span>
+                      </div>
+                    ) : (
+                      <>
+                        <div className="whitespace-pre-wrap">{message.content}</div>
+                        {message.components && message.components.length > 0 && (
+                          <A2UIRenderer components={message.components} />
+                        )}
+                      </>
+                    )}
+                    {message.sources && message.sources.length > 0 && (
+                      <div className="mt-2 pt-2 border-t border-gray-200/50">
+                        <div className="text-xs text-gray-500 mb-1">Sources:</div>
+                        {message.sources.map((source, idx) => (
+                          <a
+                            key={idx}
+                            href={source}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block text-xs text-blue-500 hover:underline truncate"
+                          >
+                            {source}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                  {/* Timestamp */}
+                  {message.timestamp && (
+                    <span className={`text-[10px] text-gray-400 ${message.role === 'user' ? 'text-right' : 'text-left'}`}>
+                      {formatMessageTime(message.timestamp)}
+                    </span>
                   )}
                 </div>
               </div>
@@ -621,25 +771,47 @@ const AIChatWidget = () => {
             <div ref={messagesEndRef} />
           </div>
 
+          {/* Scroll to bottom button */}
+          {showScrollButton && (
+            <button
+              onClick={scrollToBottom}
+              className="absolute bottom-20 left-1/2 -translate-x-1/2 z-10 flex items-center gap-1 px-3 py-1.5 rounded-full bg-white border border-gray-200 shadow-md text-xs text-gray-600 hover:bg-gray-50 transition-all"
+            >
+              <ArrowDown className="w-3 h-3" />
+              New messages
+            </button>
+          )}
+
           {/* Input */}
           <div className="border-t border-gray-200 p-3 bg-white">
-            <div className="flex items-center gap-2">
-              <input
-                type="text"
+            <div className="flex items-end gap-2">
+              <textarea
+                ref={textareaRef}
                 value={input}
-                onChange={(e) => setInput(e.target.value)}
+                onChange={handleTextareaChange}
                 onKeyDown={handleKeyDown}
                 placeholder="Ask me anything..."
-                className="flex-1 px-3 py-2 text-sm border border-gray-200 rounded-xl focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400"
+                rows={1}
+                className="flex-1 px-3 py-2 text-sm border border-gray-200 rounded-xl focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400 resize-none overflow-hidden max-h-[120px]"
                 disabled={isLoading}
               />
               <button
                 onClick={handleSend}
                 disabled={isLoading || !input.trim()}
-                className="p-2 rounded-xl bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                className="p-2.5 rounded-xl bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex-shrink-0"
+                title="Send (Enter)"
               >
-                {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Send className="w-4 h-4" />}
+                {isLoading ? (
+                  <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                ) : (
+                  <CornerDownLeft className="w-4 h-4" />
+                )}
               </button>
+            </div>
+            <div className="text-[10px] text-gray-400 mt-1 text-right pr-1">
+              {input.trim().length > 0 && (
+                <span>Shift+Enter for new line · Enter to send</span>
+              )}
             </div>
           </div>
         </>

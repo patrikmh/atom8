@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { WidgetConfig } from '@/types'
-import { Sparkles, Loader2 } from 'lucide-react'
+import { Sparkles, RefreshCw, Search, BookOpen } from 'lucide-react'
 import { apiClient } from '@/services/api'
 import { useLayoutStore } from '@/stores/layoutStore'
 
@@ -56,22 +56,36 @@ const AIWidget = ({ widget }: { widget: WidgetConfig }) => {
 
   if (displayLoading) {
     return (
-      <div className="flex items-center justify-center h-full gap-2 text-gray-500">
-        <Loader2 className="w-5 h-5 animate-spin" />
-        <span className="text-sm">Researching...</span>
+      <div className="space-y-3 py-4">
+        <div className="flex items-center gap-2 animate-pulse">
+          <div className="w-8 h-8 rounded-lg bg-gray-200" />
+          <div className="flex-1 space-y-1.5">
+            <div className="h-3 bg-gray-200 rounded w-3/5" />
+            <div className="h-2.5 bg-gray-200 rounded w-4/5" />
+          </div>
+        </div>
+        <div className="h-2 bg-gray-200 rounded w-full animate-pulse" />
+        <div className="h-2 bg-gray-200 rounded w-5/6 animate-pulse" />
+        <div className="h-2 bg-gray-200 rounded w-4/6 animate-pulse" />
       </div>
     )
   }
 
   if (displayError) {
     return (
-      <div className="flex flex-col items-center justify-center h-full text-center p-4">
-        <Sparkles className="w-8 h-8 text-red-300 mb-2" />
-        <p className="text-sm text-red-500">{displayError}</p>
+      <div className="flex flex-col items-center justify-center h-full text-center p-4 gap-3">
+        <div className="w-12 h-12 rounded-2xl bg-red-50 flex items-center justify-center">
+          <Sparkles className="w-6 h-6 text-red-300" />
+        </div>
+        <div className="space-y-1">
+          <p className="text-sm font-medium text-red-500">{displayError}</p>
+          <p className="text-xs text-gray-400">Check your connection or try again.</p>
+        </div>
         <button
           onClick={fetchData}
-          className="mt-2 text-xs text-blue-500 hover:text-blue-600 font-medium"
+          className="flex items-center gap-1.5 text-xs text-blue-500 hover:text-blue-600 font-medium px-3 py-1.5 rounded-lg hover:bg-blue-50 transition-colors"
         >
+          <RefreshCw className="w-3 h-3" />
           Retry
         </button>
       </div>
@@ -80,12 +94,7 @@ const AIWidget = ({ widget }: { widget: WidgetConfig }) => {
 
   return (
     <div className="flex flex-col h-full">
-      {isLoading ? (
-        <div className="flex items-center justify-center h-full gap-2 text-gray-500">
-          <Loader2 className="w-5 h-5 animate-spin" />
-          <span className="text-sm">Researching...</span>
-        </div>
-      ) : data?.result ? (
+      {data?.result ? (
         <div className="space-y-3">
           <div className="text-sm leading-relaxed">{data.result}</div>
           {data.sources && data.sources.length > 0 && (
@@ -106,10 +115,18 @@ const AIWidget = ({ widget }: { widget: WidgetConfig }) => {
           )}
         </div>
       ) : (
-        <div className="flex flex-col items-center justify-center h-full gap-3 text-gray-400">
-          <Sparkles className="w-8 h-8" />
-          <span className="text-sm text-center">AI research results will appear here</span>
-          <span className="text-xs text-gray-300">{widget.prompt}</span>
+        <div className="flex flex-col items-center justify-center h-full text-center p-4 gap-3">
+          <div className="w-12 h-12 rounded-2xl bg-purple-50 flex items-center justify-center">
+            <Search className="w-6 h-6 text-purple-300" />
+          </div>
+          <div className="space-y-1">
+            <p className="text-sm font-medium text-gray-600">Ready to research</p>
+            <p className="text-xs text-gray-400 max-w-[180px]">Results will appear here when data is loaded.</p>
+          </div>
+          <div className="flex items-center gap-1 text-[10px] text-gray-300 px-2 py-1 rounded bg-gray-50">
+            <BookOpen className="w-3 h-3" />
+            <span className="truncate max-w-[160px]">{widget.prompt}</span>
+          </div>
         </div>
       )}
     </div>
