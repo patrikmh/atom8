@@ -31,6 +31,17 @@ class PiRpcSession:
     def _start(self) -> None:
         """Spawn the pi process."""
         skill_path = resolve_skill(self.skill)
+        # Data-fetching skills need a strict JSON-only system prompt so the LLM
+        # does not reformat script output as markdown tables.
+        is_data_skill = self.skill in {"gmail-fetch", "calendar-fetch", "tasks-fetch", "drive-fetch"}
+        extra_flags = list(self.extra_flags)
+        if is_data_skill:
+            extra_flags.append("--append-system-prompt")
+            extra_flags.append(
+                "You are a JSON API. When you run a script that returns JSON, "
+                "output ONLY the raw JSON returned by the script. Do NOT convert to markdown tables, "
+                "do NOT add commentary, do NOT summarize. Just echo the exact JSON output from the script."
+            )
         cmd = [
             "pi",
             "--mode", "rpc",
@@ -39,7 +50,7 @@ class PiRpcSession:
             "--tools", self.tools,
             "--provider", settings.pi_provider,
             "--model", settings.pi_model,
-            *self.extra_flags,
+            *extra_flags,
         ]
         # Ensure Google OAuth credentials are in the environment for skills
         env = os.environ.copy()

@@ -38,12 +38,13 @@ def _set_cached(key: str, data: dict) -> None:
 
 # ─── Gmail ────────────────────────────────────────────────────────────────────
 
-async def _fetch_gmail_logic(count: int, prompt: str):
+async def _fetch_gmail_logic(count: int, prompt: str, nocache: bool = False):
     cache_key = _cache_key("gmail", {"count": count, "prompt": prompt})
-    cached = _get_cached(cache_key)
-    if cached:
-        return cached
-    prompt_text = f"/gmail-fetch Fetch {count} emails. Query: '{prompt}'"
+    if not nocache:
+        cached = _get_cached(cache_key)
+        if cached:
+            return cached
+    prompt_text = f"/gmail-fetch Fetch {count} emails. Query: '{prompt}'. Return ONLY the raw JSON output from the script — no markdown tables, no commentary, no explanation."
     result = await pi_manager.get("gmail").prompt(prompt_text, timeout=60)
     if result.get("status") == "error":
         raise HTTPException(500, result.get("error", "Gmail fetch failed"))
@@ -86,7 +87,7 @@ async def _fetch_calendar_logic(date: str, prompt: str):
     if cached:
         return cached
     date_str = f"Date: '{date}'." if date else ""
-    prompt_text = f"/calendar-fetch Fetch events. {date_str} Query: '{prompt}'"
+    prompt_text = f"/calendar-fetch Fetch events. {date_str} Query: '{prompt}'. Return ONLY the raw JSON output from the script — no markdown tables, no commentary, no explanation."
     result = await pi_manager.get("calendar").prompt(prompt_text, timeout=60)
     if result.get("status") == "error":
         raise HTTPException(500, result.get("error", "Calendar fetch failed"))
@@ -129,7 +130,7 @@ async def _fetch_tasks_logic(list_id: str, prompt: str):
     if cached:
         return cached
     list_str = f"List: '{list_id}'." if list_id else ""
-    prompt_text = f"/tasks-fetch Fetch tasks. {list_str} Query: '{prompt}'"
+    prompt_text = f"/tasks-fetch Fetch tasks. {list_str} Query: '{prompt}'. Return ONLY the raw JSON output from the script — no markdown tables, no commentary, no explanation."
     result = await pi_manager.get("tasks").prompt(prompt_text, timeout=60)
     if result.get("status") == "error":
         raise HTTPException(500, result.get("error", "Tasks fetch failed"))
@@ -171,7 +172,7 @@ async def _fetch_drive_logic(count: int, folder_id: str, prompt: str):
     if cached:
         return cached
     folder_str = f"Folder: '{folder_id}'." if folder_id else ""
-    prompt_text = f"/drive-fetch Fetch {count} files. {folder_str} Query: '{prompt}'"
+    prompt_text = f"/drive-fetch Fetch {count} files. {folder_str} Query: '{prompt}'. Return ONLY the raw JSON output from the script — no markdown tables, no commentary, no explanation."
     result = await pi_manager.get("drive").prompt(prompt_text, timeout=60)
     if result.get("status") == "error":
         raise HTTPException(500, result.get("error", "Drive fetch failed"))
