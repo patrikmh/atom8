@@ -41,15 +41,40 @@ const CustomWidget = ({ widget }: { widget: WidgetConfig }) => {
     return 'research'
   }
 
+  const wantsAiSummary = (prompt: string): boolean => {
+    const p = prompt.toLowerCase()
+    return (
+      p.includes('summarize') ||
+      p.includes('summary') ||
+      p.includes('analyze') ||
+      p.includes('analysis') ||
+      p.includes('most important') ||
+      p.includes('important') ||
+      p.includes('key points') ||
+      p.includes('highlights') ||
+      p.includes('overview') ||
+      p.includes('brief')
+    )
+  }
+
   const fetcher = useCallback(async (prompt: string) => {
     if (isDefaultPrompt(prompt)) {
       return { result: '', sources: [] } as CustomData
     }
 
     const intent = detectIntent(prompt)
+    const useAi = wantsAiSummary(prompt)
     let result: { result: string; sources: string[] } = { result: '', sources: [] }
 
-    if (intent === 'gmail') {
+    if (useAi && intent !== 'research') {
+      // Use the AI summarize endpoint for data + summary
+      const data = await apiClient.summarize(prompt) as { summary?: string; intent?: string; status?: string; error?: string }
+      if (data?.status === 'error') {
+        result = { result: `Error: ${data.error || 'Summarization failed'}`, sources: [] }
+      } else {
+        result = { result: data?.summary || 'No summary available.', sources: [] }
+      }
+    } else if (intent === 'gmail') {
       const data = await apiClient.getGmail(10, prompt) as any
       const text = data?.data?.join('\n') || ''
       if (text.trim()) {

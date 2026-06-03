@@ -5,6 +5,7 @@ import type {
   DriveResponse,
   ResearchResponse,
   AllDataResponse,
+  SummarizeResponse,
 } from '@/types'
 
 const API_BASE = import.meta.env.VITE_API_BASE ?? 'http://localhost:8000'
@@ -86,6 +87,8 @@ export const apiClient = {
     api('/api/ai/chat/new', { method: 'POST', body: JSON.stringify({ session_id }) }),
   research: (topic: string) =>
     api<ResearchResponse>('/api/ai/research', { method: 'POST', body: JSON.stringify({ topic }) }),
+  summarize: (prompt: string) =>
+    api<SummarizeResponse>('/api/ai/summarize', { method: 'POST', body: JSON.stringify({ prompt }) }),
   designSuggestion: (layout: any) =>
     api('/api/ai/design', { method: 'POST', body: JSON.stringify({ layout }) }),
 

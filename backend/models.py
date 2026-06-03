@@ -89,6 +89,23 @@ class ChatResponse(BaseModel):
     error: Optional[str] = None
 
 
+# ─── Summarize ────────────────────────────────────────────────────────────────
+
+class SummarizeRequest(BaseModel):
+    prompt: str
+    count: int = 10
+    date: Optional[str] = None
+    list_id: Optional[str] = None
+
+
+class SummarizeResponse(BaseModel):
+    summary: str
+    sources: list[str] = []
+    intent: str = "research"
+    status: str = "ok"
+    error: Optional[str] = None
+
+
 # ─── Dashboard ────────────────────────────────────────────────────────────────
 
 class DashboardLayout(BaseModel):

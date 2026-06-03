@@ -1,7 +1,8 @@
-"""AI endpoints: Chat and Research.
+"""AI endpoints: Chat, Research, and Summarize.
 
 Chat uses persistent in-memory sessions.
 Research uses a dedicated pi RPC process with the web-research skill.
+Summarize fetches data from Google services and asks the AI to summarize it.
 """
 import uuid
 from typing import Dict
@@ -9,7 +10,15 @@ from typing import Dict
 from fastapi import APIRouter, HTTPException
 
 from pi_rpc import pi_manager
-from models import ChatRequest, ChatResponse, ResearchRequest, ResearchResponse
+from models import ChatRequest, ChatResponse, ResearchRequest, ResearchResponse, SummarizeRequest, SummarizeResponse
+
+# Import data fetchers from the data router so we can reuse them
+from routers.data import (
+    _fetch_gmail_logic,
+    _fetch_calendar_logic,
+    _fetch_tasks_logic,
+    _fetch_drive_logic,
+)
 
 router = APIRouter(prefix="/api/ai", tags=["ai"])
 
@@ -88,4 +97,80 @@ async def research(request: ResearchRequest):
     return ResearchResponse(
         findings=findings,
         sources=sources,
+    )
+
+
+def _detect_summarize_intent(prompt: str) -> str:
+    """Detect which data source the prompt is about."""
+    p = prompt.lower()
+    if "email" in p or "mail" in p or "inbox" in p or "message" in p:
+        return "gmail"
+    if "calendar" in p or "event" in p or "meeting" in p or "schedule" in p:
+        return "calendar"
+    if "task" in p or "todo" in p or "checklist" in p:
+        return "tasks"
+    if "file" in p or "drive" in p or "document" in p or "folder" in p:
+        return "drive"
+    return "research"
+
+
+async def _fetch_data_for_intent(intent: str, count: int, date: str | None, list_id: str | None, prompt: str) -> dict:
+    """Fetch raw data based on the detected intent."""
+    if intent == "gmail":
+        return await _fetch_gmail_logic(count, prompt)
+    if intent == "calendar":
+        return await _fetch_calendar_logic(date or "", prompt)
+    if intent == "tasks":
+        return await _fetch_tasks_logic(list_id or "default", prompt)
+    if intent == "drive":
+        return await _fetch_drive_logic(count, "", prompt)
+    return {}
+
+
+@router.post("/summarize")
+async def summarize(request: SummarizeRequest):
+    """Fetch data from Google services and ask the AI to summarize it.
+
+    This endpoint is perfect for custom widget prompts like:
+    "Get latest mail from tldr ai and give me a summary of the most important"
+    """
+    intent = _detect_summarize_intent(request.prompt)
+
+    # Fetch the raw data
+    try:
+        raw_data = await _fetch_data_for_intent(
+            intent, request.count, request.date, request.list_id, request.prompt
+        )
+    except Exception as e:
+        raise HTTPException(500, f"Failed to fetch {intent} data: {e}")
+
+    # Build the AI prompt with the raw data context
+    ai_prompt = (
+        f"The user asked: '{request.prompt}'\n\n"
+        f"Here is the raw {intent} data (JSON):\n{raw_data}\n\n"
+        f"Please provide a concise, human-readable summary or analysis based on the user's request. "
+        f"If the user asked for specific items (e.g., emails from a specific sender), focus on those. "
+        f"Respond in plain text, no markdown code blocks."
+    )
+
+    # Send to the AI chat process
+    result = await pi_manager.get("chat").prompt(ai_prompt, timeout=120)
+
+    if result.get("status") == "error":
+        error_msg = result.get("error", "Summarization failed")
+        return SummarizeResponse(
+            summary="",
+            intent=intent,
+            status="error",
+            error=error_msg,
+        )
+
+    summary_text = result.get("data", "")
+    if isinstance(summary_text, dict):
+        summary_text = summary_text.get("response", str(summary_text))
+
+    return SummarizeResponse(
+        summary=str(summary_text).strip(),
+        intent=intent,
+        status="ok",
     )

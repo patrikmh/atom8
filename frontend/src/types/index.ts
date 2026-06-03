@@ -313,6 +313,15 @@ export interface ResearchResponse {
   error?: string;
 }
 
+/** AI summarize endpoint response. */
+export interface SummarizeResponse {
+  summary: string;
+  sources?: string[];
+  intent: string;
+  status: 'ok' | 'error';
+  error?: string;
+}
+
 /** Batch /all endpoint response. */
 export interface AllDataResponse {
   gmail: GmailResponse;
