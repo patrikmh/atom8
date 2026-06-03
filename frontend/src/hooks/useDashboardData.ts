@@ -27,13 +27,6 @@ export function useDashboardData(widgets: WidgetConfig[]) {
     )
     if (dataWidgets.length === 0) return
 
-    // Skip if any data widget already has data (e.g. from localStorage)
-    const hasExistingData = dataWidgets.some((w) => w.data != null)
-    if (hasExistingData) {
-      hasLoaded.current = true
-      return
-    }
-
     hasLoaded.current = true
 
     // Mark all data widgets as loading
