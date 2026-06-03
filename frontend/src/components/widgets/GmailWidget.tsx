@@ -4,10 +4,13 @@ import { apiClient } from '@/services/api'
 import { useWidgetData } from '@/hooks/useWidgetData'
 import { WidgetLoading, WidgetEmpty, WidgetError, WidgetRawText, WidgetRefreshBar } from './WidgetUI'
 
+import type { ParsedData } from '@/types'
+
 interface GmailData {
-  emails?: any[]
+  type?: string
   text?: string
-  data?: any[]
+  data?: ParsedData
+  emails?: any[]
   error?: string
   status?: string
   needs_auth?: boolean

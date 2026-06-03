@@ -246,10 +246,32 @@ export interface EmailItem {
   is_read?: boolean;
 }
 
+/** Typed data payload from parser. */
+export interface ParsedData {
+  emails?: EmailItem[];
+  events?: CalendarEvent[];
+  tasks?: TaskItem[];
+  files?: DriveFile[];
+  headers?: string[];
+  rows?: Record<string, string>[];
+  items?: string[];
+  count?: number;
+  json?: any;
+  commentary?: string;
+  sections?: Record<string, string>;
+  pairs?: Record<string, string>;
+  summary?: any;
+  text?: string;
+  raw?: string;
+  _parse_error?: string;
+}
+
 /** Gmail data endpoint response. */
 export interface GmailResponse {
-  emails?: EmailItem[];
+  type?: string;
   text?: string;
+  data?: ParsedData;
+  emails?: EmailItem[];
   status: 'ok' | 'error';
   error?: string;
   needs_auth?: boolean;
@@ -266,8 +288,10 @@ export interface CalendarEvent {
 
 /** Calendar data endpoint response. */
 export interface CalendarResponse {
-  events?: CalendarEvent[];
+  type?: string;
   text?: string;
+  data?: ParsedData;
+  events?: CalendarEvent[];
   date?: string;
   status: 'ok' | 'error';
   error?: string;
@@ -284,8 +308,10 @@ export interface TaskItem {
 
 /** Tasks data endpoint response. */
 export interface TasksResponse {
-  tasks?: TaskItem[];
+  type?: string;
   text?: string;
+  data?: ParsedData;
+  tasks?: TaskItem[];
   status: 'ok' | 'error';
   error?: string;
   needs_auth?: boolean;
@@ -302,8 +328,10 @@ export interface DriveFile {
 
 /** Drive data endpoint response. */
 export interface DriveResponse {
-  files?: DriveFile[];
+  type?: string;
   text?: string;
+  data?: ParsedData;
+  files?: DriveFile[];
   status: 'ok' | 'error';
   error?: string;
   needs_auth?: boolean;
