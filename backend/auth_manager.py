@@ -118,7 +118,7 @@ def get_auth_email() -> str | None:
 def get_valid_token() -> str | None:
     """Get a valid (non-expired) Google access token, refreshing if needed."""
     token = get_google_token()
-    if token:
+    if token and not is_token_expired():
         return token
     return refresh_google_token()
 
@@ -129,14 +129,25 @@ def is_authenticated() -> bool:
 
 
 def is_token_expired() -> bool:
-    """Check if the Google token is expired."""
+    """Check if the Google token is expired.
+
+    Handles both millisecond and second timestamps gracefully.
+    Google tokens typically expire in 1 hour (3600s).
+    If expires > 1e10, treat as milliseconds; otherwise seconds.
+    """
     auth = load_auth()
     for key in ["google-antigravity", "google", "gmail", "google-gemini-cli"]:
         entry = auth.get(key)
         if isinstance(entry, dict):
-            expires_ms = entry.get("expires", entry.get("expires_in", 0))
-            if expires_ms:
+            expires = entry.get("expires", entry.get("expires_in", 0))
+            if expires:
                 import time
+                expires_val = int(expires)
+                # Distinguish seconds vs milliseconds by magnitude
+                if expires_val > 1_000_000_000_000:
+                    expires_ms = expires_val
+                else:
+                    expires_ms = expires_val * 1000
                 now_ms = int(time.time() * 1000)
-                return now_ms > int(expires_ms)
+                return now_ms > expires_ms
     return True

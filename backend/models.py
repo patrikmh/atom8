@@ -21,7 +21,7 @@ class AuthStatus(BaseModel):
 # ─── Data ─────────────────────────────────────────────────────────────────────
 
 class DataRequest(BaseModel):
-    prompt: str
+    prompt: str = ""
     count: int = 10
     date: Optional[str] = None
     list_id: Optional[str] = None
