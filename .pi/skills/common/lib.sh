@@ -168,15 +168,21 @@ get_token() {
 
   # Check if token is still valid (with 5-minute buffer)
   if [[ "$expires_ms" != "null" && -n "$expires_ms" && "$expires_ms" != "0" ]]; then
-    local now_ms five_min_ms
+    local now_ms five_min_ms expires_normalized
     now_ms=$(date +%s)000
     five_min_ms=300000
-    if (( expires_ms > now_ms + five_min_ms )); then
-      log_debug "Token still valid (expires: $expires_ms)"
+    # Normalize expires to milliseconds: if value < 1,000,000,000,000 it's seconds
+    if (( expires_ms < 1000000000000 )); then
+      expires_normalized=$(( expires_ms * 1000 ))
+    else
+      expires_normalized=$expires_ms
+    fi
+    if (( expires_normalized > now_ms + five_min_ms )); then
+      log_debug "Token still valid (expires: $expires_ms, normalized: $expires_normalized)"
       echo "$access_token"
       return 0
     fi
-    log_debug "Token expired or near expiry (expires: $expires_ms, now: $now_ms)"
+    log_debug "Token expired or near expiry (expires: $expires_ms, normalized: $expires_normalized, now: $now_ms)"
   fi
 
   # Token expired — try refresh
