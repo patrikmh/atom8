@@ -4,6 +4,7 @@ import type {
   TasksResponse,
   DriveResponse,
   ResearchResponse,
+  AllDataResponse,
 } from '@/types'
 
 const API_BASE = import.meta.env.VITE_API_BASE ?? 'http://localhost:8000'
@@ -44,6 +45,25 @@ export const apiClient = {
 
   getDrive: (count: number = 10, prompt?: string) =>
     api<DriveResponse>('/api/data/drive', { method: 'POST', body: JSON.stringify({ count, prompt }) }),
+
+  getAllData: (opts?: {
+    gmailCount?: number; gmailPrompt?: string;
+    calendarDate?: string; calendarPrompt?: string;
+    tasksListId?: string; tasksPrompt?: string;
+    driveCount?: number; drivePrompt?: string;
+  }) => api<AllDataResponse>('/api/data/all', {
+    method: 'POST',
+    body: JSON.stringify({
+      gmail_count: opts?.gmailCount ?? 10,
+      gmail_prompt: opts?.gmailPrompt ?? 'Show my latest emails',
+      calendar_date: opts?.calendarDate,
+      calendar_prompt: opts?.calendarPrompt ?? "Show today's events",
+      tasks_list_id: opts?.tasksListId ?? 'default',
+      tasks_prompt: opts?.tasksPrompt ?? 'Show my tasks',
+      drive_count: opts?.driveCount ?? 10,
+      drive_prompt: opts?.drivePrompt ?? 'Show my files',
+    }),
+  }),
 
   // Auth
   getAuthStatus: () => api<{ authenticated: boolean; has_token: boolean; is_expired?: boolean }>('/api/auth/google/status'),

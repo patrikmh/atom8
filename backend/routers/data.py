@@ -4,10 +4,11 @@ All endpoints use a persistent pi --mode rpc process with the relevant skill.
 Returns responses matching the frontend API types.
 """
 import time
+import asyncio
 from fastapi import APIRouter, HTTPException, Request
 
 from pi_rpc import pi_manager
-from models import DataRequest
+from models import DataRequest, AllDataRequest, AllDataResponse
 
 router = APIRouter(prefix="/api/data", tags=["data"])
 
@@ -203,3 +204,49 @@ async def fetch_drive_get(request: Request):
     folder_id = params.get("folder_id", "")
     prompt = params.get("q", "Show my files")
     return await _fetch_drive_logic(count, folder_id, prompt)
+
+
+# ─── Batch / All Data ─────────────────────────────────────────────────────────
+
+@router.post("/all")
+async def fetch_all_data(request: AllDataRequest):
+    """Fetch Gmail, Calendar, Tasks, and Drive in parallel.
+
+    Returns all data in a single response, reducing frontend round-trips
+    from 4 separate HTTP requests to 1.
+    """
+    async def fetch_gmail():
+        try:
+            return await _fetch_gmail_logic(request.gmail_count, request.gmail_prompt)
+        except Exception as e:
+            return {"emails": [], "status": "error", "error": str(e), "count": 0}
+
+    async def fetch_calendar():
+        try:
+            return await _fetch_calendar_logic(request.calendar_date or "", request.calendar_prompt)
+        except Exception as e:
+            return {"events": [], "status": "error", "error": str(e), "date": request.calendar_date or "", "count": 0}
+
+    async def fetch_tasks():
+        try:
+            return await _fetch_tasks_logic(request.tasks_list_id, request.tasks_prompt)
+        except Exception as e:
+            return {"tasks": [], "status": "error", "error": str(e), "count": 0}
+
+    async def fetch_drive():
+        try:
+            return await _fetch_drive_logic(request.drive_count, "", request.drive_prompt)
+        except Exception as e:
+            return {"files": [], "status": "error", "error": str(e), "count": 0}
+
+    gmail_data, calendar_data, tasks_data, drive_data = await asyncio.gather(
+        fetch_gmail(), fetch_calendar(), fetch_tasks(), fetch_drive()
+    )
+
+    return {
+        "gmail": gmail_data,
+        "calendar": calendar_data,
+        "tasks": tasks_data,
+        "drive": drive_data,
+        "status": "ok",
+    }

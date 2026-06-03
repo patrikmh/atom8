@@ -35,6 +35,25 @@ class DataResponse(BaseModel):
     error: Optional[str] = None
 
 
+class AllDataRequest(BaseModel):
+    gmail_prompt: str = "Show my latest emails"
+    gmail_count: int = 10
+    calendar_date: Optional[str] = None
+    calendar_prompt: str = "Show today's events"
+    tasks_list_id: str = "default"
+    tasks_prompt: str = "Show my tasks"
+    drive_count: int = 10
+    drive_prompt: str = "Show my files"
+
+
+class AllDataResponse(BaseModel):
+    gmail: dict
+    calendar: dict
+    tasks: dict
+    drive: dict
+    status: str = "ok"
+
+
 # ─── Research ─────────────────────────────────────────────────────────────────
 
 class ResearchRequest(BaseModel):

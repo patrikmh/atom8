@@ -242,8 +242,8 @@ class PiRpcSession:
 class PiPool:
     """A pool of PiRpcSession workers for a given skill.
 
-    Currently uses a single worker; can be expanded to multiple workers
-    for concurrent requests if needed.
+    Uses round-robin dispatch across workers so multiple requests
+    to the same skill can execute in parallel.
     """
 
     def __init__(self, skill: str, size: int = 1, **kwargs: Any):
@@ -252,6 +252,7 @@ class PiPool:
         self._kwargs = kwargs
         self._workers: list[PiRpcSession] = []
         self._ready = False
+        self._idx = 0
 
     async def init(self) -> None:
         """Initialize all workers."""
@@ -260,10 +261,13 @@ class PiPool:
         self._ready = True
 
     async def prompt(self, message: str, timeout: int = settings.pi_timeout) -> dict[str, Any]:
-        """Send a prompt using the first available worker."""
+        """Send a prompt using the next available worker (round-robin)."""
         if not self._ready or not self._workers:
             await self.init()
-        return await self._workers[0].prompt(message, timeout)
+        # Pick a worker round-robin
+        worker = self._workers[self._idx % self.size]
+        self._idx += 1
+        return await worker.prompt(message, timeout)
 
     async def close(self) -> None:
         """Close all workers."""
@@ -287,13 +291,14 @@ class PiSessionManager:
             return
         # All pools use --no-session (ephemeral) for the pi process.
         # Chat session history is managed in-memory by the ai router.
+        pool_size = settings.pi_pool_size
         self._pools = {
-            "gmail": PiPool("gmail-fetch"),
-            "calendar": PiPool("calendar-fetch"),
-            "tasks": PiPool("tasks-fetch"),
-            "drive": PiPool("drive-fetch"),
-            "research": PiPool("web-research"),
-            "chat": PiPool("web-research"),
+            "gmail": PiPool("gmail-fetch", size=pool_size),
+            "calendar": PiPool("calendar-fetch", size=pool_size),
+            "tasks": PiPool("tasks-fetch", size=pool_size),
+            "drive": PiPool("drive-fetch", size=pool_size),
+            "research": PiPool("web-research", size=pool_size),
+            "chat": PiPool("web-research", size=pool_size),
         }
         await asyncio.gather(*[p.init() for p in self._pools.values()])
         self._initialized = True

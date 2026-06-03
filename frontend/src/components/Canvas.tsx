@@ -8,6 +8,7 @@ const GridLayout = WidthProvider(GridLayoutBase)
 import { useDrop } from 'react-dnd'
 import { useLayoutStore } from '@/stores/layoutStore'
 import { CanvasBackground } from '@/types'
+import { useDashboardData } from '@/hooks/useDashboardData'
 import GridWidget from './GridWidget'
 import SettingsPanel from './SettingsPanel'
 import { MousePointer2, ArrowRight } from 'lucide-react'
@@ -21,6 +22,9 @@ const Canvas = () => {
   const newWidgetIds = useLayoutStore((state) => state.newWidgetIds)
   const clearNewWidget = useLayoutStore((state) => state.clearNewWidget)
   const canvasRef = useRef<HTMLDivElement>(null)
+
+  // Batch-load all data-widget data on mount with a single /api/data/all call
+  useDashboardData(widgets)
   const [ghostCell, setGhostCell] = useState<{x: number; y: number} | null>(null)
 
   const handleLayoutChange = useCallback(

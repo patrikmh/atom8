@@ -313,6 +313,15 @@ export interface ResearchResponse {
   error?: string;
 }
 
+/** Batch /all endpoint response. */
+export interface AllDataResponse {
+  gmail: GmailResponse;
+  calendar: CalendarResponse;
+  tasks: TasksResponse;
+  drive: DriveResponse;
+  status: 'ok' | 'error';
+}
+
 /** Generic API error response. */
 export interface ApiErrorResponse {
   detail: string;

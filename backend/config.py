@@ -32,6 +32,7 @@ class Settings(BaseSettings):
     max_chat_sessions: int = 50
     chat_session_ttl: int = 3600  # seconds
     pi_timeout: int = 120  # seconds
+    pi_pool_size: int = int(os.getenv("PI_POOL_SIZE", "3"))  # workers per skill
 
     class Config:
         env_file = PROJECT_ROOT / ".env"
