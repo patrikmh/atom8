@@ -7,6 +7,7 @@ import { WidgetLoading, WidgetEmpty, WidgetError, WidgetRawText, WidgetRefreshBa
 
 interface DriveData {
   files?: any[]
+  text?: string
   data?: any[]
   error?: string
   status?: string
@@ -42,9 +43,8 @@ const DriveWidget = ({ widget }: { widget: WidgetConfig }) => {
 
   const rawFiles = data?.files || []
   const files = error ? [] : rawFiles
-  // Fallback: if backend returns raw text in `data` array, render it
-  const textData = data?.data || []
-  const hasText = !error && files.length === 0 && textData.length > 0
+  const text = data?.text
+  const hasText = !error && text
 
   const getFileType = (file: any) => {
     if (file.icon) return file.icon
@@ -85,7 +85,7 @@ const DriveWidget = ({ widget }: { widget: WidgetConfig }) => {
   }
 
   if (hasText) {
-    return <WidgetRawText text={textData.join('\n')} onRefresh={fetchData} fetchedAt={fetchedAt} />
+    return <WidgetRawText text={text} onRefresh={fetchData} fetchedAt={fetchedAt} />
   }
 
   if (files.length === 0) {

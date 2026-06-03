@@ -7,6 +7,7 @@ import { WidgetLoading, WidgetEmpty, WidgetError, WidgetRawText, WidgetRefreshBa
 
 interface CalendarData {
   events?: any[]
+  text?: string
   data?: any[]
   error?: string
   status?: string
@@ -37,9 +38,8 @@ const CalendarWidget = ({ widget }: { widget: WidgetConfig }) => {
           ? new Date(e.end).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false })
           : e.end,
       }))
-  // Fallback: if backend returns raw text in `data` array, render it
-  const textData = data?.data || []
-  const hasText = !error && events.length === 0 && textData.length > 0
+  const text = data?.text
+  const hasText = !error && text
 
   if (isLoading) return <WidgetLoading />
 
@@ -48,7 +48,7 @@ const CalendarWidget = ({ widget }: { widget: WidgetConfig }) => {
   }
 
   if (hasText) {
-    return <WidgetRawText text={textData.join('\n')} onRefresh={fetchData} fetchedAt={fetchedAt} />
+    return <WidgetRawText text={text} onRefresh={fetchData} fetchedAt={fetchedAt} />
   }
 
   if (events.length === 0) {

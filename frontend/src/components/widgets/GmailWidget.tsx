@@ -6,6 +6,7 @@ import { WidgetLoading, WidgetEmpty, WidgetError, WidgetRawText, WidgetRefreshBa
 
 interface GmailData {
   emails?: any[]
+  text?: string
   data?: any[]
   error?: string
   status?: string
@@ -44,9 +45,8 @@ const GmailWidget = ({ widget }: { widget: WidgetConfig }) => {
 
   const rawEmails = data?.emails || []
   const emails = error ? [] : rawEmails
-  // Fallback: if backend returns raw text in `data` array, render it
-  const textData = data?.data || []
-  const hasText = !error && emails.length === 0 && textData.length > 0
+  const text = data?.text
+  const hasText = !error && text
 
   if (isLoading) return <WidgetLoading />
 
@@ -55,7 +55,7 @@ const GmailWidget = ({ widget }: { widget: WidgetConfig }) => {
   }
 
   if (hasText) {
-    return <WidgetRawText text={textData.join('\n')} onRefresh={fetchData} fetchedAt={fetchedAt} />
+    return <WidgetRawText text={text} onRefresh={fetchData} fetchedAt={fetchedAt} />
   }
 
   if (emails.length === 0) {

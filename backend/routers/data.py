@@ -1,13 +1,13 @@
 """Data endpoints: Gmail, Calendar, Tasks, Drive.
 
-All endpoints use a persistent pi --mode rpc process with the relevant skill.
-Returns responses matching the frontend API types.
+Uses pi_simple.run_pi which spawns `pi -p --mode json` per request.
+Returns raw markdown text from the pi agent so the frontend can render it.
 """
 import time
 import asyncio
 from fastapi import APIRouter, HTTPException, Request
 
-from pi_rpc import pi_manager
+from pi_simple import run_pi
 from models import DataRequest, AllDataRequest, AllDataResponse
 
 router = APIRouter(prefix="/api/data", tags=["data"])
@@ -44,29 +44,15 @@ async def _fetch_gmail_logic(count: int, prompt: str, nocache: bool = False):
         cached = _get_cached(cache_key)
         if cached:
             return cached
-    prompt_text = f"/gmail-fetch Fetch {count} emails. Query: '{prompt}'. Return ONLY the raw JSON output from the script — no markdown tables, no commentary, no explanation."
-    result = await pi_manager.get("gmail").prompt(prompt_text, timeout=60)
-    if result.get("status") == "error":
-        raise HTTPException(500, result.get("error", "Gmail fetch failed"))
-    data = result.get("data", [])
-    # The skill may return a list of objects or a single object with an 'emails' key.
-    emails = []
-    if isinstance(data, list) and len(data) > 0:
-        first = data[0]
-        if isinstance(first, dict) and "emails" in first:
-            emails = first["emails"]
-        elif isinstance(first, dict):
-            emails = data
-    elif isinstance(data, dict) and "emails" in data:
-        emails = data["emails"]
-    response = {"emails": emails, "status": "ok", "count": len(emails)}
+    text = await run_pi("gmail", f"/skill:gmail-fetch Fetch {count} emails. Query: '{prompt}'", timeout=60)
+    response = {"text": text, "status": "ok"}
     _set_cached(cache_key, response)
     return response
 
 
 @router.post("/gmail")
 async def fetch_gmail(request: DataRequest):
-    """Fetch Gmail using the gmail-fetch skill via pi RPC."""
+    """Fetch Gmail using the gmail-fetch skill via pi."""
     return await _fetch_gmail_logic(request.count, request.prompt)
 
 
@@ -87,29 +73,15 @@ async def _fetch_calendar_logic(date: str, prompt: str):
     if cached:
         return cached
     date_str = f"Date: '{date}'." if date else ""
-    prompt_text = f"/calendar-fetch Fetch events. {date_str} Query: '{prompt}'. Return ONLY the raw JSON output from the script — no markdown tables, no commentary, no explanation."
-    result = await pi_manager.get("calendar").prompt(prompt_text, timeout=60)
-    if result.get("status") == "error":
-        raise HTTPException(500, result.get("error", "Calendar fetch failed"))
-    data = result.get("data", [])
-    # Extract events from the skill response
-    events = []
-    if isinstance(data, list) and len(data) > 0:
-        first = data[0]
-        if isinstance(first, dict) and "events" in first:
-            events = first["events"]
-        elif isinstance(first, dict):
-            events = data
-    elif isinstance(data, dict) and "events" in data:
-        events = data["events"]
-    response = {"events": events, "status": "ok", "date": date or "", "count": len(events)}
+    text = await run_pi("calendar", f"/skill:calendar-fetch Fetch events. {date_str} Query: '{prompt}'", timeout=60)
+    response = {"text": text, "status": "ok", "date": date or ""}
     _set_cached(cache_key, response)
     return response
 
 
 @router.post("/calendar")
 async def fetch_calendar(request: DataRequest):
-    """Fetch Calendar events using the calendar-fetch skill via pi RPC."""
+    """Fetch Calendar events using the calendar-fetch skill via pi."""
     return await _fetch_calendar_logic(request.date or "", request.prompt)
 
 
@@ -130,28 +102,15 @@ async def _fetch_tasks_logic(list_id: str, prompt: str):
     if cached:
         return cached
     list_str = f"List: '{list_id}'." if list_id else ""
-    prompt_text = f"/tasks-fetch Fetch tasks. {list_str} Query: '{prompt}'. Return ONLY the raw JSON output from the script — no markdown tables, no commentary, no explanation."
-    result = await pi_manager.get("tasks").prompt(prompt_text, timeout=60)
-    if result.get("status") == "error":
-        raise HTTPException(500, result.get("error", "Tasks fetch failed"))
-    data = result.get("data", [])
-    tasks = []
-    if isinstance(data, list) and len(data) > 0:
-        first = data[0]
-        if isinstance(first, dict) and "tasks" in first:
-            tasks = first["tasks"]
-        elif isinstance(first, dict):
-            tasks = data
-    elif isinstance(data, dict) and "tasks" in data:
-        tasks = data["tasks"]
-    response = {"tasks": tasks, "status": "ok", "count": len(tasks)}
+    text = await run_pi("tasks", f"/skill:tasks-fetch Fetch tasks. {list_str} Query: '{prompt}'", timeout=60)
+    response = {"text": text, "status": "ok"}
     _set_cached(cache_key, response)
     return response
 
 
 @router.post("/tasks")
 async def fetch_tasks(request: DataRequest):
-    """Fetch Tasks using the tasks-fetch skill via pi RPC."""
+    """Fetch Tasks using the tasks-fetch skill via pi."""
     return await _fetch_tasks_logic(request.list_id or "", request.prompt)
 
 
@@ -172,28 +131,15 @@ async def _fetch_drive_logic(count: int, folder_id: str, prompt: str):
     if cached:
         return cached
     folder_str = f"Folder: '{folder_id}'." if folder_id else ""
-    prompt_text = f"/drive-fetch Fetch {count} files. {folder_str} Query: '{prompt}'. Return ONLY the raw JSON output from the script — no markdown tables, no commentary, no explanation."
-    result = await pi_manager.get("drive").prompt(prompt_text, timeout=60)
-    if result.get("status") == "error":
-        raise HTTPException(500, result.get("error", "Drive fetch failed"))
-    data = result.get("data", [])
-    files = []
-    if isinstance(data, list) and len(data) > 0:
-        first = data[0]
-        if isinstance(first, dict) and "files" in first:
-            files = first["files"]
-        elif isinstance(first, dict):
-            files = data
-    elif isinstance(data, dict) and "files" in data:
-        files = data["files"]
-    response = {"files": files, "status": "ok", "count": len(files)}
+    text = await run_pi("drive", f"/skill:drive-fetch Fetch {count} files. {folder_str} Query: '{prompt}'", timeout=60)
+    response = {"text": text, "status": "ok"}
     _set_cached(cache_key, response)
     return response
 
 
 @router.post("/drive")
 async def fetch_drive(request: DataRequest):
-    """Fetch Drive files using the drive-fetch skill via pi RPC."""
+    """Fetch Drive files using the drive-fetch skill via pi."""
     return await _fetch_drive_logic(request.count, request.folder_id or "", request.prompt)
 
 
@@ -220,25 +166,25 @@ async def fetch_all_data(request: AllDataRequest):
         try:
             return await _fetch_gmail_logic(request.gmail_count, request.gmail_prompt)
         except Exception as e:
-            return {"emails": [], "status": "error", "error": str(e), "count": 0}
+            return {"text": "", "status": "error", "error": str(e)}
 
     async def fetch_calendar():
         try:
             return await _fetch_calendar_logic(request.calendar_date or "", request.calendar_prompt)
         except Exception as e:
-            return {"events": [], "status": "error", "error": str(e), "date": request.calendar_date or "", "count": 0}
+            return {"text": "", "status": "error", "error": str(e), "date": request.calendar_date or ""}
 
     async def fetch_tasks():
         try:
             return await _fetch_tasks_logic(request.tasks_list_id, request.tasks_prompt)
         except Exception as e:
-            return {"tasks": [], "status": "error", "error": str(e), "count": 0}
+            return {"text": "", "status": "error", "error": str(e)}
 
     async def fetch_drive():
         try:
             return await _fetch_drive_logic(request.drive_count, "", request.drive_prompt)
         except Exception as e:
-            return {"files": [], "status": "error", "error": str(e), "count": 0}
+            return {"text": "", "status": "error", "error": str(e)}
 
     gmail_data, calendar_data, tasks_data, drive_data = await asyncio.gather(
         fetch_gmail(), fetch_calendar(), fetch_tasks(), fetch_drive()

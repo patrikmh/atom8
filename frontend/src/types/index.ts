@@ -248,7 +248,8 @@ export interface EmailItem {
 
 /** Gmail data endpoint response. */
 export interface GmailResponse {
-  emails: EmailItem[];
+  emails?: EmailItem[];
+  text?: string;
   status: 'ok' | 'error';
   error?: string;
   needs_auth?: boolean;
@@ -265,8 +266,9 @@ export interface CalendarEvent {
 
 /** Calendar data endpoint response. */
 export interface CalendarResponse {
-  events: CalendarEvent[];
-  date: string;
+  events?: CalendarEvent[];
+  text?: string;
+  date?: string;
   status: 'ok' | 'error';
   error?: string;
   needs_auth?: boolean;
@@ -282,7 +284,8 @@ export interface TaskItem {
 
 /** Tasks data endpoint response. */
 export interface TasksResponse {
-  tasks: TaskItem[];
+  tasks?: TaskItem[];
+  text?: string;
   status: 'ok' | 'error';
   error?: string;
   needs_auth?: boolean;
@@ -299,7 +302,8 @@ export interface DriveFile {
 
 /** Drive data endpoint response. */
 export interface DriveResponse {
-  files: DriveFile[];
+  files?: DriveFile[];
+  text?: string;
   status: 'ok' | 'error';
   error?: string;
   needs_auth?: boolean;
