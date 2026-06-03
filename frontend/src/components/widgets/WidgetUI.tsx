@@ -19,9 +19,13 @@ export const SkeletonRow = () => (
   </div>
 )
 
-/** Full-widget loading state with 5 skeleton rows. */
+/** Full-widget loading state with 5 skeleton rows and a message. */
 export const WidgetLoading = () => (
   <div className="space-y-1 py-2">
+    <div className="flex items-center gap-2 px-2 py-1 text-xs text-blue-500 animate-pulse">
+      <span className="w-1.5 h-1.5 rounded-full bg-blue-400" />
+      Fetching data, please wait...
+    </div>
     <SkeletonRow />
     <SkeletonRow />
     <SkeletonRow />

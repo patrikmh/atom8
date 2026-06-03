@@ -71,7 +71,8 @@ export function useWidgetData<T>(
     }
     console.log('[useWidgetData] calling fetchData for', widget.id, 'refreshTrigger:', refreshTrigger)
     fetchData()
-  }, [widget.id, refreshTrigger, fetchData, widget.data])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [widget.id, refreshTrigger, fetchData])
 
   // Interval polling
   useEffect(() => {

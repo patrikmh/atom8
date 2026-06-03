@@ -1,73 +1,65 @@
 """Data endpoints: Gmail, Calendar, Tasks, Drive.
 
 All endpoints use a persistent pi --mode rpc process with the relevant skill.
+Returns responses matching the frontend API types.
 """
+import time
 from fastapi import APIRouter, HTTPException, Request
 
 from pi_rpc import pi_manager
-from models import DataRequest, DataResponse
+from models import DataRequest
 
 router = APIRouter(prefix="/api/data", tags=["data"])
 
+# Simple in-memory TTL cache for data endpoints
+_cache: dict[str, tuple[dict, float]] = {}
+CACHE_TTL = 300  # 5 minutes
+
+
+def _cache_key(endpoint: str, params: dict) -> str:
+    return f"{endpoint}:{hash(tuple(sorted(params.items())))}"
+
+
+def _get_cached(key: str) -> dict | None:
+    entry = _cache.get(key)
+    if not entry:
+        return None
+    data, ts = entry
+    if time.time() - ts > CACHE_TTL:
+        del _cache[key]
+        return None
+    return data
+
+
+def _set_cached(key: str, data: dict) -> None:
+    _cache[key] = (data, time.time())
+
+
+# ─── Gmail ────────────────────────────────────────────────────────────────────
 
 async def _fetch_gmail_logic(count: int, prompt: str):
-    prompt = f"/gmail-fetch Fetch {count} emails. Query: '{prompt}'"
-    result = await pi_manager.get("gmail").prompt(prompt, timeout=60)
+    cache_key = _cache_key("gmail", {"count": count, "prompt": prompt})
+    cached = _get_cached(cache_key)
+    if cached:
+        return cached
+    prompt_text = f"/gmail-fetch Fetch {count} emails. Query: '{prompt}'"
+    result = await pi_manager.get("gmail").prompt(prompt_text, timeout=60)
     if result.get("status") == "error":
         raise HTTPException(500, result.get("error", "Gmail fetch failed"))
     data = result.get("data", [])
-    return DataResponse(
-        data=data if isinstance(data, list) else [data],
-        count=_parse_count(data),
-    )
-
-
-async def _fetch_calendar_logic(date: str, prompt: str):
-    date_str = f"Date: '{date}'." if date else ""
-    prompt = f"/calendar-fetch Fetch events. {date_str} Query: '{prompt}'"
-    result = await pi_manager.get("calendar").prompt(prompt, timeout=60)
-    if result.get("status") == "error":
-        raise HTTPException(500, result.get("error", "Calendar fetch failed"))
-    data = result.get("data", [])
-    return DataResponse(
-        data=data if isinstance(data, list) else [data],
-        count=_parse_count(data),
-    )
-
-
-async def _fetch_tasks_logic(list_id: str, prompt: str):
-    list_str = f"List: '{list_id}'." if list_id else ""
-    prompt = f"/tasks-fetch Fetch tasks. {list_str} Query: '{prompt}'"
-    result = await pi_manager.get("tasks").prompt(prompt, timeout=60)
-    if result.get("status") == "error":
-        raise HTTPException(500, result.get("error", "Tasks fetch failed"))
-    data = result.get("data", [])
-    return DataResponse(
-        data=data if isinstance(data, list) else [data],
-        count=_parse_count(data),
-    )
-
-
-async def _fetch_drive_logic(count: int, folder_id: str, prompt: str):
-    folder_str = f"Folder: '{folder_id}'." if folder_id else ""
-    prompt = f"/drive-fetch Fetch {count} files. {folder_str} Query: '{prompt}'"
-    result = await pi_manager.get("drive").prompt(prompt, timeout=60)
-    if result.get("status") == "error":
-        raise HTTPException(500, result.get("error", "Drive fetch failed"))
-    data = result.get("data", [])
-    return DataResponse(
-        data=data if isinstance(data, list) else [data],
-        count=_parse_count(data),
-    )
-
-
-def _parse_count(data: any) -> int:
-    """Extract count from data response."""
-    if isinstance(data, list):
-        return len(data)
-    if isinstance(data, dict):
-        return data.get("count", 0)
-    return 0
+    # The skill may return a list of objects or a single object with an 'emails' key.
+    emails = []
+    if isinstance(data, list) and len(data) > 0:
+        first = data[0]
+        if isinstance(first, dict) and "emails" in first:
+            emails = first["emails"]
+        elif isinstance(first, dict):
+            emails = data
+    elif isinstance(data, dict) and "emails" in data:
+        emails = data["emails"]
+    response = {"emails": emails, "status": "ok", "count": len(emails)}
+    _set_cached(cache_key, response)
+    return response
 
 
 @router.post("/gmail")
@@ -85,6 +77,34 @@ async def fetch_gmail_get(request: Request):
     return await _fetch_gmail_logic(count, prompt)
 
 
+# ─── Calendar ─────────────────────────────────────────────────────────────────
+
+async def _fetch_calendar_logic(date: str, prompt: str):
+    cache_key = _cache_key("calendar", {"date": date, "prompt": prompt})
+    cached = _get_cached(cache_key)
+    if cached:
+        return cached
+    date_str = f"Date: '{date}'." if date else ""
+    prompt_text = f"/calendar-fetch Fetch events. {date_str} Query: '{prompt}'"
+    result = await pi_manager.get("calendar").prompt(prompt_text, timeout=60)
+    if result.get("status") == "error":
+        raise HTTPException(500, result.get("error", "Calendar fetch failed"))
+    data = result.get("data", [])
+    # Extract events from the skill response
+    events = []
+    if isinstance(data, list) and len(data) > 0:
+        first = data[0]
+        if isinstance(first, dict) and "events" in first:
+            events = first["events"]
+        elif isinstance(first, dict):
+            events = data
+    elif isinstance(data, dict) and "events" in data:
+        events = data["events"]
+    response = {"events": events, "status": "ok", "date": date or "", "count": len(events)}
+    _set_cached(cache_key, response)
+    return response
+
+
 @router.post("/calendar")
 async def fetch_calendar(request: DataRequest):
     """Fetch Calendar events using the calendar-fetch skill via pi RPC."""
@@ -100,6 +120,33 @@ async def fetch_calendar_get(request: Request):
     return await _fetch_calendar_logic(date, prompt)
 
 
+# ─── Tasks ──────────────────────────────────────────────────────────────────
+
+async def _fetch_tasks_logic(list_id: str, prompt: str):
+    cache_key = _cache_key("tasks", {"list_id": list_id, "prompt": prompt})
+    cached = _get_cached(cache_key)
+    if cached:
+        return cached
+    list_str = f"List: '{list_id}'." if list_id else ""
+    prompt_text = f"/tasks-fetch Fetch tasks. {list_str} Query: '{prompt}'"
+    result = await pi_manager.get("tasks").prompt(prompt_text, timeout=60)
+    if result.get("status") == "error":
+        raise HTTPException(500, result.get("error", "Tasks fetch failed"))
+    data = result.get("data", [])
+    tasks = []
+    if isinstance(data, list) and len(data) > 0:
+        first = data[0]
+        if isinstance(first, dict) and "tasks" in first:
+            tasks = first["tasks"]
+        elif isinstance(first, dict):
+            tasks = data
+    elif isinstance(data, dict) and "tasks" in data:
+        tasks = data["tasks"]
+    response = {"tasks": tasks, "status": "ok", "count": len(tasks)}
+    _set_cached(cache_key, response)
+    return response
+
+
 @router.post("/tasks")
 async def fetch_tasks(request: DataRequest):
     """Fetch Tasks using the tasks-fetch skill via pi RPC."""
@@ -113,6 +160,33 @@ async def fetch_tasks_get(request: Request):
     list_id = params.get("list_id", "")
     prompt = params.get("q", "Show my tasks")
     return await _fetch_tasks_logic(list_id, prompt)
+
+
+# ─── Drive ───────────────────────────────────────────────────────────────────
+
+async def _fetch_drive_logic(count: int, folder_id: str, prompt: str):
+    cache_key = _cache_key("drive", {"count": count, "folder_id": folder_id, "prompt": prompt})
+    cached = _get_cached(cache_key)
+    if cached:
+        return cached
+    folder_str = f"Folder: '{folder_id}'." if folder_id else ""
+    prompt_text = f"/drive-fetch Fetch {count} files. {folder_str} Query: '{prompt}'"
+    result = await pi_manager.get("drive").prompt(prompt_text, timeout=60)
+    if result.get("status") == "error":
+        raise HTTPException(500, result.get("error", "Drive fetch failed"))
+    data = result.get("data", [])
+    files = []
+    if isinstance(data, list) and len(data) > 0:
+        first = data[0]
+        if isinstance(first, dict) and "files" in first:
+            files = first["files"]
+        elif isinstance(first, dict):
+            files = data
+    elif isinstance(data, dict) and "files" in data:
+        files = data["files"]
+    response = {"files": files, "status": "ok", "count": len(files)}
+    _set_cached(cache_key, response)
+    return response
 
 
 @router.post("/drive")

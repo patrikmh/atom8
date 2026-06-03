@@ -108,14 +108,17 @@ _gskill_auth_save() {
   mkdir -p "$(dirname "$GSKILL_AUTH_FILE")"
   # Determine which key to update
   local current_key
-  current_key=$(_gskill_auth_get '."google-antigravity".access')
+  current_key=$(_gskill_auth_get '."google-antigravity".access_token')
+  if [[ "$current_key" == "null" || -z "$current_key" ]]; then
+    current_key=$(_gskill_auth_get '."google-antigravity".access')
+  fi
   if [[ "$current_key" != "null" && -n "$current_key" ]]; then
     jq --arg a "$access" --arg e "$expires_ms" \
-       '."google-antigravity".access = $a | ."google-antigravity".expires = ($e | tonumber)' \
+       '."google-antigravity".access_token = $a | ."google-antigravity".expires = ($e | tonumber)' \
        "$GSKILL_AUTH_FILE" > "$tmpfile"
   else
     jq --arg a "$access" --arg e "$expires_ms" \
-       '."google-gemini-cli".access = $a | ."google-gemini-cli".expires = ($e | tonumber)' \
+       '."google-gemini-cli".access_token = $a | ."google-gemini-cli".expires = ($e | tonumber)' \
        "$GSKILL_AUTH_FILE" > "$tmpfile"
   fi
   mv "$tmpfile" "$GSKILL_AUTH_FILE"
@@ -134,14 +137,27 @@ get_token() {
   fi
 
   local access_token refresh_token expires_ms
-  access_token=$(_gskill_auth_get '."google-antigravity".access')
-  refresh_token=$(_gskill_auth_get '."google-antigravity".refresh')
+  # Try modern key names first (access_token / refresh_token), fall back to legacy (access / refresh)
+  access_token=$(_gskill_auth_get '."google-antigravity".access_token')
+  if [[ "$access_token" == "null" || -z "$access_token" ]]; then
+    access_token=$(_gskill_auth_get '."google-antigravity".access')
+  fi
+  refresh_token=$(_gskill_auth_get '."google-antigravity".refresh_token')
+  if [[ "$refresh_token" == "null" || -z "$refresh_token" ]]; then
+    refresh_token=$(_gskill_auth_get '."google-antigravity".refresh')
+  fi
   expires_ms=$(_gskill_auth_get '."google-antigravity".expires')
 
   # Fallback to google-gemini-cli if google-antigravity is missing
   if [[ "$access_token" == "null" || -z "$access_token" ]]; then
-    access_token=$(_gskill_auth_get '."google-gemini-cli".access')
-    refresh_token=$(_gskill_auth_get '."google-gemini-cli".refresh')
+    access_token=$(_gskill_auth_get '."google-gemini-cli".access_token')
+    if [[ "$access_token" == "null" || -z "$access_token" ]]; then
+      access_token=$(_gskill_auth_get '."google-gemini-cli".access')
+    fi
+    refresh_token=$(_gskill_auth_get '."google-gemini-cli".refresh_token')
+    if [[ "$refresh_token" == "null" || -z "$refresh_token" ]]; then
+      refresh_token=$(_gskill_auth_get '."google-gemini-cli".refresh')
+    fi
     expires_ms=$(_gskill_auth_get '."google-gemini-cli".expires')
   fi
 
