@@ -5,6 +5,27 @@ description: Comprehensive Google Calendar data fetching via bash + curl + jq. S
 
 # Calendar Fetch
 
+## Output Format
+
+This skill produces `event_list` type output. See `/skill:format-guide` for full format definitions.
+
+Always wrap results in a JSON block with an `events` array:
+
+```json
+{
+  "events": [
+    {
+      "id": "abc",
+      "title": "Team Meeting",
+      "start": "2026-06-01T10:00:00",
+      "end": "2026-06-01T11:00:00",
+      "location": "Room 101",
+      "description": "Weekly sync"
+    }
+  ]
+}
+```
+
 Comprehensive Google Calendar data fetching via bash + curl + jq.
 
 ## Prerequisites

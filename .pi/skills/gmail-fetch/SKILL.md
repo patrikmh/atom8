@@ -5,6 +5,28 @@ description: Comprehensive Gmail data fetching via bash + curl + jq. Supports mu
 
 # Gmail Fetch
 
+## Output Format
+
+This skill produces `email_list` type output. See `/skill:format-guide` for full format definitions.
+
+Always wrap results in a JSON block with an `emails` array:
+
+```json
+{
+  "emails": [
+    {
+      "id": "123",
+      "subject": "Hello",
+      "from_email": "alice@example.com",
+      "from_name": "Alice",
+      "date": "2026-06-01",
+      "preview": "Hello, how are you?",
+      "unread": true
+    }
+  ]
+}
+```
+
 Comprehensive Gmail data fetching using the Google Gmail API via bash + curl + jq.
 
 ## Prerequisites

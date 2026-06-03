@@ -5,6 +5,26 @@ description: Comprehensive Google Tasks data fetching via bash + curl + jq. Supp
 
 # Tasks Fetch
 
+## Output Format
+
+This skill produces `task_list` type output. See `/skill:format-guide` for full format definitions.
+
+Always wrap results in a JSON block with a `tasks` array:
+
+```json
+{
+  "tasks": [
+    {
+      "id": "task1",
+      "title": "Buy groceries",
+      "completed": false,
+      "due": "2026-06-01T00:00:00.000Z",
+      "notes": "Milk, eggs, bread"
+    }
+  ]
+}
+```
+
 Comprehensive Google Tasks data fetching via bash + curl + jq.
 
 ## Prerequisites

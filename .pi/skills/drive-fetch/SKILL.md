@@ -5,6 +5,26 @@ description: Comprehensive Google Drive data fetching via bash + curl + jq. Supp
 
 # Drive Fetch
 
+## Output Format
+
+This skill produces `file_list` type output. See `/skill:format-guide` for full format definitions.
+
+Always wrap results in a JSON block with a `files` array:
+
+```json
+{
+  "files": [
+    {
+      "id": "file1",
+      "name": "Report.pdf",
+      "mimeType": "application/pdf",
+      "modifiedTime": "2026-06-01T10:00:00Z",
+      "size": "123456"
+    }
+  ]
+}
+```
+
 Comprehensive Google Drive data fetching via bash + curl + jq.
 
 ## Prerequisites
