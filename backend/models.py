@@ -26,6 +26,8 @@ class DataRequest(BaseModel):
     date: Optional[str] = None
     list_id: Optional[str] = None
     folder_id: Optional[str] = None
+    document_id: Optional[str] = None
+    nocache: bool = False  # Bypass cache when true
 
 
 class DataResponse(BaseModel):
@@ -33,6 +35,26 @@ class DataResponse(BaseModel):
     count: int
     status: str = "ok"
     error: Optional[str] = None
+
+
+class DocsListRequest(BaseModel):
+    prompt: str = ""
+    count: int = 10
+    query: Optional[str] = None
+    nocache: bool = False  # Bypass cache when true
+
+
+class DocsReadRequest(BaseModel):
+    document_id: str
+    prompt: str = ""
+    nocache: bool = False  # Bypass cache when true
+
+
+class DocsWriteRequest(BaseModel):
+    document_id: Optional[str] = None
+    title: Optional[str] = None
+    content: str
+    append: bool = False
 
 
 class AllDataRequest(BaseModel):
@@ -44,6 +66,11 @@ class AllDataRequest(BaseModel):
     tasks_prompt: str = "Show my tasks"
     drive_count: int = 10
     drive_prompt: str = "Show my files"
+    docs_count: int = 10
+    docs_prompt: str = "Show my documents"
+    notion_count: int = 10
+    notion_prompt: str = "Show my Notion pages"
+    nocache: bool = False  # Bypass cache when true
 
 
 class AllDataResponse(BaseModel):
@@ -51,7 +78,19 @@ class AllDataResponse(BaseModel):
     calendar: dict
     tasks: dict
     drive: dict
+    docs: dict
+    notion: dict
     status: str = "ok"
+
+
+# ─── Notion ─────────────────────────────────────────────────────────────────
+
+class NotionRequest(BaseModel):
+    prompt: str = "Show my Notion pages"
+    count: int = 10
+    query: Optional[str] = None
+    database_id: Optional[str] = None
+    nocache: bool = False
 
 
 # ─── Research ─────────────────────────────────────────────────────────────────
@@ -63,7 +102,7 @@ class ResearchRequest(BaseModel):
 
 
 class ResearchResponse(BaseModel):
-    findings: str
+    content: str
     sources: list[str | dict]
     status: str = "ok"
     error: Optional[str] = None

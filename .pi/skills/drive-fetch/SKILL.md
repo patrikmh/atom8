@@ -25,6 +25,14 @@ Always wrap results in a JSON block with a `files` array:
 }
 ```
 
+### Empty State
+
+If no files are found, output **only** the JSON with an empty array. Do not add explanatory text or folder metadata.
+
+```json
+{"files": []}
+```
+
 Comprehensive Google Drive data fetching via bash + curl + jq.
 
 ## Prerequisites

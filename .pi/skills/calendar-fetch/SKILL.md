@@ -26,6 +26,14 @@ Always wrap results in a JSON block with an `events` array:
 }
 ```
 
+### Empty State
+
+If no events are found, output **only** the JSON with an empty array. Do not add explanatory text, calendar metadata, or counts.
+
+```json
+{"events": []}
+```
+
 Comprehensive Google Calendar data fetching via bash + curl + jq.
 
 ## Prerequisites

@@ -4,7 +4,7 @@ import { Search, Send, Loader2, Globe, Mail, Calendar, CheckSquare, HardDrive, X
 import { apiClient } from '@/services/api'
 import { useWidgetData } from '@/hooks/useWidgetData'
 import { useLayoutStore } from '@/stores/layoutStore'
-import { WidgetError } from './WidgetUI'
+import { WidgetError, parseMarkdown } from './WidgetUI'
 
 interface SourceItem {
   url?: string
@@ -293,7 +293,9 @@ const AIWidget = ({ widget }: { widget: WidgetConfig }) => {
       <div className="flex-1 overflow-auto p-3">
         {data?.result ? (
           <div className="space-y-3">
-            <div className="text-sm leading-relaxed whitespace-pre-wrap">{data.result}</div>
+            <div className="space-y-1">
+              {parseMarkdown(data.result)}
+            </div>
             {data.sources && data.sources.length > 0 && (
               <div className="space-y-1">
                 <div className="text-xs font-semibold text-gray-500 uppercase">Sources</div>

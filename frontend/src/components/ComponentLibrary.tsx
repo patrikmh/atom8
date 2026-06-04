@@ -10,6 +10,8 @@ import {
   Calendar,
   CheckSquare,
   HardDrive,
+  FileText,
+  BookOpen,
   Sparkles,
   Puzzle,
   X,
@@ -31,7 +33,10 @@ const categoryIcons: Record<Category, React.ReactNode> = {
   Calendar: <Calendar className="w-4 h-4" />,
   Tasks: <CheckSquare className="w-4 h-4" />,
   Drive: <HardDrive className="w-4 h-4" />,
+  Docs: <FileText className="w-4 h-4" />,
+  Notion: <BookOpen className="w-4 h-4" />,
   AI: <Sparkles className="w-4 h-4" />,
+  Markdown: <FileText className="w-4 h-4" />,
   Custom: <Puzzle className="w-4 h-4" />,
 }
 
@@ -40,7 +45,10 @@ const categoryColors: Record<Category, string> = {
   Calendar: '#8b5cf6',
   Tasks: '#22c55e',
   Drive: '#3b82f6',
+  Docs: '#6366f1',
+  Notion: '#0ea5e9',
   AI: '#f59e0b',
+  Markdown: '#8b5cf6',
   Custom: '#6b7280',
 }
 

@@ -18,3 +18,5 @@ dist/
 !frontend/*.yml
 dashboard_layout.json
 
+backend/cache/
+backend/cache_manager.log

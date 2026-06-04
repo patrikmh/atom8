@@ -13,6 +13,8 @@ SKILL_MAP = {
     "calendar": "calendar-fetch",
     "tasks": "tasks-fetch",
     "drive": "drive-fetch",
+    "docs": "docs-fetch",
+    "notion": "notion-cli",
 }
 
 
@@ -77,3 +79,74 @@ async def run_pi(
                 if block.get("type") == "text":
                     text += block.get("text", "")
     return text
+
+
+async def run_pi_widget(
+    skill: str,
+    command: str,
+    timeout: int = 60,
+    provider: str | None = None,
+    model: str | None = None,
+) -> str:
+    """Run a data-fetch skill and then pipe through widget-prep for clean output.
+
+    Returns raw JSON text ready for the frontend widgets.
+    """
+    import tempfile
+    # Step 1: fetch raw data
+    raw_text = await run_pi(skill, command, timeout=timeout, provider=provider, model=model)
+
+    # Step 2: write raw text to temp file and run widget-prep
+    widget_skill = os.path.join(SKILL_DIR, "widget-prep", "SKILL.md")
+    env = os.environ.copy()
+    env.setdefault("GOOGLE_CLIENT_ID", os.getenv("GOOGLE_CLIENT_ID", ""))
+    env.setdefault("GOOGLE_CLIENT_SECRET", os.getenv("GOOGLE_CLIENT_SECRET", ""))
+
+    with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False) as tmp:
+        tmp.write(raw_text)
+        tmp.flush()
+        tmp_path = tmp.name
+
+    try:
+        cmd = [
+            "pi",
+            "-p",
+            "--mode", "json",
+            "--no-session",
+            "--skill", widget_skill,
+            "--tools", "read",
+            f"Transform the raw data in this file into widget-ready JSON: {tmp_path}",
+        ]
+        if provider:
+            cmd.extend(["--provider", provider])
+        if model:
+            cmd.extend(["--model", model])
+
+        proc = await asyncio.create_subprocess_exec(
+            *cmd,
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.DEVNULL,
+            env=env,
+        )
+        try:
+            stdout, _ = await asyncio.wait_for(proc.communicate(), timeout=timeout)
+        except asyncio.TimeoutError:
+            proc.kill()
+            raise
+
+        text = ""
+        for line in stdout.decode("utf-8", errors="ignore").split("\n"):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                event = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if event.get("type") == "turn_end":
+                for block in event.get("message", {}).get("content", []):
+                    if block.get("type") == "text":
+                        text += block.get("text", "")
+        return text
+    finally:
+        os.unlink(tmp_path)

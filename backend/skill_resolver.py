@@ -10,6 +10,7 @@ SKILL_PATHS = {
     "calendar-fetch": ".pi/skills/calendar-fetch/SKILL.md",
     "tasks-fetch": ".pi/skills/tasks-fetch/SKILL.md",
     "drive-fetch": ".pi/skills/drive-fetch/SKILL.md",
+    "docs-fetch": ".pi/skills/docs-fetch/SKILL.md",
     "web-research": ".pi/skills/web-research/SKILL.md",
     "google-auth": ".pi/skills/google-auth/SKILL.md",
     "playwright-cli": ".pi/skills/playwright-cli/SKILL.md",

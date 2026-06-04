@@ -3,6 +3,8 @@ import type {
   CalendarResponse,
   TasksResponse,
   DriveResponse,
+  DocsResponse,
+  NotionResponse,
   ResearchResponse,
   AllDataResponse,
   SummarizeResponse,
@@ -47,11 +49,19 @@ export const apiClient = {
   getDrive: (count: number = 10, prompt?: string) =>
     api<DriveResponse>('/api/data/drive', { method: 'POST', body: JSON.stringify({ count, prompt }) }),
 
+  getDocs: (count: number = 10, prompt?: string) =>
+    api<DocsResponse>('/api/data/docs', { method: 'POST', body: JSON.stringify({ count, prompt }) }),
+
+  getNotion: (count: number = 10, prompt?: string) =>
+    api<NotionResponse>('/api/data/notion', { method: 'POST', body: JSON.stringify({ count, prompt }) }),
+
   getAllData: (opts?: {
     gmailCount?: number; gmailPrompt?: string;
     calendarDate?: string; calendarPrompt?: string;
     tasksListId?: string; tasksPrompt?: string;
     driveCount?: number; drivePrompt?: string;
+    docsCount?: number; docsPrompt?: string;
+    notionCount?: number; notionPrompt?: string;
   }) => api<AllDataResponse>('/api/data/all', {
     method: 'POST',
     body: JSON.stringify({
@@ -63,6 +73,10 @@ export const apiClient = {
       tasks_prompt: opts?.tasksPrompt ?? 'Show my tasks',
       drive_count: opts?.driveCount ?? 10,
       drive_prompt: opts?.drivePrompt ?? 'Show my files',
+      docs_count: opts?.docsCount ?? 10,
+      docs_prompt: opts?.docsPrompt ?? 'Show my documents',
+      notion_count: opts?.notionCount ?? 10,
+      notion_prompt: opts?.notionPrompt ?? 'Show my Notion pages',
     }),
   }),
 

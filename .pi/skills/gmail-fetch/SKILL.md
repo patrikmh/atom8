@@ -27,6 +27,14 @@ Always wrap results in a JSON block with an `emails` array:
 }
 ```
 
+### Empty State
+
+If no emails are found, output **only** the JSON with an empty array. Do not add explanatory text or counts.
+
+```json
+{"emails": []}
+```
+
 Comprehensive Gmail data fetching using the Google Gmail API via bash + curl + jq.
 
 ## Prerequisites

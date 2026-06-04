@@ -237,10 +237,44 @@ If you do not declare a type, the parser auto-detects:
 | research | rich_summary | Include summary + sources |
 | chat | plain_text | Free-form response |
 
+## Empty State Handling
+
+When a query returns **zero results**, output ONLY the JSON block with an empty array. Do NOT add explanatory text, markdown commentary, or metadata about the query.
+
+### Good (empty state)
+
+```json
+{"events": []}
+```
+
+### Bad (empty state — too verbose)
+
+```markdown
+No events found for today. Here's the result:
+```json
+{"events": []}
+```
+Calendar: user@example.com (Europe/Stockholm)
+Date: 2026-06-04
+Events returned: 0
+```
+
+### Empty state examples by type
+
+| Type | Empty output |
+|------|-------------|
+| `email_list` | `{"emails": []}` |
+| `event_list` | `{"events": []}` |
+| `task_list` | `{"tasks": []}` |
+| `file_list` | `{"files": []}` |
+| `doc_list` | `{"files": []}` |
+| `markdown_table` | `\| Column \| Column \|\n\|--------\|--------\|` (empty table) |
+
 ## Best Practices
 
 1. Always declare the type when possible: `OUTPUT_TYPE: email_list`
 2. For structured data, wrap in a JSON block with the correct array name
 3. Keep commentary minimal when using structured types
-4. Use `mixed_json` when you need both structured data and natural language explanation
-5. Use `plain_text` only for chat-like responses
+4. **When results are empty, output ONLY the JSON with the empty array — no extra text**
+5. Use `mixed_json` when you need both structured data and natural language explanation
+6. Use `plain_text` only for chat-like responses

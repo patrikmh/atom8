@@ -119,6 +119,14 @@ Get comments on a document.
 
 All scripts support: `json`, `table`, `csv`, `tsv`, `markdown`, `compact`.
 
+### Empty State
+
+When listing docs and no documents are found, output **only** the JSON with an empty array. Do not add explanatory text.
+
+```json
+{"files": []}
+```
+
 ## API Endpoint
 
 - `https://docs.googleapis.com/v1/documents/{documentId}`

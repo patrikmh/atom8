@@ -25,6 +25,14 @@ Always wrap results in a JSON block with a `tasks` array:
 }
 ```
 
+### Empty State
+
+If no tasks are found, output **only** the JSON with an empty array. Do not add explanatory text or list metadata.
+
+```json
+{"tasks": []}
+```
+
 Comprehensive Google Tasks data fetching via bash + curl + jq.
 
 ## Prerequisites

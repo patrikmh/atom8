@@ -19,8 +19,8 @@ class PiRpcSession:
         - End marker: event with type == "agent_end"
     """
 
-    def __init__(self, skill: str, tools: str | None = None, extra_flags: list[str] | None = None):
-        self.skill = skill
+    def __init__(self, skill: str | list[str], tools: str | None = None, extra_flags: list[str] | None = None):
+        self.skills = [skill] if isinstance(skill, str) else skill
         self.tools = tools or settings.pi_tools
         self.extra_flags = extra_flags or []
         self._proc: subprocess.Popen | None = None
@@ -30,23 +30,29 @@ class PiRpcSession:
 
     def _start(self) -> None:
         """Spawn the pi process."""
-        skill_path = resolve_skill(self.skill)
+        skill_paths = [resolve_skill(s) for s in self.skills]
         # Data-fetching skills need a strict JSON-only system prompt so the LLM
         # does not reformat script output as markdown tables.
-        is_data_skill = self.skill in {"gmail-fetch", "calendar-fetch", "tasks-fetch", "drive-fetch"}
+        is_data_skill = any(s in {"gmail-fetch", "calendar-fetch", "tasks-fetch", "drive-fetch", "docs-fetch", "notion-cli"} for s in self.skills)
         extra_flags = list(self.extra_flags)
         if is_data_skill:
             extra_flags.append("--append-system-prompt")
             extra_flags.append(
                 "You are a JSON API. When you run a script that returns JSON, "
                 "output ONLY the raw JSON returned by the script. Do NOT convert to markdown tables, "
-                "do NOT add commentary, do NOT summarize. Just echo the exact JSON output from the script."
+                "do NOT add commentary, do NOT summarize. Just echo the exact JSON output from the script. "
+                "When the JSON contains an empty array (e.g. []), do NOT add explanatory text about no results. "
+                "Output ONLY the exact JSON with the empty array."
             )
+        skill_flags = []
+        for sp in skill_paths:
+            skill_flags.append("--skill")
+            skill_flags.append(sp)
         cmd = [
             "pi",
             "--mode", "rpc",
             "--no-session",
-            "--skill", skill_path,
+            *skill_flags,
             "--tools", self.tools,
             "--provider", settings.pi_provider,
             "--model", settings.pi_model,
@@ -62,7 +68,7 @@ class PiRpcSession:
             cmd,
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
             text=True,
             bufsize=1,
             cwd=os.getcwd(),
@@ -257,7 +263,7 @@ class PiPool:
     to the same skill can execute in parallel.
     """
 
-    def __init__(self, skill: str, size: int = 1, **kwargs: Any):
+    def __init__(self, skill: str | list[str], size: int = 1, **kwargs: Any):
         self.skill = skill
         self.size = size
         self._kwargs = kwargs
@@ -308,7 +314,8 @@ class PiSessionManager:
             "calendar": PiPool("calendar-fetch", size=pool_size),
             "tasks": PiPool("tasks-fetch", size=pool_size),
             "drive": PiPool("drive-fetch", size=pool_size),
-            "research": PiPool("web-research", size=pool_size),
+            "docs": PiPool("docs-fetch", size=pool_size),
+            "research": PiPool(["web-research", "playwright-cli"], size=pool_size),
             "chat": PiPool("web-research", size=pool_size),
         }
         await asyncio.gather(*[p.init() for p in self._pools.values()])

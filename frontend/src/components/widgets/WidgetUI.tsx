@@ -121,10 +121,11 @@ export function formatTimeAgo(timestamp: number): string {
   return `${Math.floor(hours / 24)}d ago`
 }
 
-/** Parse inline markdown (bold, italic, code). */
+/** Parse inline markdown (bold, italic, code, links, images). */
 function parseInline(text: string): React.ReactNode {
   const parts: React.ReactNode[] = []
-  const regex = /(\*\*([^*]+)\*\*|\*([^*]+)\*|`([^`]+)`)/g
+  // Matches: **bold**, *italic*, `code`, [text](url), ![alt](url)
+  const regex = /(\*\*([^*]+)\*\*|\*([^*]+)\*|`([^`]+)`|\[([^\]]+)\]\(([^)]+)\)|!\[([^\]]*)\]\(([^)]+)\))/g
   let lastIndex = 0
   let match
   while ((match = regex.exec(text)) !== null) {
@@ -137,6 +138,20 @@ function parseInline(text: string): React.ReactNode {
       parts.push(<em key={match.index} className="italic text-gray-600">{match[3]}</em>)
     } else if (match[4]) {
       parts.push(<code key={match.index} className="text-xs bg-gray-100 px-1 py-0.5 rounded font-mono">{match[4]}</code>)
+    } else if (match[5] && match[6]) {
+      // Link [text](url)
+      const url = match[6]
+      const displayText = match[5]
+      parts.push(
+        <a key={match.index} href={url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+          {displayText}
+        </a>
+      )
+    } else if (match[7] !== undefined && match[8]) {
+      // Image ![alt](url)
+      parts.push(
+        <img key={match.index} src={match[8]} alt={match[7]} className="max-w-full h-auto rounded my-2" />
+      )
     }
     lastIndex = regex.lastIndex
   }
@@ -147,11 +162,16 @@ function parseInline(text: string): React.ReactNode {
 }
 
 /** Parse simple markdown into React elements. */
-function parseMarkdown(text: string): React.ReactNode[] {
+export function parseMarkdown(text: string): React.ReactNode[] {
   const lines = text.split('\n')
   const elements: React.ReactNode[] = []
   let inTable = false
   let tableRows: string[] = []
+  let inCodeBlock = false
+  let codeBlockLang = ''
+  let codeBlockLines: string[] = []
+  let inBlockquote = false
+  let blockquoteLines: string[] = []
 
   const flushTable = () => {
     if (tableRows.length < 2) return
@@ -188,9 +208,59 @@ function parseMarkdown(text: string): React.ReactNode[] {
     )
   }
 
-  for (const line of lines) {
+  const flushCodeBlock = () => {
+    const code = codeBlockLines.join('\n')
+    elements.push(
+      <div key={`code-${elements.length}`} className="my-2">
+        {codeBlockLang && (
+          <div className="bg-gray-800 text-gray-400 text-[10px] px-3 py-1 rounded-t-lg font-mono uppercase">
+            {codeBlockLang}
+          </div>
+        )}
+        <pre className={`bg-gray-900 text-gray-100 p-3 overflow-x-auto text-xs font-mono ${codeBlockLang ? 'rounded-b-lg' : 'rounded-lg'}`}>
+          <code>{code}</code>
+        </pre>
+      </div>
+    )
+    inCodeBlock = false
+    codeBlockLang = ''
+    codeBlockLines = []
+  }
+
+  const flushBlockquote = () => {
+    const text = blockquoteLines.join('\n')
+    elements.push(
+      <blockquote key={`bq-${elements.length}`} className="border-l-4 border-gray-300 pl-3 py-1 my-2 text-sm text-gray-600 italic">
+        {parseInline(text)}
+      </blockquote>
+    )
+    inBlockquote = false
+    blockquoteLines = []
+  }
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]
     const trimmed = line.trim()
+
+    // Code blocks
+    if (trimmed.startsWith('```')) {
+      if (!inCodeBlock) {
+        inCodeBlock = true
+        codeBlockLang = trimmed.slice(3).trim()
+        continue
+      } else {
+        flushCodeBlock()
+        continue
+      }
+    }
+    if (inCodeBlock) {
+      codeBlockLines.push(line)
+      continue
+    }
+
+    // Tables
     if (trimmed.startsWith('|') && trimmed.endsWith('|')) {
+      if (inBlockquote) flushBlockquote()
       tableRows.push(line)
       inTable = true
       continue
@@ -200,35 +270,96 @@ function parseMarkdown(text: string): React.ReactNode[] {
       tableRows = []
       inTable = false
     }
+
+    // Horizontal rules
+    if (trimmed === '---' || trimmed === '***' || trimmed === '___') {
+      if (inBlockquote) flushBlockquote()
+      elements.push(<hr key={`hr-${elements.length}`} className="border-gray-200 my-3" />)
+      continue
+    }
+
+    // Blockquotes
+    if (trimmed.startsWith('> ')) {
+      if (inTable) { flushTable(); tableRows = []; inTable = false }
+      blockquoteLines.push(trimmed.slice(2))
+      inBlockquote = true
+      continue
+    }
+    if (inBlockquote && trimmed !== '') {
+      blockquoteLines.push(trimmed)
+      continue
+    }
+    if (inBlockquote && trimmed === '') {
+      flushBlockquote()
+      continue
+    }
+
+    // Empty lines
+    if (trimmed === '') {
+      elements.push(<div key={`sp-${elements.length}`} className="h-2" />)
+      continue
+    }
+
+    // Headers
+    if (trimmed.startsWith('### ')) {
+      elements.push(
+        <h4 key={elements.length} className="text-sm font-semibold text-gray-800 mt-3 mb-1">
+          {parseInline(trimmed.slice(4))}
+        </h4>
+      )
+      continue
+    }
     if (trimmed.startsWith('## ')) {
       elements.push(
         <h3 key={elements.length} className="text-sm font-semibold text-gray-800 mt-3 mb-1">
           {parseInline(trimmed.slice(3))}
         </h3>
       )
-    } else if (trimmed.startsWith('# ')) {
+      continue
+    }
+    if (trimmed.startsWith('# ')) {
       elements.push(
         <h2 key={elements.length} className="text-base font-semibold text-gray-800 mt-3 mb-1">
           {parseInline(trimmed.slice(2))}
         </h2>
       )
-    } else if (trimmed.startsWith('- ')) {
+      continue
+    }
+
+    // Ordered lists
+    const orderedMatch = trimmed.match(/^(\d+)\.\s(.+)$/)
+    if (orderedMatch) {
+      elements.push(
+        <li key={elements.length} className="text-sm text-gray-700 ml-4 list-decimal">
+          {parseInline(orderedMatch[2])}
+        </li>
+      )
+      continue
+    }
+
+    // Unordered lists
+    if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
       elements.push(
         <li key={elements.length} className="text-sm text-gray-700 ml-4 list-disc">
           {parseInline(trimmed.slice(2))}
         </li>
       )
-    } else if (trimmed === '') {
-      elements.push(<div key={elements.length} className="h-2" />)
-    } else {
-      elements.push(
-        <p key={elements.length} className="text-sm text-gray-700 leading-relaxed">
-          {parseInline(trimmed)}
-        </p>
-      )
+      continue
     }
+
+    // Default paragraph
+    elements.push(
+      <p key={elements.length} className="text-sm text-gray-700 leading-relaxed">
+        {parseInline(trimmed)}
+      </p>
+    )
   }
+
+  // Flush any remaining blocks
   if (inTable) flushTable()
+  if (inCodeBlock) flushCodeBlock()
+  if (inBlockquote) flushBlockquote()
+
   return elements
 }
 

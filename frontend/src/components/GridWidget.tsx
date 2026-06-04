@@ -6,12 +6,13 @@ import {
   Calendar,
   CheckSquare,
   HardDrive,
+  FileText,
+  BookOpen,
   Sparkles,
   Puzzle,
   GripVertical,
   X,
   Settings,
-  AlertCircle,
   Check,
   Edit3,
   RefreshCw,
@@ -21,7 +22,10 @@ import GmailWidget from './widgets/GmailWidget'
 import CalendarWidget from './widgets/CalendarWidget'
 import TasksWidget from './widgets/TasksWidget'
 import DriveWidget from './widgets/DriveWidget'
+import DocsWidget from './widgets/DocsWidget'
+import NotionWidget from './widgets/NotionWidget'
 import AIWidget from './widgets/AIWidget'
+import MarkdownWidget from './widgets/MarkdownWidget'
 import CustomWidget from './widgets/CustomWidget'
 import ErrorBoundary from './ErrorBoundary'
 
@@ -30,7 +34,10 @@ const widgetIcons: Record<string, React.ReactNode> = {
   calendar: <Calendar className="w-4 h-4" />,
   tasks: <CheckSquare className="w-4 h-4" />,
   drive: <HardDrive className="w-4 h-4" />,
+  docs: <FileText className="w-4 h-4" />,
+  notion: <BookOpen className="w-4 h-4" />,
   ai: <Sparkles className="w-4 h-4" />,
+  markdown: <FileText className="w-4 h-4" />,
   custom: <Puzzle className="w-4 h-4" />,
 }
 
@@ -39,7 +46,10 @@ const widgetComponents: Record<string, React.FC<{ widget: WidgetConfig }>> = {
   calendar: CalendarWidget,
   tasks: TasksWidget,
   drive: DriveWidget,
+  docs: DocsWidget,
+  notion: NotionWidget,
   ai: AIWidget,
+  markdown: MarkdownWidget,
   custom: CustomWidget,
 }
 
@@ -49,7 +59,7 @@ const GridWidget = ({ widget }: { widget: WidgetConfig }) => {
   const updateWidgetTitle = useLayoutStore((state) => state.updateWidgetTitle)
   const setWidgetRefreshInterval = useLayoutStore((state) => state.setWidgetRefreshInterval)
   const setWidgetData = useLayoutStore((state) => state.setWidgetData)
-  const triggerRefresh = useLayoutStore((state) => state.triggerRefresh)
+  const refreshWidget = useLayoutStore((state) => state.refreshWidget)
   const theme = useLayoutStore((state) => state.theme)
   const [isEditingPrompt, setIsEditingPrompt] = useState(false)
   const [promptDraft, setPromptDraft] = useState(widget.prompt)
@@ -80,7 +90,7 @@ const GridWidget = ({ widget }: { widget: WidgetConfig }) => {
     // Clear existing data so the widget re-fetches with the new prompt
     setWidgetData(widget.id, null)
     // Trigger a refresh after a small delay to let the store update
-    setTimeout(() => triggerRefresh(widget.id), 50)
+    setTimeout(() => refreshWidget(widget.id), 50)
   }
 
   const cancelPromptEdit = () => {
@@ -211,7 +221,7 @@ const GridWidget = ({ widget }: { widget: WidgetConfig }) => {
             title={widget.isLoading ? 'Loading...' : widget.error ? 'Error' : 'Live data'}
           />
           <button
-            onClick={() => triggerRefresh(widget.id)}
+            onClick={() => refreshWidget(widget.id)}
             className="p-1 rounded hover:opacity-70 transition-opacity"
             style={{ color: theme.sidebarText + 'aa' }}
             title="Refresh data"
@@ -271,16 +281,9 @@ const GridWidget = ({ widget }: { widget: WidgetConfig }) => {
 
       {/* Content */}
       <div className="flex-1 overflow-auto p-3" style={{ padding: `${widget.style.padding}px` }}>
-        {widget.error ? (
-          <div className="flex items-center gap-2 text-sm" style={{ color: '#ef4444' }}>
-            <AlertCircle className="w-4 h-4" />
-            <span>{widget.error}</span>
-          </div>
-        ) : (
-          <ErrorBoundary>
-            <WidgetComponent widget={widget} />
-          </ErrorBoundary>
-        )}
+        <ErrorBoundary>
+          <WidgetComponent widget={widget} />
+        </ErrorBoundary>
       </div>
 
       {/* Footer / Prompt */}

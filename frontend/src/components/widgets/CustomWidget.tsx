@@ -76,7 +76,7 @@ const CustomWidget = ({ widget }: { widget: WidgetConfig }) => {
       }
     } else if (intent === 'gmail') {
       const data = await apiClient.getGmail(10, prompt) as any
-      const text = data?.data?.join('\n') || ''
+      const text = data?.text || ''
       if (text.trim()) {
         result = { result: text, sources: [] }
       } else {
@@ -84,7 +84,7 @@ const CustomWidget = ({ widget }: { widget: WidgetConfig }) => {
       }
     } else if (intent === 'calendar') {
       const data = await apiClient.getCalendar(undefined, prompt) as any
-      const text = data?.data?.join('\n') || ''
+      const text = data?.text || ''
       if (text.trim()) {
         result = { result: text, sources: [] }
       } else {
@@ -92,7 +92,7 @@ const CustomWidget = ({ widget }: { widget: WidgetConfig }) => {
       }
     } else if (intent === 'tasks') {
       const data = await apiClient.getTasks('default', prompt) as any
-      const text = data?.data?.join('\n') || ''
+      const text = data?.text || ''
       if (text.trim()) {
         result = { result: text, sources: [] }
       } else {
@@ -100,7 +100,7 @@ const CustomWidget = ({ widget }: { widget: WidgetConfig }) => {
       }
     } else if (intent === 'drive') {
       const data = await apiClient.getDrive(10, prompt) as any
-      const text = data?.data?.join('\n') || ''
+      const text = data?.text || ''
       if (text.trim()) {
         result = { result: text, sources: [] }
       } else {

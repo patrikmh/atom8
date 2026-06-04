@@ -7,9 +7,9 @@ export interface LayoutItem {
   static?: boolean;
 }
 
-export type WidgetType = 'gmail' | 'calendar' | 'tasks' | 'drive' | 'ai' | 'custom';
+export type WidgetType = 'gmail' | 'calendar' | 'tasks' | 'drive' | 'docs' | 'notion' | 'ai' | 'custom' | 'markdown';
 
-export type Category = 'Gmail' | 'Calendar' | 'Tasks' | 'Drive' | 'AI' | 'Custom';
+export type Category = 'Gmail' | 'Calendar' | 'Tasks' | 'Drive' | 'Docs' | 'Notion' | 'AI' | 'Custom' | 'Markdown';
 
 export interface WidgetConfig {
   id: string;
@@ -220,10 +220,28 @@ export const COMPONENT_LIBRARY_ITEMS: Omit<WidgetConfig, 'id' | 'layout' | 'styl
     prompt: 'Get recent files',
   },
   {
+    type: 'docs',
+    title: 'Recent Docs',
+    category: 'Docs',
+    prompt: 'Get recent documents',
+  },
+  {
+    type: 'notion',
+    title: 'Notion Pages',
+    category: 'Notion',
+    prompt: 'Get recent Notion pages',
+  },
+  {
     type: 'ai',
     title: 'AI Research',
     category: 'AI',
     prompt: 'Research the latest news on {{topic}}',
+  },
+  {
+    type: 'markdown',
+    title: 'Markdown Viewer',
+    category: 'Markdown',
+    prompt: 'Render markdown content',
   },
   {
     type: 'custom',
@@ -252,6 +270,8 @@ export interface ParsedData {
   events?: CalendarEvent[];
   tasks?: TaskItem[];
   files?: DriveFile[];
+  docs?: DocsFile[];
+  pages?: NotionPage[];
   headers?: string[];
   rows?: Record<string, string>[];
   items?: string[];
@@ -337,6 +357,46 @@ export interface DriveResponse {
   needs_auth?: boolean;
 }
 
+/** Single Google Doc file returned by the backend. */
+export interface DocsFile {
+  id: string;
+  name: string;
+  mimeType: string;
+  modifiedTime: string;
+  size?: string;
+}
+
+/** Docs data endpoint response. */
+export interface DocsResponse {
+  type?: string;
+  text?: string;
+  data?: ParsedData;
+  docs?: DocsFile[];
+  status: 'ok' | 'error';
+  error?: string;
+  needs_auth?: boolean;
+}
+
+/** Single Notion page returned by the backend. */
+export interface NotionPage {
+  id: string;
+  title: string;
+  url?: string;
+  last_edited?: string;
+  created_time?: string;
+}
+
+/** Notion data endpoint response. */
+export interface NotionResponse {
+  type?: string;
+  text?: string;
+  data?: ParsedData;
+  pages?: NotionPage[];
+  status: 'ok' | 'error';
+  error?: string;
+  needs_auth?: boolean;
+}
+
 /** Web research endpoint response. */
 export interface ResearchResponse {
   content: string;
@@ -360,6 +420,8 @@ export interface AllDataResponse {
   calendar: CalendarResponse;
   tasks: TasksResponse;
   drive: DriveResponse;
+  docs: DocsResponse;
+  notion: NotionResponse;
   status: 'ok' | 'error';
 }
 

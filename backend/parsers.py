@@ -30,6 +30,8 @@ OutputType = Literal[
     "event_list",
     "task_list",
     "file_list",
+    "doc_list",
+    "doc_content",
     "mixed_json",
     "sectioned_markdown",
     "csv_inline",
@@ -253,6 +255,28 @@ def _parse_file_list(text: str) -> dict:
     return {"files": []}
 
 
+def _parse_doc_list(text: str) -> dict:
+    data = _extract_json_block(text)
+    if isinstance(data, dict) and "documents" in data:
+        return {"documents": data["documents"]}
+    if isinstance(data, list):
+        return {"documents": data}
+    # Parse markdown table fallback
+    table = _parse_markdown_table(text)
+    if table.get("rows"):
+        return {"documents": table["rows"]}
+    return {"documents": []}
+
+
+def _parse_doc_content(text: str) -> dict:
+    data = _extract_json_block(text)
+    if isinstance(data, dict) and "content" in data:
+        return {"content": data["content"], "documentId": data.get("documentId", "")}
+    if isinstance(data, dict):
+        return {"content": str(data.get("text", data)), "documentId": data.get("documentId", "")}
+    return {"content": text.strip(), "documentId": ""}
+
+
 def _parse_mixed_json(text: str) -> dict:
     data = _extract_json_block(text)
     # Remove the JSON block to get commentary text
@@ -325,6 +349,8 @@ PARSERS = {
     "event_list": _parse_event_list,
     "task_list": _parse_task_list,
     "file_list": _parse_file_list,
+    "doc_list": _parse_doc_list,
+    "doc_content": _parse_doc_content,
     "mixed_json": _parse_mixed_json,
     "sectioned_markdown": _parse_sectioned_markdown,
     "csv_inline": _parse_csv,

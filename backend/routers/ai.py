@@ -78,24 +78,35 @@ async def research(request: ResearchRequest):
     This is a direct, synchronous request — no queue, no background processing.
     """
     prompt = (
-        f"/web-research Research: '{request.topic}'. "
+        f"/skill:web-research Research: '{request.topic}'. "
         f"Depth: {request.depth}. Max results: {request.max_results}."
     )
-    result = await pi_manager.get("research").prompt(prompt, timeout=120)
+    result = await pi_manager.get("research").prompt(prompt, timeout=600)
 
     if result.get("status") == "error":
         raise HTTPException(500, result.get("error", "Research failed"))
 
     data = result.get("data", "")
     if isinstance(data, dict):
-        findings = data.get("findings", str(data))
+        # web-research skill outputs: summary, key_findings, sources
+        content = data.get("summary") or data.get("findings") or data.get("content")
+        if not content and "key_findings" in data:
+            content = "\n\n".join(
+                f"• {f.get('claim', '')}" + (f"\n  Evidence: {f.get('evidence', '')}" if f.get('evidence') else "")
+                for f in data["key_findings"]
+            )
+        if not content:
+            content = str(data)
         sources = data.get("sources", [])
+        # Normalize sources to list of strings
+        if sources and isinstance(sources[0], dict):
+            sources = [s.get("url", str(s)) for s in sources]
     else:
-        findings = str(data)
+        content = str(data)
         sources = []
 
     return ResearchResponse(
-        findings=findings,
+        content=content,
         sources=sources,
     )
 

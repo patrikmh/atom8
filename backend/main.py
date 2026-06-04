@@ -11,6 +11,19 @@ from pi_rpc import pi_manager
 from models import HealthResponse
 from routers import auth, data, ai, dashboard
 from routers.auth import process_google_callback
+from cache_manager import cache
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Startup: init pi pools and cache. Shutdown: close them."""
+    # Startup
+    await pi_manager.init()
+    # Clean up old cache entries on startup
+    cache.cleanup_expired()
+    yield
+    # Shutdown
+    await pi_manager.close()
 
 
 @asynccontextmanager

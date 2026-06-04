@@ -397,10 +397,13 @@ export const getCategoryIcon = (category: Category) => {
     Calendar: 'Calendar',
     Tasks: 'CheckSquare',
     Drive: 'HardDrive',
+    Docs: 'FileText',
+    Notion: 'BookOpen',
     AI: 'Sparkles',
     Custom: 'Puzzle',
+    Markdown: 'FileText',
   };
   return icons[category] || 'Puzzle';
 };
 
-export const categories: Category[] = ['Gmail', 'Calendar', 'Tasks', 'Drive', 'AI', 'Custom'];
+export const categories: Category[] = ['Gmail', 'Calendar', 'Tasks', 'Drive', 'Docs', 'Notion', 'AI', 'Markdown', 'Custom'];
